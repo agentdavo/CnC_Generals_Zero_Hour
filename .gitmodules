@@ -7,3 +7,9 @@
 [submodule "lib/uGLES"]
 	path = lib/uGLES
 	url = https://github.com/agentdavo/microGLES.git
+[submodule "lib/UniSpySDK"]
+	path = lib/UniSpySDK
+	url = https://github.com/GameProgressive/UniSpySDK
+[submodule "lib/STLport"]
+	path = lib/STLport
+	url = https://github.com/TheSuperHackers/stlport-4.5.3.git

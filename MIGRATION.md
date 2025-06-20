@@ -17,14 +17,14 @@ This document outlines the high level approach to porting Command & Conquer Gene
 The README lists a number of obsolete dependencies that require replacement or removal:
 
 - DirectX SDK
-- STLport 4.5.3
+- STLport 4.5.3 (patched)
 - 3DSMax 4 SDK
 - NVASM
 - BYTEmark
 - Miles Sound System & "Asimp3"
 - Bink
 - SafeDisk API
-- GameSpy SDK
+- UniSpySDK (open source replacement for GameSpy)
 - ZLib 1.1.4
 - LZH-Light 1.0
 
@@ -37,7 +37,7 @@ These components appear in `Code/Libraries` and in various engine devices.  Many
 3. **Window and Input Layer** – integrate LVGL. For desktop use LVGL's SDL or X11 port; on bare metal target the framebuffer driver.  All input events should funnel through LVGL.
 4. **Audio** – strip the Miles Sound System implementation in `GameEngineDevice/Source/MilesAudioDevice` and write a new `MiniaudioDevice` backend using miniaudio.
 5. **Video Playback** – the code under `VideoDevice/Bink` uses the proprietary Bink SDK. Replace with an open source video player (e.g. ffmpeg) or provide a stub that displays placeholder frames.
-6. **Networking** – remove GameSpy and investigate modern alternatives or implement a lightweight cross platform lobby/proxy layer.
+6. **Networking** – replace the retired GameSpy SDK with the open source [UniSpySDK](https://github.com/GameProgressive/UniSpySDK) or implement a lightweight cross platform lobby/proxy layer.
 7. **Compression and Archives** – update the old ZLib and LZH-Light usage with current zlib and liblzh implementations, ensuring compatibility with existing archive formats.
 8. **Build System Migration** – replace the old Makefiles with CMake. Provide a
    root `CMakeLists.txt` and per-module CMake files, placing source code under
@@ -71,6 +71,9 @@ String handling utilities (`AsciiString`, `UnicodeString`, and the legacy
 `WSYS_String` wrapper) along with thread primitives (`CriticalSection` and
 `ScopedMutex`) have been migrated into the same directory. `PerfTimer.cpp` now
 lives directly under `src/GameEngine/Common`.
+The networking subsystem under `GameEngine/Source/GameNetwork` has been moved
+into `src/GameEngine/GameNetwork` with headers in `include/GameEngine/GameNetwork`.
+The GameSpy-based files remain for now and will be replaced with UniSpySDK code.
 Legacy code still depends on the Visual Studio projects and will not compile without extensive work.
 
 Additional open source libraries are now tracked as submodules under `lib/`.
@@ -82,6 +85,8 @@ to fetch the following dependencies:
 -   The README in `lib/miniaudio` highlights built-in MP3 support which will
     simplify shimming the Miles Sound System calls.
 - **uGLES** – a lightweight OpenGL ES 1.1 wrapper.
+- **UniSpySDK** – open source networking toolkit used in place of GameSpy.
+- **STLport** – patched C++ standard library used by the original code.
 - **zlib** – compression library used by the original asset archives.
 - **liblzhl** – reference implementation of EA's LZH-Light algorithm.
 

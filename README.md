@@ -9,7 +9,7 @@ This repository includes source code for Command & Conquer Generals, and its exp
 If you wish to rebuild the source code and tools successfully you will need to find or write new replacements (or remove the code using them entirely) for the following libraries;
 
 - DirectX SDK (Version 9.0 or higher) (expected path `\Code\Libraries\DirectX\`)
-- STLport (4.5.3) - (expected path `\Code\Libraries\STLport-4.5.3`)
+- STLport (4.5.3) - patched version tracked in `lib/STLport`
 - 3DSMax 4 SDK - (expected path `\Code\Libraries\Max4SDK\`)
 - NVASM - (expected path `\Code\Tools\NVASM\`)
 - BYTEmark - (expected path `\Code\Libraries\Source\Benchmark`)
@@ -17,7 +17,7 @@ If you wish to rebuild the source code and tools successfully you will need to f
 - RAD Bink SDK - (expected path `\Code\GameEngineDevice\Include\VideoDevice\Bink`)
 - SafeDisk API - (expected path `\Code\GameEngine\Include\Common\SafeDisk` and `\Code\Tools\Launcher\SafeDisk\`)
 - Miles Sound System "Asimp3" - (expected path `\Code\Libraries\WPAudio\Asimp3`)
-- GameSpy SDK - (expected path `\Code\Libraries\Source\GameSpy\`)
+- UniSpySDK - open source replacement for GameSpy (tracked in `lib/UniSpySDK`)
 - ZLib (1.1.4) - (expected path `\Code\Libraries\Source\Compression\ZLib\`)
 - LZH-Light (1.0) - (expected path `\Code\Libraries\Source\Compression\LZHCompress\CompLibSource` and `CompLibHeader`)
 
@@ -25,7 +25,7 @@ If you wish to rebuild the source code and tools successfully you will need to f
 
 Source code now resides in `src/`, public headers in `include/`, and libraries in `lib/`. The legacy tree under `Generals/Code` will be migrated here over time.
 
-External libraries such as LVGL, miniaudio, uGLES, zlib and liblzhl are provided as git
+External libraries such as LVGL, miniaudio, uGLES, UniSpySDK, zlib and liblzhl are provided as git
 submodules within `lib/`. After cloning this repository run:
 
 ```sh
@@ -65,7 +65,9 @@ Windows has a policy where executables that contain words “version”, “upda
 
 
 ## STLport
-STLport will require changes to successfully compile this source code. The file [stlport.diff](stlport.diff) has been provided for you so you can review and apply these changes. Please make sure you are using STLport 4.5.3 before attempting to apply the patch.
+The repository includes STLport 4.5.3 under `lib/STLport` with the patch from
+`stlport.diff` already applied. The diff is kept for reference should you need
+to verify the changes against an original copy of the library.
 
 
 ## Contributing

@@ -53,6 +53,15 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/INI/INIWebpageURL.cpp
 )
 
+file(GLOB GAME_NETWORK_SRCS
+    GameNetwork/*.cpp
+    GameNetwork/GameSpy/*.cpp
+    GameNetwork/GameSpy/Thread/*.cpp
+    GameNetwork/WOLBrowser/*.cpp
+)
+
+target_sources(gameengine PRIVATE ${GAME_NETWORK_SRCS})
+
 target_include_directories(gameengine PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/GameEngine
