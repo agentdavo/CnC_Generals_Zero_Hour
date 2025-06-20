@@ -25,12 +25,12 @@ If you wish to rebuild the source code and tools successfully you will need to f
 
 Source code now resides in `src/`, public headers in `include/`, and libraries in `lib/`. The legacy tree under `Generals/Code` will be migrated here over time.
 
-External libraries such as LVGL, miniaudio, uGLES, UniSpySDK, zlib and liblzhl are provided in submodules within `lib/`. After cloning this repository run:
+External libraries such as LVGL, miniaudio, uGLES, UniSpySDK, zlib and liblzhl are provided under `lib/`. Most of them are git submodules. After cloning this repository run:
 
 ```sh
 git submodule update --init --recursive
 ```
-to fetch them.
+to fetch the submodule sources. LVGL (version 9.3) is included directly in the repository to allow local modifications.
 
 CMake builds these third party libraries via `lib/CMakeLists.txt`.
 

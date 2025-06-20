@@ -75,14 +75,16 @@ The networking subsystem under `GameEngine/Source/GameNetwork` has been moved
 into `src/GameEngine/GameNetwork` with headers in `include/GameEngine/GameNetwork`.
 The GameSpy-based files remain for now and will be replaced with UniSpySDK code.
 Legacy code still depends on the Visual Studio projects and will not compile without extensive work.
+The engine relies on several third party libraries stored under `lib/`.
+Most of them are tracked as git submodules. After cloning run
+`git submodule update --init --recursive` to fetch their sources.
+The LVGL UI framework is an exception: version 9.3 is bundled directly in
+the repository to allow local patching.
+The key dependencies are:
 
-Additional open source libraries are now tracked as submodules under `lib/`.
-After cloning the repository, run `git submodule update --init --recursive`
-to fetch the following dependencies:
-
-- **lvgl** – provides the window and canvas system for new ports.
+- **lvgl** – provides the window and canvas system for new ports (bundled v9.3).
 - **miniaudio** – simple cross‑platform audio backend.
--   The README in `lib/miniaudio` highlights built-in MP3 support which will
+   The README in `lib/miniaudio` highlights built-in MP3 support which will
     simplify shimming the Miles Sound System calls.
 - **uGLES** – a lightweight OpenGL ES 1.1 wrapper.
 - **UniSpySDK** – open source networking toolkit used in place of GameSpy.
