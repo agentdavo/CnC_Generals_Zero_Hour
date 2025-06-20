@@ -63,6 +63,9 @@ to fetch the following dependencies:
 - **lvgl** – provides the window and canvas system for new ports.
 - **miniaudio** – simple cross‑platform audio backend.
 - **uGLES** – a lightweight OpenGL ES 1.1 wrapper.
+- **zlib** – legacy compression code now compiled via CMake.
+- **liblzhl** – alternative LZ-based compressor bundled with SAGE.
 
-A dedicated `lib/CMakeLists.txt` exposes these libraries as interface
-targets so they can be linked from other modules during the port.
+A dedicated `lib/CMakeLists.txt` pulls in these libraries so they can
+be linked from other modules during the port.  `zlib` and `liblzhl`
+are now built as static targets rather than header-only stubs.
