@@ -1166,26 +1166,26 @@ This report details all files referencing DirectX calls, organized by file path,
 ### Tools/WorldBuilder/src/wbview3d.cpp
 - D3DXCreateFont
 
-### ./GeneralsMD/Code/GameEngine/Include/Common/BezierSegment.h
+### GameEngine/Include/Common/BezierSegment.h
 - D3DX8Math
 - D3DXMATRIX
 
-### ./GeneralsMD/Code/GameEngine/Source/Common/Bezier/BezFwdIterator.cpp
+### GameEngine/Source/Common/Bezier/BezFwdIterator.cpp
 - D3DXVECTOR4
 - D3DXVec4Transform
 
-### ./GeneralsMD/Code/GameEngine/Source/Common/Bezier/BezierSegment.cpp
+### GameEngine/Source/Common/Bezier/BezierSegment.cpp
 - D3DX8Math
 - D3DXMATRIX
 - D3DXVECTOR4
 - D3DXVec4Dot
 - D3DXVec4Transform
 
-### ./GeneralsMD/Code/GameEngine/Source/Common/GameEngine.cpp
+### GameEngine/Source/Common/GameEngine.cpp
 - D3DFailureMessage
 - D3DFailurePrompt
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/BaseHeightMap.cpp
 - D3DCOLORWRITEENABLE_ALPHA
 - D3DCOLORWRITEENABLE_BLUE
 - D3DCOLORWRITEENABLE_GREEN
@@ -1195,14 +1195,14 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTS_WORLD
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/FlatHeightMap.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/FlatHeightMap.cpp
 - D3DCOLORWRITEENABLE_BLUE
 - D3DCOLORWRITEENABLE_GREEN
 - D3DCOLORWRITEENABLE_RED
 - D3DRS_COLORWRITEENABLE
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/HeightMap.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/HeightMap.cpp
 - D3DCOLORWRITEENABLE_BLUE
 - D3DCOLORWRITEENABLE_GREEN
 - D3DCOLORWRITEENABLE_RED
@@ -1216,7 +1216,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTS_WORLD
 - D3DXGetFVFVertexSize
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DBufferManager.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DBufferManager.cpp
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
 - D3DFVF_TEX1
@@ -1224,7 +1224,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DFVF_XYZ
 - D3DFVF_XYZRHW
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DProjectedShadow.cpp
 - D3DBLEND_DESTCOLOR
 - D3DBLEND_INVSRCALPHA
 - D3DBLEND_ONE
@@ -1275,7 +1275,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DUSAGE_WRITEONLY
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3DVolumetricShadow.cpp
 - D3DBLEND_DESTCOLOR
 - D3DBLEND_INVSRCALPHA
 - D3DBLEND_ONE
@@ -1343,7 +1343,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXVECTOR4
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/TerrainTex.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/TerrainTex.cpp
 - D3DBLEND_DESTCOLOR
 - D3DBLEND_INVSRCALPHA
 - D3DBLEND_ONE
@@ -1398,13 +1398,13 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXMatrixTranslation
 - D3DX_FILTER_BOX
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DBibBuffer.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DBibBuffer.cpp
 - D3DLOCK_DISCARD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DBridgeBuffer.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DBridgeBuffer.cpp
 - D3DLOCK_DISCARD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DCustomEdging.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DCustomEdging.cpp
 - D3DBLEND_DESTCOLOR
 - D3DBLEND_ZERO
 - D3DCMP_GREATEREQUAL
@@ -1428,28 +1428,28 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_COLOROP
 - D3DTSS_TEXCOORDINDEX
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DDebugIcons.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DDebugIcons.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DDisplay.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DDisplay.cpp
 - D3DLOCKED_RECT
 - D3DLOCK_READONLY
 - D3DSURFACE_DESC
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DGranny.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DGranny.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DInGameUI.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DInGameUI.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DMouse.cpp
 - D3DCURSOR_IMMEDIATE_UPDATE
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DRoadBuffer.cpp
 - D3DLOCK_DISCARD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DScene.cpp
 - D3DBLEND_INVSRCALPHA
 - D3DBLEND_ONE
 - D3DBLEND_SRCALPHA
@@ -1489,7 +1489,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DSTENCILOP_REPLACE
 - D3DSTENCILOP_ZERO
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DShaderManager.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DShaderManager.cpp
 - D3D8
 - D3DADAPTER_IDENTIFIER8
 - D3DBLEND_DESTCOLOR
@@ -1578,12 +1578,12 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXMatrixTranslation
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DShroud.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DShroud.cpp
 - D3DLOCKED_RECT
 - D3DLOCK_NO_DIRTY_UPDATE
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DSmudge.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DSmudge.cpp
 - D3DDesc
 - D3DFILL_SOLID
 - D3DFILL_WIREFRAME
@@ -1613,7 +1613,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTS_VIEW
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DSnow.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DSnow.cpp
 - D3DFVF_POINTVERTEX
 - D3DFVF_XYZ
 - D3DLOCK_DISCARD
@@ -1635,7 +1635,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DUSAGE_WRITEONLY
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DStatusCircle.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DStatusCircle.cpp
 - D3DBLENDOP_ADD
 - D3DBLENDOP_REVSUBTRACT
 - D3DBLEND_DESTCOLOR
@@ -1646,10 +1646,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DRS_SRCBLEND
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DTerrainTracks.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DTerrainTracks.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/W3DTreeBuffer.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/W3DTreeBuffer.cpp
 - D3DFMT_A8R8G8B8
 - D3DLOCKED_RECT
 - D3DLOCK_DISCARD
@@ -1673,7 +1673,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXVECTOR4
 - D3DX_FILTER_BOX
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWater.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWater.cpp
 - D3DBLEND_DESTALPHA
 - D3DBLEND_INVDESTALPHA
 - D3DBLEND_INVSRCALPHA
@@ -1775,7 +1775,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXVECTOR4
 - D3D_OK
 
-### ./GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWaterTracks.cpp
+### GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWaterTracks.cpp
 - D3DCMP_EQUAL
 - D3DCMP_LESSEQUAL
 - D3DLOCK_DISCARD
@@ -1792,7 +1792,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTS_WORLD
 - D3D_OK
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/assetmgr.cpp
+### Libraries/Source/WWVegas/WW3D2/assetmgr.cpp
 - D3DFMT_A1R5G5B5
 - D3DFMT_A4L4
 - D3DFMT_A4R4G4B4
@@ -1831,28 +1831,28 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DFMT_YUY2
 - D3DSURFACE_DESC
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/boxrobj.cpp
+### Libraries/Source/WWVegas/WW3D2/boxrobj.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/camera.cpp
+### Libraries/Source/WWVegas/WW3D2/camera.cpp
 - D3DTS_VIEW
 - D3DVIEWPORT8
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dazzle.cpp
+### Libraries/Source/WWVegas/WW3D2/dazzle.cpp
 - D3DTS_PROJECTION
 - D3DTS_VIEW
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/ddsfile.cpp
+### Libraries/Source/WWVegas/WW3D2/ddsfile.cpp
 - D3DFORMAT
 - D3DFormat_To_WW3DFormat
 - D3DLOCKED_RECT
 - D3DSURFACE_DESC
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/decalmsh.cpp
+### Libraries/Source/WWVegas/WW3D2/decalmsh.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8caps.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8caps.cpp
 - D3DADAPTER_IDENTIFIER8
 - D3DCAPS2_FULLSCREENGAMMA
 - D3DCAPS8
@@ -1873,12 +1873,12 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DUSAGE_DEPTHSTENCIL
 - D3DUSAGE_RENDERTARGET
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8caps.h
+### Libraries/Source/WWVegas/WW3D2/dx8caps.h
 - D3DADAPTER_IDENTIFIER8
 - D3DCAPS8
 - D3DDevice
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8fvf.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8fvf.cpp
 - D3DDP_MAXTEXCOORD
 - D3DFVFTEXCOORDSIZE3
 - D3DFVF_DIFFUSE
@@ -1897,7 +1897,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DFVF_XYZB4
 - D3DXGetFVFVertexSize
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8fvf.h
+### Libraries/Source/WWVegas/WW3D2/dx8fvf.h
 - D3DDP_MAXTEXCOORD
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
@@ -1911,7 +1911,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DFVF_TEXCOORDSIZE4
 - D3DFVF_XYZ
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8indexbuffer.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8indexbuffer.cpp
 - D3DFMT_INDEX16
 - D3DLOCK_DISCARD
 - D3DLOCK_NOOVERWRITE
@@ -1922,10 +1922,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DUSAGE_SOFTWAREPROCESSING
 - D3DUSAGE_WRITEONLY
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8polygonrenderer.h
+### Libraries/Source/WWVegas/WW3D2/dx8polygonrenderer.h
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8renderer.cpp
 - D3DBLEND_DESTCOLOR
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
@@ -1945,10 +1945,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DRS_ZBIAS
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8texman.h
+### Libraries/Source/WWVegas/WW3D2/dx8texman.h
 - D3DPOOL_DEFAULT
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.cpp
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
 - D3DFVF_TEX1
@@ -1963,17 +1963,17 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DUSAGE_SOFTWAREPROCESSING
 - D3DUSAGE_WRITEONLY
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.h
+### Libraries/Source/WWVegas/WW3D2/dx8vertexbuffer.h
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
 - D3DFVF_TEX2
 - D3DFVF_XYZ
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8webbrowser.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8webbrowser.cpp
 - D3DRender
 - D3DUpdate
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp
+### Libraries/Source/WWVegas/WW3D2/dx8wrapper.cpp
 - D3D8
 - D3D8Lib
 - D3DADAPTER_DEFAULT
@@ -2334,7 +2334,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - Direct3DCreate8Ptr
 - Direct3DCreate8Type
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dx8wrapper.h
+### Libraries/Source/WWVegas/WW3D2/dx8wrapper.h
 - D3D2_BASE_VEC
 - D3DADAPTER_IDENTIFIER8
 - D3DCOLOR
@@ -2360,10 +2360,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVIEWPORT8
 - D3D_OK
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/dynamesh.cpp
+### Libraries/Source/WWVegas/WW3D2/dynamesh.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/formconv.cpp
+### Libraries/Source/WWVegas/WW3D2/formconv.cpp
 - D3DFMT_A1R5G5B5
 - D3DFMT_A4L4
 - D3DFMT_A4R4G4B4
@@ -2407,19 +2407,19 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DFormat_To_WW3DFormat
 - D3DFormat_To_WW3DZFormat
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/formconv.h
+### Libraries/Source/WWVegas/WW3D2/formconv.h
 - D3DFORMAT
 - D3DFormat_To_WW3DFormat
 - D3DFormat_To_WW3DZFormat
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/line3d.cpp
+### Libraries/Source/WWVegas/WW3D2/line3d.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/linegrp.cpp
+### Libraries/Source/WWVegas/WW3D2/linegrp.cpp
 - D3DTS_VIEW
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/mapper.cpp
+### Libraries/Source/WWVegas/WW3D2/mapper.cpp
 - D3DTRANSFORMSTATETYPE
 - D3DTSS_BUMPENVMAT00
 - D3DTSS_BUMPENVMAT01
@@ -2438,7 +2438,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTTFF_COUNT3
 - D3DTTFF_PROJECTED
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/matrixmapper.cpp
+### Libraries/Source/WWVegas/WW3D2/matrixmapper.cpp
 - D3DTRANSFORMSTATETYPE
 - D3DTSS_TCI_CAMERASPACENORMAL
 - D3DTSS_TCI_CAMERASPACEPOSITION
@@ -2449,16 +2449,16 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTTFF_COUNT3
 - D3DTTFF_PROJECTED
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/mesh.cpp
+### Libraries/Source/WWVegas/WW3D2/mesh.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/missingtexture.cpp
+### Libraries/Source/WWVegas/WW3D2/missingtexture.cpp
 - D3DLOCKED_RECT
 - D3DSURFACE_DESC
 - D3DXLoadSurfaceFromSurface
 - D3DX_FILTER_BOX
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/pointgr.cpp
+### Libraries/Source/WWVegas/WW3D2/pointgr.cpp
 - D3DTS_VIEW
 - D3DTS_WORLD
 - D3DXMATRIX
@@ -2466,11 +2466,11 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXMatrixRotationZ
 - D3DX_PI
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/rddesc.h
+### Libraries/Source/WWVegas/WW3D2/rddesc.h
 - D3DADAPTER_IDENTIFIER8
 - D3DCAPS8
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/render2d.cpp
+### Libraries/Source/WWVegas/WW3D2/render2d.cpp
 - D3DRS_TEXTUREFACTOR
 - D3DTA_ALPHAREPLICATE
 - D3DTA_CURRENT
@@ -2487,19 +2487,19 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTS_VIEW
 - D3DVIEWPORT8
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/ringobj.cpp
+### Libraries/Source/WWVegas/WW3D2/ringobj.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/scene.cpp
+### Libraries/Source/WWVegas/WW3D2/scene.cpp
 - D3DFILL_WIREFRAME
 - D3DRS_FILLMODE
 - D3DRS_ZBIAS
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/seglinerenderer.cpp
+### Libraries/Source/WWVegas/WW3D2/seglinerenderer.cpp
 - D3DTS_VIEW
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/shader.cpp
+### Libraries/Source/WWVegas/WW3D2/shader.cpp
 - D3DBLEND
 - D3DBLEND_DESTCOLOR
 - D3DBLEND_INVSRCALPHA
@@ -2570,7 +2570,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_TCI_PASSTHRU
 - D3DTSS_TEXCOORDINDEX
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp
+### Libraries/Source/WWVegas/WW3D2/sortingrenderer.cpp
 - D3DTS_VIEW
 - D3DTS_WORLD
 - D3DXMATRIX
@@ -2578,15 +2578,15 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXVECTOR4
 - D3DXVec3Transform
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/sphereobj.cpp
+### Libraries/Source/WWVegas/WW3D2/sphereobj.cpp
 - D3DTS_VIEW
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/streakRender.cpp
+### Libraries/Source/WWVegas/WW3D2/streakRender.cpp
 - D3DTS_VIEW
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/surfaceclass.cpp
+### Libraries/Source/WWVegas/WW3D2/surfaceclass.cpp
 - D3DFormat_To_WW3DFormat
 - D3DLOCKED_RECT
 - D3DLOCK_READONLY
@@ -2596,10 +2596,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DX_FILTER_NONE
 - D3DX_FILTER_TRIANGLE
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/surfaceclass.h
+### Libraries/Source/WWVegas/WW3D2/surfaceclass.h
 - D3DSurface
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/texture.cpp
+### Libraries/Source/WWVegas/WW3D2/texture.cpp
 - D3DFormat_To_WW3DFormat
 - D3DFormat_To_WW3DZFormat
 - D3DPOOL
@@ -2610,10 +2610,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTexture
 - D3DVOLUME_DESC
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/texture.h
+### Libraries/Source/WWVegas/WW3D2/texture.h
 - D3DTexture
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/texturefilter.cpp
+### Libraries/Source/WWVegas/WW3D2/texturefilter.cpp
 - D3DCAPS8
 - D3DPTFILTERCAPS_MAGFANISOTROPIC
 - D3DPTFILTERCAPS_MAGFLINEAR
@@ -2633,7 +2633,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_MINFILTER
 - D3DTSS_MIPFILTER
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/textureloader.cpp
+### Libraries/Source/WWVegas/WW3D2/textureloader.cpp
 - D3DCAPS8
 - D3DCUBEMAP_FACES
 - D3DLOCKED_BOX
@@ -2643,10 +2643,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DPOOL_SYSTEMMEM
 - D3DTexture
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/textureloader.h
+### Libraries/Source/WWVegas/WW3D2/textureloader.h
 - D3DTexture
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/vertmaterial.cpp
+### Libraries/Source/WWVegas/WW3D2/vertmaterial.cpp
 - D3DMATERIAL8
 - D3DMCS_COLOR1
 - D3DMCS_COLOR2
@@ -2660,14 +2660,14 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_TEXTURETRANSFORMFLAGS
 - D3DTTFF_DISABLE
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/vertmaterial.h
+### Libraries/Source/WWVegas/WW3D2/vertmaterial.h
 - D3DFVF_DIFFUSE
 - D3DFVF_SPECULAR
 - D3DMCS_COLOR1
 - D3DMCS_COLOR2
 - D3DMCS_MATERIAL
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/ww3d.cpp
+### Libraries/Source/WWVegas/WW3D2/ww3d.cpp
 - D3DERR_DEVICELOST
 - D3DERR_DEVICENOTRESET
 - D3DFILL_POINT
@@ -2680,17 +2680,17 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVIEWPORT8
 - D3D_OK
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WW3D2/ww3dformat.h
+### Libraries/Source/WWVegas/WW3D2/ww3dformat.h
 - D3DFORMAT
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WWAudio/WWAudio.h
+### Libraries/Source/WWVegas/WWAudio/WWAudio.h
 - D3DSound
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/WWMath/matrix3d.cpp
+### Libraries/Source/WWVegas/WWMath/matrix3d.cpp
 - D3DXMATRIX
 - D3DXMatrixInverse
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd6bumpdiff.cpp
+### Libraries/Source/WWVegas/wwshade/shd6bumpdiff.cpp
 - D3DRS_SOFTWAREVERTEXPROCESSING
 - D3DTA_DIFFUSE
 - D3DTA_TEXTURE
@@ -2713,7 +2713,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVSD_STREAM
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd6bumpspec.cpp
+### Libraries/Source/WWVegas/wwshade/shd6bumpspec.cpp
 - D3DRS_SOFTWAREVERTEXPROCESSING
 - D3DTA_CURRENT
 - D3DTA_DIFFUSE
@@ -2741,7 +2741,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVSD_STREAM
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd7bumpdiff.cpp
+### Libraries/Source/WWVegas/wwshade/shd7bumpdiff.cpp
 - D3DBLEND_ONE
 - D3DBLEND_SRCALPHA
 - D3DBLEND_ZERO
@@ -2777,7 +2777,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVSD_STREAM
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd7bumpspec.cpp
+### Libraries/Source/WWVegas/wwshade/shd7bumpspec.cpp
 - D3DBLEND_ONE
 - D3DBLEND_SRCALPHA
 - D3DBLEND_ZERO
@@ -2813,7 +2813,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVSD_STREAM
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8bumpdiff.cpp
+### Libraries/Source/WWVegas/wwshade/shd8bumpdiff.cpp
 - D3DTS_PROJECTION
 - D3DTS_VIEW
 - D3DTS_WORLD
@@ -2825,7 +2825,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVSD_STREAM
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8bumpspec.cpp
+### Libraries/Source/WWVegas/wwshade/shd8bumpspec.cpp
 - D3DTS_PROJECTION
 - D3DTS_VIEW
 - D3DTS_WORLD
@@ -2837,7 +2837,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DVSD_STREAM
 - D3DXVECTOR4
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdcubemap.cpp
+### Libraries/Source/WWVegas/wwshade/shdcubemap.cpp
 - D3DMATERIAL8
 - D3DMCS_MATERIAL
 - D3DRS_AMBIENTMATERIALSOURCE
@@ -2857,10 +2857,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_TCI_CAMERASPACEREFLECTIONVECTOR
 - D3DTSS_TEXCOORDINDEX
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdcubemap.h
+### Libraries/Source/WWVegas/wwshade/shdcubemap.h
 - D3DMATERIAL8
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdglossmask.cpp
+### Libraries/Source/WWVegas/wwshade/shdglossmask.cpp
 - D3DMATERIAL8
 - D3DMCS_MATERIAL
 - D3DRS_AMBIENTMATERIALSOURCE
@@ -2884,10 +2884,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_TCI_PASSTHRU
 - D3DTSS_TEXCOORDINDEX
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdglossmask.h
+### Libraries/Source/WWVegas/wwshade/shdglossmask.h
 - D3DMATERIAL8
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdhwshader.cpp
+### Libraries/Source/WWVegas/wwshade/shdhwshader.cpp
 - D3DFVF_DIFFUSE
 - D3DFVF_XYZ
 - D3DLIGHT8
@@ -2899,7 +2899,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DXVECTOR3
 - D3D_OK
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdlegacyw3d.cpp
+### Libraries/Source/WWVegas/wwshade/shdlegacyw3d.cpp
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
 - D3DFVF_TEX1
@@ -2914,10 +2914,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_TCI_PASSTHRU
 - D3DTSS_TEXCOORDINDEX
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdrenderer.cpp
+### Libraries/Source/WWVegas/wwshade/shdrenderer.cpp
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdsimple.cpp
+### Libraries/Source/WWVegas/wwshade/shdsimple.cpp
 - D3DMATERIAL8
 - D3DMCS_MATERIAL
 - D3DRS_AMBIENTMATERIALSOURCE
@@ -2936,10 +2936,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DTSS_TCI_PASSTHRU
 - D3DTSS_TEXCOORDINDEX
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdsimple.h
+### Libraries/Source/WWVegas/wwshade/shdsimple.h
 - D3DMATERIAL8
 
-### ./GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shdsubmesh.cpp
+### Libraries/Source/WWVegas/wwshade/shdsubmesh.cpp
 - D3DFVF_DIFFUSE
 - D3DFVF_NORMAL
 - D3DFVF_SPECULAR
@@ -2953,7 +2953,7 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DFVF_TEX8
 - D3DFVF_XYZ
 
-### ./GeneralsMD/Code/Tools/WorldBuilder/src/DrawObject.cpp
+### Tools/WorldBuilder/src/DrawObject.cpp
 - D3DCULL_NONE
 - D3DFILL_SOLID
 - D3DFILL_WIREFRAME
@@ -2963,10 +2963,10 @@ This report details all files referencing DirectX calls, organized by file path,
 - D3DRS_LIGHTING
 - D3DTS_WORLD
 
-### ./GeneralsMD/Code/Tools/WorldBuilder/src/ObjectPreview.cpp
+### Tools/WorldBuilder/src/ObjectPreview.cpp
 - D3DLOCKED_RECT
 - D3DLOCK_READONLY
 - D3DSURFACE_DESC
 
-### ./GeneralsMD/Code/Tools/WorldBuilder/src/wbview3d.cpp
+### Tools/WorldBuilder/src/wbview3d.cpp
 - D3DXCreateFont
