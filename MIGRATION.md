@@ -85,5 +85,6 @@ to fetch the following dependencies:
 - **zlib** – compression library used by the original asset archives.
 - **liblzhl** – reference implementation of EA's LZH-Light algorithm.
 
-A dedicated `lib/CMakeLists.txt` exposes these libraries as interface
-targets so they can be linked from other modules during the port.
+A dedicated `lib/CMakeLists.txt` pulls in these libraries so they can
+be linked from other modules during the port.  `zlib` and `liblzhl`
+are now built as static targets rather than header-only stubs.

@@ -8,10 +8,10 @@ add_library(miniaudio INTERFACE)
 target_include_directories(miniaudio INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio)
 
 add_library(uGLES INTERFACE)
-target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/uGLES)
+target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/
 
-add_library(zlib INTERFACE)
-target_include_directories(zlib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/zlib)
+add_subdirectory(zlib)
+add_subdirectory(liblzhl)
 
-add_library(liblzhl INTERFACE)
-target_include_directories(liblzhl INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/liblzhl/include)
+# Provide a simple alias matching the previous interface target name
+add_library(liblzhl ALIAS lzhl)
