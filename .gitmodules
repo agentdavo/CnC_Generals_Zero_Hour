@@ -1,0 +1,9 @@
+[submodule "lib/lvgl"]
+	path = lib/lvgl
+	url = https://github.com/lvgl/lvgl.git
+[submodule "lib/miniaudio"]
+	path = lib/miniaudio
+	url = https://github.com/mackron/miniaudio.git
+[submodule "lib/uGLES"]
+	path = lib/uGLES
+	url = https://github.com/agentdavo/microGLES.git

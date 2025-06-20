@@ -21,6 +21,21 @@ If you wish to rebuild the source code and tools successfully you will need to f
 - ZLib (1.1.4) - (expected path `\Code\Libraries\Source\Compression\ZLib\`)
 - LZH-Light (1.0) - (expected path `\Code\Libraries\Source\Compression\LZHCompress\CompLibSource` and `CompLibHeader`)
 
+## Directory Layout
+
+Source code now resides in `src/`, public headers in `include/`, and libraries in `lib/`. The legacy tree under `Generals/Code` will be migrated here over time.
+
+External libraries such as LVGL, miniaudio and uGLES are provided as git
+submodules within `lib/`. After cloning this repository run:
+
+```sh
+git submodule update --init --recursive
+```
+to fetch them.
+
+CMake builds these third party libraries via `lib/CMakeLists.txt`.
+
+ 
 
 ## Compiling (Win32 Only)
 
@@ -30,9 +45,18 @@ The quickest way to build all configurations in the project is to open `rts.dsw`
 
 If you wish to compile the code under a modern version of Microsoft Visual Studio, you can convert the legacy project file to a modern MSVC solution by opening `rts.dsw` in Microsoft Visual Studio .NET 2003, and then opening the newly created project and solution file in MSVC 2015 or newer.
 
+## CMake Build (Experimental)
+You can try building a minimal stub using CMake:
+```
+cmake -S . -B build
+cmake --build build
+```
+This will compile a placeholder executable while migration is in progress.
+
 NOTE: As modern versions of MSVC enforce newer revisions of the C++ standard, you will need to make extensive changes to the codebase before it successfully compiles, even more so if you plan on compiling for the Win64 platform.
 
 When the workspace has finished building, the compiled binaries will be copied to the folder called `/Run/` found in the root of each games directory. 
+ 
 
 
 ## Known Issues
