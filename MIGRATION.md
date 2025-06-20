@@ -54,6 +54,23 @@ Partial GameEngine and GameEngineDevice sources have been moved to `src/GameEngi
 The audio subsystem under `GameEngine/Source/Common` has been migrated into
 `src/GameEngine/Common/Audio` with corresponding headers now located in
 `include/GameEngine/Common`.
+Several UI related classes from `GameEngine/Source/GameClient` have been moved
+into `src/GameEngine/GameClient` with headers under `include/GameClient`. The
+precompiled header `PreRTS.h` now lives in `include/Precompiled` and is added to
+the build include paths.
+Bezier math helpers (`BezFwdIterator`, `BezierSegment`) and the `CRCDebug`
+logging utilities have been migrated into `src/GameEngine/Common` with headers
+under `include/GameEngine/Common`. A small stub of `D3DX8Math.h` now lives in
+`include/` to keep these sources compiling on non-Windows hosts.
+The INI configuration system has been relocated under `src/GameEngine/Common/INI`
+with accompanying headers in `include/GameEngine/Common`.
+Fast trigonometry helpers (`QuickTrig`) and general game constants (`GameCommon`)
+are now located in `src/GameEngine/Common/System` with their headers available
+in `include/GameEngine/Common`.
+String handling utilities (`AsciiString`, `UnicodeString`, and the legacy
+`WSYS_String` wrapper) along with thread primitives (`CriticalSection` and
+`ScopedMutex`) have been migrated into the same directory. `PerfTimer.cpp` now
+lives directly under `src/GameEngine/Common`.
 Legacy code still depends on the Visual Studio projects and will not compile without extensive work.
 
 Additional open source libraries are now tracked as submodules under `lib/`.
@@ -62,9 +79,11 @@ to fetch the following dependencies:
 
 - **lvgl** – provides the window and canvas system for new ports.
 - **miniaudio** – simple cross‑platform audio backend.
+-   The README in `lib/miniaudio` highlights built-in MP3 support which will
+    simplify shimming the Miles Sound System calls.
 - **uGLES** – a lightweight OpenGL ES 1.1 wrapper.
-- **zlib** – legacy compression code now compiled via CMake.
-- **liblzhl** – alternative LZ-based compressor bundled with SAGE.
+- **zlib** – compression library used by the original asset archives.
+- **liblzhl** – reference implementation of EA's LZH-Light algorithm.
 
 A dedicated `lib/CMakeLists.txt` pulls in these libraries so they can
 be linked from other modules during the port.  `zlib` and `liblzhl`

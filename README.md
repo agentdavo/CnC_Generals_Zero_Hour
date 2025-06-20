@@ -25,7 +25,7 @@ If you wish to rebuild the source code and tools successfully you will need to f
 
 Source code now resides in `src/`, public headers in `include/`, and libraries in `lib/`. The legacy tree under `Generals/Code` will be migrated here over time.
 
-External libraries such as LVGL, miniaudio and uGLES are provided as git
+External libraries such as LVGL, miniaudio, uGLES, zlib and liblzhl are provided as git
 submodules within `lib/`. After cloning this repository run:
 
 ```sh
