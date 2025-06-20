@@ -9,3 +9,9 @@ target_include_directories(miniaudio INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/minia
 
 add_library(uGLES INTERFACE)
 target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/uGLES)
+
+add_library(zlib INTERFACE)
+target_include_directories(zlib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/zlib)
+
+add_library(liblzhl INTERFACE)
+target_include_directories(liblzhl INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/liblzhl/include)
