@@ -58,6 +58,9 @@ Several UI related classes from `GameEngine/Source/GameClient` have been moved
 into `src/GameEngine/GameClient` with headers under `include/GameClient`. The
 precompiled header `PreRTS.h` now lives in `include/Precompiled` and is added to
 the build include paths.
+All remaining modules from `GameEngine/Source/GameClient` have now been
+relocated in the same manner. `src/GameEngine/CMakeLists.txt` uses `file(GLOB)`
+to compile the new source tree.
 Bezier math helpers (`BezFwdIterator`, `BezierSegment`) and the `CRCDebug`
 logging utilities have been migrated into `src/GameEngine/Common` with headers
 under `include/GameEngine/Common`. A small stub of `D3DX8Math.h` now lives in
