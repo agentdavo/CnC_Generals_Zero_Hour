@@ -81,4 +81,7 @@ if(COMMAND target_precompile_headers)
     target_precompile_headers(gameengine PRIVATE
         ${PROJECT_SOURCE_DIR}/include/Precompiled/PreRTS.h)
 endif()
+
+# Link against UniSpy networking library
+target_link_libraries(gameengine PUBLIC UniSpySDK)
 # Partial migration of GameEngine sources
