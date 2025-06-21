@@ -186,3 +186,5 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Removed the legacy `Generals/Code` copies of the W3D device common files.
   `src/GameEngineDevice/CMakeLists.txt` now globs these sources from
   `src/GameEngineDevice/W3DDevice/Common`.
+
+- Networking now links against the full UniSpySDK library. GameEngine sources include headers from `lib/UniSpySDK` and no longer rely on GameSpy stubs.

@@ -31,7 +31,7 @@
 #ifndef __PEERTHREAD_H__
 #define __PEERTHREAD_H__
 
-#include "GameSpy/Peer/Peer.h"
+#include "Peer/peer.h"
 #include "GameNetwork/NetworkDefs.h"
 
 enum SerialAuthResult
