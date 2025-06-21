@@ -100,6 +100,9 @@ with optional support for SDL, Wayland, DRM, fbdev and NuttX via
 
 Miniaudio is also compiled as a small static library so the engine can
 link it directly.
+A Miles SDK stub under `lib/miles-sdk-stub` now links against miniaudio to provide the legacy `mss32.dll` interface.
+The stub has been expanded with additional `AIL_*` helpers so more of the
+original audio subsystem compiles against the new backend.
 
 A dedicated `lib/CMakeLists.txt` pulls in these libraries so they can
 be linked from other modules during the port.  `zlib` and `liblzhl`

@@ -111,6 +111,7 @@ target_include_directories(UniSpySDK INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/UniSp
 add_library(STLport INTERFACE)
 target_include_directories(STLport INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/STLport)
 
+add_subdirectory(miles-sdk-stub)
 add_subdirectory(zlib)
 add_subdirectory(liblzhl)
 
