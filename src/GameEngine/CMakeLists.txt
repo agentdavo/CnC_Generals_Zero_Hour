@@ -60,11 +60,17 @@ file(GLOB GAME_NETWORK_SRCS
     GameNetwork/WOLBrowser/*.cpp
 )
 
+file(GLOB_RECURSE GAME_LOGIC_SRCS CONFIGURE_DEPENDS
+    GameLogic/*.cpp
+)
+
 target_sources(gameengine PRIVATE ${GAME_NETWORK_SRCS})
+target_sources(gameengine PRIVATE ${GAME_LOGIC_SRCS})
 
 target_include_directories(gameengine PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/GameEngine
+    ${PROJECT_SOURCE_DIR}/include/GameEngine/GameLogic
     ${PROJECT_SOURCE_DIR}/include/Precompiled
 )
 # Partial migration of GameEngine sources
