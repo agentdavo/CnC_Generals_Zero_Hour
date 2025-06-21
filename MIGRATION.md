@@ -157,9 +157,9 @@ in favour of the LVGL implementations.  `Generals/Code/GameEngineDevice/Source/l
 and `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglMouse.cpp`
 previously provided only a basic keyboard and pointer interface.  Modifier keys
 are now detected and `convert_lv_key()` translates every key listed in
-`KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  Once these files
-replace their Win32 counterparts `src/CMakeLists.txt` will link the
-`lvglDevice` library unconditionally.
+`KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  The new
+`lvglDevice` library now lives under `src/GameEngineDevice/lvglDevice` and is
+linked unconditionally from `src/CMakeLists.txt`.
 
 Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
 - The W3D device common files (radar, convert and factory helpers) now live under `src/GameEngineDevice/W3DDevice/Common` with their headers available in `include/GameEngineDevice/W3DDevice`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
