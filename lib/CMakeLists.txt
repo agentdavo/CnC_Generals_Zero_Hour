@@ -94,7 +94,11 @@ if(LVGL_USE_NUTTX)
     target_compile_definitions(lvgl PUBLIC LV_USE_NUTTX=1)
 endif()
 
-add_library(miniaudio STATIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio/miniaudio.c)
+set(MINIAUDIO_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio/miniaudio.c)
+if(NOT EXISTS ${MINIAUDIO_SOURCE})
+    message(FATAL_ERROR "miniaudio source not found: did you forget to init the submodule?")
+endif()
+add_library(miniaudio STATIC ${MINIAUDIO_SOURCE})
 target_include_directories(miniaudio PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio)
 if(APPLE)
     # CoreAudio headers rely on Clang blocks which are disabled by default for C
