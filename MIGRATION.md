@@ -162,4 +162,13 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - The W3D device common files (radar, convert and factory helpers) now live under `src/GameEngineDevice/W3DDevice/Common` with their headers available in `include/GameEngineDevice/W3DDevice`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
 - The GameLogic subsystem has been relocated from `Generals/Code/GameEngine/Source/GameLogic` and `Generals/Code/GameEngine/Include/GameLogic` into `src/GameEngine/GameLogic` and `include/GameEngine/GameLogic`. `src/GameEngine/CMakeLists.txt` now globs these files into the `gameengine` library.
 - The precompiled source `PreRTS.cpp` moved to `src/GameEngine/Precompiled` and the header now excludes Windows-only includes. CMake builds use `target_precompile_headers` when available.
-- A lightweight `Logger` utility now lives in `src/Common` and `include/Common`. `Logger::init()` writes to `std::clog` and an optional file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_ERROR` replace direct console output in `src/main.cpp`.
+- A lightweight `Logger` utility now lives in `src/Common` and `include/Common`. `Logger::init()` writes to `std::clog` and optionally a file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_ERROR` replace direct console output in `src/main.cpp`.
+
+  Example of logging progress during start-up:
+
+  ```cpp
+  Logger::init("generals.log");
+  LOG_INFO("Initializing engine");
+  LOG_INFO("Loading assets");
+  LOG_INFO("Displaying main menu");
+  ```
