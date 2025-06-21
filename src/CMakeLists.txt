@@ -33,8 +33,6 @@ target_link_libraries(lvglDevice PUBLIC LvglPlatform)
 
 set(GENERALS_SRC
     main.cpp
-    LvglInput/LvglKeyboard.cpp
-    LvglInput/LvglMouse.cpp
     LvglGameEngine/LvglGameEngine.cpp
 )
 
@@ -43,7 +41,6 @@ target_include_directories(Generals PRIVATE
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/Precompiled
     ${PROJECT_SOURCE_DIR}/src
-    ${PROJECT_SOURCE_DIR}/src/LvglInput
     ${PROJECT_SOURCE_DIR}/src/LvglGameEngine
 )
 target_link_libraries(Generals PRIVATE LvglPlatform)

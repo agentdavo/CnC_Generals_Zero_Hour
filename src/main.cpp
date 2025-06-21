@@ -4,8 +4,8 @@
 #include <unistd.h>
 
 #include "LvglPlatform/LvglPlatform.h"
-#include "LvglInput/LvglKeyboard.h"
-#include "LvglInput/LvglMouse.h"
+#include "lvglDevice/GameClient/LvglKeyboard.h"
+#include "lvglDevice/GameClient/LvglMouse.h"
 #include "LvglGameEngine/LvglGameEngine.h"
 
 static uint32_t window_width = 800;

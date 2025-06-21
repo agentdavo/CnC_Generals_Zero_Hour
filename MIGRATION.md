@@ -138,6 +138,11 @@ A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
 `LvglBIGFile.cpp` and `LvglBIGFileSystem.cpp` now port the original BIG archive loader using only standard C++ headers.
 `LvglMouse.cpp` now registers a pointer device with LVGL and translates its button states and coordinates into the engine's `MouseIO` structure.
+The implementation has been expanded with an internal event buffer mirroring
+the old Win32 behaviour. Right and middle button states as well as scroll wheel
+movement are now tracked when supported by the underlying LVGL backend.  The
+temporary `src/LvglInput` stubs have been removed with the application directly
+including the new device headers.
 
 LvglLocalFileSystem now replaces Win32 directory calls with std::filesystem for file access.
 The CMake build now globs the `lvglDevice` sources into a static library and links it to the `Generals` stub by default on non-Windows hosts. Pass `-DUSE_LVGL_DEVICE=ON` to force this implementation or `OFF` to fall back to the unported `Win32Device` tree on Windows.
