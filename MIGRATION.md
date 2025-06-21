@@ -58,6 +58,9 @@ Several UI related classes from `GameEngine/Source/GameClient` have been moved
 into `src/GameEngine/GameClient` with headers under `include/GameClient`. The
 precompiled header `PreRTS.h` now lives in `include/Precompiled` and is added to
 the build include paths.
+All remaining modules from `GameEngine/Source/GameClient` have now been
+relocated in the same manner. `src/GameEngine/CMakeLists.txt` uses `file(GLOB)`
+to compile the new source tree.
 Bezier math helpers (`BezFwdIterator`, `BezierSegment`) and the `CRCDebug`
 logging utilities have been migrated into `src/GameEngine/Common` with headers
 under `include/GameEngine/Common`. A small stub of `D3DX8Math.h` now lives in
@@ -175,3 +178,7 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Miles audio management header moved to `include/GameEngineDevice/MilesAudioDevice`. CMake no longer references `Generals/Code/GameEngineDevice/ A lightweight `Logger` utility now lives in `src/Common` and `include/Common`. `Logger::init()` writes to `std::clog` and an optional file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_E
 - MilesAudioManager now builds against a miniaudio-based shim which replaces DirectSound. The gameenginedevice module links with the `milesstub` library and audio headers have moved to `include/GameEngineDevice`.
 - `gameenginedevice` now links against `milesstub` from `lib/miles-sdk-stub`.
+- Win32 placeholders in `lvglDevice` have been filled with stub class
+  declarations. Source files now include these headers and the library is linked
+  unconditionally from `src/CMakeLists.txt`. A new `include/Common/win32_defs.h`
+  defines Windows types like `DWORD` and `HRESULT` for non-MSVC builds.

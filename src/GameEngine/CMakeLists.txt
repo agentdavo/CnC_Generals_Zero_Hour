@@ -20,11 +20,6 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/PerfTimer.cpp
     ../Common/Logger.cpp
     Precompiled/PreRTS.cpp
-    GameClient/Color.cpp
-    GameClient/Display.cpp
-    GameClient/DisplayString.cpp
-    GameClient/DisplayStringManager.cpp
-    GameClient/DrawGroupInfo.cpp
     Common/INI/INI.cpp
     Common/INI/INIAiData.cpp
     Common/INI/INIAnimation.cpp
@@ -55,6 +50,10 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/INI/INIWebpageURL.cpp
 )
 
+file(GLOB_RECURSE GAME_CLIENT_SRCS CONFIGURE_DEPENDS
+    GameClient/*.cpp
+)
+
 file(GLOB GAME_NETWORK_SRCS
     GameNetwork/*.cpp
     GameNetwork/GameSpy/*.cpp
@@ -67,6 +66,7 @@ file(GLOB_RECURSE GAME_LOGIC_SRCS CONFIGURE_DEPENDS
 )
 
 target_sources(gameengine PRIVATE ${GAME_NETWORK_SRCS})
+target_sources(gameengine PRIVATE ${GAME_CLIENT_SRCS})
 target_sources(gameengine PRIVATE ${GAME_LOGIC_SRCS})
 
 target_include_directories(gameengine PUBLIC
