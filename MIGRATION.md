@@ -135,4 +135,6 @@ only compiled on Windows targets.
 
 A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
+`LvglMouse.cpp` now registers a pointer device with LVGL and translates its button states and
+coordinates into the engine's `MouseIO` structure.
 
