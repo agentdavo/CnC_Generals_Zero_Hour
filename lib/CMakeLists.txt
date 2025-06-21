@@ -96,6 +96,11 @@ endif()
 
 add_library(miniaudio STATIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio/miniaudio.c)
 target_include_directories(miniaudio PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio)
+if(APPLE)
+    # CoreAudio headers rely on Clang blocks which are disabled by default for C
+    # sources. Enable them when building on macOS to avoid compilation errors.
+    target_compile_options(miniaudio PRIVATE -fblocks)
+endif()
 
 add_library(uGLES INTERFACE)
 target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/uGLES)
