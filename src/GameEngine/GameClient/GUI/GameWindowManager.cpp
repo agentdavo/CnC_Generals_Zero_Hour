@@ -32,6 +32,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "Common/Debug.h"
+#include "Common/Logger.h"
 #include "Common/Language.h"
 #include "GameClient/Display.h"
 #include "GameClient/GameWindowManager.h"
@@ -218,8 +219,9 @@ GameWindowManager::~GameWindowManager( void )
 //-------------------------------------------------------------------------------------------------
 void GameWindowManager::init( void )
 {
-	if(!TheTransitionHandler)
-		TheTransitionHandler = NEW GameWindowTransitionsHandler;
+        LOG_INFO("GameWindowManager initialized");
+        if(!TheTransitionHandler)
+                TheTransitionHandler = NEW GameWindowTransitionsHandler;
 	TheTransitionHandler->load();
 	TheTransitionHandler->init();
 }  // end init
@@ -229,6 +231,7 @@ void GameWindowManager::init( void )
 //-------------------------------------------------------------------------------------------------
 void GameWindowManager::reset( void )
 {
+        LOG_INFO("GameWindowManager reset");
 
 	// destroy all windows left
 	winDestroyAll();
@@ -242,6 +245,7 @@ void GameWindowManager::reset( void )
 //-------------------------------------------------------------------------------------------------
 void GameWindowManager::update( void )
 {
+        LOG_INFO("GameWindowManager update");
 
 	// Process windows waiting to be destroyed
 	processDestroyList();
@@ -1664,7 +1668,8 @@ GameWindow *GameWindowManager::gogoMessageBox(Int x, Int y, Int width, Int heigh
                         GameWinMsgBoxFunc okCallback,
                         GameWinMsgBoxFunc cancelCallback )
 {
-	return gogoMessageBox(x,y, width,height,buttonFlags,titleString,bodyString,yesCallback,noCallback,okCallback,cancelCallback, FALSE);
+        LOG_INFO("gogoMessageBox called");
+        return gogoMessageBox(x,y, width,height,buttonFlags,titleString,bodyString,yesCallback,noCallback,okCallback,cancelCallback, FALSE);
 }
 
 GameWindow *GameWindowManager::gogoMessageBox(Int x, Int y, Int width, Int height, UnsignedShort buttonFlags,
@@ -1675,6 +1680,7 @@ GameWindow *GameWindowManager::gogoMessageBox(Int x, Int y, Int width, Int heigh
                         GameWinMsgBoxFunc cancelCallback, Bool useLogo )
 
 {
+        LOG_INFO("gogoMessageBox: showing message box");
 	// first check to make sure we have some buttons to display
 	if(buttonFlags == 0 )
 	{
