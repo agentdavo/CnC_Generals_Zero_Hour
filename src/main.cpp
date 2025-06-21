@@ -34,24 +34,6 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    struct resize_ctx {
-        lv_display_t *disp;
-        uint32_t base_w;
-        uint32_t base_h;
-        bool toggled;
-    } ctx { disp, window_width, window_height, false };
-
-    auto resize_cb = [](lv_timer_t *t){
-        resize_ctx *c = static_cast<resize_ctx *>(lv_timer_get_user_data(t));
-        uint32_t new_w = c->toggled ? c->base_w : c->base_w + 100;
-        uint32_t new_h = c->toggled ? c->base_h : c->base_h + 100;
-        lv_display_set_resolution(c->disp, new_w, new_h);
-        c->toggled = !c->toggled;
-    };
-
-    lv_timer_t *timer = lv_timer_create(resize_cb, 3000, &ctx);
-    (void)timer;
-
     while(true) {
         LvglPlatform::poll_events();
     }
