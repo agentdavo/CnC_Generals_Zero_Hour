@@ -20,7 +20,7 @@ public:
     virtual void close() override;
     virtual Int read(void *buffer, Int bytes) override;
     virtual Int write(const void *buffer, Int bytes) override;
-    virtual Int seek(Int new_pos, seekMode mode = CURRENT) override;
+    virtual Int seek(Int new_pos, File::seekMode mode = File::CURRENT) override;
     virtual void nextLine(Char *buf = NULL, Int bufSize = 0) override;
     virtual Bool scanInt(Int &newInt) override;
     virtual Bool scanReal(Real &newReal) override;

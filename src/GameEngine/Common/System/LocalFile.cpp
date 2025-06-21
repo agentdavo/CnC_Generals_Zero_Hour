@@ -54,11 +54,11 @@ Int LocalFile::write(const void *buffer, Int bytes) {
     return static_cast<Int>(fwrite(buffer, 1, bytes, m_fp));
 }
 
-Int LocalFile::seek(Int new_pos, seekMode mode) {
+Int LocalFile::seek(Int new_pos, File::seekMode mode) {
     if(!m_fp) return -1;
     int origin = SEEK_SET;
-    if(mode == CURRENT) origin = SEEK_CUR;
-    else if(mode == END) origin = SEEK_END;
+    if(mode == File::CURRENT) origin = SEEK_CUR;
+    else if(mode == File::END) origin = SEEK_END;
     if(fseek(m_fp, new_pos, origin) != 0)
         return -1;
     long pos = ftell(m_fp);
