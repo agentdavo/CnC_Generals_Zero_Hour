@@ -136,3 +136,8 @@ only compiled on Windows targets.
 A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
 
+The CMake build now globs the `lvglDevice` sources into a static library and
+links it to the `Generals` stub by default on non‑Windows hosts. Pass
+`-DUSE_LVGL_DEVICE=ON` to force this implementation or `OFF` to fall back to the
+unported `Win32Device` tree on Windows.
+
