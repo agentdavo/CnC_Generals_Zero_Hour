@@ -858,6 +858,7 @@ extern void userMemoryAdjustPoolSize(const char *poolName, Int& initialAllocatio
 
 #ifdef __cplusplus
 
+#if defined(_MSC_VER)
 #ifndef _OPERATOR_NEW_DEFINED_
 
 	#define _OPERATOR_NEW_DEFINED_
@@ -881,6 +882,7 @@ extern void userMemoryAdjustPoolSize(const char *poolName, Int& initialAllocatio
 	inline void* __cdecl operator new[]						(size_t s, void *p) { return p; }
 	inline void __cdecl operator delete[]					(void *, void *p)		{ }
 
+#endif
 #endif
 
 #ifdef MEMORYPOOL_DEBUG_CUSTOM_NEW

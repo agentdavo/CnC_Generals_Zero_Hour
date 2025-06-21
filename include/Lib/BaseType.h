@@ -32,8 +32,15 @@
 #ifndef _BASE_TYPE_H_
 #define _BASE_TYPE_H_
 
-#include <math.h>
-#include <string.h>
+#include <cmath>
+#include <cstring>
+
+#ifndef __forceinline
+#define __forceinline inline __attribute__((always_inline))
+#endif
+#ifndef __cdecl
+#define __cdecl
+#endif
 
 /*
 **	Turn off some unneeded warnings.
@@ -97,13 +104,24 @@
 //#define abs(x) (((x) < 0) ? -(x) : (x))
 //#endif
 
-#ifndef min
-#define min(x,y) (((x)<(y)) ? (x) : (y))
+#ifdef min
+#undef min
+#endif
+#ifdef max
+#undef max
 #endif
 
-#ifndef max
-#define max(x,y) (((x)>(y)) ? (x) : (y))
-#endif
+template <typename T, typename U>
+constexpr auto min(const T& a, const U& b) -> decltype(a < b ? a : b)
+{
+    return (b < a) ? b : a;
+}
+
+template <typename T, typename U>
+constexpr auto max(const T& a, const U& b) -> decltype(a < b ? b : a)
+{
+    return (a < b) ? b : a;
+}
 
 #ifndef TRUE
 #define TRUE true
@@ -125,9 +143,10 @@ typedef unsigned char			UnsignedByte;			// 1 byte		USED TO BE "Byte"
 typedef char							Byte;							// 1 byte		USED TO BE "SignedByte"
 typedef char							Char;							// 1 byte of text
 typedef bool							Bool;							// 
-// note, the types below should use "long long", but MSVC doesn't support it yet
-typedef __int64						Int64;							// 8 bytes 
-typedef unsigned __int64	UnsignedInt64;	  	// 8 bytes 
+// 64-bit integer types
+#include <cstdint>
+typedef int64_t Int64; // 8 bytes 
+typedef uint64_t UnsignedInt64;	  	// 8 bytes 
 
 #include "Lib/trig.h"
 
@@ -174,16 +193,9 @@ inline Real deg2rad(Real rad) { return rad * (PI/180); }
 // note, this function depends on the cpu rounding mode, which we set to CHOP every frame, 
 // but apparently tends to be left in unpredictable modes by various system bits of
 // code, so use this function with caution -- it might not round in the way you want.
-__forceinline long fast_float2long_round(float f)
+inline long fast_float2long_round(float f)
 {
-	long i;
-
-	__asm {
-		fld [f]
-		fistp [i]
-	}
-
-	return i;
+        return lroundf(f);
 }
 
 //-------------------------------------------------------------------------------------------------

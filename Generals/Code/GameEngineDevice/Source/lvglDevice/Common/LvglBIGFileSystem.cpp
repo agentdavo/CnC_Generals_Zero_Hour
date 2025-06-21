@@ -5,8 +5,8 @@
 #include "Common/GameAudio.h"
 #include "Common/GameMemory.h"
 #include "Common/LocalFileSystem.h"
-#include "Win32Device/Common/Win32BIGFile.h"
-#include "Win32Device/Common/Win32BIGFileSystem.h"
+#include "lvglDevice/Common/Win32BIGFile.h"
+#include "lvglDevice/Common/Win32BIGFileSystem.h"
 #include "Common/registry.h"
 #include <cstdint>
 #include <cctype>
