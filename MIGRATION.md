@@ -159,3 +159,5 @@ replace their Win32 counterparts `src/CMakeLists.txt` will link the
 `lvglDevice` library unconditionally.
 
 Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sensitive builds.
+
+- The W3D device common files (radar, convert and factory helpers) now live under `src/GameEngineDevice/W3DDevice/Common` with their headers available in `include/GameEngineDevice/W3DDevice`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
