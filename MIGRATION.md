@@ -137,6 +137,7 @@ only compiled on Windows targets.
 A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
 `LvglBIGFile.cpp` and `LvglBIGFileSystem.cpp` now port the original BIG archive loader using only standard C++ headers.
+`LvglOSDisplay.cpp` has been expanded to handle all button and icon combinations. Modal flags now create a clickable overlay on `lv_layer_top` to block background input and the returned value matches the pressed button.
 `LvglMouse.cpp` now registers a pointer device with LVGL and translates its button states and coordinates into the engine's `MouseIO` structure.
 The implementation has been expanded with an internal event buffer mirroring
 the old Win32 behaviour. Right and middle button states as well as scroll wheel
