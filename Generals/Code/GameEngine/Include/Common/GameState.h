@@ -35,7 +35,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "Common/STLTypedefs.h"
 #include "Common/Snapshot.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/UnicodeString.h"
 #include "GameNetwork/NetworkDefs.h"
 

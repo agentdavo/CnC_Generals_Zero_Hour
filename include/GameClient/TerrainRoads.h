@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "Common/GameMemory.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 #include "GameLogic/Module/BodyModule.h"
 

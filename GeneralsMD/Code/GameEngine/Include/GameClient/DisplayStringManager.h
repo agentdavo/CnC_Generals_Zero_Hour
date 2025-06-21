@@ -32,7 +32,7 @@
 #ifndef __DISPLAYSTRINGMANAGER_H_
 #define __DISPLAYSTRINGMANAGER_H_
 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/DisplayString.h"
 
 //-------------------------------------------------------------------------------------------------

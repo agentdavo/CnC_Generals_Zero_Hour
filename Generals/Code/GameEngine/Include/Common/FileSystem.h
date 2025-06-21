@@ -52,7 +52,7 @@
 
 //#include "Common/File.h"
 #include "Common/STLTypedefs.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 //----------------------------------------------------------------------------
 //           Forward References

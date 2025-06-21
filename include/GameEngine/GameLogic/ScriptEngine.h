@@ -37,7 +37,7 @@
 #include "Common/STLTypedefs.h"
 #include "Common/Science.h"
 #include "Common/Snapshot.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameLogic/Scripts.h"
 
 class DataChunkInput;

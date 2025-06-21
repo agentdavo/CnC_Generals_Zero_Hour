@@ -52,7 +52,7 @@
 //----------------------------------------------------------------------------
 
 #include "Common/List.h"
-#include "Common/SubSystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/AsciiString.h"
 
 

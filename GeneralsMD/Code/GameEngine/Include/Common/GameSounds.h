@@ -43,7 +43,7 @@
 #ifndef __COMMON_GAMESOUNDS_H_
 #define __COMMON_GAMESOUNDS_H_
 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameAudio.h"
 #include "Common/GameType.h"
 

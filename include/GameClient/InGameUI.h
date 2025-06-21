@@ -38,7 +38,7 @@
 #include "Common/MessageStream.h"		// for GameMessageTranslator
 #include "Common/SpecialPowerType.h"
 #include "Common/STLTypedefs.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/UnicodeString.h"
 #include "GameClient/DisplayString.h"
 #include "GameClient/Mouse.h"

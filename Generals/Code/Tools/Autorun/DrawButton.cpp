@@ -56,7 +56,7 @@
 #ifndef LEAN_AND_MEAN
 ///////GAMEENGINE HEADERS////////////
 #include "Common/UnicodeString.h" 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/GameText.h"
 #endif
 

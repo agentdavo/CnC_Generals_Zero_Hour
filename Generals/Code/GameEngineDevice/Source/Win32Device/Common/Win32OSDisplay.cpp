@@ -30,7 +30,7 @@
 #include <windows.h>
 #include "Common/OSDisplay.h"
 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/STLTypeDefs.h"
 #include "Common/AsciiString.h"
 #include "Common/SystemInfo.h"

@@ -36,7 +36,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "Common/STLTypedefs.h"
 #include "Lib/BaseType.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameLogic/Object.h"
 
 // FORWARD DECLARATIONS ///////////////////////////////////////////////////////////////////////////

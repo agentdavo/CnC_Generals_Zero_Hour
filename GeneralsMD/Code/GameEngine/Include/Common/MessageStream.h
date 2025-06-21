@@ -32,7 +32,7 @@
 #define _MESSAGE_STREAM_H_
 
 #include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Lib/BaseType.h"
 #include "Common/GameMemory.h"
 

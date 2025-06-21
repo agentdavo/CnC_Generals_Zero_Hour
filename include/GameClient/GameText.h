@@ -51,7 +51,7 @@
 //----------------------------------------------------------------------------
 
 #include <vector>
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 //----------------------------------------------------------------------------
 //           Forward References

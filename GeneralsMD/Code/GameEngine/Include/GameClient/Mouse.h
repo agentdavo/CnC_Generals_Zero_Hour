@@ -53,7 +53,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "Lib/BaseType.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/AsciiString.h"
 #include "Common/UnicodeString.h"
 

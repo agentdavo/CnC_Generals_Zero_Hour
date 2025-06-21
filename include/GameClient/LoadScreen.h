@@ -36,7 +36,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "Lib/BaseType.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/GameWindow.h"
 #include "GameNetwork/GameInfo.h"
 #include "GameClient/CampaignManager.h"

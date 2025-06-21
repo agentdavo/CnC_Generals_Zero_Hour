@@ -32,7 +32,7 @@
 #define _AI_H_
 
 #include "Common/Snapshot.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameMemory.h"
 #include "Common/GameType.h"
 #include "GameLogic/Damage.h"
