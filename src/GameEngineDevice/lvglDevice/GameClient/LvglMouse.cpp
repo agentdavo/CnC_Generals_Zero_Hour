@@ -1,5 +1,6 @@
 #include "lvglDevice/GameClient/LvglMouse.h"
 #include "LvglPlatform/LvglPlatform.h"
+#include "Common/Logger.h"
 #include <lvgl.h>
 #if LV_USE_WAYLAND
 #include "lvgl/src/drivers/wayland/lv_wayland_private.h"
@@ -62,6 +63,7 @@ LvglMouse::~LvglMouse() {}
 
 void LvglMouse::init()
 {
+    LOG_INFO("LvglMouse::init");
     Mouse::init();
 
     m_inputMovesAbsolute = TRUE;
@@ -180,6 +182,7 @@ void LvglMouse::setVisibility(Bool visible)
 
 void LvglMouse::initCursorResources()
 {
+    LOG_INFO("LvglMouse::initCursorResources");
     if(!m_indev || m_cursor_obj) return;
     m_cursor_obj = lv_image_create(lv_screen_active());
     lv_image_set_src(m_cursor_obj, LV_SYMBOL_RIGHT);

@@ -1,5 +1,6 @@
 #include "lvglDevice/GameClient/LvglKeyboard.h"
 #include "Common/Debug.h"
+#include "Common/Logger.h"
 #include "GameClient/KeyDefs.h"
 #include <cstring>
 
@@ -98,6 +99,7 @@ static UnsignedByte convert_lv_key(uint32_t k)
 
 void LvglKeyboard::init()
 {
+    LOG_INFO("LvglKeyboard::init");
     Keyboard::init();
 
     m_indev = lv_indev_get_next(nullptr);
