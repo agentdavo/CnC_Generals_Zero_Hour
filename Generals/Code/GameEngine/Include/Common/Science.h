@@ -76,7 +76,7 @@ private:
 EMPTY_DTOR(ScienceInfo);
 
 //-------------------------------------------------------------------------------------------------
-class ScienceStore : public SubsystemInterface
+class ScienceStore
 {
 	friend class ScienceInfo;
 

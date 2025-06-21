@@ -23,6 +23,8 @@ This project contains the preserved source code for **Command & Conquer Generals
 - Each pull request should include a summary of the changes and reference any relevant sections of `MIGRATION.md`.
 - Build the project with CMake before submitting:
   `cmake -S . -B build && cmake --build build`.
+- Save the full build output to `log/build.log` for troubleshooting. Example:
+  `cmake -S . -B build > log/build.log 2>&1 && cmake --build build >> log/build.log 2>&1`.
 
 The CMake setup includes stub modules mirroring the original Visual Studio projects.
 `src/Main/WinMain.cpp` is the legacy entry point and is not yet part of

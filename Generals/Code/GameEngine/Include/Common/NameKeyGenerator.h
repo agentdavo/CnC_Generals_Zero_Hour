@@ -82,7 +82,7 @@ inline Bucket::~Bucket() { }
 	* instance's catalog of names.  Multiple instances of this class can be 
 	* created to service multiple namespaces. */
 //------------------------------------------------------------------------------------------------- 
-class NameKeyGenerator : public SubsystemInterface
+class NameKeyGenerator
 {
 
 public:

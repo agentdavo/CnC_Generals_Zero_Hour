@@ -1,0 +1,462 @@
+-- Configuring bundled libraries
+-- Git version 2.43.0 found at '/usr/bin/git'.
+-- Git using branch 'main', commit c8572655207da705a7e2ccd6327df496dc9f71a9/'Applying previous commit.'.
+-- Could NOT find Speex (missing: SPEEX_LIBRARY SPEEX_INCLUDE_DIR) 
+-- Could NOT find FFTW (missing: FFTW_INCLUDE_DIR FFTW_LIBRARY) 
+-- Could NOT find Ogg (missing: OGG_INCLUDE_DIR OGG_LIBRARY) 
+-- Could NOT find SpeexDsp (missing: SPEEXDSP_INCLUDE_DIR SPEEXDSP_LIBRARY) 
+-- The following features have been enabled:
+
+ * ENABLE_VAR_ARRAYS, Make use of variable-length arrays.
+ * ENABLE_FLOATING_POINT, compile as floating-point.
+ * ENABLE_SSE, enable SSE support.
+ * DISABLE_BINARIES, do not build the encoder and decoder programs, only the library.
+ * ENABLE_PACKAGE_CONFIG, generate and install package config file
+
+-- The following OPTIONAL packages have been found:
+
+ * Git
+ * OpenSSL
+
+-- The following REQUIRED packages have been found:
+
+ * X11
+ * Threads
+
+-- The following features have been disabled:
+
+ * ENABLE_ALLOCA, Make use of alloca function.
+ * ENABLE_FIXED_POINT, compile as fixed-point.
+ * ENABLE_FIXED_POINT_DEBUG, debug fixed-point implementation.
+ * ENABLE_ARM4_ASM, make use of ARM4 assembly optimizations.
+ * ENABLE_ARM5E_ASM, make use of ARM5E assembly optimizations.
+ * ENABLE_BLACKFIN_ASM, make use of Blackfin assembly optimizations.
+ * ENABLE_TI_C55X, enable support for TI C55X DSP.
+ * DISABLE_FLOAT_API, disable all parts of the API that are using floats.
+ * DISABLE_VBR, disable VBR and VAD from the codec.
+ * ENABLE_VORBIS_PSY, enable the Vorbis psy model.
+ * ENABLE_SPEEXDSP, enable speexenc preprocessing options.
+ * USE_GPL_FFTW3, Use FFTW3 library for fast Fourier transforms
+
+-- The following OPTIONAL packages have not been found:
+
+ * Speex
+ * FFTW, fast Fourier transform library, <http://www.fftw.org/>
+   Enables use of FFTW for fast Fourier transforms
+
+-- The following RECOMMENDED packages have not been found:
+
+ * Ogg, library for manipulating ogg bitstreams, <www.xiph.org/ogg/>
+   Required to build speexenc and speexdec tools
+ * SpeexDsp, speech processing library that goes along with the Speex codec, <https://speex.org/>
+   Enables speexenc tool preprocessing options
+
+-- Enabled features:
+ * ENABLE_VAR_ARRAYS, Make use of variable-length arrays.
+ * ENABLE_FLOATING_POINT, compile as floating-point.
+ * ENABLE_SSE, enable SSE support.
+ * DISABLE_BINARIES, do not build the encoder and decoder programs, only the library.
+ * ENABLE_PACKAGE_CONFIG, generate and install package config file
+
+-- Disabled features:
+ * ENABLE_ALLOCA, Make use of alloca function.
+ * ENABLE_FIXED_POINT, compile as fixed-point.
+ * ENABLE_FIXED_POINT_DEBUG, debug fixed-point implementation.
+ * ENABLE_ARM4_ASM, make use of ARM4 assembly optimizations.
+ * ENABLE_ARM5E_ASM, make use of ARM5E assembly optimizations.
+ * ENABLE_BLACKFIN_ASM, make use of Blackfin assembly optimizations.
+ * ENABLE_TI_C55X, enable support for TI C55X DSP.
+ * DISABLE_FLOAT_API, disable all parts of the API that are using floats.
+ * DISABLE_VBR, disable VBR and VAD from the codec.
+ * ENABLE_VORBIS_PSY, enable the Vorbis psy model.
+ * ENABLE_SPEEXDSP, enable speexenc preprocessing options.
+ * USE_GPL_FFTW3, Use FFTW3 library for fast Fourier transforms
+ * SharedLibs, Generate a shared library for LZHL
+ * Packaging, Generate packaging rules for LZHL
+
+-- Configuring core sources
+-- Configuring migrated engine modules
+-- Configuring legacy tools
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
+/usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
+/usr/bin/cmake -S/workspace/CnC_Generals_Zero_Hour -B/workspace/CnC_Generals_Zero_Hour/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles /workspace/CnC_Generals_Zero_Hour/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/lvgl.dir/build.make lib/CMakeFiles/lvgl.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib /workspace/CnC_Generals_Zero_Hour/build/lib/CMakeFiles/lvgl.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/lvgl.dir/build.make lib/CMakeFiles/lvgl.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/CMakeFiles/lvgl.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 43%] Built target lvgl
+/usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib /workspace/CnC_Generals_Zero_Hour/build/lib/CMakeFiles/miniaudio.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/CMakeFiles/miniaudio.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 43%] Built target miniaudio
+/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 44%] Built target usgt2
+/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common/CMakeFiles/uscommon.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 46%] Built target uscommon
+/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 47%] Built target ushttp
+/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 47%] Built target uswebservice
+/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 47%] Built target usbrigades
+/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Built target uschat
+/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Built target usnatneg
+/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 49%] Built target usqr2
+/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 49%] Built target uscdkey
+/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP/CMakeFiles/usgp.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 50%] Built target usgp
+/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 50%] Built target usstats
+/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 50%] Built target uspinger
+/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 50%] Built target usserverbrowsing
+/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target uspeer
+/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt/CMakeFiles/uspt.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target uspt
+/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake/CMakeFiles/ussake.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target ussake
+/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc/CMakeFiles/ussc.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 52%] Built target ussc
+/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 52%] Built target usd2g
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 54%] Built target gsm
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libspeex/CMakeFiles/speex.dir/build.make lib/UniSpySDK/Voice2/libspeex/CMakeFiles/speex.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libspeex /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libspeex /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libspeex/CMakeFiles/speex.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libspeex/CMakeFiles/speex.dir/build.make lib/UniSpySDK/Voice2/libspeex/CMakeFiles/speex.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/libspeex/CMakeFiles/speex.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 57%] Built target speex
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target usvoice2
+/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target UniSpySDK
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target milescleanup
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milesstub.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target milesstub
+/usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/zlib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/zlib /workspace/CnC_Generals_Zero_Hour/build/lib/zlib/CMakeFiles/zlib.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/zlib/CMakeFiles/zlib.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 60%] Built target zlib
+/usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl/CMakeFiles/lzhl.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/liblzhl/CMakeFiles/lzhl.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 60%] Built target lzhl
+/usr/bin/gmake  -f src/CMakeFiles/LvglPlatform.dir/build.make src/CMakeFiles/LvglPlatform.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src /workspace/CnC_Generals_Zero_Hour/build/src/CMakeFiles/LvglPlatform.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f src/CMakeFiles/LvglPlatform.dir/build.make src/CMakeFiles/LvglPlatform.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'src/CMakeFiles/LvglPlatform.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 60%] Built target LvglPlatform
+/usr/bin/gmake  -f src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build.make src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build.make src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 60%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglGameEngine.cpp
+[ 60%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/SubsystemInterface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFileSystem.h:34,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp:1:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/file.h: In static member function ‘static void* File::operator new(size_t, FileMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   84 |         MEMORY_POOL_GLUE_ABC(File)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/file.h: In static member function ‘static void* File::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   84 |         MEMORY_POOL_GLUE_ABC(File)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFile.h: In static member function ‘static void* LocalFile::operator new(size_t, LocalFileMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFile.h:85:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   85 |         MEMORY_POOL_GLUE_ABC(LocalFile)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFile.h: In static member function ‘static void* LocalFile::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFile.h:85:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   85 |         MEMORY_POOL_GLUE_ABC(LocalFile)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp: In member function ‘virtual File* LvglLocalFileSystem::openFile(const Char*, Int)’:
+/workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp:12:35: error: ‘static void* LocalFile::operator new(size_t, LocalFileMagicEnum)’ is protected within this context
+   12 |     LocalFile *file = newInstance(LocalFile);
+      |                                   ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:204:176: note: in definition of macro ‘newInstance’
+  204 |         #define newInstance(ARGCLASS)                                                                                           new(ARGCLASS::ARGCLASS##_GLUE_NOT_IMPLEMENTED) ARGCLASS
+      |                                                                                                                                                                                ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:687:22: note: declared protected here
+  687 |         inline void *operator new(size_t s, ARGCLASS##MagicEnum e DECLARE_LITERALSTRING_ARG2) \
+      |                      ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFile.h:85:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   85 |         MEMORY_POOL_GLUE_ABC(LocalFile)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp:12:35: error: ‘static void LocalFile::operator delete(void*, LocalFileMagicEnum)’ is protected within this context
+   12 |     LocalFile *file = newInstance(LocalFile);
+      |                                   ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:204:176: note: in definition of macro ‘newInstance’
+  204 |         #define newInstance(ARGCLASS)                                                                                           new(ARGCLASS::ARGCLASS##_GLUE_NOT_IMPLEMENTED) ARGCLASS
+      |                                                                                                                                                                                ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:695:21: note: declared protected here
+  695 |         inline void operator delete(void *p, ARGCLASS##MagicEnum e DECLARE_LITERALSTRING_ARG2) \
+      |                     ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/Generals/Code/GameEngine/Include/Common/LocalFile.h:85:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   85 |         MEMORY_POOL_GLUE_ABC(LocalFile)
+      |         ^~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build.make:135: src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o] Error 1
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[1]: *** [CMakeFiles/Makefile2:1598: src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/all] Error 2
+gmake[1]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake: *** [Makefile:139: all] Error 2
