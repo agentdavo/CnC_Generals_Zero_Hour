@@ -16,71 +16,113 @@
 #include "mss/mss.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 #include "miniaudio.h"
 
 static ma_engine g_engine;
+static ma_mutex  g_mutex;
 
-typedef struct _SAMPLE { ma_sound sound; float volume; int pan; int loop_count; } SAMPLE;
-typedef struct _STREAM { ma_sound sound; float volume; int pan; int loop_count; } STREAM;
+#define USER_DATA_SLOTS 8
+
+typedef struct _SAMPLE {
+    ma_sound sound;
+    float    volume;
+    int      pan;
+    int      loop_count;
+    int      user_data[USER_DATA_SLOTS];
+    float    position[3];
+    float    velocity[3];
+    float    orientation[6];
+    float    max_dist;
+    float    min_dist;
+    float    effects_level;
+} SAMPLE;
+
+typedef struct _STREAM {
+    ma_sound sound;
+    float    volume;
+    int      pan;
+    int      loop_count;
+    int      user_data[USER_DATA_SLOTS];
+} STREAM;
+
 typedef struct _AUDIO { ma_sound sound; float volume; } AUDIO;
 static DIG_DRIVER g_driver;
+static const char *g_provider_name = "miniaudio";
+static const HPROVIDER g_provider_id = 1;
 
 long __stdcall AIL_3D_sample_volume(H3DSAMPLE sample)
 {
-    return 0;
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s) return 0;
+    return (long)(s->volume * 127);
 }
 
 void __stdcall AIL_set_3D_sample_volume(H3DSAMPLE sample, float volume)
 {
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s) return;
+    s->volume = volume;
+    ma_sound_set_volume(&s->sound, volume);
 }
 
 void __stdcall AIL_end_3D_sample(H3DSAMPLE sample)
 {
+    AIL_end_sample((HSAMPLE)sample);
 }
 
 void __stdcall AIL_resume_3D_sample(H3DSAMPLE sample)
 {
+    AIL_resume_sample((HSAMPLE)sample);
 }
 
 void __stdcall AIL_stop_3D_sample(H3DSAMPLE sample)
 {
+    AIL_stop_sample((HSAMPLE)sample);
 }
 
 void __stdcall AIL_start_3D_sample(H3DSAMPLE sample)
 {
+    AIL_start_sample((HSAMPLE)sample);
 }
 
 unsigned int __stdcall AIL_3D_sample_loop_count(H3DSAMPLE sample)
 {
-    return 0;
+    return (unsigned int)AIL_sample_loop_count((HSAMPLE)sample);
 }
 
 void __stdcall AIL_set_3D_sample_offset(H3DSAMPLE sample, unsigned int offset)
 {
+    AIL_set_sample_ms_position((HSAMPLE)sample, offset);
 }
 
 int __stdcall AIL_3D_sample_length(H3DSAMPLE sample)
 {
-    return 0;
+    S32 len=0;
+    AIL_sample_ms_position((HSAMPLE)sample, &len, NULL);
+    return len;
 }
 
 unsigned int __stdcall AIL_3D_sample_offset(H3DSAMPLE sample)
 {
-    return 0;
+    S32 cur=0;
+    AIL_sample_ms_position((HSAMPLE)sample, NULL, &cur);
+    return cur;
 }
 
 int __stdcall AIL_3D_sample_playback_rate(H3DSAMPLE sample)
 {
-    return 0;
+    return AIL_sample_playback_rate((HSAMPLE)sample);
 }
 
 void __stdcall AIL_set_3D_sample_playback_rate(H3DSAMPLE sample, int playback_rate)
 {
+    AIL_set_sample_playback_rate((HSAMPLE)sample, playback_rate);
 }
 
 int __stdcall AIL_set_3D_sample_file(H3DSAMPLE sample, const void* file_image)
 {
-    return 0;
+    return AIL_set_sample_file((HSAMPLE)sample, file_image, 0);
 }
 
 HPROVIDER __stdcall AIL_set_sample_processor(HSAMPLE sample, SAMPLESTAGE pipeline_stage, HPROVIDER provider)
@@ -102,24 +144,33 @@ void __stdcall AIL_release_sample_handle(HSAMPLE sample)
 
 void __stdcall AIL_close_3D_provider(HPROVIDER lib)
 {
+    (void)lib;
 }
 
 int __stdcall AIL_set_preference(unsigned int number, int value)
 {
-    return 0;
+    if(number == DIG_USE_WAVEOUT){
+        g_driver.emulated_ds = value;
+        return AIL_NO_ERROR;
+    }
+    return AIL_NO_ERROR;
 }
 
 int __stdcall AIL_waveOutOpen(HDIGDRIVER* driver, LPHWAVEOUT* waveout, int id, LPWAVEFORMAT format)
 {
-    return 0;
+    (void)waveout; (void)id; (void)format;
+    if(driver) *driver = &g_driver;
+    return AIL_NO_ERROR;
 }
 
 void __stdcall AIL_waveOutClose(HDIGDRIVER driver)
 {
+    (void)driver;
 }
 
 void __stdcall AIL_set_3D_sample_loop_count(H3DSAMPLE sample, unsigned int count)
 {
+    AIL_set_sample_loop_count((HSAMPLE)sample, count);
 }
 
 void __stdcall AIL_set_stream_playback_rate(HSTREAM stream, int rate)
@@ -379,23 +430,40 @@ int __stdcall AIL_set_named_sample_file(
 
 void __stdcall AIL_set_3D_sample_effects_level(H3DSAMPLE sample, float effect_level)
 {
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s) return;
+    s->effects_level = effect_level;
 }
 
 void __stdcall AIL_set_3D_sample_distances(H3DSAMPLE sample, float max_dist, float min_dist)
 {
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s) return;
+    s->max_dist = max_dist;
+    s->min_dist = min_dist;
 }
 
 void __stdcall AIL_set_3D_velocity_vector(H3DSAMPLE sample, float x, float y, float z)
 {
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s) return;
+    s->velocity[0] = x; s->velocity[1] = y; s->velocity[2] = z;
 }
 
 void __stdcall AIL_set_3D_position(H3DPOBJECT obj, float X, float Y, float Z)
 {
+    SAMPLE *s = (SAMPLE*)obj;
+    if(!s) return;
+    s->position[0] = X; s->position[1] = Y; s->position[2] = Z;
 }
 
 void __stdcall AIL_set_3D_orientation(
     H3DPOBJECT obj, float X_face, float Y_face, float Z_face, float X_up, float Y_up, float Z_up)
 {
+    SAMPLE *s = (SAMPLE*)obj;
+    if(!s) return;
+    s->orientation[0] = X_face; s->orientation[1] = Y_face; s->orientation[2] = Z_face;
+    s->orientation[3] = X_up;   s->orientation[4] = Y_up;   s->orientation[5] = Z_up;
 }
 
 int __stdcall AIL_WAV_info(const void* data, AILSOUNDINFO* info)
@@ -444,6 +512,7 @@ void __stdcall AIL_release_timer_handle(HTIMER timer)
 void __stdcall AIL_shutdown(void)
 {
     ma_engine_uninit(&g_engine);
+    ma_mutex_uninit(&g_mutex);
 }
 
 int __stdcall AIL_enumerate_filters(HPROENUM* next, HPROVIDER* dest, char** name)
@@ -458,61 +527,79 @@ void __stdcall AIL_set_file_callbacks(AIL_file_open_callback opencb, AIL_file_cl
 
 void __stdcall AIL_release_3D_sample_handle(H3DSAMPLE sample)
 {
+    AIL_release_sample_handle((HSAMPLE)sample);
 }
 
 H3DSAMPLE __stdcall AIL_allocate_3D_sample_handle(HPROVIDER lib)
 {
-    return 0;
+    (void)lib;
+    return (H3DSAMPLE)AIL_allocate_sample_handle(NULL);
 }
 
 void __stdcall AIL_set_3D_user_data(H3DPOBJECT obj, unsigned int index, int value)
 {
+    AIL_set_sample_user_data((HSAMPLE)obj, index, value);
 }
 
 void __stdcall AIL_unlock(void)
 {
+    ma_mutex_unlock(&g_mutex);
 }
 
 void __stdcall AIL_lock(void)
 {
+    ma_mutex_lock(&g_mutex);
 }
 
 void __stdcall AIL_set_3D_speaker_type(HPROVIDER lib, int speaker_type)
 {
+    (void)lib; (void)speaker_type;
 }
 
 void __stdcall AIL_close_3D_listener(H3DPOBJECT listener)
 {
+    AIL_release_sample_handle((HSAMPLE)listener);
 }
 
 int __stdcall AIL_enumerate_3D_providers(HPROENUM* next, HPROVIDER* dest, char** name)
 {
+    if(!next || !dest || !name) return 0;
+    if(*next == HPROENUM_FIRST){
+        *dest = g_provider_id;
+        *name = (char*)g_provider_name;
+        *next = 0;
+        return 1;
+    }
     return 0;
 }
 
 M3DRESULT __stdcall AIL_open_3D_provider(HPROVIDER lib)
 {
-    return 0;
+    (void)lib;
+    return M3D_NOERR;
 }
 
 char* __stdcall AIL_last_error(void)
 {
-    return 0;
+    return NULL;
 }
 
 H3DPOBJECT __stdcall AIL_open_3D_listener(HPROVIDER lib)
 {
-    return 0;
+    (void)lib;
+    return (H3DPOBJECT)AIL_allocate_sample_handle(NULL);
 }
 
 int __stdcall AIL_3D_user_data(H3DSAMPLE sample, unsigned int index)
 {
-    return 0;
+    return AIL_sample_user_data((HSAMPLE)sample, index);
 }
 
 int __stdcall AIL_sample_user_data(HSAMPLE sample, unsigned int index)
 {
-    return 0;
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s || index >= USER_DATA_SLOTS) return 0;
+    return s->user_data[index];
 }
 
 HSAMPLE __stdcall AIL_allocate_sample_handle(HDIGDRIVER dig)
@@ -528,6 +615,9 @@ HSAMPLE __stdcall AIL_allocate_sample_handle(HDIGDRIVER dig)
 
 void __stdcall AIL_set_sample_user_data(HSAMPLE sample, unsigned int index, int value)
 {
+    SAMPLE *s = (SAMPLE*)sample;
+    if(!s || index >= USER_DATA_SLOTS) return;
+    s->user_data[index] = value;
 }
 
 int __stdcall AIL_decompress_ADPCM(const AILSOUNDINFO *info, void **outdata, unsigned long *outsize)
@@ -673,6 +763,7 @@ int __stdcall AIL_startup(void)
 {
     if (ma_engine_init(NULL, &g_engine) != MA_SUCCESS)
         return -1;
+    ma_mutex_init(&g_mutex);
     return 0;
 }
 
