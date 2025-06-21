@@ -117,3 +117,8 @@ backends handle resolution changes consistently.
 LVGL setup code has been moved into a small `LvglPlatform` module under `src/`.
 This wrapper exposes `create_window()` and `poll_events()` so future
 components can initialise the UI without including the driver headers.
+
+The stub application now builds from a portable `src/main.cpp` which
+creates the LVGL window through `LvglPlatform` and enters a simple
+polling loop.  The legacy `WinMain.cpp` remains under `src/Main` but is
+only compiled on Windows targets.

@@ -10,10 +10,10 @@ target_include_directories(LvglPlatform PUBLIC
 )
 target_link_libraries(LvglPlatform PUBLIC lvgl)
 
-add_executable(GeneralsStub main.cpp)
-target_include_directories(GeneralsStub PRIVATE
+add_executable(Generals main.cpp)
+target_include_directories(Generals PRIVATE
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/Precompiled
     ${PROJECT_SOURCE_DIR}/src/LvglPlatform
 )
-target_link_libraries(GeneralsStub PRIVATE LvglPlatform)
+target_link_libraries(Generals PRIVATE LvglPlatform)
