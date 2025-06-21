@@ -18,6 +18,7 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/System/String.cpp
     Common/System/CriticalSection.cpp
     Common/PerfTimer.cpp
+    Precompiled/PreRTS.cpp
     GameClient/Color.cpp
     GameClient/Display.cpp
     GameClient/DisplayString.cpp
@@ -73,4 +74,9 @@ target_include_directories(gameengine PUBLIC
     ${PROJECT_SOURCE_DIR}/include/GameEngine/GameLogic
     ${PROJECT_SOURCE_DIR}/include/Precompiled
 )
+
+if(COMMAND target_precompile_headers)
+    target_precompile_headers(gameengine PRIVATE
+        ${PROJECT_SOURCE_DIR}/include/Precompiled/PreRTS.h)
+endif()
 # Partial migration of GameEngine sources
