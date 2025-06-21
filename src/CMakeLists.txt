@@ -10,20 +10,6 @@ target_include_directories(LvglPlatform PUBLIC
 )
 target_link_libraries(LvglPlatform PUBLIC lvgl)
 
-file(GLOB_RECURSE LVGL_DEVICE_SRC CONFIGURE_DEPENDS
-    ${PROJECT_SOURCE_DIR}/Generals/Code/GameEngineDevice/Source/lvglDevice/*.cpp)
-
-add_library(lvglDevice STATIC ${LVGL_DEVICE_SRC})
-target_include_directories(lvglDevice PUBLIC
-    ${PROJECT_SOURCE_DIR}/include/GameEngineDevice
-    ${PROJECT_SOURCE_DIR}/include/GameEngine
-    ${PROJECT_SOURCE_DIR}/Generals/Code/GameEngine/Include
-    ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/include/Precompiled
-    ${PROJECT_SOURCE_DIR}/src
-)
-target_link_libraries(lvglDevice PUBLIC LvglPlatform)
-
 set(GENERALS_SRC
     main.cpp
     LvglGameEngine/LvglGameEngine.cpp
@@ -38,6 +24,6 @@ target_include_directories(Generals PRIVATE
 )
 target_link_libraries(Generals PRIVATE LvglPlatform)
 
-target_link_libraries(Generals PRIVATE lvglDevice)
+target_link_libraries(Generals PRIVATE gameenginedevice)
 target_link_libraries(Generals PRIVATE gameengine)
 target_link_libraries(Generals PRIVATE milesstub)
