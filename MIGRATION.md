@@ -136,3 +136,4 @@ only compiled on Windows targets.
 A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
 
+LvglLocalFileSystem now replaces Win32 directory calls with std::filesystem for file access.
