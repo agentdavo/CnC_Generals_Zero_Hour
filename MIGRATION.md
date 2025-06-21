@@ -191,3 +191,4 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   `src/GameEngineDevice/W3DDevice/Common`.
 
 - Networking now links against the full UniSpySDK library. GameEngine sources include headers from `lib/UniSpySDK` and no longer rely on GameSpy stubs.
+- GitHub Actions now installs `build-essential`, X11 and Mesa development packages so Linux builds compile on CI.
