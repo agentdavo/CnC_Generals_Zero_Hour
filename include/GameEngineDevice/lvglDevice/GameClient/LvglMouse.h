@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef __LVGLMOUSE_H_
-#define __LVGLMOUSE_H_
+#ifndef __LVGLDEVICE_LVGLMOUSE_H_
+#define __LVGLDEVICE_LVGLMOUSE_H_
 
 #include "GameClient/Mouse.h"
 #include <lvgl.h>
@@ -46,4 +46,4 @@ private:
     UnsignedInt m_nextGetIndex;
 };
 
-#endif // __LVGLMOUSE_H_
+#endif // __LVGLDEVICE_LVGLMOUSE_H_

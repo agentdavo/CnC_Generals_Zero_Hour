@@ -28,8 +28,8 @@
 
 #pragma once
 
-#ifndef __WIN32BIGFILE_H
-#define __WIN32BIGFILE_H
+#ifndef __LVGLDEVICE_WIN32BIGFILE_H_
+#define __LVGLDEVICE_WIN32BIGFILE_H_
 
 #include "Common/ArchiveFile.h"
 #include "Common/AsciiString.h"
@@ -55,4 +55,4 @@ class Win32BIGFile : public ArchiveFile
 		AsciiString		m_path;		///< BIG file path
 };
 
-#endif // __WIN32BIGFILE_H
+#endif // __LVGLDEVICE_WIN32BIGFILE_H_
