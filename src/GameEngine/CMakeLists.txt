@@ -19,6 +19,7 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/System/CriticalSection.cpp
     Common/PerfTimer.cpp
     ../Common/Logger.cpp
+    ../Common/File.cpp
     Precompiled/PreRTS.cpp
     Common/INI/INI.cpp
     Common/INI/INIAiData.cpp

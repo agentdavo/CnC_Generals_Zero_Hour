@@ -149,6 +149,7 @@ temporary `src/LvglInput` stubs have been removed with the application directly
 including the new device headers.
 
 LvglLocalFileSystem now replaces Win32 directory calls with std::filesystem for file access.
+`FileUtil` in `src/Common/File.cpp` further wraps std::filesystem to provide portable helpers like `createDirectory`.  Win32 `CreateDirectory` calls in `PeerDefs.cpp` now use this API.
 The CMake build now globs the `lvglDevice` sources into a static library and links it to the `Generals` stub by default on non-Windows hosts. Pass `-DUSE_LVGL_DEVICE=ON` to force this implementation or `OFF` to fall back to the unported `Win32Device` tree on Windows.
 Input handling is beginning to move over to LVGL as well. A small `LvglGameEngine` class now owns new `LvglKeyboard` and `LvglMouse` objects.  `src/main.cpp` creates these and drives their `update()` methods each frame alongside `LvglPlatform::poll_events()`.
 

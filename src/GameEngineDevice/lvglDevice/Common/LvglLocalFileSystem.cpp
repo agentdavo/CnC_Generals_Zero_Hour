@@ -5,6 +5,7 @@
 #include "Common/LocalFile.h"
 #include <fstream>
 #include <filesystem>
+#include "Common/File.h"
 
 File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 {
@@ -12,8 +13,7 @@ File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
     std::filesystem::path p(filename);
 
     if(access & File::WRITE) {
-        std::error_code ec;
-        std::filesystem::create_directories(p.parent_path(), ec);
+        FileUtil::createDirectory(p.parent_path().u8string());
     }
 
     if(file->open(p.u8string().c_str(), access) == FALSE) {
@@ -28,7 +28,7 @@ File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 
 Bool LvglLocalFileSystem::doesFileExist(const Char *filename) const
 {
-    return std::filesystem::exists(std::filesystem::u8path(filename));
+    return FileUtil::exists(filename);
 }
 
 void LvglLocalFileSystem::getFileListInDirectory(const AsciiString &currentDirectory,
@@ -95,6 +95,5 @@ Bool LvglLocalFileSystem::getFileInfo(const AsciiString &filename, FileInfo *fil
 
 Bool LvglLocalFileSystem::createDirectory(AsciiString directory)
 {
-    std::error_code ec;
-    return std::filesystem::create_directories(std::filesystem::u8path(directory.str()), ec);
+    return FileUtil::createDirectory(directory.str());
 }
