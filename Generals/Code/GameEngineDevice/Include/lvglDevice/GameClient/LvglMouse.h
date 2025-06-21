@@ -33,6 +33,17 @@ private:
     lv_obj_t   *m_cursor_obj;   // cursor object if any
     lv_point_t  m_last_point;
     lv_indev_state_t m_last_state;
+    lv_indev_state_t m_last_right;
+    lv_indev_state_t m_last_middle;
+    int16_t m_last_wheel;
+
+    struct EventEntry {
+        Bool valid;
+        MouseIO io;
+    };
+    EventEntry m_eventBuffer[NUM_MOUSE_EVENTS];
+    UnsignedInt m_nextFreeIndex;
+    UnsignedInt m_nextGetIndex;
 };
 
 #endif // __LVGLMOUSE_H_
