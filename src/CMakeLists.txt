@@ -1,10 +1,3 @@
-set(_default_lvgl_device ON)
-if(WIN32)
-    set(_default_lvgl_device OFF)
-endif()
-
-option(USE_LVGL_DEVICE "Use LVGL based device implementation" ${_default_lvgl_device})
-
 set(LVGL_PLATFORM_SRC
     LvglPlatform/LvglPlatform.cpp
 )
@@ -45,8 +38,4 @@ target_include_directories(Generals PRIVATE
 )
 target_link_libraries(Generals PRIVATE LvglPlatform)
 
-if(USE_LVGL_DEVICE OR NOT WIN32)
-    target_link_libraries(Generals PRIVATE lvglDevice)
-else()
-    # TODO: add Win32Device library when available
-endif()
+target_link_libraries(Generals PRIVATE lvglDevice)

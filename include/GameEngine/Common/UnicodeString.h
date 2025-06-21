@@ -51,9 +51,14 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
+#include <wchar.h>
 #include "Lib/BaseType.h"
 #include "Common/Debug.h"
 #include "Common/Errors.h"
+
+#ifndef _WIN32
+#define _wcsicmp wcscasecmp
+#endif
 
 class AsciiString;
 
