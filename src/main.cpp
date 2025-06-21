@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <cstring>
-#include <iostream>
+#include "Common/Logger.h"
 #include <unistd.h>
 
 #include "LvglPlatform/LvglPlatform.h"
@@ -13,6 +13,7 @@ static uint32_t window_height = 600;
 
 int main(int argc, char **argv)
 {
+    Logger::init();
     const char *backend = nullptr;
     for(int i = 1; i < argc; ++i) {
         if(std::strncmp(argv[i], "--width=", 8) == 0) {
@@ -31,20 +32,26 @@ int main(int argc, char **argv)
     if(!backend)
         backend = std::getenv("LV_BACKEND");
 
+    LOG_INFO("Creating window %ux%u using backend %s", window_width, window_height, backend ? backend : "default");
     lv_display_t *disp = LvglPlatform::create_window(window_width, window_height, backend);
     if(!disp) {
-        std::cerr << "Failed to initialize LVGL backend" << std::endl;
+        LOG_ERROR("Failed to initialize LVGL backend");
+        Logger::shutdown();
         return 1;
     }
+    LOG_INFO("Window created");
 
     LvglKeyboard keyboard;
     LvglMouse mouse;
     LvglGameEngine engine(&keyboard, &mouse);
 
+    LOG_INFO("Entering main loop");
     while(true) {
         engine.update();
         LvglPlatform::poll_events();
     }
+
+    Logger::shutdown();
 
     return 0;
 }

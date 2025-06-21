@@ -18,6 +18,7 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/System/String.cpp
     Common/System/CriticalSection.cpp
     Common/PerfTimer.cpp
+    ../Common/Logger.cpp
     Precompiled/PreRTS.cpp
     GameClient/Color.cpp
     GameClient/Display.cpp
