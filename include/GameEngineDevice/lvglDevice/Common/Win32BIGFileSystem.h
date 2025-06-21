@@ -28,8 +28,8 @@
 
 #pragma once
 
-#ifndef __WIN32BIGFILESYSTEM_H
-#define __WIN32BIGFILESYSTEM_H
+#ifndef __LVGLDEVICE_WIN32BIGFILESYSTEM_H_
+#define __LVGLDEVICE_WIN32BIGFILESYSTEM_H_
 
 #include "Common/ArchiveFileSystem.h"
 
@@ -57,4 +57,4 @@ protected:
 
 };
 
-#endif // __WIN32BIGFILESYSTEM_H
+#endif // __LVGLDEVICE_WIN32BIGFILESYSTEM_H_
