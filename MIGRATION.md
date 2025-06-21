@@ -106,10 +106,11 @@ original audio subsystem compiles against the new backend. It now stores
 per-sample user data and exposes a minimal 3D provider interface so older
 audio managers work without modification.
 
-On macOS the build now checks for Apple Clang before enabling the `-fblocks`
-option required by the CoreAudio headers. When GCC is used the option is
-omitted and a warning is emitted explaining that Clang is expected for this
-target.
+On macOS the build previously checked for Apple Clang before enabling the
+`-fblocks` option required by the CoreAudio headers. When GCC was selected the
+option was omitted and compilation failed. The root `CMakeLists.txt` now forces
+`clang` and `clang++` to be used on Apple platforms so the correct Blocks
+support is available without manual configuration.
 
 A dedicated `lib/CMakeLists.txt` pulls in these libraries so they can
 be linked from other modules during the port.  `zlib` and `liblzhl`
