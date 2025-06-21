@@ -32,7 +32,7 @@ static void close_event_cb(lv_event_t *e)
 static const char *icon_from_flags(UnsignedInt flags)
 {
     if(BitTest(flags, OSDOF_EXCLAMATIONICON)) return LV_SYMBOL_WARNING;
-    if(BitTest(flags, OSDOF_INFORMATIONICON)) return LV_SYMBOL_INFO;
+    if(BitTest(flags, OSDOF_INFORMATIONICON)) return LV_SYMBOL_BELL;
     if(BitTest(flags, OSDOF_ERRORICON) || BitTest(flags, OSDOF_STOPICON)) return LV_SYMBOL_CLOSE;
     return nullptr;
 }
