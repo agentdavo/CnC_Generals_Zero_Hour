@@ -192,3 +192,8 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 
 - Networking now links against the full UniSpySDK library. GameEngine sources include headers from `lib/UniSpySDK` and no longer rely on GameSpy stubs.
 - GitHub Actions now installs `build-essential`, X11 and Mesa development packages so Linux builds compile on CI.
+
+- LocalFile compilation issues fixed on case-sensitive builds by disabling memory pool macros and using standard allocation during migration.
+- A portable LocalFile implementation now lives under `src/GameEngine/Common/System` with its header in `include/Common`.  The class wraps the C stdio API instead of Win32 handles.
+- Header paths updated to prefer `Common/File.h` so the new implementation is used on case-sensitive systems.
+- LocalFile now overrides `operator new` and `delete` to sidestep the old memory pool hooks.

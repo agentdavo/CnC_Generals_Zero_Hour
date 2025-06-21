@@ -9,7 +9,7 @@
 
 File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 {
-    LocalFile *file = newInstance(LocalFile);
+    LocalFile *file = new LocalFile();
     std::filesystem::path p(filename);
 
     if(access & File::WRITE) {
