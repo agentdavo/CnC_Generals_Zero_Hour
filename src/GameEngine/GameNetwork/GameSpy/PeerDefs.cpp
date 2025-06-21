@@ -32,6 +32,7 @@
 #include "Common/Player.h"
 #include "Common/PlayerList.h"
 #include "Common/PlayerTemplate.h"
+#include "Common/File.h"
 #include "GameClient/MapUtil.h"
 #include "GameClient/ShellHooks.h"
 #include "GameClient/GameText.h"
@@ -610,12 +611,12 @@ void SetUpGameSpy( const char *motdBuffer, const char *configBuffer )
 		configBuffer = "";
 	TearDownGameSpy();
 
-	AsciiString dir = TheGlobalData->getPath_UserData();
-	CreateDirectory(dir.str(), NULL);
-	dir.format("%sGeneralsOnline", TheGlobalData->getPath_UserData().str());
-	CreateDirectory(dir.str(), NULL);
-	dir.format("%sGeneralsOnline\\Ladders", TheGlobalData->getPath_UserData().str());
-	CreateDirectory(dir.str(), NULL);
+        AsciiString dir = TheGlobalData->getPath_UserData();
+        FileUtil::createDirectory(dir.str());
+        dir.format("%sGeneralsOnline", TheGlobalData->getPath_UserData().str());
+        FileUtil::createDirectory(dir.str());
+        dir.format("%sGeneralsOnline\\Ladders", TheGlobalData->getPath_UserData().str());
+        FileUtil::createDirectory(dir.str());
 
 	TheGameSpyBuddyMessageQueue = GameSpyBuddyMessageQueueInterface::createNewMessageQueue();
 	TheGameSpyBuddyMessageQueue->startThread();
