@@ -53,6 +53,7 @@
 #include "Common/File.h"
 #include "Common/FileSystem.h"
 #include "Common/GameMemory.h"
+#include "Common/Logger.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/FunctionLexicon.h"
 #include "GameClient/Display.h"
@@ -2691,7 +2692,8 @@ WindowLayoutInfo::WindowLayoutInfo() :
 GameWindow *GameWindowManager::winCreateFromScript( AsciiString filenameString,
 																										WindowLayoutInfo *info )
 {
-	const char* filename = filenameString.str();
+    const char* filename = filenameString.str();
+    LOG_INFO("Loading window script: %s", filename);
 	static char buffer[ WIN_BUFFER_LENGTH ]; 		// input buffer for reading
 	GameWindow *firstWindow = NULL;
   GameWindow *window;
