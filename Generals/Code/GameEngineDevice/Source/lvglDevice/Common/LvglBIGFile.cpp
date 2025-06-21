@@ -4,7 +4,7 @@
 #include "Common/StreamingArchiveFile.h"
 #include "Common/GameMemory.h"
 #include "Common/PerfTimer.h"
-#include "Win32Device/Common/Win32BIGFile.h"
+#include "lvglDevice/Common/Win32BIGFile.h"
 
 Win32BIGFile::Win32BIGFile() {
 }
