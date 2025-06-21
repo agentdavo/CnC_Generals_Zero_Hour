@@ -43,6 +43,7 @@
 #include "GameClient/AnimateWindowManager.h"
 #include "GameClient/ExtendedMessageBox.h"
 #include "GameClient/MessageBox.h"
+#include "Common/Logger.h"
 #include "GameClient/Display.h"
 #include "GameClient/WindowLayout.h"
 #include "GameClient/Gadget.h"
@@ -424,7 +425,8 @@ GameWindow *win = NULL;
 //-------------------------------------------------------------------------------------------------
 void MainMenuInit( WindowLayout *layout, void *userData )
 {
-	TheWritableGlobalData->m_breakTheMovie = FALSE;
+        LOG_INFO("MainMenuInit");
+        TheWritableGlobalData->m_breakTheMovie = FALSE;
 
 	TheShell->showShellMap(TRUE);
 	TheMouse->setVisibility(TRUE);

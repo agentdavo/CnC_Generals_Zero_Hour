@@ -35,6 +35,7 @@
 #include "GameClient/WindowLayout.h"
 #include "GameClient/GameWindowManager.h"
 #include "GameClient/GameWindowTransitions.h"
+#include "Common/Logger.h"
 #include "GameClient/IMEManager.h"
 #include "GameClient/AnimateWindowManager.h"
 #include "GameClient/ShellMenuScheme.h"
@@ -141,7 +142,8 @@ Shell::~Shell( void )
 //-------------------------------------------------------------------------------------------------
 void Shell::init( void )
 {
-	INI ini;
+        LOG_INFO("Shell::init");
+        INI ini;
 	// Read from INI all the ShellMenuScheme
 	ini.load( AsciiString( "Data\\INI\\Default\\ShellMenuScheme.ini" ), INI_LOAD_OVERWRITE, NULL );
 	ini.load( AsciiString( "Data\\INI\\ShellMenuScheme.ini" ), INI_LOAD_OVERWRITE, NULL );
@@ -261,6 +263,7 @@ void Shell::hide( Bool hide )
 //-------------------------------------------------------------------------------------------------
 void Shell::push( AsciiString filename, Bool shutdownImmediate )
 {
+        LOG_INFO("Shell::push %s", filename.str());
 
 	// sanity
 	if( filename.isEmpty() )
@@ -406,7 +409,7 @@ void Shell::popImmediate( void )
 //-------------------------------------------------------------------------------------------------
 void Shell::showShell( Bool runInit )
 {
-	DEBUG_LOG(("Shell:showShell() - %s (%s)\n", TheGlobalData->m_initialFile.str(), (top())?top()->getFilename().str():"no top screen"));
+        LOG_INFO("Shell::showShell top=%s", (top()) ? top()->getFilename().c_str() : "none");
 
 	if(!TheGlobalData->m_initialFile.isEmpty())
 	{
@@ -456,10 +459,11 @@ void Shell::showShell( Bool runInit )
 	//	}
 	
 
-	if (!TheGlobalData->m_shellMapOn && m_screenCount == 0)
-	//else
-		TheShell->push( AsciiString("Menus/MainMenu.wnd") );
-	m_isShellActive = TRUE;
+        if (!TheGlobalData->m_shellMapOn && m_screenCount == 0)
+        //else
+                TheShell->push( AsciiString("Menus/MainMenu.wnd") );
+        LOG_INFO("Main menu pushed");
+        m_isShellActive = TRUE;
 }  // end showShell
 
 void Shell::showShellMap(Bool useShellMap )
