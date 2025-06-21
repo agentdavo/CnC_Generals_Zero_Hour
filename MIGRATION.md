@@ -179,3 +179,6 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - MilesAudioManager now builds against a miniaudio-based shim which replaces DirectSound. The gameenginedevice module links with the `milesstub` library and audio headers have moved to `include/GameEngineDevice`.
 - `gameenginedevice` now links against `milesstub` from `lib/miles-sdk-stub`.
 - lvglDevice headers relocated to `include/GameEngineDevice/lvglDevice` and old references updated.
+- Removed the legacy `Generals/Code` copies of the W3D device common files.
+  `src/GameEngineDevice/CMakeLists.txt` now globs these sources from
+  `src/GameEngineDevice/W3DDevice/Common`.
