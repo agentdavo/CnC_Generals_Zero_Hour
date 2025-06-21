@@ -98,8 +98,13 @@ add_library(miniaudio STATIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio/miniaudio.c)
 target_include_directories(miniaudio PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio)
 if(APPLE)
     # CoreAudio headers rely on Clang blocks which are disabled by default for C
-    # sources. Enable them when building on macOS to avoid compilation errors.
-    target_compile_options(miniaudio PRIVATE -fblocks)
+    # sources. GCC does not support this extension, so only enable it when using
+    # Clang to avoid build failures on macOS systems that use gcc.
+    if(CMAKE_C_COMPILER_ID MATCHES "Clang")
+        target_compile_options(miniaudio PRIVATE -fblocks)
+    else()
+        message(WARNING "The miniaudio target expects Clang on macOS. Blocks support is disabled")
+    endif()
 endif()
 
 add_library(uGLES INTERFACE)

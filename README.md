@@ -52,6 +52,10 @@ cmake --build build
 ```
 This will compile a placeholder executable while migration is in progress.
 
+On **macOS** you must use the Apple Clang compiler (usually `/usr/bin/clang`).
+Using GCC will fail because the audio backend requires Clang's `-fblocks`
+extension when compiling against CoreAudio headers.
+
 NOTE: As modern versions of MSVC enforce newer revisions of the C++ standard, you will need to make extensive changes to the codebase before it successfully compiles, even more so if you plan on compiling for the Win64 platform.
 
 When the workspace has finished building, the compiled binaries will be copied to the folder called `/Run/` found in the root of each games directory. 
