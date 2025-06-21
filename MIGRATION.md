@@ -92,6 +92,24 @@ The key dependencies are:
 - **zlib** – compression library used by the original asset archives.
 - **liblzhl** – reference implementation of EA's LZH-Light algorithm.
 
+LVGL is compiled as a static library with its sources globbed from
+`lib/lvgl/src` and `lib/lvgl/demos`. The build defaults to the X11 backend
+with optional support for SDL, Wayland, DRM, fbdev and NuttX via
+`-DLVGL_USE_SDL`, `-DLVGL_USE_WAYLAND`, `-DLVGL_USE_LINUX_DRM`,
+`-DLVGL_USE_LINUX_FBDEV` and `-DLVGL_USE_NUTTX`.
+
+Miniaudio is also compiled as a small static library so the engine can
+link it directly.
+
 A dedicated `lib/CMakeLists.txt` pulls in these libraries so they can
 be linked from other modules during the port.  `zlib` and `liblzhl`
-are now built as static targets rather than header-only stubs.
+remain built as static targets rather than header-only stubs.
+
+The prototype executable selects the LVGL backend at runtime. The window
+defaults to the X11 driver but passing `sdl`, `wayland`, `drm`, `fbdev`
+or `nuttx` as the first command line argument (or via the
+`LV_BACKEND` environment variable) switches to the respective backend.
+Each backend opens a window whose size defaults to 800x600. The size can be
+overridden with `--width` and `--height` command line options. A timer in the
+stub application demonstrates runtime resizing of the LVGL display so all
+backends handle resolution changes consistently.
