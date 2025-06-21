@@ -136,3 +136,8 @@ only compiled on Windows targets.
 A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
 
+Input handling is beginning to move over to LVGL as well. A small
+`LvglGameEngine` class now owns new `LvglKeyboard` and `LvglMouse`
+objects.  `src/main.cpp` creates these and drives their `update()`
+methods each frame alongside `LvglPlatform::poll_events()`.
+

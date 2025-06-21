@@ -4,6 +4,9 @@
 #include <unistd.h>
 
 #include "LvglPlatform/LvglPlatform.h"
+#include "LvglInput/LvglKeyboard.h"
+#include "LvglInput/LvglMouse.h"
+#include "LvglGameEngine/LvglGameEngine.h"
 
 static uint32_t window_width = 800;
 static uint32_t window_height = 600;
@@ -34,7 +37,12 @@ int main(int argc, char **argv)
         return 1;
     }
 
+    LvglKeyboard keyboard;
+    LvglMouse mouse;
+    LvglGameEngine engine(&keyboard, &mouse);
+
     while(true) {
+        engine.update();
         LvglPlatform::poll_events();
     }
 
