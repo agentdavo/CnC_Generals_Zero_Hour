@@ -113,3 +113,7 @@ Each backend opens a window whose size defaults to 800x600. The size can be
 overridden with `--width` and `--height` command line options. A timer in the
 stub application demonstrates runtime resizing of the LVGL display so all
 backends handle resolution changes consistently.
+
+LVGL setup code has been moved into a small `LvglPlatform` module under `src/`.
+This wrapper exposes `create_window()` and `poll_events()` so future
+components can initialise the UI without including the driver headers.
