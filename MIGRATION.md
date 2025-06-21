@@ -173,5 +173,5 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   LOG_INFO("Displaying main menu");
   ```
 - Miles audio management header moved to `include/GameEngineDevice/MilesAudioDevice`. CMake no longer references `Generals/Code/GameEngineDevice/ A lightweight `Logger` utility now lives in `src/Common` and `include/Common`. `Logger::init()` writes to `std::clog` and an optional file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_E
-
 - MilesAudioManager now builds against a miniaudio-based shim which replaces DirectSound. The gameenginedevice module links with the `milesstub` library and audio headers have moved to `include/GameEngineDevice`.
+- `gameenginedevice` now links against `milesstub` from `lib/miles-sdk-stub`.

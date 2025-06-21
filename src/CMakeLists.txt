@@ -40,3 +40,4 @@ target_link_libraries(Generals PRIVATE LvglPlatform)
 
 target_link_libraries(Generals PRIVATE lvglDevice)
 target_link_libraries(Generals PRIVATE gameengine)
+target_link_libraries(Generals PRIVATE milesstub)
