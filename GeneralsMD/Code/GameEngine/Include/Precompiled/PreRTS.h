@@ -106,7 +106,7 @@ class STLSpecialAlloc;
 #include "Common/Errors.h"
 #include "Common/Debug.h"
 #include "Common/AsciiString.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 #include "Common/GameCommon.h"
 #include "Common/GameMemory.h"

@@ -36,7 +36,7 @@
 
 
 #include "Common/STLTypedefs.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/WindowLayout.h"
 #include "GameClient/KeyDefs.h"
 #include "GameClient/Gadget.h"

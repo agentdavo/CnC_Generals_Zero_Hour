@@ -36,7 +36,7 @@
 #include "Common/AsciiString.h"
 #include "Common/GameType.h"
 #include "Common/GameMemory.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/Color.h"
 #include "Common/STLTypedefs.h"
 

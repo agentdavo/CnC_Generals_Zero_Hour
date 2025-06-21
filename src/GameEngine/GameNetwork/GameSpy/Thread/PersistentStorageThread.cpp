@@ -39,7 +39,7 @@
 #include "thread.h"
 
 #include "Common/StackDump.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

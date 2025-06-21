@@ -52,7 +52,7 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/AsciiString.h"
 #include "Common/FileSystem.h" // for typedefs, etc.
 #include "Common/STLTypedefs.h"

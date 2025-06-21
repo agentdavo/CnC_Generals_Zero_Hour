@@ -36,7 +36,7 @@
 #include "Lib/BaseType.h"
 
 #include "Common/STLTypedefs.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameMemory.h"
 #include "Common/AsciiString.h"
 #include "GameClient/Drawable.h"

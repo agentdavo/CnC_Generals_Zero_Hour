@@ -37,7 +37,7 @@
 #include "Common/GameMemory.h"
 #include "Common/GameType.h"
 #include "Common/Snapshot.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/ClientRandomValue.h"
 
 #include "WWMath/Matrix3D.h"		///< @todo Replace with our own matrix library

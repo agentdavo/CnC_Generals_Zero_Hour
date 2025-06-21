@@ -51,7 +51,7 @@
 
 #include <lib/BaseType.h>
 #include "WWMath/rect.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/AsciiString.h"
 #include "Common/INI.h"
 #include "Common/STLTypedefs.h"

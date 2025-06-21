@@ -35,7 +35,7 @@
 
 #include "Common/AsciiString.h"
 #include "Common/GameMemory.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 struct FieldParse;
 class INI;

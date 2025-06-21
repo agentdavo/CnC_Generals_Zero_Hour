@@ -36,7 +36,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "Common/AudioEventRTS.h"
 #include "Common/GameMemory.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Lib/BaseType.h"
 #include "Common/BitFlags.h"
 #include "Common/Overridable.h"

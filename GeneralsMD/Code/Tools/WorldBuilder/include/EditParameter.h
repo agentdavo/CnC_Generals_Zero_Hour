@@ -25,7 +25,7 @@
 // EditParameter.h : header file
 //
 #include "GameLogic/Scripts.h"
-#include "Common\SubsystemInterface.h"
+#include "Common\GameEngine/Common/subsystem_interface.h"
 
 class SidesList;
 /////////////////////////////////////////////////////////////////////////////

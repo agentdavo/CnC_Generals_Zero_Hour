@@ -40,7 +40,7 @@
 #include "Common/SpecialPowerType.h"
 #include "Common/Snapshot.h"
 #include "Common/STLTypedefs.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/UnicodeString.h"
 #include "GameClient/DisplayString.h"
 #include "GameClient/Mouse.h"

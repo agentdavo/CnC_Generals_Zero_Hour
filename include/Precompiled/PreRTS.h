@@ -83,7 +83,7 @@ class STLSpecialAlloc;
 #include "GameEngine/Common/Errors.h"
 #include "GameEngine/Common/Debug.h"
 #include "GameEngine/Common/AsciiString.h"
-#include "GameEngine/Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 
 #include "GameEngine/Common/GameCommon.h"
 #include "GameEngine/Common/GameMemory.h"

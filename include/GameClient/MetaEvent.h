@@ -30,7 +30,7 @@
 #ifndef _H_MetaEvent
 #define _H_MetaEvent
 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameClient/InGameUI.h"
 
 

@@ -47,7 +47,7 @@
 // Includes                                                      
 #include "Lib/BaseType.h"
 #include "Common/STLTypedefs.h"
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "GameEngine/Common/AudioEventInfo.h"
 
 

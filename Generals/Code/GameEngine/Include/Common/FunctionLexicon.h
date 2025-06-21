@@ -33,7 +33,7 @@
 #ifndef __FUNCTIONLEXICON_H_
 #define __FUNCTIONLEXICON_H_
 
-#include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/subsystem_interface.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/GameMemory.h"
 #include "GameClient/GameWindow.h"
