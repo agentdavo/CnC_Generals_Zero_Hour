@@ -15,7 +15,7 @@ file(GLOB_RECURSE LVGL_DEVICE_SRC CONFIGURE_DEPENDS
 
 add_library(lvglDevice STATIC ${LVGL_DEVICE_SRC})
 target_include_directories(lvglDevice PUBLIC
-    ${PROJECT_SOURCE_DIR}/Generals/Code/GameEngineDevice/Include
+    ${PROJECT_SOURCE_DIR}/include/GameEngineDevice
     ${PROJECT_SOURCE_DIR}/include/GameEngine
     ${PROJECT_SOURCE_DIR}/Generals/Code/GameEngine/Include
     ${PROJECT_SOURCE_DIR}/include
