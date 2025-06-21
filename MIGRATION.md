@@ -152,8 +152,10 @@ Input handling is beginning to move over to LVGL as well. A small `LvglGameEngin
 The old input classes under `GameEngineDevice/Source/Win32*` will be phased out
 in favour of the LVGL implementations.  `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglKeyboard.cpp`
 and `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglMouse.cpp`
-currently provide a basic keyboard and pointer interface.  Modifier keys are not
-fully handled yet so combinations like Ctrl+Alt are unreliable.  Once these
-files replace their Win32 counterparts `src/CMakeLists.txt` will link the
+previously provided only a basic keyboard and pointer interface.  Modifier keys
+are now detected and `convert_lv_key()` translates every key listed in
+`KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  Once these files
+replace their Win32 counterparts `src/CMakeLists.txt` will link the
 `lvglDevice` library unconditionally.
 
+Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sensitive builds.
