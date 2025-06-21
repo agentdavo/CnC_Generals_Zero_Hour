@@ -199,3 +199,6 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - LocalFile now overrides `operator new` and `delete` to sidestep the old memory pool hooks.
 - Added `GameNetwork/transport.h` shim header to resolve case sensitive include errors on Linux.
 - SubsystemInterface has been relocated to src/GameEngine/Common/System with its header in include/GameEngine/Common/subsystem_interface.h. Includes have been updated to use this lowercase path.
+- Legacy references to `Generals/Code/GameEngine/Include` have been dropped from
+  `src/GameEngineDevice` CMake files. All headers are expected under the new
+  `include/` hierarchy.
