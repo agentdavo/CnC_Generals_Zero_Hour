@@ -8,6 +8,12 @@ file(GLOB_RECURSE LVGLDEVICE_SRCS CONFIGURE_DEPENDS
 )
 target_sources(gameenginedevice PRIVATE ${LVGLDEVICE_SRCS})
 
+# Common W3DDevice sources migrated from Generals/Code
+file(GLOB_RECURSE W3DDEVICE_COMMON_SRCS CONFIGURE_DEPENDS
+    W3DDevice/Common/*.cpp
+)
+target_sources(gameenginedevice PRIVATE ${W3DDEVICE_COMMON_SRCS})
+
 target_include_directories(gameenginedevice PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/GameEngine

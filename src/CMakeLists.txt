@@ -10,6 +10,8 @@ target_include_directories(LvglPlatform PUBLIC
 )
 target_link_libraries(LvglPlatform PUBLIC lvgl)
 
+add_subdirectory(GameEngineDevice/lvglDevice)
+
 set(GENERALS_SRC
     main.cpp
     LvglGameEngine/LvglGameEngine.cpp
@@ -22,7 +24,7 @@ target_include_directories(Generals PRIVATE
     ${PROJECT_SOURCE_DIR}/src
     ${PROJECT_SOURCE_DIR}/src/LvglGameEngine
 )
-target_link_libraries(Generals PRIVATE LvglPlatform)
+target_link_libraries(Generals PRIVATE LvglPlatform lvglDevice)
 
 target_link_libraries(Generals PRIVATE gameenginedevice)
 target_link_libraries(Generals PRIVATE gameengine)
