@@ -38,7 +38,7 @@
 /*		7/18/2002 : Initial creation                                           */
 /*---------------------------------------------------------------------------*/
 
-#include <dsound.h>
+#include "mss.h"
 #include "Lib/Basetype.h"
 #include "MilesAudioDevice/MilesAudioManager.h"
 
@@ -1674,57 +1674,13 @@ void MilesAudioManager::selectProvider( UnsignedInt providerNdx )
 		unselectProvider();
 	}
 
-	LPDIRECTSOUND lpDirectSoundInfo;
-	AIL_get_DirectSound_info( NULL, (void**)&lpDirectSoundInfo, NULL );
-	Bool useDolby = FALSE;
-	if( lpDirectSoundInfo )
-	{
-		DWORD speakerConfig;
-		lpDirectSoundInfo->GetSpeakerConfig( &speakerConfig );
-		switch( DSSPEAKER_CONFIG( speakerConfig ) )
-		{
-			case DSSPEAKER_DIRECTOUT:
-				m_selectedSpeakerType = AIL_3D_2_SPEAKER;
-				break;
-			case DSSPEAKER_MONO:     
-				m_selectedSpeakerType = AIL_3D_2_SPEAKER;
-				break;
-			case DSSPEAKER_STEREO:   
-				m_selectedSpeakerType = AIL_3D_2_SPEAKER;
-				break;
-			case DSSPEAKER_HEADPHONE:
-				m_selectedSpeakerType = AIL_3D_HEADPHONE;
-				useDolby = TRUE;
-				break;
-			case DSSPEAKER_QUAD:     
-				m_selectedSpeakerType = AIL_3D_4_SPEAKER;
-				useDolby = TRUE;
-				break;
-			case DSSPEAKER_SURROUND:
-				m_selectedSpeakerType = AIL_3D_SURROUND;
-				useDolby = TRUE;
-				break;
-			case DSSPEAKER_5POINT1:  
-				m_selectedSpeakerType = AIL_3D_51_SPEAKER;
-				useDolby = TRUE;
-				break;
-			case DSSPEAKER_7POINT1:  
-				m_selectedSpeakerType = AIL_3D_71_SPEAKER;
-				useDolby = TRUE;
-				break;
-		}
-	}
+        Bool success = FALSE;
+        if (providerNdx >= m_providerCount)
+        {
+                providerNdx = getProviderIndex( "Miles Fast 2D Positional Audio" );
+        }
 
-	Bool success = FALSE;
-	if( useDolby )
-	{
-		providerNdx = getProviderIndex( "Dolby Surround" );
-	}
-	else
-	{
-		providerNdx = getProviderIndex( "Miles Fast 2D Positional Audio" );
-	}
-	success = AIL_open_3D_provider( m_provider3D[providerNdx].id ) == 0;
+        success = AIL_open_3D_provider( m_provider3D[providerNdx].id ) == 0;
 
 	//if (providerNdx < m_providerCount) 
 	//{
@@ -2915,17 +2871,9 @@ void MilesAudioManager::processRequest( AudioRequest *req )
 //-------------------------------------------------------------------------------------------------
 void *MilesAudioManager::getHandleForBink( void )
 {
-	if (m_binkHandle == NULL) {
-		PlayingAudio *aud = allocatePlayingAudio();
-		aud->m_audioEventRTS = NEW AudioEventRTS("BinkHandle");	// poolify
-		getInfoForAudioEvent(aud->m_audioEventRTS);
-		aud->m_sample = getFirst2DSample(aud->m_audioEventRTS);
-		aud->m_type = PAT_Sample;
-
-		if (!aud->m_sample) {
-			releasePlayingAudio(aud);
-			return NULL;
-		}
+    (void)m_binkHandle;
+    return NULL;
+}
 
 		m_binkHandle = aud;
 	}
