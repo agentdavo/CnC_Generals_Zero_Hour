@@ -125,3 +125,5 @@ The stub application now builds from a portable `src/main.cpp` which
 creates the LVGL window through `LvglPlatform` and enters a simple
 polling loop.  The legacy `WinMain.cpp` remains under `src/Main` but is
 only compiled on Windows targets.
+
+A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
