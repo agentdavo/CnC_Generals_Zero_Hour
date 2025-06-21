@@ -101,12 +101,13 @@ endif()
 add_library(miniaudio STATIC ${MINIAUDIO_SOURCE})
 target_include_directories(miniaudio PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio)
 if(APPLE)
-    # CoreAudio headers rely on Clang blocks which are disabled by default for C
-    # sources. GCC does not support this extension, so only enable it when using
-    # Clang to avoid build failures on macOS systems that use gcc.
-    if(CMAKE_C_COMPILER_ID MATCHES "Clang")
-        target_compile_options(miniaudio PRIVATE -fblocks)
-    else()
+    # CoreAudio headers rely on the Clang Blocks extension.  When building on
+    # macOS ensure the flag is enabled only when Clang is actually used,
+    # otherwise warn that audio may fail to compile.
+    target_compile_options(miniaudio PRIVATE
+        $<$<C_COMPILER_ID:Clang>:-fblocks>
+    )
+    if(NOT CMAKE_C_COMPILER_ID MATCHES "Clang")
         message(WARNING "The miniaudio target expects Clang on macOS. Blocks support is disabled")
     endif()
 endif()
