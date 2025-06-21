@@ -12,8 +12,9 @@ add_library(milesstub SHARED miles.c)
 set_target_properties(milesstub PROPERTIES OUTPUT_NAME mss32)
 set_target_properties(milesstub PROPERTIES SOVERSION 1.0 VERSION 1.0.0)
 target_include_directories(milesstub PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/lib/miniaudio>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>      #include <mss/mss.h>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/mss>  #include <mss.h>
 )
 target_compile_definitions(milesstub PRIVATE BUILD_STUBS)
-target_link_libraries(milesstub INTERFACE milescleanup)
+target_link_libraries(milesstub PUBLIC milescleanup miniaudio)
