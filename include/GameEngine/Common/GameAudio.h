@@ -48,6 +48,7 @@
 #include "Lib/BaseType.h"
 #include "Common/STLTypedefs.h"
 #include "Common/SubsystemInterface.h"
+#include "GameEngine/Common/AudioEventInfo.h"
 
 
 // Forward Declarations
@@ -69,7 +70,8 @@ struct AudioRequest;
 struct AudioSettings;
 struct MiscAudio;
 
-typedef std::hash_map<AsciiString, AudioEventInfo*, rts::hash<AsciiString>, rts::equal_to<AsciiString> > AudioEventInfoHash;
+#include <unordered_map>
+typedef std::unordered_map<AsciiString, AudioEventInfo*, rts::hash<AsciiString>, rts::equal_to<AsciiString> > AudioEventInfoHash;
 typedef AudioEventInfoHash::iterator AudioEventInfoHashIt;
 typedef UnsignedInt AudioHandle;
 

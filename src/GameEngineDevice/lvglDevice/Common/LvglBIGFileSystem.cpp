@@ -8,6 +8,7 @@
 #include "lvglDevice/Common/Win32BIGFile.h"
 #include "lvglDevice/Common/Win32BIGFileSystem.h"
 #include "Common/registry.h"
+#include "Common/win32_compat.h"
 #include <cstdint>
 #include <cctype>
 #include <cstring>
