@@ -26,7 +26,7 @@
 -- Looking for IceConnectionNumber in ICE - found
 -- Found Git: /usr/bin/git (found version "2.43.0") 
 -- Git version 2.43.0 found at '/usr/bin/git'.
--- Git using branch 'main', commit 815b024dabad9e6c95437e42773cdf5a59e40936/'Merge pull request #77 from agentdavo/codex/move-wwmath-and-wwlib-directories'.
+-- Git using branch 'main', commit bf0753ab4ebd4d0d5bb796dcf73513abccb9ed55/'Merge pull request #78 from agentdavo/codex/move-ww3d2-directory-to-new-location'.
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
@@ -44,8 +44,8 @@
 
 -- Configuring core sources
 -- Configuring migrated engine modules
--- Configuring done (1.1s)
--- Generating done (0.2s)
+-- Configuring done (2.3s)
+-- Generating done (0.3s)
 -- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
 /usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
 /usr/bin/cmake -S/workspace/CnC_Generals_Zero_Hour -B/workspace/CnC_Generals_Zero_Hour/build --check-build-system CMakeFiles/Makefile.cmake 0
