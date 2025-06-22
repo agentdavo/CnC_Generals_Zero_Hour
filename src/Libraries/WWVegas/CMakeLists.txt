@@ -1,2 +1,5 @@
 add_subdirectory(Wwutil)
 add_subdirectory(WWSaveLoad)
+add_subdirectory(WWAudio)
+add_subdirectory(WWDebug)
+add_subdirectory(WWDownload)
