@@ -1,0 +1,2092 @@
+-- Configuring bundled libraries
+-- Git version 2.43.0 found at '/usr/bin/git'.
+-- Git using branch 'main', commit c32b461515249d04e9834115e342097a2669f915/'Merge pull request #74 from agentdavo/codex/remove-obsolete-files-and-directories'.
+-- Enabled features:
+
+-- Disabled features:
+ * SharedLibs, Generate a shared library for LZHL
+ * Packaging, Generate packaging rules for LZHL
+
+-- Configuring core sources
+-- Configuring migrated engine modules
+-- Configuring done (0.1s)
+-- Generating done (0.2s)
+-- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
+/usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
+/usr/bin/cmake -S/workspace/CnC_Generals_Zero_Hour -B/workspace/CnC_Generals_Zero_Hour/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles /workspace/CnC_Generals_Zero_Hour/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/lvgl.dir/build.make lib/CMakeFiles/lvgl.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib /workspace/CnC_Generals_Zero_Hour/build/lib/CMakeFiles/lvgl.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/lvgl.dir/build.make lib/CMakeFiles/lvgl.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/CMakeFiles/lvgl.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 37%] Built target lvgl
+/usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib /workspace/CnC_Generals_Zero_Hour/build/lib/CMakeFiles/miniaudio.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/CMakeFiles/miniaudio.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 37%] Built target miniaudio
+/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 37%] Built target usgt2
+/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common/CMakeFiles/uscommon.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 38%] Built target uscommon
+/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 39%] Built target ushttp
+/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 39%] Built target uswebservice
+/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 39%] Built target usbrigades
+/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 40%] Built target uschat
+/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 40%] Built target usnatneg
+/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 40%] Built target usqr2
+/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 40%] Built target uscdkey
+/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP/CMakeFiles/usgp.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 41%] Built target usgp
+/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 41%] Built target usstats
+/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 41%] Built target uspinger
+/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 41%] Built target usserverbrowsing
+/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 42%] Built target uspeer
+/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt/CMakeFiles/uspt.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 43%] Built target uspt
+/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake/CMakeFiles/ussake.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 43%] Built target ussake
+/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc/CMakeFiles/ussc.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 44%] Built target ussc
+/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 45%] Built target usd2g
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 47%] Built target gsm
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Built target usvoice2
+/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Built target UniSpySDK
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Building C object lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cc   -O3 -DNDEBUG -MD -MT lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o -MF CMakeFiles/milescleanup.dir/cleanup.c.o.d -o CMakeFiles/milescleanup.dir/cleanup.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/cleanup.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/cleanup.c:1:
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  138 | typedef unsigned long(__stdcall *AIL_file_open_callback)(const char *, unsigned long*);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:139:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  139 | typedef void(__stdcall *AIL_file_close_callback)(unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:140:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  140 | typedef long(__stdcall *AIL_file_seek_callback)(unsigned long, long, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:141:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  141 | typedef unsigned long(__stdcall *AIL_file_read_callback)(unsigned long, void *, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:142:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  142 | typedef void(__stdcall *AIL_stream_callback)(HSTREAM);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:143:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  143 | typedef void(__stdcall *AIL_3dsample_callback)(H3DPOBJECT);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:144:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  144 | typedef void(__stdcall *AIL_sample_callback)(HSAMPLE);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:182:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  182 | IMPORTS long __stdcall AIL_3D_sample_volume(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:183:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  183 | IMPORTS void __stdcall AIL_set_3D_sample_volume(H3DSAMPLE sample, float volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:184:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  184 | IMPORTS void __stdcall AIL_end_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:185:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  185 | IMPORTS void __stdcall AIL_resume_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:186:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  186 | IMPORTS void __stdcall AIL_stop_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:187:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  187 | IMPORTS void __stdcall AIL_start_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:188:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  188 | IMPORTS unsigned int __stdcall AIL_3D_sample_loop_count(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:189:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  189 | IMPORTS void __stdcall AIL_set_3D_sample_offset(H3DSAMPLE sample, unsigned int offset);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:190:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  190 | IMPORTS int __stdcall AIL_3D_sample_length(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:191:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  191 | IMPORTS unsigned int __stdcall AIL_3D_sample_offset(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:192:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  192 | IMPORTS int __stdcall AIL_3D_sample_playback_rate(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:193:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  193 | IMPORTS void __stdcall AIL_set_3D_sample_playback_rate(H3DSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:194:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  194 | IMPORTS int __stdcall AIL_set_3D_sample_file(H3DSAMPLE sample, const void* file_image);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:195:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  195 | IMPORTS HPROVIDER __stdcall AIL_set_sample_processor(HSAMPLE sample, SAMPLESTAGE pipeline_stage, HPROVIDER provider);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:196:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  196 | IMPORTS void __stdcall AIL_set_filter_sample_preference(HSAMPLE sample, const char* name, const void* val);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:197:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  197 | IMPORTS void __stdcall AIL_release_sample_handle(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:198:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  198 | IMPORTS void __stdcall AIL_close_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:199:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  199 | IMPORTS int __stdcall AIL_set_preference(unsigned int number, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:200:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  200 | IMPORTS int __stdcall AIL_waveOutOpen(HDIGDRIVER* driver, LPHWAVEOUT* waveout, int id, LPWAVEFORMAT format);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:201:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  201 | IMPORTS void __stdcall AIL_waveOutClose(HDIGDRIVER driver);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:202:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  202 | IMPORTS void __stdcall AIL_set_3D_sample_loop_count(H3DSAMPLE sample, unsigned int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:203:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  203 | IMPORTS void __stdcall AIL_set_stream_playback_rate(HSTREAM stream, int rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:204:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  204 | IMPORTS int __stdcall AIL_stream_playback_rate(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:205:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  205 | IMPORTS void __stdcall AIL_stream_ms_position(HSTREAM sample, S32* total_milliseconds, S32* current_milliseconds);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:206:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  206 | IMPORTS void __stdcall AIL_set_stream_ms_position(HSTREAM stream, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:207:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  207 | IMPORTS int __stdcall AIL_stream_loop_count(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:208:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  208 | IMPORTS void __stdcall AIL_set_stream_loop_block(HSTREAM stream, int loop_start, int loop_end);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:209:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  209 | IMPORTS void __stdcall AIL_set_stream_loop_count(HSTREAM stream, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:210:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  210 | IMPORTS int __stdcall AIL_stream_volume(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:211:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  211 | IMPORTS void __stdcall AIL_set_stream_volume(HSTREAM stream, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:212:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  212 | IMPORTS int __stdcall AIL_stream_pan(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:213:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  213 | IMPORTS void __stdcall AIL_set_stream_pan(HSTREAM stream, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:214:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  214 | IMPORTS void __stdcall AIL_close_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:215:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  215 | IMPORTS void __stdcall AIL_pause_stream(HSTREAM stream, int onoff);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:216:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  216 | IMPORTS AIL_stream_callback __stdcall AIL_register_stream_callback(HSTREAM stream, AIL_stream_callback callback);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:217:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  217 | IMPORTS AIL_3dsample_callback __stdcall AIL_register_3D_EOS_callback(H3DSAMPLE sample, AIL_3dsample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:218:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  218 | IMPORTS AIL_sample_callback __stdcall AIL_register_EOS_callback(HSAMPLE sample, AIL_sample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:219:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  219 | IMPORTS void __stdcall AIL_start_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:220:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  220 | IMPORTS HSTREAM __stdcall AIL_open_stream_by_sample(HDIGDRIVER driver, HSAMPLE sample, const char* file_name, int mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:221:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  221 | IMPORTS void __stdcall AIL_set_sample_playback_rate(HSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:222:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  222 | IMPORTS int __stdcall AIL_sample_playback_rate(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:223:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  223 | IMPORTS void __stdcall AIL_sample_ms_position(HSAMPLE sample, long* total_ms, long* current_ms);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:224:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  224 | IMPORTS void __stdcall AIL_set_sample_ms_position(HSAMPLE sample, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:225:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  225 | IMPORTS int __stdcall AIL_sample_loop_count(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:226:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  226 | IMPORTS void __stdcall AIL_set_sample_loop_count(HSAMPLE sample, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:227:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  227 | IMPORTS int __stdcall AIL_sample_volume(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:228:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  228 | IMPORTS void __stdcall AIL_set_sample_volume(HSAMPLE sample, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:229:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  229 | IMPORTS int __stdcall AIL_sample_pan(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:230:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  230 | IMPORTS void __stdcall AIL_set_sample_pan(HSAMPLE sample, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:231:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  231 | IMPORTS void __stdcall AIL_end_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:232:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  232 | IMPORTS void __stdcall AIL_resume_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:233:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  233 | IMPORTS void __stdcall AIL_stop_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:234:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  234 | IMPORTS void __stdcall AIL_start_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:235:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  235 | IMPORTS void __stdcall AIL_init_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:237:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  237 |     HSAMPLE sample, const char* file_name, const void* file_image, int file_size, int block);
+      |     ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:238:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  238 | IMPORTS void __stdcall AIL_set_3D_sample_effects_level(H3DSAMPLE sample, float effect_level);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:239:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  239 | IMPORTS void __stdcall AIL_set_3D_sample_distances(H3DSAMPLE sample, float max_dist, float min_dist);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:240:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  240 | IMPORTS void __stdcall AIL_set_3D_velocity_vector(H3DSAMPLE sample, float x, float y, float z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:241:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  241 | IMPORTS void __stdcall AIL_set_3D_position(H3DPOBJECT obj, float X, float Y, float Z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:243:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  243 |     H3DPOBJECT obj, float X_face, float Y_face, float Z_face, float X_up, float Y_up, float Z_up);
+      |     ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:244:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  244 | IMPORTS int __stdcall AIL_WAV_info(const void* data, AILSOUNDINFO* info);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:245:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  245 | IMPORTS void __stdcall AIL_stop_timer(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:246:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  246 | IMPORTS void __stdcall AIL_release_timer_handle(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:247:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  247 | IMPORTS void __stdcall AIL_shutdown(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:248:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  248 | IMPORTS int __stdcall AIL_enumerate_filters(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:250:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  250 |     AIL_file_seek_callback seekcb, AIL_file_read_callback readcb);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:251:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  251 | IMPORTS void __stdcall AIL_release_3D_sample_handle(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:252:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  252 | IMPORTS H3DSAMPLE __stdcall AIL_allocate_3D_sample_handle(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:253:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  253 | IMPORTS void __stdcall AIL_set_3D_user_data(H3DPOBJECT obj, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:254:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  254 | IMPORTS void __stdcall AIL_unlock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:255:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  255 | IMPORTS void __stdcall AIL_lock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:256:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  256 | IMPORTS void __stdcall AIL_set_3D_speaker_type(HPROVIDER lib, int speaker_type);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:257:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  257 | IMPORTS void __stdcall AIL_close_3D_listener(H3DPOBJECT listener);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:258:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  258 | IMPORTS int __stdcall AIL_enumerate_3D_providers(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:259:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  259 | IMPORTS M3DRESULT __stdcall AIL_open_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:260:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  260 | IMPORTS char* __stdcall AIL_last_error(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:261:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  261 | IMPORTS H3DPOBJECT __stdcall AIL_open_3D_listener(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:262:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  262 | IMPORTS int __stdcall AIL_3D_user_data(H3DSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:263:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  263 | IMPORTS int __stdcall AIL_sample_user_data(HSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:264:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  264 | IMPORTS HSAMPLE __stdcall AIL_allocate_sample_handle(HDIGDRIVER dig);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:265:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  265 | IMPORTS void __stdcall AIL_set_sample_user_data(HSAMPLE sample, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:266:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  266 | IMPORTS int __stdcall AIL_decompress_ADPCM(const AILSOUNDINFO *info, void **outdata, unsigned long *outsize);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:267:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  267 | IMPORTS void __stdcall AIL_get_DirectSound_info(HSAMPLE sample, AILLPDIRECTSOUND *lplpDS, AILLPDIRECTSOUNDBUFFER *lplpDSB);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:268:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  268 | IMPORTS void __stdcall AIL_mem_free_lock(void *ptr);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:269:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  269 | IMPORTS HSTREAM __stdcall AIL_open_stream(HDIGDRIVER dig, const char *filename, int stream_mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:270:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  270 | IMPORTS int __stdcall AIL_startup(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:271:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  271 | IMPORTS void __stdcall AIL_quick_unload(HAUDIO audio);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:272:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  272 | IMPORTS HAUDIO __stdcall AIL_quick_load_and_play(const char *filename, unsigned int loop_count, int wait_request);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:273:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  273 | IMPORTS void __stdcall AIL_quick_set_volume(HAUDIO audio, float volume, float extravol);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:275:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  275 |     int use_digital, int use_MIDI, unsigned int output_rate, int output_bits, int output_channels);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:276:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  276 | IMPORTS void __stdcall AIL_quick_handles(HDIGDRIVER *pdig, HMDIDRIVER *pmdi, HDLSDEVICE *pdls);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:277:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  277 | IMPORTS void __stdcall AIL_sample_volume_pan(HSAMPLE sample, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:278:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  278 | IMPORTS void __stdcall AIL_set_3D_sample_occlusion(H3DSAMPLE sample, float occlusion);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:279:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  279 | IMPORTS char *__stdcall AIL_set_redist_directory(const char *dir);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:280:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  280 | IMPORTS int __stdcall AIL_set_sample_file(HSAMPLE sample, const void *file_image, int block);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:281:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  281 | IMPORTS void __stdcall AIL_set_sample_volume_pan(HSAMPLE sample, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:282:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  282 | IMPORTS void __stdcall AIL_set_stream_volume_pan(HSTREAM stream, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:283:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  283 | IMPORTS void __stdcall AIL_stream_volume_pan(HSTREAM stream, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:284:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  284 | IMPORTS unsigned long __stdcall AIL_get_timer_highest_delay(void);
+      | ^~~~~~~
+[ 48%] Linking C static library libmilescleanup.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -P CMakeFiles/milescleanup.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_link_script CMakeFiles/milescleanup.dir/link.txt --verbose=1
+/usr/bin/ar qc libmilescleanup.a CMakeFiles/milescleanup.dir/cleanup.c.o
+/usr/bin/ranlib libmilescleanup.a
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Built target milescleanup
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milesstub.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 48%] Building C object lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cc -DBUILD_STUBS -Dmilesstub_EXPORTS -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -fPIC -MD -MT lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o -MF CMakeFiles/milesstub.dir/miles.c.o.d -o CMakeFiles/milesstub.dir/miles.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:16:
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  138 | typedef unsigned long(__stdcall *AIL_file_open_callback)(const char *, unsigned long*);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:139:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  139 | typedef void(__stdcall *AIL_file_close_callback)(unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:140:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  140 | typedef long(__stdcall *AIL_file_seek_callback)(unsigned long, long, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:141:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  141 | typedef unsigned long(__stdcall *AIL_file_read_callback)(unsigned long, void *, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:142:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  142 | typedef void(__stdcall *AIL_stream_callback)(HSTREAM);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:143:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  143 | typedef void(__stdcall *AIL_3dsample_callback)(H3DPOBJECT);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:144:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  144 | typedef void(__stdcall *AIL_sample_callback)(HSAMPLE);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:182:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  182 | IMPORTS long __stdcall AIL_3D_sample_volume(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:183:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  183 | IMPORTS void __stdcall AIL_set_3D_sample_volume(H3DSAMPLE sample, float volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:184:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  184 | IMPORTS void __stdcall AIL_end_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:185:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  185 | IMPORTS void __stdcall AIL_resume_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:186:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  186 | IMPORTS void __stdcall AIL_stop_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:187:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  187 | IMPORTS void __stdcall AIL_start_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:188:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  188 | IMPORTS unsigned int __stdcall AIL_3D_sample_loop_count(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:189:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  189 | IMPORTS void __stdcall AIL_set_3D_sample_offset(H3DSAMPLE sample, unsigned int offset);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:190:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  190 | IMPORTS int __stdcall AIL_3D_sample_length(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:191:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  191 | IMPORTS unsigned int __stdcall AIL_3D_sample_offset(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:192:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  192 | IMPORTS int __stdcall AIL_3D_sample_playback_rate(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:193:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  193 | IMPORTS void __stdcall AIL_set_3D_sample_playback_rate(H3DSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:194:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  194 | IMPORTS int __stdcall AIL_set_3D_sample_file(H3DSAMPLE sample, const void* file_image);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:195:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  195 | IMPORTS HPROVIDER __stdcall AIL_set_sample_processor(HSAMPLE sample, SAMPLESTAGE pipeline_stage, HPROVIDER provider);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:196:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  196 | IMPORTS void __stdcall AIL_set_filter_sample_preference(HSAMPLE sample, const char* name, const void* val);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:197:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  197 | IMPORTS void __stdcall AIL_release_sample_handle(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:198:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  198 | IMPORTS void __stdcall AIL_close_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:199:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  199 | IMPORTS int __stdcall AIL_set_preference(unsigned int number, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:200:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  200 | IMPORTS int __stdcall AIL_waveOutOpen(HDIGDRIVER* driver, LPHWAVEOUT* waveout, int id, LPWAVEFORMAT format);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:201:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  201 | IMPORTS void __stdcall AIL_waveOutClose(HDIGDRIVER driver);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:202:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  202 | IMPORTS void __stdcall AIL_set_3D_sample_loop_count(H3DSAMPLE sample, unsigned int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:203:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  203 | IMPORTS void __stdcall AIL_set_stream_playback_rate(HSTREAM stream, int rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:204:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  204 | IMPORTS int __stdcall AIL_stream_playback_rate(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:205:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  205 | IMPORTS void __stdcall AIL_stream_ms_position(HSTREAM sample, S32* total_milliseconds, S32* current_milliseconds);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:206:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  206 | IMPORTS void __stdcall AIL_set_stream_ms_position(HSTREAM stream, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:207:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  207 | IMPORTS int __stdcall AIL_stream_loop_count(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:208:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  208 | IMPORTS void __stdcall AIL_set_stream_loop_block(HSTREAM stream, int loop_start, int loop_end);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:209:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  209 | IMPORTS void __stdcall AIL_set_stream_loop_count(HSTREAM stream, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:210:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  210 | IMPORTS int __stdcall AIL_stream_volume(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:211:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  211 | IMPORTS void __stdcall AIL_set_stream_volume(HSTREAM stream, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:212:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  212 | IMPORTS int __stdcall AIL_stream_pan(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:213:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  213 | IMPORTS void __stdcall AIL_set_stream_pan(HSTREAM stream, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:214:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  214 | IMPORTS void __stdcall AIL_close_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:215:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  215 | IMPORTS void __stdcall AIL_pause_stream(HSTREAM stream, int onoff);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:216:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  216 | IMPORTS AIL_stream_callback __stdcall AIL_register_stream_callback(HSTREAM stream, AIL_stream_callback callback);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:217:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  217 | IMPORTS AIL_3dsample_callback __stdcall AIL_register_3D_EOS_callback(H3DSAMPLE sample, AIL_3dsample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:218:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  218 | IMPORTS AIL_sample_callback __stdcall AIL_register_EOS_callback(HSAMPLE sample, AIL_sample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:219:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  219 | IMPORTS void __stdcall AIL_start_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:220:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  220 | IMPORTS HSTREAM __stdcall AIL_open_stream_by_sample(HDIGDRIVER driver, HSAMPLE sample, const char* file_name, int mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:221:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  221 | IMPORTS void __stdcall AIL_set_sample_playback_rate(HSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:222:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  222 | IMPORTS int __stdcall AIL_sample_playback_rate(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:223:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  223 | IMPORTS void __stdcall AIL_sample_ms_position(HSAMPLE sample, long* total_ms, long* current_ms);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:224:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  224 | IMPORTS void __stdcall AIL_set_sample_ms_position(HSAMPLE sample, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:225:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  225 | IMPORTS int __stdcall AIL_sample_loop_count(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:226:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  226 | IMPORTS void __stdcall AIL_set_sample_loop_count(HSAMPLE sample, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:227:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  227 | IMPORTS int __stdcall AIL_sample_volume(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:228:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  228 | IMPORTS void __stdcall AIL_set_sample_volume(HSAMPLE sample, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:229:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  229 | IMPORTS int __stdcall AIL_sample_pan(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:230:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  230 | IMPORTS void __stdcall AIL_set_sample_pan(HSAMPLE sample, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:231:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  231 | IMPORTS void __stdcall AIL_end_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:232:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  232 | IMPORTS void __stdcall AIL_resume_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:233:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  233 | IMPORTS void __stdcall AIL_stop_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:234:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  234 | IMPORTS void __stdcall AIL_start_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:235:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  235 | IMPORTS void __stdcall AIL_init_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:237:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  237 |     HSAMPLE sample, const char* file_name, const void* file_image, int file_size, int block);
+      |     ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:238:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  238 | IMPORTS void __stdcall AIL_set_3D_sample_effects_level(H3DSAMPLE sample, float effect_level);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:239:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  239 | IMPORTS void __stdcall AIL_set_3D_sample_distances(H3DSAMPLE sample, float max_dist, float min_dist);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:240:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  240 | IMPORTS void __stdcall AIL_set_3D_velocity_vector(H3DSAMPLE sample, float x, float y, float z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:241:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  241 | IMPORTS void __stdcall AIL_set_3D_position(H3DPOBJECT obj, float X, float Y, float Z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:243:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  243 |     H3DPOBJECT obj, float X_face, float Y_face, float Z_face, float X_up, float Y_up, float Z_up);
+      |     ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:244:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  244 | IMPORTS int __stdcall AIL_WAV_info(const void* data, AILSOUNDINFO* info);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:245:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  245 | IMPORTS void __stdcall AIL_stop_timer(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:246:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  246 | IMPORTS void __stdcall AIL_release_timer_handle(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:247:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  247 | IMPORTS void __stdcall AIL_shutdown(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:248:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  248 | IMPORTS int __stdcall AIL_enumerate_filters(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:250:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  250 |     AIL_file_seek_callback seekcb, AIL_file_read_callback readcb);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:251:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  251 | IMPORTS void __stdcall AIL_release_3D_sample_handle(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:252:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  252 | IMPORTS H3DSAMPLE __stdcall AIL_allocate_3D_sample_handle(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:253:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  253 | IMPORTS void __stdcall AIL_set_3D_user_data(H3DPOBJECT obj, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:254:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  254 | IMPORTS void __stdcall AIL_unlock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:255:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  255 | IMPORTS void __stdcall AIL_lock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:256:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  256 | IMPORTS void __stdcall AIL_set_3D_speaker_type(HPROVIDER lib, int speaker_type);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:257:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  257 | IMPORTS void __stdcall AIL_close_3D_listener(H3DPOBJECT listener);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:258:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  258 | IMPORTS int __stdcall AIL_enumerate_3D_providers(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:259:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  259 | IMPORTS M3DRESULT __stdcall AIL_open_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:260:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  260 | IMPORTS char* __stdcall AIL_last_error(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:261:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  261 | IMPORTS H3DPOBJECT __stdcall AIL_open_3D_listener(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:262:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  262 | IMPORTS int __stdcall AIL_3D_user_data(H3DSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:263:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  263 | IMPORTS int __stdcall AIL_sample_user_data(HSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:264:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  264 | IMPORTS HSAMPLE __stdcall AIL_allocate_sample_handle(HDIGDRIVER dig);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:265:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  265 | IMPORTS void __stdcall AIL_set_sample_user_data(HSAMPLE sample, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:266:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  266 | IMPORTS int __stdcall AIL_decompress_ADPCM(const AILSOUNDINFO *info, void **outdata, unsigned long *outsize);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:267:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  267 | IMPORTS void __stdcall AIL_get_DirectSound_info(HSAMPLE sample, AILLPDIRECTSOUND *lplpDS, AILLPDIRECTSOUNDBUFFER *lplpDSB);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:268:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  268 | IMPORTS void __stdcall AIL_mem_free_lock(void *ptr);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:269:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  269 | IMPORTS HSTREAM __stdcall AIL_open_stream(HDIGDRIVER dig, const char *filename, int stream_mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:270:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  270 | IMPORTS int __stdcall AIL_startup(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:271:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  271 | IMPORTS void __stdcall AIL_quick_unload(HAUDIO audio);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:272:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  272 | IMPORTS HAUDIO __stdcall AIL_quick_load_and_play(const char *filename, unsigned int loop_count, int wait_request);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:273:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  273 | IMPORTS void __stdcall AIL_quick_set_volume(HAUDIO audio, float volume, float extravol);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:275:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  275 |     int use_digital, int use_MIDI, unsigned int output_rate, int output_bits, int output_channels);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:276:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  276 | IMPORTS void __stdcall AIL_quick_handles(HDIGDRIVER *pdig, HMDIDRIVER *pmdi, HDLSDEVICE *pdls);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:277:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  277 | IMPORTS void __stdcall AIL_sample_volume_pan(HSAMPLE sample, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:278:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  278 | IMPORTS void __stdcall AIL_set_3D_sample_occlusion(H3DSAMPLE sample, float occlusion);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:279:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  279 | IMPORTS char *__stdcall AIL_set_redist_directory(const char *dir);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:280:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  280 | IMPORTS int __stdcall AIL_set_sample_file(HSAMPLE sample, const void *file_image, int block);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:281:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  281 | IMPORTS void __stdcall AIL_set_sample_volume_pan(HSAMPLE sample, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:282:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  282 | IMPORTS void __stdcall AIL_set_stream_volume_pan(HSTREAM stream, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:283:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  283 | IMPORTS void __stdcall AIL_stream_volume_pan(HSTREAM stream, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:284:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  284 | IMPORTS unsigned long __stdcall AIL_get_timer_highest_delay(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:55:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   55 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:62:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   62 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:70:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   70 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:75:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   75 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:80:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   80 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:85:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   85 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:90:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   90 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:95:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   95 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:100:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  100 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:107:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  107 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:114:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  114 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:119:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  119 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:124:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  124 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:129:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  129 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:134:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  134 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  138 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:146:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  146 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:151:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  151 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:160:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  160 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:167:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  167 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:172:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  172 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:177:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  177 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:185:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  185 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:193:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  193 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:205:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  205 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:213:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  213 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:220:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  220 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:224:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  224 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:232:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  232 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:239:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  239 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:247:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  247 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:254:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  254 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:262:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  262 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:270:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  270 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:278:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  278 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:283:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  283 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:288:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  288 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:293:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  293 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:300:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  300 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:305:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  305 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:313:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  313 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:321:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  321 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:333:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  333 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:341:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  341 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:348:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  348 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:356:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  356 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:363:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  363 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:371:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  371 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:378:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  378 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:386:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  386 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:393:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  393 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:400:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  400 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:407:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  407 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:414:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  414 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:420:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  420 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:432:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  432 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:439:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  439 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:447:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  447 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:454:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  454 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:462:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  462 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:470:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  470 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:505:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  505 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:509:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  509 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:513:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  513 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:519:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  519 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:525:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  525 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:529:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  529 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:534:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  534 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:540:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  540 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:545:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  545 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:550:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  550 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:555:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  555 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:560:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  560 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:565:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  565 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:577:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  577 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:583:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  583 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:588:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  588 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:594:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  594 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:599:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  599 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:606:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  606 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:617:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  617 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:624:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  624 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:644:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  644 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:648:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  648 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:653:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  653 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:668:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  668 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:676:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  676 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:691:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  691 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:700:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  700 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:706:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  706 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:713:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  713 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:721:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  721 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:725:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  725 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:730:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  730 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:735:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  735 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:745:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  745 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:755:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  755 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:763:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  763 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:771:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  771 | {
+      | ^
+[ 49%] Linking C shared library libmss32.so
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_link_script CMakeFiles/milesstub.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libmss32.so.1.0 -o libmss32.so.1.0.0 CMakeFiles/milesstub.dir/miles.c.o  libmilescleanup.a ../libminiaudio.a 
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_symlink_library libmss32.so.1.0.0 libmss32.so.1.0 libmss32.so
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 49%] Built target milesstub
+/usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/zlib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/zlib /workspace/CnC_Generals_Zero_Hour/build/lib/zlib/CMakeFiles/zlib.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/zlib/CMakeFiles/zlib.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target zlib
+/usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl/CMakeFiles/lzhl.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/liblzhl/CMakeFiles/lzhl.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target lzhl
+/usr/bin/gmake  -f src/CMakeFiles/LvglPlatform.dir/build.make src/CMakeFiles/LvglPlatform.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src /workspace/CnC_Generals_Zero_Hour/build/src/CMakeFiles/LvglPlatform.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f src/CMakeFiles/LvglPlatform.dir/build.make src/CMakeFiles/LvglPlatform.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'src/CMakeFiles/LvglPlatform.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target LvglPlatform
+/usr/bin/gmake  -f src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build.make src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build.make src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglBIGFileSystem.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglBIGFileSystem.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglBIGFileSystem.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglBIGFileSystem.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglBIGFileSystem.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/ArchiveFileSystem.h:55,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/ArchiveFile.h:36,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglBIGFileSystem.cpp:2:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h: In static member function ‘static void* File::operator new(size_t, FileMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   84 |         MEMORY_POOL_GLUE_ABC(File)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h: In static member function ‘static void* File::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   84 |         MEMORY_POOL_GLUE_ABC(File)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/AudioEventInfo.h: In static member function ‘static void* AudioEventInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/AudioEventInfo.h:87:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   87 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( AudioEventInfo, "AudioEventInfo" )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 51%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglGameEngine.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglGameEngine.cpp
+[ 52%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglLocalFileSystem.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/LocalFileSystem.h:34,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglLocalFileSystem.cpp:1:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h: In static member function ‘static void* File::operator new(size_t, FileMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   84 |         MEMORY_POOL_GLUE_ABC(File)
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h: In static member function ‘static void* File::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+   84 |         MEMORY_POOL_GLUE_ABC(File)
+      |         ^~~~~~~~~~~~~~~~~~~~
+[ 52%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglOSDisplay.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglOSDisplay.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglOSDisplay.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/LvglOSDisplay.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglOSDisplay.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameClient/GameText.h:54,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglOSDisplay.cpp:4:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 52%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFile.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFile.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFile.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFile.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32BIGFile.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/ArchiveFileSystem.h:55,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/ArchiveFile.h:36,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/Win32BIGFile.h:34,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32BIGFile.cpp:1:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 52%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFileSystem.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFileSystem.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFileSystem.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32BIGFileSystem.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32BIGFileSystem.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/ArchiveFileSystem.h:55,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/Win32BIGFileSystem.h:34,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32BIGFileSystem.cpp:1:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 52%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32CDManager.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32CDManager.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32CDManager.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32CDManager.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32CDManager.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/CDManager.h:55,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/Win32CDManager.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32CDManager.cpp:1:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 52%] Building CXX object src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32GameEngine.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/GameEngineDevice && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/GameEngine -I/workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice -I/workspace/CnC_Generals_Zero_Hour/include/Precompiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32GameEngine.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32GameEngine.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32GameEngine.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32GameEngine.cpp
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/STLTypedefs.h:74,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameEngine.h:34,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/Win32GameEngine.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/Win32GameEngine.cpp:1:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/INI.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:747:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  747 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/NameKeyGenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/MessageStream.h: In static member function ‘static void* GameMessageArgument::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/MessageStream.h:86:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   86 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(GameMessageArgument, "GameMessageArgument")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/MessageStream.h: In static member function ‘static void* GameMessage::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/MessageStream.h:103:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  103 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(GameMessage, "GameMessage")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:41:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   41 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetCommandMsg, "NetCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetGameCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:79:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   79 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetGameCommandMsg, "NetGameCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetAckBothCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:106:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  106 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetAckBothCommandMsg, "NetAckBothCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetAckStage1CommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:130:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  130 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetAckStage1CommandMsg, "NetAckStage1CommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetAckStage2CommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:154:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  154 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetAckStage2CommandMsg, "NetAckStage2CommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetFrameCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:174:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  174 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetFrameCommandMsg, "NetFrameCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetPlayerLeaveCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:189:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  189 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetPlayerLeaveCommandMsg, "NetPlayerLeaveCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetRunAheadMetricsCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:204:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  204 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetRunAheadMetricsCommandMsg, "NetRunAheadMetricsCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetRunAheadCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:222:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  222 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetRunAheadCommandMsg, "NetRunAheadCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDestroyPlayerCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:241:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  241 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDestroyPlayerCommandMsg, "NetDestroyPlayerCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetKeepAliveCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:256:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  256 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetKeepAliveCommandMsg, "NetKeepAliveCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDisconnectKeepAliveCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:265:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  265 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDisconnectKeepAliveCommandMsg, "NetDisconnectKeepAliveCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDisconnectPlayerCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:274:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  274 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDisconnectPlayerCommandMsg, "NetDisconnectPlayerCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetPacketRouterQueryCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:293:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  293 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetPacketRouterQueryCommandMsg, "NetPacketRouterQueryCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetPacketRouterAckCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:302:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  302 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetPacketRouterAckCommandMsg, "NetPacketRouterAckCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDisconnectChatCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:311:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  311 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDisconnectChatCommandMsg, "NetDisconnectChatCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetChatCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:326:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  326 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetChatCommandMsg, "NetChatCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDisconnectVoteCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:345:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  345 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDisconnectVoteCommandMsg, "NetDisconnectVoteCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetProgressCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:364:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  364 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetProgressCommandMsg, "NetProgressCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetWrapperCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:378:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  378 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetWrapperCommandMsg, "NetWrapperCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetFileCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:417:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  417 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetFileCommandMsg, "NetFileCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetFileAnnounceCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:443:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  443 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetFileAnnounceCommandMsg, "NetFileAnnounceCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetFileProgressCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:469:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  469 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetFileProgressCommandMsg, "NetFileProgressCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDisconnectFrameCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:488:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  488 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDisconnectFrameCommandMsg, "NetDisconnectFrameCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetDisconnectScreenOffCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:502:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  502 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetDisconnectScreenOffCommandMsg, "NetDisconnectScreenOffCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h: In static member function ‘static void* NetFrameResendRequestCommandMsg::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandMsg.h:516:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+  516 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetFrameResendRequestCommandMsg, "NetFrameResendRequestCommandMsg")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandRef.h: In static member function ‘static void* NetCommandRef::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandRef.h:47:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   47 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetCommandRef, "NetCommandRef")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandList.h: In static member function ‘static void* NetCommandList::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetCommandList.h:49:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   49 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetCommandList, "NetCommandList")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/User.h: In static member function ‘static void* User::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/User.h:39:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   39 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(User, "User")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetPacket.h: In static member function ‘static void* NetPacket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/NetPacket.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(NetPacket, "NetPacket")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/Connection.h: In static member function ‘static void* Connection::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/Connection.h:50:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   50 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(Connection, "Connection")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/FrameDataManager.h: In static member function ‘static void* FrameDataManager::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:650:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  650 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:676:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  676 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameNetwork/FrameDataManager.h:36:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   36 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(FrameDataManager, "FrameDataManager")
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:41,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngineDevice/lvglDevice/Common/Win32GameEngine.h:5:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: At global scope:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:45:6: error: use of enum ‘StaticGameLODLevel’ without previous declaration
+   45 | enum StaticGameLODLevel;
+      |      ^~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:115:17: error: ‘StaticGameLODLevel’ does not name a type
+  115 |         virtual StaticGameLODLevel getMinimumRequiredGameLOD() const { return (StaticGameLODLevel)0;}
+      |                 ^~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: In static member function ‘static void* Module::operator new(size_t, ModuleMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:182:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  182 |         MEMORY_POOL_GLUE_ABC( Module )                                          ///< this abstract class needs memory pool hooks
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: In static member function ‘static void* Module::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:182:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  182 |         MEMORY_POOL_GLUE_ABC( Module )                                          ///< this abstract class needs memory pool hooks
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: In static member function ‘static void* ObjectModule::operator new(size_t, ObjectModuleMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:243:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  243 |         MEMORY_POOL_GLUE_ABC( ObjectModule )                    ///< this abstract class needs memory pool hooks
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: In static member function ‘static void* ObjectModule::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:243:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  243 |         MEMORY_POOL_GLUE_ABC( ObjectModule )                    ///< this abstract class needs memory pool hooks
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: In static member function ‘static void* DrawableModule::operator new(size_t, DrawableModuleMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:288:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  288 |         MEMORY_POOL_GLUE_ABC( DrawableModule )          ///< this abstract class needs memory pool hooks
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h: In static member function ‘static void* DrawableModule::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/Module.h:288:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  288 |         MEMORY_POOL_GLUE_ABC( DrawableModule )          ///< this abstract class needs memory pool hooks
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/DisabledTypes.h:37,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/BitFlags.h: In static member function ‘static Int BitFlags<NUMBITS>::getSingleBitFromName(const char*)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/BitFlags.h:252:23: error: there are no arguments to ‘stricmp’ that depend on a template parameter, so a declaration of ‘stricmp’ must be available [-fpermissive]
+  252 |                   if( stricmp( *name, token ) == 0 )
+      |                       ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/BitFlags.h:252:23: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/BehaviorModule.h: In static member function ‘static void* BehaviorModule::operator new(size_t, BehaviorModuleMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/BehaviorModule.h:146:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  146 |         MEMORY_POOL_GLUE_ABC( BehaviorModule )
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/BehaviorModule.h: In static member function ‘static void* BehaviorModule::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/BehaviorModule.h:146:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  146 |         MEMORY_POOL_GLUE_ABC( BehaviorModule )
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h: At global scope:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h:65:6: error: use of enum ‘CommandOption’ without previous declaration
+   65 | enum CommandOption;
+      |      ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h: In static member function ‘static void* UpdateModule::operator new(size_t, UpdateModuleMagicEnum)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:692:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  692 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h:136:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  136 |         MEMORY_POOL_GLUE_ABC( UpdateModule )
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h: In static member function ‘static void* UpdateModule::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:705:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  705 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h:136:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
+  136 |         MEMORY_POOL_GLUE_ABC( UpdateModule )
+      |         ^~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h: At global scope:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/Module/UpdateModule.h:269:17: error: ‘CommandOption’ does not name a type; did you mean ‘CommandButton’?
+  269 |         virtual CommandOption getCommandOption() const = 0;
+      |                 ^~~~~~~~~~~~~
+      |                 CommandButton
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:68:6: error: use of enum ‘BuildableStatus’ without previous declaration
+   68 | enum BuildableStatus;
+      |      ^~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:69:6: error: use of enum ‘ObjectStatusBits’ without previous declaration
+   69 | enum ObjectStatusBits;
+      |      ^~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:95:14: error: ‘hash_map’ in namespace ‘std’ does not name a template type
+   95 | typedef std::hash_map<ObjectID, Object *, rts::hash<ObjectID>, rts::equal_to<ObjectID> > ObjectPtrHash;
+      |              ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:96:9: error: ‘ObjectPtrHash’ does not name a type
+   96 | typedef ObjectPtrHash::const_iterator ObjectPtrIter;
+      |         ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:142:66: error: ‘BuildableStatus’ has not been declared
+  142 |         void setBuildableStatusOverride(const ThingTemplate* tt, BuildableStatus bs);
+      |                                                                  ^~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:143:67: error: ‘BuildableStatus’ has not been declared
+  143 |         Bool findBuildableStatusOverride(const ThingTemplate* tt, BuildableStatus& bs) const;
+      |                                                                   ^~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:150:66: error: ‘ObjectStatusBits’ has not been declared
+  150 |         Object *friend_createObject( const ThingTemplate *thing, ObjectStatusBits statusBits, Team *team );
+      |                                                                  ^~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:267:22: error: ‘hash_map’ in namespace ‘std’ does not name a template type
+  267 |         typedef std::hash_map< AsciiString, BuildableStatus, rts::hash<AsciiString>, rts::equal_to<AsciiString> > BuildableMap;
+      |                      ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:268:9: error: ‘BuildableMap’ does not name a type
+  268 |         BuildableMap m_thingTemplateBuildableOverrides;
+      |         ^~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:273:22: error: ‘hash_map’ in namespace ‘std’ does not name a template type
+  273 |         typedef std::hash_map< AsciiString, ConstCommandButtonPtr, rts::hash<AsciiString>, rts::equal_to<AsciiString> > ControlBarOverrideMap;
+      |                      ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:274:9: error: ‘ControlBarOverrideMap’ does not name a type
+  274 |         ControlBarOverrideMap m_controlBarOverrides;
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:304:9: error: ‘ObjectPtrHash’ does not name a type
+  304 |         ObjectPtrHash m_objHash;                                                                                                                                ///< Used for ObjectID lookups
+      |         ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h: In member function ‘Object* GameLogic::findObjectByID(ObjectID)’:
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:399:9: error: ‘ObjectPtrHash’ has not been declared
+  399 |         ObjectPtrHash::iterator it = m_objHash.find(id);
+      |         ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:400:13: error: ‘it’ was not declared in this scope; did you mean ‘int’?
+  400 |         if (it == m_objHash.end())
+      |             ^~
+      |             int
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:400:19: error: ‘m_objHash’ was not declared in this scope; did you mean ‘m_objList’?
+  400 |         if (it == m_objHash.end())
+      |                   ^~~~~~~~~
+      |                   m_objList
+/workspace/CnC_Generals_Zero_Hour/include/GameEngine/GameLogic/GameLogic.h:403:18: error: ‘it’ was not declared in this scope; did you mean ‘int’?
+  403 |         return (*it).second;
+      |                  ^~
+      |                  int
+gmake[2]: *** [src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/build.make:191: src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/lvglDevice/Common/Win32GameEngine.cpp.o] Error 1
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[1]: *** [CMakeFiles/Makefile2:1818: src/GameEngineDevice/CMakeFiles/gameenginedevice.dir/all] Error 2
+gmake[1]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake: *** [Makefile:94: all] Error 2
