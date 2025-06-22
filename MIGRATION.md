@@ -214,3 +214,8 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   `src/GameEngineDevice` with corresponding headers in `include/GameEngineDevice`.
   `src/GameEngineDevice/CMakeLists.txt` globs these directories and the old
   `Generals/Code/GameEngineDevice` tree was removed.
+
+- Additional W3DDevice modules such as `BaseHeightMap` and `camerashakesystem` have been
+  moved into the new hierarchy. Shader assets now live under
+  `src/GameEngineDevice/W3DDevice/GameClient/Shaders` and the old
+  `GeneralsMD/Code/GameEngineDevice` directory has been removed.
