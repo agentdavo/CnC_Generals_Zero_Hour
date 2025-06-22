@@ -12,6 +12,7 @@ target_link_libraries(LvglPlatform PUBLIC lvgl)
 
 add_subdirectory(Libraries/WPAudio)
 add_subdirectory(Libraries/Compression)
+add_subdirectory(Libraries/WWVegas)
 
 add_subdirectory(GameEngineDevice/lvglDevice)
 
