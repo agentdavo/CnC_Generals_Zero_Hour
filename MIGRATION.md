@@ -221,3 +221,4 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   `GeneralsMD/Code/GameEngineDevice` directory has been removed.
 - MapCacheBuilder tool moved to `src/Tools/MapCacheBuilder` with a minimal stub executable. The original directory under `Generals/Code/Tools` was removed.
 - buildVersionUpdate, versionUpdate and Compress tools moved to `src/Tools` with basic stubs and new CMake targets.
+- The remaining tools from `Generals/Code/Tools` are now located under `src/Tools`. Their original directories were removed. The migrated tools are: Autorun, Babylon, CRCDiff, DebugWindow, GUIEdit, ImagePacker, Launcher, NVASM, PATCHGET, ParticleEditor, WW3D, WorldBuilder, mangler, matchbot, textureCompress, timingTest and wolSetup.
