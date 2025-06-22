@@ -219,3 +219,5 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   moved into the new hierarchy. Shader assets now live under
   `src/GameEngineDevice/W3DDevice/GameClient/Shaders` and the old
   `GeneralsMD/Code/GameEngineDevice` directory has been removed.
+- MapCacheBuilder tool moved to `src/Tools/MapCacheBuilder` with a minimal stub executable. The original directory under `Generals/Code/Tools` was removed.
+- buildVersionUpdate, versionUpdate and Compress tools moved to `src/Tools` with basic stubs and new CMake targets.
