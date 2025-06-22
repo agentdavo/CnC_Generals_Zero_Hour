@@ -205,6 +205,10 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - `StatsCollector` moved to `src/GameEngine/Common` with its header now under
   `include/GameEngine/Common`.
 
+- The legacy `GameNetwork` directories under `Generals/Code` and
+  `GeneralsMD/Code` were removed after verifying all files exist in the new
+  `src` and `include` hierarchy.
+
 - Remaining headers from `Generals/Code/GameEngine/Include/Common` migrated into `include/GameEngine/Common` and originals removed.
 - Source files under `Generals/Code/GameEngine/Source/Common` migrated into `src/GameEngine/Common`. The CMake build lists these new paths and the old copies were deleted.
 - Remaining `GameEngineDevice` modules have been relocated. W3D device game
