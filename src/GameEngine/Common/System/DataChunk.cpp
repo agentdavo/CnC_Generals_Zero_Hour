@@ -30,7 +30,7 @@
 
 #include "stdlib.h"
 #include "string.h"
-#include "Compression.h"
+#include <Libraries/Compression/Compression.h>
 #include "Common/DataChunk.h"
 #include "Common/File.h"
 #include "Common/FileSystem.h"

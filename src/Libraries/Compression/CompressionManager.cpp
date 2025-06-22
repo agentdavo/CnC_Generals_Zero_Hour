@@ -21,7 +21,7 @@
 // LZH wrapper taken from Nox, originally from Jeff Brown
 //////////////////////////////////////////////////////////////////////////////
 
-#include "Compression.h"
+#include <Libraries/Compression/Compression.h>
 #include "LZHCompress/NoxCompress.h"
 extern "C" {
 #include "ZLib/zlib.h"

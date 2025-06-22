@@ -43,7 +43,7 @@
 #include "GameLogic/ScriptEngine.h"
 
 
-#include "Compression.h"
+#include <Libraries/Compression/Compression.h>
 #include "CUndoable.h"
 #include "LayersList.h"
 #include "MainFrm.h"
