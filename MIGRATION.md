@@ -233,4 +233,5 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - The WW3D2 rendering library was migrated to `src/Libraries/WWVegas/WW3D2` and builds the `ww3d2` static library. The original directory under `Generals/Code` has been removed.
 - A stub `Miles6` directory remains in `src/Libraries/WWVegas` with only a `.gitignore` as the legacy Miles Sound System is replaced by miniaudio. The duplicate `GeneralsMD` folder was removed.
 - A placeholder `wwshade` directory has been introduced under `src/Libraries/WWVegas` exposing an empty `wwshade` interface target for future shader code migration.
+- The `wwshade` shader library was moved to `src/Libraries/WWVegas/wwshade` and now builds the `wwshade` static library. The original directory under `GeneralsMD` was removed.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
