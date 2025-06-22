@@ -231,5 +231,8 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - WWVegas helper libraries `Wwutil` and `WWSaveLoad` were moved into `src/Libraries/WWVegas` and now build the `wwutil` and `wwsaveload` static libraries. The duplicate `GeneralsMD` directories were removed and `gameengine` links against these targets.
 - Additional WWVegas libraries `WWMath` and `WWLib` now live under `src/Libraries/WWVegas` as the `wwmath` and `wwlib` static libraries. The old copies under `Generals` and `GeneralsMD` were removed and `gameengine` links to them.
 - The WW3D2 rendering library was migrated to `src/Libraries/WWVegas/WW3D2` and builds the `ww3d2` static library. The original directory under `Generals/Code` has been removed.
-- A stub `Miles6` directory remains in `src/Libraries/WWVegas` with only a `.gitignore` as the legacy Miles Sound System is replaced by miniaudio. The duplicate `GeneralsMD` folder was removed.
+- The `src/Libraries/WWVegas/Miles6` directory now contains a placeholder
+  `CMakeLists.txt` which builds an empty `miles6` static library. This keeps
+  projects expecting the original Miles Sound System happy while the engine uses
+  `miniaudio` instead. The duplicate `GeneralsMD` folder was removed.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
