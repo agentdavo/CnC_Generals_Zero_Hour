@@ -10,8 +10,8 @@ This project contains the preserved source code for **Command & Conquer Generals
 - The long term goal is to use **LVGL** for the window/canvas layer with automatic fallback to X11 where required.
 - Rendering should use **OpenGL ES 1.1**. A translation layer from the original DirectX interfaces is expected.
 - Audio functionality must use **miniaudio**.
-- External libraries are tracked as submodules under `lib/`. After cloning run
-  `git submodule update --init --recursive` to fetch them. A `lib/CMakeLists.txt` exposes these libraries as interface targets.
+- External libraries are provided as regular directories under `lib/`. A
+  `lib/CMakeLists.txt` exposes these libraries as interface targets.
 
 ## Documentation
 

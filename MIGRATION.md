@@ -79,10 +79,10 @@ into `src/GameEngine/GameNetwork` with headers in `include/GameEngine/GameNetwor
 The GameSpy-based files remain for now and will be replaced with UniSpySDK code.
 Legacy code still depends on the Visual Studio projects and will not compile without extensive work.
 The engine relies on several third party libraries stored under `lib/`.
-Most of them are tracked as git submodules. After cloning run
-`git submodule update --init --recursive` to fetch their sources.
-The LVGL UI framework is an exception: version 9.3 is bundled directly in
-the repository to allow local patching.
+These libraries are committed directly in the repository, including
+**miniaudio**, **uGLES**, **UniSpySDK** and **STLport**.
+The LVGL UI framework (version 9.3) is also bundled so it can be patched
+locally when needed.
 The key dependencies are:
 
 - **lvgl** – provides the window and canvas system for new ports (bundled v9.3).
