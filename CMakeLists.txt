@@ -33,6 +33,9 @@ add_subdirectory(src/Main)
 add_subdirectory(src/GameEngine)
 add_subdirectory(src/GameEngineDevice)
 
+# Tools migrated from Generals/Code
+add_subdirectory(src/Tools)
+
 # Legacy tools pending migration
 message(STATUS "Configuring legacy tools")
 add_subdirectory(Generals/Code/Tools/mangler)
