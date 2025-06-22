@@ -1,6 +1,4 @@
-add_library(gameenginedevice EXCLUDE_FROM_ALL
-    W3DDevice/GameLogic/W3DGameLogic.cpp
-)
+add_library(gameenginedevice EXCLUDE_FROM_ALL)
 
 # lvglDevice sources migrated from Generals/Code
 file(GLOB_RECURSE LVGLDEVICE_SRCS CONFIGURE_DEPENDS
@@ -13,6 +11,42 @@ file(GLOB_RECURSE W3DDEVICE_COMMON_SRCS CONFIGURE_DEPENDS
     W3DDevice/Common/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_COMMON_SRCS})
+
+# GameClient W3DDevice sources migrated from Generals/Code
+file(GLOB_RECURSE W3DDEVICE_GAMECLIENT_SRCS CONFIGURE_DEPENDS
+    W3DDevice/GameClient/*.cpp
+)
+target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMECLIENT_SRCS})
+
+# GameLogic sources migrated from Generals/Code
+file(GLOB W3DDEVICE_GAMELOGIC_SRCS
+    W3DDevice/GameLogic/*.cpp
+)
+target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMELOGIC_SRCS})
+
+# Win32Device sources migrated from Generals/Code
+file(GLOB_RECURSE WIN32DEVICE_COMMON_SRCS CONFIGURE_DEPENDS
+    Win32Device/Common/*.cpp
+)
+file(GLOB_RECURSE WIN32DEVICE_GAMECLIENT_SRCS CONFIGURE_DEPENDS
+    Win32Device/GameClient/*.cpp
+)
+target_sources(gameenginedevice PRIVATE
+    ${WIN32DEVICE_COMMON_SRCS}
+    ${WIN32DEVICE_GAMECLIENT_SRCS}
+)
+
+# MilesAudioDevice sources
+file(GLOB MILESAUDIODEVICE_SRCS
+    MilesAudioDevice/*.cpp
+)
+target_sources(gameenginedevice PRIVATE ${MILESAUDIODEVICE_SRCS})
+
+# VideoDevice sources
+file(GLOB_RECURSE VIDEODEVICE_SRCS CONFIGURE_DEPENDS
+    VideoDevice/*.cpp
+)
+target_sources(gameenginedevice PRIVATE ${VIDEODEVICE_SRCS})
 
 target_include_directories(gameenginedevice PUBLIC
     ${PROJECT_SOURCE_DIR}/include
