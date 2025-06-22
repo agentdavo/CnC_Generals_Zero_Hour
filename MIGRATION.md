@@ -204,3 +204,5 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   `include/` hierarchy.
 - `StatsCollector` moved to `src/GameEngine/Common` with its header now under
   `include/GameEngine/Common`.
+
+- Remaining headers from `Generals/Code/GameEngine/Include/Common` migrated into `include/GameEngine/Common` and originals removed.
