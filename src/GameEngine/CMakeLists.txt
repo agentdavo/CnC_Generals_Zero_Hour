@@ -161,6 +161,6 @@ if(COMMAND target_precompile_headers)
         ${PROJECT_SOURCE_DIR}/include/Precompiled/PreRTS.h)
 endif()
 
-# Link against UniSpy networking library
-target_link_libraries(gameengine PUBLIC UniSpySDK)
+# Link against UniSpy networking library and WPAudio
+target_link_libraries(gameengine PUBLIC UniSpySDK wp_audio)
 # Partial migration of GameEngine sources
