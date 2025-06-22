@@ -19,6 +19,7 @@ add_library(gameengine EXCLUDE_FROM_ALL
     Common/System/CriticalSection.cpp
     Common/System/LocalFile.cpp
     Common/PerfTimer.cpp
+    Common/StatsCollector.cpp
     ../Common/Logger.cpp
     ../Common/File.cpp
     ../Common/registry.cpp

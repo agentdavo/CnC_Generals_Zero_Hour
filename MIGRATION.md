@@ -202,3 +202,5 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Legacy references to `Generals/Code/GameEngine/Include` have been dropped from
   `src/GameEngineDevice` CMake files. All headers are expected under the new
   `include/` hierarchy.
+- `StatsCollector` moved to `src/GameEngine/Common` with its header now under
+  `include/GameEngine/Common`.
