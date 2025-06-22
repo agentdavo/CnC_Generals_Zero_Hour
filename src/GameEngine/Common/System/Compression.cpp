@@ -27,7 +27,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"
-#include "Compression.h"
+#include <Libraries/Compression/Compression.h>
 
 #ifdef _INTERNAL
 // for occasional debugging...

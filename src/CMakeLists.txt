@@ -11,6 +11,7 @@ target_include_directories(LvglPlatform PUBLIC
 target_link_libraries(LvglPlatform PUBLIC lvgl)
 
 add_subdirectory(Libraries/WPAudio)
+add_subdirectory(Libraries/Compression)
 
 add_subdirectory(GameEngineDevice/lvglDevice)
 
