@@ -7,16 +7,16 @@ The following files contain the string `vs.1.1`:
 - GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Shaders/MotionBlur.nvv
 - GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Shaders/Trees.nvv
 - GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Water/wave.nvv
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd6bumpdiff.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd6bumpspec.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd7bumpdiffpass0.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd7bumpdiffpass1.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd7bumpspecpass0.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd7bumpspecpass1.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8bumpdiff.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8bumpspec.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8ssbumpdiff.vsh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8ssbumpspec.vsh
+- src/Libraries/WWVegas/wwshade/shd6bumpdiff.vsh
+- src/Libraries/WWVegas/wwshade/shd6bumpspec.vsh
+- src/Libraries/WWVegas/wwshade/shd7bumpdiffpass0.vsh
+- src/Libraries/WWVegas/wwshade/shd7bumpdiffpass1.vsh
+- src/Libraries/WWVegas/wwshade/shd7bumpspecpass0.vsh
+- src/Libraries/WWVegas/wwshade/shd7bumpspecpass1.vsh
+- src/Libraries/WWVegas/wwshade/shd8bumpdiff.vsh
+- src/Libraries/WWVegas/wwshade/shd8bumpspec.vsh
+- src/Libraries/WWVegas/wwshade/shd8ssbumpdiff.vsh
+- src/Libraries/WWVegas/wwshade/shd8ssbumpspec.vsh
 
 # Shader files referencing ps.1.1
 
@@ -45,7 +45,7 @@ The following files contain the string `ps.1.1`:
 - GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Shaders/terrainnoise2.nvp
 - GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWater.cpp
 - GeneralsMD/Code/GameEngineDevice/Source/W3DDevice/GameClient/Water/wave.nvp
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8bumpdiff.psh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8bumpspec.psh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8ssbumpdiff.psh
-- GeneralsMD/Code/Libraries/Source/WWVegas/wwshade/shd8ssbumpspec.psh
+- src/Libraries/WWVegas/wwshade/shd8bumpdiff.psh
+- src/Libraries/WWVegas/wwshade/shd8bumpspec.psh
+- src/Libraries/WWVegas/wwshade/shd8ssbumpdiff.psh
+- src/Libraries/WWVegas/wwshade/shd8ssbumpspec.psh
