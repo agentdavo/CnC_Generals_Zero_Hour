@@ -162,5 +162,8 @@ if(COMMAND target_precompile_headers)
 endif()
 
 # Link against UniSpy networking library and WPAudio
-target_link_libraries(gameengine PUBLIC UniSpySDK wp_audio compression wwutil wwsaveload wwaudio wwdebug wwdownload wwmath wwlib)
+target_link_libraries(gameengine PUBLIC UniSpySDK wp_audio compression wwutil wwsaveload wwaudio wwdebug wwdownload wwmath wwlib ww3d2)
+if(TARGET wwshade)
+    target_link_libraries(gameengine PUBLIC wwshade)
+endif()
 # Partial migration of GameEngine sources
