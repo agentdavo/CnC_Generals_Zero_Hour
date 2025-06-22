@@ -206,3 +206,4 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
   `include/GameEngine/Common`.
 
 - Remaining headers from `Generals/Code/GameEngine/Include/Common` migrated into `include/GameEngine/Common` and originals removed.
+- Source files under `Generals/Code/GameEngine/Source/Common` migrated into `src/GameEngine/Common`. The CMake build lists these new paths and the old copies were deleted.
