@@ -207,3 +207,10 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 
 - Remaining headers from `Generals/Code/GameEngine/Include/Common` migrated into `include/GameEngine/Common` and originals removed.
 - Source files under `Generals/Code/GameEngine/Source/Common` migrated into `src/GameEngine/Common`. The CMake build lists these new paths and the old copies were deleted.
+- Remaining `GameEngineDevice` modules have been relocated. W3D device game
+  client headers now live in `include/GameEngineDevice/W3DDevice/GameClient`
+  with sources under `src/GameEngineDevice/W3DDevice/GameClient`. The Win32
+  device and Miles audio components moved into matching directories in
+  `src/GameEngineDevice` with corresponding headers in `include/GameEngineDevice`.
+  `src/GameEngineDevice/CMakeLists.txt` globs these directories and the old
+  `Generals/Code/GameEngineDevice` tree was removed.
