@@ -30,7 +30,7 @@
 #include "common/AsciiString.h"
 #include "common/GameMemory.h"
 #include "common/PerfTimer.h"
-#include "Win32Device/common/Win32LocalFileSystem.h"
+#include "Win32Device/common/win32localfilesystem.h"
 #include "Win32Device/common/Win32LocalFile.h"
 #include <io.h>
 

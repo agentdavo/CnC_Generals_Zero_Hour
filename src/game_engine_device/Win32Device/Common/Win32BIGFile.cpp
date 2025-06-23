@@ -32,7 +32,7 @@
 #include "common/StreamingArchiveFile.h"
 #include "common/GameMemory.h"
 #include "common/PerfTimer.h"
-#include "Win32Device/common/Win32BIGFile.h"
+#include "Win32Device/common/win32bigfile.h"
 
 //============================================================================
 // Win32BIGFile::Win32BIGFile

@@ -22,7 +22,7 @@
 //																																						//
 ////////////////////////////////////////////////////////////////////////////////
 
-//////// Win32BIGFileSystem.h ///////////////////////////
+//////// win32bigfilesystem.h ///////////////////////////
 // Bryan Cleveland, August 2002
 /////////////////////////////////////////////////////////////
 
@@ -34,8 +34,8 @@
 #include "common/GameAudio.h"
 #include "common/GameMemory.h"
 #include "common/LocalFileSystem.h"
-#include "Win32Device/common/Win32BIGFile.h"
-#include "Win32Device/common/Win32BIGFileSystem.h"
+#include "Win32Device/common/win32bigfile.h"
+#include "Win32Device/common/win32bigfilesystem.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

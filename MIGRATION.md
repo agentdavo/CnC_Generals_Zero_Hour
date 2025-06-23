@@ -153,7 +153,7 @@ including the new device headers.
 LvglLocalFileSystem now replaces Win32 directory calls with std::filesystem for file access.
 `FileUtil` in `src/Common/File.cpp` further wraps std::filesystem to provide portable helpers like `createDirectory`.  Win32 `CreateDirectory` calls in `PeerDefs.cpp` now use this API.
 The CMake build now globs the `lvglDevice` sources into a static library and links it to the `Generals` stub by default on non-Windows hosts. Pass `-DUSE_LVGL_DEVICE=ON` to force this implementation or `OFF` to fall back to the unported `Win32Device` tree on Windows.
-Input handling is beginning to move over to LVGL as well. A small `LvglGameEngine` class now owns new `LvglKeyboard` and `LvglMouse` objects.  `src/main.cpp` creates these and drives their `update()` methods each frame alongside `LvglPlatform::poll_events()`.
+Input handling is beginning to move over to LVGL as well. A small `LvglGameEngine` class now owns new `LvglKeyboard` and `LvglMouse` objects.  `src/main/main.cpp` creates these and drives their `update()` methods each frame alongside `LvglPlatform::poll_events()`.
 
 The old input classes under `GameEngineDevice/Source/Win32*` will be phased out
 in favour of the LVGL implementations.  `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglKeyboard.cpp`
@@ -161,7 +161,7 @@ and `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglMouse.cpp`
 previously provided only a basic keyboard and pointer interface.  Modifier keys
 are now detected and `convert_lv_key()` translates every key listed in
 `KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  The new
-`lvglDevice` library now lives under `src/GameEngineDevice/lvglDevice` and is
+`lvglDevice` library now lives under `src/game_engine_device/lvgl_device` and is
 linked unconditionally from `src/CMakeLists.txt`.
 
 Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
@@ -243,7 +243,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Certain `WW3D2` files were restored from the temp backup.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
 - macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
-<<<<<<< Updated upstream
 - Added a portable stub for `windows.h` under `include/common` to ease non-Windows builds.
 - Updated source and header includes to reference this stub via `common/windows.h`.
 - Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and

@@ -31,7 +31,7 @@
 #ifndef __ARCHIVEFILE_H
 #define __ARCHIVEFILE_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/asciiString.h"
 #include "common/archiveFileSystem.h"
 
