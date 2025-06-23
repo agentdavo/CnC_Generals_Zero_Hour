@@ -28,7 +28,7 @@
 #include "common/ArchiveFileSystem.h"
 #include "common/CommandLine.h"
 #include "common/CRCDebug.h"
-#include "common/LocalFileSystem.h"
+#include "common/localfilesystem.h"
 #include "common/Version.h"
 #include "GameClient/TerrainVisual.h" // for TERRAIN_LOD_MIN definition
 #include "GameClient/GameText.h"

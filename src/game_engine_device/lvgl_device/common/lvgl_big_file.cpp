@@ -1,10 +1,10 @@
-#include "common/LocalFile.h"
-#include "common/LocalFileSystem.h"
-#include "common/RAMFile.h"
-#include "common/StreamingArchiveFile.h"
+#include "common/local_file.h"
+#include "common/localfilesystem.h"
+#include "common/ramfile.h"
+#include "common/streamingarchivefile.h"
 #include "common/GameMemory.h"
-#include "common/PerfTimer.h"
-#include "game_engine_device/lvgl_device/common/win32bigfile.h"
+#include "common/perftimer.h"
+#include "game_engine_device/lvgl_device/common/win32_big_file.h"
 
 Win32BIGFile::Win32BIGFile() {
 }

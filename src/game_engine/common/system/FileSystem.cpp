@@ -56,8 +56,8 @@
 #include "common/ArchiveFileSystem.h"
 #include "common/CDManager.h"
 #include "common/GameAudio.h"
-#include "common/LocalFileSystem.h"
-#include "common/PerfTimer.h"
+#include "common/localfilesystem.h"
+#include "common/perftimer.h"
 
 
 DECLARE_PERF_TIMER(FileSystem)

@@ -1053,7 +1053,7 @@ Vector2	Render2DSentenceClass::Build_Sentence_Not_Centered (const WCHAR *text, i
 			//	Adjust the positions
 			//
 			Cursor.X			+= (TextureOffset.I - TextureStartX);
-			maxX = max(maxX, Cursor.X);
+			maxX = ww_max(maxX, Cursor.X);
 			TextureStartX	= TextureOffset.I;
 
 			//
@@ -1720,8 +1720,8 @@ FontCharsClass::Grow_Unicode_Array (WCHAR ch)
 		return ;
 	} 
 
-	uint16 first_index	= min( FirstUnicodeChar, ch );
-	uint16 last_index		= max( LastUnicodeChar, ch );
+	uint16 first_index      = ww_min( FirstUnicodeChar, ch );
+	uint16 last_index               = ww_max( LastUnicodeChar, ch );
 	uint16 count			= (last_index - first_index) + 1;
 
 	//

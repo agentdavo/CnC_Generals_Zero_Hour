@@ -27,10 +27,10 @@ extern "C"
 {
 #include <zlib.h>
 }
-#include "EAC/codex.h"
-#include "EAC/btreecodex.h"
-#include "EAC/huffcodex.h"
-#include "EAC/refcodex.h"
+#include "eac/codex.h"
+#include "eac/btreecodex.h"
+#include "eac/huffcodex.h"
+#include "eac/refcodex.h"
 #include <cstring>
 #include <cmath>
 
@@ -489,17 +489,17 @@ void DoCompressTest(void)
 
 	for (i = COMPRESSION_MIN; i <= COMPRESSION_MAX; ++i)
 	{
-		Real maxCompression = 1000.0f;
-		Real minCompression = 0.0f;
+                Real maxCompression = 1000.0f;
+                Real minCompression = 0.0f;
 		Int totalUncompressedBytes = 0;
 		Int totalCompressedBytes = 0;
 		for (std::map<AsciiString, CompData>::iterator cd = s_sizes.begin(); cd != s_sizes.end(); ++cd)
 		{
 			CompData d = cd->second;
 
-			Real ratio = d.compressedSize[i] / (Real)d.origSize;
-			maxCompression = min(maxCompression, ratio);
-			minCompression = max(minCompression, ratio);
+                        Real ratio = d.compressedSize[i] / (Real)d.origSize;
+                        maxCompression = ww_min(maxCompression, ratio);
+                        minCompression = ww_max(minCompression, ratio);
 
 			totalUncompressedBytes += d.origSize;
 			totalCompressedBytes += d.compressedSize[i];

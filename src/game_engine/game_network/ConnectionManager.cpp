@@ -25,7 +25,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include <Libraries/Compression/Compression.h>
+#include <libraries/compression/compression.h>
 #include "strtok_r.h"
 <<<<<<< Updated upstream:src/GameEngine/GameNetwork/ConnectionManager.cpp
 #include "Common/AudioEventRTS.h"

@@ -27,7 +27,7 @@
 #include "MapSettings.h"
 #include "Common\GlobalData.h"
 #include "common/WellKnownKeys.h"
-#include <Libraries/Compression/Compression.h>
+#include <libraries/compression/compression.h>
 
 /////////////////////////////////////////////////////////////////////////////
 // MapSettings dialog

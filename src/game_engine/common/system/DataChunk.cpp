@@ -31,12 +31,12 @@
 #include "stdlib.h"
 #include "string.h"
 <<<<<<< Updated upstream:src/GameEngine/Common/System/DataChunk.cpp
-#include <Libraries/Compression/Compression.h>
+#include <libraries/compression/compression.h>
 #include "Common/DataChunk.h"
 #include "common/File.h"
 #include "Common/FileSystem.h"
 =======
-#include <Libraries/Compression/Compression.h>
+#include <libraries/compression/compression.h>
 #include "common/DataChunk.h"
 #include "common/File.h"
 #include "common/FileSystem.h"

@@ -32,8 +32,8 @@
 #define __ARCHIVEFILE_H
 
 #include "lib/base_type.h"
-#include "common/asciiString.h"
-#include "common/archiveFileSystem.h"
+#include "common/ascii_string.h"
+#include "common/archivefilesystem.h"
 
 class File;
 
@@ -65,7 +65,7 @@ public:
 	void									getFileListInDirectory(const AsciiString& currentDirectory, const AsciiString& originalDirectory, const AsciiString& searchName, FilenameList &filenameList, Bool searchSubdirectories) const;
 	void									getFileListInDirectory(const DetailedArchivedDirectoryInfo *dirInfo, const AsciiString& currentDirectory, const AsciiString& searchName, FilenameList &filenameList, Bool searchSubdirectories) const;
 
-	void									addFile(const AsciiString& path, const ArchivedFileInfo *fileInfo); ///< add this file to our directory tree.
+	void									addFile(const AsciiString& path, const ArchivedFileInfo& fileInfo); ///< add this file to our directory tree.
 
 protected:
 	const ArchivedFileInfo *		getArchivedFileInfo(const AsciiString& filename) const;	///< return the ArchivedFileInfo from the directory tree.

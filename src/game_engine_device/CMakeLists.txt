@@ -4,55 +4,58 @@ add_library(gameenginedevice EXCLUDE_FROM_ALL)
 file(GLOB_RECURSE LVGLDEVICE_SRCS CONFIGURE_DEPENDS
     lvgl_device/**/*.cpp
 )
+list(FILTER LVGLDEVICE_SRCS EXCLUDE REGEX "Win32.*\\.cpp$")
+list(FILTER LVGLDEVICE_SRCS EXCLUDE REGEX "Win32BIGFile\\.cpp$")
+list(FILTER LVGLDEVICE_SRCS EXCLUDE REGEX "Win32BIGFileSystem\\.cpp$")
 target_sources(gameenginedevice PRIVATE ${LVGLDEVICE_SRCS})
 
-# Common W3DDevice sources migrated from Generals/Code
+# Common w3d_device sources migrated from Generals/Code
 file(GLOB_RECURSE W3DDEVICE_COMMON_SRCS CONFIGURE_DEPENDS
-    W3DDevice/common/*.cpp
+    w3d_device/common/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_COMMON_SRCS})
 
-# GameClient W3DDevice sources migrated from Generals/Code
+# GameClient w3d_device sources migrated from Generals/Code
 file(GLOB_RECURSE W3DDEVICE_GAMECLIENT_SRCS CONFIGURE_DEPENDS
-    W3DDevice/game_client/*.cpp
+    w3d_device/game_client/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMECLIENT_SRCS})
 
-# GameLogic sources migrated from Generals/Code
+# game_logic sources migrated from Generals/Code
 file(GLOB W3DDEVICE_GAMELOGIC_SRCS
-    W3DDevice/GameLogic/*.cpp
+    w3d_device/game_logic/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMELOGIC_SRCS})
 
-# Win32Device sources migrated from Generals/Code
+# win32_device sources migrated from Generals/Code
 file(GLOB_RECURSE WIN32DEVICE_COMMON_SRCS CONFIGURE_DEPENDS
-    Win32Device/common/*.cpp
+    win32_device/common/*.cpp
 )
 file(GLOB_RECURSE WIN32DEVICE_GAMECLIENT_SRCS CONFIGURE_DEPENDS
-    Win32Device/GameClient/*.cpp
+    win32_device/game_client/*.cpp
 )
 target_sources(gameenginedevice PRIVATE
     ${WIN32DEVICE_COMMON_SRCS}
     ${WIN32DEVICE_GAMECLIENT_SRCS}
 )
 
-# MilesAudioDevice sources
+# miles_audio_device sources
 file(GLOB MILESAUDIODEVICE_SRCS
-    MilesAudioDevice/*.cpp
+    miles_audio_device/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${MILESAUDIODEVICE_SRCS})
 
 # VideoDevice sources
 file(GLOB_RECURSE VIDEODEVICE_SRCS CONFIGURE_DEPENDS
-    VideoDevice/*.cpp
+    video_device/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${VIDEODEVICE_SRCS})
 
 target_include_directories(gameenginedevice PUBLIC
     ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/include/GameEngine
-    ${PROJECT_SOURCE_DIR}/include/GameEngineDevice
-    ${PROJECT_SOURCE_DIR}/include/Precompiled
+    ${PROJECT_SOURCE_DIR}/include/game_engine
+    ${PROJECT_SOURCE_DIR}/include/game_engine_device
+    ${PROJECT_SOURCE_DIR}/include/pre_compiled
 )
 
 # Link against the Miles Sound System stub which in turn
