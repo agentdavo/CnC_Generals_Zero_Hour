@@ -6,21 +6,21 @@ file(GLOB_RECURSE LVGLDEVICE_SRCS CONFIGURE_DEPENDS
 )
 target_sources(gameenginedevice PRIVATE ${LVGLDEVICE_SRCS})
 
-# Common W3DDevice sources migrated from Generals/Code
+# Common w3d_device sources migrated from Generals/Code
 file(GLOB_RECURSE W3DDEVICE_COMMON_SRCS CONFIGURE_DEPENDS
-    W3DDevice/common/*.cpp
+    w3d_device/common/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_COMMON_SRCS})
 
-# GameClient W3DDevice sources migrated from Generals/Code
+# GameClient w3d_device sources migrated from Generals/Code
 file(GLOB_RECURSE W3DDEVICE_GAMECLIENT_SRCS CONFIGURE_DEPENDS
-    W3DDevice/GameClient/*.cpp
+    w3d_device/game_client/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMECLIENT_SRCS})
 
-# GameLogic sources migrated from Generals/Code
+# game_logic sources migrated from Generals/Code
 file(GLOB W3DDEVICE_GAMELOGIC_SRCS
-    W3DDevice/GameLogic/*.cpp
+    w3d_device/game_logic/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMELOGIC_SRCS})
 

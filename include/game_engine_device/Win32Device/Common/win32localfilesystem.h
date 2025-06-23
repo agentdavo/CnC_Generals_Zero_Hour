@@ -30,7 +30,7 @@
 
 #ifndef __WIN32LOCALFILESYSTEM_H
 #define __WIN32LOCALFILESYSTEM_H
-#include "Common/LocalFileSystem.h"
+#include "common/LocalFileSystem.h"
 
 class Win32LocalFileSystem : public LocalFileSystem
 {

@@ -33,9 +33,9 @@
 //
 // Project:    Generals
 //
-// Module:     Game Engine DEvice Win32 Common
+// Module:     Game Engine DEvice Win32 common
 //
-// File name:  Win32Device/Common/Win32CDManager.h
+// File name:  Win32Device/common/Win32CDManager.h
 //
 // Created:    11/26/01 TR
 //
@@ -51,7 +51,7 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "Common/CDManager.h"
+#include "common/CDManager.h"
 
 
 //----------------------------------------------------------------------------

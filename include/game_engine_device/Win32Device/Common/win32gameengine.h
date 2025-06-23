@@ -35,20 +35,20 @@
 #ifndef __WIN32GAMEENGINE_H_
 #define __WIN32GAMEENGINE_H_
 
-#include "Common/GameEngine.h"
-#include "GameLogic/GameLogic.h"
+#include "common/GameEngine.h"
+#include "game_logic/game_logic.h"
 #include "GameNetwork/NetworkInterface.h"
 #include "MilesAudioDevice/MilesAudioManager.h"
-#include "Win32Device/Common/Win32BIGFileSystem.h"
-#include "Win32Device/Common/Win32LocalFileSystem.h"
-#include "W3DDevice/Common/W3DModuleFactory.h"
-#include "W3DDevice/GameLogic/W3DGameLogic.h"
-#include "W3DDevice/game_client/W3DGameClient.h"
-#include "W3DDevice/game_client/W3DWebBrowser.h"
-#include "W3DDevice/Common/W3DFunctionLexicon.h"
-#include "W3DDevice/Common/W3DRadar.h"
-#include "W3DDevice/Common/W3DFunctionLexicon.h"
-#include "W3DDevice/Common/W3DThingFactory.h"
+#include "Win32Device/common/Win32BIGFileSystem.h"
+#include "Win32Device/common/Win32LocalFileSystem.h"
+#include "w3d_device/common/W3DModuleFactory.h"
+#include "w3d_device/game_logic/W3Dgame_logic.h"
+#include "w3d_device/game_client/W3Dgame_client.h"
+#include "w3d_device/game_client/W3DWebBrowser.h"
+#include "w3d_device/common/W3DFunctionLexicon.h"
+#include "w3d_device/common/W3DRadar.h"
+#include "w3d_device/common/W3DFunctionLexicon.h"
+#include "w3d_device/common/W3DThingFactory.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Class declaration for the Win32 game engine */
@@ -66,8 +66,8 @@ public:
 	virtual void serviceWindowsOS(void); ///< allow windows maintenance in background
 
 protected:
-	virtual GameLogic *createGameLogic(void);				  ///< factory for game logic
-	virtual GameClient *createGameClient(void);				  ///< factory for game client
+	virtual game_logic *creategame_logic(void);				  ///< factory for game logic
+	virtual game_client *creategame_client(void);				  ///< factory for game client
 	virtual ModuleFactory *createModuleFactory(void);		  ///< factory for creating modules
 	virtual ThingFactory *createThingFactory(void);			  ///< factory for the thing factory
 	virtual FunctionLexicon *createFunctionLexicon(void);	  ///< factory for function lexicon
@@ -84,8 +84,8 @@ protected:
 }; // end Win32GameEngine
 
 // INLINE -----------------------------------------------------------------------------------------
-inline GameLogic *Win32GameEngine::createGameLogic(void) { return NEW W3DGameLogic; }
-inline GameClient *Win32GameEngine::createGameClient(void) { return NEW W3DGameClient; }
+inline game_logic *Win32GameEngine::creategame_logic(void) { return NEW W3Dgame_logic; }
+inline game_client *Win32GameEngine::creategame_client(void) { return NEW W3Dgame_client; }
 inline ModuleFactory *Win32GameEngine::createModuleFactory(void) { return NEW W3DModuleFactory; }
 inline ThingFactory *Win32GameEngine::createThingFactory(void) { return NEW W3DThingFactory; }
 inline FunctionLexicon *Win32GameEngine::createFunctionLexicon(void) { return NEW W3DFunctionLexicon; }
