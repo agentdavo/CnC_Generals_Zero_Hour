@@ -34,20 +34,7 @@ extern "C"
 #include <cstring>
 #include <cmath>
 
-// Define Int if not already defined
-#ifndef Int
-typedef int Int;
-#endif
-
-// Define Bool if not already defined
-#ifndef Bool
-typedef int Bool;
-#endif
-
-// Define UnsignedByte if not already defined
-#ifndef UnsignedByte
-typedef unsigned char UnsignedByte;
-#endif
+// Basic type aliases come from lib/base_type.h
 
 #ifdef _INTERNAL
 // for occasional debugging...
@@ -281,8 +268,10 @@ Int CompressionManager::compressData(CompressionType compType, void *srcVoid, In
 		dest[2] = '0' + level;
 		*(Int *)(dest + 4) = 0;
 
-		unsigned long outLen = destLen;
-		Int err = compress2(dest + 8, &outLen, src, srcLen, level);
+                unsigned long outLen = destLen;
+                Int err = z_compress2(reinterpret_cast<Bytef *>(dest + 8), &outLen,
+                                     reinterpret_cast<const Bytef *>(src),
+                                     srcLen, level);
 
 		if (err == Z_OK || err == Z_STREAM_END)
 		{
@@ -352,8 +341,10 @@ Int CompressionManager::decompressData(void *srcVoid, Int srcLen, void *destVoid
 		Int level = compType - COMPRESSION_ZLIB1 + 1; // 1-9
 #endif
 
-		unsigned long outLen = destLen;
-		Int err = uncompress(dest, &outLen, src + 8, srcLen - 8);
+                unsigned long outLen = destLen;
+                Int err = z_uncompress(reinterpret_cast<Bytef *>(dest), &outLen,
+                                     reinterpret_cast<const Bytef *>(src + 8),
+                                     srcLen - 8);
 		if (err == Z_OK || err == Z_STREAM_END)
 		{
 			return outLen;

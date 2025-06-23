@@ -25,3 +25,5 @@ target_include_directories(zlib PUBLIC
 )
 
 set_target_properties(zlib PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+target_compile_definitions(zlib PUBLIC Z_PREFIX)

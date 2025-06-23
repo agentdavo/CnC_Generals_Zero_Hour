@@ -261,3 +261,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   point renamed to `win_main.cpp`.
 - Win32BIGFile.cpp and Win32BIGFileSystem.cpp stubs removed; lvgl_big_file.cpp and lvgl_big_file_system.cpp now supply the BIG archive loader.
 - BIG file loaders now allocate ArchiveFile objects via std::unique_ptr to avoid leaks on early exit.
+- zlib is now built with `Z_PREFIX` to avoid type clashes with the project's
+  `Byte` alias. `CompressionManager` calls updated to use the prefixed
+  `z_compress2` and `z_uncompress` APIs.
