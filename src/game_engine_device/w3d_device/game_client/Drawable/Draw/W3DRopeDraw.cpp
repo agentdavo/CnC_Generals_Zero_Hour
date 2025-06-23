@@ -138,11 +138,11 @@ void W3DRopeDraw::tossSegments()
 //-------------------------------------------------------------------------------------------------
 void W3DRopeDraw::initRopeParms(Real length, Real width, const RGBColor &color, Real wobbleLen, Real wobbleAmp, Real wobbleRate)
 {
-	m_maxLen = max(1.0f, length);
+    m_maxLen = ww_max(1.0f, length);
 	m_curLen = 0.0f;
 	m_width = width;
 	m_color = color;
-	m_wobbleLen = min(m_maxLen, wobbleLen);
+    m_wobbleLen = ww_min(m_maxLen, wobbleLen);
 	m_wobbleAmp = wobbleAmp;
 	m_wobbleRate = wobbleRate;
 	m_curZOffset = 0.0f;
