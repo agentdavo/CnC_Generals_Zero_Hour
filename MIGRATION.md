@@ -235,4 +235,4 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - A placeholder `wwshade` directory has been introduced under `src/Libraries/WWVegas` exposing an empty `wwshade` interface target for future shader code migration.
 - The `wwshade` shader library was moved to `src/Libraries/WWVegas/wwshade` and now builds the `wwshade` static library. The original directory under `GeneralsMD` was removed.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
-- macOS build now sets `CMAKE_RANLIB` to "${CMAKE_RANLIB} -no_warning_for_no_symbols" so empty LVGL objects don't stop the archive step.
+- macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
