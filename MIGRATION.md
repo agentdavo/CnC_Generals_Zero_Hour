@@ -108,6 +108,8 @@ The stub has been expanded with additional `AIL_*` helpers so more of the
 original audio subsystem compiles against the new backend. It now stores
 per-sample user data and exposes a minimal 3D provider interface so older
 audio managers work without modification.
+- The `wwaudio` module now includes the stub's headers so Miles functions
+  compile without the original SDK.
 
 On macOS the build previously checked for Apple Clang before enabling the
 `-fblocks` option required by the CoreAudio headers. When GCC was selected the
@@ -237,5 +239,6 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - A stub `Miles6` directory remains in `src/Libraries/WWVegas` with only a `.gitignore` as the legacy Miles Sound System is replaced by miniaudio. The duplicate `GeneralsMD` folder was removed.
 - A placeholder `wwshade` directory has been introduced under `src/Libraries/WWVegas` exposing an empty `wwshade` interface target for future shader code migration.
 - The `wwshade` shader library was moved to `src/Libraries/WWVegas/wwshade` and now builds the `wwshade` static library. The original directory under `GeneralsMD` was removed.
+- Certain `WW3D2` files were restored from the temp backup.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
 - macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
