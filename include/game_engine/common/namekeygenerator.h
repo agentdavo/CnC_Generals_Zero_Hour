@@ -33,9 +33,9 @@
 #ifndef __NAMEKEYGENERATOR_H_
 #define __NAMEKEYGENERATOR_H_
 
-#include "Lib/BaseType.h"
-#include "GameEngine/Common/subsystem_interface.h"
-#include "Common/GameMemory.h"
+#include "lib/base_type.h"
+#include "game_engine/common/subsystem_interface.h"
+#include "game_engine/common/GameMemory.h"
 #include "common/ascii_string.h"
 
 //------------------------------------------------------------------------------------------------- 

@@ -52,9 +52,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <strings.h>
-#include "Lib/BaseType.h"
-#include "Common/Debug.h"
-#include "Common/Errors.h"
+#include "lib/base_type.h"
+#include "common/debug.h"
+#include "common/errors.h"
 
 #ifndef _WIN32
 #define _stricmp strcasecmp

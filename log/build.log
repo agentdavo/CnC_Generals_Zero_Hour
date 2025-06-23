@@ -1,41 +1,6 @@
--- The C compiler identification is GNU 13.3.0
--- The CXX compiler identification is GNU 13.3.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring bundled libraries
--- Found X11: /usr/include   
--- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
--- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
--- Looking for gethostbyname
--- Looking for gethostbyname - found
--- Looking for connect
--- Looking for connect - found
--- Looking for remove
--- Looking for remove - found
--- Looking for shmat
--- Looking for shmat - found
--- Looking for IceConnectionNumber in ICE
--- Looking for IceConnectionNumber in ICE - found
--- Found Git: /usr/bin/git (found version "2.43.0") 
 -- Git version 2.43.0 found at '/usr/bin/git'.
--- Git using branch 'main', commit 52e078791045e7f7bd130344e0dcbe7ffcadfbe3/'Merge pull request #105 from agentdavo/codex/port-command-and-conquer-to-cross-platform'.
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13") found components: SSL 
--- Found Speex: /usr/lib/x86_64-linux-gnu/libspeex.so (found version "1.2.1") 
--- No build type selected, default to Debug
--- No build type selected, default to Release
--- Performing Test HAVE_LD_VERSION_SCRIPT
--- Performing Test HAVE_LD_VERSION_SCRIPT - Success
+-- Git using branch 'main', commit 8537af47dc62f1789a1569df1325d01463203ee9/'Merge pull request #106 from agentdavo/codex/port-command-and-conquer-to-cross-platform'.
 -- Enabled features:
 
 -- Disabled features:
@@ -44,7 +9,7 @@
 
 -- Configuring core sources
 -- Configuring migrated engine modules
--- Configuring done (2.9s)
+-- Configuring done (0.1s)
 -- Generating done (0.2s)
 -- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
 /usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
@@ -58,178 +23,1777 @@ cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "U
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/CMakeFiles/lvgl.dir/build.make lib/CMakeFiles/lvgl.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_avatar.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_avatar.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_avatar.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_avatar.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/img_benchmark_avatar.c
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_argb.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_argb.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_argb.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_argb.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_argb.c
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_rgb.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_rgb.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_rgb.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_rgb.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/img_benchmark_lvgl_logo_rgb.c
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_12_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_12_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_12_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_12_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_12_aligned.c
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_14_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_14_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_14_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_14_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_14_aligned.c
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_16_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_16_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_16_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_16_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_16_aligned.c
-[  0%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_18_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_18_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_18_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_18_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_18_aligned.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_20_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_20_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_20_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_20_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_20_aligned.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_24_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_24_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_24_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_24_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_24_aligned.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_26_aligned.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_26_aligned.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_26_aligned.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_26_aligned.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/assets/lv_font_benchmark_montserrat_26_aligned.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/lv_demo_benchmark.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/benchmark/lv_demo_benchmark.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/benchmark/lv_demo_benchmark.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/benchmark/lv_demo_benchmark.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/benchmark/lv_demo_benchmark.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/lv_demos.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/lv_demos.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/lv_demos.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/lv_demos.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/lv_demos.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c
-[  1%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c
-[  2%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c
-[  3%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_list_border.c
-[  4%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_logo.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_logo.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_logo.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_logo.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_logo.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/lv_demo_music.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_list.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_list.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_list.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_list.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/lv_demo_music_list.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_main.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_main.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_main.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/music/lv_demo_music_main.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/music/lv_demo_music_main.c
-[  5%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_arc_bg.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_arc_bg.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_arc_bg.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_arc_bg.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_arc_bg.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888_premultiplied.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888_premultiplied.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888_premultiplied.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888_premultiplied.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_argb8888_premultiplied.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_i1.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_i1.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_i1.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_i1.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_i1.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_l8.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_l8.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_l8.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_l8.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_l8.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565_swapped.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565_swapped.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565_swapped.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565_swapped.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565_swapped.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565a8.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565a8.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565a8.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565a8.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_rgb565a8.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb888.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb888.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb888.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_rgb888.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_rgb888.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_xrgb8888.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_xrgb8888.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_xrgb8888.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/assets/img_render_lvgl_logo_xrgb8888.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/assets/img_render_lvgl_logo_xrgb8888.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/render/lv_demo_render.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/render/lv_demo_render.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/render/lv_demo_render.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/render/lv_demo_render.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/render/lv_demo_render.c
-[  6%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/stress/lv_demo_stress.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/stress/lv_demo_stress.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/stress/lv_demo_stress.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/stress/lv_demo_stress.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/stress/lv_demo_stress.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/assets/img_demo_vector_avatar.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/assets/img_demo_vector_avatar.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/assets/img_demo_vector_avatar.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/assets/img_demo_vector_avatar.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/vector_graphic/assets/img_demo_vector_avatar.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/lv_demo_vector_graphic.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/lv_demo_vector_graphic.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/lv_demo_vector_graphic.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/vector_graphic/lv_demo_vector_graphic.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/vector_graphic/lv_demo_vector_graphic.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_clothes.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_clothes.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_clothes.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_clothes.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/widgets/assets/img_clothes.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_needle.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_needle.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_needle.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_demo_widgets_needle.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/widgets/assets/img_demo_widgets_needle.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_lvgl_logo.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_lvgl_logo.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_lvgl_logo.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/widgets/assets/img_lvgl_logo.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/widgets/assets/img_lvgl_logo.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/lv_demo_widgets.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/demos/widgets/lv_demo_widgets.c.o -MF CMakeFiles/lvgl.dir/lvgl/demos/widgets/lv_demo_widgets.c.o.d -o CMakeFiles/lvgl.dir/lvgl/demos/widgets/lv_demo_widgets.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/demos/widgets/lv_demo_widgets.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_group.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_group.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_group.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_group.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_group.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_obj.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_class.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_class.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_class.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_class.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_obj_class.c
-[  7%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_draw.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_draw.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_draw.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_draw.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_obj_draw.c
-[  8%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_event.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_event.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_event.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_event.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_obj_event.c
-[  8%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_id_builtin.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_id_builtin.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_id_builtin.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_id_builtin.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_obj_id_builtin.c
-[  8%] Building C object lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_pos.c.o
-cd /workspace/CnC_Generals_Zero_Hour/build/lib && /usr/bin/cc -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -MD -MT lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_pos.c.o -MF CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_pos.c.o.d -o CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_pos.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/lvgl/src/core/lv_obj_pos.c
-gmake[2]: *** [lib/CMakeFiles/lvgl.dir/build.make:1269: lib/CMakeFiles/lvgl.dir/lvgl/src/core/lv_obj_pos.c.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:905: lib/CMakeFiles/lvgl.dir/all] Interrupt
-gmake: *** [Makefile:94: all] Interrupt
+gmake[2]: Nothing to be done for 'lib/CMakeFiles/lvgl.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target lvgl
+/usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib /workspace/CnC_Generals_Zero_Hour/build/lib/CMakeFiles/miniaudio.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/CMakeFiles/miniaudio.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 51%] Built target miniaudio
+/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 52%] Built target usgt2
+/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common/CMakeFiles/uscommon.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 54%] Built target uscommon
+/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 55%] Built target ushttp
+/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 56%] Built target uswebservice
+/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 56%] Built target usbrigades
+/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 57%] Built target uschat
+/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target usnatneg
+/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target usqr2
+/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 58%] Built target uscdkey
+/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP/CMakeFiles/usgp.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 59%] Built target usgp
+/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 59%] Built target usstats
+/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 59%] Built target uspinger
+/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 59%] Built target usserverbrowsing
+/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 60%] Built target uspeer
+/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt/CMakeFiles/uspt.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 60%] Built target uspt
+/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake/CMakeFiles/ussake.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 61%] Built target ussake
+/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc/CMakeFiles/ussc.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 62%] Built target ussc
+/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 63%] Built target usd2g
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 65%] Built target gsm
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 66%] Built target usvoice2
+/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 66%] Built target UniSpySDK
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 66%] Building C object lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cc   -O3 -DNDEBUG -MD -MT lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o -MF CMakeFiles/milescleanup.dir/cleanup.c.o.d -o CMakeFiles/milescleanup.dir/cleanup.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/cleanup.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/cleanup.c:1:
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  138 | typedef unsigned long(__stdcall *AIL_file_open_callback)(const char *, unsigned long*);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:139:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  139 | typedef void(__stdcall *AIL_file_close_callback)(unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:140:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  140 | typedef long(__stdcall *AIL_file_seek_callback)(unsigned long, long, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:141:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  141 | typedef unsigned long(__stdcall *AIL_file_read_callback)(unsigned long, void *, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:142:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  142 | typedef void(__stdcall *AIL_stream_callback)(HSTREAM);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:143:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  143 | typedef void(__stdcall *AIL_3dsample_callback)(H3DPOBJECT);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:144:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  144 | typedef void(__stdcall *AIL_sample_callback)(HSAMPLE);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:182:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  182 | IMPORTS long __stdcall AIL_3D_sample_volume(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:183:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  183 | IMPORTS void __stdcall AIL_set_3D_sample_volume(H3DSAMPLE sample, float volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:184:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  184 | IMPORTS void __stdcall AIL_end_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:185:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  185 | IMPORTS void __stdcall AIL_resume_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:186:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  186 | IMPORTS void __stdcall AIL_stop_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:187:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  187 | IMPORTS void __stdcall AIL_start_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:188:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  188 | IMPORTS unsigned int __stdcall AIL_3D_sample_loop_count(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:189:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  189 | IMPORTS void __stdcall AIL_set_3D_sample_offset(H3DSAMPLE sample, unsigned int offset);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:190:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  190 | IMPORTS int __stdcall AIL_3D_sample_length(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:191:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  191 | IMPORTS unsigned int __stdcall AIL_3D_sample_offset(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:192:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  192 | IMPORTS int __stdcall AIL_3D_sample_playback_rate(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:193:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  193 | IMPORTS void __stdcall AIL_set_3D_sample_playback_rate(H3DSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:194:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  194 | IMPORTS int __stdcall AIL_set_3D_sample_file(H3DSAMPLE sample, const void* file_image);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:195:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  195 | IMPORTS HPROVIDER __stdcall AIL_set_sample_processor(HSAMPLE sample, SAMPLESTAGE pipeline_stage, HPROVIDER provider);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:196:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  196 | IMPORTS void __stdcall AIL_set_filter_sample_preference(HSAMPLE sample, const char* name, const void* val);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:197:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  197 | IMPORTS void __stdcall AIL_release_sample_handle(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:198:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  198 | IMPORTS void __stdcall AIL_close_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:199:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  199 | IMPORTS int __stdcall AIL_set_preference(unsigned int number, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:200:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  200 | IMPORTS int __stdcall AIL_waveOutOpen(HDIGDRIVER* driver, LPHWAVEOUT* waveout, int id, LPWAVEFORMAT format);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:201:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  201 | IMPORTS void __stdcall AIL_waveOutClose(HDIGDRIVER driver);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:202:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  202 | IMPORTS void __stdcall AIL_set_3D_sample_loop_count(H3DSAMPLE sample, unsigned int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:203:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  203 | IMPORTS void __stdcall AIL_set_stream_playback_rate(HSTREAM stream, int rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:204:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  204 | IMPORTS int __stdcall AIL_stream_playback_rate(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:205:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  205 | IMPORTS void __stdcall AIL_stream_ms_position(HSTREAM sample, S32* total_milliseconds, S32* current_milliseconds);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:206:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  206 | IMPORTS void __stdcall AIL_set_stream_ms_position(HSTREAM stream, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:207:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  207 | IMPORTS int __stdcall AIL_stream_loop_count(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:208:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  208 | IMPORTS void __stdcall AIL_set_stream_loop_block(HSTREAM stream, int loop_start, int loop_end);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:209:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  209 | IMPORTS void __stdcall AIL_set_stream_loop_count(HSTREAM stream, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:210:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  210 | IMPORTS int __stdcall AIL_stream_volume(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:211:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  211 | IMPORTS void __stdcall AIL_set_stream_volume(HSTREAM stream, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:212:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  212 | IMPORTS int __stdcall AIL_stream_pan(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:213:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  213 | IMPORTS void __stdcall AIL_set_stream_pan(HSTREAM stream, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:214:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  214 | IMPORTS void __stdcall AIL_close_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:215:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  215 | IMPORTS void __stdcall AIL_pause_stream(HSTREAM stream, int onoff);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:216:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  216 | IMPORTS AIL_stream_callback __stdcall AIL_register_stream_callback(HSTREAM stream, AIL_stream_callback callback);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:217:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  217 | IMPORTS AIL_3dsample_callback __stdcall AIL_register_3D_EOS_callback(H3DSAMPLE sample, AIL_3dsample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:218:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  218 | IMPORTS AIL_sample_callback __stdcall AIL_register_EOS_callback(HSAMPLE sample, AIL_sample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:219:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  219 | IMPORTS void __stdcall AIL_start_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:220:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  220 | IMPORTS HSTREAM __stdcall AIL_open_stream_by_sample(HDIGDRIVER driver, HSAMPLE sample, const char* file_name, int mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:221:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  221 | IMPORTS void __stdcall AIL_set_sample_playback_rate(HSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:222:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  222 | IMPORTS int __stdcall AIL_sample_playback_rate(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:223:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  223 | IMPORTS void __stdcall AIL_sample_ms_position(HSAMPLE sample, long* total_ms, long* current_ms);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:224:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  224 | IMPORTS void __stdcall AIL_set_sample_ms_position(HSAMPLE sample, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:225:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  225 | IMPORTS int __stdcall AIL_sample_loop_count(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:226:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  226 | IMPORTS void __stdcall AIL_set_sample_loop_count(HSAMPLE sample, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:227:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  227 | IMPORTS int __stdcall AIL_sample_volume(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:228:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  228 | IMPORTS void __stdcall AIL_set_sample_volume(HSAMPLE sample, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:229:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  229 | IMPORTS int __stdcall AIL_sample_pan(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:230:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  230 | IMPORTS void __stdcall AIL_set_sample_pan(HSAMPLE sample, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:231:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  231 | IMPORTS void __stdcall AIL_end_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:232:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  232 | IMPORTS void __stdcall AIL_resume_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:233:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  233 | IMPORTS void __stdcall AIL_stop_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:234:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  234 | IMPORTS void __stdcall AIL_start_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:235:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  235 | IMPORTS void __stdcall AIL_init_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:237:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  237 |     HSAMPLE sample, const char* file_name, const void* file_image, int file_size, int block);
+      |     ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:238:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  238 | IMPORTS void __stdcall AIL_set_3D_sample_effects_level(H3DSAMPLE sample, float effect_level);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:239:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  239 | IMPORTS void __stdcall AIL_set_3D_sample_distances(H3DSAMPLE sample, float max_dist, float min_dist);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:240:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  240 | IMPORTS void __stdcall AIL_set_3D_velocity_vector(H3DSAMPLE sample, float x, float y, float z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:241:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  241 | IMPORTS void __stdcall AIL_set_3D_position(H3DPOBJECT obj, float X, float Y, float Z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:243:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  243 |     H3DPOBJECT obj, float X_face, float Y_face, float Z_face, float X_up, float Y_up, float Z_up);
+      |     ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:244:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  244 | IMPORTS int __stdcall AIL_WAV_info(const void* data, AILSOUNDINFO* info);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:245:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  245 | IMPORTS void __stdcall AIL_stop_timer(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:246:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  246 | IMPORTS void __stdcall AIL_release_timer_handle(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:247:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  247 | IMPORTS void __stdcall AIL_shutdown(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:248:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  248 | IMPORTS int __stdcall AIL_enumerate_filters(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:250:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  250 |     AIL_file_seek_callback seekcb, AIL_file_read_callback readcb);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:251:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  251 | IMPORTS void __stdcall AIL_release_3D_sample_handle(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:252:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  252 | IMPORTS H3DSAMPLE __stdcall AIL_allocate_3D_sample_handle(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:253:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  253 | IMPORTS void __stdcall AIL_set_3D_user_data(H3DPOBJECT obj, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:254:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  254 | IMPORTS void __stdcall AIL_unlock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:255:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  255 | IMPORTS void __stdcall AIL_lock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:256:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  256 | IMPORTS void __stdcall AIL_set_3D_speaker_type(HPROVIDER lib, int speaker_type);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:257:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  257 | IMPORTS void __stdcall AIL_close_3D_listener(H3DPOBJECT listener);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:258:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  258 | IMPORTS int __stdcall AIL_enumerate_3D_providers(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:259:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  259 | IMPORTS M3DRESULT __stdcall AIL_open_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:260:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  260 | IMPORTS char* __stdcall AIL_last_error(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:261:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  261 | IMPORTS H3DPOBJECT __stdcall AIL_open_3D_listener(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:262:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  262 | IMPORTS int __stdcall AIL_3D_user_data(H3DSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:263:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  263 | IMPORTS int __stdcall AIL_sample_user_data(HSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:264:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  264 | IMPORTS HSAMPLE __stdcall AIL_allocate_sample_handle(HDIGDRIVER dig);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:265:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  265 | IMPORTS void __stdcall AIL_set_sample_user_data(HSAMPLE sample, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:266:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  266 | IMPORTS int __stdcall AIL_decompress_ADPCM(const AILSOUNDINFO *info, void **outdata, unsigned long *outsize);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:267:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  267 | IMPORTS void __stdcall AIL_get_DirectSound_info(HSAMPLE sample, AILLPDIRECTSOUND *lplpDS, AILLPDIRECTSOUNDBUFFER *lplpDSB);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:268:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  268 | IMPORTS void __stdcall AIL_mem_free_lock(void *ptr);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:269:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  269 | IMPORTS HSTREAM __stdcall AIL_open_stream(HDIGDRIVER dig, const char *filename, int stream_mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:270:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  270 | IMPORTS int __stdcall AIL_startup(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:271:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  271 | IMPORTS void __stdcall AIL_quick_unload(HAUDIO audio);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:272:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  272 | IMPORTS HAUDIO __stdcall AIL_quick_load_and_play(const char *filename, unsigned int loop_count, int wait_request);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:273:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  273 | IMPORTS void __stdcall AIL_quick_set_volume(HAUDIO audio, float volume, float extravol);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:275:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  275 |     int use_digital, int use_MIDI, unsigned int output_rate, int output_bits, int output_channels);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:276:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  276 | IMPORTS void __stdcall AIL_quick_handles(HDIGDRIVER *pdig, HMDIDRIVER *pmdi, HDLSDEVICE *pdls);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:277:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  277 | IMPORTS void __stdcall AIL_sample_volume_pan(HSAMPLE sample, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:278:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  278 | IMPORTS void __stdcall AIL_set_3D_sample_occlusion(H3DSAMPLE sample, float occlusion);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:279:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  279 | IMPORTS char *__stdcall AIL_set_redist_directory(const char *dir);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:280:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  280 | IMPORTS int __stdcall AIL_set_sample_file(HSAMPLE sample, const void *file_image, int block);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:281:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  281 | IMPORTS void __stdcall AIL_set_sample_volume_pan(HSAMPLE sample, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:282:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  282 | IMPORTS void __stdcall AIL_set_stream_volume_pan(HSTREAM stream, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:283:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  283 | IMPORTS void __stdcall AIL_stream_volume_pan(HSTREAM stream, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:284:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  284 | IMPORTS unsigned long __stdcall AIL_get_timer_highest_delay(void);
+      | ^~~~~~~
+[ 66%] Linking C static library libmilescleanup.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -P CMakeFiles/milescleanup.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_link_script CMakeFiles/milescleanup.dir/link.txt --verbose=1
+/usr/bin/ar qc libmilescleanup.a CMakeFiles/milescleanup.dir/cleanup.c.o
+/usr/bin/ranlib libmilescleanup.a
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 66%] Built target milescleanup
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milesstub.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 66%] Building C object lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cc -DBUILD_STUBS -Dmilesstub_EXPORTS -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -fPIC -MD -MT lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o -MF CMakeFiles/milesstub.dir/miles.c.o.d -o CMakeFiles/milesstub.dir/miles.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:16:
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  138 | typedef unsigned long(__stdcall *AIL_file_open_callback)(const char *, unsigned long*);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:139:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  139 | typedef void(__stdcall *AIL_file_close_callback)(unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:140:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  140 | typedef long(__stdcall *AIL_file_seek_callback)(unsigned long, long, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:141:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  141 | typedef unsigned long(__stdcall *AIL_file_read_callback)(unsigned long, void *, unsigned long);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:142:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  142 | typedef void(__stdcall *AIL_stream_callback)(HSTREAM);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:143:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  143 | typedef void(__stdcall *AIL_3dsample_callback)(H3DPOBJECT);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:144:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  144 | typedef void(__stdcall *AIL_sample_callback)(HSAMPLE);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:182:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  182 | IMPORTS long __stdcall AIL_3D_sample_volume(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:183:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  183 | IMPORTS void __stdcall AIL_set_3D_sample_volume(H3DSAMPLE sample, float volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:184:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  184 | IMPORTS void __stdcall AIL_end_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:185:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  185 | IMPORTS void __stdcall AIL_resume_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:186:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  186 | IMPORTS void __stdcall AIL_stop_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:187:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  187 | IMPORTS void __stdcall AIL_start_3D_sample(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:188:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  188 | IMPORTS unsigned int __stdcall AIL_3D_sample_loop_count(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:189:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  189 | IMPORTS void __stdcall AIL_set_3D_sample_offset(H3DSAMPLE sample, unsigned int offset);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:190:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  190 | IMPORTS int __stdcall AIL_3D_sample_length(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:191:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  191 | IMPORTS unsigned int __stdcall AIL_3D_sample_offset(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:192:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  192 | IMPORTS int __stdcall AIL_3D_sample_playback_rate(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:193:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  193 | IMPORTS void __stdcall AIL_set_3D_sample_playback_rate(H3DSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:194:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  194 | IMPORTS int __stdcall AIL_set_3D_sample_file(H3DSAMPLE sample, const void* file_image);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:195:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  195 | IMPORTS HPROVIDER __stdcall AIL_set_sample_processor(HSAMPLE sample, SAMPLESTAGE pipeline_stage, HPROVIDER provider);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:196:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  196 | IMPORTS void __stdcall AIL_set_filter_sample_preference(HSAMPLE sample, const char* name, const void* val);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:197:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  197 | IMPORTS void __stdcall AIL_release_sample_handle(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:198:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  198 | IMPORTS void __stdcall AIL_close_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:199:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  199 | IMPORTS int __stdcall AIL_set_preference(unsigned int number, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:200:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  200 | IMPORTS int __stdcall AIL_waveOutOpen(HDIGDRIVER* driver, LPHWAVEOUT* waveout, int id, LPWAVEFORMAT format);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:201:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  201 | IMPORTS void __stdcall AIL_waveOutClose(HDIGDRIVER driver);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:202:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  202 | IMPORTS void __stdcall AIL_set_3D_sample_loop_count(H3DSAMPLE sample, unsigned int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:203:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  203 | IMPORTS void __stdcall AIL_set_stream_playback_rate(HSTREAM stream, int rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:204:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  204 | IMPORTS int __stdcall AIL_stream_playback_rate(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:205:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  205 | IMPORTS void __stdcall AIL_stream_ms_position(HSTREAM sample, S32* total_milliseconds, S32* current_milliseconds);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:206:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  206 | IMPORTS void __stdcall AIL_set_stream_ms_position(HSTREAM stream, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:207:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  207 | IMPORTS int __stdcall AIL_stream_loop_count(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:208:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  208 | IMPORTS void __stdcall AIL_set_stream_loop_block(HSTREAM stream, int loop_start, int loop_end);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:209:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  209 | IMPORTS void __stdcall AIL_set_stream_loop_count(HSTREAM stream, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:210:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  210 | IMPORTS int __stdcall AIL_stream_volume(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:211:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  211 | IMPORTS void __stdcall AIL_set_stream_volume(HSTREAM stream, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:212:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  212 | IMPORTS int __stdcall AIL_stream_pan(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:213:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  213 | IMPORTS void __stdcall AIL_set_stream_pan(HSTREAM stream, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:214:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  214 | IMPORTS void __stdcall AIL_close_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:215:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  215 | IMPORTS void __stdcall AIL_pause_stream(HSTREAM stream, int onoff);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:216:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  216 | IMPORTS AIL_stream_callback __stdcall AIL_register_stream_callback(HSTREAM stream, AIL_stream_callback callback);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:217:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  217 | IMPORTS AIL_3dsample_callback __stdcall AIL_register_3D_EOS_callback(H3DSAMPLE sample, AIL_3dsample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:218:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  218 | IMPORTS AIL_sample_callback __stdcall AIL_register_EOS_callback(HSAMPLE sample, AIL_sample_callback EOS);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:219:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  219 | IMPORTS void __stdcall AIL_start_stream(HSTREAM stream);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:220:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  220 | IMPORTS HSTREAM __stdcall AIL_open_stream_by_sample(HDIGDRIVER driver, HSAMPLE sample, const char* file_name, int mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:221:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  221 | IMPORTS void __stdcall AIL_set_sample_playback_rate(HSAMPLE sample, int playback_rate);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:222:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  222 | IMPORTS int __stdcall AIL_sample_playback_rate(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:223:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  223 | IMPORTS void __stdcall AIL_sample_ms_position(HSAMPLE sample, long* total_ms, long* current_ms);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:224:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  224 | IMPORTS void __stdcall AIL_set_sample_ms_position(HSAMPLE sample, int pos);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:225:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  225 | IMPORTS int __stdcall AIL_sample_loop_count(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:226:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  226 | IMPORTS void __stdcall AIL_set_sample_loop_count(HSAMPLE sample, int count);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:227:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  227 | IMPORTS int __stdcall AIL_sample_volume(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:228:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  228 | IMPORTS void __stdcall AIL_set_sample_volume(HSAMPLE sample, int volume);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:229:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  229 | IMPORTS int __stdcall AIL_sample_pan(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:230:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  230 | IMPORTS void __stdcall AIL_set_sample_pan(HSAMPLE sample, int pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:231:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  231 | IMPORTS void __stdcall AIL_end_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:232:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  232 | IMPORTS void __stdcall AIL_resume_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:233:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  233 | IMPORTS void __stdcall AIL_stop_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:234:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  234 | IMPORTS void __stdcall AIL_start_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:235:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  235 | IMPORTS void __stdcall AIL_init_sample(HSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:237:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  237 |     HSAMPLE sample, const char* file_name, const void* file_image, int file_size, int block);
+      |     ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:238:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  238 | IMPORTS void __stdcall AIL_set_3D_sample_effects_level(H3DSAMPLE sample, float effect_level);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:239:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  239 | IMPORTS void __stdcall AIL_set_3D_sample_distances(H3DSAMPLE sample, float max_dist, float min_dist);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:240:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  240 | IMPORTS void __stdcall AIL_set_3D_velocity_vector(H3DSAMPLE sample, float x, float y, float z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:241:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  241 | IMPORTS void __stdcall AIL_set_3D_position(H3DPOBJECT obj, float X, float Y, float Z);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:243:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  243 |     H3DPOBJECT obj, float X_face, float Y_face, float Z_face, float X_up, float Y_up, float Z_up);
+      |     ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:244:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  244 | IMPORTS int __stdcall AIL_WAV_info(const void* data, AILSOUNDINFO* info);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:245:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  245 | IMPORTS void __stdcall AIL_stop_timer(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:246:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  246 | IMPORTS void __stdcall AIL_release_timer_handle(HTIMER timer);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:247:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  247 | IMPORTS void __stdcall AIL_shutdown(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:248:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  248 | IMPORTS int __stdcall AIL_enumerate_filters(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:250:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  250 |     AIL_file_seek_callback seekcb, AIL_file_read_callback readcb);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:251:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  251 | IMPORTS void __stdcall AIL_release_3D_sample_handle(H3DSAMPLE sample);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:252:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  252 | IMPORTS H3DSAMPLE __stdcall AIL_allocate_3D_sample_handle(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:253:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  253 | IMPORTS void __stdcall AIL_set_3D_user_data(H3DPOBJECT obj, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:254:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  254 | IMPORTS void __stdcall AIL_unlock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:255:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  255 | IMPORTS void __stdcall AIL_lock(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:256:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  256 | IMPORTS void __stdcall AIL_set_3D_speaker_type(HPROVIDER lib, int speaker_type);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:257:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  257 | IMPORTS void __stdcall AIL_close_3D_listener(H3DPOBJECT listener);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:258:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  258 | IMPORTS int __stdcall AIL_enumerate_3D_providers(HPROENUM* next, HPROVIDER* dest, char** name);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:259:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  259 | IMPORTS M3DRESULT __stdcall AIL_open_3D_provider(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:260:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  260 | IMPORTS char* __stdcall AIL_last_error(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:261:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  261 | IMPORTS H3DPOBJECT __stdcall AIL_open_3D_listener(HPROVIDER lib);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:262:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  262 | IMPORTS int __stdcall AIL_3D_user_data(H3DSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:263:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  263 | IMPORTS int __stdcall AIL_sample_user_data(HSAMPLE sample, unsigned int index);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:264:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  264 | IMPORTS HSAMPLE __stdcall AIL_allocate_sample_handle(HDIGDRIVER dig);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:265:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  265 | IMPORTS void __stdcall AIL_set_sample_user_data(HSAMPLE sample, unsigned int index, int value);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:266:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  266 | IMPORTS int __stdcall AIL_decompress_ADPCM(const AILSOUNDINFO *info, void **outdata, unsigned long *outsize);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:267:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  267 | IMPORTS void __stdcall AIL_get_DirectSound_info(HSAMPLE sample, AILLPDIRECTSOUND *lplpDS, AILLPDIRECTSOUNDBUFFER *lplpDSB);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:268:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  268 | IMPORTS void __stdcall AIL_mem_free_lock(void *ptr);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:269:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  269 | IMPORTS HSTREAM __stdcall AIL_open_stream(HDIGDRIVER dig, const char *filename, int stream_mem);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:270:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  270 | IMPORTS int __stdcall AIL_startup(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:271:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  271 | IMPORTS void __stdcall AIL_quick_unload(HAUDIO audio);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:272:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  272 | IMPORTS HAUDIO __stdcall AIL_quick_load_and_play(const char *filename, unsigned int loop_count, int wait_request);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:273:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  273 | IMPORTS void __stdcall AIL_quick_set_volume(HAUDIO audio, float volume, float extravol);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:275:5: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  275 |     int use_digital, int use_MIDI, unsigned int output_rate, int output_bits, int output_channels);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:276:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  276 | IMPORTS void __stdcall AIL_quick_handles(HDIGDRIVER *pdig, HMDIDRIVER *pmdi, HDLSDEVICE *pdls);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:277:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  277 | IMPORTS void __stdcall AIL_sample_volume_pan(HSAMPLE sample, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:278:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  278 | IMPORTS void __stdcall AIL_set_3D_sample_occlusion(H3DSAMPLE sample, float occlusion);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:279:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  279 | IMPORTS char *__stdcall AIL_set_redist_directory(const char *dir);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:280:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  280 | IMPORTS int __stdcall AIL_set_sample_file(HSAMPLE sample, const void *file_image, int block);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:281:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  281 | IMPORTS void __stdcall AIL_set_sample_volume_pan(HSAMPLE sample, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:282:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  282 | IMPORTS void __stdcall AIL_set_stream_volume_pan(HSTREAM stream, float volume, float pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:283:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  283 | IMPORTS void __stdcall AIL_stream_volume_pan(HSTREAM stream, float *volume, float *pan);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:284:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  284 | IMPORTS unsigned long __stdcall AIL_get_timer_highest_delay(void);
+      | ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:55:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   55 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:62:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   62 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:70:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   70 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:75:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   75 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:80:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   80 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:85:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   85 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:90:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   90 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:95:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+   95 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:100:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  100 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:107:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  107 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:114:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  114 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:119:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  119 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:124:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  124 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:129:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  129 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:134:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  134 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  138 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:146:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  146 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:151:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  151 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:160:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  160 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:167:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  167 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:172:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  172 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:177:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  177 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:185:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  185 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:193:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  193 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:205:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  205 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:213:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  213 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:220:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  220 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:224:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  224 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:232:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  232 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:239:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  239 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:247:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  247 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:254:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  254 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:262:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  262 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:270:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  270 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:278:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  278 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:283:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  283 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:288:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  288 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:293:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  293 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:300:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  300 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:305:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  305 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:313:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  313 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:321:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  321 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:333:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  333 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:341:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  341 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:348:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  348 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:356:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  356 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:363:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  363 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:371:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  371 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:378:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  378 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:386:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  386 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:393:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  393 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:400:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  400 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:407:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  407 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:414:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  414 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:420:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  420 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:432:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  432 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:439:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  439 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:447:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  447 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:454:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  454 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:462:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  462 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:470:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  470 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:505:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  505 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:509:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  509 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:513:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  513 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:519:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  519 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:525:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  525 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:529:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  529 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:534:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  534 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:540:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  540 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:545:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  545 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:550:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  550 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:555:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  555 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:560:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  560 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:565:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  565 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:577:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  577 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:583:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  583 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:588:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  588 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:594:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  594 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:599:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  599 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:606:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  606 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:617:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  617 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:624:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  624 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:644:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  644 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:648:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  648 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:653:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  653 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:668:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  668 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:676:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  676 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:691:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  691 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:700:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  700 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:706:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  706 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:713:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  713 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:721:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  721 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:725:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  725 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:730:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  730 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:735:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  735 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:745:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  745 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:755:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  755 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:763:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  763 | {
+      | ^
+/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:771:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
+  771 | {
+      | ^
+[ 67%] Linking C shared library libmss32.so
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_link_script CMakeFiles/milesstub.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libmss32.so.1.0 -o libmss32.so.1.0.0 CMakeFiles/milesstub.dir/miles.c.o  libmilescleanup.a ../libminiaudio.a 
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_symlink_library libmss32.so.1.0.0 libmss32.so.1.0 libmss32.so
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 67%] Built target milesstub
+/usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/zlib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/zlib /workspace/CnC_Generals_Zero_Hour/build/lib/zlib/CMakeFiles/zlib.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/zlib/CMakeFiles/zlib.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 69%] Built target zlib
+/usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl/CMakeFiles/lzhl.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'lib/liblzhl/CMakeFiles/lzhl.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 69%] Built target lzhl
+/usr/bin/gmake  -f src/CMakeFiles/lvgl_platform.dir/build.make src/CMakeFiles/lvgl_platform.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src /workspace/CnC_Generals_Zero_Hour/build/src/CMakeFiles/lvgl_platform.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f src/CMakeFiles/lvgl_platform.dir/build.make src/CMakeFiles/lvgl_platform.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[2]: Nothing to be done for 'src/CMakeFiles/lvgl_platform.dir/build'.
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 69%] Built target lvgl_platform
+/usr/bin/gmake  -f src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make src/game_engine_device/CMakeFiles/gameenginedevice.dir/depend
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src/game_engine_device /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device/CMakeFiles/gameenginedevice.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+/usr/bin/gmake  -f src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make src/game_engine_device/CMakeFiles/gameenginedevice.dir/build
+gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
+[ 69%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/Win32BIGFile.cpp
+In file included from /usr/include/c++/13/bits/stl_algo.h:59,
+                 from /usr/include/c++/13/algorithm:61,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/stltypedefs.h:72,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefilesystem.h:55,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefile.h:36,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine_device/lvgl_device/common/win32_big_file.h:34,
+                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/Win32BIGFile.cpp:1:
+/usr/include/c++/13/bits/algorithmfwd.h:412:41: error: macro "max" passed 3 arguments, but takes just 2
+  412 |     max(const _Tp&, const _Tp&, _Compare);
+      |                                         ^
+In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefile.h:34:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/algorithmfwd.h:425:41: error: macro "min" passed 3 arguments, but takes just 2
+  425 |     min(const _Tp&, const _Tp&, _Compare);
+      |                                         ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/algorithmfwd.h:453:30: error: macro "min" requires 2 arguments, but only 1 given
+  453 |     min(initializer_list<_Tp>);
+      |                              ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/algorithmfwd.h:463:30: error: macro "max" requires 2 arguments, but only 1 given
+  463 |     max(initializer_list<_Tp>);
+      |                              ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+In file included from /usr/include/c++/13/bits/stl_algo.h:65:
+/usr/include/c++/13/bits/uniform_int_dist.h:188:11: error: macro "min" requires 2 arguments, but only 1 given
+  188 |       min() const
+      |           ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:195:11: error: macro "max" requires 2 arguments, but only 1 given
+  195 |       max() const
+      |           ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:295:72: error: macro "min" requires 2 arguments, but only 1 given
+  295 |         constexpr __uctype __urngmin = _UniformRandomBitGenerator::min();
+      |                                                                        ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:296:72: error: macro "max" requires 2 arguments, but only 1 given
+  296 |         constexpr __uctype __urngmax = _UniformRandomBitGenerator::max();
+      |                                                                        ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:390:35: error: macro "min" requires 2 arguments, but only 1 given
+  390 |         static_assert( __urng.min() < __urng.max(),
+      |                                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:390:50: error: macro "max" requires 2 arguments, but only 1 given
+  390 |         static_assert( __urng.min() < __urng.max(),
+      |                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:393:51: error: macro "min" requires 2 arguments, but only 1 given
+  393 |         constexpr __uctype __urngmin = __urng.min();
+      |                                                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/uniform_int_dist.h:394:51: error: macro "max" requires 2 arguments, but only 1 given
+  394 |         constexpr __uctype __urngmax = __urng.max();
+      |                                                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:3690:66: error: macro "min" passed 3 arguments, but takes just 2
+ 3690 |       return std::min(std::max(__val, __lo, __comp), __hi, __comp);
+      |                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:3765:45: error: macro "max" requires 2 arguments, but only 1 given
+ 3765 |       const __uc_type __urngrange = __g.max() - __g.min();
+      |                                             ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:3765:57: error: macro "min" requires 2 arguments, but only 1 given
+ 3765 |       const __uc_type __urngrange = __g.max() - __g.min();
+      |                                                         ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:5775:34: error: macro "min" requires 2 arguments, but only 1 given
+ 5775 |     min(initializer_list<_Tp> __l)
+      |                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:5795:34: error: macro "max" requires 2 arguments, but only 1 given
+ 5795 |     max(initializer_list<_Tp> __l)
+      |                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:5866:45: error: macro "max" requires 2 arguments, but only 1 given
+ 5866 |       const __uc_type __urngrange = __g.max() - __g.min();
+      |                                             ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105: note: macro "max" defined here
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      | 
+/usr/include/c++/13/bits/stl_algo.h:5866:57: error: macro "min" requires 2 arguments, but only 1 given
+ 5866 |       const __uc_type __urngrange = __g.max() - __g.min();
+      |                                                         ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101: note: macro "min" defined here
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      | 
+In file included from /usr/include/c++/13/backward/hash_map:60,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/stltypedefs.h:74:
+/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:37:
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:748:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  748 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
+      |                                                                                                  ^
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  651 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/algorithmfwd.h: At global scope:
+/usr/include/c++/13/bits/algorithmfwd.h:407:5: error: expected unqualified-id before ‘const’
+  407 |     max(const _Tp&, const _Tp&);
+      |     ^~~
+/usr/include/c++/13/bits/algorithmfwd.h:407:5: error: expected ‘)’ before ‘const’
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:21: note: to match this ‘(’
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                     ^
+/usr/include/c++/13/bits/algorithmfwd.h:407:5: error: expected ‘)’ before ‘const’
+  407 |     max(const _Tp&, const _Tp&);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:20: note: to match this ‘(’
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                    ^
+/usr/include/c++/13/bits/algorithmfwd.h:407:5: error: expected ‘)’ before ‘const’
+  407 |     max(const _Tp&, const _Tp&);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: note: to match this ‘(’
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/algorithmfwd.h:412:5: error: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max’ conflicts with a previous declaration
+  412 |     max(const _Tp&, const _Tp&, _Compare);
+      |     ^~~
+In file included from /usr/include/c++/13/bits/specfun.h:43,
+                 from /usr/include/c++/13/cmath:3699,
+                 from /usr/include/c++/13/math.h:36,
+                 from /workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:34:
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: previous declaration ‘namespace std { }::max’
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/13/bits/algorithmfwd.h:420:5: error: expected unqualified-id before ‘const’
+  420 |     min(const _Tp&, const _Tp&);
+      |     ^~~
+/usr/include/c++/13/bits/algorithmfwd.h:420:5: error: expected ‘)’ before ‘const’
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:21: note: to match this ‘(’
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                     ^
+/usr/include/c++/13/bits/algorithmfwd.h:420:5: error: expected ‘)’ before ‘const’
+  420 |     min(const _Tp&, const _Tp&);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:20: note: to match this ‘(’
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                    ^
+/usr/include/c++/13/bits/algorithmfwd.h:420:5: error: expected ‘)’ before ‘const’
+  420 |     min(const _Tp&, const _Tp&);
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: note: to match this ‘(’
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/algorithmfwd.h:425:5: error: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::min’ conflicts with a previous declaration
+  425 |     min(const _Tp&, const _Tp&, _Compare);
+      |     ^~~
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: previous declaration ‘namespace std { }::min’
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/13/bits/algorithmfwd.h:453:5: error: ‘template<class _Tp> constexpr const _Tp std::min’ conflicts with a previous declaration
+  453 |     min(initializer_list<_Tp>);
+      |     ^~~
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: previous declaration ‘namespace std { }::min’
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:23: error: invalid declarator before ‘)’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                       ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:25: error: expected ‘)’ before ‘<’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                    ~    ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:25: error: expected ‘)’ before ‘<’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ~     ^
+/usr/include/c++/13/bits/algorithmfwd.h:463:5: error: ‘template<class _Tp> constexpr const _Tp std::max’ conflicts with a previous declaration
+  463 |     max(initializer_list<_Tp>);
+      |     ^~~
+/usr/include/c++/13/bits/stl_algobase.h:303:5: note: previous declaration ‘namespace std { }::max’
+  303 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:23: error: invalid declarator before ‘)’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                       ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:25: error: expected ‘)’ before ‘>’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                    ~    ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:25: error: expected ‘)’ before ‘>’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ~     ^
+/usr/include/c++/13/bits/uniform_int_dist.h:188:7: error: expected ‘;’ at end of member declaration
+  188 |       min() const
+      |       ^~~
+      |          ;
+/usr/include/c++/13/bits/uniform_int_dist.h:189:7: error: expected unqualified-id before ‘{’ token
+  189 |       { return this->a(); }
+      |       ^
+/usr/include/c++/13/bits/uniform_int_dist.h:195:7: error: expected ‘;’ at end of member declaration
+  195 |       max() const
+      |       ^~~
+      |          ;
+/usr/include/c++/13/bits/uniform_int_dist.h:196:7: error: expected unqualified-id before ‘{’ token
+  196 |       { return this->b(); }
+      |       ^
+/usr/include/c++/13/bits/stl_algo.h: In function ‘void std::__inplace_merge(_BidirectionalIterator, _BidirectionalIterator, _BidirectionalIterator, _Compare)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_algo.h: In function ‘void std::__merge_sort_loop(_RandomAccessIterator1, _RandomAccessIterator1, _RandomAccessIterator2, _Distance, _Compare)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_algo.h: In function ‘constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: error: expected unqualified-id before ‘(’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: error: expected unqualified-id before ‘(’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_algo.h: At global scope:
+/usr/include/c++/13/bits/stl_algo.h:5775:5: error: ‘template<class _Tp> constexpr const _Tp std::min’ conflicts with a previous declaration
+ 5775 |     min(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/13/bits/stl_algobase.h:281:5: note: previous declaration ‘namespace std { }::min’
+  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/13/bits/stl_algo.h:5777:61: error: expected primary-expression before ‘;’ token
+ 5777 |       __glibcxx_requires_irreflexive(__l.begin(), __l.end());
+      |                                                             ^
+/usr/include/c++/13/bits/stl_algo.h:5777:61: error: expected ‘}’ before ‘;’ token
+/usr/include/c++/13/bits/stl_algo.h:5776:5: note: to match this ‘{’
+ 5776 |     {
+      |     ^
+/usr/include/c++/13/bits/stl_algo.h:5778:7: error: expected unqualified-id before ‘return’
+ 5778 |       return *_GLIBCXX_STD_A::__min_element(__l.begin(), __l.end(),
+      |       ^~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5785:5: error: expected ‘)’ before ‘<’ token
+ 5785 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:21: note: to match this ‘(’
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                     ^
+/usr/include/c++/13/bits/stl_algo.h:5785:5: error: expected ‘)’ before ‘<’ token
+ 5785 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:20: note: to match this ‘(’
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                    ^
+/usr/include/c++/13/bits/stl_algo.h:5785:5: error: expected ‘)’ before ‘<’ token
+ 5785 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: note: to match this ‘(’
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_algo.h:5797:61: error: expected primary-expression before ‘;’ token
+ 5797 |       __glibcxx_requires_irreflexive(__l.begin(), __l.end());
+      |                                                             ^
+/usr/include/c++/13/bits/stl_algo.h:5797:61: error: expected ‘}’ before ‘;’ token
+/usr/include/c++/13/bits/stl_algo.h:5796:5: note: to match this ‘{’
+ 5796 |     {
+      |     ^
+/usr/include/c++/13/bits/stl_algo.h:5798:7: error: expected unqualified-id before ‘return’
+ 5798 |       return *_GLIBCXX_STD_A::__max_element(__l.begin(), __l.end(),
+      |       ^~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5800:5: error: expected declaration before ‘}’ token
+ 5800 |     }
+      |     ^
+/usr/include/c++/13/bits/stl_algo.h:5805:5: error: expected ‘)’ before ‘<’ token
+ 5805 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:21: note: to match this ‘(’
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                     ^
+/usr/include/c++/13/bits/stl_algo.h:5805:5: error: expected ‘)’ before ‘<’ token
+ 5805 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:20: note: to match this ‘(’
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                    ^
+/usr/include/c++/13/bits/stl_algo.h:5805:5: error: expected ‘)’ before ‘<’ token
+ 5805 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: note: to match this ‘(’
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_algo.h:5818:61: error: ‘input_iterator_tag’ has not been declared
+ 5818 |     __sample(_InputIterator __first, _InputIterator __last, input_iterator_tag,
+      |                                                             ^~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5819:43: error: ‘random_access_iterator_tag’ has not been declared
+ 5819 |              _RandomAccessIterator __out, random_access_iterator_tag,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h: In function ‘_RandomAccessIterator __sample(_InputIterator, _InputIterator, int, _RandomAccessIterator, int, _Size, _UniformRandomBitGenerator&&)’:
+/usr/include/c++/13/bits/stl_algo.h:5822:30: error: ‘uniform_int_distribution’ does not name a type
+ 5822 |       using __distrib_type = uniform_int_distribution<_Size>;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5823:37: error: ‘__distrib_type’ has not been declared
+ 5823 |       using __param_type = typename __distrib_type::param_type;
+      |                                     ^~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5824:7: error: ‘__distrib_type’ was not declared in this scope
+ 5824 |       __distrib_type __d{};
+      |       ^~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5834:37: error: ‘__param_type’ was not declared in this scope
+ 5834 |           const auto __k = __d(__g, __param_type{0, __pop_sz});
+      |                                     ^~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h: At global scope:
+/usr/include/c++/13/bits/stl_algo.h:5846:14: error: ‘forward_iterator_tag’ has not been declared
+ 5846 |              forward_iterator_tag,
+      |              ^~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h: In function ‘_OutputIterator __sample(_ForwardIterator, _ForwardIterator, int, _OutputIterator, _Cat, _Size, _UniformRandomBitGenerator&&)’:
+/usr/include/c++/13/bits/stl_algo.h:5850:30: error: ‘uniform_int_distribution’ does not name a type
+ 5850 |       using __distrib_type = uniform_int_distribution<_Size>;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5851:37: error: ‘__distrib_type’ has not been declared
+ 5851 |       using __param_type = typename __distrib_type::param_type;
+      |                                     ^~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5852:22: error: ‘make_unsigned_t’ does not name a type
+ 5852 |       using _USize = make_unsigned_t<_Size>;
+      |                      ^~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5853:20: error: ‘remove_reference_t’ does not name a type; did you mean ‘__remove_reference’?
+ 5853 |       using _Gen = remove_reference_t<_UniformRandomBitGenerator>;
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    __remove_reference
+/usr/include/c++/13/bits/stl_algo.h:5854:25: error: ‘common_type_t’ does not name a type
+ 5854 |       using __uc_type = common_type_t<typename _Gen::result_type, _USize>;
+      |                         ^~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5859:7: error: ‘__distrib_type’ was not declared in this scope
+ 5859 |       __distrib_type __d{};
+      |       ^~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_algo.h:5866:13: error: ‘__uc_type’ does not name a type
+ 5866 |       const __uc_type __urngrange = __g.max() - __g.min();
+      |             ^~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5867:11: error: ‘__urngrange’ was not declared in this scope
+ 5867 |       if (__urngrange / __uc_type(__unsampled_sz) >= __uc_type(__unsampled_sz))
+      |           ^~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5873:21: error: ‘pair’ does not name a type
+ 5873 |               const pair<_Size, _Size> __p =
+      |                     ^~~~
+/usr/include/c++/13/bits/stl_algo.h:5877:19: error: ‘__p’ was not declared in this scope; did you mean ‘__n’?
+ 5877 |               if (__p.first < __n)
+      |                   ^~~
+      |                   __n
+/usr/include/c++/13/bits/stl_algo.h:5888:19: error: ‘__p’ was not declared in this scope; did you mean ‘__n’?
+ 5888 |               if (__p.second < __n)
+      |                   ^~~
+      |                   __n
+/usr/include/c++/13/bits/stl_algo.h:5901:22: error: ‘__param_type’ was not declared in this scope
+ 5901 |         if (__d(__g, __param_type{0, --__unsampled_sz}) < __n)
+      |                      ^~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h: In function ‘_SampleIterator sample(_PopulationIterator, _PopulationIterator, _SampleIterator, _Distance, _UniformRandomBitGenerator&&)’:
+/usr/include/c++/13/bits/stl_algo.h:5925:11: error: ‘__or_’ was not declared in this scope; did you mean ‘std::__or_’?
+ 5925 |           __or_<is_convertible<__pop_cat, forward_iterator_tag>,
+      |           ^~~~~
+      |           std::__or_
+In file included from /usr/include/c++/13/bits/stl_pair.h:60,
+                 from /usr/include/c++/13/bits/stl_algobase.h:64:
+/usr/include/c++/13/type_traits:171:12: note: ‘std::__or_’ declared here
+  171 |     struct __or_
+      |            ^~~~~
+/usr/include/c++/13/bits/stl_algo.h:5925:17: error: ‘is_convertible’ was not declared in this scope; did you mean ‘std::is_convertible’?
+ 5925 |           __or_<is_convertible<__pop_cat, forward_iterator_tag>,
+      |                 ^~~~~~~~~~~~~~
+      |                 std::is_convertible
+/usr/include/c++/13/type_traits:1416:12: note: ‘std::is_convertible’ declared here
+ 1416 |     struct is_convertible
+      |            ^~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5925:41: error: expected primary-expression before ‘,’ token
+ 5925 |           __or_<is_convertible<__pop_cat, forward_iterator_tag>,
+      |                                         ^
+/usr/include/c++/13/bits/stl_algo.h:5925:43: error: expected string-literal before ‘forward_iterator_tag’
+ 5925 |           __or_<is_convertible<__pop_cat, forward_iterator_tag>,
+      |                                           ^~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5925:42: error: expected ‘)’ before ‘forward_iterator_tag’
+ 5925 |           __or_<is_convertible<__pop_cat, forward_iterator_tag>,
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+      |                                          )
+/usr/include/c++/13/bits/stl_algo.h:5924:20: note: to match this ‘(’
+ 5924 |       static_assert(
+      |                    ^
+/usr/include/c++/13/bits/stl_algo.h:5930:21: error: ‘is_integral’ was not declared in this scope; did you mean ‘std::is_integral’?
+ 5930 |       static_assert(is_integral<_Distance>::value,
+      |                     ^~~~~~~~~~~
+      |                     std::is_integral
+/usr/include/c++/13/type_traits:441:12: note: ‘std::is_integral’ declared here
+  441 |     struct is_integral
+      |            ^~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5930:42: error: expected primary-expression before ‘>’ token
+ 5930 |       static_assert(is_integral<_Distance>::value,
+      |                                          ^
+/usr/include/c++/13/bits/stl_algo.h:5930:45: error: ‘::value’ has not been declared
+ 5930 |       static_assert(is_integral<_Distance>::value,
+      |                                             ^~~~~
+/usr/include/c++/13/bits/stl_algo.h:5933:16: error: expected nested-name-specifier before ‘iterator_traits’
+ 5933 |       typename iterator_traits<_PopulationIterator>::difference_type __d = __n;
+      |                ^~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5933:16: error: expected ‘(’ before ‘iterator_traits’
+ 5933 |       typename iterator_traits<_PopulationIterator>::difference_type __d = __n;
+      |                ^~~~~~~~~~~~~~~
+      |                (
+/usr/include/c++/13/bits/stl_algo.h:5935:9: error: ‘__sample’ is not a member of ‘std’; did you mean ‘__sample’?
+ 5935 |         __sample(__first, __last, __pop_cat{}, __out, __samp_cat{}, __d,
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5845:5: note: ‘__sample’ declared here
+ 5845 |     __sample(_ForwardIterator __first, _ForwardIterator __last,
+      |     ^~~~~~~~
+/usr/include/c++/13/bits/stl_algo.h:5935:69: error: ‘__d’ was not declared in this scope; did you mean ‘__n’?
+ 5935 |         __sample(__first, __last, __pop_cat{}, __out, __samp_cat{}, __d,
+      |                                                                     ^~~
+      |                                                                     __n
+/usr/include/c++/13/bits/stl_algo.h: At global scope:
+/usr/include/c++/13/bits/stl_algo.h:5943:1: error: expected declaration before ‘}’ token
+ 5943 | } // namespace std
+      | ^
+/usr/include/c++/13/string_view: In member function ‘constexpr int std::basic_string_view<_CharT, _Traits>::compare(std::basic_string_view<_CharT, _Traits>) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/string_view.tcc: In member function ‘constexpr std::basic_string_view<_CharT, _Traits>::size_type std::basic_string_view<_CharT, _Traits>::rfind(const _CharT*, size_type, size_type) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘int std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, int> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(const _Tp&) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘int std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(size_type, size_type, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘int std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(size_type, size_type, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘int std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(const _CharT*) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘int std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(size_type, size_type, const _CharT*) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.h: In member function ‘int std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::compare(size_type, size_type, const _CharT*, size_type) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/basic_string.tcc: In member function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::rfind(const _CharT*, size_type, size_type) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bitset: In member function ‘void std::bitset<_Nb>::_M_copy_from_ptr(const _CharT*, std::size_t, std::size_t, std::size_t, _CharT, _CharT)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_bvector.h: In member function ‘std::vector<bool, _Alloc>::size_type std::vector<bool, _Alloc>::_M_check_len(size_type, const char*) const’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: error: expected unqualified-id before ‘(’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/streambuf.tcc: In member function ‘virtual std::streamsize std::basic_streambuf<_CharT, _Traits>::xsgetn(char_type*, std::streamsize)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/streambuf.tcc: In member function ‘virtual std::streamsize std::basic_streambuf<_CharT, _Traits>::xsputn(const char_type*, std::streamsize)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/stl_deque.h: In member function ‘void std::_Deque_base<_Tp, _Alloc>::_M_initialize_map(std::size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: error: expected unqualified-id before ‘(’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/deque.tcc: In member function ‘void std::deque<_Tp, _Alloc>::_M_reallocate_map(size_type, bool)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:105:19: error: expected unqualified-id before ‘(’ token
+  105 | #define max(x, y) (((x) > (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/deque.tcc: In function ‘typename __gnu_cxx::__enable_if<std::__is_random_access_iter<_II>::__value, std::_Deque_iterator<_Tp, _Tp&, _Tp*> >::__type std::__copy_move_a1(_II, _II, _Deque_iterator<_Tp, _Tp&, _Tp*>)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/deque.tcc: In function ‘typename __gnu_cxx::__enable_if<std::__is_random_access_iter<_II>::__value, std::_Deque_iterator<_Tp, _Tp&, _Tp*> >::__type std::__copy_move_backward_a1(_II, _II, _Deque_iterator<_Tp, _Tp&, _Tp*>)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/deque.tcc: In function ‘typename __gnu_cxx::__enable_if<std::__is_random_access_iter<_II>::__value, bool>::__type std::__equal_aux1(_II, _II, _Deque_iterator<_Tp, _Ref, _Ptr>)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/deque.tcc: In function ‘int std::__lex_cmp_dit(_Deque_iterator<_Tp, _Ref, _Ptr>, _Deque_iterator<_Tp, _Ref, _Ptr>, const _Tp2*, const _Tp2*)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/usr/include/c++/13/bits/deque.tcc: In function ‘bool std::__lexicographical_compare_aux1(_Deque_iterator<_Tp, _Ref, _Ptr>, _Deque_iterator<_Tp, _Ref, _Ptr>, _Deque_iterator<_Tp2, _Ref2, _Ptr2>, _Deque_iterator<_Tp2, _Ref2, _Ptr2>)’:
+/workspace/CnC_Generals_Zero_Hour/include/lib/base_type.h:101:19: error: expected unqualified-id before ‘(’ token
+  101 | #define min(x, y) (((x) < (y)) ? (x) : (y))
+      |                   ^
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  651 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
+  651 |                 return 0; \
+      |                        ^
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
+  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
+   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make:79: src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o] Error 1
+gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake[1]: *** [CMakeFiles/Makefile2:1941: src/game_engine_device/CMakeFiles/gameenginedevice.dir/all] Error 2
+gmake[1]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
+gmake: *** [Makefile:94: all] Error 2

@@ -34,11 +34,11 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include <stddef.h>	// for offsetof, which we don't use but everyone who includes us does
-#include "Common/NameKeyGenerator.h"
-#include "Common/STLTypedefs.h"
+#include "game_engine/common/namekeygenerator.h"
+#include "common/stltypedefs.h"
 #include "common/ascii_string.h"
-#include "Common/Science.h"
-#include "Common/GameCommon.h"
+#include "common/science.h"
+#include "common/gamecommon.h"
 
 //-------------------------------------------------------------------------------------------------
 class INI;

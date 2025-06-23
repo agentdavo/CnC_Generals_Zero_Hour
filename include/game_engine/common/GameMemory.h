@@ -72,8 +72,8 @@
 
 #include "Lib/BaseType.h"
 #include "common/win32_compat.h"
-#include "Common/Debug.h"
-#include "Common/Errors.h"
+#include "common/debug.h"
+#include "common/errors.h"
 
 // MACROS //////////////////////////////////////////////////////////////////
 

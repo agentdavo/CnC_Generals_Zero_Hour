@@ -33,7 +33,7 @@
 
 #include "lib/base_type.h"
 #include "common/ascii_string.h"
-#include "common/archiveFileSystem.h"
+#include "common/archivefilesystem.h"
 
 class File;
 
