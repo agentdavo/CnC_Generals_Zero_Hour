@@ -19,6 +19,14 @@ set(CMAKE_COLOR_MAKEFILE ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+if(APPLE)
+    # Apple's ranlib treats empty object files as fatal by default.  Some
+    # optional LVGL sources compile to no symbols depending on build flags
+    # which stops the archive step.  Suppress this behaviour so the build
+    # matches Linux.
+    set(CMAKE_RANLIB "${CMAKE_RANLIB} -no_warning_for_no_symbols" CACHE STRING "Ranlib command" FORCE)
+endif()
+
 # Third party libraries
 message(STATUS "Configuring bundled libraries")
 add_subdirectory(lib)
