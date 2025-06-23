@@ -4,6 +4,9 @@ add_library(gameenginedevice EXCLUDE_FROM_ALL)
 file(GLOB_RECURSE LVGLDEVICE_SRCS CONFIGURE_DEPENDS
     lvgl_device/**/*.cpp
 )
+list(FILTER LVGLDEVICE_SRCS EXCLUDE REGEX "Win32.*\\.cpp$")
+list(FILTER LVGLDEVICE_SRCS EXCLUDE REGEX "Win32BIGFile\\.cpp$")
+list(FILTER LVGLDEVICE_SRCS EXCLUDE REGEX "Win32BIGFileSystem\\.cpp$")
 target_sources(gameenginedevice PRIVATE ${LVGLDEVICE_SRCS})
 
 # Common w3d_device sources migrated from Generals/Code
