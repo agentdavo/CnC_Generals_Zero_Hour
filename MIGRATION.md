@@ -227,7 +227,10 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - buildVersionUpdate, versionUpdate and Compress tools moved to `src/Tools` with basic stubs and new CMake targets.
 - The remaining tools from `Generals/Code/Tools` are now located under `src/Tools`. Their original directories were removed. The migrated tools are: Autorun, Babylon, CRCDiff, DebugWindow, GUIEdit, ImagePacker, Launcher, NVASM, PATCHGET, ParticleEditor, WW3D, WorldBuilder, mangler, matchbot, textureCompress, timingTest and wolSetup.
 - Audio library sources under `Generals/Code/Libraries/Source/WPAudio` were moved to `src/Libraries/WPAudio` with a new static library `wp_audio`. The duplicate files in `GeneralsMD/Code/Libraries/Source/WPAudio` were removed and `gameengine` now links against this library.
+- Building of `wp_audio` is temporarily disabled until its headers are fully migrated.
 - Compression utilities under `Generals/Code/Libraries/Source/Compression` were relocated to `src/Libraries/Compression` with headers in `include/Libraries/Compression`. A new static library `compression` is linked by `gameengine` and the duplicate `GeneralsMD` directory was removed.
+- Fixed case-sensitive include path to `zlib/zlib.h` in `CompressionManager.cpp`.
+- WW3D2 now includes headers from `src/Tools/WW3D/pluglib` for `always.h` and related utilities.
 - WWVegas helper libraries `Wwutil` and `WWSaveLoad` were moved into `src/Libraries/WWVegas` and now build the `wwutil` and `wwsaveload` static libraries. The duplicate `GeneralsMD` directories were removed and `gameengine` links against these targets.
 - Additional WWVegas libraries `WWMath` and `WWLib` now live under `src/Libraries/WWVegas` as the `wwmath` and `wwlib` static libraries. The old copies under `Generals` and `GeneralsMD` were removed and `gameengine` links to them.
 - The WW3D2 rendering library was migrated to `src/Libraries/WWVegas/WW3D2` and builds the `ww3d2` static library. The original directory under `Generals/Code` has been removed.
