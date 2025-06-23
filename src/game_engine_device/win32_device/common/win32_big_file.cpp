@@ -26,12 +26,12 @@
 // Bryan Cleveland, August 2002
 /////////////////////////////////////////////////////
 
-#include "common/LocalFile.h"
-#include "common/LocalFileSystem.h"
-#include "common/RAMFile.h"
-#include "common/StreamingArchiveFile.h"
+#include "common/local_file.h"
+#include "common/localfilesystem.h"
+#include "common/ramfile.h"
+#include "common/streamingarchivefile.h"
 #include "common/GameMemory.h"
-#include "common/PerfTimer.h"
+#include "common/perftimer.h"
 #include "win32_device/common/win32_big_file.h"
 
 //============================================================================
