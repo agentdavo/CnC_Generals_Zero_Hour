@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Common/LocalFileSystem.h"
+#include "common/localfilesystem.h"
 #include <filesystem>
 
 class LvglLocalFileSystem : public LocalFileSystem
