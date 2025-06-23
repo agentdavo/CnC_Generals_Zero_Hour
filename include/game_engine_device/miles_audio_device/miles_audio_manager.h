@@ -20,7 +20,7 @@
 // MilesAudioManager implementation
 // Author: John K. McDonald, July 2002
 
-#include "common/asciistring.h"
+#include "game_engine/common/ascii_string.h"
 #include "common/gameaudio.h"
 #include "mss/mss.h"
 

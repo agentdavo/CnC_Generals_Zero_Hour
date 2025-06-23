@@ -33,9 +33,9 @@
 #define __SCIENCE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/Overridable.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/UnicodeString.h"
+#include "game_engine/common/overridable.h"
+#include "game_engine/common/namekeygenerator.h"
+#include "common/unicodestring.h"
 
 class Player;
 
