@@ -42,7 +42,7 @@
 #include "GameLogic/SidesList.h"
 #include "GameLogic/ScriptEngine.h"
 
-#include <Libraries/Compression/Compression.h>
+#include <libraries/compression/compression.h>
 #include "CUndoable.h"
 #include "LayersList.h"
 #include "MainFrm.h"

@@ -27,10 +27,10 @@ extern "C"
 {
 #include <zlib.h>
 }
-#include "EAC/codex.h"
-#include "EAC/btreecodex.h"
-#include "EAC/huffcodex.h"
-#include "EAC/refcodex.h"
+#include "eac/codex.h"
+#include "eac/btreecodex.h"
+#include "eac/huffcodex.h"
+#include "eac/refcodex.h"
 #include <cstring>
 #include <cmath>
 
