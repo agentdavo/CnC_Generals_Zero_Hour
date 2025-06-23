@@ -40,7 +40,7 @@
 
 #include "mss.h"
 #include "Lib/Basetype.h"
-#include "MilesAudioDevice/MilesAudioManager.h"
+#include "miles_audio_device/miles_audio_manager.h"
 
 #include "common/AudioAffect.h"
 #include "common/AudioHandleSpecialValues.h"

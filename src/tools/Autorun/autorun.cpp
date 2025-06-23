@@ -123,8 +123,8 @@
 #include "GameEngine/common/subsystem_interface.h"
 #include "GameClient/GameText.h"
 #include "common/UnicodeString.h"
-#include "Win32Device/common/win32localfilesystem.h"
-#include "Win32Device/common/win32bigfilesystem.h"
+#include "win32_device/common/win32_local_file_system.h"
+#include "win32_device/common/win32_big_file_system.h"
 #endif
 
 //-----------------------------------------------------------------------------

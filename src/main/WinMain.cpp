@@ -58,8 +58,8 @@
 #include "GameLogic/GameLogic.h" ///< @todo for demo, remove
 #include "GameClient/Mouse.h"
 #include "GameClient/IMEManager.h"
-#include "Win32Device/GameClient/Win32Mouse.h"
-#include "Win32Device/common/Win32GameEngine.h"
+#include "win32_device/game_client/win32_mouse.h"
+#include "win32_device/common/win32_game_engine.h"
 #include "common/Version.h"
 #include "BuildVersion.h"
 #include "GeneratedVersion.h"

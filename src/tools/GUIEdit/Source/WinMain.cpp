@@ -53,7 +53,7 @@
 #include "common/GameMemory.h"
 #include "common/GameEngine.h"
 #include "GameClient/GameWindowManager.h"
-#include "Win32Device/GameClient/Win32Mouse.h"
+#include "win32_device/game_client/win32_mouse.h"
 #include "Resource.h"
 #include "Lib/BaseType.h"
 #include "GUIEdit.h"

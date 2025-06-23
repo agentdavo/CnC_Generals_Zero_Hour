@@ -1,4 +1,4 @@
-#include "lvgl_device/game_client/Win32Mouse.h"
+#include "lvgl_device/game_client/win32_mouse.h"
 
 Win32Mouse::Win32Mouse() {}
 Win32Mouse::~Win32Mouse() {}

@@ -254,15 +254,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Corrected `WWDownload` headers to include `ftp.h` directly and match file
   casing.
 - Moved `include/Common` to `include/common` and updated header includes.
-=======
-- Added a portable stub for `windows.h` under `include/Common` to ease non-Windows builds.
-- Updated source and header includes to reference this stub via `common/windows.h`.
-- Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and
-  `ww3d2` now add the global `include/` directory to their CMake
-  `target_include_directories` so macOS builds resolve headers such as
-  `common/windows.h` and `GameEngine/Common/Debug.h`.
-- Renamed `Vector.H` to `vector.h` and updated all includes to use the lowercase
-  path to compile on case sensitive filesystems.
-- Corrected `WWDownload` headers to include `ftp.h` directly and match file
-  casing.
->>>>>>> Stashed changes
+- Renamed Win32Device, VideoDevice and MilesAudioDevice directories to snake_case along with associated sources and headers.
