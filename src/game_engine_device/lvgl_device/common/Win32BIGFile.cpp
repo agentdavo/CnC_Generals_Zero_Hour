@@ -1,4 +1,4 @@
-#include "game_engine_device/lvgl_device/common/win32bigfile.h"
+#include "game_engine_device/lvgl_device/common/win32_big_file.h"
 
 Win32BIGFile::Win32BIGFile() {}
 Win32BIGFile::~Win32BIGFile() {}

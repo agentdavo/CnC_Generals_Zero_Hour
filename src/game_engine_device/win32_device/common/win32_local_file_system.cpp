@@ -30,8 +30,8 @@
 #include "common/AsciiString.h"
 #include "common/GameMemory.h"
 #include "common/PerfTimer.h"
-#include "Win32Device/common/win32localfilesystem.h"
-#include "Win32Device/common/Win32LocalFile.h"
+#include "win32_device/common/win32_local_file_system.h"
+#include "win32_device/common/Win32LocalFile.h"
 #include <io.h>
 
 Win32LocalFileSystem::Win32LocalFileSystem() : LocalFileSystem()

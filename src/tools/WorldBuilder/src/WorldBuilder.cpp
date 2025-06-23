@@ -76,12 +76,12 @@
 
 #include "W3DDevice/common/W3DModuleFactory.h"
 #include "W3DDevice/GameClient/W3DParticleSys.h"
-#include "MilesAudioDevice/MilesAudioManager.h"
+#include "miles_audio_device/miles_audio_manager.h"
 
 #include <io.h>
-#include "win32device/GameClient/Win32Mouse.h"
-#include "Win32Device/common/win32localfilesystem.h"
-#include "Win32Device/common/win32bigfilesystem.h"
+#include "win32device/GameClient/win32_mouse.h"
+#include "win32_device/common/win32_local_file_system.h"
+#include "win32_device/common/win32_big_file_system.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

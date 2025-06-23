@@ -27,7 +27,7 @@
 
 #include "common/Debug.h"
 #include "GameClient/Display.h"
-#include "Win32Device/GameClient/Win32DIMouse.h"
+#include "win32_device/game_client/win32_di_mouse.h"
 #include "WinMain.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////////////////////////
