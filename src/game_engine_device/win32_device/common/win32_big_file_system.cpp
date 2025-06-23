@@ -78,7 +78,7 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
 	Int archiveFileSize = 0;
 	Int numLittleFiles = 0;
 
-	ArchiveFile *archiveFile = NEW Win32BIGFile;
+        std::unique_ptr<ArchiveFile> archiveFile(new Win32BIGFile);
 
 	DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - opening BIG file %s\n", filename));
 
@@ -167,7 +167,7 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
 
 	// leave fp open as the archive file will be using it.
 
-	return archiveFile;
+        return archiveFile.release();
 }
 
 void Win32BIGFileSystem::closeArchiveFile(const Char *filename) {
