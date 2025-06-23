@@ -14,7 +14,7 @@ target_sources(gameenginedevice PRIVATE ${W3DDEVICE_COMMON_SRCS})
 
 # GameClient W3DDevice sources migrated from Generals/Code
 file(GLOB_RECURSE W3DDEVICE_GAMECLIENT_SRCS CONFIGURE_DEPENDS
-    W3DDevice/GameClient/*.cpp
+    W3DDevice/game_client/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${W3DDEVICE_GAMECLIENT_SRCS})
 
