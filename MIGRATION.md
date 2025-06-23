@@ -259,3 +259,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Standardised D3DX8Math stub as 'd3dx8_math.h' across the include tree.
 - MapCacheBuilder tool relocated to `src/tools/map_cache_builder` and the entry
   point renamed to `win_main.cpp`.
+- Win32BIGFile.cpp and Win32BIGFileSystem.cpp stubs removed; lvgl_big_file.cpp and lvgl_big_file_system.cpp now supply the BIG archive loader.

@@ -34,7 +34,7 @@
 #include "common/XferDeepCRC.h"
 #include "common/CRC.h"
 #include "common/Snapshot.h"
-#include "winsock2.h" // for htonl
+#include "common/byte_swap.h"
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ void XferCRC::addCRC( UnsignedInt val )
 {
 	int hibit;
 
-	val = htonl(val);
+        val = common::host_to_be(val);
 
 	if (m_crc & 0x80000000)
 	{
@@ -161,7 +161,7 @@ void XferCRC::xferImplementation( void *data, Int dataSize )
 		{
 			val += (c[i] << (i*8));
 		}
-		val = htonl(val);
+                val = common::host_to_be(val);
 		addCRC (val);
 	}
 	
@@ -179,7 +179,7 @@ void XferCRC::skip( Int dataSize )
 UnsignedInt XferCRC::getCRC( void )
 {
 
-	return htonl(m_crc);
+        return common::host_to_be(m_crc);
 
 }  // end skip
 

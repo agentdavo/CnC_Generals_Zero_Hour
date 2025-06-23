@@ -32,7 +32,7 @@
 #define _CRC_H_
 
 #include "Lib/BaseType.h"
-#include "winsock2.h" // for htonl
+#include "common/byte_swap.h"
 
 class CRC
 {

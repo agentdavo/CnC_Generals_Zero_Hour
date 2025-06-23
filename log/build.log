@@ -1,6 +1,6 @@
 -- Configuring bundled libraries
 -- Git version 2.43.0 found at '/usr/bin/git'.
--- Git using branch 'main', commit 49e8c720c1deaf30adf4e2430aa100eef7e07089/'Merge pull request #107 from agentdavo/codex/port-command-and-conquer-to-cross-platform'.
+-- Git using branch 'main', commit 15bcc52742b3791f0845d6b6655bf50431cdf155/'Merge pull request #109 from agentdavo/codex/remove-or-rename-win32bigfile-files-and-update-cmakelists.tx'.
 -- Enabled features:
 
 -- Disabled features:
@@ -9,7 +9,7 @@
 
 -- Configuring core sources
 -- Configuring migrated engine modules
--- Configuring done (0.2s)
+-- Configuring done (0.1s)
 -- Generating done (0.3s)
 -- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
 /usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
@@ -25,7 +25,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/CMakeFiles/lvgl.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 51%] Built target lvgl
+[ 53%] Built target lvgl
 /usr/bin/gmake  -f lib/CMakeFiles/miniaudio.dir/build.make lib/CMakeFiles/miniaudio.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib /workspace/CnC_Generals_Zero_Hour/build/lib/CMakeFiles/miniaudio.dir/DependInfo.cmake "--color="
@@ -34,7 +34,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/CMakeFiles/miniaudio.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 51%] Built target miniaudio
+[ 53%] Built target miniaudio
 /usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/DependInfo.cmake "--color="
@@ -43,7 +43,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 52%] Built target usgt2
+[ 54%] Built target usgt2
 /usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common/CMakeFiles/uscommon.dir/DependInfo.cmake "--color="
@@ -52,7 +52,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 54%] Built target uscommon
+[ 56%] Built target uscommon
 /usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/DependInfo.cmake "--color="
@@ -61,7 +61,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 55%] Built target ushttp
+[ 57%] Built target ushttp
 /usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/DependInfo.cmake "--color="
@@ -70,7 +70,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 56%] Built target uswebservice
+[ 57%] Built target uswebservice
 /usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/DependInfo.cmake "--color="
@@ -79,7 +79,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 56%] Built target usbrigades
+[ 58%] Built target usbrigades
 /usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/DependInfo.cmake "--color="
@@ -88,7 +88,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 57%] Built target uschat
+[ 59%] Built target uschat
 /usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/DependInfo.cmake "--color="
@@ -97,7 +97,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 58%] Built target usnatneg
+[ 59%] Built target usnatneg
 /usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/DependInfo.cmake "--color="
@@ -106,7 +106,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 58%] Built target usqr2
+[ 59%] Built target usqr2
 /usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/DependInfo.cmake "--color="
@@ -115,7 +115,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 58%] Built target uscdkey
+[ 59%] Built target uscdkey
 /usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP/CMakeFiles/usgp.dir/DependInfo.cmake "--color="
@@ -124,7 +124,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 59%] Built target usgp
+[ 60%] Built target usgp
 /usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/DependInfo.cmake "--color="
@@ -133,7 +133,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 59%] Built target usstats
+[ 60%] Built target usstats
 /usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/DependInfo.cmake "--color="
@@ -142,7 +142,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 59%] Built target uspinger
+[ 60%] Built target uspinger
 /usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/DependInfo.cmake "--color="
@@ -151,7 +151,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 59%] Built target usserverbrowsing
+[ 61%] Built target usserverbrowsing
 /usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/DependInfo.cmake "--color="
@@ -160,7 +160,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 60%] Built target uspeer
+[ 63%] Built target uspeer
 /usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt/CMakeFiles/uspt.dir/DependInfo.cmake "--color="
@@ -169,7 +169,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 60%] Built target uspt
+[ 63%] Built target uspt
 /usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake/CMakeFiles/ussake.dir/DependInfo.cmake "--color="
@@ -178,7 +178,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 61%] Built target ussake
+[ 64%] Built target ussake
 /usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc/CMakeFiles/ussc.dir/DependInfo.cmake "--color="
@@ -187,7 +187,7 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 62%] Built target ussc
+[ 64%] Built target ussc
 /usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/DependInfo.cmake "--color="
@@ -196,41 +196,247 @@ gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 63%] Built target usd2g
+[ 65%] Built target usd2g
 /usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build'.
+[ 65%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/debug.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/debug.c.o -MF CMakeFiles/gsm.dir/src/debug.c.o.d -o CMakeFiles/gsm.dir/src/debug.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/debug.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/decode.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/decode.c.o -MF CMakeFiles/gsm.dir/src/decode.c.o.d -o CMakeFiles/gsm.dir/src/decode.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/decode.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/long_term.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/long_term.c.o -MF CMakeFiles/gsm.dir/src/long_term.c.o.d -o CMakeFiles/gsm.dir/src/long_term.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/long_term.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/lpc.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/lpc.c.o -MF CMakeFiles/gsm.dir/src/lpc.c.o.d -o CMakeFiles/gsm.dir/src/lpc.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/lpc.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/preprocess.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/preprocess.c.o -MF CMakeFiles/gsm.dir/src/preprocess.c.o.d -o CMakeFiles/gsm.dir/src/preprocess.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c:12:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c: In function ‘Gsm_Preprocess’:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:106:23: warning: operand of ‘?:’ changes signedness from ‘longword’ {aka ‘long int’} to ‘ulongword’ {aka ‘long unsigned int’} due to unsignedness of other operand [-Wsign-compare]
+  106 |         : ((b) <= 0 ? (a) + (b)   \
+      |                       ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c:96:26: note: in expansion of macro ‘GSM_L_ADD’
+   96 |                 L_z2   = GSM_L_ADD( L_temp, L_s2 );
+      |                          ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:103:22: warning: operand of ‘?:’ changes signedness from ‘long int’ to ‘long unsigned int’ due to unsignedness of other operand [-Wsign-compare]
+  103 |         ( (a) <  0 ? ( (b) >= 0 ? (a) + (b)     \
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  104 |                  : (utmp = (ulongword)-((a) + 1) + (ulongword)-((b) + 1)) \
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  105 |                    >= MAX_LONGWORD ? MIN_LONGWORD : -(longword)utmp-2 )   \
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c:96:26: note: in expansion of macro ‘GSM_L_ADD’
+   96 |                 L_z2   = GSM_L_ADD( L_temp, L_s2 );
+      |                          ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:106:23: warning: operand of ‘?:’ changes signedness from ‘longword’ {aka ‘long int’} to ‘ulongword’ {aka ‘long unsigned int’} due to unsignedness of other operand [-Wsign-compare]
+  106 |         : ((b) <= 0 ? (a) + (b)   \
+      |                       ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c:100:26: note: in expansion of macro ‘GSM_L_ADD’
+  100 |                 L_temp = GSM_L_ADD( L_z2, 16384 );
+      |                          ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:103:22: warning: operand of ‘?:’ changes signedness from ‘long int’ to ‘long unsigned int’ due to unsignedness of other operand [-Wsign-compare]
+  103 |         ( (a) <  0 ? ( (b) >= 0 ? (a) + (b)     \
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  104 |                  : (utmp = (ulongword)-((a) + 1) + (ulongword)-((b) + 1)) \
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  105 |                    >= MAX_LONGWORD ? MIN_LONGWORD : -(longword)utmp-2 )   \
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/preprocess.c:100:26: note: in expansion of macro ‘GSM_L_ADD’
+  100 |                 L_temp = GSM_L_ADD( L_z2, 16384 );
+      |                          ^~~~~~~~~
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/rpe.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/rpe.c.o -MF CMakeFiles/gsm.dir/src/rpe.c.o.d -o CMakeFiles/gsm.dir/src/rpe.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c: In function ‘RPE_grid_positioning’:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c:405:31: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  405 |                 case 3: *ep++ = 0;
+      |                         ~~~~~~^~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c:406:17: note: here
+  406 |                 case 2:  do {
+      |                 ^~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c:407:39: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  407 |                                 *ep++ = 0;
+      |                                 ~~~~~~^~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c:408:17: note: here
+  408 |                 case 1:         *ep++ = 0;
+      |                 ^~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c:408:39: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  408 |                 case 1:         *ep++ = 0;
+      |                                 ~~~~~~^~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/rpe.c:409:17: note: here
+  409 |                 case 0:         *ep++ = *xMp++;
+      |                 ^~~~
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_destroy.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_destroy.c.o -MF CMakeFiles/gsm.dir/src/gsm_destroy.c.o.d -o CMakeFiles/gsm.dir/src/gsm_destroy.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_destroy.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_destroy.c:10:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:12:41: warning: "/*" within comment [-Wcomment]
+   12 | /*efine SIGHANDLER_T    int             /* signal handlers are void     */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:13:41: warning: "/*" within comment [-Wcomment]
+   13 | /*efine HAS_SYSV_SIGNAL 1               /* sigs not blocked/reset?      */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:25:41: warning: "/*" within comment [-Wcomment]
+   25 | /*efine HAS__FSETMODE   1               /* _fsetmode -- set file mode   */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:28:41: warning: "/*" within comment [-Wcomment]
+   28 | /*efine HAS_STRINGS_H   1               /* /usr/include/strings.h       */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:35:41: warning: "/*" within comment [-Wcomment]
+   35 | /*efine HAS_UTIMES      1               /* use utimes() syscall instead */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:38:41: warning: "/*" within comment [-Wcomment]
+   38 | /*efine HAS_UTIMEUSEC   1               /* microseconds in utimbuf?     */
+      |                                          
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_decode.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_decode.c.o -MF CMakeFiles/gsm.dir/src/gsm_decode.c.o.d -o CMakeFiles/gsm.dir/src/gsm_decode.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_decode.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_encode.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_encode.c.o -MF CMakeFiles/gsm.dir/src/gsm_encode.c.o.d -o CMakeFiles/gsm.dir/src/gsm_encode.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_encode.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_explode.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_explode.c.o -MF CMakeFiles/gsm.dir/src/gsm_explode.c.o.d -o CMakeFiles/gsm.dir/src/gsm_explode.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_explode.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_implode.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_implode.c.o -MF CMakeFiles/gsm.dir/src/gsm_implode.c.o.d -o CMakeFiles/gsm.dir/src/gsm_implode.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_implode.c
+[ 66%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_create.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_create.c.o -MF CMakeFiles/gsm.dir/src/gsm_create.c.o.d -o CMakeFiles/gsm.dir/src/gsm_create.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_create.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_create.c:9:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:12:41: warning: "/*" within comment [-Wcomment]
+   12 | /*efine SIGHANDLER_T    int             /* signal handlers are void     */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:13:41: warning: "/*" within comment [-Wcomment]
+   13 | /*efine HAS_SYSV_SIGNAL 1               /* sigs not blocked/reset?      */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:25:41: warning: "/*" within comment [-Wcomment]
+   25 | /*efine HAS__FSETMODE   1               /* _fsetmode -- set file mode   */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:28:41: warning: "/*" within comment [-Wcomment]
+   28 | /*efine HAS_STRINGS_H   1               /* /usr/include/strings.h       */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:35:41: warning: "/*" within comment [-Wcomment]
+   35 | /*efine HAS_UTIMES      1               /* use utimes() syscall instead */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/config.h:38:41: warning: "/*" within comment [-Wcomment]
+   38 | /*efine HAS_UTIMEUSEC   1               /* microseconds in utimbuf?     */
+      |                                          
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_create.c:7:25: warning: ‘ident’ defined but not used [-Wunused-const-variable=]
+    7 | static char const       ident[] = "$Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/gsm_create.c,v 1.4 1996/07/02 09:59:05 jutta Exp $";
+      |                         ^~~~~
+[ 67%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_print.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_print.c.o -MF CMakeFiles/gsm.dir/src/gsm_print.c.o.d -o CMakeFiles/gsm.dir/src/gsm_print.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_print.c
+[ 67%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_option.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/gsm_option.c.o -MF CMakeFiles/gsm.dir/src/gsm_option.c.o.d -o CMakeFiles/gsm.dir/src/gsm_option.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/gsm_option.c
+[ 67%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/short_term.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/short_term.c.o -MF CMakeFiles/gsm.dir/src/short_term.c.o.d -o CMakeFiles/gsm.dir/src/short_term.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c
+In file included from /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:12:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c: In function ‘Decoding_of_the_coded_Log_Area_Ratios’:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:56:46: warning: left shift of negative value [-Wshift-negative-value]
+   56 |                 temp1    = GSM_SUB( temp1, B << 1 );            \
+      |                                              ^~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:122:45: note: in definition of macro ‘GSM_SUB’
+  122 |         ((ltmp = (longword)(a) - (longword)(b)) >= MAX_WORD \
+      |                                             ^
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:63:9: note: in expansion of macro ‘STEP’
+   63 |         STEP(  -2560,  -16,  13107 );
+      |         ^~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:56:46: warning: left shift of negative value [-Wshift-negative-value]
+   56 |                 temp1    = GSM_SUB( temp1, B << 1 );            \
+      |                                              ^~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:122:45: note: in definition of macro ‘GSM_SUB’
+  122 |         ((ltmp = (longword)(a) - (longword)(b)) >= MAX_WORD \
+      |                                             ^
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:66:9: note: in expansion of macro ‘STEP’
+   66 |         STEP(  -1792,   -8,  17476 );
+      |         ^~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:56:46: warning: left shift of negative value [-Wshift-negative-value]
+   56 |                 temp1    = GSM_SUB( temp1, B << 1 );            \
+      |                                              ^~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:122:45: note: in definition of macro ‘GSM_SUB’
+  122 |         ((ltmp = (longword)(a) - (longword)(b)) >= MAX_WORD \
+      |                                             ^
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:67:9: note: in expansion of macro ‘STEP’
+   67 |         STEP(   -341,   -4,  31454 );
+      |         ^~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:56:46: warning: left shift of negative value [-Wshift-negative-value]
+   56 |                 temp1    = GSM_SUB( temp1, B << 1 );            \
+      |                                              ^~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc/private.h:122:45: note: in definition of macro ‘GSM_SUB’
+  122 |         ((ltmp = (longword)(a) - (longword)(b)) >= MAX_WORD \
+      |                                             ^
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/short_term.c:68:9: note: in expansion of macro ‘STEP’
+   68 |         STEP(  -1144,   -4,  29708 );
+      |         ^~~~
+[ 67%] Building C object lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/table.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DNeedFunctionPrototypes=1 -DRS_FORCE_IP=\"\" -DSASR -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/src/table.c.o -MF CMakeFiles/gsm.dir/src/table.c.o.d -o CMakeFiles/gsm.dir/src/table.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/src/table.c
+[ 67%] Linking C static library libgsm.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cmake -P CMakeFiles/gsm.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm && /usr/bin/cmake -E cmake_link_script CMakeFiles/gsm.dir/link.txt --verbose=1
+/usr/bin/ar qc libgsm.a CMakeFiles/gsm.dir/src/add.c.o CMakeFiles/gsm.dir/src/code.c.o CMakeFiles/gsm.dir/src/debug.c.o CMakeFiles/gsm.dir/src/decode.c.o CMakeFiles/gsm.dir/src/long_term.c.o CMakeFiles/gsm.dir/src/lpc.c.o CMakeFiles/gsm.dir/src/preprocess.c.o CMakeFiles/gsm.dir/src/rpe.c.o CMakeFiles/gsm.dir/src/gsm_destroy.c.o CMakeFiles/gsm.dir/src/gsm_decode.c.o CMakeFiles/gsm.dir/src/gsm_encode.c.o CMakeFiles/gsm.dir/src/gsm_explode.c.o CMakeFiles/gsm.dir/src/gsm_implode.c.o CMakeFiles/gsm.dir/src/gsm_create.c.o CMakeFiles/gsm.dir/src/gsm_print.c.o CMakeFiles/gsm.dir/src/gsm_option.c.o CMakeFiles/gsm.dir/src/short_term.c.o CMakeFiles/gsm.dir/src/table.c.o
+/usr/bin/ranlib libgsm.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 65%] Built target gsm
+[ 67%] Built target gsm
 /usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build'.
+[ 67%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvCodec.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvCodec.c.o -MF CMakeFiles/usvoice2.dir/gvCodec.c.o.d -o CMakeFiles/usvoice2.dir/gvCodec.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvCodec.c
+[ 67%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvCustomDevice.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvCustomDevice.c.o -MF CMakeFiles/usvoice2.dir/gvCustomDevice.c.o.d -o CMakeFiles/usvoice2.dir/gvCustomDevice.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvCustomDevice.c
+[ 68%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvDevice.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvDevice.c.o -MF CMakeFiles/usvoice2.dir/gvDevice.c.o.d -o CMakeFiles/usvoice2.dir/gvDevice.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvDevice.c
+[ 68%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvFrame.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvFrame.c.o -MF CMakeFiles/usvoice2.dir/gvFrame.c.o.d -o CMakeFiles/usvoice2.dir/gvFrame.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvFrame.c
+[ 68%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvMain.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvMain.c.o -MF CMakeFiles/usvoice2.dir/gvMain.c.o.d -o CMakeFiles/usvoice2.dir/gvMain.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvMain.c
+[ 68%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvSource.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvSource.c.o -MF CMakeFiles/usvoice2.dir/gvSource.c.o.d -o CMakeFiles/usvoice2.dir/gvSource.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSource.c
+[ 68%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvSpeex.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvSpeex.c.o -MF CMakeFiles/usvoice2.dir/gvSpeex.c.o.d -o CMakeFiles/usvoice2.dir/gvSpeex.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c: In function ‘gviSpeexEncode’:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c:144:13: warning: variable ‘bytesWritten’ set but not used [-Wunused-but-set-variable]
+  144 |         int bytesWritten;
+      |             ^~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c: In function ‘gviSpeexDecodeAdd’:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c:164:13: warning: variable ‘rcode’ set but not used [-Wunused-but-set-variable]
+  164 |         int rcode;
+      |             ^~~~~
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c: In function ‘gviSpeexDecodeSet’:
+/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvSpeex.c:182:13: warning: variable ‘rcode’ set but not used [-Wunused-but-set-variable]
+  182 |         int rcode;
+      |             ^~~~~
+[ 68%] Building C object lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvUtil.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cc -DGSI_MEM_MANAGED -DGS_PEER -DGV_NO_DEFAULT_HARDWARE -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/gvUtil.c.o -MF CMakeFiles/usvoice2.dir/gvUtil.c.o.d -o CMakeFiles/usvoice2.dir/gvUtil.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/gvUtil.c
+[ 68%] Linking C static library libusvoice2.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cmake -P CMakeFiles/usvoice2.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 && /usr/bin/cmake -E cmake_link_script CMakeFiles/usvoice2.dir/link.txt --verbose=1
+/usr/bin/ar qc libusvoice2.a CMakeFiles/usvoice2.dir/gvCodec.c.o CMakeFiles/usvoice2.dir/gvCustomDevice.c.o CMakeFiles/usvoice2.dir/gvDevice.c.o CMakeFiles/usvoice2.dir/gvFrame.c.o CMakeFiles/usvoice2.dir/gvMain.c.o CMakeFiles/usvoice2.dir/gvSource.c.o CMakeFiles/usvoice2.dir/gvSpeex.c.o CMakeFiles/usvoice2.dir/gvUtil.c.o
+/usr/bin/ranlib libusvoice2.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 66%] Built target usvoice2
+[ 68%] Built target usvoice2
 /usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build'.
+[ 68%] Building C object lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/dllmain.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll && /usr/bin/cc -DGHTTP_EXTENDEDERROR=1 -DGSI_MEM_MANAGED -DGS_PEER -DRS_FORCE_IP=\"\" -DUNISPY_USE_HTTPS -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK -I/workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm/inc -O3 -DNDEBUG -Wall -Wno-unused-parameter -Wextra -MD -MT lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/dllmain.c.o -MF CMakeFiles/UniSpySDK.dir/dllmain.c.o.d -o CMakeFiles/UniSpySDK.dir/dllmain.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sharedDll/dllmain.c
+[ 68%] Linking C static library libUniSpySDK.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll && /usr/bin/cmake -P CMakeFiles/UniSpySDK.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll && /usr/bin/cmake -E cmake_link_script CMakeFiles/UniSpySDK.dir/link.txt --verbose=1
+/usr/bin/ar qc libUniSpySDK.a CMakeFiles/UniSpySDK.dir/dllmain.c.o
+/usr/bin/ranlib libUniSpySDK.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 66%] Built target UniSpySDK
+[ 68%] Built target UniSpySDK
 /usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 66%] Building C object lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o
+[ 68%] Building C object lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o
 cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cc   -O3 -DNDEBUG -MD -MT lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/cleanup.c.o -MF CMakeFiles/milescleanup.dir/cleanup.c.o.d -o CMakeFiles/milescleanup.dir/cleanup.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/cleanup.c
 In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/cleanup.c:1:
 /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
@@ -551,20 +757,20 @@ In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/clean
 /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:284:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
   284 | IMPORTS unsigned long __stdcall AIL_get_timer_highest_delay(void);
       | ^~~~~~~
-[ 66%] Linking C static library libmilescleanup.a
+[ 68%] Linking C static library libmilescleanup.a
 cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -P CMakeFiles/milescleanup.dir/cmake_clean_target.cmake
 cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_link_script CMakeFiles/milescleanup.dir/link.txt --verbose=1
 /usr/bin/ar qc libmilescleanup.a CMakeFiles/milescleanup.dir/cleanup.c.o
 /usr/bin/ranlib libmilescleanup.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 66%] Built target milescleanup
+[ 68%] Built target milescleanup
 /usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub/CMakeFiles/milesstub.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build.make lib/miles-sdk-stub/CMakeFiles/milesstub.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 66%] Building C object lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o
+[ 68%] Building C object lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o
 cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cc -DBUILD_STUBS -Dmilesstub_EXPORTS -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -fPIC -MD -MT lib/miles-sdk-stub/CMakeFiles/milesstub.dir/miles.c.o -MF CMakeFiles/milesstub.dir/miles.c.o.d -o CMakeFiles/milesstub.dir/miles.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c
 In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:16:
 /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss/mss.h:138:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
@@ -1182,102 +1388,104 @@ In file included from /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles
 /workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/miles.c:771:1: warning: ‘stdcall’ attribute ignored [-Wattributes]
   771 | {
       | ^
-[ 67%] Linking C shared library libmss32.so
+[ 68%] Linking C shared library libmss32.so
 cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_link_script CMakeFiles/milesstub.dir/link.txt --verbose=1
 /usr/bin/cc -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libmss32.so.1.0 -o libmss32.so.1.0.0 CMakeFiles/milesstub.dir/miles.c.o  libmilescleanup.a ../libminiaudio.a 
 cd /workspace/CnC_Generals_Zero_Hour/build/lib/miles-sdk-stub && /usr/bin/cmake -E cmake_symlink_library libmss32.so.1.0.0 libmss32.so.1.0 libmss32.so
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 67%] Built target milesstub
+[ 68%] Built target milesstub
 /usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/zlib /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/zlib /workspace/CnC_Generals_Zero_Hour/build/lib/zlib/CMakeFiles/zlib.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/zlib/CMakeFiles/zlib.dir/build.make lib/zlib/CMakeFiles/zlib.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/zlib/CMakeFiles/zlib.dir/build'.
+[ 68%] Building C object lib/zlib/CMakeFiles/zlib.dir/adler32.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/adler32.c.o -MF CMakeFiles/zlib.dir/adler32.c.o.d -o CMakeFiles/zlib.dir/adler32.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/adler32.c
+[ 68%] Building C object lib/zlib/CMakeFiles/zlib.dir/compress.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/compress.c.o -MF CMakeFiles/zlib.dir/compress.c.o.d -o CMakeFiles/zlib.dir/compress.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/compress.c
+[ 68%] Building C object lib/zlib/CMakeFiles/zlib.dir/crc32.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/crc32.c.o -MF CMakeFiles/zlib.dir/crc32.c.o.d -o CMakeFiles/zlib.dir/crc32.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/crc32.c
+[ 68%] Building C object lib/zlib/CMakeFiles/zlib.dir/gzio.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/gzio.c.o -MF CMakeFiles/zlib.dir/gzio.c.o.d -o CMakeFiles/zlib.dir/gzio.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/gzio.c
+[ 68%] Building C object lib/zlib/CMakeFiles/zlib.dir/uncompr.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/uncompr.c.o -MF CMakeFiles/zlib.dir/uncompr.c.o.d -o CMakeFiles/zlib.dir/uncompr.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/uncompr.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/deflate.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/deflate.c.o -MF CMakeFiles/zlib.dir/deflate.c.o.d -o CMakeFiles/zlib.dir/deflate.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/deflate.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/trees.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/trees.c.o -MF CMakeFiles/zlib.dir/trees.c.o.d -o CMakeFiles/zlib.dir/trees.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/trees.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/zutil.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/zutil.c.o -MF CMakeFiles/zlib.dir/zutil.c.o.d -o CMakeFiles/zlib.dir/zutil.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/zutil.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/infblock.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/infblock.c.o -MF CMakeFiles/zlib.dir/infblock.c.o.d -o CMakeFiles/zlib.dir/infblock.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/infblock.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/infcodes.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/infcodes.c.o -MF CMakeFiles/zlib.dir/infcodes.c.o.d -o CMakeFiles/zlib.dir/infcodes.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/infcodes.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/inftrees.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/inftrees.c.o -MF CMakeFiles/zlib.dir/inftrees.c.o.d -o CMakeFiles/zlib.dir/inftrees.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/inftrees.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/infutil.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/infutil.c.o -MF CMakeFiles/zlib.dir/infutil.c.o.d -o CMakeFiles/zlib.dir/infutil.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/infutil.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/inflate.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/inflate.c.o -MF CMakeFiles/zlib.dir/inflate.c.o.d -o CMakeFiles/zlib.dir/inflate.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/inflate.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/inffast.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/inffast.c.o -MF CMakeFiles/zlib.dir/inffast.c.o.d -o CMakeFiles/zlib.dir/inffast.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/inffast.c
+[ 69%] Building C object lib/zlib/CMakeFiles/zlib.dir/maketree.c.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cc  -I/workspace/CnC_Generals_Zero_Hour/lib/zlib -O3 -DNDEBUG -fPIC -MD -MT lib/zlib/CMakeFiles/zlib.dir/maketree.c.o -MF CMakeFiles/zlib.dir/maketree.c.o.d -o CMakeFiles/zlib.dir/maketree.c.o -c /workspace/CnC_Generals_Zero_Hour/lib/zlib/maketree.c
+[ 70%] Linking C static library libzlib.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cmake -P CMakeFiles/zlib.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/zlib && /usr/bin/cmake -E cmake_link_script CMakeFiles/zlib.dir/link.txt --verbose=1
+/usr/bin/ar qc libzlib.a CMakeFiles/zlib.dir/adler32.c.o CMakeFiles/zlib.dir/compress.c.o CMakeFiles/zlib.dir/crc32.c.o CMakeFiles/zlib.dir/gzio.c.o CMakeFiles/zlib.dir/uncompr.c.o CMakeFiles/zlib.dir/deflate.c.o CMakeFiles/zlib.dir/trees.c.o CMakeFiles/zlib.dir/zutil.c.o CMakeFiles/zlib.dir/infblock.c.o CMakeFiles/zlib.dir/infcodes.c.o CMakeFiles/zlib.dir/inftrees.c.o CMakeFiles/zlib.dir/infutil.c.o CMakeFiles/zlib.dir/inflate.c.o CMakeFiles/zlib.dir/inffast.c.o CMakeFiles/zlib.dir/maketree.c.o
+/usr/bin/ranlib libzlib.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 69%] Built target zlib
+[ 70%] Built target zlib
 /usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl/CMakeFiles/lzhl.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f lib/liblzhl/CMakeFiles/lzhl.dir/build.make lib/liblzhl/CMakeFiles/lzhl.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/liblzhl/CMakeFiles/lzhl.dir/build'.
+[ 71%] Building CXX object lib/liblzhl/CMakeFiles/lzhl.dir/src/huff.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/lib/liblzhl/include -O3 -DNDEBUG -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT lib/liblzhl/CMakeFiles/lzhl.dir/src/huff.cpp.o -MF CMakeFiles/lzhl.dir/src/huff.cpp.o.d -o CMakeFiles/lzhl.dir/src/huff.cpp.o -c /workspace/CnC_Generals_Zero_Hour/lib/liblzhl/src/huff.cpp
+[ 71%] Building CXX object lib/liblzhl/CMakeFiles/lzhl.dir/src/lz.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/lib/liblzhl/include -O3 -DNDEBUG -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT lib/liblzhl/CMakeFiles/lzhl.dir/src/lz.cpp.o -MF CMakeFiles/lzhl.dir/src/lz.cpp.o.d -o CMakeFiles/lzhl.dir/src/lz.cpp.o -c /workspace/CnC_Generals_Zero_Hour/lib/liblzhl/src/lz.cpp
+[ 71%] Building CXX object lib/liblzhl/CMakeFiles/lzhl.dir/src/lzhl.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/lib/liblzhl/include -O3 -DNDEBUG -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT lib/liblzhl/CMakeFiles/lzhl.dir/src/lzhl.cpp.o -MF CMakeFiles/lzhl.dir/src/lzhl.cpp.o.d -o CMakeFiles/lzhl.dir/src/lzhl.cpp.o -c /workspace/CnC_Generals_Zero_Hour/lib/liblzhl/src/lzhl.cpp
+[ 71%] Linking CXX static library liblzhl.a
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl && /usr/bin/cmake -P CMakeFiles/lzhl.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/lib/liblzhl && /usr/bin/cmake -E cmake_link_script CMakeFiles/lzhl.dir/link.txt --verbose=1
+/usr/bin/ar qc liblzhl.a CMakeFiles/lzhl.dir/src/huff.cpp.o CMakeFiles/lzhl.dir/src/lz.cpp.o CMakeFiles/lzhl.dir/src/lzhl.cpp.o
+/usr/bin/ranlib liblzhl.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 69%] Built target lzhl
+[ 71%] Built target lzhl
 /usr/bin/gmake  -f src/CMakeFiles/lvgl_platform.dir/build.make src/CMakeFiles/lvgl_platform.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src /workspace/CnC_Generals_Zero_Hour/build/src/CMakeFiles/lvgl_platform.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f src/CMakeFiles/lvgl_platform.dir/build.make src/CMakeFiles/lvgl_platform.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'src/CMakeFiles/lvgl_platform.dir/build'.
+[ 71%] Building CXX object src/CMakeFiles/lvgl_platform.dir/lvgl_platform/lvgl_platform.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/precompiled -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/CMakeFiles/lvgl_platform.dir/lvgl_platform/lvgl_platform.cpp.o -MF CMakeFiles/lvgl_platform.dir/lvgl_platform/lvgl_platform.cpp.o.d -o CMakeFiles/lvgl_platform.dir/lvgl_platform/lvgl_platform.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/lvgl_platform/lvgl_platform.cpp
+[ 71%] Linking CXX static library liblvgl_platform.a
+cd /workspace/CnC_Generals_Zero_Hour/build/src && /usr/bin/cmake -P CMakeFiles/lvgl_platform.dir/cmake_clean_target.cmake
+cd /workspace/CnC_Generals_Zero_Hour/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/lvgl_platform.dir/link.txt --verbose=1
+/usr/bin/ar qc liblvgl_platform.a CMakeFiles/lvgl_platform.dir/lvgl_platform/lvgl_platform.cpp.o
+/usr/bin/ranlib liblvgl_platform.a
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 69%] Built target lvgl_platform
+[ 71%] Built target lvgl_platform
 /usr/bin/gmake  -f src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make src/game_engine_device/CMakeFiles/gameenginedevice.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/src/game_engine_device /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device/CMakeFiles/gameenginedevice.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make src/game_engine_device/CMakeFiles/gameenginedevice.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 69%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o
-cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFile.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/Win32BIGFile.cpp
-In file included from /usr/include/c++/13/backward/hash_map:60,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/stltypedefs.h:74,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:38,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/subsystem_interface.h:35,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefilesystem.h:55,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefile.h:36,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine_device/lvgl_device/common/win32_big_file.h:34,
-                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/Win32BIGFile.cpp:1:
-/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-   32 | #warning \
-      |  ^~~~~~~
-In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h:38,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:37:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:748:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  748 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
-      |                                                                                                  ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  651 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
-  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h:62:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
-   62 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Bucket, "NameKeyBucketPool" );
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/overridable.h: In static member function ‘static void* Overridable::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  651 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
-  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/overridable.h:44:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
-   44 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( Overridable, "Overridable"  )
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/science.h: In static member function ‘static void* ScienceInfo::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  651 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
-  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
-   54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[ 69%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFileSystem.cpp.o
-cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFileSystem.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFileSystem.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFileSystem.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/Win32BIGFileSystem.cpp
-In file included from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/Win32BIGFileSystem.cpp:1:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine_device/lvgl_device/common/win32_big_file_system.h:34:10: fatal error: common/archiveFileSystem.h: No such file or directory
-   34 | #include "common/archiveFileSystem.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 71%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file.cpp
+In file included from /workspace/CnC_Generals_Zero_Hour/include/common/LocalFile.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file.cpp:1:
+/workspace/CnC_Generals_Zero_Hour/include/common/File.h:3:10: fatal error: Common/file.h: No such file or directory
+    3 | #include <Common/file.h>
+      |          ^~~~~~~~~~~~~~~
 compilation terminated.
-gmake[2]: *** [src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make:93: src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/Win32BIGFileSystem.cpp.o] Error 1
+gmake[2]: *** [src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make:79: src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o] Error 1
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[1]: *** [CMakeFiles/Makefile2:1941: src/game_engine_device/CMakeFiles/gameenginedevice.dir/all] Error 2
 gmake[1]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'

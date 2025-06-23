@@ -26,7 +26,7 @@
 // Bryan Cleveland, August 2002
 /////////////////////////////////////////////////////////////
 
-#include <winsock2.h>
+#include "common/byte_swap.h"
 #include "common/AudioAffect.h"
 #include "common/ArchiveFile.h"
 #include "common/ArchiveFileSystem.h"
@@ -106,8 +106,8 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
 
 	// read in the number of files contained in this BIG file.
 	// change the order of the bytes cause the file size is in reverse byte order for some reason.
-	fp->read(&numLittleFiles, 4);
-	numLittleFiles = ntohl(numLittleFiles);
+        fp->read(&numLittleFiles, 4);
+        numLittleFiles = static_cast<Int>(common::be_to_host(static_cast<std::uint32_t>(numLittleFiles)));
 
 	DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - %d are contained in archive\n", numLittleFiles));
 //	for (Int i = 0; i < 2; ++i) {
@@ -127,8 +127,8 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
 		fp->read(&fileOffset, 4);
 		fp->read(&filesize, 4);
 
-		filesize = ntohl(filesize);
-		fileOffset = ntohl(fileOffset);
+                filesize = static_cast<Int>(common::be_to_host(static_cast<std::uint32_t>(filesize)));
+                fileOffset = static_cast<Int>(common::be_to_host(static_cast<std::uint32_t>(fileOffset)));
 
 		fileInfo->m_archiveFilename = archiveFileName;
 		fileInfo->m_offset = fileOffset;
