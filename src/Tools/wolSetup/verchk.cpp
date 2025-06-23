@@ -18,7 +18,7 @@
 
 #include "verchk.h"
 #include "wolsetup.h"
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <winnt.h>
 #include <stdlib.h>
 

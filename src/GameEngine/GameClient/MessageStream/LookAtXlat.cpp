@@ -28,7 +28,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 #include "Common/GameType.h"
 #include "Common/MessageStream.h"

@@ -1,6 +1,6 @@
 #include "LvglGameEngine/LvglGameEngine.h"
 #include "LvglPlatform/LvglPlatform.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 
 void LvglGameEngine::init()
 {

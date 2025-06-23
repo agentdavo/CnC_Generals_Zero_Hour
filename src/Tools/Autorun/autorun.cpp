@@ -69,7 +69,7 @@
 
 
 #define  STRICT
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <windowsx.h>
 #include <assert.h>
 #include <ctype.h>

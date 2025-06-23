@@ -2,10 +2,10 @@
 #include "Common/AsciiString.h"
 #include "Common/GameMemory.h"
 #include "Common/PerfTimer.h"
-#include "Common/LocalFile.h"
+#include "common/LocalFile.h"
 #include <fstream>
 #include <filesystem>
-#include "Common/File.h"
+#include "common/File.h"
 
 File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 {

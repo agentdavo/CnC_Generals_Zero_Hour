@@ -37,7 +37,7 @@
 
 #include "Common/AudioEventInfo.h"
 #include "Common/BorderColors.h"
-#include "Common/File.h"
+#include "common/File.h"
 #include "Common/FileSystem.h"
 #include "Common/GameAudio.h"
 #include "Common/Player.h"

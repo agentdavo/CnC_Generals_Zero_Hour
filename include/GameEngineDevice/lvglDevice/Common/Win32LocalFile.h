@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Common/LocalFile.h"
+#include "common/LocalFile.h"
 
 class Win32LocalFile : public LocalFile
 {

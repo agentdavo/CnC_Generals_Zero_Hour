@@ -40,7 +40,7 @@
 #ifndef __ANIMATION_COMPRESSION_SETTINGS_H
 #define __ANIMATION_COMPRESSION_SETTINGS_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <max.h>
 #include "w3dutil.h"
 

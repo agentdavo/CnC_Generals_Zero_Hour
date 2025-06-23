@@ -26,7 +26,7 @@
 // Bryan Cleveland, August 2002
 /////////////////////////////////////////////////////
 
-#include "Common/LocalFile.h"
+#include "common/LocalFile.h"
 #include "Common/LocalFileSystem.h"
 #include "Common/RAMFile.h"
 #include "Common/StreamingArchiveFile.h"

@@ -38,7 +38,7 @@
 #include <netinet/in.h>
 #else
 #define Win32_Winsock
-#include "Common/windows.h"
+#include "common/windows.h"
 #endif
 #include "field.h"
 

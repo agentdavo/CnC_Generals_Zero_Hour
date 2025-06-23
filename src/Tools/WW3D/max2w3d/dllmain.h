@@ -39,7 +39,7 @@
 #ifndef DLLMAIN_H
 #define DLLMAIN_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 extern HINSTANCE AppInstance;
 

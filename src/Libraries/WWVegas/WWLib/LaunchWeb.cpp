@@ -32,7 +32,7 @@
 ******************************************************************************/
 
 #include "LaunchWeb.h"
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <shellapi.h>
 #include <stdio.h>
 #include <assert.h>

@@ -39,7 +39,7 @@
 #ifndef GENMTLNAMESDIALOG_H
 #define GENMTLNAMESDIALOG_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 class Interface;
 class ISpinnerControl;

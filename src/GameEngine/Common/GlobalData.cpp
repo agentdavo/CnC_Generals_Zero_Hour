@@ -39,7 +39,7 @@
 #define DEFINE_PANNING_NAMES
 
 #include "Common/CRC.h"
-#include "Common/File.h"
+#include "common/File.h"
 #include "Common/FileSystem.h"
 #include "Common/GameAudio.h"
 #include "Common/INI.h"

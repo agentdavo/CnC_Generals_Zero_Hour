@@ -42,7 +42,7 @@
 
 // Includes.
 #include "always.h"
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <winbase.h>
 
 

@@ -22,7 +22,7 @@
 #include "except.h"
 #include "wwdebug.h"
 #include <process.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #pragma warning ( push )
 #pragma warning ( disable : 4201 )
 #include "systimer.h"

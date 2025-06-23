@@ -39,7 +39,7 @@
 
 #ifdef COPY_PROTECT
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 //#define OLDWAY
 

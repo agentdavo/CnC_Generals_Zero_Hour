@@ -22,7 +22,7 @@
 #include "thread.h"
 #include "mpu.h"
 #pragma warning (disable : 4201)	// Nonstandard extension - nameless struct
-#include "Common/windows.h"
+#include "common/windows.h"
 #include "systimer.h"
 
 #ifdef _UNIX

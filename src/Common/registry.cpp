@@ -1,4 +1,4 @@
-#include "Common/registry.h"
+#include "common/registry.h"
 #include "GameEngine/Common/AsciiString.h"
 #include "Lib/BaseType.h"
 #include <cstdlib>

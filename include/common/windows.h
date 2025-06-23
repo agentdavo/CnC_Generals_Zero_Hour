@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Common/win32_compat.h"
+#include "common/win32_compat.h"
 
 #include <chrono>
 #include <thread>

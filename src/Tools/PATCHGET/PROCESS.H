@@ -19,7 +19,7 @@
 #ifndef PROCESS_HEADER
 #define PROCESS_HEADER
 
-#include "Common/windows.h"
+#include "common/windows.h"
 #include "wstypes.h"
 
 class Process

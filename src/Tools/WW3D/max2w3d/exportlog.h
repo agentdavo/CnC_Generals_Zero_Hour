@@ -40,7 +40,7 @@
 #ifndef EXPORTLOG_H
 #define EXPORTLOG_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
  
 /**
 ** ExportLog

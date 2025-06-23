@@ -43,7 +43,7 @@
 #include "texture.h"
 #include "wwstring.h"
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////////

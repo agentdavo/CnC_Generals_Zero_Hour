@@ -40,7 +40,7 @@
 #ifndef MSGLOOP_H
 #define MSGLOOP_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 // Main message handler.
 void Windows_Message_Handler(void);

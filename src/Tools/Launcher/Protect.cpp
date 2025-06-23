@@ -41,7 +41,7 @@
 #include <Support\UString.h>
 #include <Support\RefPtr.h>
 #include <Storage\File.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <memory>
 #include <assert.h>
 #include <stdio.h>

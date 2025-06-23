@@ -1,6 +1,6 @@
 #include "lvglDevice/GameClient/LvglKeyboard.h"
 #include "Common/Debug.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 #include "GameClient/KeyDefs.h"
 #include <cstring>
 

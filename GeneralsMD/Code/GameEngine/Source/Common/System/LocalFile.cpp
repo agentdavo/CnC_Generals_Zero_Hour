@@ -55,7 +55,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#include "Common/LocalFile.h"
+#include "common/LocalFile.h"
 #include "Common/RAMFile.h"
 #include "Lib/BaseType.h"
 #include "Common/PerfTimer.h"

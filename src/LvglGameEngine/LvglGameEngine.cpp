@@ -1,7 +1,7 @@
 #include "LvglGameEngine.h"
 #include "LvglKeyboard.h"
 #include "LvglMouse.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 
 LvglGameEngine::LvglGameEngine(LvglKeyboard* keyboard, LvglMouse* mouse)
     : m_keyboard(keyboard), m_mouse(mouse) {

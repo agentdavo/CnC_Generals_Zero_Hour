@@ -26,7 +26,7 @@
 -- Looking for IceConnectionNumber in ICE - found
 -- Found Git: /usr/bin/git (found version "2.43.0") 
 -- Git version 2.43.0 found at '/usr/bin/git'.
--- Git using branch 'main', commit 22c7ce4aa3f21459097eefe7d7a793b9178d697b/'Merge pull request #98 from agentdavo/j05zxr-codex/update-windows.h-include-path'.
+-- Git using branch 'main', commit 7dce98f8ca30d6e3ccb47876ae1b23ec8996db22/'Merge pull request #99 from agentdavo/codex/fix-missing-include-files-and-case-sensitivity-issues'.
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
@@ -44,8 +44,8 @@
 
 -- Configuring core sources
 -- Configuring migrated engine modules
--- Configuring done (1.4s)
--- Generating done (0.2s)
+-- Configuring done (2.0s)
+-- Generating done (0.3s)
 -- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
 /usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
 /usr/bin/cmake -S/workspace/CnC_Generals_Zero_Hour -B/workspace/CnC_Generals_Zero_Hour/build --check-build-system CMakeFiles/Makefile.cmake 0
@@ -4418,8 +4418,8 @@ In file included from /usr/include/c++/13/backward/hash_map:60,
    32 | #warning \
       |  ^~~~~~~
 In file included from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/file.h:57,
-                 from /workspace/CnC_Generals_Zero_Hour/include/Common/File.h:3,
-                 from /workspace/CnC_Generals_Zero_Hour/include/Common/LocalFile.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/include/common/File.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/include/common/LocalFile.h:3,
                  from /workspace/CnC_Generals_Zero_Hour/src/GameEngineDevice/lvglDevice/Common/LvglBIGFile.cpp:1:
 /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
 /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/GameMemory.h:748:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
