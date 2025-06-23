@@ -50,7 +50,7 @@
 #ifdef _MSC_VER
 
 #include	"always.h"
-#include <windows.h>
+#include "Common/windows.h"
 #include	"assert.h"
 #include "cpudetect.h"
 #include	"except.h"

@@ -37,7 +37,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #define  STRICT
-#include <windows.h>
+#include "Common/windows.h"
 #include <windowsx.h>
 #pragma   hdrstop
 

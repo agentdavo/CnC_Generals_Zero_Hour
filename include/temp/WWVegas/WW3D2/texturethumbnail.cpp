@@ -28,7 +28,7 @@
 #include "rawfile.h"
 #include "mixfile.h"
 #include "wwprofile.h"
-#include <windows.h>
+#include "Common/windows.h"
 
 static DLListClass<ThumbnailManagerClass> ThumbnailManagerList;
 static ThumbnailManagerClass* GlobalThumbnailManager;

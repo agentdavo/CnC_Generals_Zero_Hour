@@ -40,7 +40,7 @@
 #ifndef __PRESET_EXPORT_OPTIONS_DIALOG_H
 #define __PRESET_EXPORT_OPTIONS_DIALOG_H
 
-#include <windows.h>
+#include "Common/windows.h"
 #include <max.h>
 #include "w3dutil.h"
 

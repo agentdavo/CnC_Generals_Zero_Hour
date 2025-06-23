@@ -33,7 +33,7 @@
 #define __GUIEDIT_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include <windows.h>
+#include "Common/windows.h"
 #include <stdio.h>
 
 #include "GameClient/GameWindow.h"

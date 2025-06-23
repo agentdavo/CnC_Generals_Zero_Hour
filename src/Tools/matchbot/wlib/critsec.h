@@ -21,7 +21,7 @@
 
 #include "wstypes.h"
 #ifdef _WIN32
- #include <windows.h>
+ #include "Common/windows.h"
  #include <winbase.h>
 #elif defined(_UNIX)
   #include <pthread.h>

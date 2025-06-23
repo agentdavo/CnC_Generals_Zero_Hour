@@ -34,7 +34,7 @@
 // INCLUDES
 //-----------------------------------------------------------------------------
 #define  STRICT
-#include <windows.h>
+#include "Common/windows.h"
 #include <windowsx.h>
 #include <assert.h>
 #include <stdio.h>

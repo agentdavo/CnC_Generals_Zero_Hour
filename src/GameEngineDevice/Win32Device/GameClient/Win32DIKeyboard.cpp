@@ -28,7 +28,7 @@
 //						using Microsoft Direct Input
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include <windows.h>
+#include "Common/windows.h"
 #include <assert.h>
 
 #include "Common/Debug.h"

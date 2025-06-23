@@ -38,7 +38,7 @@
 #include "ini.h"
 #include "inisup.h"
 #include <assert.h>
-#include <windows.h>
+#include "Common/windows.h"
 
 //#include "wwdebug.h"
 

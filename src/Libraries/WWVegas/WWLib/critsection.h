@@ -45,7 +45,7 @@
 
 #include "always.h"
 #include "wwdebug.h"
-#include <windows.h>
+#include "Common/windows.h"
 
 class CriticalSectionClass
 {

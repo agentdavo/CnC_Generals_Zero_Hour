@@ -43,7 +43,7 @@
 #include "wwdebug.h"
 #include "vector.h"
 #include "fastallocator.h"
-#include <windows.h>
+#include "Common/windows.h"
 
 #define USE_FAST_ALLOCATOR
 

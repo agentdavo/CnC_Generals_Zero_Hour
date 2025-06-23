@@ -1,7 +1,7 @@
 #pragma once
 
 #ifdef _WIN32
-#include <windows.h>
+#include "Common/windows.h"
 extern HINSTANCE ApplicationHInstance;
 #else
 using HINSTANCE = void*;

@@ -42,7 +42,7 @@
 
 
 #define  STRICT
-#include <windows.h>
+#include "Common/windows.h"
 #include <windowsx.h>
 #include "autorun.h"
 #include "drawbutton.h"

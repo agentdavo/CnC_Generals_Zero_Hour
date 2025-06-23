@@ -40,7 +40,7 @@
 #ifndef FLOATERDIALOG_H
 #define FLOATERDIALOG_H
 
-#include <windows.h>
+#include "Common/windows.h"
 
 class Interface;
 

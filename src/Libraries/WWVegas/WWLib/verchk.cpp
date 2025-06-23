@@ -36,7 +36,7 @@
 
 
 #include "verchk.h"
-#include <windows.h>
+#include "Common/windows.h"
 #include <winnt.h>
 #include "rawfile.h"
 #include "ffactory.h"
