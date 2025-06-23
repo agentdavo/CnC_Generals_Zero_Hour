@@ -9,6 +9,7 @@
 #include "game_engine_device/lvgl_device/common/win32_big_file_system.h"
 #include "common/registry.h"
 #include "common/win32_compat.h"
+#include <memory>
 #include <cstdint>
 #include <cctype>
 #include <cstring>
@@ -66,7 +67,7 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
     Int archiveFileSize = 0;
     Int numLittleFiles = 0;
 
-    ArchiveFile *archiveFile = NEW Win32BIGFile;
+    std::unique_ptr<ArchiveFile> archiveFile = std::make_unique<Win32BIGFile>();
 
     DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - opening BIG file %s\n", filename));
 
@@ -93,7 +94,7 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
     DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - %d are contained in archive\n", numLittleFiles));
 
     fp->seek(0x10, File::START);
-    ArchivedFileInfo *fileInfo = NEW ArchivedFileInfo;
+    std::unique_ptr<ArchivedFileInfo> fileInfo = std::make_unique<ArchivedFileInfo>();
 
     for (Int i = 0; i < numLittleFiles; ++i) {
         uint32_t filesize = 0;
@@ -124,15 +125,12 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
         buffer[filenameIndex + 1] = 0;
 
         AsciiString path = buffer;
-        archiveFile->addFile(path, fileInfo);
+        archiveFile->addFile(path, *fileInfo);
     }
 
     archiveFile->attachFile(fp);
 
-    delete fileInfo;
-    fileInfo = NULL;
-
-    return archiveFile;
+    return archiveFile.release();
 }
 
 void Win32BIGFileSystem::closeArchiveFile(const Char *filename) {
