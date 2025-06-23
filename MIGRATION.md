@@ -54,11 +54,11 @@ Partial GameEngine and GameEngineDevice sources have been moved to `src/GameEngi
 The audio subsystem under `GameEngine/Source/Common` has been migrated into
 `src/GameEngine/Common/Audio` with corresponding headers now located in
 `include/GameEngine/Common`.
-Several UI related classes from `GameEngine/Source/GameClient` have been moved
-into `src/GameEngine/GameClient` with headers under `include/GameClient`. The
+Several UI related classes from `GameEngine/Source/game_client` have been moved
+into `src/GameEngine/game_client` with headers under `include/game_client`. The
 precompiled header `PreRTS.h` now lives in `include/Precompiled` and is added to
 the build include paths.
-All remaining modules from `GameEngine/Source/GameClient` have now been
+All remaining modules from `GameEngine/Source/game_client` have now been
 relocated in the same manner. `src/GameEngine/CMakeLists.txt` uses `file(GLOB)`
 to compile the new source tree.
 Bezier math helpers (`BezFwdIterator`, `BezierSegment`) and the `CRCDebug`
@@ -156,8 +156,8 @@ The CMake build now globs the `lvglDevice` sources into a static library and lin
 Input handling is beginning to move over to LVGL as well. A small `LvglGameEngine` class now owns new `LvglKeyboard` and `LvglMouse` objects.  `src/main/main.cpp` creates these and drives their `update()` methods each frame alongside `LvglPlatform::poll_events()`.
 
 The old input classes under `GameEngineDevice/Source/Win32*` will be phased out
-in favour of the LVGL implementations.  `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglKeyboard.cpp`
-and `Generals/Code/GameEngineDevice/Source/lvglDevice/GameClient/LvglMouse.cpp`
+in favour of the LVGL implementations.  `Generals/Code/GameEngineDevice/Source/lvglDevice/game_client/LvglKeyboard.cpp`
+and `Generals/Code/GameEngineDevice/Source/lvglDevice/game_client/LvglMouse.cpp`
 previously provided only a basic keyboard and pointer interface.  Modifier keys
 are now detected and `convert_lv_key()` translates every key listed in
 `KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  The new
@@ -165,7 +165,7 @@ are now detected and `convert_lv_key()` translates every key listed in
 linked unconditionally from `src/CMakeLists.txt`.
 
 Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
-- The W3D device common files (radar, convert and factory helpers) now live under `src/GameEngineDevice/W3DDevice/Common` with their headers available in `include/GameEngineDevice/W3DDevice`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
+- The W3D device common files (radar, convert and factory helpers) now live under `src/game_engine_device/w3d_device/Common` with their headers available in `include/game_engine_device/w3d_device`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
 - The GameLogic subsystem has been relocated from `Generals/Code/GameEngine/Source/GameLogic` and `Generals/Code/GameEngine/Include/GameLogic` into `src/GameEngine/GameLogic` and `include/GameEngine/GameLogic`. `src/GameEngine/CMakeLists.txt` now globs these files into the `gameengine` library.
 - The precompiled source `PreRTS.cpp` moved to `src/GameEngine/Precompiled` and the header now excludes Windows-only includes. CMake builds use `target_precompile_headers` when available.
 - A lightweight `Logger` utility now lives in `src/Common` and `include/common`. `Logger::init()` writes to `std::clog` and optionally a file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_ERROR` replace direct console output in `src/main.cpp`.
@@ -190,7 +190,7 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - lvglDevice headers relocated to `include/GameEngineDevice/lvglDevice` and old references updated.
 - Removed the legacy `Generals/Code` copies of the W3D device common files.
   `src/GameEngineDevice/CMakeLists.txt` now globs these sources from
-  `src/GameEngineDevice/W3DDevice/Common`.
+  `src/game_engine_device/w3d_device/Common`.
 
 - Networking now links against the full UniSpySDK library. GameEngine sources include headers from `lib/UniSpySDK` and no longer rely on GameSpy stubs.
 - GitHub Actions now installs `build-essential`, X11 and Mesa development packages so Linux builds compile on CI.
@@ -214,16 +214,16 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Remaining headers from `Generals/Code/GameEngine/Include/Common` migrated into `include/GameEngine/Common` and originals removed.
 - Source files under `Generals/Code/GameEngine/Source/Common` migrated into `src/GameEngine/Common`. The CMake build lists these new paths and the old copies were deleted.
 - Remaining `GameEngineDevice` modules have been relocated. W3D device game
-  client headers now live in `include/GameEngineDevice/W3DDevice/GameClient`
-  with sources under `src/GameEngineDevice/W3DDevice/GameClient`. The Win32
+  client headers now live in `include/game_engine_device/w3d_device/game_client`
+  with sources under `src/game_engine_device/w3d_device/game_client`. The Win32
   device and Miles audio components moved into matching directories in
   `src/GameEngineDevice` with corresponding headers in `include/GameEngineDevice`.
   `src/GameEngineDevice/CMakeLists.txt` globs these directories and the old
   `Generals/Code/GameEngineDevice` tree was removed.
 
-- Additional W3DDevice modules such as `BaseHeightMap` and `camerashakesystem` have been
+- Additional w3d_device modules such as `BaseHeightMap` and `camerashakesystem` have been
   moved into the new hierarchy. Shader assets now live under
-  `src/GameEngineDevice/W3DDevice/GameClient/Shaders` and the old
+  `src/game_engine_device/w3d_device/game_client/Shaders` and the old
   `GeneralsMD/Code/GameEngineDevice` directory has been removed.
 - MapCacheBuilder tool moved to `src/Tools/MapCacheBuilder` with a minimal stub executable. The original directory under `Generals/Code/Tools` was removed.
 - buildVersionUpdate, versionUpdate and Compress tools moved to `src/Tools` with basic stubs and new CMake targets.

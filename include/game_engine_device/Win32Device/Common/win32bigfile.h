@@ -33,7 +33,7 @@
 
 #include "common/archiveFile.h"
 #include "common/asciiString.h"
-#include "Common/List.h"
+#include "common/List.h"
 
 class Win32BIGFile : public ArchiveFile
 {
