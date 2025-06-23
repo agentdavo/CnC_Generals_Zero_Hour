@@ -101,7 +101,7 @@ ArchiveFile::ArchiveFile()
 	m_rootDirectory.clear();
 }
 
-void ArchiveFile::addFile(const AsciiString& path, const ArchivedFileInfo *fileInfo) 
+void ArchiveFile::addFile(const AsciiString& path, const ArchivedFileInfo& fileInfo) 
 {
 	AsciiString temp;
 	temp = path;
@@ -126,8 +126,8 @@ void ArchiveFile::addFile(const AsciiString& path, const ArchivedFileInfo *fileI
 		temp.nextToken(&token, "\\/");
 	}
 
-	dirInfo->m_files[fileInfo->m_filename] = *fileInfo;
-	//path.concat(fileInfo->m_filename);
+	dirInfo->m_files[fileInfo.m_filename] = fileInfo;
+	//path.concat(fileInfo.m_filename);
 }
 
 void ArchiveFile::getFileListInDirectory(const AsciiString& currentDirectory, const AsciiString& originalDirectory, const AsciiString& searchName, FilenameList &filenameList, Bool searchSubdirectories) const
