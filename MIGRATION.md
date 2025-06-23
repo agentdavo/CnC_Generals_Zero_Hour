@@ -242,3 +242,4 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Certain `WW3D2` files were restored from the temp backup.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
 - macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
+- Added a portable stub for `windows.h` under `include/Common` to ease non-Windows builds.
