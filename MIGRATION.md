@@ -245,3 +245,11 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
 - Added a portable stub for `windows.h` under `include/Common` to ease non-Windows builds.
 - Updated source and header includes to reference this stub via `Common/windows.h`.
+- Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and
+  `ww3d2` now add the global `include/` directory to their CMake
+  `target_include_directories` so macOS builds resolve headers such as
+  `Common/windows.h` and `GameEngine/Common/Debug.h`.
+- Renamed `Vector.H` to `vector.h` and updated all includes to use the lowercase
+  path to compile on case sensitive filesystems.
+- Corrected `WWDownload` headers to include `ftp.h` directly and match file
+  casing.

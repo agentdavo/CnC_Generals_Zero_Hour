@@ -22,8 +22,8 @@
 #define __DOWNLOAD_H_
 
 //#include "../resource.h"       // main symbols
-#include "WWDownload/ftp.h"
-#include "WWDownload/downloaddefs.h"
+#include "ftp.h"
+#include "downloaddefs.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // CDownload

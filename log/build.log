@@ -26,7 +26,7 @@
 -- Looking for IceConnectionNumber in ICE - found
 -- Found Git: /usr/bin/git (found version "2.43.0") 
 -- Git version 2.43.0 found at '/usr/bin/git'.
--- Git using branch 'main', commit dff92721d748723e2f804d387d95bbe953e3b7eb/'Merge pull request #95 from agentdavo/codex/copy-files-and-update-cmakelists.txt'.
+-- Git using branch 'main', commit 22c7ce4aa3f21459097eefe7d7a793b9178d697b/'Merge pull request #98 from agentdavo/j05zxr-codex/update-windows.h-include-path'.
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
@@ -44,7 +44,7 @@
 
 -- Configuring core sources
 -- Configuring migrated engine modules
--- Configuring done (1.7s)
+-- Configuring done (1.4s)
 -- Generating done (0.2s)
 -- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
 /usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
