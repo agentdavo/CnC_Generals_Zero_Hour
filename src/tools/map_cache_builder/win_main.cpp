@@ -1,4 +1,4 @@
-#include "Tools/MapCacheBuilder/WinMain.h"
+#include "tools/map_cache_builder/win_main.h"
 #include <iostream>
 
 HINSTANCE ApplicationHInstance = nullptr;

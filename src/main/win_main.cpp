@@ -40,7 +40,7 @@
 #include <dbt.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "WinMain.h"
+#include "main/win_main.h"
 #include "Lib/BaseType.h"
 #include "common/CopyProtection.h"
 #include "common/CriticalSection.h"
