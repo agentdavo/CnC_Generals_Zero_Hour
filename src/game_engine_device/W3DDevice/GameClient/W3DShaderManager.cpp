@@ -57,11 +57,7 @@
 #include "assetmgr.h"
 #include "Lib/BaseType.h"
 #include "common/File.h"
-<<<<<<< Updated upstream:src/GameEngineDevice/W3DDevice/GameClient/W3DShaderManager.cpp
-#include "Common/FileSystem.h"
-=======
 #include "common/FileSystem.h"
->>>>>>> Stashed changes:src/game_engine_device/W3DDevice/GameClient/W3DShaderManager.cpp
 #include "W3DDevice/GameClient/W3DShaderManager.h"
 #include "W3DDevice/GameClient/W3DShroud.h"
 #include "W3DDevice/GameClient/HeightMap.h"

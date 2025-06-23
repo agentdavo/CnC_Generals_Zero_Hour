@@ -18,7 +18,7 @@ add_subdirectory(libraries/ww_vegas)
 add_subdirectory(game_engine_device/lvgl_device)
 
 set(GENERALS_SRC
-    main.cpp
+    main/main.cpp
     lvgl_game_engine/lvgl_game_engine.cpp
 )
 

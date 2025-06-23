@@ -2,7 +2,7 @@ add_library(gameenginedevice EXCLUDE_FROM_ALL)
 
 # lvglDevice sources migrated from Generals/Code
 file(GLOB_RECURSE LVGLDEVICE_SRCS CONFIGURE_DEPENDS
-    lvglDevice/*.cpp
+    lvgl_device/**/*.cpp
 )
 target_sources(gameenginedevice PRIVATE ${LVGLDEVICE_SRCS})
 

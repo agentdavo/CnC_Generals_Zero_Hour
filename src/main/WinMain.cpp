@@ -31,11 +31,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
-<<<<<<< Updated upstream
-#define WIN32_LEAN_AND_MEAN  // only bare bones windows stuff wanted
-=======
 #define WIN32_LEAN_AND_MEAN // only bare bones windows stuff wanted
->>>>>>> Stashed changes
 #include "common/windows.h"
 #include <stdlib.h>
 #include <crtdbg.h>

@@ -1,6 +1,6 @@
 #include "lvgl_game_engine.h"
-#include "LvglKeyboard.h"
-#include "LvglMouse.h"
+#include "lvgl_device/game_client/lvglkeyboard.h"
+#include "lvgl_device/game_client/lvglmouse.h"
 #include "common/logger.h"
 
 LvglGameEngine::LvglGameEngine(LvglKeyboard *keyboard, LvglMouse *mouse)

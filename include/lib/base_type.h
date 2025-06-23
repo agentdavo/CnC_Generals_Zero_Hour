@@ -129,7 +129,7 @@ typedef bool Bool;                    //
 typedef long long Int64;                  // 8 bytes
 typedef unsigned long long UnsignedInt64; // 8 bytes
 
-#include "lib/trig.h"
+#include "lib/Trig.h"
 
 //-----------------------------------------------------------------------------
 typedef wchar_t WideChar; ///< multi-byte character representations

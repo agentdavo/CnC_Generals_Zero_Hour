@@ -84,8 +84,8 @@
 #include "GameClient/Keyboard.h"
 #include "Win32Device/GameClient/Win32Mouse.h"
 #include "Win32Device/GameClient/Win32DIKeyboard.h"
-#include "Win32Device/common/Win32LocalFileSystem.h"
-#include "Win32Device/common/Win32BIGFileSystem.h"
+#include "Win32Device/common/win32localfilesystem.h"
+#include "Win32Device/common/win32bigfilesystem.h"
 
 #include "Resource.h"
 #include "WinMain.h"

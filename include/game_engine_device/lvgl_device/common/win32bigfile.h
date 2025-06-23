@@ -31,9 +31,9 @@
 #ifndef __LVGLDEVICE_WIN32BIGFILE_H_
 #define __LVGLDEVICE_WIN32BIGFILE_H_
 
-#include "common/archiveFile.h"
-#include "common/asciiString.h"
-#include "Common/List.h"
+#include "game_engine/common/archivefile.h"
+#include "game_engine/common/asciistring.h"
+#include "game_engine/common/list.h"
 
 class Win32BIGFile : public ArchiveFile
 {

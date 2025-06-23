@@ -40,21 +40,12 @@
 // for now we maintain old legacy files
 // #define MAINTAIN_LEGACY_FILES
 
-<<<<<<< Updated upstream:src/GameEngineDevice/W3DDevice/GameClient/W3DFileSystem.cpp
-#include "Common/Debug.h"
-#include "common/File.h"
-#include "Common/FileSystem.h"
-#include "Common/GlobalData.h"
-#include "Common/MapObject.h"
-#include "Common/Registry.h"
-=======
 #include "common/Debug.h"
 #include "common/File.h"
 #include "common/FileSystem.h"
 #include "common/GlobalData.h"
 #include "common/MapObject.h"
 #include "common/Registry.h"
->>>>>>> Stashed changes:src/game_engine_device/W3DDevice/GameClient/W3DFileSystem.cpp
 #include "W3DDevice/GameClient/W3DFileSystem.h"
 // DEFINES ////////////////////////////////////////////////////////////////////////////////////////
 
