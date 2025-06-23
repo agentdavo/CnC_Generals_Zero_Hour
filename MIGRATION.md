@@ -260,3 +260,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - MapCacheBuilder tool relocated to `src/tools/map_cache_builder` and the entry
   point renamed to `win_main.cpp`.
 - Win32BIGFile.cpp and Win32BIGFileSystem.cpp stubs removed; lvgl_big_file.cpp and lvgl_big_file_system.cpp now supply the BIG archive loader.
+- Replaced raw ArchivedFileInfo allocations with std::unique_ptr to prevent leaks.

@@ -36,6 +36,7 @@
 #include "common/localfilesystem.h"
 #include "win32_device/common/win32_big_file.h"
 #include "win32_device/common/win32_big_file_system.h"
+#include <memory>
 
 #ifdef _INTERNAL
 // for occasional debugging...
@@ -119,7 +120,7 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
 	// seek to the beginning of the directory listing.
 	fp->seek(0x10, File::START);
 	// read in each directory listing.
-	ArchivedFileInfo *fileInfo = NEW ArchivedFileInfo;
+        std::unique_ptr<ArchivedFileInfo> fileInfo = std::make_unique<ArchivedFileInfo>();
 
 	for (Int i = 0; i < numLittleFiles; ++i) {
 		Int filesize = 0;
@@ -158,13 +159,10 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
 		debugpath.concat(fileInfo->m_filename);
 //		DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - adding file %s to archive file %s, file number %d\n", debugpath.str(), fileInfo->m_archiveFilename.str(), i));
 
-		archiveFile->addFile(path, fileInfo);
+                archiveFile->addFile(path, *fileInfo);
 	}
 
-	archiveFile->attachFile(fp);
-
-	delete fileInfo;
-	fileInfo = NULL;
+        archiveFile->attachFile(fp);
 
 	// leave fp open as the archive file will be using it.
 
