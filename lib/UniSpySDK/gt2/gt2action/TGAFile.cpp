@@ -18,7 +18,7 @@
 #ifndef TGADEFSH
 #define TGADEFSH
 
-#include <windows.h>
+#include "common/windows.h"
 
 #pragma pack(1) // Align the structure on byte boundries...
 

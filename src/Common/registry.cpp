@@ -1,5 +1,9 @@
 #include "common/registry.h"
+<<<<<<< Updated upstream
 #include "GameEngine/Common/AsciiString.h"
+=======
+#include "GameEngine/common/AsciiString.h"
+>>>>>>> Stashed changes
 #include "Lib/BaseType.h"
 #include <cstdlib>
 

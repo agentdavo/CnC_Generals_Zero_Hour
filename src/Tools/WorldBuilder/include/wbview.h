@@ -25,8 +25,8 @@
 
 #include "Lib/BaseType.h"
 #include "Tool.h"
-#include "Common/Debug.h"
-#include "Common/ThingSort.h"
+#include "common/Debug.h"
+#include "common/ThingSort.h"
 
 class CWorldBuilderDoc;
 class BuildListInfo;

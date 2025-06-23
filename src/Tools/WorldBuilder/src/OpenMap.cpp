@@ -22,7 +22,7 @@
 #include "stdafx.h"
 #include "worldbuilder.h"
 #include "OpenMap.h"
-#include "Common/GlobalData.h"
+#include "common/GlobalData.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // OpenMap dialog

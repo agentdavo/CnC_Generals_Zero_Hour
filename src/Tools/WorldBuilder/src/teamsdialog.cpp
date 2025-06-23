@@ -24,7 +24,7 @@
 #include "teamsdialog.h"
 #include "CFixTeamOwnerDialog.h"
 
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 #include "GameLogic/SidesList.h"
 #include "TeamBehavior.h"
 #include "TeamGeneric.h"

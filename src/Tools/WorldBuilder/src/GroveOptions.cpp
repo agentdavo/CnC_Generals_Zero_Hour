@@ -17,11 +17,11 @@
 */
 
 #include "StdAfx.h"
-#include "Common/STLTypedefs.h"
+#include "common/STLTypedefs.h"
 #include "GroveOptions.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingSort.h"
-#include "Common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/ThingSort.h"
+#include "common/ThingTemplate.h"
 
 #define ARBITRARY_BUFF_SIZE		128
 

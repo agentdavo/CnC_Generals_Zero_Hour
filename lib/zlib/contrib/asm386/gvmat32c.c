@@ -11,7 +11,7 @@
 #include "deflate.h"
 
 #undef FAR
-#include <windows.h>
+#include "common/windows.h"
 
 #ifdef ASMV
 #define NIL 0

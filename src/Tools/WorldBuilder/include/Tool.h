@@ -26,7 +26,7 @@
 #define TOOL_H
 
 #include "Lib\BaseType.h"
-#include "Common/STLTypedefs.h"
+#include "common/STLTypedefs.h"
 
 enum TTrackingMode {
 	TRACK_NONE,

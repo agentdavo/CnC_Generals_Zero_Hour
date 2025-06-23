@@ -41,7 +41,7 @@
 #include "WW3D2/MeshMdl.h"
 #include "WW3D2/Shader.h"
 #include "common/MapObject.h"
-#include "Common/ThingTemplate.h"
+#include "common/ThingTemplate.h"
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/SidesList.h"
 #include "resource.h"
@@ -52,8 +52,8 @@
 #include "WaterTool.h"
 #include "BuildListTool.h"
 #include "LayersList.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/BorderColors.h"
+#include "common/WellKnownKeys.h"
+#include "common/BorderColors.h"
 
 #ifdef _DEBUG
 #define NO_INTENSE_DEBUG 1

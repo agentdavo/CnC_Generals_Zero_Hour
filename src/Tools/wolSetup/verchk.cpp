@@ -23,16 +23,16 @@
 #include <stdlib.h>
 
 /**
-	* Retrieve version information from files version resource.
-	*
-	* INPUTS
-	*     Filename - Name of file to retrieve version information for.
-	*     FileInfo - Pointer to VS_FIXEDFILEINFO structure to be filled in.
-	*
-	* RESULT
-	*     Success - True if successful in obtaining version information.
-	*/
-bool GetVersionInfo(char* filename, VS_FIXEDFILEINFO* fileInfo)
+ * Retrieve version information from files version resource.
+ *
+ * INPUTS
+ *     Filename - Name of file to retrieve version information for.
+ *     FileInfo - Pointer to VS_FIXEDFILEINFO structure to be filled in.
+ *
+ * RESULT
+ *     Success - True if successful in obtaining version information.
+ */
+bool GetVersionInfo(char *filename, VS_FIXEDFILEINFO *fileInfo)
 {
    if (filename == NULL || fileInfo == NULL)
    {
@@ -58,9 +58,9 @@ bool GetVersionInfo(char* filename, VS_FIXEDFILEINFO* fileInfo)
 
             if (success)
             {
-               VS_FIXEDFILEINFO* data;
+               VS_FIXEDFILEINFO *data;
                UINT dataSize = 0;
-               success = VerQueryValue(buffer, "\\", (LPVOID*) & data, &dataSize);
+               success = VerQueryValue(buffer, "\\", (LPVOID *)&data, &dataSize);
 
                if (success && (dataSize == sizeof(VS_FIXEDFILEINFO)))
                {
@@ -79,11 +79,11 @@ bool GetVersionInfo(char* filename, VS_FIXEDFILEINFO* fileInfo)
    return false;
 }
 
-bool loadWolapi( char *filename )
+bool loadWolapi(char *filename)
 {
-	VS_FIXEDFILEINFO fileInfo;
-	if (GetVersionInfo(filename, &fileInfo))
-		g_wolapiInstalled = false;
+   VS_FIXEDFILEINFO fileInfo;
+   if (GetVersionInfo(filename, &fileInfo))
+      g_wolapiInstalled = false;
 
-	return g_wolapiInstalled;
+   return g_wolapiInstalled;
 }

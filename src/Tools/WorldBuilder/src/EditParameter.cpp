@@ -35,6 +35,7 @@
 #include "EditObjectParameter.h"
 
 
+<<<<<<< Updated upstream
 #include "Common/AudioEventInfo.h"
 #include "Common/BorderColors.h"
 #include "common/File.h"
@@ -48,6 +49,21 @@
 #include "Common/ThingFactory.h"
 #include "Common/Upgrade.h"
 #include "Common/WellKnownKeys.h"
+=======
+#include "common/AudioEventInfo.h"
+#include "common/BorderColors.h"
+#include "common/File.h"
+#include "common/FileSystem.h"
+#include "common/GameAudio.h"
+#include "common/Player.h"
+#include "common/PlayerTemplate.h"
+#include "common/Radar.h"
+#include "common/SpecialPower.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/Upgrade.h"
+#include "common/WellKnownKeys.h"
+>>>>>>> Stashed changes
 
 #include "GameClient/ControlBar.h"
 #include "GameClient/GameText.h"

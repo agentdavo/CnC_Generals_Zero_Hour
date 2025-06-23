@@ -96,7 +96,7 @@
 	#ifndef WIN32_LEAN_AND_MEAN
 		#define WIN32_LEAN_AND_MEAN
 	#endif
-	#include <windows.h>
+	#include "common/windows.h"
 	#include <limits.h>
 	#include <time.h>
 

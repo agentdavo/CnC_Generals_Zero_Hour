@@ -243,6 +243,7 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Certain `WW3D2` files were restored from the temp backup.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
 - macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
+<<<<<<< Updated upstream
 - Added a portable stub for `windows.h` under `include/common` to ease non-Windows builds.
 - Updated source and header includes to reference this stub via `common/windows.h`.
 - Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and
@@ -254,3 +255,15 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Corrected `WWDownload` headers to include `ftp.h` directly and match file
   casing.
 - Moved `include/Common` to `include/common` and updated header includes.
+=======
+- Added a portable stub for `windows.h` under `include/Common` to ease non-Windows builds.
+- Updated source and header includes to reference this stub via `common/windows.h`.
+- Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and
+  `ww3d2` now add the global `include/` directory to their CMake
+  `target_include_directories` so macOS builds resolve headers such as
+  `common/windows.h` and `GameEngine/Common/Debug.h`.
+- Renamed `Vector.H` to `vector.h` and updated all includes to use the lowercase
+  path to compile on case sensitive filesystems.
+- Corrected `WWDownload` headers to include `ftp.h` directly and match file
+  casing.
+>>>>>>> Stashed changes

@@ -43,7 +43,7 @@ index c2446be..3df4c6a 100644
 +++ b/src/vector/vimageloader.cpp
 @@ -6,7 +6,7 @@
  #ifdef _WIN32
- # include <windows.h>
+ # include "common/windows.h"
  #else
 -# include <dlfcn.h>
 +// # include <dlfcn.h> //Does not work on ESP-IDF

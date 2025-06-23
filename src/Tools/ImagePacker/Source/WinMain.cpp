@@ -18,12 +18,12 @@
 
 // FILE: WinMain.cpp //////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-//                                                                          
-//                       Westwood Studios Pacific.                          
-//                                                                          
-//                       Confidential Information                           
-//                Copyright (C) 2001 - All Rights Reserved                  
-//                                                                          
+//
+//                       Westwood Studios Pacific.
+//
+//                       Confidential Information
+//                Copyright (C) 2001 - All Rights Reserved
+//
 //-----------------------------------------------------------------------------
 //
 // Project:    ImagePacker
@@ -43,8 +43,8 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "Lib/BaseType.h"
-#include "Common/GameMemory.h"
-#include "Common/Debug.h"
+#include "common/GameMemory.h"
+#include "common/Debug.h"
 #include "ImagePacker.h"
 #include "Resource.h"
 #include "WindowProc.h"
@@ -58,14 +58,13 @@
 ///////////////////////////////////////////////////////////////////////////////
 // PUBLIC DATA ////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-HINSTANCE ApplicationHInstance = NULL;  ///< our application instance
+HINSTANCE ApplicationHInstance = NULL; ///< our application instance
 
 /// just to satisfy the game libraries we link to
 HWND ApplicationHWnd = NULL;
 
 const Char *g_strFile = "data\\Generals.str";
 const Char *g_csfFile = "data\\%s\\Generals.csf";
-
 
 // PRIVATE PROTOTYPES /////////////////////////////////////////////////////////
 
@@ -80,8 +79,8 @@ const Char *g_csfFile = "data\\%s\\Generals.csf";
 // WinMain ====================================================================
 /** Application entry point */
 //=============================================================================
-Int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
-                      LPSTR lpCmdLine, Int nCmdShow )
+Int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
+					 LPSTR lpCmdLine, Int nCmdShow)
 {
 
 	// start the log
@@ -93,22 +92,22 @@ Int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 	// allocate a new image packer system
 	TheImagePacker = new ImagePacker;
-	if( TheImagePacker == NULL )
+	if (TheImagePacker == NULL)
 		return 0;
 
 	// initialize the system
-	if( TheImagePacker->init() == FALSE )
+	if (TheImagePacker->init() == FALSE)
 	{
 
 		delete TheImagePacker;
 		TheImagePacker = NULL;
 		return 0;
 
-	}  // end if
-		
+	} // end if
+
 	// load the dialog box
-	DialogBox( hInstance, (LPCTSTR)IMAGE_PACKER_DIALOG, 
-						 NULL, (DLGPROC)ImagePackerProc );
+	DialogBox(hInstance, (LPCTSTR)IMAGE_PACKER_DIALOG,
+			  NULL, (DLGPROC)ImagePackerProc);
 
 	// delete the image packer
 	delete TheImagePacker;
@@ -121,4 +120,4 @@ Int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	// all done
 	return 0;
 
-}  // end WinMain
+} // end WinMain

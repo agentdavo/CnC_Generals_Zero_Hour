@@ -29,7 +29,7 @@
 #include "WorldBuilderDoc.h"
 #include "TileTool.h"				
 #include "WBView3D.h"
-#include "Common/TerrainTypes.h"
+#include "common/TerrainTypes.h"
 #include "W3DDevice/GameClient/TerrainTex.h"	  
 #include "W3DDevice/GameClient/HeightMap.h"
 

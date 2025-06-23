@@ -20,7 +20,7 @@
 #include "Resource.h"
 #include "CFixTeamOwnerDialog.h"
 #include "GameLogic/SidesList.h"
-#include "Common/WellknownKeys.h"
+#include "common/WellknownKeys.h"
 #include "GameLogic/SidesList.h"
 
 static const char* NEUTRAL_NAME_STR = "(neutral)";

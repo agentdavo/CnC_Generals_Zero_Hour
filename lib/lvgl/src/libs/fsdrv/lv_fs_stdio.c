@@ -14,7 +14,7 @@
     #include <dirent.h>
     #include <unistd.h>
 #else
-    #include <windows.h>
+    #include "common/windows.h"
 #endif
 
 #include "../../core/lv_global.h"

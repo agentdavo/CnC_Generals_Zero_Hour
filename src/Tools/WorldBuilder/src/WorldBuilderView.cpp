@@ -54,7 +54,7 @@
 #include "ContourOptions.h"
 #include "MainFrm.h"
 #include "CUndoable.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 //-----------------------------------------------------------------------------
 //         Private Data                                                     

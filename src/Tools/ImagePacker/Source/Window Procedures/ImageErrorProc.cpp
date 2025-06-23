@@ -18,12 +18,12 @@
 
 // FILE: ImageErrorProc.cpp ///////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-//                                                                          
-//                       Westwood Studios Pacific.                          
-//                                                                          
-//                       Confidential Information                           
-//                Copyright (C) 2001 - All Rights Reserved                  
-//                                                                          
+//
+//                       Westwood Studios Pacific.
+//
+//                       Confidential Information
+//                Copyright (C) 2001 - All Rights Reserved
+//
 //-----------------------------------------------------------------------------
 //
 // Project:    ImagePacker
@@ -66,110 +66,108 @@
 // ImageErrorProc =============================================================
 /** Dialog proc for the error window */
 //=============================================================================
-BOOL CALLBACK ImageErrorProc( HWND hWndDialog, UINT message,
-														  WPARAM wParam, LPARAM lParam )
+BOOL CALLBACK ImageErrorProc(HWND hWndDialog, UINT message,
+							 WPARAM wParam, LPARAM lParam)
 {
 
-	switch( message )
+	switch (message)
 	{
 
-		// ------------------------------------------------------------------------
-		case WM_INITDIALOG:
-		{
+	// ------------------------------------------------------------------------
+	case WM_INITDIALOG:
+	{
 
-			//
-			// load the listbox with images that could not be processed
-			// and the reasons for it
-			//
-			
-			// sanity
-			if( TheImagePacker == NULL )
-				return TRUE;
+		//
+		// load the listbox with images that could not be processed
+		// and the reasons for it
+		//
 
-			// go through all images
-			Int i, count;
-			HWND list = GetDlgItem( hWndDialog, LIST_IMAGES );
-			char buffer[ _MAX_PATH + 256 ];
-			char reason[ 32 ];
-			ImageInfo *image;
-
-			count = TheImagePacker->getImageCount();
-			for( i = 0; i < count; i++ )
-			{
-
-				// get image
-				image = TheImagePacker->getImage( i );
-
-				// sanity
-				if( image == NULL )	
-					continue;
-
-				// if image can't be processed find out why
-				if( BitTest( image->m_status, ImageInfo::CANTPROCESS ) )
-				{
-					
-					if( BitTest( image->m_status, ImageInfo::TOOBIG ) )
-						sprintf( reason, "Too Big" );
-					else if( BitTest( image->m_status, ImageInfo::INVALIDCOLORDEPTH ) )
-						sprintf( reason, "Unsupported Color Depth" );
-					else
-						sprintf( reason, "Unknown Reason" );
-
-					sprintf( buffer, "%s: (%dx%dx%d) %s",
-									 reason, image->m_size.x, image->m_size.y, image->m_colorDepth,
-									 image->m_path );
-
-					SendMessage( list, LB_INSERTSTRING, -1, (LPARAM)buffer );
-
-				}  // end if
-
-			}  // end for i
-
-			// set the extents for the horizontal scroll bar in the listbox
-			SendMessage( list, LB_SETHORIZONTALEXTENT, 1280, 0 );
-
+		// sanity
+		if (TheImagePacker == NULL)
 			return TRUE;
 
-		}  // end init
+		// go through all images
+		Int i, count;
+		HWND list = GetDlgItem(hWndDialog, LIST_IMAGES);
+		char buffer[_MAX_PATH + 256];
+		char reason[32];
+		ImageInfo *image;
 
-		// ------------------------------------------------------------------------
-		case WM_COMMAND:
+		count = TheImagePacker->getImageCount();
+		for (i = 0; i < count; i++)
 		{
-			Int controlID = LOWORD( wParam );
-//			Int notifyCode = HIWORD( wParam );
-//			HWND hWndControl = (HWND)lParam;
 
-			switch( controlID )
+			// get image
+			image = TheImagePacker->getImage(i);
+
+			// sanity
+			if (image == NULL)
+				continue;
+
+			// if image can't be processed find out why
+			if (BitTest(image->m_status, ImageInfo::CANTPROCESS))
 			{
 
-				// --------------------------------------------------------------------
-				case BUTTON_PROCEED:
-				{
+				if (BitTest(image->m_status, ImageInfo::TOOBIG))
+					sprintf(reason, "Too Big");
+				else if (BitTest(image->m_status, ImageInfo::INVALIDCOLORDEPTH))
+					sprintf(reason, "Unsupported Color Depth");
+				else
+					sprintf(reason, "Unknown Reason");
 
-					EndDialog( hWndDialog, TRUE );
-					break;
+				sprintf(buffer, "%s: (%dx%dx%d) %s",
+						reason, image->m_size.x, image->m_size.y, image->m_colorDepth,
+						image->m_path);
 
-				}  // end proceed
+				SendMessage(list, LB_INSERTSTRING, -1, (LPARAM)buffer);
 
-				// --------------------------------------------------------------------
-				case BUTTON_CANCEL:
-				{
+			} // end if
 
-					EndDialog( hWndDialog, FALSE );
-					break;
+		} // end for i
 
-				}  // end cancel
+		// set the extents for the horizontal scroll bar in the listbox
+		SendMessage(list, LB_SETHORIZONTALEXTENT, 1280, 0);
 
-			}  // end switch
+		return TRUE;
 
+	} // end init
+
+	// ------------------------------------------------------------------------
+	case WM_COMMAND:
+	{
+		Int controlID = LOWORD(wParam);
+		//			Int notifyCode = HIWORD( wParam );
+		//			HWND hWndControl = (HWND)lParam;
+
+		switch (controlID)
+		{
+
+		// --------------------------------------------------------------------
+		case BUTTON_PROCEED:
+		{
+
+			EndDialog(hWndDialog, TRUE);
 			break;
 
-		}  // end command
+		} // end proceed
 
-	}  // end switch message
+		// --------------------------------------------------------------------
+		case BUTTON_CANCEL:
+		{
+
+			EndDialog(hWndDialog, FALSE);
+			break;
+
+		} // end cancel
+
+		} // end switch
+
+		break;
+
+	} // end command
+
+	} // end switch message
 
 	return 0;
 
-}  // end ImageErrorProc
-
-
+} // end ImageErrorProc

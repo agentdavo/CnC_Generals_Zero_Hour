@@ -9,7 +9,7 @@
 #include "../../../lvgl.h"
 #if LV_USE_FS_WIN32
 
-#include <windows.h>
+#include "common/windows.h"
 #include <stdio.h>
 #include <limits.h>
 

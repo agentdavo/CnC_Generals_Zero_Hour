@@ -23,9 +23,9 @@
 #include "EditParameter.h"
 #include "WorldBuilder.h"
 
-#include "Common/AsciiString.h"
-#include "Common/Dict.h"
-#include "Common/WellKnownKeys.h"
+#include "common/AsciiString.h"
+#include "common/Dict.h"
+#include "common/WellKnownKeys.h"
 
 static const UINT s_allControls[][2] = 
 {

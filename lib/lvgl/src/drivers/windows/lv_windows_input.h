@@ -19,7 +19,7 @@ extern "C" {
 
 #if LV_USE_WINDOWS
 
-#include <windows.h>
+#include "common/windows.h"
 
 /*********************
  *      DEFINES

@@ -166,7 +166,7 @@
 #    ifdef FAR
 #      undef FAR
 #    endif
-#    include <windows.h>
+#    include "common/windows.h"
 #    define ZEXPORT  WINAPI
 #    ifdef WIN32
 #      define ZEXPORTVA  WINAPIV
@@ -176,7 +176,7 @@
 #  endif
 #  if defined (__BORLANDC__)
 #    if (__BORLANDC__ >= 0x0500) && defined (WIN32)
-#      include <windows.h>
+#      include "common/windows.h"
 #      define ZEXPORT __declspec(dllexport) WINAPI
 #      define ZEXPORTRVA __declspec(dllexport) WINAPIV
 #    else

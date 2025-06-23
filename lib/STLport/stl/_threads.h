@@ -93,7 +93,7 @@ using _STLP_VENDOR_CSTD::size_t;
 #    ifdef _STLP_USE_MFC
 #     include <afx.h>
 #    else
-#     include <windows.h>
+#     include "common/windows.h"
 #    endif
 #   else 
 // This section serves as a replacement for windows.h header for Visual C++

@@ -46,7 +46,7 @@
 #include <assert.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
+#include "common/Debug.h"
 #include "WWLib/Targa.h"
 #include "Resource.h"
 #include "ImagePacker.h"

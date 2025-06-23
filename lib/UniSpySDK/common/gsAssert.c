@@ -50,7 +50,7 @@ void gsDebugAssert(const char *szError,
 	}
 
 #elif defined _WIN32
-	#include <windows.h>
+	#include "common/windows.h"
 
 	// ErrorMessage: Displays message and goes into an infinite loop
 	// continues rendering

@@ -24,7 +24,7 @@
 #include "ScorchOptions.h"
 #include "CUndoable.h"
 #include "WbView3d.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 #include "WorldBuilderDoc.h"
 
 #define DEFAULT_SCORCHMARK_RADIUS 20

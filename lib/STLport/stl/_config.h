@@ -286,7 +286,7 @@
 #   ifdef _STLP_USE_MFC
 #    include <afx.h>
 #   else
-#    include <windows.h>
+#    include "common/windows.h"
 #   endif
 #   define _STLP_WINDOWS_H_INCLUDED
 # endif

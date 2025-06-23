@@ -27,7 +27,7 @@
 #endif
 
 #ifdef _WIN32
-#include <windows.h>
+#include "common/windows.h"
 #include <mmsystem.h>
 #else
 typedef struct WAVEOUT* HWAVEOUT;

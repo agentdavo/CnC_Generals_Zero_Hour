@@ -23,7 +23,7 @@
 #include "worldbuilder.h"
 #include "TeamBehavior.h"
 #include "EditParameter.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 #include "GameLogic/AI.h"
 
 /////////////////////////////////////////////////////////////////////////////

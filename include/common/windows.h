@@ -13,16 +13,26 @@
 #define CALLBACK
 #endif
 
-using LPVOID = void*;
-using LPCVOID = const void*;
-using LPBYTE = unsigned char*;
-using LPSTR = char*;
-using LPCSTR = const char*;
-using LPWSTR = wchar_t*;
-using LPCWSTR = const wchar_t*;
+using LPVOID = void *;
+using LPCVOID = const void *;
+using LPBYTE = unsigned char *;
+using LPSTR = char *;
+using LPCSTR = const char *;
+using LPWSTR = wchar_t *;
+using LPCWSTR = const wchar_t *;
 
-struct POINT { LONG x; LONG y; };
-struct RECT  { LONG left; LONG top; LONG right; LONG bottom; };
+struct POINT
+{
+    LONG x;
+    LONG y;
+};
+struct RECT
+{
+    LONG left;
+    LONG top;
+    LONG right;
+    LONG bottom;
+};
 
 #ifndef INFINITE
 #define INFINITE 0xFFFFFFFFu
@@ -47,6 +57,6 @@ static inline DWORD timeGetTime()
 {
     using namespace std::chrono;
     return static_cast<DWORD>(duration_cast<milliseconds>(
-        steady_clock::now().time_since_epoch()).count());
+                                  steady_clock::now().time_since_epoch())
+                                  .count());
 }
-

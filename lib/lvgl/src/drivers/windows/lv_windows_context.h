@@ -23,7 +23,7 @@ extern "C" {
 #error [lv_windows] LV_OS_WINDOWS is required. Enable it in lv_conf.h (LV_USE_OS LV_OS_WINDOWS)
 #endif
 
-#include <windows.h>
+#include "common/windows.h"
 
 #ifndef CREATE_WAITABLE_TIMER_MANUAL_RESET
 #define CREATE_WAITABLE_TIMER_MANUAL_RESET  0x00000001

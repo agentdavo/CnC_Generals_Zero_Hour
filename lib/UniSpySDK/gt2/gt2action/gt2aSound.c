@@ -8,7 +8,7 @@ Copyright 2000 GameSpy Industries, Inc
 
 */
 
-#include <windows.h>
+#include "common/windows.h"
 #include <dsound.h>
 #include "gt2aMain.h"
 #include "gt2aSound.h"

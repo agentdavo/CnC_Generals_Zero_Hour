@@ -50,11 +50,11 @@
 #define DEBUG_LOG(x) {}
 #define DEBUG_ASSERTCRASH(x, y) {}
 
-//#include <Common/Language.h>
-//#include <Common/Debug.h>
-//#include <Common/std::wstring.h>
-//#include <Common/std::string.h>
-//#include <Common/GlobalData.h>
+//#include <common/Language.h>
+//#include <common/Debug.h>
+//#include <common/std::wstring.h>
+//#include <common/std::string.h>
+//#include <common/GlobalData.h>
 #include "WSYS_File.h"
 #include "WSYS_RAMFile.h"
 

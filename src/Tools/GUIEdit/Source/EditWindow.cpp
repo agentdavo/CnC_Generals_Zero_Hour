@@ -48,7 +48,7 @@
 #include <stdio.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
+#include "common/Debug.h"
 #include "GameClient/Display.h"
 #include "GameClient/GameWindowManager.h"
 #include "W3DDevice/GameClient/W3DFileSystem.h"

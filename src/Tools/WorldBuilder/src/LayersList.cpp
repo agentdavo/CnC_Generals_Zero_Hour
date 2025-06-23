@@ -32,13 +32,13 @@
 /*---------------------------------------------------------------------------*/
 
 #include "StdAfx.h"
-#include "Common/STLTypedefs.h"
+#include "common/STLTypedefs.h"
 #include "Resource.h"
 #include "LayersList.h"
 
-#include "Common/Dict.h"
-#include "Common/MapObject.h"
-#include "Common/WellKnownKeys.h"
+#include "common/Dict.h"
+#include "common/MapObject.h"
+#include "common/WellKnownKeys.h"
 
 #include "PointerTool.h"
 #include "WorldBuilderDoc.h"

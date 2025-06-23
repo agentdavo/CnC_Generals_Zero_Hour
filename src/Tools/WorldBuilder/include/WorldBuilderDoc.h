@@ -28,7 +28,7 @@
 #endif // _MSC_VER > 1000
 
 #include "lib/BaseType.h"
-#include "Common/MapObject.h"
+#include "common/MapObject.h"
 #include "Tool.h"
 
 class CWorldBuilderView;

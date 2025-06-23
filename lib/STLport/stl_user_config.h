@@ -175,7 +175,7 @@
 
 /* 
  * You should define this macro if compiling with MFC - STLport <stl/_config.h>
- * then include <afx.h> instead of <windows.h> to get synchronisation primitives 
+ * then include <afx.h> instead of "common/windows.h" to get synchronisation primitives 
  *
  */
 

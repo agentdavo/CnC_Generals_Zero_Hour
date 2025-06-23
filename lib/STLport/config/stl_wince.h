@@ -167,7 +167,7 @@ inline int (iswascii)(int c) { return ((unsigned)(c) < 0x80); }
 #endif
 
 #ifndef __WINDOWS__
-#include <windows.h>
+#include "common/windows.h"
 #endif
 
 #ifndef _ABORT_DEFINED
@@ -181,7 +181,7 @@ inline int (iswascii)(int c) { return ((unsigned)(c) < 0x80); }
 #endif
 
 // they say it's needed 
-# include <windows.h>
+# include "common/windows.h"
 
 #endif /* _STLP_WCE_H */
 

@@ -30,7 +30,7 @@ GitHub:        https://github.com/mackron/miniaudio
 #endif
 
 #if defined(MA_WIN32)
-    #include <windows.h>
+    #include "common/windows.h"
 
     /*
     There's a possibility that WIN32_LEAN_AND_MEAN has been defined which will exclude some symbols

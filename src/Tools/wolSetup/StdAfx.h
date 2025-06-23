@@ -28,10 +28,15 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
+<<<<<<< Updated upstream
 #define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
 
 #include "common/windows.h"
+=======
+#define WIN32_LEAN_AND_MEAN // Exclude rarely-used stuff from Windows headers
+>>>>>>> Stashed changes
 
+#include "common/windows.h"
 
 // TODO: reference additional headers your program requires here
 

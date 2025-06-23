@@ -32,7 +32,7 @@
 
 #include "resource.h"       // main symbols
 
-#include "Common/STLTypedefs.h"
+#include "common/STLTypedefs.h"
 
 #include "BrushTool.h"
 #include "TileTool.h"
@@ -56,7 +56,7 @@
 #include "BuildListTool.h"
 #include "RampTool.h"
 #include "ScorchTool.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // CWorldBuilderApp:

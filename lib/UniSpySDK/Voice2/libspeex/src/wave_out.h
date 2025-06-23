@@ -34,7 +34,7 @@
 #define WAVE_OUT_H
 
 #include <stdio.h>
-#include <windows.h>
+#include "common/windows.h"
 #ifdef __MINGW32__
 #include <mmsystem.h>
 #endif

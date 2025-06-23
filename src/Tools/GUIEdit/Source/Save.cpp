@@ -49,9 +49,9 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "GUIEdit.h"
-#include "Common/Debug.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/FunctionLexicon.h"
+#include "common/Debug.h"
+#include "common/NameKeyGenerator.h"
+#include "common/FunctionLexicon.h"
 #include "GameClient/Display.h"
 #include "GameClient/GameWindow.h"
 #include "GameClient/GameWindowManager.h"

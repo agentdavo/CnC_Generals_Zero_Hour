@@ -48,7 +48,7 @@
 #include <stdio.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/NameKeyGenerator.h"
+#include "common/NameKeyGenerator.h"
 #include "GameClient/GameWindowManager.h"
 #include "GUIEdit.h"
 #include "Properties.h"

@@ -24,12 +24,12 @@
 
 // FILE: ColorDialog.cpp //////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-//                                                                          
-//                       Westwood Studios Pacific.                          
-//                                                                          
-//                       Confidential Information                           
-//                Copyright (C) 2001 - All Rights Reserved                  
-//                                                                          
+//
+//                       Westwood Studios Pacific.
+//
+//                       Confidential Information
+//                Copyright (C) 2001 - All Rights Reserved
+//
 //-----------------------------------------------------------------------------
 //
 // Project:    GUIEdit
@@ -52,7 +52,7 @@
 #include "Resource.h"
 #include "GUIEditColor.h"
 #include "Properties.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 #define MODE_RGB 0
@@ -65,9 +65,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 // PRIVATE DATA ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-static RGBColorInt selectedColor;  // picked color
-static Int mode = MODE_HSV;  // color selection mode
-static ICoord2D displayPos;  // where to open window
+static RGBColorInt selectedColor; // picked color
+static Int mode = MODE_HSV;       // color selection mode
+static ICoord2D displayPos;       // where to open window
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////
 
@@ -83,11 +83,11 @@ static ICoord2D displayPos;  // where to open window
 // hue                  ranges from 0 - 360
 // saturation and value ranges from 0 - 1
 // ============================================================================
-HSVColorReal rgbToHSV( RGBColorReal rgbColor )
+HSVColorReal rgbToHSV(RGBColorReal rgbColor)
 {
-  Real max, min;  // max and min of rgb
-  Real red, green, blue;  // rgb alias
-  Real hue, saturation, value;  // hsv alias
+  Real max, min;               // max and min of rgb
+  Real red, green, blue;       // rgb alias
+  Real hue, saturation, value; // hsv alias
   HSVColorReal hsvColor;
 
   red = rgbColor.red;
@@ -100,7 +100,7 @@ HSVColorReal rgbToHSV( RGBColorReal rgbColor )
     max = green;
   if (blue > max)
     max = blue;
-  
+
   min = red;
   if (green < red)
     min = green;
@@ -111,35 +111,37 @@ HSVColorReal rgbToHSV( RGBColorReal rgbColor )
   value = max;
 
   // calculate saturation
-  if (max != 0) 
+  if (max != 0)
     saturation = (max - min) / max;
   else
-    saturation = 0;  // saturation is 0 if all RGB are 0
+    saturation = 0; // saturation is 0 if all RGB are 0
 
   // calculate hue
-  if (saturation == 0)  {
-    hue = 0;  // hue is really undefined
-  }  // end if
-  else  {  // chromatic case, determine hue
+  if (saturation == 0)
+  {
+    hue = 0; // hue is really undefined
+  } // end if
+  else
+  { // chromatic case, determine hue
     Real delta = max - min;
 
     if (red == max)
-      hue = (green - blue) / delta;  // color between yellow and magenta
+      hue = (green - blue) / delta; // color between yellow and magenta
     else if (green == max)
-      hue = 2 + (blue - red) / delta;  // color between cyan and yellow
+      hue = 2 + (blue - red) / delta; // color between cyan and yellow
     else if (blue == max)
-      hue = 4 + (red - green) / delta;  // color between magenta and cyan
+      hue = 4 + (red - green) / delta; // color between magenta and cyan
 
-    hue = hue * 60;  //  convert hue to degrees
+    hue = hue * 60; //  convert hue to degrees
     if (hue < 0)
-      hue += 360;  // make sure hue is non negative
+      hue += 360; // make sure hue is non negative
 
-  }  // end else, chromatic case, determine hue
+  } // end else, chromatic case, determine hue
 
   // set and return an HSVColor
-  hsvColor.hue        = hue;
+  hsvColor.hue = hue;
   hsvColor.saturation = saturation;
-  hsvColor.value      = value;
+  hsvColor.value = value;
 
   // values aren't very nice to lets make them at least 1 ... isn't not
   // technically correct but it works nicer for light color dialog
@@ -148,14 +150,14 @@ HSVColorReal rgbToHSV( RGBColorReal rgbColor )
   if (hsvColor.saturation == 0.0f)
     hsvColor.saturation += 0.01f;
   if (hsvColor.value == 0.0f)
-    hsvColor.value      += 0.01f;
+    hsvColor.value += 0.01f;
 
-	// copy over alpha
-	hsvColor.alpha = rgbColor.alpha;
+  // copy over alpha
+  hsvColor.alpha = rgbColor.alpha;
 
   return hsvColor;
 
-}  // end rgbToHSV
+} // end rgbToHSV
 
 // hsvToRGB ===================================================================
 // Converts the HSV colors passed in to RGB values
@@ -163,754 +165,789 @@ HSVColorReal rgbToHSV( RGBColorReal rgbColor )
 // hue                  ranges from 0 - 360
 // saturation and value ranges from 0 - 1
 // ============================================================================
-RGBColorReal hsvToRGB( HSVColorReal hsvColor )
+RGBColorReal hsvToRGB(HSVColorReal hsvColor)
 {
   Int i;
   Real f, p, q, t;
-  Real red, green, blue;  // rgb alias
-  Real hue, saturation, value;  // hsv alias
+  Real red, green, blue;       // rgb alias
+  Real hue, saturation, value; // hsv alias
   RGBColorReal rgbColor;
 
   hue = hsvColor.hue;
   saturation = hsvColor.saturation;
   value = hsvColor.value;
 
-  if( saturation == 0.0f )  
-	{  
-		// the colors is on the black and white center line
-    if( hue == 0.0f )  
-		{  // achromatic color ... there is no hue
+  if (saturation == 0.0f)
+  {
+    // the colors is on the black and white center line
+    if (hue == 0.0f)
+    { // achromatic color ... there is no hue
       red = green = blue = value;
-    }  // end if, achromatic color .. there is no hue
-    else  
-		{
-      DEBUG_LOG(( "HSVToRGB error, hue should be undefined" ));
-    }  // end else
+    } // end if, achromatic color .. there is no hue
+    else
+    {
+      DEBUG_LOG(("HSVToRGB error, hue should be undefined"));
+    } // end else
 
-  }  // end if
+  } // end if
   else
-	{
-	 
-    if( hue == 360.0f )
+  {
+
+    if (hue == 360.0f)
       hue = 0.0f;
-    hue = hue / 60.0f;  // h is now in [0, 6)
-    i = REAL_TO_INT_FLOOR(hue);  // largest int <= h
-    f = hue - (Real) i;  // f is the fractional part of h
+    hue = hue / 60.0f;          // h is now in [0, 6)
+    i = REAL_TO_INT_FLOOR(hue); // largest int <= h
+    f = hue - (Real)i;          // f is the fractional part of h
     p = value * (1.0f - saturation);
     q = value * (1.0f - (saturation * f));
     t = value * (1.0f - (saturation * (1.0f - f)));
-    switch (i)  {
-      case 0:
-        red = value;
-        green = t;
-        blue = p;
-        break;
-      case 1:
-        red = q;
-        green = value;
-        blue = p;
-        break;
-      case 2:
-        red = p;
-        green = value;
-        blue = t;
-        break;
-      case 3:
-        red = p;
-        green = q;
-        blue = value;
-        break;
-      case 4:
-        red = t;
-        green = p;
-        blue = value;
-        break;
-      case 5:
-        red = value;
-        green = p;
-        blue = q;
-        break;
-    }  // end switch (i)
+    switch (i)
+    {
+    case 0:
+      red = value;
+      green = t;
+      blue = p;
+      break;
+    case 1:
+      red = q;
+      green = value;
+      blue = p;
+      break;
+    case 2:
+      red = p;
+      green = value;
+      blue = t;
+      break;
+    case 3:
+      red = p;
+      green = q;
+      blue = value;
+      break;
+    case 4:
+      red = t;
+      green = p;
+      blue = value;
+      break;
+    case 5:
+      red = value;
+      green = p;
+      blue = q;
+      break;
+    } // end switch (i)
 
-  }  // end else, chromatic case
+  } // end else, chromatic case
 
   // store and return and RGB color
-  rgbColor.red   = red;
+  rgbColor.red = red;
   rgbColor.green = green;
-  rgbColor.blue  = blue;
+  rgbColor.blue = blue;
   rgbColor.alpha = hsvColor.alpha;
 
   return rgbColor;
-      
-}  // end hsvToRGB
+
+} // end hsvToRGB
 
 // FORWARD DECLARATIONS ///////////////////////////////////////////////////////
-BOOL CALLBACK SelectColorDlgProc( HWND hWnd, UINT uMsg, 
-                                  WPARAM wParam, LPARAM lParam );
+BOOL CALLBACK SelectColorDlgProc(HWND hWnd, UINT uMsg,
+                                 WPARAM wParam, LPARAM lParam);
 
 ///////////////////////////////////////////////////////////////////////////////
 // PUBLIC FUNCTIONS ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
 // SelectColor ================================================================
-/** Bring up the color selection requestor.  
-	*
-	* Returns:
-	* Pointer to selected color
-	* NULL for canceled request 
-	*/
+/** Bring up the color selection requestor.
+ *
+ * Returns:
+ * Pointer to selected color
+ * NULL for canceled request
+ */
 // ============================================================================
-RGBColorInt *SelectColor( Int red, Int green, Int blue, Int alpha,
-													Int mouseX, Int mouseY )  
+RGBColorInt *SelectColor(Int red, Int green, Int blue, Int alpha,
+                         Int mouseX, Int mouseY)
 {
 
   selectedColor.red = red;
   selectedColor.green = green;
   selectedColor.blue = blue;
-	selectedColor.alpha = alpha;
+  selectedColor.alpha = alpha;
 
-	displayPos.x = mouseX;
-	displayPos.y = mouseY;
+  displayPos.x = mouseX;
+  displayPos.y = mouseY;
 
-  if( DialogBox( TheEditor->getInstance(), (LPCTSTR)COLOR_SELECT_DIALOG, 
-								 TheEditor->getWindowHandle(), SelectColorDlgProc ) )
-		return &selectedColor;
+  if (DialogBox(TheEditor->getInstance(), (LPCTSTR)COLOR_SELECT_DIALOG,
+                TheEditor->getWindowHandle(), SelectColorDlgProc))
+    return &selectedColor;
   else
     return NULL;
 
-}  // end SelectColor
+} // end SelectColor
 
 // SelectColorDlgProc =========================================================
 /** Dialog procedure for color selector dialog */
 // ============================================================================
-BOOL CALLBACK SelectColorDlgProc( HWND hWndDlg, UINT uMsg, 
-                                  WPARAM wParam, LPARAM lParam )
+BOOL CALLBACK SelectColorDlgProc(HWND hWndDlg, UINT uMsg,
+                                 WPARAM wParam, LPARAM lParam)
 {
-  static HWND hWndScrollColor1;  // red / hue
-  static HWND hWndScrollColor2;  // green / saturation
-  static HWND hWndScrollColor3;  // blue / value
-	static HWND hWndScrollAlpha;	 // alpha scrollbar
-  static HWND hWndColorBar1;  // red / hue
-  static HWND hWndColorBar2;  // green / saturation
-  static HWND hWndColorBar3;  // blue / value
+  static HWND hWndScrollColor1; // red / hue
+  static HWND hWndScrollColor2; // green / saturation
+  static HWND hWndScrollColor3; // blue / value
+  static HWND hWndScrollAlpha;  // alpha scrollbar
+  static HWND hWndColorBar1;    // red / hue
+  static HWND hWndColorBar2;    // green / saturation
+  static HWND hWndColorBar3;    // blue / value
   static HWND hWndPreview;
-              
-  switch (uMsg)  {
 
-    // ------------------------------------------------------------------------
-    case WM_INITDIALOG:  
-		{
+  switch (uMsg)
+  {
 
-      // save some window handles for later comparing during processing
-      hWndScrollColor1 = GetDlgItem( hWndDlg, SCROLL_COLOR1 );
-      hWndScrollColor2 = GetDlgItem( hWndDlg, SCROLL_COLOR2 );
-      hWndScrollColor3 = GetDlgItem( hWndDlg, SCROLL_COLOR3 );
-			hWndScrollAlpha	 = GetDlgItem( hWndDlg, SCROLL_ALPHA );
-      hWndColorBar1    = GetDlgItem( hWndDlg, BUTTON_COLORBAR1 );
-      hWndColorBar2    = GetDlgItem( hWndDlg, BUTTON_COLORBAR2 );
-      hWndColorBar3    = GetDlgItem( hWndDlg, BUTTON_COLORBAR3 );
-      hWndPreview = GetDlgItem (hWndDlg, BUTTON_PREVIEW);
-			
-      // init the scroll bars and labels to the current color
-			if (mode == MODE_HSV)  
-			{
-				RGBColorReal rgbColor;
-				HSVColorReal hsvColor;
+  // ------------------------------------------------------------------------
+  case WM_INITDIALOG:
+  {
 
-				rgbColor.red   = (Real) selectedColor.red   / 255.0f;
-				rgbColor.green = (Real) selectedColor.green / 255.0f;
-				rgbColor.blue  = (Real) selectedColor.blue  / 255.0f;
-				rgbColor.alpha = (Real) selectedColor.alpha;
-				hsvColor = rgbToHSV (rgbColor);
-				hsvColor.saturation *= 100.0f;
-				hsvColor.value      *= 100.0f;
+    // save some window handles for later comparing during processing
+    hWndScrollColor1 = GetDlgItem(hWndDlg, SCROLL_COLOR1);
+    hWndScrollColor2 = GetDlgItem(hWndDlg, SCROLL_COLOR2);
+    hWndScrollColor3 = GetDlgItem(hWndDlg, SCROLL_COLOR3);
+    hWndScrollAlpha = GetDlgItem(hWndDlg, SCROLL_ALPHA);
+    hWndColorBar1 = GetDlgItem(hWndDlg, BUTTON_COLORBAR1);
+    hWndColorBar2 = GetDlgItem(hWndDlg, BUTTON_COLORBAR2);
+    hWndColorBar3 = GetDlgItem(hWndDlg, BUTTON_COLORBAR3);
+    hWndPreview = GetDlgItem(hWndDlg, BUTTON_PREVIEW);
 
-				// init the HSV and intensity scroll bar extents
-				SendMessage( hWndScrollColor1, SBM_SETRANGE, 1, 360 );
-				SendMessage( hWndScrollColor2, SBM_SETRANGE, 1, 100 );
-				SendMessage( hWndScrollColor3, SBM_SETRANGE, 1, 100 );
-				SendMessage( hWndScrollAlpha, SBM_SETRANGE, 0, 255 );
+    // init the scroll bars and labels to the current color
+    if (mode == MODE_HSV)
+    {
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
 
-				// set the scroll bars and labels
-				SetScrollPos (hWndScrollColor1, SB_CTL, (Int) hsvColor.hue, TRUE);
-				SetDlgItemInt (hWndDlg, LABEL_COLOR1,   
-											 (Int) hsvColor.hue, FALSE);
-				SetScrollPos (hWndScrollColor2, SB_CTL, (Int) hsvColor.saturation, TRUE);
-				SetDlgItemInt (hWndDlg, LABEL_COLOR2,   
-											 (Int) hsvColor.saturation, FALSE);
-				SetScrollPos (hWndScrollColor3, SB_CTL, (Int) hsvColor.value, TRUE);
-				SetDlgItemInt (hWndDlg, LABEL_COLOR3,   
-											 (Int) hsvColor.value, FALSE);
-				SetScrollPos (hWndScrollAlpha, SB_CTL, (Int) hsvColor.alpha, TRUE);
-				SetDlgItemInt (hWndDlg, LABEL_ALPHA,   
-											 (Int) hsvColor.alpha, FALSE);
+      rgbColor.red = (Real)selectedColor.red / 255.0f;
+      rgbColor.green = (Real)selectedColor.green / 255.0f;
+      rgbColor.blue = (Real)selectedColor.blue / 255.0f;
+      rgbColor.alpha = (Real)selectedColor.alpha;
+      hsvColor = rgbToHSV(rgbColor);
+      hsvColor.saturation *= 100.0f;
+      hsvColor.value *= 100.0f;
 
-      }  // end if
-      else  
-			{
+      // init the HSV and intensity scroll bar extents
+      SendMessage(hWndScrollColor1, SBM_SETRANGE, 1, 360);
+      SendMessage(hWndScrollColor2, SBM_SETRANGE, 1, 100);
+      SendMessage(hWndScrollColor3, SBM_SETRANGE, 1, 100);
+      SendMessage(hWndScrollAlpha, SBM_SETRANGE, 0, 255);
 
-        // init the RGB and intensity scroll bar extents
-        SendMessage( hWndScrollColor1, SBM_SETRANGE, 1, 255 );
-        SendMessage( hWndScrollColor2, SBM_SETRANGE, 1, 255 );
-        SendMessage( hWndScrollColor3, SBM_SETRANGE, 1, 255 );
-				SendMessage( hWndScrollAlpha, SBM_SETRANGE, 0, 255 );
-        SetScrollPos (hWndScrollColor1, SB_CTL, selectedColor.red, TRUE);
-        SetDlgItemInt (hWndDlg, LABEL_COLOR1,   
-                       selectedColor.red, FALSE);
-        SetScrollPos (hWndScrollColor2, SB_CTL, selectedColor.green, TRUE);
-        SetDlgItemInt (hWndDlg, LABEL_COLOR2,   
-                       selectedColor.green, FALSE);
-        SetScrollPos (hWndScrollColor3, SB_CTL, selectedColor.blue, TRUE);
-        SetDlgItemInt (hWndDlg, LABEL_COLOR3,   
-                       selectedColor.blue, FALSE);
-        SetScrollPos (hWndScrollAlpha, SB_CTL, selectedColor.alpha, TRUE);
-        SetDlgItemInt (hWndDlg, LABEL_ALPHA,   
-                       selectedColor.alpha, FALSE);
+      // set the scroll bars and labels
+      SetScrollPos(hWndScrollColor1, SB_CTL, (Int)hsvColor.hue, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                    (Int)hsvColor.hue, FALSE);
+      SetScrollPos(hWndScrollColor2, SB_CTL, (Int)hsvColor.saturation, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_COLOR2,
+                    (Int)hsvColor.saturation, FALSE);
+      SetScrollPos(hWndScrollColor3, SB_CTL, (Int)hsvColor.value, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_COLOR3,
+                    (Int)hsvColor.value, FALSE);
+      SetScrollPos(hWndScrollAlpha, SB_CTL, (Int)hsvColor.alpha, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_ALPHA,
+                    (Int)hsvColor.alpha, FALSE);
 
-      }  // end else
+    } // end if
+    else
+    {
 
-			//
-			// move the window to the display position, but keep the whole
-			// window on the screen
-			//
-			PositionWindowOnScreen( hWndDlg, displayPos.x, displayPos.y );
+      // init the RGB and intensity scroll bar extents
+      SendMessage(hWndScrollColor1, SBM_SETRANGE, 1, 255);
+      SendMessage(hWndScrollColor2, SBM_SETRANGE, 1, 255);
+      SendMessage(hWndScrollColor3, SBM_SETRANGE, 1, 255);
+      SendMessage(hWndScrollAlpha, SBM_SETRANGE, 0, 255);
+      SetScrollPos(hWndScrollColor1, SB_CTL, selectedColor.red, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                    selectedColor.red, FALSE);
+      SetScrollPos(hWndScrollColor2, SB_CTL, selectedColor.green, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_COLOR2,
+                    selectedColor.green, FALSE);
+      SetScrollPos(hWndScrollColor3, SB_CTL, selectedColor.blue, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_COLOR3,
+                    selectedColor.blue, FALSE);
+      SetScrollPos(hWndScrollAlpha, SB_CTL, selectedColor.alpha, TRUE);
+      SetDlgItemInt(hWndDlg, LABEL_ALPHA,
+                    selectedColor.alpha, FALSE);
 
-      return TRUE;
+    } // end else
 
-    }  // end case WM_INITDIALOG
+    //
+    // move the window to the display position, but keep the whole
+    // window on the screen
+    //
+    PositionWindowOnScreen(hWndDlg, displayPos.x, displayPos.y);
 
-    // ------------------------------------------------------------------------
-    case WM_DRAWITEM:  {
-      UINT idCtl = (UINT) wParam;             // control identifier 
-      LPDRAWITEMSTRUCT lpdis = (LPDRAWITEMSTRUCT) lParam; // item drawing 
-      HWND hWndControl;
-      RECT rect;
-      ICoord2D center;
-      Int radius;
+    return TRUE;
 
-      // Get the area we have to draw in
-      hWndControl = GetDlgItem (hWndDlg, idCtl);
-      GetClientRect (hWndControl, &rect);
-      center.x = (rect.right - rect.left) / 2;
-      center.y = (rect.bottom - rect.top) / 2;
-      
-      // record radius we have to work with
-      radius = (rect.right - rect.left) / 2;
+  } // end case WM_INITDIALOG
 
-      switch (idCtl)  {
-    
-        case BUTTON_PREVIEW:  {
-          RGBColorReal rgbColor;
-          HSVColorReal hsvColor;
-          HBRUSH hBrushOld, hBrushNew;
+  // ------------------------------------------------------------------------
+  case WM_DRAWITEM:
+  {
+    UINT idCtl = (UINT)wParam;                         // control identifier
+    LPDRAWITEMSTRUCT lpdis = (LPDRAWITEMSTRUCT)lParam; // item drawing
+    HWND hWndControl;
+    RECT rect;
+    ICoord2D center;
+    Int radius;
 
-          if (mode == MODE_RGB)  {
-            rgbColor.red =   (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, 
-                                                    NULL, FALSE);
-            rgbColor.green = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, 
-                                                    NULL, FALSE);
-            rgbColor.blue =  (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR3, 
-                                                    NULL, FALSE);
-          }  // end if
-          else  {
-            hsvColor.hue        = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, 
-                                                         NULL, FALSE);
-            hsvColor.saturation = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, 
-                                                         NULL, FALSE);
-            hsvColor.value      = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR3, 
-                                                         NULL, FALSE);
-            // convert to ranges 0 - 1 for RGB conversion
-            hsvColor.saturation /= 100.0f;
-            hsvColor.value      /= 100.0f;
-            rgbColor = hsvToRGB (hsvColor);
-            // convert RGB ranges to 0 - 255
-            rgbColor.red   *= 255;
-            rgbColor.green *= 255;
-            rgbColor.blue  *= 255;
-          }  // end else
-     
-          // create a new brush and select it into DC
-          hBrushNew = CreateSolidBrush (RGB ((BYTE) rgbColor.red,
-                                             (BYTE) rgbColor.green,
-                                             (BYTE) rgbColor.blue));
-          hBrushOld = (HBRUSH)SelectObject( lpdis->hDC, hBrushNew );
+    // Get the area we have to draw in
+    hWndControl = GetDlgItem(hWndDlg, idCtl);
+    GetClientRect(hWndControl, &rect);
+    center.x = (rect.right - rect.left) / 2;
+    center.y = (rect.bottom - rect.top) / 2;
 
-          // draw the rectangle
-          Rectangle (lpdis->hDC, rect.left, rect.top, 
-                     rect.right, rect.bottom);
+    // record radius we have to work with
+    radius = (rect.right - rect.left) / 2;
 
-          // put the old brush back and delete the new one
-          SelectObject (lpdis->hDC, hBrushOld);
-          DeleteObject (hBrushNew);
+    switch (idCtl)
+    {
 
-          // validate this new area
-          ValidateRect (hWndControl, NULL);
+    case BUTTON_PREVIEW:
+    {
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
+      HBRUSH hBrushOld, hBrushNew;
 
-          break;
-          
-        }  // end case BUTTON_PREVIEW
-
-        // --------------------------------------------------------------------
-        // Draw the bar of either HUE or RED next to the scroll bar
-        // --------------------------------------------------------------------
-        case BUTTON_COLORBAR1:  {
-          Real step;
-          Int x, y;
-          RGBColorReal rgbColor;
-          HSVColorReal hsvColor;
-
-          // compute how big of a red increment for each line as we step
-          // down the bar
-          if (mode == MODE_HSV)
-            step = 360.0f / (Real) (rect.right - rect.left);
-          else
-            step = 255.0f / (Real) (rect.right - rect.left);
-
-          // compute the first color, create pen for it, and save the
-          // original pen
-          if (mode == MODE_HSV)  {
-            hsvColor.hue = 1;
-            hsvColor.saturation = 1;
-            hsvColor.value = 1;
-            rgbColor = hsvToRGB (hsvColor);
-            rgbColor.red   *= 255.0f;
-            rgbColor.green *= 255.0f;
-            rgbColor.blue  *= 255.0f;
-          }  // end if
-          else  {
-            rgbColor.red = 0;
-            rgbColor.green = 0;
-            rgbColor.blue = 0;
-          }  // end else
-          
-          // loop through each horizontal line available in the bar drawing
-          // the correct color there
-          for (x = 0; x < (rect.right - rect.left) - 1;  x++)  {
-
-            // draw a horizontal row of pixels with this color
-            for (y = 0; y < rect.bottom; y++)
-              SetPixel (lpdis->hDC, x, y, RGB ((BYTE) rgbColor.red,
-                                                 (BYTE) rgbColor.green,
-                                                 (BYTE) rgbColor.blue));
-
-            // increment the color, create new pen, and delete old pen
-            if (mode == MODE_HSV)  {
-              hsvColor.hue += step;
-              rgbColor = hsvToRGB (hsvColor);
-              rgbColor.red   *= 255;
-              rgbColor.green *= 255;
-              rgbColor.blue  *= 255;
-            }  // end if
-            else  {
-              rgbColor.red += step;
-            }  // end else
-            
-          }  // end for i
-
-          break;
-
-        }  // end case BUTTON_COLORBAR1
-
-        // --------------------------------------------------------------------
-        // Draw the bar of either SATURATION or GREEN next to the scroll bar
-        // --------------------------------------------------------------------
-        case BUTTON_COLORBAR2:  {
-          Real step;
-          Int x, y;
-          RGBColorReal rgbColor;
-          HSVColorReal hsvColor;
-
-          // compute how big of a increment for each line as we step
-          // down the bar
-          if (mode == MODE_HSV)
-            step = 1.0f / (Real) (rect.right - rect.left);
-          else
-            step = 255.0f / (Real) (rect.right - rect.left);
-
-          // compute the first color, create pen for it, and save the
-          // original pen
-          if (mode == MODE_HSV)  {
-            hsvColor.hue = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, 
+      if (mode == MODE_RGB)
+      {
+        rgbColor.red = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                                           NULL, FALSE);
+        rgbColor.green = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2,
+                                             NULL, FALSE);
+        rgbColor.blue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR3,
+                                            NULL, FALSE);
+      } // end if
+      else
+      {
+        hsvColor.hue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                                           NULL, FALSE);
+        hsvColor.saturation = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2,
                                                   NULL, FALSE);
-            hsvColor.saturation = 1.0f / 100.0f;
-            hsvColor.value = 1;
-            rgbColor = hsvToRGB (hsvColor);
-            rgbColor.red   *= 255;
-            rgbColor.green *= 255;
-            rgbColor.blue  *= 255;
-          }  // end if
-          else  {
-            rgbColor.red = 0;
-            rgbColor.green = 0;
-            rgbColor.blue = 0;
-          }  // end else
-          
-          // loop through each horizontal line available in the bar drawing
-          // the correct color there
-          for (x = 0; x < (rect.right - rect.left) - 1;  x++)  {
+        hsvColor.value = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR3,
+                                             NULL, FALSE);
+        // convert to ranges 0 - 1 for RGB conversion
+        hsvColor.saturation /= 100.0f;
+        hsvColor.value /= 100.0f;
+        rgbColor = hsvToRGB(hsvColor);
+        // convert RGB ranges to 0 - 255
+        rgbColor.red *= 255;
+        rgbColor.green *= 255;
+        rgbColor.blue *= 255;
+      } // end else
 
-            // draw a horizontal row of pixels with this color
-            for (y = 0; y < rect.bottom; y++)
-              SetPixel (lpdis->hDC, x, y, RGB ((BYTE) rgbColor.red,
-                                                 (BYTE) rgbColor.green,
-                                                 (BYTE) rgbColor.blue));
+      // create a new brush and select it into DC
+      hBrushNew = CreateSolidBrush(RGB((BYTE)rgbColor.red,
+                                       (BYTE)rgbColor.green,
+                                       (BYTE)rgbColor.blue));
+      hBrushOld = (HBRUSH)SelectObject(lpdis->hDC, hBrushNew);
 
-            // increment the color, create new pen, and delete old pen
-            if (mode == MODE_HSV)  {
-              hsvColor.saturation += step;
-              rgbColor = hsvToRGB (hsvColor);
-              rgbColor.red   *= 255;
-              rgbColor.green *= 255;
-              rgbColor.blue  *= 255;
-            }  // end if
-            else  {
-              rgbColor.green += step;
-            }  // end else
-            
-          }  // end for i
+      // draw the rectangle
+      Rectangle(lpdis->hDC, rect.left, rect.top,
+                rect.right, rect.bottom);
 
-          break;
+      // put the old brush back and delete the new one
+      SelectObject(lpdis->hDC, hBrushOld);
+      DeleteObject(hBrushNew);
 
-        }  // end case BUTTON_COLORBAR2
+      // validate this new area
+      ValidateRect(hWndControl, NULL);
 
-        // --------------------------------------------------------------------
-        // Draw the bar of either VALUE or BLUE next to the scroll bar
-        // --------------------------------------------------------------------
-        case BUTTON_COLORBAR3:  {
-          Real step;
-          Int x, y;
-          RGBColorReal rgbColor;
-          HSVColorReal hsvColor;
+      break;
 
-          // compute how big of a increment for each line as we step
-          // down the bar
-          if (mode == MODE_HSV)
-            step = 1.0f / (Real) (rect.right - rect.left);
-          else
-            step = 255.0f / (Real) (rect.right - rect.left);
+    } // end case BUTTON_PREVIEW
 
-          // compute the first color, create pen for it, and save the
-          // original pen
-          if (mode == MODE_HSV)  {
-            hsvColor.hue = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, 
-                                                  NULL, FALSE);
-            hsvColor.saturation = 
-              (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, NULL, FALSE) / 100.0f;
-            hsvColor.value = 1.0f / 100.0f;
-            rgbColor = hsvToRGB (hsvColor);
-            rgbColor.red   *= 255.0f;
-            rgbColor.green *= 255.0f;
-            rgbColor.blue  *= 255.0f;
-          }  // end if
-          else  {
-            rgbColor.red = 0;
-            rgbColor.green = 0;
-            rgbColor.blue = 0;
-          }  // end else
-          
-          // loop through each horizontal line available in the bar drawing
-          // the correct color there
-          for (x = 0; x < (rect.right - rect.left) - 1;  x++)  {
-            
-            // draw a horizontal row of pixels with this color
-            for (y = 0; y < rect.bottom; y++)
-              SetPixel (lpdis->hDC, x, y, RGB ((BYTE) rgbColor.red,
-                                               (BYTE) rgbColor.green,
-                                               (BYTE) rgbColor.blue));
+    // --------------------------------------------------------------------
+    // Draw the bar of either HUE or RED next to the scroll bar
+    // --------------------------------------------------------------------
+    case BUTTON_COLORBAR1:
+    {
+      Real step;
+      Int x, y;
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
 
-            // increment the color, create new pen, and delete old pen
-            if (mode == MODE_HSV)  {
-              hsvColor.value += step;
-              rgbColor = hsvToRGB (hsvColor);
-              rgbColor.red   *= 255;
-              rgbColor.green *= 255;
-              rgbColor.blue  *= 255;
-            }  // end if
-            else  {
-              rgbColor.blue += step;
-            }  // end else
-            
-          }  // end for i
+      // compute how big of a red increment for each line as we step
+      // down the bar
+      if (mode == MODE_HSV)
+        step = 360.0f / (Real)(rect.right - rect.left);
+      else
+        step = 255.0f / (Real)(rect.right - rect.left);
 
-          break;
+      // compute the first color, create pen for it, and save the
+      // original pen
+      if (mode == MODE_HSV)
+      {
+        hsvColor.hue = 1;
+        hsvColor.saturation = 1;
+        hsvColor.value = 1;
+        rgbColor = hsvToRGB(hsvColor);
+        rgbColor.red *= 255.0f;
+        rgbColor.green *= 255.0f;
+        rgbColor.blue *= 255.0f;
+      } // end if
+      else
+      {
+        rgbColor.red = 0;
+        rgbColor.green = 0;
+        rgbColor.blue = 0;
+      } // end else
 
-        }  // end case BUTTON_COLORBAR3
+      // loop through each horizontal line available in the bar drawing
+      // the correct color there
+      for (x = 0; x < (rect.right - rect.left) - 1; x++)
+      {
 
-      }  // end switch
+        // draw a horizontal row of pixels with this color
+        for (y = 0; y < rect.bottom; y++)
+          SetPixel(lpdis->hDC, x, y, RGB((BYTE)rgbColor.red, (BYTE)rgbColor.green, (BYTE)rgbColor.blue));
 
-      return TRUE;
-
-    }  // end case WM_DRAWITEM
-
-    // ------------------------------------------------------------------------
-    // horizontal scrolling on the color bars
-    // ------------------------------------------------------------------------
-    case WM_HSCROLL:  
-		{
-      Int  nScrollCode = (Int) LOWORD (wParam);        // scroll bar value 
-      Short nPos  = (Short) HIWORD (wParam);   // for thumbtrack only
-      HWND hWndScroll = (HWND) lParam;                // handle of scroll bar 
-      Int  labelID;         // identifier of the text label for this scroll bar
-      Int  thumbPos;        // current thumb position
-      Int  minPos, maxPos;  // max and min of this scrollbar
-
-      // get the thumb position for the scrollbar
-      thumbPos = GetScrollPos (hWndScroll, SB_CTL);
-
-      // find out which scroll bar we're talking about and set the correct
-      // labelID for that control
-      if (hWndScroll == hWndScrollColor1)
-        labelID = LABEL_COLOR1;
-      else if (hWndScroll == hWndScrollColor2)
-        labelID = LABEL_COLOR2;
-      else if (hWndScroll == hWndScrollColor3)
-        labelID = LABEL_COLOR3;
-			else if( hWndScroll == hWndScrollAlpha )
-				labelID = LABEL_ALPHA;
-
-      // find the max and min extents for this scroll bar
-      SendMessage (hWndScroll, SBM_GETRANGE, (WPARAM) &minPos, (LPARAM) &maxPos);
-
-      switch (nScrollCode)  {
-        case SB_LINELEFT:  {
-          if (thumbPos > minPos)
-            thumbPos--;
-          break;
-        }  // end case SB_LINELEFT
-        case SB_PAGELEFT:  {
-          if (thumbPos - 45 >= minPos)
-            thumbPos -= 45;
-          else
-            thumbPos = minPos;
-          break;
-        }  // end case SB_PAGELEFT
-        case SB_LINERIGHT:  {
-          if (thumbPos < maxPos)
-            thumbPos++;
-          break;
-        }  // end case SB_LINERIGHT
-        case SB_PAGERIGHT:  {
-          if (thumbPos + 45 < maxPos)
-            thumbPos += 45;
-          else
-            thumbPos = maxPos;
-          break;
-        }  // end case SB_PAGERIGHT
-        case SB_THUMBTRACK:  {
-          thumbPos = nPos;
-          break;
-        }  // end case SB_THUBTRACK
-        default:  {
-          return 0;
-        }  // end default
-      }  // end switch nScrollCode
-
-      // set the new scrollbar position and the text with it
-      SendMessage (hWndScroll, SBM_SETPOS, (WPARAM) thumbPos, (LPARAM) TRUE);
-      SetDlgItemInt (hWndDlg, labelID, thumbPos, FALSE);
-
-      // if this was a color scroll bar, save the color change in
-      // the appropriate color bead
-      if (hWndScroll == hWndScrollColor1 ||
-          hWndScroll == hWndScrollColor2 ||
-          hWndScroll == hWndScrollColor3 ||
-					hWndScroll == hWndScrollAlpha )  
-			{
-
-        RGBColorReal rgbColor;
-        HSVColorReal hsvColor;
-
-        if (mode == MODE_RGB)  {
-          rgbColor.red =   (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, 
-                                                  NULL, FALSE);
-          rgbColor.green = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, 
-                                                  NULL, FALSE);
-          rgbColor.blue =  (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR3, 
-                                                  NULL, FALSE);
-					rgbColor.alpha = (Real) GetDlgItemInt( hWndDlg, LABEL_ALPHA, 
-																								  NULL, FALSE );
-
-        }  // end if
-        else  {
-          hsvColor.hue        = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, 
-                                                       NULL, FALSE);
-          hsvColor.saturation = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, 
-                                                       NULL, FALSE);
-          hsvColor.value      = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR3, 
-                                                       NULL, FALSE);
-					hsvColor.alpha			= (Real) GetDlgItemInt( hWndDlg, LABEL_ALPHA, 
-																											 NULL, FALSE );
-
-          // convert to ranges 0 - 1 for RGB conversion
-          hsvColor.saturation /= 100.0f;
-          hsvColor.value      /= 100.0f;
-          rgbColor = hsvToRGB (hsvColor);
-          // convert RGB ranges to 0 - 255
-          rgbColor.red   *= 255;
+        // increment the color, create new pen, and delete old pen
+        if (mode == MODE_HSV)
+        {
+          hsvColor.hue += step;
+          rgbColor = hsvToRGB(hsvColor);
+          rgbColor.red *= 255;
           rgbColor.green *= 255;
-          rgbColor.blue  *= 255;
-        }  // end else
+          rgbColor.blue *= 255;
+        } // end if
+        else
+        {
+          rgbColor.red += step;
+        } // end else
 
-        // store the color
-        selectedColor.red   = (Int) rgbColor.red;
-        selectedColor.green = (Int) rgbColor.green;
-        selectedColor.blue  = (Int) rgbColor.blue;
-				selectedColor.alpha = (Int) rgbColor.alpha;
+      } // end for i
 
-        // force update of preview box
-        // invalidate the preview box to force an update of its color
-        InvalidateRect( hWndPreview, NULL, FALSE);
-        UpdateWindow (hWndPreview);
+      break;
 
-        // force updates of the colorbars
-        InvalidateRect (hWndColorBar1, NULL, FALSE);
-        InvalidateRect (hWndColorBar2, NULL, FALSE);
-        InvalidateRect (hWndColorBar3, NULL, FALSE);
-        UpdateWindow (hWndColorBar1);
-        UpdateWindow (hWndColorBar2);
-        UpdateWindow (hWndColorBar3);
+    } // end case BUTTON_COLORBAR1
 
-      }  // end if, color bar scroll message
-    
-      return 0;
+    // --------------------------------------------------------------------
+    // Draw the bar of either SATURATION or GREEN next to the scroll bar
+    // --------------------------------------------------------------------
+    case BUTTON_COLORBAR2:
+    {
+      Real step;
+      Int x, y;
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
 
-    }  // end case WM_HSCROLL
+      // compute how big of a increment for each line as we step
+      // down the bar
+      if (mode == MODE_HSV)
+        step = 1.0f / (Real)(rect.right - rect.left);
+      else
+        step = 255.0f / (Real)(rect.right - rect.left);
 
-    // ------------------------------------------------------------------------
-    case WM_COMMAND:  {
-//      Int wNotifyCode = HIWORD(wParam); // notification code 
-      Int wID = LOWORD(wParam);         // id of control
-//      HWND hWndControl = (HWND) lParam; // handle of control 
+      // compute the first color, create pen for it, and save the
+      // original pen
+      if (mode == MODE_HSV)
+      {
+        hsvColor.hue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                                           NULL, FALSE);
+        hsvColor.saturation = 1.0f / 100.0f;
+        hsvColor.value = 1;
+        rgbColor = hsvToRGB(hsvColor);
+        rgbColor.red *= 255;
+        rgbColor.green *= 255;
+        rgbColor.blue *= 255;
+      } // end if
+      else
+      {
+        rgbColor.red = 0;
+        rgbColor.green = 0;
+        rgbColor.blue = 0;
+      } // end else
 
-      switch (wID)  {
+      // loop through each horizontal line available in the bar drawing
+      // the correct color there
+      for (x = 0; x < (rect.right - rect.left) - 1; x++)
+      {
 
-        // --------------------------------------------------------------------
-        // color ok
-        // --------------------------------------------------------------------
-        case IDOK:  {
+        // draw a horizontal row of pixels with this color
+        for (y = 0; y < rect.bottom; y++)
+          SetPixel(lpdis->hDC, x, y, RGB((BYTE)rgbColor.red, (BYTE)rgbColor.green, (BYTE)rgbColor.blue));
 
-          EndDialog( hWndDlg, TRUE );  // color selected
-          break;
-        
-        }  // end case IDOK
+        // increment the color, create new pen, and delete old pen
+        if (mode == MODE_HSV)
+        {
+          hsvColor.saturation += step;
+          rgbColor = hsvToRGB(hsvColor);
+          rgbColor.red *= 255;
+          rgbColor.green *= 255;
+          rgbColor.blue *= 255;
+        } // end if
+        else
+        {
+          rgbColor.green += step;
+        } // end else
 
-        // --------------------------------------------------------------------
-        case IDCANCEL:  {
+      } // end for i
 
-          EndDialog( hWndDlg, FALSE );  // selection cancelled
-          break;
+      break;
 
-        }  // end case IDCANCEL
+    } // end case BUTTON_COLORBAR2
 
-        // --------------------------------------------------------------------
-        // Change from RGB mode to HSV mode and vice versa
-        // --------------------------------------------------------------------
-        case BUTTON_RGB_HSV:  {
-          HWND hWndScroll;
-          RGBColorReal rgbColor;
-          HSVColorReal hsvColor;
+    // --------------------------------------------------------------------
+    // Draw the bar of either VALUE or BLUE next to the scroll bar
+    // --------------------------------------------------------------------
+    case BUTTON_COLORBAR3:
+    {
+      Real step;
+      Int x, y;
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
 
-          if (mode == MODE_RGB)  {  // switch to HSV
-            rgbColor.red = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, NULL, FALSE);
-            rgbColor.green = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, NULL, FALSE);
-            rgbColor.blue = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR3, NULL, FALSE);
+      // compute how big of a increment for each line as we step
+      // down the bar
+      if (mode == MODE_HSV)
+        step = 1.0f / (Real)(rect.right - rect.left);
+      else
+        step = 255.0f / (Real)(rect.right - rect.left);
 
-            // convert rgb to range 0 - 1
-            rgbColor.red   /= 255.0f;
-            rgbColor.green /= 255.0f;
-            rgbColor.blue  /= 255.0f;
-            // convert the RGB to HSV
-            hsvColor = rgbToHSV (rgbColor);
-            // turn saturation and value to 0 - 100 ranges
-            hsvColor.saturation *= 100.0f;
-            hsvColor.value      *= 100.0f;
+      // compute the first color, create pen for it, and save the
+      // original pen
+      if (mode == MODE_HSV)
+      {
+        hsvColor.hue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                                           NULL, FALSE);
+        hsvColor.saturation =
+            (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2, NULL, FALSE) / 100.0f;
+        hsvColor.value = 1.0f / 100.0f;
+        rgbColor = hsvToRGB(hsvColor);
+        rgbColor.red *= 255.0f;
+        rgbColor.green *= 255.0f;
+        rgbColor.blue *= 255.0f;
+      } // end if
+      else
+      {
+        rgbColor.red = 0;
+        rgbColor.green = 0;
+        rgbColor.blue = 0;
+      } // end else
 
-            // change the scrollbar extents and positions
-            hWndScroll = GetDlgItem (hWndDlg, SCROLL_COLOR1);
-            SetScrollRange (hWndScroll, SB_CTL, 1, 360, FALSE);
-            SetScrollPos (hWndScroll, SB_CTL, (Int) hsvColor.hue, TRUE);
-            SetDlgItemInt (hWndDlg, LABEL_COLOR1, (Int) hsvColor.hue, FALSE);
+      // loop through each horizontal line available in the bar drawing
+      // the correct color there
+      for (x = 0; x < (rect.right - rect.left) - 1; x++)
+      {
 
-            hWndScroll = GetDlgItem (hWndDlg, SCROLL_COLOR2);
-            SetScrollRange (hWndScroll, SB_CTL, 1, 100, FALSE);
-            SetScrollPos (hWndScroll, SB_CTL, (Int) hsvColor.saturation, TRUE);
-            SetDlgItemInt (hWndDlg, LABEL_COLOR2, (Int) hsvColor.saturation, FALSE);
+        // draw a horizontal row of pixels with this color
+        for (y = 0; y < rect.bottom; y++)
+          SetPixel(lpdis->hDC, x, y, RGB((BYTE)rgbColor.red, (BYTE)rgbColor.green, (BYTE)rgbColor.blue));
 
-            hWndScroll = GetDlgItem (hWndDlg, SCROLL_COLOR3);
-            SetScrollRange (hWndScroll, SB_CTL, 1, 100, FALSE);
-            SetScrollPos (hWndScroll, SB_CTL, (Int) hsvColor.value, TRUE);
-            SetDlgItemInt (hWndDlg, LABEL_COLOR3, (Int) hsvColor.value, FALSE);
+        // increment the color, create new pen, and delete old pen
+        if (mode == MODE_HSV)
+        {
+          hsvColor.value += step;
+          rgbColor = hsvToRGB(hsvColor);
+          rgbColor.red *= 255;
+          rgbColor.green *= 255;
+          rgbColor.blue *= 255;
+        } // end if
+        else
+        {
+          rgbColor.blue += step;
+        } // end else
 
-            mode = MODE_HSV;
+      } // end for i
 
-            // change the text for the button
-            SetWindowText (GetDlgItem (hWndDlg, BUTTON_RGB_HSV), 
-                           "Switch to RGB");
+      break;
 
-          }  // end if, switch to HSV
-          else  {  // switch to RGB
-            hsvColor.hue = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR1, NULL, FALSE);
-            hsvColor.saturation = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR2, NULL, FALSE);
-            hsvColor.value = (Real) GetDlgItemInt (hWndDlg, LABEL_COLOR3, NULL, FALSE);
+    } // end case BUTTON_COLORBAR3
 
-            // convert saturation and value to range 0 - 1
-            hsvColor.saturation /= 100.0f;
-            hsvColor.value      /= 100.0f;
-            // convert the HSV to RGB
-            rgbColor = hsvToRGB (hsvColor);
-            // turn the rgb into 0 - 255 range
-            rgbColor.red   *= 255.0f;
-            rgbColor.green *= 255.0f;
-            rgbColor.blue  *= 255.0f;
+    } // end switch
 
-            // change the scrollbar extents and positions
-            hWndScroll = GetDlgItem (hWndDlg, SCROLL_COLOR1);
-            SetScrollRange (hWndScroll, SB_CTL, 1, 255, FALSE);
-            SetScrollPos (hWndScroll, SB_CTL, (Int) rgbColor.red, TRUE);
-            SetDlgItemInt (hWndDlg, LABEL_COLOR1, (Int) rgbColor.red, FALSE);
+    return TRUE;
 
-            hWndScroll = GetDlgItem (hWndDlg, SCROLL_COLOR2);
-            SetScrollRange (hWndScroll, SB_CTL, 1, 255, FALSE);
-            SetScrollPos (hWndScroll, SB_CTL, (Int) rgbColor.green, TRUE);
-            SetDlgItemInt (hWndDlg, LABEL_COLOR2, (Int) rgbColor.green, FALSE);
+  } // end case WM_DRAWITEM
 
-            hWndScroll = GetDlgItem (hWndDlg, SCROLL_COLOR3);
-            SetScrollRange (hWndScroll, SB_CTL, 1, 255, FALSE);
-            SetScrollPos (hWndScroll, SB_CTL, (Int) rgbColor.blue, TRUE);
-            SetDlgItemInt (hWndDlg, LABEL_COLOR3, (Int) rgbColor.blue, FALSE);
+  // ------------------------------------------------------------------------
+  // horizontal scrolling on the color bars
+  // ------------------------------------------------------------------------
+  case WM_HSCROLL:
+  {
+    Int nScrollCode = (Int)LOWORD(wParam); // scroll bar value
+    Short nPos = (Short)HIWORD(wParam);    // for thumbtrack only
+    HWND hWndScroll = (HWND)lParam;        // handle of scroll bar
+    Int labelID;                           // identifier of the text label for this scroll bar
+    Int thumbPos;                          // current thumb position
+    Int minPos, maxPos;                    // max and min of this scrollbar
 
-            // change the text for the button
-            SetWindowText (GetDlgItem (hWndDlg, BUTTON_RGB_HSV), 
-                           "Switch to HSV");
+    // get the thumb position for the scrollbar
+    thumbPos = GetScrollPos(hWndScroll, SB_CTL);
 
-            mode = MODE_RGB;
+    // find out which scroll bar we're talking about and set the correct
+    // labelID for that control
+    if (hWndScroll == hWndScrollColor1)
+      labelID = LABEL_COLOR1;
+    else if (hWndScroll == hWndScrollColor2)
+      labelID = LABEL_COLOR2;
+    else if (hWndScroll == hWndScrollColor3)
+      labelID = LABEL_COLOR3;
+    else if (hWndScroll == hWndScrollAlpha)
+      labelID = LABEL_ALPHA;
 
-          }  // end else, switch to RGB
+    // find the max and min extents for this scroll bar
+    SendMessage(hWndScroll, SBM_GETRANGE, (WPARAM)&minPos, (LPARAM)&maxPos);
 
-          // invalidate all the vertical color bars so they are redrawn
-          InvalidateRect (hWndColorBar1, NULL, TRUE);
-          InvalidateRect (hWndColorBar2, NULL, TRUE);
-          InvalidateRect (hWndColorBar3, NULL, TRUE);
-
-        }  // end case BUTTON_RGB_HSV
-
-      }  // end switch (LOWORD (wParam))
-
-      return 0;
-
-    } // end case WM_COMMAND
-
-    // ------------------------------------------------------------------------
-    // Only hide the window on a close rather than destroy it since it will
-    // probably be needed again.
-    // ------------------------------------------------------------------------
-    case WM_CLOSE:
-      ShowWindow(hWndDlg, SW_HIDE);
-      return 0;
-
+    switch (nScrollCode)
+    {
+    case SB_LINELEFT:
+    {
+      if (thumbPos > minPos)
+        thumbPos--;
+      break;
+    } // end case SB_LINELEFT
+    case SB_PAGELEFT:
+    {
+      if (thumbPos - 45 >= minPos)
+        thumbPos -= 45;
+      else
+        thumbPos = minPos;
+      break;
+    } // end case SB_PAGELEFT
+    case SB_LINERIGHT:
+    {
+      if (thumbPos < maxPos)
+        thumbPos++;
+      break;
+    } // end case SB_LINERIGHT
+    case SB_PAGERIGHT:
+    {
+      if (thumbPos + 45 < maxPos)
+        thumbPos += 45;
+      else
+        thumbPos = maxPos;
+      break;
+    } // end case SB_PAGERIGHT
+    case SB_THUMBTRACK:
+    {
+      thumbPos = nPos;
+      break;
+    } // end case SB_THUBTRACK
     default:
-      return 0;  // for all messages that are not processed
+    {
+      return 0;
+    } // end default
+    } // end switch nScrollCode
 
-  }  // end of switch (uMsg)
+    // set the new scrollbar position and the text with it
+    SendMessage(hWndScroll, SBM_SETPOS, (WPARAM)thumbPos, (LPARAM)TRUE);
+    SetDlgItemInt(hWndDlg, labelID, thumbPos, FALSE);
 
-}  // End of SelectColor
+    // if this was a color scroll bar, save the color change in
+    // the appropriate color bead
+    if (hWndScroll == hWndScrollColor1 ||
+        hWndScroll == hWndScrollColor2 ||
+        hWndScroll == hWndScrollColor3 ||
+        hWndScroll == hWndScrollAlpha)
+    {
+
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
+
+      if (mode == MODE_RGB)
+      {
+        rgbColor.red = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                                           NULL, FALSE);
+        rgbColor.green = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2,
+                                             NULL, FALSE);
+        rgbColor.blue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR3,
+                                            NULL, FALSE);
+        rgbColor.alpha = (Real)GetDlgItemInt(hWndDlg, LABEL_ALPHA,
+                                             NULL, FALSE);
+
+      } // end if
+      else
+      {
+        hsvColor.hue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1,
+                                           NULL, FALSE);
+        hsvColor.saturation = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2,
+                                                  NULL, FALSE);
+        hsvColor.value = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR3,
+                                             NULL, FALSE);
+        hsvColor.alpha = (Real)GetDlgItemInt(hWndDlg, LABEL_ALPHA,
+                                             NULL, FALSE);
+
+        // convert to ranges 0 - 1 for RGB conversion
+        hsvColor.saturation /= 100.0f;
+        hsvColor.value /= 100.0f;
+        rgbColor = hsvToRGB(hsvColor);
+        // convert RGB ranges to 0 - 255
+        rgbColor.red *= 255;
+        rgbColor.green *= 255;
+        rgbColor.blue *= 255;
+      } // end else
+
+      // store the color
+      selectedColor.red = (Int)rgbColor.red;
+      selectedColor.green = (Int)rgbColor.green;
+      selectedColor.blue = (Int)rgbColor.blue;
+      selectedColor.alpha = (Int)rgbColor.alpha;
+
+      // force update of preview box
+      // invalidate the preview box to force an update of its color
+      InvalidateRect(hWndPreview, NULL, FALSE);
+      UpdateWindow(hWndPreview);
+
+      // force updates of the colorbars
+      InvalidateRect(hWndColorBar1, NULL, FALSE);
+      InvalidateRect(hWndColorBar2, NULL, FALSE);
+      InvalidateRect(hWndColorBar3, NULL, FALSE);
+      UpdateWindow(hWndColorBar1);
+      UpdateWindow(hWndColorBar2);
+      UpdateWindow(hWndColorBar3);
+
+    } // end if, color bar scroll message
+
+    return 0;
+
+  } // end case WM_HSCROLL
+
+  // ------------------------------------------------------------------------
+  case WM_COMMAND:
+  {
+    //      Int wNotifyCode = HIWORD(wParam); // notification code
+    Int wID = LOWORD(wParam); // id of control
+                              //      HWND hWndControl = (HWND) lParam; // handle of control
+
+    switch (wID)
+    {
+
+    // --------------------------------------------------------------------
+    // color ok
+    // --------------------------------------------------------------------
+    case IDOK:
+    {
+
+      EndDialog(hWndDlg, TRUE); // color selected
+      break;
+
+    } // end case IDOK
+
+    // --------------------------------------------------------------------
+    case IDCANCEL:
+    {
+
+      EndDialog(hWndDlg, FALSE); // selection cancelled
+      break;
+
+    } // end case IDCANCEL
+
+    // --------------------------------------------------------------------
+    // Change from RGB mode to HSV mode and vice versa
+    // --------------------------------------------------------------------
+    case BUTTON_RGB_HSV:
+    {
+      HWND hWndScroll;
+      RGBColorReal rgbColor;
+      HSVColorReal hsvColor;
+
+      if (mode == MODE_RGB)
+      { // switch to HSV
+        rgbColor.red = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1, NULL, FALSE);
+        rgbColor.green = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2, NULL, FALSE);
+        rgbColor.blue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR3, NULL, FALSE);
+
+        // convert rgb to range 0 - 1
+        rgbColor.red /= 255.0f;
+        rgbColor.green /= 255.0f;
+        rgbColor.blue /= 255.0f;
+        // convert the RGB to HSV
+        hsvColor = rgbToHSV(rgbColor);
+        // turn saturation and value to 0 - 100 ranges
+        hsvColor.saturation *= 100.0f;
+        hsvColor.value *= 100.0f;
+
+        // change the scrollbar extents and positions
+        hWndScroll = GetDlgItem(hWndDlg, SCROLL_COLOR1);
+        SetScrollRange(hWndScroll, SB_CTL, 1, 360, FALSE);
+        SetScrollPos(hWndScroll, SB_CTL, (Int)hsvColor.hue, TRUE);
+        SetDlgItemInt(hWndDlg, LABEL_COLOR1, (Int)hsvColor.hue, FALSE);
+
+        hWndScroll = GetDlgItem(hWndDlg, SCROLL_COLOR2);
+        SetScrollRange(hWndScroll, SB_CTL, 1, 100, FALSE);
+        SetScrollPos(hWndScroll, SB_CTL, (Int)hsvColor.saturation, TRUE);
+        SetDlgItemInt(hWndDlg, LABEL_COLOR2, (Int)hsvColor.saturation, FALSE);
+
+        hWndScroll = GetDlgItem(hWndDlg, SCROLL_COLOR3);
+        SetScrollRange(hWndScroll, SB_CTL, 1, 100, FALSE);
+        SetScrollPos(hWndScroll, SB_CTL, (Int)hsvColor.value, TRUE);
+        SetDlgItemInt(hWndDlg, LABEL_COLOR3, (Int)hsvColor.value, FALSE);
+
+        mode = MODE_HSV;
+
+        // change the text for the button
+        SetWindowText(GetDlgItem(hWndDlg, BUTTON_RGB_HSV),
+                      "Switch to RGB");
+
+      } // end if, switch to HSV
+      else
+      { // switch to RGB
+        hsvColor.hue = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR1, NULL, FALSE);
+        hsvColor.saturation = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR2, NULL, FALSE);
+        hsvColor.value = (Real)GetDlgItemInt(hWndDlg, LABEL_COLOR3, NULL, FALSE);
+
+        // convert saturation and value to range 0 - 1
+        hsvColor.saturation /= 100.0f;
+        hsvColor.value /= 100.0f;
+        // convert the HSV to RGB
+        rgbColor = hsvToRGB(hsvColor);
+        // turn the rgb into 0 - 255 range
+        rgbColor.red *= 255.0f;
+        rgbColor.green *= 255.0f;
+        rgbColor.blue *= 255.0f;
+
+        // change the scrollbar extents and positions
+        hWndScroll = GetDlgItem(hWndDlg, SCROLL_COLOR1);
+        SetScrollRange(hWndScroll, SB_CTL, 1, 255, FALSE);
+        SetScrollPos(hWndScroll, SB_CTL, (Int)rgbColor.red, TRUE);
+        SetDlgItemInt(hWndDlg, LABEL_COLOR1, (Int)rgbColor.red, FALSE);
+
+        hWndScroll = GetDlgItem(hWndDlg, SCROLL_COLOR2);
+        SetScrollRange(hWndScroll, SB_CTL, 1, 255, FALSE);
+        SetScrollPos(hWndScroll, SB_CTL, (Int)rgbColor.green, TRUE);
+        SetDlgItemInt(hWndDlg, LABEL_COLOR2, (Int)rgbColor.green, FALSE);
+
+        hWndScroll = GetDlgItem(hWndDlg, SCROLL_COLOR3);
+        SetScrollRange(hWndScroll, SB_CTL, 1, 255, FALSE);
+        SetScrollPos(hWndScroll, SB_CTL, (Int)rgbColor.blue, TRUE);
+        SetDlgItemInt(hWndDlg, LABEL_COLOR3, (Int)rgbColor.blue, FALSE);
+
+        // change the text for the button
+        SetWindowText(GetDlgItem(hWndDlg, BUTTON_RGB_HSV),
+                      "Switch to HSV");
+
+        mode = MODE_RGB;
+
+      } // end else, switch to RGB
+
+      // invalidate all the vertical color bars so they are redrawn
+      InvalidateRect(hWndColorBar1, NULL, TRUE);
+      InvalidateRect(hWndColorBar2, NULL, TRUE);
+      InvalidateRect(hWndColorBar3, NULL, TRUE);
+
+    } // end case BUTTON_RGB_HSV
+
+    } // end switch (LOWORD (wParam))
+
+    return 0;
+
+  } // end case WM_COMMAND
+
+  // ------------------------------------------------------------------------
+  // Only hide the window on a close rather than destroy it since it will
+  // probably be needed again.
+  // ------------------------------------------------------------------------
+  case WM_CLOSE:
+    ShowWindow(hWndDlg, SW_HIDE);
+    return 0;
+
+  default:
+    return 0; // for all messages that are not processed
+
+  } // end of switch (uMsg)
+
+} // End of SelectColor

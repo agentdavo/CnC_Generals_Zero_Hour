@@ -25,8 +25,8 @@
 // PickUnitDialog.h : header file
 //
 
-#include "Common/AsciiString.h"
-#include "Common/ThingSort.h"
+#include "common/AsciiString.h"
+#include "common/ThingSort.h"
 
 #define  BUILD_PICK_PANEL_SECTION "PickUnitWindow"
 

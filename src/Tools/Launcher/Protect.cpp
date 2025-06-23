@@ -17,21 +17,21 @@
 */
 
 /******************************************************************************
-*
-* FILE
-*     $Archive: /APILauncher/Protect.cpp $
-*
-* DESCRIPTION
-*
-* PROGRAMMER
-*     Denzil E. Long, Jr.
-*     $Author: Mcampbell $
-*
-* VERSION INFO
-*     $Modtime: 6/21/01 5:09p $
-*     $Revision: 6 $
-*
-******************************************************************************/
+ *
+ * FILE
+ *     $Archive: /APILauncher/Protect.cpp $
+ *
+ * DESCRIPTION
+ *
+ * PROGRAMMER
+ *     Denzil E. Long, Jr.
+ *     $Author: Mcampbell $
+ *
+ * VERSION INFO
+ *     $Modtime: 6/21/01 5:09p $
+ *     $Revision: 6 $
+ *
+ ******************************************************************************/
 
 #include "Protect.h"
 
@@ -52,9 +52,9 @@
 // This GUID should be unique for each product. (CHANGE IT WHEN DOING THE
 // NEXT PRODUCT) Note that the game will need to agree on this GUID also, so
 // the game will have to be modified also.
-const char* const LAUNCHER_GUID =
+const char *const LAUNCHER_GUID =
 	"150C6462-4E49-4ccf-B073-57579569D994"; // Generals Multiplayer Test Launcher GUID
-const char* const protectGUID =
+const char *const protectGUID =
 	"6096561D-8A70-48ed-9FF8-18552419E50D"; // Generals Multiplayer Test Protect GUID
 
 /*
@@ -134,7 +134,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 		return;
 	}
 
-	void* buffer = NULL;
+	void *buffer = NULL;
 	UInt32 bufferSize = 0;
 	file.Load(buffer, bufferSize);
 
@@ -166,19 +166,19 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 			result = RegQueryValueEx(hKey, "InstallPath", NULL, &type, installPath, &sizeOfBuffer);
 
 			assert((result == ERROR_SUCCESS) && "Failed to obtain game install path!");
-			assert((strlen((const char*)installPath) > 0) && "Game install path invalid!");
+			assert((strlen((const char *)installPath) > 0) && "Game install path invalid!");
 			DebugPrint("Game install path: %s\n", installPath);
 
 			// Retrieve Hard drive S/N
 			char drive[8];
-			_splitpath((const char*)installPath, drive, NULL, NULL, NULL);
+			_splitpath((const char *)installPath, drive, NULL, NULL, NULL);
 			strcat(drive, "\\");
 
 			DWORD volumeSerialNumber = 0;
 			DWORD maxComponentLength;
 			DWORD fileSystemFlags;
-			BOOL volInfoSuccess = GetVolumeInformation((const char*)drive, NULL, 0,
-														&volumeSerialNumber, &maxComponentLength, &fileSystemFlags, NULL, 0);
+			BOOL volInfoSuccess = GetVolumeInformation((const char *)drive, NULL, 0,
+													   &volumeSerialNumber, &maxComponentLength, &fileSystemFlags, NULL, 0);
 
 			if (volInfoSuccess == FALSE)
 			{
@@ -210,7 +210,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 			{
 				result = RegQueryValueEx(hKey, "", NULL, &type, gameSerialNumber, &sizeOfBuffer);
 				assert((result == ERROR_SUCCESS) && "Failed to obtain game serial number!");
-				assert((strlen((const char*)gameSerialNumber) > 0) && "Game serial number invalid!");
+				assert((strlen((const char *)gameSerialNumber) > 0) && "Game serial number invalid!");
 			}
 
 			DebugPrint("Game serial number: %s\n", gameSerialNumber);
@@ -218,7 +218,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 			RegCloseKey(hKey);
 
 			// Add game serial number portion
-			strcat(passKey, (char*)gameSerialNumber);
+			strcat(passKey, (char *)gameSerialNumber);
 		}
 
 		// Obtain windows product ID
@@ -236,7 +236,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 			result = RegQueryValueEx(hKey, "ProductID", NULL, &type, winProductID, &sizeOfBuffer);
 
 			assert((result == ERROR_SUCCESS) && "Failed to obtain windows product ID!");
-			assert((strlen((const char*)winProductID) > 0) && "Invalid windows product ID");
+			assert((strlen((const char *)winProductID) > 0) && "Invalid windows product ID");
 
 			DebugPrint("Windows Product ID: %s\n", winProductID);
 
@@ -244,7 +244,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 
 			// Add windows product ID portion
 			strcat(passKey, "-");
-			strcat(passKey, (char*)winProductID);
+			strcat(passKey, (char *)winProductID);
 		}
 
 		DebugPrint("Retrieved PassKey: %s\n", passKey);
@@ -316,7 +316,6 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 	CloseHandle(event);
 	CDAPFN_ENDMARK(SendProtectMessage);
 }
-
 
 void ShutdownProtect(void)
 {

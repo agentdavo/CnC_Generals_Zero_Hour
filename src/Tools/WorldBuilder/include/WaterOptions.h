@@ -26,7 +26,7 @@
 //
 #include "WBPopupSlider.h"
 #include "OptionsPanel.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 
 class MapObject;
 class PolygonTrigger;

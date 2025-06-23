@@ -24,12 +24,12 @@
 
 // FILE: WinMain.h ////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-//                                                                          
-//                       Westwood Studios Pacific.                          
-//                                                                          
-//                       Confidential Information					         
-//                Copyright (C) 2001 - All Rights Reserved                  
-//                                                                          
+//
+//                       Westwood Studios Pacific.
+//
+//                       Confidential Information
+//                Copyright (C) 2001 - All Rights Reserved
+//
 //-----------------------------------------------------------------------------
 //
 // Project:    RTS3
@@ -57,14 +57,13 @@
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 
 // TYPE DEFINES ///////////////////////////////////////////////////////////////
-#define TIMER_EDIT_WINDOW_PULSE  1
+#define TIMER_EDIT_WINDOW_PULSE 1
 
 // INLINING ///////////////////////////////////////////////////////////////////
 
 // EXTERNALS //////////////////////////////////////////////////////////////////
-extern HWND ApplicationHWnd;  ///< application main window handle
-extern HINSTANCE ApplicationHInstance;  ///< application main instance handle
-extern Win32Mouse *TheWin32Mouse;  ///< the mouse for win processing
+extern HWND ApplicationHWnd;           ///< application main window handle
+extern HINSTANCE ApplicationHInstance; ///< application main instance handle
+extern Win32Mouse *TheWin32Mouse;      ///< the mouse for win processing
 
 #endif // __WINMAIN_H_
-

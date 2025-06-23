@@ -60,7 +60,7 @@
 #  ifndef NOMINMAX
 #    define NOMINMAX
 #  endif
-#   include <windows.h>
+#   include "common/windows.h"
 
 /* Windows static library */
 #   ifdef FREEGLUT_STATIC

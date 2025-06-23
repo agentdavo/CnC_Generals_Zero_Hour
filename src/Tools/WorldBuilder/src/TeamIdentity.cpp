@@ -24,10 +24,10 @@
 #include "TeamIdentity.h"
 #include "EditParameter.h"
 #include "PickUnitDialog.h"
-#include "Common/WellKnownKeys.h"	  
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingSort.h"
+#include "common/WellKnownKeys.h"	  
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/ThingSort.h"
 #include "GameLogic/SidesList.h"
 
 static const char* NEUTRAL_NAME_STR = "(neutral)";

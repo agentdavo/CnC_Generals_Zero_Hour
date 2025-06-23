@@ -27,7 +27,7 @@
 #include "shader.h"
 #include "vertmaterial.h"
 #include "Lib/BaseType.h"
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 
 // The draw objects draw a circle of diameter 1.0 cells.
 #define THE_RADIUS (0.8f*MAP_XY_FACTOR) 

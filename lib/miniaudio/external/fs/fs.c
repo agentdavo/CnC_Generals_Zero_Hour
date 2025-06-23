@@ -9,7 +9,7 @@
 #include <string.h>
 
 #if defined(_WIN32)
-#include <windows.h>    /* <-- Just can't get away from this darn thing... Needed for mutexes and file iteration. */
+#include "common/windows.h"    /* <-- Just can't get away from this darn thing... Needed for mutexes and file iteration. */
 
 static fs_result fs_result_from_GetLastError(DWORD error)
 {
