@@ -108,6 +108,8 @@ The stub has been expanded with additional `AIL_*` helpers so more of the
 original audio subsystem compiles against the new backend. It now stores
 per-sample user data and exposes a minimal 3D provider interface so older
 audio managers work without modification.
+- The `wwaudio` module now includes the stub's headers so Miles functions
+  compile without the original SDK.
 
 On macOS the build previously checked for Apple Clang before enabling the
 `-fblocks` option required by the CoreAudio headers. When GCC was selected the
