@@ -32,7 +32,7 @@
 #include "Common/Player.h"
 #include "Common/PlayerList.h"
 #include "Common/PlayerTemplate.h"
-#include "Common/File.h"
+#include "common/File.h"
 #include "GameClient/MapUtil.h"
 #include "GameClient/ShellHooks.h"
 #include "GameClient/GameText.h"

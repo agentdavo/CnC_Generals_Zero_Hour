@@ -45,7 +45,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <stdio.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <mmsystem.h>
 #include <assert.h>
 

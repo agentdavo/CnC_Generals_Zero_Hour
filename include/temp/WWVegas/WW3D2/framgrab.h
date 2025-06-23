@@ -51,7 +51,7 @@
 #endif
 
 #ifndef _WINDOWS_
-#include "Common/windows.h"
+#include "common/windows.h"
 #endif
 
 #ifndef _INC_WINDOWSX

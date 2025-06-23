@@ -1,5 +1,5 @@
 #include "LvglPlatform.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 
 #include <cstring>
 #include <unistd.h>

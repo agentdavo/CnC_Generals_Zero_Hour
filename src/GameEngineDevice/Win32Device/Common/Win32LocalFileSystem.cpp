@@ -26,7 +26,7 @@
 // Bryan Cleveland, August 2002
 ////////////////////////////////////////////////////////////
 
-#include "Common/windows.h"
+#include "common/windows.h"
 #include "Common/AsciiString.h"
 #include "Common/GameMemory.h"
 #include "Common/PerfTimer.h"

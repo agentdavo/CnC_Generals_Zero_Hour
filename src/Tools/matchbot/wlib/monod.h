@@ -27,7 +27,7 @@
 ///////////////////////// WIN32 ONLY ///////////////////////////////////
 
 #ifdef _WIN32
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <winioctl.h>
 
 

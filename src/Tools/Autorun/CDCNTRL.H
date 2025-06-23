@@ -44,7 +44,7 @@
 //#include	"always.h"
 //#include	<winmin.h>
 #define  STRICT
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <windowsx.h>
 #include	<ctype.h>
 

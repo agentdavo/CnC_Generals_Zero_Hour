@@ -45,7 +45,7 @@
 //         Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 #include "Common/GameMemory.h"
 #include "Common/FileSystem.h"

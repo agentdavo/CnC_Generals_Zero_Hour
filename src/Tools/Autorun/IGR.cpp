@@ -23,7 +23,7 @@
 //
 
 #include <assert.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <winreg.h>
 //#include "always.h"
 #include "IGR.h"

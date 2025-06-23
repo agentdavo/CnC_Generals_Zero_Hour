@@ -164,11 +164,11 @@ are now detected and `convert_lv_key()` translates every key listed in
 `lvglDevice` library now lives under `src/GameEngineDevice/lvglDevice` and is
 linked unconditionally from `src/CMakeLists.txt`.
 
-Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
+Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
 - The W3D device common files (radar, convert and factory helpers) now live under `src/GameEngineDevice/W3DDevice/Common` with their headers available in `include/GameEngineDevice/W3DDevice`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
 - The GameLogic subsystem has been relocated from `Generals/Code/GameEngine/Source/GameLogic` and `Generals/Code/GameEngine/Include/GameLogic` into `src/GameEngine/GameLogic` and `include/GameEngine/GameLogic`. `src/GameEngine/CMakeLists.txt` now globs these files into the `gameengine` library.
 - The precompiled source `PreRTS.cpp` moved to `src/GameEngine/Precompiled` and the header now excludes Windows-only includes. CMake builds use `target_precompile_headers` when available.
-- A lightweight `Logger` utility now lives in `src/Common` and `include/Common`. `Logger::init()` writes to `std::clog` and optionally a file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_ERROR` replace direct console output in `src/main.cpp`.
+- A lightweight `Logger` utility now lives in `src/Common` and `include/common`. `Logger::init()` writes to `std::clog` and optionally a file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_ERROR` replace direct console output in `src/main.cpp`.
 
   Example of logging progress during start-up:
 
@@ -181,7 +181,7 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Additional logging has been added across the startup code path so that
   initialization of major systems like `Shell` and input devices is visible
   in the log output.
-- Miles audio management header moved to `include/GameEngineDevice/MilesAudioDevice`. CMake no longer references `Generals/Code/GameEngineDevice/ A lightweight `Logger` utility now lives in `src/Common` and `include/Common`. `Logger::init()` writes to `std::clog` and an optional file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_E
+- Miles audio management header moved to `include/GameEngineDevice/MilesAudioDevice`. CMake no longer references `Generals/Code/GameEngineDevice/ A lightweight `Logger` utility now lives in `src/Common` and `include/common`. `Logger::init()` writes to `std::clog` and an optional file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_E
 - MilesAudioManager now builds against a miniaudio-based shim which replaces DirectSound. The gameenginedevice module links with the `milesstub` library and audio headers have moved to `include/GameEngineDevice`.
 - `gameenginedevice` now links against `milesstub` from `lib/miles-sdk-stub`.
 - `miniaudio` builds as its own static library. When compiling on macOS the file
@@ -196,8 +196,8 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - GitHub Actions now installs `build-essential`, X11 and Mesa development packages so Linux builds compile on CI.
 
 - LocalFile compilation issues fixed on case-sensitive builds by disabling memory pool macros and using standard allocation during migration.
-- A portable LocalFile implementation now lives under `src/GameEngine/Common/System` with its header in `include/Common`.  The class wraps the C stdio API instead of Win32 handles.
-- Header paths updated to prefer `Common/File.h` so the new implementation is used on case-sensitive systems.
+- A portable LocalFile implementation now lives under `src/GameEngine/Common/System` with its header in `include/common`.  The class wraps the C stdio API instead of Win32 handles.
+- Header paths updated to prefer `common/File.h` so the new implementation is used on case-sensitive systems.
 - LocalFile now overrides `operator new` and `delete` to sidestep the old memory pool hooks.
 - Added `GameNetwork/transport.h` shim header to resolve case sensitive include errors on Linux.
 - SubsystemInterface has been relocated to src/GameEngine/Common/System with its header in include/GameEngine/Common/subsystem_interface.h. Includes have been updated to use this lowercase path.
@@ -243,13 +243,14 @@ Stub headers for `Common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Certain `WW3D2` files were restored from the temp backup.
 - The obsolete `EABrowserDispatch` COM library has been removed. `BrowserDispatch.idl` was archived and the web browser interface will be reimplemented using a cross-platform HTTP layer.
 - macOS build now appends `-no_warning_for_no_symbols` using `CMAKE_C_ARCHIVE_FINISH` and `CMAKE_CXX_ARCHIVE_FINISH` so empty LVGL object files no longer break the archive step while still allowing CMake to find the correct `ranlib` executable.
-- Added a portable stub for `windows.h` under `include/Common` to ease non-Windows builds.
-- Updated source and header includes to reference this stub via `Common/windows.h`.
+- Added a portable stub for `windows.h` under `include/common` to ease non-Windows builds.
+- Updated source and header includes to reference this stub via `common/windows.h`.
 - Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and
   `ww3d2` now add the global `include/` directory to their CMake
   `target_include_directories` so macOS builds resolve headers such as
-  `Common/windows.h` and `GameEngine/Common/Debug.h`.
+  `common/windows.h` and `GameEngine/Common/Debug.h`.
 - Renamed `Vector.H` to `vector.h` and updated all includes to use the lowercase
   path to compile on case sensitive filesystems.
 - Corrected `WWDownload` headers to include `ftp.h` directly and match file
   casing.
+- Moved `include/Common` to `include/common` and updated header includes.

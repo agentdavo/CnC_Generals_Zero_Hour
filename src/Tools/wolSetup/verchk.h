@@ -22,7 +22,7 @@
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
-#include "Common/windows.h"
+#include "common/windows.h"
 
 // Obtain version information from the specified file.
 bool GetVersionInfo(char* filename, VS_FIXEDFILEINFO* fileInfo);

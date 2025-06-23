@@ -47,7 +47,7 @@
 
 #include "GameEngine/Common/subsystem_interface.h"
 #include <atlbase.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <Common/GameMemory.h>
 #include "EABrowserDispatch/BrowserDispatch.h"
 #include "FEBDispatch.h"

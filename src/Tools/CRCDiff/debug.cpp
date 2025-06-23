@@ -20,7 +20,7 @@
 // Minmal debug info
 // Author: Matthew D. Campbell, Sept 2002
 
-#include "Common/windows.h"
+#include "common/windows.h"
 #include "debug.h"
 #include <cstdio>
 

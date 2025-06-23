@@ -21,7 +21,7 @@
 
 #include "cominit.h"
 #include <stdio.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <commctrl.h>
 #include <winerror.h>
 #include <ocidl.h>

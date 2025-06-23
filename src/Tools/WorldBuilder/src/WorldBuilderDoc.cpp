@@ -23,7 +23,7 @@
 #include "WorldBuilder.h"
 
 #include <direct.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <process.h>
 
 #include "Common/Debug.h"

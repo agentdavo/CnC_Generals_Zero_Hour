@@ -39,7 +39,7 @@
 #ifndef LOGDLG_H
 #define LOGDLG_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 
 class LogDataDialogClass

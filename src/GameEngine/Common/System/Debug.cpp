@@ -52,7 +52,7 @@
 #include "Common/CriticalSection.h"
 #endif
 #include "Common/Debug.h"
-#include "Common/registry.h"
+#include "common/registry.h"
 #include "Common/SystemInfo.h"
 #include "Common/UnicodeString.h"
 #include "GameClient/GameText.h"
@@ -700,7 +700,7 @@ void ReleaseCrash(const char *reason)
 
 	if (!GetRegistryLanguage().compareNoCase("german2") || !GetRegistryLanguage().compareNoCase("german") )
 	{
-		::MessageBox(NULL, "Es ist ein gravierender Fehler aufgetreten. Solche Fehler können durch viele verschiedene Dinge wie Viren, überhitzte Hardware und Hardware, die den Mindestanforderungen des Spiels nicht entspricht, ausgelöst werden. Tipps zur Vorgehensweise findest du in den Foren unter www.generals.ea.com, Informationen zum Technischen Kundendienst im Handbuch zum Spiel.", "Fehler...", MB_OK|MB_TASKMODAL|MB_ICONERROR);
+		::MessageBox(NULL, "Es ist ein gravierender Fehler aufgetreten. Solche Fehler kÃ¶nnen durch viele verschiedene Dinge wie Viren, Ã¼berhitzte Hardware und Hardware, die den Mindestanforderungen des Spiels nicht entspricht, ausgelÃ¶st werden. Tipps zur Vorgehensweise findest du in den Foren unter www.generals.ea.com, Informationen zum Technischen Kundendienst im Handbuch zum Spiel.", "Fehler...", MB_OK|MB_TASKMODAL|MB_ICONERROR);
 	} 
 	else
 	{

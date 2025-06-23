@@ -19,7 +19,7 @@
 // JSUPPORT.CPP
 // DBCS Support Codes
 
-#include "Common/windows.h"
+#include "common/windows.h"
 #include "jsupport.h"
 
 // 前置禁則文字

@@ -21,7 +21,7 @@
 //
 
 #include "stdafx.h"
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <winnls.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,6 +1,6 @@
 #include "lvglDevice/GameClient/LvglMouse.h"
 #include "LvglPlatform/LvglPlatform.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 #include <lvgl.h>
 #if LV_USE_WAYLAND
 #include "lvgl/src/drivers/wayland/lv_wayland_private.h"

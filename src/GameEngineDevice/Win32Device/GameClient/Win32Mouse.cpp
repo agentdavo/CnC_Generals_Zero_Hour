@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #define WIN32_LEAN_AND_MEAN
-#include "Common/windows.h"
+#include "common/windows.h"
 
 #include "Common/Debug.h"
 #include "Common/GlobalData.h"

@@ -37,7 +37,7 @@
 #ifdef _DEBUG
 
 #include "DebugPrint.h"
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <assert.h>

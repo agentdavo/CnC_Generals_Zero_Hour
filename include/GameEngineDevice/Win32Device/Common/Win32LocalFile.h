@@ -31,7 +31,7 @@
 #ifndef __WIN32LOCALFILE_H
 #define __WIN32LOCALFILE_H
 
-#include "Common/LocalFile.h"
+#include "common/LocalFile.h"
 
 class Win32LocalFile : public LocalFile
 {

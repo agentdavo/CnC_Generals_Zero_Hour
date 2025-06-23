@@ -18,7 +18,7 @@
 
 #include "mutex.h"
 #include "wwdebug.h"
-#include "Common/windows.h"
+#include "common/windows.h"
 
 
 // ----------------------------------------------------------------------------

@@ -21,7 +21,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <direct.h>
 #include "wstypes.h"
 #include "configfile.h"

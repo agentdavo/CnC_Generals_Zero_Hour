@@ -112,7 +112,7 @@
 #include "metalmap.h"
 #include "w3dexclusionlist.h"
 #include <ini.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <stdio.h>
 #include <D3dx8core.h>
 #include "texture.h"

@@ -42,7 +42,7 @@
 #ifndef __VERCHK_H
 #define __VERCHK_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 // Obtain version information from the specified file.
 bool GetVersionInfo(char* filename, VS_FIXEDFILEINFO* fileInfo);

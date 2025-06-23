@@ -22,7 +22,7 @@
 #include "cominit.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 #include <objbase.h>
 
 ComInit::ComInit()

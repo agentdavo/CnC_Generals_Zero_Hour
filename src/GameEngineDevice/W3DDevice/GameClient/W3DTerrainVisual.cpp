@@ -29,7 +29,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Common/windows.h"
+#include "common/windows.h"
 
 #include "Common/GameState.h"
 #include "Common/GlobalData.h"

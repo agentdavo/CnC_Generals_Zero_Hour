@@ -33,7 +33,7 @@
 #include "Common/CRC.h"
 #include "Common/FileSystem.h"
 #include "Common/LocalFileSystem.h"
-#include "Common/File.h"
+#include "common/File.h"
 #include "Common/GlobalData.h"
 #include "Common/GameState.h"
 #include "Common/GameEngine.h"

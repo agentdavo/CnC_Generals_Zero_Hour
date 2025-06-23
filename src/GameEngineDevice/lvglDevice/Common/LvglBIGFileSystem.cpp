@@ -1,14 +1,14 @@
 #include "Common/AudioAffect.h"
 #include "Common/ArchiveFile.h"
 #include "Common/ArchiveFileSystem.h"
-#include "Common/File.h"
+#include "common/File.h"
 #include "Common/GameAudio.h"
 #include "Common/GameMemory.h"
 #include "Common/LocalFileSystem.h"
 #include "lvglDevice/Common/Win32BIGFile.h"
 #include "lvglDevice/Common/Win32BIGFileSystem.h"
-#include "Common/registry.h"
-#include "Common/win32_compat.h"
+#include "common/registry.h"
+#include "common/win32_compat.h"
 #include <cstdint>
 #include <cctype>
 #include <cstring>

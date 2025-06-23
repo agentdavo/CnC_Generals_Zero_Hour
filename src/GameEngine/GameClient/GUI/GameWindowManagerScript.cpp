@@ -50,10 +50,10 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "Lib/BaseType.h"
 #include "Common/Debug.h"
-#include "Common/File.h"
+#include "common/File.h"
 #include "Common/FileSystem.h"
 #include "Common/GameMemory.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/FunctionLexicon.h"
 #include "GameClient/Display.h"

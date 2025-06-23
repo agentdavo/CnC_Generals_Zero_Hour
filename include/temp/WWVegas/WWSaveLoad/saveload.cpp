@@ -46,7 +46,7 @@
 #include "wwprofile.h"
 
 #pragma warning(disable:4201) // warning C4201: nonstandard extension used : nameless struct/union
-#include "Common/windows.h"
+#include "common/windows.h"
 #include "systimer.h"
 
 

@@ -39,7 +39,7 @@
 #ifndef GENLODEXTENSIONDIALOG_H
 #define GENLODEXTENSIONDIALOG_H
 
-#include "Common/windows.h"
+#include "common/windows.h"
 
 class Interface;
 class ISpinnerControl;

@@ -58,7 +58,7 @@
 #include <wpaudio/altypes.h>						/*	Always include this header first. */
 
 #define WIN32_LEAN_AND_MEAN
-#include "Common/windows.h"
+#include "common/windows.h"
 #pragma warning ( disable: 4706 )
 #pragma warning(disable:4201)
 #include <mmsystem.h>
@@ -70,7 +70,7 @@
 // #define INITGUID  // see comment above
 #include <dsound.h>
 // #undef INITGUID  // see comment above
-#include "Common/windows.h"
+#include "common/windows.h"
 
 #include "asimp3\mss.h"
 #include "asimp3\mp3dec.h"

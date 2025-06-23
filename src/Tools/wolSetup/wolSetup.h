@@ -25,7 +25,7 @@
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
-#include "Common/windows.h"
+#include "common/windows.h"
 
 void checkInstalledWolapiVersion( void );
 void setupGenerals( const char *genPath, const char *genSerial );

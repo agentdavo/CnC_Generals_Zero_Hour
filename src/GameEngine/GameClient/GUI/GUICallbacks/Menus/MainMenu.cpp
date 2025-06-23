@@ -43,7 +43,7 @@
 #include "GameClient/AnimateWindowManager.h"
 #include "GameClient/ExtendedMessageBox.h"
 #include "GameClient/MessageBox.h"
-#include "Common/Logger.h"
+#include "common/Logger.h"
 #include "GameClient/Display.h"
 #include "GameClient/WindowLayout.h"
 #include "GameClient/Gadget.h"
