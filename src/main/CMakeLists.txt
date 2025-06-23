@@ -1,6 +1,6 @@
 if(WIN32)
 add_library(gen_main EXCLUDE_FROM_ALL
-    WinMain.cpp
+    win_main.cpp
     RTS.RC
 )
 

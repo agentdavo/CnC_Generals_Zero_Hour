@@ -1,5 +1,5 @@
 add_executable(MapCacheBuilder EXCLUDE_FROM_ALL
-    WinMain.cpp
+    win_main.cpp
 )
 
 target_include_directories(MapCacheBuilder PRIVATE
