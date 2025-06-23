@@ -2,6 +2,9 @@
 
 #ifndef _WIN32
 #include <cstdint>
+#ifndef __cdecl
+#define __cdecl
+#endif
 
 using DWORD = std::uint32_t;
 using WORD  = std::uint16_t;
