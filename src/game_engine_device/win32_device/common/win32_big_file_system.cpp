@@ -33,7 +33,7 @@
 #include "common/File.h"
 #include "common/GameAudio.h"
 #include "common/GameMemory.h"
-#include "common/LocalFileSystem.h"
+#include "common/localfilesystem.h"
 #include "win32_device/common/win32_big_file.h"
 #include "win32_device/common/win32_big_file_system.h"
 

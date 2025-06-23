@@ -1,9 +1,5 @@
-#include "common/LocalFile.h"
-<<<<<<< Updated upstream:src/GameEngine/Common/System/LocalFile.cpp
-#include "Common/RAMFile.h"
-=======
-#include "common/RAMFile.h"
->>>>>>> Stashed changes:src/game_engine/Common/System/LocalFile.cpp
+#include "common/local_file.h"
+#include "common/ramfile.h"
 #include <cstring>
 #include <cstdlib>
 

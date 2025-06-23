@@ -31,8 +31,8 @@
 #ifndef __LOCALFILESYSTEM_H
 #define __LOCALFILESYSTEM_H
 
-#include "GameEngine/Common/subsystem_interface.h"
-#include "FileSystem.h" // for typedefs, etc.
+#include "common/subsystem_interface.h"
+#include "filesystem.h" // for typedefs, etc.
 
 class File;
 

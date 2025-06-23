@@ -41,7 +41,7 @@
 	#define NO_PERF_TIMERS
 #endif
 
-#include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
+#include "common/gamecommon.h"	// ensure we get DUMP_PERF_STATS, or not
 
 #ifdef PERF_TIMERS
 #include "GameLogic/GameLogic.h"

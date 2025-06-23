@@ -2,7 +2,7 @@
 #include "common/AsciiString.h"
 #include "common/GameMemory.h"
 #include "common/PerfTimer.h"
-#include "common/LocalFile.h"
+#include "common/local_file.h"
 #include <fstream>
 #include <filesystem>
 #include "common/File.h"
