@@ -47,7 +47,7 @@
  
 
 #define  STRICT
-#include <windows.h>
+#include "Common/windows.h"
 #include <windowsx.h>
 #include <assert.h>
 #include <ctype.h>
@@ -514,7 +514,7 @@ UINT TTFontClass::Get_Double_Byte_Char	( const char *string, int *num_bytes ) co
 
 	//--------------------------------------------------------------------------
 	// The IsDBCSLeadByte function determines whether a character is a 
-	// lead byte — that is, the first byte of a character in a double-byte 
+	// lead byte Â— that is, the first byte of a character in a double-byte 
 	// character set (DBCS). 
 	//
 	//	BOOL IsDBCSLeadByte(  BYTE TestChar  /* character to test */ );

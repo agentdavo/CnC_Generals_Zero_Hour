@@ -19,7 +19,7 @@
 // DatGen.cpp : Defines the entry point for the application.
 //
 
-#include <windows.h>
+#include "Common/windows.h"
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>

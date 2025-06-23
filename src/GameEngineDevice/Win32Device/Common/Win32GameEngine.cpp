@@ -29,7 +29,7 @@
 //   the game application, it creates all the devices we will use for the game
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include <windows.h>
+#include "Common/windows.h"
 #include "Win32Device/Common/Win32GameEngine.h"
 #include "Common/PerfTimer.h"
 

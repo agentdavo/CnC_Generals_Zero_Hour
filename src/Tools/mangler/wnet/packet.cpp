@@ -43,7 +43,7 @@
 #include <netinet/in.h>
 #else
 #define Win32_Winsock
-#include <windows.h>
+#include "Common/windows.h"
 #endif
 
 #include "packet.h"

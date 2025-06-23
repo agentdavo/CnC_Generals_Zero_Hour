@@ -19,15 +19,15 @@
 // JSUPPORT.CPP
 // DBCS Support Codes
 
-#include <windows.h>
+#include "Common/windows.h"
 #include "jsupport.h"
 
-// ‘O’u‹Ö‘¥•¶š
+// å‰ç½®ç¦å‰‡æ–‡å­—
 // Can't set these characters on top of line
 static BOOL IsDBCSInvalidAtTop(unsigned int c)
 {
-	static BYTE * dtbl = (BYTE *)"‘‹fhñŒABXrtvxzl‚Ÿ‚¡‚£‚¥‚§‚Á‚á‚ã‚å‚ìJKTUƒ@ƒBƒDƒFƒHƒbƒƒƒ…ƒ‡ƒƒ•ƒ–E[RSI“jCDFGHnp";
-	static BYTE * stbl = (BYTE *)"!%),.:;?]}¡£¤¥Şß";
+	static BYTE * dtbl = (BYTE *)"ï¿ Â°â€™â€â€°â€²â€³â„ƒã€ã€‚ã€…ã€‰ã€‹ã€ã€ã€‘ã€•ããƒã…ã‡ã‰ã£ã‚ƒã‚…ã‚‡ã‚ã‚›ã‚œã‚ã‚ã‚¡ã‚£ã‚¥ã‚§ã‚©ãƒƒãƒ£ãƒ¥ãƒ§ãƒ®ãƒµãƒ¶ãƒ»ãƒ¼ãƒ½ãƒ¾ï¼ï¼…ï¼‰ï¼Œï¼ï¼šï¼›ï¼Ÿï¼½ï½";
+	static BYTE * stbl = (BYTE *)"!%),.:;?]}ï½¡ï½£ï½¤ï½¥ï¾ï¾Ÿ";
 
 	if(c<0x100)
 	{
@@ -50,12 +50,12 @@ static BOOL IsDBCSInvalidAtTop(unsigned int c)
 	return FALSE;
 }
 
-// Œã’u‹Ö‘¥•¶š
+// å¾Œç½®ç¦å‰‡æ–‡å­—
 // Can't set these characters on end of line
 static BOOL IsDBCSInvalidAtEnd( unsigned int c )
 {
-	static BYTE * dtbl = (BYTE *)"egqsuwykimo’";
-	static BYTE * stbl = (BYTE *)"¢({[";
+	static BYTE * dtbl = (BYTE *)"â€˜â€œã€ˆã€Šã€Œã€ã€ã€”ï¼ˆï¼»ï½›ï¼„ï¿¡ï¿¥";
+	static BYTE * stbl = (BYTE *)"ï½¢({[";
 
 	if(c<0x100)
 	{

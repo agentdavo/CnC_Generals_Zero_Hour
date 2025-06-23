@@ -36,7 +36,7 @@
 
 #include "StringConvert.h"
 #include "UString.h"
-#include <windows.h>
+#include "Common/windows.h"
 #include <Debug\DebugPrint.h>
 #include <assert.h>
 

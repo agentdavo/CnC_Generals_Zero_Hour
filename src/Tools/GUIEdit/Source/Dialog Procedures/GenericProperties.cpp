@@ -46,7 +46,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 #include <stdlib.h>
 #include <assert.h>
-#include <windows.h>
+#include "Common/windows.h"
 #include <commctrl.h>
 #include <stdio.h>
 

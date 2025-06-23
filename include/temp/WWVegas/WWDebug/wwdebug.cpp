@@ -43,7 +43,7 @@
 
 
 #include "wwdebug.h"
-#include <windows.h>
+#include "Common/windows.h"
 //#include "win.h" can use this if allowed to see wwlib
 #include <stdlib.h>
 #include <stdarg.h>

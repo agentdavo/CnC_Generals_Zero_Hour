@@ -41,7 +41,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 
-#include <windows.h>
+#include "Common/windows.h"
 #include <mmreg.h>
 
 #include <wpaudio/thread.h>

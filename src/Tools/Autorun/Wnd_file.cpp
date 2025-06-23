@@ -41,7 +41,7 @@
 //-----------------------------------------------------------------------------
 // include files...
 //-----------------------------------------------------------------------------
-#include "windows.h"
+#include "Common/windows.h"
 #include <stdio.h>
 #include <sys/stat.h>
 #include "wnd_file.h"

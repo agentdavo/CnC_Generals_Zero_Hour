@@ -42,7 +42,7 @@
 #include "wwmemlog.h"
 #include "wwdebug.h"
 #include "vector.h"
-#include <windows.h>
+#include "Common/windows.h"
 
 #if (STEVES_NEW_CATCHER || PARAM_EDITING_ON)
 	#define DISABLE_MEMLOG	1

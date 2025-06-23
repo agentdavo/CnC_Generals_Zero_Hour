@@ -28,7 +28,7 @@
 
 //#include "api/wolapi_i.c"  // This should only be in one .cpp file
 #include <objbase.h>
-#include <windows.h>
+#include "Common/windows.h"
 #include <initguid.h>
 #include <olectl.h>
 #include <mapicode.h>

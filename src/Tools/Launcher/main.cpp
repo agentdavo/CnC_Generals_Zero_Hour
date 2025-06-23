@@ -60,7 +60,7 @@
 #include "monod.h"
 #include "filed.h"
 #include "configfile.h"
-#include <windows.h>
+#include "Common/windows.h"
 
 #ifdef COPY_PROTECT
 #include "Protect.h"

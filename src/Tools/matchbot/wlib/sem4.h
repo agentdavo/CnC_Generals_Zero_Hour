@@ -29,7 +29,7 @@
 #ifndef _WINDOWS
 #include <semaphore.h>
 #else
-#include <windows.h>
+#include "Common/windows.h"
 #endif // _WINDOWS
 #endif // _REENTRANT
 
