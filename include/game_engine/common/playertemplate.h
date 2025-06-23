@@ -53,7 +53,7 @@
 #include "Common/Handicap.h"
 #include "Common/Money.h"
 #include "Common/Science.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/UnicodeString.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/STLTypedefs.h"

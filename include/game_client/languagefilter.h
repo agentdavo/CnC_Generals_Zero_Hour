@@ -29,7 +29,7 @@
 #define __LANGUAGEFILTER_H
 
 #include "Common/STLTypedefs.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/UnicodeString.h"
 
 class File;

@@ -55,7 +55,7 @@
 #include "Lib/BaseType.h"
 #include "game_client/GameFont.h"
 #include "game_client/Color.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/UnicodeString.h"
 #include "Common/GameMemory.h"
 

@@ -32,7 +32,7 @@
 #define __ARCHIVEFILE_H
 
 #include "lib/base_type.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "common/archiveFileSystem.h"
 
 class File;

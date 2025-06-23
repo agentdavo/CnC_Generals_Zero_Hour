@@ -32,7 +32,7 @@
 #define __WIN32BIGFILE_H
 
 #include "common/archiveFile.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "common/List.h"
 
 class Win32BIGFile : public ArchiveFile

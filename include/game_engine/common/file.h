@@ -53,7 +53,7 @@
 //----------------------------------------------------------------------------
 
 #include "lib/basetype.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/GameMemory.h"
 // include FileSystem.h as it will be used alot with File.h
 //#include "Common/FileSystem.h"

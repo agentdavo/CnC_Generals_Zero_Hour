@@ -80,7 +80,7 @@ class STLSpecialAlloc;
 #include "game_engine/common/STLTypedefs.h"
 #include "game_engine/common/Errors.h"
 #include "game_engine/common/Debug.h"
-#include "game_engine/common/asciiString.h"
+#include "game_engine/common/ascii_string.h"
 #include "game_engine/common/subsystem_interface.h"
 
 #include "game_engine/common/GameCommon.h"

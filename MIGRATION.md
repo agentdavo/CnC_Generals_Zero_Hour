@@ -63,7 +63,7 @@ relocated in the same manner. `src/GameEngine/CMakeLists.txt` uses `file(GLOB)`
 to compile the new source tree.
 Bezier math helpers (`BezFwdIterator`, `BezierSegment`) and the `CRCDebug`
 logging utilities have been migrated into `src/GameEngine/Common` with headers
-under `include/GameEngine/Common`. A small stub of `D3DX8Math.h` now lives in
+under `include/GameEngine/Common`. A small stub of `d3dx8_math.h` now lives in
 `include/` to keep these sources compiling on non-Windows hosts.
 The INI configuration system has been relocated under `src/GameEngine/Common/INI`
 with accompanying headers in `include/GameEngine/Common`.
@@ -255,3 +255,5 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   casing.
 - Moved `include/Common` to `include/common` and updated header includes.
 - Renamed Win32Device, VideoDevice and MilesAudioDevice directories to snake_case along with associated sources and headers.
+- Consolidated 'Tools' directory casing; duplicate 'src/Tools' removed and lowercase 'src/tools' kept.
+- Standardised D3DX8Math stub as 'd3dx8_math.h' across the include tree.
