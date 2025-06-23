@@ -20,11 +20,16 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(APPLE)
-    # Apple's ranlib treats empty object files as fatal by default.  Some
+    # Apple's ranlib treats empty object files as fatal by default. Some
     # optional LVGL sources compile to no symbols depending on build flags
-    # which stops the archive step.  Suppress this behaviour so the build
-    # matches Linux.
-    set(CMAKE_RANLIB "${CMAKE_RANLIB} -no_warning_for_no_symbols" CACHE STRING "Ranlib command" FORCE)
+    # which stops the archive step. Use CMAKE_*_ARCHIVE_FINISH to append
+    # the -no_warning_for_no_symbols flag instead of overriding CMAKE_RANLIB
+    # so that CMake can still locate the ranlib executable.
+    foreach(lang C CXX)
+        set(CMAKE_${lang}_ARCHIVE_FINISH
+            "<CMAKE_RANLIB> -no_warning_for_no_symbols <TARGET>"
+            CACHE STRING "Archive finish command" FORCE)
+    endforeach()
 endif()
 
 # Third party libraries
