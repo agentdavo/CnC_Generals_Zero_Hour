@@ -46,7 +46,7 @@
 //----------------------------------------------------------------------------
 
 #include "Lib/BaseType.h"
-#include "VideoDevice/Bink/BinkVideoPlayer.h"
+#include "video_device/bink/bink_video_player.h"
 #include "common/AudioAffect.h"
 #include "common/GameAudio.h"
 #include "common/GameMemory.h"

@@ -1,4 +1,4 @@
-#include "lvgl_device/game_client/Win32DIKeyboard.h"
+#include "lvgl_device/game_client/win32_di_keyboard.h"
 
 Win32DIKeyboard::Win32DIKeyboard() {}
 Win32DIKeyboard::~Win32DIKeyboard() {}

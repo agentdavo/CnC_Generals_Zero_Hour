@@ -30,7 +30,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "common/windows.h"
-#include "Win32Device/common/Win32GameEngine.h"
+#include "win32_device/common/win32_game_engine.h"
 #include "common/PerfTimer.h"
 
 #include "GameNetwork/LANAPICallbacks.h"

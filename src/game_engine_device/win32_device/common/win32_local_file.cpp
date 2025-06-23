@@ -26,7 +26,7 @@
 // Bryan Cleveland, August 2002
 ///////////////////////////////////////////////////////
 
-#include "Win32Device/common/Win32LocalFile.h"
+#include "win32_device/common/Win32LocalFile.h"
 
 Win32LocalFile::Win32LocalFile() : LocalFile() {
 }

@@ -52,7 +52,7 @@
 #include "common/windows.h"
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Win32Device/GameClient/Win32Mouse.h"
+#include "win32_device/game_client/win32_mouse.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

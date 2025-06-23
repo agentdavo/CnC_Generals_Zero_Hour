@@ -35,7 +35,7 @@
 //
 // Module:     Game Engine DEvice Win32 common
 //
-// File name:  Win32Device/common/Win32CDManager.h
+// File name:  win32_device/common/Win32CDManager.h
 //
 // Created:    11/26/01 TR
 //

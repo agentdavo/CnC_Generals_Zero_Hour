@@ -35,7 +35,7 @@
 #include "common/Language.h"
 #include "GameClient/KeyDefs.h"
 #include "GameClient/Keyboard.h"
-#include "Win32Device/GameClient/Win32DIKeyboard.h"
+#include "win32_device/game_client/win32_di_keyboard.h"
 #include "WinMain.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////////////////////////

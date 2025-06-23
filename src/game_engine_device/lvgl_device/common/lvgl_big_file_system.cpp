@@ -5,8 +5,8 @@
 #include "common/GameAudio.h"
 #include "common/GameMemory.h"
 #include "common/LocalFileSystem.h"
-#include "game_engine_device/lvgl_device/common/win32bigfile.h"
-#include "game_engine_device/lvgl_device/common/win32bigfilesystem.h"
+#include "game_engine_device/lvgl_device/common/win32_big_file.h"
+#include "game_engine_device/lvgl_device/common/win32_big_file_system.h"
 #include "common/registry.h"
 #include "common/win32_compat.h"
 #include <cstdint>

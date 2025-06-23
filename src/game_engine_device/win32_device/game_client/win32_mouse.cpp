@@ -34,7 +34,7 @@
 #include "common/GlobalData.h"
 #include "common/LocalFileSystem.h"
 #include "GameClient/GameClient.h"
-#include "Win32Device/GameClient/Win32Mouse.h"
+#include "win32_device/game_client/win32_mouse.h"
 #include "WinMain.h"
 
 #ifdef _INTERNAL
