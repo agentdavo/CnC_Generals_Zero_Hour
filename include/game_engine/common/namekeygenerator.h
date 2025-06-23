@@ -36,7 +36,7 @@
 #include "Lib/BaseType.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameMemory.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 
 //------------------------------------------------------------------------------------------------- 
 /**

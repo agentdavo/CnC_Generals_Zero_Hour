@@ -32,7 +32,7 @@
 #ifndef __OBJECT_TYPES_H__
 #define __OBJECT_TYPES_H__
 
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/Snapshot.h"
 
 class Player;

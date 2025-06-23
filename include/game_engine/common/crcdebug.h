@@ -41,7 +41,7 @@
 
 #ifdef DEBUG_CRC
 
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "GameLogic/GameLogic.h"
 #include "Lib/BaseType.h"
 #include "wwmath/vector3.h"

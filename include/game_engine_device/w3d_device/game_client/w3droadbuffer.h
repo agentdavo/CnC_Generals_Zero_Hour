@@ -61,7 +61,7 @@
 #include "common/FileSystem.h" // for LOAD_TEST_ASSETS
 #include "Lib/BaseType.h"
 #include "common/GameType.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 
 //-----------------------------------------------------------------------------
 //           Forward References

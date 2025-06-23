@@ -44,7 +44,7 @@
 
 #include "Common/GameMemory.h"
 #include "GameEngine/Common/subsystem_interface.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/Module.h"
 #include "Common/STLTypedefs.h"

@@ -30,7 +30,7 @@
 #ifndef _H_AUDIOEVENTINFO_
 #define _H_AUDIOEVENTINFO_
 
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/GameMemory.h"
 #include "Common/STLTypedefs.h"
 

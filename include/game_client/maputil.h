@@ -32,7 +32,7 @@
 #ifndef __MAPUTIL_H__
 #define __MAPUTIL_H__
 
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/UnicodeString.h"
 
 #include "Common/STLTypedefs.h"

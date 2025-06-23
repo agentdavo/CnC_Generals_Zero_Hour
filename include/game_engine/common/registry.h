@@ -31,7 +31,7 @@
 #ifndef __REGISTRY_H__
 #define __REGISTRY_H__
 
-#include <common/asciiString.h>
+#include <common/ascii_string.h>
 
 /**
 	* Get a string from the registry

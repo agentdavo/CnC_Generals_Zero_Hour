@@ -33,7 +33,7 @@
 #define _GLOBALDATA_H_
 
 #include "Common/GameCommon.h" // ensure we get DUMP_PERF_STATS, or not
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/GameType.h"
 #include "Common/GameMemory.h"
 #include "GameEngine/Common/subsystem_interface.h"

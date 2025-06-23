@@ -33,7 +33,7 @@
 #ifndef __IMAGE_H_
 #define __IMAGE_H_
 
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/GameMemory.h"
 #include "GameEngine/Common/subsystem_interface.h"
 

@@ -38,7 +38,7 @@
 #include "Common/STLTypedefs.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameMemory.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 

@@ -32,7 +32,7 @@
 #define __LADDERDEFS_H__
 
 #include "Common/UnicodeString.h"
-#include "common/asciiString.h"
+#include "common/ascii_string.h"
 #include "Common/STLTypedefs.h"
 
 class GameWindow;
