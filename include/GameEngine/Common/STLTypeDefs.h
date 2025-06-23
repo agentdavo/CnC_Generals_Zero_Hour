@@ -57,6 +57,7 @@ class STLSpecialAlloc;
 #include "Common/AsciiString.h"
 #include "Common/UnicodeString.h"
 #include "Common/GameCommon.h"
+#include "Common/GameType.h"
 #include "Common/GameMemory.h"
 
 //-----------------------------------------------------------------------------
