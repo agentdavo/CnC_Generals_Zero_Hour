@@ -97,13 +97,20 @@
 // #define abs(x) (((x) < 0) ? -(x) : (x))
 // #endif
 
-#ifndef min
-#define min(x, y) (((x) < (y)) ? (x) : (y))
-#endif
+// Avoid global min/max macros which conflict with <algorithm>
+// Provide constexpr helpers instead.
 
-#ifndef max
-#define max(x, y) (((x) > (y)) ? (x) : (y))
-#endif
+template <typename T>
+constexpr const T &ww_min(const T &a, const T &b)
+{
+    return (a < b) ? a : b;
+}
+
+template <typename T>
+constexpr const T &ww_max(const T &a, const T &b)
+{
+    return (a > b) ? a : b;
+}
 
 #ifndef TRUE
 #define TRUE true
@@ -217,8 +224,8 @@ struct RealRange
     // both ranges
     void combine(RealRange &other)
     {
-        lo = min(lo, other.lo);
-        hi = max(hi, other.hi);
+        lo = ww_min(lo, other.lo);
+        hi = ww_max(hi, other.hi);
     }
 };
 

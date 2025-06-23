@@ -710,8 +710,8 @@ void SurfaceClass::Get_Pixel(Vector3 &rgb, int x,int y)
 	SurfaceDescription sd;
 	Get_Description(sd);
 
-	x = min(x,(int)sd.Width - 1);
-	y = min(y,(int)sd.Height - 1);
+    x = ww_min(x,(int)sd.Width - 1);
+    y = ww_min(y,(int)sd.Height - 1);
 
 	D3DLOCKED_RECT lock_rect;
 	::ZeroMemory(&lock_rect, sizeof(D3DLOCKED_RECT));

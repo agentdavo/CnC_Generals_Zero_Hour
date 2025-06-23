@@ -91,7 +91,7 @@ public:
 	void Memory_Allocated(int size)
 	{
 		CurrentAllocation += size;
-		PeakAllocation = max(PeakAllocation, CurrentAllocation);
+                PeakAllocation = ww_max(PeakAllocation, CurrentAllocation);
 	}
 	void Memory_Released(int size) { CurrentAllocation -= size; }
 
