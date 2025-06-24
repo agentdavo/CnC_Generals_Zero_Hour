@@ -3,7 +3,7 @@
 #ifndef __LVGLDEVICE_LVGLMOUSE_H_
 #define __LVGLDEVICE_LVGLMOUSE_H_
 
-#include "game_client/Mouse.h"
+#include "game_client/mouse.h"
 #include <lvgl.h>
 
 class LvglMouse : public Mouse

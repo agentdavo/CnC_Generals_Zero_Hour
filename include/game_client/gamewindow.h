@@ -53,11 +53,11 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "Lib/BaseType.h"
-#include "Common/GameMemory.h"
-#include "game_client/Image.h"
-#include "game_client/DisplayString.h"
-#include "game_client/WinInstanceData.h"
-#include "game_client/Color.h"
+#include "game_engine/common/GameMemory.h"
+#include "game_client/image.h"
+#include "game_client/displaystring.h"
+#include "game_client/wininstancedata.h"
+#include "game_client/color.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // FORWARD REFERENCES /////////////////////////////////////////////////////////

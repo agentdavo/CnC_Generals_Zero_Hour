@@ -1,6 +1,6 @@
 #pragma once
 
-#include "game_client/Mouse.h"
+#include "game_client/mouse.h"
 
 class Win32Mouse : public Mouse
 {
