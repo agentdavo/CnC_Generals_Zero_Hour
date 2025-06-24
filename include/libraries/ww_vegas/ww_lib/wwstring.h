@@ -45,7 +45,7 @@
 #include "mutex.h"
 #include <string.h>
 #include <stdarg.h>
-#include <tchar.h>
+#include "tchar.h"
 #include <wwdebug.h>
 #ifdef _UNIX
 #include "osdep.h"

@@ -48,7 +48,7 @@
 #include "lib/base_type.h"
 #include "common/stl_type_defs.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "game_engine/common/audioEventInfo.h"
+#include "game_engine/common/audio_event_info.h"
 
 
 // Forward Declarations
