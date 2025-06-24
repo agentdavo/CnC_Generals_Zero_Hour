@@ -45,11 +45,12 @@
 
 #include "always.h"
 #include "wwstring.h"
+#include <cstdint>
 
-#ifdef WIN32
+#ifdef _WIN32
 typedef signed __int64 sint64;
-#elif defined (_UNIX)
-typedef signed long long sint64;
+#else
+using sint64 = std::int64_t;
 #endif
 
 class CPUDetectInitClass;

@@ -5,6 +5,9 @@
 #ifndef __cdecl
 #define __cdecl
 #endif
+#ifndef _cdecl
+#define _cdecl
+#endif
 
 using DWORD = std::uint32_t;
 using WORD  = std::uint16_t;
