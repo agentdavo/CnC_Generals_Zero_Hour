@@ -489,6 +489,10 @@ class DynamicVectorClass : public VectorClass<T>
 {
 	public:
 		DynamicVectorClass(unsigned size=0, T const * array=0);
+                using VectorClass<T>::Length;
+                using VectorClass<T>::VectorMax;
+                using VectorClass<T>::IsAllocated;
+                using VectorClass<T>::Resize;
 
 		// Stubbed equality operators so you can have dynamic vectors of dynamic vectors
 		bool operator== (const DynamicVectorClass &src)	{ return false; }

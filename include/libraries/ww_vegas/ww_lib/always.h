@@ -72,6 +72,7 @@
 #endif	//_MSC_VER
 #endif	//_DEBUG
 
+#ifdef _WIN32
 #ifndef _OPERATOR_NEW_DEFINED_
 
 	#define _OPERATOR_NEW_DEFINED_
@@ -96,6 +97,7 @@
 	inline void __cdecl operator delete[]					(void *, void *p)		{ }
 
 #endif
+#endif // _WIN32
 
 #if (defined(_DEBUG) || defined(_INTERNAL)) 
 	#define MSGW3DNEW(MSG)					new( MSG, 0 )
