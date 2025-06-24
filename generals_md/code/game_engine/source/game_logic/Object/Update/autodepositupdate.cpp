@@ -52,20 +52,20 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/BuildAssistant.h"
-#include "Common/Thing.h"
-#include "Common/ThingTemplate.h"
+#include "common/BuildAssistant.h"
+#include "common/Thing.h"
+#include "common/ThingTemplate.h"
 #include "common/ini.h"
-#include "Common/RandomValue.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/RandomValue.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/AutoDepositUpdate.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Object.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/Color.h"
-#include "GameClient/GameText.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Color.h"
+#include "game_client/GameText.h"
 
 //-------------------------------------------------------------------------------------------------
 void parseUpgradePair( INI *ini, void *instance, void *store, const void *userData )

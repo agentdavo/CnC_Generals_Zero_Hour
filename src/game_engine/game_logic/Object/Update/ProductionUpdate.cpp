@@ -42,11 +42,11 @@
 #include "common/Xfer.h"
 #include "common/XferCRC.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/GameText.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/GameText.h"
+#include "game_client/InGameUI.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/CreateModule.h"

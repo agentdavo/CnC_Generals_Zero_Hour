@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "lib/base_type.h"
-#include "GameClient/Line2D.h"
+#include "game_client/Line2D.h"
 
 // PRIVATE ////////////////////////////////////////////////////////////////////////////////////////
 #define CLIP_LEFT   0x01

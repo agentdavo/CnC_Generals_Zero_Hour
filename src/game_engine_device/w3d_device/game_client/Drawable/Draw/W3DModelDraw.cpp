@@ -44,9 +44,9 @@
 #include "common/GameLOD.h"
 #include "common/Xfer.h"
 #include "common/GameState.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/Shadow.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/Shadow.h"
 #include "GameLogic/GameLogic.h"		// for real-time frame
 #include "GameLogic/Object.h"
 #include "GameLogic/WeaponSet.h"

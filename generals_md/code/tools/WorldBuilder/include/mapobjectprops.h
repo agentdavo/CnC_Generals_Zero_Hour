@@ -26,7 +26,7 @@
 //
 
 #include "OptionsPanel.h"
-#include "Common/Dict.h"
+#include "common/Dict.h"
 #include "WBPopupSlider.h"
 
 class MapObject;

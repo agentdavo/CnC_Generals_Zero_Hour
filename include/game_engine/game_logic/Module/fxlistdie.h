@@ -33,7 +33,7 @@
 #define __FXListDie_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "GameLogic/Module/DieModule.h"
 #include "GameLogic/Weapon.h"
 #include "GameLogic/Damage.h"

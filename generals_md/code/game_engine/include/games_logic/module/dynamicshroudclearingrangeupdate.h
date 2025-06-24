@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "GameLogic/Module/UpdateModule.h"
-#include "GameClient/RadiusDecal.h"///< For the pseudo-wireframe decal effect
+#include "game_client/RadiusDecal.h"///< For the pseudo-wireframe decal effect
 
 
 #define GRID_FX_DECAL_COUNT (30)

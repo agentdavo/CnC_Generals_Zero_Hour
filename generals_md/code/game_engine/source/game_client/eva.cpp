@@ -25,10 +25,10 @@
 // GameClient/Eva.cpp /////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "GameClient/Eva.h"
+#include "game_client/Eva.h"
 
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
 #include "GameLogic/GameLogic.h"
 
 #ifdef _INTERNAL

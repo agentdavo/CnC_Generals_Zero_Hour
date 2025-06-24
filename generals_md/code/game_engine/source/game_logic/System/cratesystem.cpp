@@ -32,7 +32,7 @@
 #define DEFINE_VETERANCY_NAMES				// for TheVeterancyNames[]
 
 #include "GameLogic/CrateSystem.h"
-#include "Common/BitFlagsIO.h"
+#include "common/BitFlagsIO.h"
 
 CrateSystem *TheCrateSystem = NULL;
 

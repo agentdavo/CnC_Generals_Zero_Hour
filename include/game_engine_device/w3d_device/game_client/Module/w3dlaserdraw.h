@@ -33,7 +33,7 @@
 #define __W3DLASERDRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/DrawModule.h"
+#include "common/DrawModule.h"
 // #include "WW3D2/Line3D.h"
 #include "game_client/Color.h"
 

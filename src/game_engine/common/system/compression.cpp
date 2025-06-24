@@ -45,7 +45,7 @@
 //#define TEST_COMPRESSION
 #ifdef TEST_COMPRESSION
 
-#include "GameClient/MapUtil.h"
+#include "game_client/MapUtil.h"
 <<<<<<< Updated upstream:src/game_engine/common/System/Compression.cpp
 #include "common/FileSystem.h"
 =======

@@ -30,7 +30,7 @@
 #ifndef W3DWEBBROWSER_H
 #define W3DWEBBROWSER_H
 
-#include "GameNetwork/WOLBrowser/WebBrowser.h"
+#include "game_network/WOLBrowser/WebBrowser.h"
 
 class TextureClass;
 class Image;

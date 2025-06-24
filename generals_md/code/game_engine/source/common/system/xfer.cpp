@@ -31,10 +31,10 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/Upgrade.h"
-#include "Common/GameState.h"
-#include "Common/Xfer.h"
-#include "Common/BitFlagsIO.h"
+#include "common/Upgrade.h"
+#include "common/GameState.h"
+#include "common/Xfer.h"
+#include "common/BitFlagsIO.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

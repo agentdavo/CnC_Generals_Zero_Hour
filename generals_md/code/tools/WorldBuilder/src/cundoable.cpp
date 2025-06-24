@@ -31,15 +31,15 @@
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/SidesList.h"
 #include "W3DDevice/GameClient/HeightMap.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 #include "mapobjectprops.h"
 #include "ObjectOptions.h"
 #include "BuildList.h"
 #include "WbView3D.h"
 #include "LayersList.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 #include "WorldBuilder.h"	// for MAX_OBJECTS_IN_MAP 
-#include "Common/UnicodeString.h"
+#include "common/UnicodeString.h"
 
 
 // base mostly virtual class.

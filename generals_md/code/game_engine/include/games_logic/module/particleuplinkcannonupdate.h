@@ -33,8 +33,8 @@
 #define __PARTICLE_UPLINK_CANNON_UPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/KindOf.h"
-#include "Common/Science.h"
+#include "common/KindOf.h"
+#include "common/Science.h"
 #include "GameLogic/Module/SpecialPowerUpdateModule.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

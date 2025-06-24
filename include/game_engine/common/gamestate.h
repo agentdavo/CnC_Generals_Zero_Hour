@@ -34,10 +34,10 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/stl_type_defs.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/UnicodeString.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "common/UnicodeString.h"
+#include "game_network/NetworkDefs.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class GameWindow;

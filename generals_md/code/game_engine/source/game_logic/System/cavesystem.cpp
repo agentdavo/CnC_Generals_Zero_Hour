@@ -29,9 +29,9 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameState.h"
-#include "Common/TunnelTracker.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/TunnelTracker.h"
+#include "common/Xfer.h"
 #include "GameLogic/CaveSystem.h"
 
 CaveSystem *TheCaveSystem = NULL;

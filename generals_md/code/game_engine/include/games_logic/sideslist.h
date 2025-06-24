@@ -32,11 +32,11 @@
 #ifndef SIDESLIST_H
 #define SIDESLIST_H
 
-#include "Common/Dict.h"
-#include "Common/Errors.h"
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
-#include "Common/GameMemory.h"
+#include "common/Dict.h"
+#include "common/Errors.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
+#include "common/GameMemory.h"
 #include "common/stl_type_defs.h"
 
 class DataChunkInput;

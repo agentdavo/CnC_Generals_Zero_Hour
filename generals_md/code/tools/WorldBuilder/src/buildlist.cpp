@@ -31,10 +31,10 @@
 #include "WorldBuilderDoc.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "GameLogic/SidesList.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/WellKnownKeys.h"
+#include "common/PlayerTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/WellKnownKeys.h"
 #include "WbView3D.h"
 
 BuildList *BuildList::m_staticThis = NULL;

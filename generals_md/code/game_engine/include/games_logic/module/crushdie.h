@@ -33,7 +33,7 @@
 #define __CrushDie_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 #include "common/ini.h"
 
 #include "GameLogic/Module/DieModule.h"

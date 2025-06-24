@@ -32,9 +32,9 @@
 #ifndef MapObject_H
 #define MapObject_H
 
-#include "Common/Dict.h"
-#include "Common/GameMemory.h"
-#include "GameClient/TerrainRoads.h"
+#include "common/Dict.h"
+#include "common/GameMemory.h"
+#include "game_client/TerrainRoads.h"
 
 
 

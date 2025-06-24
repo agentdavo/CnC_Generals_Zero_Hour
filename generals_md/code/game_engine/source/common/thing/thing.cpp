@@ -34,15 +34,15 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/PerfTimer.h"
-#include "Common/Thing.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/GlobalData.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Team.h"
+#include "common/PerfTimer.h"
+#include "common/Thing.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/GlobalData.h"
+#include "common/NameKeyGenerator.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Team.h"
 #include "Lib/Trig.h"
 #include "GameLogic/TerrainLogic.h"
 

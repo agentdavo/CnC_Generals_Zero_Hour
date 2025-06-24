@@ -30,8 +30,8 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Module/AnimatedParticleSysBoneClientUpdate.h"
+#include "game_client/Drawable.h"
+#include "game_client/Module/AnimatedParticleSysBoneClientUpdate.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"
 #include "common/ThingFactory.h"

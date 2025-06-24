@@ -47,11 +47,11 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Language.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
+#include "common/Language.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

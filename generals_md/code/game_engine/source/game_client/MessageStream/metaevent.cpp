@@ -31,24 +31,24 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/MessageStream.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Team.h"
-#include "Common/ThingTemplate.h"
+#include "common/MessageStream.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Team.h"
+#include "common/ThingTemplate.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/ParticleSys.h"	// for ParticleSystemDebugDisplay
-#include "GameClient/Shell.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/DebugDisplay.h"	// for AudioDebugDisplay
-#include "GameClient/GameText.h"
-#include "GameClient/MetaEvent.h"
+#include "game_client/Drawable.h"
+#include "game_client/Mouse.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/ParticleSys.h"	// for ParticleSystemDebugDisplay
+#include "game_client/Shell.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/DebugDisplay.h"	// for AudioDebugDisplay
+#include "game_client/GameText.h"
+#include "game_client/MetaEvent.h"
 
 #include "GameLogic/GameLogic.h" // for TheGameLogic->getFrame()
 

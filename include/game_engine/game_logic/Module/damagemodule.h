@@ -32,7 +32,7 @@
 #ifndef __DamageModule_H_
 #define __DamageModule_H_
 
-#include "Common/Module.h"
+#include "common/Module.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/Module/BehaviorModule.h"
 

@@ -33,20 +33,20 @@
 #define DEFINE_OBJECT_STATUS_NAMES
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameState.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Radar.h"
-#include "Common/Team.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Radar.h"
+#include "common/Team.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/Xfer.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/Eva.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/GameClient.h"
+#include "game_client/Eva.h"
 
 #include "GameLogic/Damage.h"
 #include "GameLogic/Object.h"

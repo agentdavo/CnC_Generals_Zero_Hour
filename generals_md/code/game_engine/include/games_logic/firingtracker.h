@@ -32,9 +32,9 @@
 #ifndef FIRING_TRACKER_H
 #define FIRING_TRACKER_H
 
-#include "Common/GameType.h"
-#include "Common/GameMemory.h"
-#include "Common/AudioEventRTS.h"
+#include "common/GameType.h"
+#include "common/GameMemory.h"
+#include "common/AudioEventRTS.h"
 #include "GameLogic/Module/UpdateModule.h"
 
 class Object;

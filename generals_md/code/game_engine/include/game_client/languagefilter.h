@@ -29,8 +29,8 @@
 #define __LANGUAGEFILTER_H
 
 #include "common/stl_type_defs.h"
-#include "Common/AsciiString.h"
-#include "Common/UnicodeString.h"
+#include "common/AsciiString.h"
+#include "common/UnicodeString.h"
 
 class File;
 

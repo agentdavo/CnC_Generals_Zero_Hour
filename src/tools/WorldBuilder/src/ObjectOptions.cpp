@@ -37,7 +37,7 @@
 #include "common/PlayerTemplate.h"
 #include "common/FileSystem.h" // for LOAD_TEST_ASSETS
 #include "GameLogic/SidesList.h"
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 
 #include <list>
 

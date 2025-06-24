@@ -38,8 +38,8 @@
 #include "vertmaterial.h"
 #include "light.h"
 #include "lib/base_type.h"
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
 
 #define INVALID_WATER_HEIGHT 0.0f	///water height guaranteed to be below all terrain.
 

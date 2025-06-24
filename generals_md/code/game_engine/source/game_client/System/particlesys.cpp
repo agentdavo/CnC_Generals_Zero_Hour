@@ -31,19 +31,19 @@
 
 #define DEFINE_PARTICLE_SYSTEM_NAMES
 
-#include "Common/GameState.h"
+#include "common/GameState.h"
 #include "common/ini.h"
-#include "Common/PerfTimer.h"
-#include "Common/ThingFactory.h"
-#include "Common/GameLOD.h"
-#include "Common/Xfer.h"
+#include "common/PerfTimer.h"
+#include "common/ThingFactory.h"
+#include "common/GameLOD.h"
+#include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/DebugDisplay.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/DebugDisplay.h"
+#include "game_client/Display.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ParticleSys.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
@@ -56,8 +56,8 @@
 #endif
 
 //------------------------------------------------------------------------------ Performance Timers 
-//#include "Common/PerfMetrics.h"
-//#include "Common/PerfTimer.h"
+//#include "common/PerfMetrics.h"
+//#include "common/PerfTimer.h"
 
 //static PerfTimer s_particleSys("ParticleSys::update", false, PERFMETRICS_LOGIC_STARTFRAME, PERFMETRICS_LOGIC_STOPFRAME);
 //-------------------------------------------------------------------------------------------------

@@ -38,8 +38,8 @@
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/MissileLauncherBuildingUpdate.h"
 #include "GameLogic/Module/SpecialPowerModule.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

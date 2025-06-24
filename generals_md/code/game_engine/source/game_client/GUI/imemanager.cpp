@@ -50,17 +50,17 @@
 #include "Windows.h"
 #include "mbstring.h"
 
-#include "Common/Debug.h"
-#include "Common/Language.h"
-#include "Common/UnicodeString.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/IMEManager.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/Color.h"
-#include "Common/NameKeyGenerator.h"
+#include "common/Debug.h"
+#include "common/Language.h"
+#include "common/UnicodeString.h"
+#include "game_client/Display.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/IMEManager.h"
+#include "game_client/Mouse.h"
+#include "game_client/Color.h"
+#include "common/NameKeyGenerator.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

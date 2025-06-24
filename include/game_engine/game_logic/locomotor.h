@@ -33,9 +33,9 @@
 #define __Locomotor_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/NameKeyGenerator.h"
-#include "Common/Override.h"
-#include "Common/Snapshot.h"
+#include "common/NameKeyGenerator.h"
+#include "common/Override.h"
+#include "common/Snapshot.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/LocomotorSet.h"
 

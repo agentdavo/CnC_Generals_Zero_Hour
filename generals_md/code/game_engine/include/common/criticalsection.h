@@ -31,7 +31,7 @@
 #ifndef __CRITICALSECTION_H__
 #define __CRITICALSECTION_H__
 
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 
 #ifdef PERF_TIMERS
 extern PerfGather TheCritSecPerfGather;

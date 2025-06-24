@@ -26,7 +26,7 @@
 // W3D Particle System implementation
 // Author: Michael S. Booth, November 2001
 
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 #include "W3DDevice/GameClient/W3DParticleSys.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"

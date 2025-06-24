@@ -37,9 +37,9 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Module.h"
-#include "Common/ModuleFactory.h"
-#include "Common/NameKeyGenerator.h"
+#include "common/Module.h"
+#include "common/ModuleFactory.h"
+#include "common/NameKeyGenerator.h"
 
 // behavior includes
 #include "GameLogic/Module/AutoHealBehavior.h"
@@ -277,9 +277,9 @@
 // (none)
 
 // client update includes
-#include "GameClient/Module/AnimatedParticleSysBoneClientUpdate.h"
-#include "GameClient/Module/SwayClientUpdate.h"
-#include "GameClient/Module/BeaconClientUpdate.h"
+#include "game_client/Module/AnimatedParticleSysBoneClientUpdate.h"
+#include "game_client/Module/SwayClientUpdate.h"
+#include "game_client/Module/BeaconClientUpdate.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 ModuleFactory *TheModuleFactory = NULL;  ///< the module factory singleton

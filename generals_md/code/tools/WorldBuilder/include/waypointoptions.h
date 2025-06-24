@@ -25,7 +25,7 @@
 // WaypointOptions.h : header file
 //
 #include "OptionsPanel.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 
 class MapObject;
 class PolygonTrigger;

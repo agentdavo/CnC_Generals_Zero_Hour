@@ -38,7 +38,7 @@
 #include "GameLogic/Module/HealContain.h"
 #include "GameLogic/Module/DieModule.h"
 #include "GameLogic/Module/CreateModule.h"
-#include "Common/GameMemory.h"
+#include "common/GameMemory.h"
 class Team;
 
 //-------------------------------------------------------------------------------------------------

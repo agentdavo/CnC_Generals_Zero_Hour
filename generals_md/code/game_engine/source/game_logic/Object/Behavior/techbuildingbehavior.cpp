@@ -29,12 +29,12 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.H"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/Module/TechBuildingBehavior.h"
 #include "GameLogic/Object.h"
 

@@ -57,9 +57,9 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "Gamelogic/GameLogic.h"
-#include "GameClient/GameWindowTransitions.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GameWindowTransitions.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

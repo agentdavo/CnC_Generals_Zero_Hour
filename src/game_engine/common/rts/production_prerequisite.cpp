@@ -49,8 +49,8 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

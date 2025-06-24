@@ -29,8 +29,8 @@
 #include "WW3D2/Texture.h"
 #include "WW3D2/TextureLoader.h"
 #include "WW3D2/SurfaceClass.h"
-#include "GameClient/Image.h"
-#include "GameClient/GameWindow.h"
+#include "game_client/Image.h"
+#include "game_client/GameWindow.h"
 #include "vector2i.h"
 #include <d3dx8.h>
 #include "WW3D2/dx8wrapper.h"

@@ -33,8 +33,8 @@
 
 #include "common/Debug.h"
 #include "common/Language.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/Keyboard.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/Keyboard.h"
 #include "win32_device/game_client/win32_di_keyboard.h"
 #include "WinMain.h"
 

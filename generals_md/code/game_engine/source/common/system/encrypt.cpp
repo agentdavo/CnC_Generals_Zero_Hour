@@ -30,7 +30,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "Common/encrypt.h"
+#include "common/encrypt.h"
 
 #define MAX_CHARS 65
 static char Base_String[MAX_CHARS] =

@@ -35,7 +35,7 @@
 
 #include "common/audioEventRTS.h"
 #include "common/gamememory.h"
-#include "Common/StateMachine.h"
+#include "common/StateMachine.h"
 
 #include "GameLogic/TerrainLogic.h"
 

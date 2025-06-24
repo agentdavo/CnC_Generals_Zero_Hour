@@ -32,9 +32,9 @@
 #ifndef __UpdateModule_H_
 #define __UpdateModule_H_
 
-#include "Common/Module.h"
-#include "Common/GameType.h"
-#include "Common/DisabledTypes.h"
+#include "common/Module.h"
+#include "common/GameType.h"
+#include "common/DisabledTypes.h"
 #include "GameLogic/Module/BehaviorModule.h"
 
 #define DIRECT_UPDATEMODULE_ACCESS

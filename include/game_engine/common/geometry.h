@@ -34,7 +34,7 @@
 
 #include "lib/base_type.h"
 #include "common/ascii_string.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 
 class INI;
 

@@ -46,8 +46,8 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/GameWindowManager.h"
 
 // PRIVATE DATA ///////////////////////////////////////////////////////////////////////////////////
 static NameKeyType buttonOkID = NAMEKEY_INVALID;

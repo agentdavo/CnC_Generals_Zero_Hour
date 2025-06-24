@@ -52,10 +52,10 @@
 #include "common/Debug.h"
 #include "common/NameKeyGenerator.h"
 #include "game_engine/common/function_lexicon.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetRadioButton.h"
+#include "game_client/Display.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetRadioButton.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // DEFINES ////////////////////////////////////////////////////////////////////

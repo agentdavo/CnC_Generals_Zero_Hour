@@ -30,12 +30,12 @@
 
 #include "gstats/gpersist.h"
 
-#include "GameClient/Shell.h"
-#include "GameClient/MessageBox.h"
-#include "GameNetwork/GameSpy.h"
-#include "GameNetwork/GameSpyGP.h"
-#include "GameNetwork/GameSpyPersistentStorage.h"
-#include "GameNetwork/GameSpyThread.h"
+#include "game_client/Shell.h"
+#include "game_client/MessageBox.h"
+#include "game_network/GameSpy.h"
+#include "game_network/GameSpyGP.h"
+#include "game_network/GameSpyPersistentStorage.h"
+#include "game_network/GameSpyThread.h"
 
 static Bool isProfileAuthorized = false;
 

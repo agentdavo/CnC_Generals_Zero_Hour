@@ -49,10 +49,10 @@
 #include <commctrl.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
-#include "Common/GameMemory.h"
-#include "Common/GameEngine.h"
-#include "GameClient/GameWindowManager.h"
+#include "common/Debug.h"
+#include "common/GameMemory.h"
+#include "common/GameEngine.h"
+#include "game_client/GameWindowManager.h"
 #include "Win32Device/GameClient/Win32Mouse.h"
 #include "Resource.h"
 #include "lib/base_type.h"

@@ -27,8 +27,8 @@
 #ifndef __NETWORKUTIL_H
 #define __NETWORKUTIL_H
 
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/NetworkInterface.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/NetworkInterface.h"
 
 UnsignedInt ResolveIP(AsciiString host);
 UnsignedShort GenerateNextCommandID();

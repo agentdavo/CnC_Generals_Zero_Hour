@@ -29,7 +29,7 @@
 #define __FRAMEDATA_H
 
 #include "lib/base_type.h"
-#include "GameNetwork/NetCommandList.h"
+#include "game_network/NetCommandList.h"
 
 enum FrameDataReturnType {
 	FRAMEDATA_NOTREADY,

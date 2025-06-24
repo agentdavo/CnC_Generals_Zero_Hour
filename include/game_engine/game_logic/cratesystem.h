@@ -32,9 +32,9 @@
 #ifndef CRATE_SYSTEM_H
 #define CRATE_SYSTEM_H
 
-#include "Common/Ini.h"
-#include "Common/Overridable.h"
-#include "Common/Override.h"
+#include "common/Ini.h"
+#include "common/Overridable.h"
+#include "common/Override.h"
 
 enum ScienceType;
 

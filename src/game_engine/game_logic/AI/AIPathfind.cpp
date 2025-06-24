@@ -37,7 +37,7 @@
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"							 
 
-#include "GameClient/Line2D.h"
+#include "game_client/Line2D.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/GameLogic.h"

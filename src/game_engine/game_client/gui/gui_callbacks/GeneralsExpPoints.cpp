@@ -51,13 +51,13 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "GameClient/ControlBar.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Gadget.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/ControlBar.h"
+#include "game_client/InGameUI.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

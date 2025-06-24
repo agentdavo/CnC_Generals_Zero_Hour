@@ -28,10 +28,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/DataChunk.h"
-#include "Common/MapObject.h"
-#include "Common/MapReaderWriterInfo.h"
-#include "Common/Xfer.h"
+#include "common/DataChunk.h"
+#include "common/MapObject.h"
+#include "common/MapReaderWriterInfo.h"
+#include "common/Xfer.h"
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/TerrainLogic.h"
 

@@ -52,9 +52,9 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Xfer.h"
-#include "Common/Player.h"
-#include "Common/Upgrade.h"
+#include "common/Xfer.h"
+#include "common/Player.h"
+#include "common/Upgrade.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/ArmorUpgrade.h"
 #include "GameLogic/Module/BodyModule.h"

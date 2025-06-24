@@ -52,7 +52,7 @@
 #include "Resource.h"
 #include "GUIEditColor.h"
 #include "Properties.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 #define MODE_RGB 0

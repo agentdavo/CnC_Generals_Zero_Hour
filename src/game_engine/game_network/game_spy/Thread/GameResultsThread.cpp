@@ -30,7 +30,7 @@
 
 #include <winsock.h>	// This one has to be here. Prevents collisions with winsock2.h
 
-#include "GameNetwork/GameSpy/GameResultsThread.h"
+#include "game_network/GameSpy/GameResultsThread.h"
 #include "mutex.h"
 #include "thread.h"
 

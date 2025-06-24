@@ -28,8 +28,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the Game
-#include "GameClient/Snow.h"
-#include "GameClient/view.h"
+#include "game_client/Snow.h"
+#include "game_client/view.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -34,11 +34,11 @@
 
 #include "GameClient\Drawable.h"
 
-#include "Common/ActionManager.h"
-#include "Common/Player.h"
-#include "Common/RandomValue.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/ActionManager.h"
+#include "common/Player.h"
+#include "common/RandomValue.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 #include "GameLogic\GameLogic.h"
 #include "GameLogic\PartitionManager.h"

@@ -53,23 +53,23 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "GameClient/GameWindow.h"
+#include "game_client/GameWindow.h"
 #include "lib/base_type.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
-#include "GameClient/Display.h"
+#include "game_client/Display.h"
 #include "GameLogic/GameLogic.h"
-#include "GameClient/Shell.h"
-#include "GameClient/ShellMenuScheme.h"
-#include "GameClient/Credits.h"
+#include "game_client/Shell.h"
+#include "game_client/ShellMenuScheme.h"
+#include "game_client/Credits.h"
 
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowGlobal.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowGlobal.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"
 #include "W3DDevice/GameClient/W3DGadget.h"
 
-#include "GameClient/GUICallbacks.h"
+#include "game_client/GUICallbacks.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

@@ -33,8 +33,8 @@
 #define __GEOMETRY_H_
 
 #include "lib/base_type.h"
-#include "Common/AsciiString.h"
-#include "Common/Snapshot.h"
+#include "common/AsciiString.h"
+#include "common/Snapshot.h"
 
 class INI;
 

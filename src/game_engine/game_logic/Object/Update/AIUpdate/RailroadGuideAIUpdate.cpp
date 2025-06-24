@@ -40,8 +40,8 @@
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/DemoTrapUpdate.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Statistics.h"
+#include "game_client/Drawable.h"
+#include "game_client/Statistics.h"
 
 
 ///#define RAILROAD_DESYNC_TEST

@@ -29,9 +29,9 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/MiscAudio.h"
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "common/MiscAudio.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/ObjectDefectionHelper.h"

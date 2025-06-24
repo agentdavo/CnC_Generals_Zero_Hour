@@ -43,7 +43,7 @@
 //-----------------------------------------------------------------------------
 
 #include "PreRTS.h"
-#include "Common/DiscreteCircle.h"
+#include "common/DiscreteCircle.h"
 
 //-------------------------------------------------------------------------------------------------
 DiscreteCircle::DiscreteCircle(Int xCenter, Int yCenter, Int radius)

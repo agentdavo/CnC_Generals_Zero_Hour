@@ -35,7 +35,7 @@
 #include "common/ini.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

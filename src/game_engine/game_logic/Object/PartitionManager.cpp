@@ -76,11 +76,11 @@
 #include "GameLogic/Squad.h"
 #include "GameLogic/GhostObject.h"
 
-#include "GameClient/Line2D.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/Line2D.h"
+#include "game_client/ControlBar.h"
 
 #ifdef _DEBUG
-//#include "GameClient/InGameUI.h"	// for debugHints
+//#include "game_client/InGameUI.h"	// for debugHints
 #include "common/PlayerList.h"
 #endif
 

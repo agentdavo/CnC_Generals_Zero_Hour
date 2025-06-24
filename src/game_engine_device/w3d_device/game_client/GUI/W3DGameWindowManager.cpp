@@ -31,7 +31,7 @@
 
 #include <stdlib.h>
 
-#include "GameClient/Image.h"
+#include "game_client/Image.h"
 #include "W3DDevice/GameClient/W3DGameWindowManager.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

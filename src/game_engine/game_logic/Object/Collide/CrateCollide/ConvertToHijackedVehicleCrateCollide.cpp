@@ -42,9 +42,9 @@
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/InGameUI.h"  // useful for printing quick debug strings when we need to
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/InGameUI.h"  // useful for printing quick debug strings when we need to
 
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Module/AIUpdate.h"

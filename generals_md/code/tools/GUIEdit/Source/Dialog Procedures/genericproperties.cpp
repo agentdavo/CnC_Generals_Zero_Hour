@@ -51,8 +51,8 @@
 #include <stdio.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
-#include "Common/FunctionLexicon.h"
+#include "common/Debug.h"
+#include "common/FunctionLexicon.h"
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"

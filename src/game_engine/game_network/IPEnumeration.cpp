@@ -24,7 +24,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/IPEnumeration.h"
+#include "game_network/IPEnumeration.h"
 
 IPEnumeration::IPEnumeration( void )
 {

@@ -30,8 +30,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/Player.h"
-#include "Common/Science.h"
+#include "common/Player.h"
+#include "common/Science.h"
 
 ScienceStore* TheScienceStore = NULL;
 

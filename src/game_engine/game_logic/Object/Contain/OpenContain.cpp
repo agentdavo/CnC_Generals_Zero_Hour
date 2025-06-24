@@ -42,9 +42,9 @@
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ControlBar.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"

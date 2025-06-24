@@ -25,8 +25,8 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/NetCommandList.h"
-#include "GameNetwork/NetworkUtil.h"
+#include "game_network/NetCommandList.h"
+#include "game_network/NetworkUtil.h"
 
 /**
  * Constructor.

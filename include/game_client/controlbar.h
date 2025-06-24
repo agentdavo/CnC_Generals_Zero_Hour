@@ -34,9 +34,9 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "common/audioEventRTS.h"
-#include "Common/GameType.h"
-#include "Common/Overridable.h"
-#include "Common/Science.h"
+#include "common/GameType.h"
+#include "common/Overridable.h"
+#include "common/Science.h"
 #include "game_client/Color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

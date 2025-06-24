@@ -30,7 +30,7 @@
 #ifndef _DRAWABLEINFO_H_
 #define _DRAWABLEINFO_H_
 
-#include "Common/GameType.h"
+#include "common/GameType.h"
 
 class Drawable;
 class GhostObject;

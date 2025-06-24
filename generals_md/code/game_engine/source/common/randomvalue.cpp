@@ -30,9 +30,9 @@
 
 
 #include "lib/base_type.h"
-#include "Common/RandomValue.h"
-#include "Common/CRC.h"
-#include "Common/Debug.h"
+#include "common/RandomValue.h"
+#include "common/CRC.h"
+#include "common/Debug.h"
 #include "GameLogic/GameLogic.h"
 
 //#define DETERMINISTIC				// to allow repetition for debugging

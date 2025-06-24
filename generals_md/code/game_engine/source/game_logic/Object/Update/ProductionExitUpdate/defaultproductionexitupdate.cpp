@@ -30,9 +30,9 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/RandomValue.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/RandomValue.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 #include "lib/base_type.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

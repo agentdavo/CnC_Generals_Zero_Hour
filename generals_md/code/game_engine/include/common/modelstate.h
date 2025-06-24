@@ -33,8 +33,8 @@
 
 #include "lib/base_type.h"
 #include "common/ini.h"
-#include "Common/BitFlags.h"
-#include "Common/BitFlagsIO.h"
+#include "common/BitFlags.h"
+#include "common/BitFlagsIO.h"
 
 //-------------------------------------------------------------------------------------------------
 

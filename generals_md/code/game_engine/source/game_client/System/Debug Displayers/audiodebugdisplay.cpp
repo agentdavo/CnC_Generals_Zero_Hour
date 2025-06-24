@@ -47,8 +47,8 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/DebugDisplay.h"
-#include "Common/GameAudio.h"
+#include "game_client/DebugDisplay.h"
+#include "common/GameAudio.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

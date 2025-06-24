@@ -33,8 +33,8 @@
 #define _FXList_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameMemory.h"
-#include "Common/NameKeyGenerator.h"
+#include "common/GameMemory.h"
+#include "common/NameKeyGenerator.h"
 #include "common/stl_type_defs.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

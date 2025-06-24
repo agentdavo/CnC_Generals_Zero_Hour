@@ -27,8 +27,8 @@
 
 #include "PreRTS.h"
 
-#include "Common/DisabledTypes.h"
-#include "Common/BitFlagsIO.h"
+#include "common/DisabledTypes.h"
+#include "common/BitFlagsIO.h"
 
 const char* DisabledMaskType::s_bitNameList[] = 
 {

@@ -24,8 +24,8 @@
 
 
 #include "PreRTS.h"
-#include "Common/BezierSegment.h"
-#include "Common/BezFwdIterator.h"
+#include "common/BezierSegment.h"
+#include "common/BezFwdIterator.h"
 
 #include <D3DX8Math.h>
 

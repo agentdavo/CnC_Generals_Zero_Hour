@@ -29,18 +29,18 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameAudio.h"
-#include "Common/GlobalData.h"
-#include "Common/Player.h"
-#include "Common/SpecialPower.h"
-#include "Common/Xfer.h"
+#include "common/GameAudio.h"
+#include "common/GlobalData.h"
+#include "common/Player.h"
+#include "common/SpecialPower.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/MissileLauncherBuildingUpdate.h"
 #include "GameLogic/Module/SpecialPowerModule.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

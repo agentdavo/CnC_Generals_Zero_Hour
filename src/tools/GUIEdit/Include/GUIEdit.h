@@ -36,9 +36,9 @@
 #include "common/windows.h"
 #include <stdio.h>
 
-#include "GameClient/GameWindow.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/GameWindowManager.h"
 #include "GUIEditColor.h"
 #include "common/AsciiString.h"
 

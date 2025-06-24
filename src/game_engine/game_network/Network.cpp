@@ -36,11 +36,11 @@
 #include "common/MessageStream.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"
-#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/Udp.h"
-#include "GameNetwork/Transport.h"
+#include "game_network/NetworkInterface.h"
+#include "game_network/Udp.h"
+#include "game_network/Transport.h"
 #include "strtok_r.h"
-#include "GameClient/Shell.h"
+#include "game_client/Shell.h"
 #include "common/CRCDebug.h"
 #include "GameLogic/GameLogic.h"
 
@@ -50,7 +50,7 @@
 #include "GameLogic/ScriptActions.h"
 #include "GameLogic/ScriptEngine.h"
 #include "common/Recorder.h"
-#include "GameClient/MessageBox.h"
+#include "game_client/MessageBox.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

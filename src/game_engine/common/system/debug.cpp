@@ -62,9 +62,9 @@
 #include "common/SystemInfo.h"
 #include "common/UnicodeString.h"
 >>>>>>> Stashed changes:src/game_engine/common/System/Debug.cpp
-#include "GameClient/GameText.h"
-#include "GameClient/Keyboard.h"
-#include "GameClient/Mouse.h"
+#include "game_client/GameText.h"
+#include "game_client/Keyboard.h"
+#include "game_client/Mouse.h"
 #include "common/StackDump.h"
 
 // Horrible reference, but we really, really need to know if we are windowed.

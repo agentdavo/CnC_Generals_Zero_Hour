@@ -27,7 +27,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/Xfer.h"
+#include "common/Xfer.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...
@@ -37,7 +37,7 @@
 
 #ifdef DUMP_PERF_STATS
 #include "GameLogic/GameLogic.h"
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 
 Real SubsystemInterface::s_msConsumed = 0;
 #endif

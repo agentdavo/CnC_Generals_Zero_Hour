@@ -29,12 +29,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/MessageStream.h"
-#include "GameClient/HintSpy.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/Drawable.h"
+#include "common/MessageStream.h"
+#include "game_client/HintSpy.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameClient.h"
+#include "game_client/Drawable.h"
 /**
  * This message handler displays UI "hints" (ie: a rectangle for drag selection) based
  * upon the messages that pass through it.

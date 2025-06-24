@@ -20,7 +20,7 @@
 #include "Resource.h"
 #include "CColorAlphaDialog.h"
 
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 
 #include "CParticleEditorPage.h"
 #include "EmissionTypePanels.h"

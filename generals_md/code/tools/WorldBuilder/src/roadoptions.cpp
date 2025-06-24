@@ -28,8 +28,8 @@
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "W3DDevice/GameClient/HeightMap.h"
-#include "Common/FileSystem.h"
-#include "GameClient/TerrainRoads.h"
+#include "common/FileSystem.h"
+#include "game_client/TerrainRoads.h"
 
 #include <list>
 

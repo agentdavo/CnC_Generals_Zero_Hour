@@ -50,9 +50,9 @@
 #include "common/AudioEventRTS.h"
 #include "common/Language.h"
 #include "common/GameAudio.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/InGameUI.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

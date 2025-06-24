@@ -32,8 +32,8 @@
 #ifndef __OBJECT_TYPES_H__
 #define __OBJECT_TYPES_H__
 
-#include "Common/AsciiString.h"
-#include "Common/Snapshot.h"
+#include "common/AsciiString.h"
+#include "common/Snapshot.h"
 
 class Player;
 

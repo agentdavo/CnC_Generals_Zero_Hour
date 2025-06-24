@@ -29,9 +29,9 @@
 
 #include "PreRTS.h"	
 
-#include "Common/Player.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
+#include "common/Player.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
 
 #include "GameLogic/Locomotor.h"
 #include "GameLogic/Module/RailroadGuideAIUpdate.h"
@@ -42,8 +42,8 @@
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Statistics.h"
+#include "game_client/Drawable.h"
+#include "game_client/Statistics.h"
 
 
 ///#define RAILROAD_DESYNC_TEST

@@ -29,16 +29,16 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include "common/AudioEventRTS.h"
 
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GameText.h"
-#include "GameClient/MessageBox.h"
-#include "GameClient/ShellHooks.h"
-//#include "GameNetwork/GameSpy.h"
-//#include "GameNetwork/GameSpyGP.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GameText.h"
+#include "game_client/MessageBox.h"
+#include "game_client/ShellHooks.h"
+//#include "game_network/GameSpy.h"
+//#include "game_network/GameSpyGP.h"
 
-#include "GameNetwork/GameSpyOverlay.h"
-//#include "GameNetwork/GameSpy/PeerDefs.h"
-#include "GameNetwork/GameSpy/BuddyThread.h"
+#include "game_network/GameSpyOverlay.h"
+//#include "game_network/GameSpy/PeerDefs.h"
+#include "game_network/GameSpy/BuddyThread.h"
 
 void deleteNotificationBox( void );
 static void raiseOverlays( void );

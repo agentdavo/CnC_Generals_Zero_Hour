@@ -32,8 +32,8 @@
 #ifndef __SPECIAL_POWER_UPDATE_MODULE_H
 #define __SPECIAL_POWER_UPDATE_MODULE_H
 
-#include "Common/Module.h"
-#include "Common/GameType.h"
+#include "common/Module.h"
+#include "common/GameType.h"
 
 //-------------------------------------------------------------------------------------------------
 class SpecialPowerUpdateInterface

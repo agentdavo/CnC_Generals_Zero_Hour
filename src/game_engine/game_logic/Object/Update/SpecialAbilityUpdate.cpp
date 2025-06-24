@@ -40,12 +40,12 @@
 #include "common/MiscAudio.h"
 #include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/Eva.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameText.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/Eva.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameText.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"

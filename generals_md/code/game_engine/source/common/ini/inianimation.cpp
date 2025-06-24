@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "GameClient/Anim2D.h"
+#include "game_client/Anim2D.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Parse animation entry */

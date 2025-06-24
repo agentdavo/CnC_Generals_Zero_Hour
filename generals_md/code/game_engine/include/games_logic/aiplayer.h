@@ -31,8 +31,8 @@
 #ifndef _AI_PLAYER_H_
 #define _AI_PLAYER_H_
 
-#include "Common/GameMemory.h"
-#include "Common/Snapshot.h"
+#include "common/GameMemory.h"
+#include "common/Snapshot.h"
 
 enum { INVALID_SKILLSET_SELECTION = -1 };
 

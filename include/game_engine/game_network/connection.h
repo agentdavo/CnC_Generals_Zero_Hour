@@ -38,10 +38,10 @@
 #ifndef __CONNECTION_H
 #define __CONNECTION_H
 
-#include "GameNetwork/NetCommandList.h"
-#include "GameNetwork/User.h"
-#include "GameNetwork/transport.h"
-#include "GameNetwork/NetPacket.h"
+#include "game_network/NetCommandList.h"
+#include "game_network/User.h"
+#include "game_network/transport.h"
+#include "game_network/NetPacket.h"
 
 #define CONNECTION_LATENCY_HISTORY_LENGTH 200
 

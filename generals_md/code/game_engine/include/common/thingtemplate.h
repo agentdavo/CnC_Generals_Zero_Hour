@@ -35,21 +35,21 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
  
-#include "Common/AudioEventRTS.h"
-#include "Common/FileSystem.h"
-#include "Common/GameCommon.h"
-#include "Common/Geometry.h"
-#include "Common/KindOf.h"
-#include "Common/ModuleFactory.h"
-#include "Common/Overridable.h"
-#include "Common/ProductionPrerequisite.h"
-#include "Common/Science.h"
-#include "Common/UnicodeString.h"
+#include "common/AudioEventRTS.h"
+#include "common/FileSystem.h"
+#include "common/GameCommon.h"
+#include "common/Geometry.h"
+#include "common/KindOf.h"
+#include "common/ModuleFactory.h"
+#include "common/Overridable.h"
+#include "common/ProductionPrerequisite.h"
+#include "common/Science.h"
+#include "common/UnicodeString.h"
 
 #include "GameLogic/ArmorSet.h"
 #include "GameLogic/WeaponSet.h"
 #include "common/stl_type_defs.h"
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class AIUpdateModuleData;

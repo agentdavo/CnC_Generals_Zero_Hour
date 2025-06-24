@@ -49,8 +49,8 @@
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/Gadget.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/Gadget.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

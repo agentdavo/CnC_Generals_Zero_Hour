@@ -57,11 +57,11 @@
 #include "common/ThingSort.h"
 #include "common/BitFlagsIO.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/GameText.h"
-#include "GameClient/Image.h"
-#include "GameClient/Shadow.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/GameText.h"
+#include "game_client/Image.h"
+#include "game_client/Shadow.h"
 
 #include "GameLogic/Armor.h"
 #include "GameLogic/Module/AIUpdate.h"

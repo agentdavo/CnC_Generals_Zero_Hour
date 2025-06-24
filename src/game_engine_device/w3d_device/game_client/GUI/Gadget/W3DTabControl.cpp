@@ -47,9 +47,9 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/GameWindowGlobal.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetTabControl.h"
+#include "game_client/GameWindowGlobal.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetTabControl.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
 #include "W3DDevice/GameClient/W3DGadget.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"

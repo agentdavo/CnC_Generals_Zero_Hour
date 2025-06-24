@@ -46,10 +46,10 @@
 //----------------------------------------------------------------------------
 
 #include "PreRTS.h"
-#include "Common/ArchiveFile.h"
-#include "Common/ArchiveFileSystem.h"
-#include "Common/AsciiString.h"
-#include "Common/PerfTimer.h"
+#include "common/ArchiveFile.h"
+#include "common/ArchiveFileSystem.h"
+#include "common/AsciiString.h"
+#include "common/PerfTimer.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

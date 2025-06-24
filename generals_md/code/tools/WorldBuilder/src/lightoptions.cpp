@@ -26,7 +26,7 @@
 #include "WorldBuilderView.h"
 #include "WorldBuilderDoc.h"
 #include "WbView3D.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 
 LightOptions *LightOptions::m_staticThis = NULL;
 /////////////////////////////////////////////////////////////////////////////

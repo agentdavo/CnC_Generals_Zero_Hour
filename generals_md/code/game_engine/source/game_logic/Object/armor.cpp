@@ -32,7 +32,7 @@
 
 
 #include "common/ini.h"
-#include "Common/ThingFactory.h"
+#include "common/ThingFactory.h"
 #include "GameLogic/Armor.h"
 #include "GameLogic/Damage.h"
 

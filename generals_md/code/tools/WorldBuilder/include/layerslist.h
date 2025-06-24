@@ -36,7 +36,7 @@
 #define _H_LAYERSLIST_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 #include <list>
 #include <string>
 

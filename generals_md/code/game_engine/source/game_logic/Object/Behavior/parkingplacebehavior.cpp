@@ -29,10 +29,10 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/CRCDebug.h"
-#include "Common/Xfer.h"
-#include "Common/ThingTemplate.h"
-#include "GameClient/Drawable.h"
+#include "common/CRCDebug.h"
+#include "common/Xfer.h"
+#include "common/ThingTemplate.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Module/AIUpdate.h"
@@ -42,7 +42,7 @@
 #include "GameLogic/Module/JetAIUpdate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/TerrainLogic.h"
-#include "Common/Team.h" 
+#include "common/Team.h" 
 
 #ifdef _INTERNAL
 // for occasional debugging...

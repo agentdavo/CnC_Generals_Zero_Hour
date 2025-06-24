@@ -27,7 +27,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/User.h"
+#include "game_network/User.h"
 
 /**
  * Constructor.  Sets up the member variables with the appropriate values.

@@ -47,8 +47,8 @@
 #include "common/IgnorePreferences.h"
 #include "common/QuotedPrintable.h"
 #include "common/MultiplayerSettings.h"
-#include "GameClient/MapUtil.h"
-#include "GameNetwork/GameSpy/PeerDefs.h"
+#include "game_client/MapUtil.h"
+#include "game_network/GameSpy/PeerDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

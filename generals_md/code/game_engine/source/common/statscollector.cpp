@@ -51,17 +51,17 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Common/StatsCollector.h"
-#include "Common/FileSystem.h"
-#include "Common/PlayerList.h"
-#include "Common/Player.h"
-#include "Common/GlobalData.h"
-#include "Common/Money.h"
+#include "common/StatsCollector.h"
+#include "common/FileSystem.h"
+#include "common/PlayerList.h"
+#include "common/Player.h"
+#include "common/GlobalData.h"
+#include "common/Money.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"
-#include "GameClient/MapUtil.h"
-#include "GameNetwork/NetworkUtil.h"
-#include "GameNetwork/LANAPICallbacks.h"
+#include "game_client/MapUtil.h"
+#include "game_network/NetworkUtil.h"
+#include "game_network/LANAPICallbacks.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

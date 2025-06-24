@@ -32,9 +32,9 @@
 #ifndef _GLOBALDATA_H_
 #define _GLOBALDATA_H_
 
-#include "Common/GameCommon.h" // ensure we get DUMP_PERF_STATS, or not
+#include "common/GameCommon.h" // ensure we get DUMP_PERF_STATS, or not
 #include "common/ascii_string.h"
-#include "Common/GameType.h"
+#include "common/GameType.h"
 #include "common/gamememory.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "game_client/Color.h"

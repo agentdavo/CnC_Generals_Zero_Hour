@@ -36,13 +36,13 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Common/UserPreferences.h"
-#include "Common/SkirmishBattleHonors.h"
-#include "Common/Player.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/QuotedPrintable.h"
-#include "Common/MultiplayerSettings.h"
-#include "GameClient/MapUtil.h"
+#include "common/UserPreferences.h"
+#include "common/SkirmishBattleHonors.h"
+#include "common/Player.h"
+#include "common/PlayerTemplate.h"
+#include "common/QuotedPrintable.h"
+#include "common/MultiplayerSettings.h"
+#include "game_client/MapUtil.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

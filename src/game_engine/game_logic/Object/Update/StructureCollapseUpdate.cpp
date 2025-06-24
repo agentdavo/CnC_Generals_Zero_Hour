@@ -36,15 +36,15 @@
 #include "common/RandomValue.h"
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BoneFXUpdate.h"
 #include "GameLogic/Module/StructureCollapseUpdate.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/ObjectCreationList.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 const Int MAX_IDX = 32;
 

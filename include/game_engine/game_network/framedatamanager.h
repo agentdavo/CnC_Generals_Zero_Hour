@@ -28,8 +28,8 @@
 #ifndef __FRAMEDATAMANAGER_H
 #define __FRAMEDATAMANAGER_H
 
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/FrameData.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/FrameData.h"
 
 class FrameDataManager : public MemoryPoolObject
 {

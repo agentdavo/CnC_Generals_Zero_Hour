@@ -33,8 +33,8 @@
 #define __WEAPON_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
-#include "Common/GameCommon.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameCommon.h"
 
 #include "GameLogic/Damage.h"
 

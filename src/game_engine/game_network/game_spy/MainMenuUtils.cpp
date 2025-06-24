@@ -35,21 +35,21 @@
 
 //#include "common/Registry.h"
 #include "common/UserPreferences.h"
-#include "common/Version.h"
-#include "GameClient/GameText.h"
-#include "GameClient/MessageBox.h"
-#include "GameClient/Shell.h"
+#include "common/version.h"
+#include "game_client/GameText.h"
+#include "game_client/MessageBox.h"
+#include "game_client/Shell.h"
 #include "GameLogic/ScriptEngine.h"
 
-#include "GameClient/ShellHooks.h"
+#include "game_client/ShellHooks.h"
 
 #include "ghttp/ghttp.h"
 
-#include "GameNetwork/DownloadManager.h"
-#include "GameNetwork/GameSpy/BuddyThread.h"
-#include "GameNetwork/GameSpy/MainMenuUtils.h"
-#include "GameNetwork/GameSpy/PeerDefs.h"
-#include "GameNetwork/GameSpy/PeerThread.h"
+#include "game_network/DownloadManager.h"
+#include "game_network/GameSpy/BuddyThread.h"
+#include "game_network/GameSpy/MainMenuUtils.h"
+#include "game_network/GameSpy/PeerDefs.h"
+#include "game_network/GameSpy/PeerThread.h"
 
 #include "WWDownload/Registry.h"
 #include "WWDownload/URLBuilder.h"

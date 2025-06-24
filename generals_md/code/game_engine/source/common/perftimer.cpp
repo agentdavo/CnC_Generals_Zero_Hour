@@ -28,12 +28,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 
-#include "Common/GlobalData.h"
-#include "GameClient/DebugDisplay.h"
-#include "GameClient/Display.h"
-#include "GameClient/GraphDraw.h"
+#include "common/GlobalData.h"
+#include "game_client/DebugDisplay.h"
+#include "game_client/Display.h"
+#include "game_client/GraphDraw.h"
 
 __forceinline void ProfileGetTime(__int64 &t)
 {

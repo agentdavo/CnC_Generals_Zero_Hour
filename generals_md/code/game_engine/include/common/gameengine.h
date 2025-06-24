@@ -32,7 +32,7 @@
 #define _GAME_ENGINE_H_
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameType.h"
+#include "common/GameType.h"
 
 #define DEFAULT_MAX_FPS		45
 

@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/MessageStream.h"
-#include "GameClient/GameClient.h"
+#include "game_client/GameClient.h"
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

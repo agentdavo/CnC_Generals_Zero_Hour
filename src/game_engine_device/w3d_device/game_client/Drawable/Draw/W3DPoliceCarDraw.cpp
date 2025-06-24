@@ -32,7 +32,7 @@
 #include "common/stl_type_defs.h"
 #include "common/Thing.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "W3DDevice/GameClient/Module/W3DPoliceCarDraw.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"
 #include "common/RandomValue.h"

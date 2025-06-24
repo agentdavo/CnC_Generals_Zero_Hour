@@ -47,9 +47,9 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/GadgetCheckBox.h"
-#include "GameClient/GameWindowGlobal.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GadgetCheckBox.h"
+#include "game_client/GameWindowGlobal.h"
+#include "game_client/GameWindowManager.h"
 #include "W3DDevice/GameClient/W3DGadget.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"
 

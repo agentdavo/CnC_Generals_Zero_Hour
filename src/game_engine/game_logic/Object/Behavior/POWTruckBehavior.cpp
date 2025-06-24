@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/POWTruckAIUpdate.h"

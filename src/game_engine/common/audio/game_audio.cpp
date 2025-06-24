@@ -61,9 +61,9 @@
 #include "common/PlayerList.h"
 #include "common/UserPreferences.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/View.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/View.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/TerrainLogic.h"

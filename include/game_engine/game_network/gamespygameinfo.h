@@ -35,7 +35,7 @@
 
 #include "Peer/peer.h"
 
-#include "GameNetwork/GameInfo.h"
+#include "game_network/GameInfo.h"
 
 class Transport;
 class NAT;

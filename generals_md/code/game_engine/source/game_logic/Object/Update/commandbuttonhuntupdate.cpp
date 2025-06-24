@@ -33,14 +33,14 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
-#include "Common/ActionManager.h"
-#include "Common/Player.h"
-#include "Common/RandomValue.h"
-#include "Common/SpecialPower.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
+#include "common/ActionManager.h"
+#include "common/Player.h"
+#include "common/RandomValue.h"
+#include "common/SpecialPower.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Object.h"

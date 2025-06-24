@@ -50,8 +50,8 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Debug.h"
 #include "game_engine/common/function_lexicon.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
 #include "GUIEdit.h"
 #include "Resource.h"
 #include "Properties.h"

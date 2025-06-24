@@ -35,7 +35,7 @@
 #include "common/ini.h"
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BoneFXUpdate.h"
 #include "GameLogic/Module/StructureToppleUpdate.h"
@@ -44,8 +44,8 @@
 #include "GameLogic/ObjectCreationList.h"
 #include "GameLogic/ScriptEngine.h"
 #include "GameLogic/Weapon.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 
 #ifdef _INTERNAL

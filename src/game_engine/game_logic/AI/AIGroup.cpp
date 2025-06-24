@@ -38,9 +38,9 @@
 #include "common/Xfer.h"
 #include "common/XferCRC.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Line2D.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/Line2D.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

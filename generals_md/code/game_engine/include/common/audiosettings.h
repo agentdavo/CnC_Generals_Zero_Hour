@@ -31,7 +31,7 @@
 #ifndef _AUDIOSETTINGS_H_
 #define _AUDIOSETTINGS_H_
 
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 
 enum { MAX_HW_PROVIDERS = 4 };
 

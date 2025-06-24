@@ -26,12 +26,12 @@
 #include "WorldBuilderDoc.h"
 #include "cundoable.h"
 #include "AddPlayerDialog.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/MultiplayerSettings.h"
+#include "common/WellKnownKeys.h"
+#include "common/PlayerTemplate.h"
+#include "common/MultiplayerSettings.h"
 #include "GameLogic/SidesList.h"
-#include "GameClient/GameText.h"
-#include "Common/UnicodeString.h"
+#include "game_client/GameText.h"
+#include "common/UnicodeString.h"
 
 static const char* NEUTRAL_NAME_STR = "(neutral)";
 

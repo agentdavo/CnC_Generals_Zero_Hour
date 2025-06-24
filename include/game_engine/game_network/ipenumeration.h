@@ -31,7 +31,7 @@
 #ifndef _IPENUMERATION_H_
 #define _IPENUMERATION_H_
 
-#include "GameNetwork/Transport.h"
+#include "game_network/Transport.h"
 
 /**
  * IP wrapper class.

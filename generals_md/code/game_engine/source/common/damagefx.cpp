@@ -32,17 +32,17 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
 #include "common/ini.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/DamageFX.h"
-#include "Common/GameAudio.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/DamageFX.h"
+#include "common/GameAudio.h"
 
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////

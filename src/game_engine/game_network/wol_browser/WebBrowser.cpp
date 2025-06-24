@@ -42,9 +42,9 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 //#include "WinMain.h"
-#include "GameNetwork/WOLBrowser/WebBrowser.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/Display.h"
+#include "game_network/WOLBrowser/WebBrowser.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Display.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

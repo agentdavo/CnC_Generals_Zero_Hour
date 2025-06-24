@@ -34,7 +34,7 @@
 #include "common/Upgrade.h"
 #include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/UpgradeDie.h"

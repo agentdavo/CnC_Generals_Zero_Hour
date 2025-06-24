@@ -31,10 +31,10 @@
 // INCLUDE FILES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingFactory.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ThingFactory.h"
+#include "common/Xfer.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"
@@ -44,7 +44,7 @@
 #include "GameLogic/Module/RebuildHoleExposeDie.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/ScriptEngine.h"
-#include "GameClient/SelectionXlat.h"
+#include "game_client/SelectionXlat.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

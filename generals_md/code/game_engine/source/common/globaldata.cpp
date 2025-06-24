@@ -38,23 +38,23 @@
 #define DEFINE_BODYDAMAGETYPE_NAMES
 #define DEFINE_PANNING_NAMES
 
-#include "Common/CRC.h"
+#include "common/CRC.h"
 #include "common/file.h"
-#include "Common/FileSystem.h"
-#include "Common/GameAudio.h"
+#include "common/FileSystem.h"
+#include "common/GameAudio.h"
 #include "common/ini.h"
 #include "common/registry.h"
-#include "Common/UserPreferences.h"
-#include "Common/Version.h"
+#include "common/UserPreferences.h"
+#include "common/version.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/Weapon.h"
 #include "GameLogic/Module/BodyModule.h"
 
-#include "GameClient/Color.h"
-#include "GameClient/TerrainVisual.h"
+#include "game_client/Color.h"
+#include "game_client/TerrainVisual.h"
 
-#include "GameNetwork/FirewallHelper.h"
+#include "game_network/FirewallHelper.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 GlobalData* TheWritableGlobalData = NULL;				///< The global data singleton

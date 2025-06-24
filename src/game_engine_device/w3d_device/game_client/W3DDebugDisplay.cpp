@@ -46,9 +46,9 @@
 //----------------------------------------------------------------------------
 
 #include "W3DDevice/GameClient/W3DDebugDisplay.h"
-#include "GameClient/GameFont.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/DisplayString.h"
+#include "game_client/GameFont.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/DisplayString.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

@@ -56,9 +56,9 @@
 #include <ctype.h>
 
 #include "common/LocalFile.h"
-#include "Common/RAMFile.h"
+#include "common/RAMFile.h"
 #include "lib/base_type.h"
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 			
 
 #ifdef _INTERNAL

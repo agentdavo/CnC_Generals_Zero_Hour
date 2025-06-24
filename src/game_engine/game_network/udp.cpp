@@ -32,8 +32,8 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/GameEngine.h"
-//#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/udp.h"
+//#include "game_network/NetworkInterface.h"
+#include "game_network/udp.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

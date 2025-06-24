@@ -121,7 +121,7 @@
 
 #ifndef LEAN_AND_MEAN
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 #include "common/UnicodeString.h"
 #include "win32_device/common/win32_local_file_system.h"
 #include "win32_device/common/win32_big_file_system.h"

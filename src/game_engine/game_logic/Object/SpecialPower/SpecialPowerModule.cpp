@@ -48,9 +48,9 @@
 #include "GameLogic/Module/SpecialPowerModule.h"
 #include "GameLogic/ScriptEngine.h"
 
-#include "GameClient/Eva.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/Eva.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ControlBar.h"
 
 
 #ifdef _INTERNAL

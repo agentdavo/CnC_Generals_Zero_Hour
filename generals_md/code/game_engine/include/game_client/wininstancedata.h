@@ -51,9 +51,9 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/DisplayString.h"
-#include "GameClient/GameFont.h"
-#include "GameClient/Image.h"
+#include "game_client/DisplayString.h"
+#include "game_client/GameFont.h"
+#include "game_client/Image.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 class GameWindow;

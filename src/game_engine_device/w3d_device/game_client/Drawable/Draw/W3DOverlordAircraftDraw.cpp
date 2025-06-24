@@ -36,7 +36,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/ContainModule.h"
 #include "W3DDevice/GameClient/Module/W3DOverlordAircraftDraw.h"

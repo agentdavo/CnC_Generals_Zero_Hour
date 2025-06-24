@@ -32,15 +32,15 @@
 
 #include "lib/base_type.h"
 
-#include "Common/Geometry.h"
-#include "Common/Snapshot.h"
-#include "Common/SpecialPowerMaskType.h"
-#include "Common/DisabledTypes.h"
-#include "Common/Thing.h"
-#include "Common/ObjectStatusTypes.h"
-#include "Common/Upgrade.h"
+#include "common/Geometry.h"
+#include "common/Snapshot.h"
+#include "common/SpecialPowerMaskType.h"
+#include "common/DisabledTypes.h"
+#include "common/Thing.h"
+#include "common/ObjectStatusTypes.h"
+#include "common/Upgrade.h"
 
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 
 #include "GameLogic/Damage.h" //for kill()
 #include "GameLogic/WeaponBonusConditionFlags.h"
@@ -123,7 +123,7 @@ enum RadarPriorityType;
 enum CanAttackResult;
 
 // For ObjectStatusTypes
-#include "Common/ObjectStatusTypes.h"
+#include "common/ObjectStatusTypes.h"
 
 // For ObjectScriptStatusBit
 #include "GameLogic/ObjectScriptStatusBits.h"

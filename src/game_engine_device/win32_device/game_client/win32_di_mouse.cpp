@@ -26,7 +26,7 @@
 #include <assert.h>
 
 #include "common/Debug.h"
-#include "GameClient/Display.h"
+#include "game_client/Display.h"
 #include "win32_device/game_client/win32_di_mouse.h"
 #include "WinMain.h"
 

@@ -31,8 +31,8 @@
 
 #define DEFINE_OBJECT_STATUS_NAMES
 #include "GameLogic/Module/AIUpdate.h"
-#include "Common/ThingFactory.h"
-#include "Common/Xfer.h"
+#include "common/ThingFactory.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/CreateObjectDie.h"
 #include "GameLogic/Object.h"

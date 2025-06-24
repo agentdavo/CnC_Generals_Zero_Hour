@@ -22,7 +22,7 @@
 #include "stdafx.h"
 #include "worldbuilder.h"
 #include "SelectMacrotexture.h"
-#include "Common/FileSystem.h"
+#include "common/FileSystem.h"
 #include "common/GlobalData.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 

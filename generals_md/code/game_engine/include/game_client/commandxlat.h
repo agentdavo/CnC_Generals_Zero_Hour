@@ -30,7 +30,7 @@
 #ifndef _H_CommandXlat
 #define _H_CommandXlat
 
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 enum GUICommandType;
 

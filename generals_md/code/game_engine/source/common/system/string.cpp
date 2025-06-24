@@ -51,7 +51,7 @@
 #include <stdarg.h>
 #include <string.h>
 
-#include "Common/string.h"
+#include "common/string.h"
 
 // 'assignment within condition expression'.
 #pragma warning(disable : 4706)

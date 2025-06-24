@@ -48,8 +48,8 @@
 #define _MISSIONSTATS_H_
 
 #include "lib/base_type.h"
-#include "Common/GameCommon.h"
-#include "Common/Snapshot.h"
+#include "common/GameCommon.h"
+#include "common/Snapshot.h"
 
 // ----------------------------------------------------------------------------------------------
 /**

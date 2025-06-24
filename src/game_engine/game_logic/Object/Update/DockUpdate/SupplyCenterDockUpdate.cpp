@@ -33,9 +33,9 @@
 #include "common/Xfer.h"
 #include "GameLogic/Module/SupplyCenterDockUpdate.h"
 #include "GameLogic/Module/SupplyTruckAIUpdate.h"
-#include "GameClient/Color.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/GameText.h"
+#include "game_client/Color.h"
+#include "game_client/InGameUI.h"
+#include "game_client/GameText.h"
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------

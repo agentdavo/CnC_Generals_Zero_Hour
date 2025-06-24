@@ -71,11 +71,11 @@
 #include "common/BitFlagsIO.h"
 #include "common/SpecialPower.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/GameText.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/GameClient.h"
+#include "game_client/GameText.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

@@ -32,15 +32,15 @@
 
 #define DEFINE_LOCOMOTORSET_NAMES //Gain access to TheLocomotorSetNames[]
 
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/Xfer.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

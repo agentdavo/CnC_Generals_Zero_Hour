@@ -30,14 +30,14 @@
 #include "WorldBuilderDoc.h"
 #include "CUndoable.h"
 #include "W3DDevice/GameClient/HeightMap.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingSort.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/FileSystem.h" // for LOAD_TEST_ASSETS
+#include "common/WellKnownKeys.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/ThingSort.h"
+#include "common/PlayerTemplate.h"
+#include "common/FileSystem.h" // for LOAD_TEST_ASSETS
 #include "GameLogic/SidesList.h"
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 
 #include <list>
 

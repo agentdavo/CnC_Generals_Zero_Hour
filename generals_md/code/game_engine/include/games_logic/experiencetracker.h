@@ -32,10 +32,10 @@
 #ifndef EXPERIENCE_TRACKER_H
 #define EXPERIENCE_TRACKER_H
 
-#include "Common/GameCommon.h"
-#include "Common/GameType.h"
-#include "Common/GameMemory.h"
-#include "Common/Snapshot.h"
+#include "common/GameCommon.h"
+#include "common/GameType.h"
+#include "common/GameMemory.h"
+#include "common/Snapshot.h"
 
 class Object;
 

@@ -38,10 +38,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/PerfTimer.h"
-#include "Common/Team.h"
-#include "Common/Xfer.h"
-#include "Common/ThingTemplate.h"
+#include "common/PerfTimer.h"
+#include "common/Team.h"
+#include "common/Xfer.h"
+#include "common/ThingTemplate.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/AIGuardRetaliate.h"

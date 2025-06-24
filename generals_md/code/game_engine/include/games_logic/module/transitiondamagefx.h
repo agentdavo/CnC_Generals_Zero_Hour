@@ -33,7 +33,7 @@
 #define __TRANSITIONDAMAGEFX_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/Module/DamageModule.h" 
 #include "GameLogic/Module/BodyModule.h"
 

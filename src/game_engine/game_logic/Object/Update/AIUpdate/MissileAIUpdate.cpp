@@ -46,9 +46,9 @@
 #include "GameLogic/TerrainLogic.h"
 #include "GameLogic/Weapon.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/ParticleSys.h"
 
 const Real BIGNUM = 99999.0f;
 

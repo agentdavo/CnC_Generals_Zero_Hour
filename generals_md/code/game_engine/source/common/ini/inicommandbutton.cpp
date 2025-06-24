@@ -32,8 +32,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/SpecialPower.h"
-#include "GameClient/ControlBar.h"
+#include "common/SpecialPower.h"
+#include "game_client/ControlBar.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Parse a command button */

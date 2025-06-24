@@ -31,10 +31,10 @@
 #define DEFINE_GEOMETRY_NAMES
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/Geometry.h"
+#include "common/Geometry.h"
 #include "common/ini.h"
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -33,7 +33,7 @@
 #include "common/ModelState.h"
 #include "common/Player.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Module/ObjectCreationUpgrade.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/ObjectCreationList.h"

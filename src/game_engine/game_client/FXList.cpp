@@ -30,7 +30,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 
 #include "common/DrawModule.h"
 #include "common/GameAudio.h"
@@ -44,10 +44,10 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/TerrainLogic.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Display.h"
+#include "game_client/GameClient.h"
+#include "game_client/Drawable.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/PartitionManager.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

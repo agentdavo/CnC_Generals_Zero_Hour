@@ -36,7 +36,7 @@ class Object;
 class TunnelTracker; // The player owns one such object for his Tunnels, so instead of duplicating
 // so much code, this SubSystem will manage all of the Cave systems.
 
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 #include "game_engine/common/subsystem_interface.h"
 
 /** 

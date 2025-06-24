@@ -31,16 +31,16 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/NAT.h"
-#include "GameNetwork/Transport.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameClient/EstablishConnectionsMenu.h"
-#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/GameSpy/PeerThread.h"
-#include "GameNetwork/GameSpy/PeerDefs.h"
-#include "GameNetwork/GameSpy/PersistentStorageThread.h"
-#include "GameNetwork/GameSpy/GSConfig.h"
+#include "game_network/NAT.h"
+#include "game_network/Transport.h"
+#include "game_network/NetworkDefs.h"
+#include "game_client/EstablishConnectionsMenu.h"
+#include "game_network/NetworkInterface.h"
+#include "game_network/GameInfo.h"
+#include "game_network/GameSpy/PeerThread.h"
+#include "game_network/GameSpy/PeerDefs.h"
+#include "game_network/GameSpy/PersistentStorageThread.h"
+#include "game_network/GameSpy/GSConfig.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

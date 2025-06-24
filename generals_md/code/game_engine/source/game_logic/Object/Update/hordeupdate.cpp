@@ -31,16 +31,16 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_HORDEACTION_NAMES
-#include "Common/Player.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Upgrade.h"
-#include "Common/Xfer.h"
-#include "Common/BitFlagsIO.h"
+#include "common/Player.h"
+#include "common/ThingTemplate.h"
+#include "common/Upgrade.h"
+#include "common/Xfer.h"
+#include "common/BitFlagsIO.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Weapon.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/HordeUpdate.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

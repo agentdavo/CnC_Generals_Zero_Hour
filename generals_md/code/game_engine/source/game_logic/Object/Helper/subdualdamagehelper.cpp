@@ -29,7 +29,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/Xfer.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/BodyModule.h"

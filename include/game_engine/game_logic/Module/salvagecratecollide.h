@@ -34,7 +34,7 @@
 #define SALVAGE_CRATE_COLLIDE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/Module.h"
+#include "common/Module.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Module/CrateCollide.h"
 

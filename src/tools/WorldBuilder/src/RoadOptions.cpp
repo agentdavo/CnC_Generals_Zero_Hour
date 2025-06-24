@@ -29,7 +29,7 @@
 #include "WorldBuilderDoc.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "common/FileSystem.h"
-#include "GameClient/TerrainRoads.h"
+#include "game_client/TerrainRoads.h"
 
 #include <list>
 

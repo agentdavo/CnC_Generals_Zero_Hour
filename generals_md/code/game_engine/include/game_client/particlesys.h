@@ -33,12 +33,12 @@
 #define _PARTICLE_SYS_H_
 
 #include <stdio.h>
-#include "Common/AsciiString.h"
-#include "Common/GameMemory.h"
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
+#include "common/AsciiString.h"
+#include "common/GameMemory.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/ClientRandomValue.h"
+#include "game_client/ClientRandomValue.h"
 
 #include "WWMath/Matrix3D.h"		///< @todo Replace with our own matrix library
 #include "common/stl_type_defs.h"

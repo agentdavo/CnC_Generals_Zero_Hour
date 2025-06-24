@@ -52,8 +52,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "lib/base_type.h"
-#include "Common/Debug.h"
-#include "Common/Errors.h"
+#include "common/Debug.h"
+#include "common/Errors.h"
 
 class UnicodeString;
 

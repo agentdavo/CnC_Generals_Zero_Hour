@@ -51,11 +51,11 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "common/ini.h"
-#include "GameClient/Credits.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GlobalLanguage.h"
+#include "game_client/Credits.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/Display.h"
+#include "game_client/GameText.h"
+#include "game_client/GlobalLanguage.h"
 #ifdef _INTERNAL
 // for occasional debugging...
 //#pragma optimize("", off)

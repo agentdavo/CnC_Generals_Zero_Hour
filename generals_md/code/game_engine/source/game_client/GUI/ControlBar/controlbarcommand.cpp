@@ -30,15 +30,15 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/NameKeyGenerator.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/SpecialPower.h"
-#include "Common/Upgrade.h"
-#include "Common/BuildAssistant.h"
+#include "common/NameKeyGenerator.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/PlayerTemplate.h"
+#include "common/SpecialPower.h"
+#include "common/Upgrade.h"
+#include "common/BuildAssistant.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BattlePlanUpdate.h"
 #include "GameLogic/Module/DozerAIUpdate.h"
@@ -53,12 +53,12 @@
 #include "GameLogic/Module/HackInternetAIUpdate.h"
 #include "GameLogic/Weapon.h"
 
-#include "GameClient/InGameUI.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

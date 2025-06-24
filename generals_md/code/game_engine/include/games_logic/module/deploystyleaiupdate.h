@@ -32,7 +32,7 @@
 #ifndef __DEPLOY_STYLE_AI_UPDATE_H
 #define __DEPLOY_STYLE_AI_UPDATE_H
 
-#include "Common/StateMachine.h"
+#include "common/StateMachine.h"
 #include "GameLogic/Module/AIUpdate.h"
 
 //-------------------------------------------------------------------------------------------------

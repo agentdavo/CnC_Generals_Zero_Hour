@@ -29,12 +29,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/AudioHandleSpecialValues.h"
-#include "Common/GameType.h"
-#include "Common/GameAudio.h"
-#include "Common/PerfTimer.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/AudioHandleSpecialValues.h"
+#include "common/GameType.h"
+#include "common/GameAudio.h"
+#include "common/PerfTimer.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/FiringTracker.h"
 #include "GameLogic/GameLogic.h"

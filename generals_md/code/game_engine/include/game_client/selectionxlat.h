@@ -30,7 +30,7 @@
 #ifndef _H_SelectionXlat
 #define _H_SelectionXlat
 
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 class ThingTemplate;
 

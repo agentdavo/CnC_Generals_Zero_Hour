@@ -54,8 +54,8 @@
 
 #include "common/ini.h"
 #include "common/Xfer.h"
-#include "GameClient/CampaignManager.h"
-#include "GameClient/GameClient.h"
+#include "game_client/CampaignManager.h"
+#include "game_client/GameClient.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

@@ -33,7 +33,7 @@
 #ifndef __ASSAULT_TRANSPORT_AI_UPDATE_H
 #define __ASSAULT_TRANSPORT_AI_UPDATE_H
 
-#include "Common/StateMachine.h"
+#include "common/StateMachine.h"
 #include "GameLogic/Module/AIUpdate.h"
 
 //-------------------------------------------------------------------------------------------------

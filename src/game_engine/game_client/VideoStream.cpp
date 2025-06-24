@@ -40,7 +40,7 @@
 //----------------------------------------------------------------------------
 
 #include "lib/base_type.h"
-#include "GameClient/VideoPlayer.h"
+#include "game_client/VideoPlayer.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

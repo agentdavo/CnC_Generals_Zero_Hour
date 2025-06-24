@@ -35,16 +35,16 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/ActionManager.h"
-#include "Common/GlobalData.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/SpecialPower.h"
-#include "Common/Team.h"
-#include "Common/ThingTemplate.h"
+#include "common/ActionManager.h"
+#include "common/GlobalData.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/SpecialPower.h"
+#include "common/Team.h"
+#include "common/ThingTemplate.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"

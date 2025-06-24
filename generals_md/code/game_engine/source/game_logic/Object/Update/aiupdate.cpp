@@ -32,25 +32,25 @@
 #define DEFINE_LOCOMOTORSET_NAMES					// for TheLocomotorSetNames[]
 #define DEFINE_AUTOACQUIRE_NAMES
 
-#include "Common/ActionManager.h"
-#include "Common/GameState.h"
-#include "Common/CRCDebug.h"
-#include "Common/GlobalData.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/RandomValue.h"
-#include "Common/Team.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Upgrade.h"
-#include "Common/PerfTimer.h"
-#include "Common/UnitTimings.h"
-#include "Common/Xfer.h"
-#include "Common/XferCRC.h"
+#include "common/ActionManager.h"
+#include "common/GameState.h"
+#include "common/CRCDebug.h"
+#include "common/GlobalData.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/RandomValue.h"
+#include "common/Team.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Upgrade.h"
+#include "common/PerfTimer.h"
+#include "common/UnitTimings.h"
+#include "common/Xfer.h"
+#include "common/XferCRC.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"  // useful for printing quick debug strings when we need to
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"  // useful for printing quick debug strings when we need to
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
@@ -69,7 +69,7 @@
 #include "GameLogic/ScriptEngine.h"
 #include "GameLogic/TurretAI.h"
 #include "GameLogic/Weapon.h"
-#include "Common/Radar.h"									// For TheRadar
+#include "common/Radar.h"									// For TheRadar
 
 #define SLEEPY_AI
 

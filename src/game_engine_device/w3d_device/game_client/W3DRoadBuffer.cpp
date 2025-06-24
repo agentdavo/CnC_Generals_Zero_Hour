@@ -55,7 +55,7 @@
 #include "common/RandomValue.h"
 //#include "common/GameFileSystem.h"
 #include "common/FileSystem.h" // for LOAD_TEST_ASSETS
-#include "GameClient/TerrainRoads.h"
+#include "game_client/TerrainRoads.h"
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"

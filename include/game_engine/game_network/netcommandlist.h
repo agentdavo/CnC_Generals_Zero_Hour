@@ -29,7 +29,7 @@
 #define __NETCOMMANDLIST_H
 
 #include "common/gamememory.h"
-#include "GameNetwork/NetCommandRef.h"
+#include "game_network/NetCommandRef.h"
 
 /**
  * The NetCommandList is a ordered linked list of NetCommandRef objects.

@@ -33,9 +33,9 @@
 #define DEFINE_ANIM_2D_MODE_NAMES
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
-#include "GameClient/Anim2D.h"
-#include "GameClient/Display.h"
-#include "GameClient/Image.h"
+#include "game_client/Anim2D.h"
+#include "game_client/Display.h"
+#include "game_client/Image.h"
 #include "GameLogic/GameLogic.h"
 
 #ifdef _INTERNAL

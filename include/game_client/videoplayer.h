@@ -52,7 +52,7 @@
 #include "WWMath/rect.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "common/ascii_string.h"
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "common/stl_type_defs.h"
 
 //----------------------------------------------------------------------------

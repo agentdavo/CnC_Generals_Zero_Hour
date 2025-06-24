@@ -47,8 +47,8 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowGlobal.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowGlobal.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
 #include "W3DDevice/GameClient/W3DGameWindowManager.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"

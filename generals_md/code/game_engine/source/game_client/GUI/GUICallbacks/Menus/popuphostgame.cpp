@@ -52,25 +52,25 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GlobalData.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/Version.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameText.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GadgetCheckBox.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameNetwork/GameSpy/GSConfig.h"
-#include "GameNetwork/GameSpy/Peerdefs.h"
-#include "GameNetwork/GameSpy/PeerThread.h"
-#include "GameNetwork/GameSpyOverlay.h"
+#include "common/GlobalData.h"
+#include "common/NameKeyGenerator.h"
+#include "common/version.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameText.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GadgetCheckBox.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetListBox.h"
+#include "game_network/GameSpy/GSConfig.h"
+#include "game_network/GameSpy/Peerdefs.h"
+#include "game_network/GameSpy/PeerThread.h"
+#include "game_network/GameSpyOverlay.h"
 
-#include "GameNetwork/GameSpy/LadderDefs.h"
-#include "Common/CustomMatchPreferences.h"
-#include "Common/LadderPreferences.h"
+#include "game_network/GameSpy/LadderDefs.h"
+#include "common/CustomMatchPreferences.h"
+#include "common/LadderPreferences.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

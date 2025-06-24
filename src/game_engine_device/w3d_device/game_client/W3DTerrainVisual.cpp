@@ -39,7 +39,7 @@
 #include "common/WellKnownKeys.h"
 #include "common/TerrainTypes.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 #include "W3DDevice/GameClient/W3DScene.h"
 #include "W3DDevice/GameClient/W3DTerrainVisual.h"

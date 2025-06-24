@@ -47,16 +47,16 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/LocalFileSystem.h"
-#include "Common/MessageStream.h"
-#include "Common/Recorder.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/MessageBox.h"
-#include "GameClient/Shell.h"
+#include "common/LocalFileSystem.h"
+#include "common/MessageStream.h"
+#include "common/Recorder.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GameText.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/MessageBox.h"
+#include "game_client/Shell.h"
 #include "GameLogic/GameLogic.h"
 
 #ifdef _INTERNAL

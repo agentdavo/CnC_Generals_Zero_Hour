@@ -37,9 +37,9 @@
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/PhysicsUpdate.h"
@@ -49,7 +49,7 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/ObjectCreationList.h"
 #include "GameLogic/Weapon.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

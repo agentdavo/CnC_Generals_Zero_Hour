@@ -40,8 +40,8 @@ be specialized code.
 #define __NETPACKET_H
 
 #include "NetworkDefs.h"
-#include "GameNetwork/NetCommandList.h"
-#include "Common/MessageStream.h"
+#include "game_network/NetCommandList.h"
+#include "common/MessageStream.h"
 #include "common/gamememory.h"
 
 class NetPacket;

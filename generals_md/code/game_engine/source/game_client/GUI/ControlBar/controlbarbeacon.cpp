@@ -30,13 +30,13 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/NameKeyGenerator.h"
-#include "Common/ThingTemplate.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/InGameUI.h"
+#include "common/NameKeyGenerator.h"
+#include "common/ThingTemplate.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/Object.h"
 
 //-------------------------------------------------------------------------------------------------

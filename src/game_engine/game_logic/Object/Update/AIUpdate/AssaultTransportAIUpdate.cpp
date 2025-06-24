@@ -32,8 +32,8 @@
 
 #include "common/Player.h"
 #include "common/ThingFactory.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/ContainModule.h"

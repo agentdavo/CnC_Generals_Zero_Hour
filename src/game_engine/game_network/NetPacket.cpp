@@ -26,11 +26,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/NetPacket.h"
-#include "GameNetwork/NetCommandMsg.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/NetworkUtil.h"
-#include "GameNetwork/GameMessageParser.h"
+#include "game_network/NetPacket.h"
+#include "game_network/NetCommandMsg.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/NetworkUtil.h"
+#include "game_network/GameMessageParser.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

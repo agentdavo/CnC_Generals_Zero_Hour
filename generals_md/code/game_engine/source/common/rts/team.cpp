@@ -29,17 +29,17 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/GameState.h"
-#include "Common/Team.h"
-#include "Common/ThingFactory.h"
-#include "Common/PerfTimer.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/ThingTemplate.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "common/GameState.h"
+#include "common/Team.h"
+#include "common/ThingFactory.h"
+#include "common/PerfTimer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/PlayerTemplate.h"
+#include "common/ThingTemplate.h"
+#include "common/WellKnownKeys.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
 
 #include "GameLogic/SidesList.h"
 #include "GameLogic/Object.h"

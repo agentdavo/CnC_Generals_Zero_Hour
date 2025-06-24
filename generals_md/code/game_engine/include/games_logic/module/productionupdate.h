@@ -33,7 +33,7 @@
 #define __PRODUCTIONUPDATE_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/ModelState.h"
+#include "common/ModelState.h"
 #include "GameLogic/Module/DieModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 

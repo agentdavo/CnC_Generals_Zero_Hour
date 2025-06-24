@@ -44,21 +44,21 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Errors.h"
-#include "Common/DataChunk.h"
-#include "Common/GameState.h"
-#include "Common/GlobalData.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/Team.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/Xfer.h"
+#include "common/Errors.h"
+#include "common/DataChunk.h"
+#include "common/GameState.h"
+#include "common/GlobalData.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/PlayerTemplate.h"
+#include "common/Team.h"
+#include "common/WellKnownKeys.h"
+#include "common/Xfer.h"
 #ifdef _DEBUG
 #include "GameLogic/Object.h"
 #endif
 #include "GameLogic/SidesList.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/NetworkDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

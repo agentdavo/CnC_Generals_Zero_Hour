@@ -33,9 +33,9 @@
 #define DEFINE_TERRAIN_LOD_NAMES
 #define DEFINE_TIME_OF_DAY_NAMES
 
-#include "Common/MultiplayerSettings.h"
+#include "common/MultiplayerSettings.h"
 #include "common/ini.h"
-#include "GameNetwork/GameInfo.h" // for PLAYERTEMPLATE_*
+#include "game_network/GameInfo.h" // for PLAYERTEMPLATE_*
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 MultiplayerSettings *TheMultiplayerSettings = NULL;				///< The MultiplayerSettings singleton

@@ -52,7 +52,7 @@
 #include <assetmgr.h>
 #include <texture.h>
 #include "common/GlobalData.h"
-#include "GameClient/ClientRandomValue.h"
+#include "game_client/ClientRandomValue.h"
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "W3DDevice/GameClient/W3DDynamicLight.h"

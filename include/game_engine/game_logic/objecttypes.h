@@ -33,7 +33,7 @@
 #define __OBJECT_TYPES_H__
 
 #include "common/ascii_string.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 
 class Player;
 

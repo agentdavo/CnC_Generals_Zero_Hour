@@ -36,9 +36,9 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/stl_type_defs.h"
-#include "Common/ModelState.h"
-#include "Common/Science.h"
-#include "Common/Upgrade.h"
+#include "common/ModelState.h"
+#include "common/Science.h"
+#include "common/Upgrade.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Snapshot;

@@ -30,11 +30,11 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
-#include "Common/Player.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/UnicodeString.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
+#include "common/Player.h"
+#include "common/PlayerTemplate.h"
+#include "common/UnicodeString.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/ObjectCreationList.h"

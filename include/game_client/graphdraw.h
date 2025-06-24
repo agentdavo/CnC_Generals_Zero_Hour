@@ -50,7 +50,7 @@
 #ifndef __GRAPHDRAW_H__
 #define __GRAPHDRAW_H__
 
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 #include "common/stl_type_defs.h"
 
 #ifdef PERF_TIMERS

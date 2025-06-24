@@ -52,7 +52,7 @@
 #include <assetmgr.h>
 #include <texture.h>
 #include "common/GlobalData.h"
-#include "GameClient/View.h"
+#include "game_client/View.h"
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "WW3D2/DX8Wrapper.h"

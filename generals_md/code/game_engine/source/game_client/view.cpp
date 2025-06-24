@@ -28,10 +28,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameEngine.h"
-#include "Common/Xfer.h"
-#include "GameClient/View.h"
-#include "GameClient/Drawable.h"
+#include "common/GameEngine.h"
+#include "common/Xfer.h"
+#include "game_client/View.h"
+#include "game_client/Drawable.h"
 
 UnsignedInt View::m_idNext = 1;
 

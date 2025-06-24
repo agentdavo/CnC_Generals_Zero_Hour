@@ -30,15 +30,15 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameState.h"
-#include "Common/PerfTimer.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/RandomValue.h"
-#include "Common/Team.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/PerfTimer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/RandomValue.h"
+#include "common/Team.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"
@@ -49,10 +49,10 @@
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Weapon.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/View.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/View.h"
 
 #ifdef _INTERNAL
 //#pragma optimize("", off)

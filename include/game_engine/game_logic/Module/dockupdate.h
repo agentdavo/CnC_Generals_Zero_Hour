@@ -33,7 +33,7 @@
 #define _DOCK_UPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "common/gamememory.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Module/UpdateModule.h"

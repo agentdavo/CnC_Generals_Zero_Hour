@@ -48,9 +48,9 @@
 #define _PLAYERLIST_H_
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameCommon.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/Snapshot.h"
+#include "common/GameCommon.h"
+#include "common/NameKeyGenerator.h"
+#include "common/Snapshot.h"
 
 class DataChunkInput;
 struct DataChunkInfo;

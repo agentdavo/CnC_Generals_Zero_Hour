@@ -34,8 +34,8 @@
 #include <stdio.h>
 #include "game_engine/common/subsystem_interface.h"
 #include "View.h"
-#include "GameClient/Color.h"
-#include "GameClient/GameFont.h"
+#include "game_client/Color.h"
+#include "game_client/GameFont.h"
 
 class View;
 

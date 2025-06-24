@@ -29,7 +29,7 @@
 
 #include "PreRTS.h"
 
-#include "Common/CopyProtection.h"
+#include "common/CopyProtection.h"
 
 #ifndef DO_COPY_PROTECTION
 //#pragma MESSAGE("*********************************************************")

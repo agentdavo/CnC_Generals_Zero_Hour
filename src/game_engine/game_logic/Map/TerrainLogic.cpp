@@ -39,7 +39,7 @@
 #include "common/WellKnownKeys.h"
 #include "common/Xfer.h"
 
-#include "GameClient/TerrainVisual.h"
+#include "game_client/TerrainVisual.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

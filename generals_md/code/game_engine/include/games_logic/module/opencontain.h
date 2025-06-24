@@ -42,10 +42,10 @@
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
 #include "GameLogic/Module/DamageModule.h"
-#include "Common/AudioEventRTS.h"
-#include "Common/KindOf.h"
-#include "Common/GameMemory.h"
-#include "Common/ModelState.h"
+#include "common/AudioEventRTS.h"
+#include "common/KindOf.h"
+#include "common/GameMemory.h"
+#include "common/ModelState.h"
 
 // ------------------------------------------------------------------------------------------------
 enum { CONTAIN_MAX_UNKNOWN = -1 };  // means we don't care, infinite, unassigned, whatever

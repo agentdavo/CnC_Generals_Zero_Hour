@@ -49,8 +49,8 @@
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"
-#include "GameClient/GadgetSlider.h"
-#include "GameClient/Gadget.h"
+#include "game_client/GadgetSlider.h"
+#include "game_client/Gadget.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

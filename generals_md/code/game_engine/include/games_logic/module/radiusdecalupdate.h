@@ -32,7 +32,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "GameLogic/Module/UpdateModule.h"
-#include "GameClient/RadiusDecal.h"
+#include "game_client/RadiusDecal.h"
 
 //-------------------------------------------------------------------------------------------------
 class RadiusDecalUpdateModuleData : public UpdateModuleData

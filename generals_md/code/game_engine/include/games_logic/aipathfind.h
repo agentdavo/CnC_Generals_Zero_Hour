@@ -31,9 +31,9 @@
 #ifndef _PATHFIND_H_
 #define _PATHFIND_H_												 
 
-#include "Common/GameType.h"
-#include "Common/GameMemory.h"
-#include "Common/Snapshot.h"
+#include "common/GameType.h"
+#include "common/GameMemory.h"
+#include "common/Snapshot.h"
 //#include "GameLogic/Locomotor.h"	// no, do not include this, unless you like long recompiles
 #include "GameLogic/LocomotorSet.h"
 #include "GameLogic/GameLogic.h"

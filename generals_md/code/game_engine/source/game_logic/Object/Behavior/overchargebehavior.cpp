@@ -31,16 +31,16 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Radar.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Radar.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/OverchargeBehavior.h"
 #include "GameLogic/Module/PowerPlantUpdate.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 
 #ifdef _INTERNAL

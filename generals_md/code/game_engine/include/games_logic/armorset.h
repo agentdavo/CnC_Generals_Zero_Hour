@@ -30,9 +30,9 @@
 #define _ArmorSet_H_
 
 #include "lib/base_type.h"
-#include "Common/GameType.h"
-#include "Common/SparseMatchFinder.h"
-#include "Common/SparseMatchFinder.h"
+#include "common/GameType.h"
+#include "common/SparseMatchFinder.h"
+#include "common/SparseMatchFinder.h"
 
 //-------------------------------------------------------------------------------------------------
 class ArmorTemplate;

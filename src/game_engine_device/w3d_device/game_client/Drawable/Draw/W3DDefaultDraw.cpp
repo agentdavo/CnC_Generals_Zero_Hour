@@ -33,10 +33,10 @@
 #include "common/GlobalData.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
-#include "GameClient/Shadow.h"
-#include "GameClient/FXList.h"
+#include "game_client/Shadow.h"
+#include "game_client/FXList.h"
 #include "GameLogic/TerrainLogic.h"
 
 #include "WW3D2/HAnim.h"

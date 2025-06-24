@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/MultiplayerSettings.h"
+#include "common/MultiplayerSettings.h"
 
 void INI::parseMultiplayerSettingsDefinition( INI* ini )
 {

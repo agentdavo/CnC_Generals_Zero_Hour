@@ -28,10 +28,10 @@
 
 #include "PreRTS.h"
 
-#include "Common/ArchiveFile.h"
-#include "Common/ArchiveFileSystem.h"
+#include "common/ArchiveFile.h"
+#include "common/ArchiveFileSystem.h"
 #include "common/file.h"
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 
 
 // checks to see if str matches searchString.  Search string is done in the

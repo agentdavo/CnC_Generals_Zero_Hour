@@ -39,11 +39,11 @@
 #include "common/Team.h"
 #include "common/Player.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/View.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/View.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/AIUpdate.h"

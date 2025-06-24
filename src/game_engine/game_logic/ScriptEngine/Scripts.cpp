@@ -58,7 +58,7 @@
 #include "common/Player.h"
 #include "common/Xfer.h"
 
-#include "GameClient/ShellHooks.h"
+#include "game_client/ShellHooks.h"
 
 #include "GameLogic/Ai.h"
 #include "GameLogic/Object.h"

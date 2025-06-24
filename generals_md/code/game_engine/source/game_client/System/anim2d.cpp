@@ -31,11 +31,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #define DEFINE_ANIM_2D_MODE_NAMES
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
-#include "GameClient/Anim2D.h"
-#include "GameClient/Display.h"
-#include "GameClient/Image.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
+#include "game_client/Anim2D.h"
+#include "game_client/Display.h"
+#include "game_client/Image.h"
 #include "GameLogic/GameLogic.h"
 
 #ifdef _INTERNAL

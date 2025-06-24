@@ -36,10 +36,10 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"
 
-#include "GameClient/CommandXlat.h"
-#include "GameClient/PlaceEventTranslator.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
+#include "game_client/CommandXlat.h"
+#include "game_client/PlaceEventTranslator.h"
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
 
 //-------------------------------------------------------------------------------------------------
 PlaceEventTranslator::PlaceEventTranslator() : m_frameOfUpButton(-1)

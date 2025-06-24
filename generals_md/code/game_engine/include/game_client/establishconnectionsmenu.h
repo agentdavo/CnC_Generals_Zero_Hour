@@ -24,8 +24,8 @@
 
 //// EstablishConnectionsMenu.h /////////////////////////
 
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/NAT.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/NAT.h"
 
 enum EstablishConnectionsMenuStateType {
 	ESTABLISHCONNECTIONSMENUSTATETYPE_SCREENON,

@@ -32,7 +32,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/ControlBar.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Parse a command set */

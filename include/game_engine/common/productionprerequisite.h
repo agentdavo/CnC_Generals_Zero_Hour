@@ -49,8 +49,8 @@
 //           Includes
 //-----------------------------------------------------------------------------
 #include "common/gamememory.h"
-#include "Common/GameCommon.h"
-#include "Common/Science.h"
+#include "common/GameCommon.h"
+#include "common/Science.h"
 // #include "game_client/ControlBar.h"
 
 //-----------------------------------------------------------------------------

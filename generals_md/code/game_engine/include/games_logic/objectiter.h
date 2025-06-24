@@ -31,8 +31,8 @@
 #ifndef _OBJECT_ITER_H_
 #define _OBJECT_ITER_H_
 
-#include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/GameType.h"
+#include "common/GameMemory.h"
 
 // forward declaration
 class Object;

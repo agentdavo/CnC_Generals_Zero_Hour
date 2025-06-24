@@ -31,17 +31,17 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/RandomValue.h"
-#include "GameClient/Shell.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GameWindowTransitions.h"
+#include "game_client/Shell.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GameWindowTransitions.h"
 #include "common/logger.h"
-#include "GameClient/IMEManager.h"
-#include "GameClient/AnimateWindowManager.h"
-#include "GameClient/ShellMenuScheme.h"
+#include "game_client/IMEManager.h"
+#include "game_client/AnimateWindowManager.h"
+#include "game_client/ShellMenuScheme.h"
 #include "GameLogic/GameLogic.h"
-#include "GameNetwork/GameSpyOverlay.h"
-#include "GameNetwork/GameSpy/PeerDefsImplementation.h"
+#include "game_network/GameSpyOverlay.h"
+#include "game_network/GameSpy/PeerDefsImplementation.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 Shell *TheShell = NULL;  ///< the shell singleton definition

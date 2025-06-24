@@ -48,7 +48,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "lib/base_type.h"
-#include "GameClient/VideoPlayer.h"
+#include "game_client/VideoPlayer.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

@@ -33,9 +33,9 @@
 #define __UPGRADE_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 #include "common/ini.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Player;

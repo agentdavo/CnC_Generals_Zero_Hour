@@ -32,8 +32,8 @@
 #define _DATA_CHUNK_H_
 
 #include "common/gamememory.h"
-#include "Common/Dict.h"
-#include "Common/MapReaderWriterInfo.h"
+#include "common/Dict.h"
+#include "common/MapReaderWriterInfo.h"
 
 typedef unsigned short DataChunkVersionType;
 

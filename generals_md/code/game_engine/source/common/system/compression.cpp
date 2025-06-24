@@ -45,11 +45,11 @@
 //#define TEST_COMPRESSION
 #ifdef TEST_COMPRESSION
 
-#include "GameClient/MapUtil.h"
-#include "Common/FileSystem.h"
+#include "game_client/MapUtil.h"
+#include "common/FileSystem.h"
 #include "common/file.h"
 
-#include "Common/PerfTimer.h"
+#include "common/PerfTimer.h"
 enum { NUM_TIMES = 1 };
 
 struct CompData

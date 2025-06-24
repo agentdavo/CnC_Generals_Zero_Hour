@@ -29,10 +29,10 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
-#include "Common/Debug.h"
-#include "Common/GameState.h"
-#include "Common/Snapshot.h"
-#include "Common/XferLoad.h"
+#include "common/Debug.h"
+#include "common/GameState.h"
+#include "common/Snapshot.h"
+#include "common/XferLoad.h"
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

@@ -32,8 +32,8 @@
 #ifndef __BehaviorModule_H_
 #define __BehaviorModule_H_
 
-#include "Common/GameType.h"
-#include "Common/Module.h"
+#include "common/GameType.h"
+#include "common/Module.h"
 
 //-------------------------------------------------------------------------------------------------
 class Team;

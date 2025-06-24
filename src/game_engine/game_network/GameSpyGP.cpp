@@ -28,10 +28,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameText.h"
-#include "GameNetwork/GameSpy.h"
-#include "GameNetwork/GameSpyGP.h"
-#include "GameNetwork/GameSpyOverlay.h"
+#include "game_client/GameText.h"
+#include "game_network/GameSpy.h"
+#include "game_network/GameSpyGP.h"
+#include "game_network/GameSpyOverlay.h"
 
 GPConnection TheGPConnectionObj;
 GPConnection *TheGPConnection = &TheGPConnectionObj;

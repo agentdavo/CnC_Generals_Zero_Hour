@@ -31,11 +31,11 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_VETERANCY_NAMES
-#include "Common/Upgrade.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/Image.h"
+#include "common/Upgrade.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Image.h"
 
 
 const char *TheUpgradeTypeNames[] = 

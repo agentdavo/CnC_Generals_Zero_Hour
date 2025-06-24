@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"
-#include "Common/BezFwdIterator.h"
+#include "common/BezFwdIterator.h"
 
 //-------------------------------------------------------------------------------------------------
 BezFwdIterator::BezFwdIterator(): mStep(0), mStepsDesired(0)

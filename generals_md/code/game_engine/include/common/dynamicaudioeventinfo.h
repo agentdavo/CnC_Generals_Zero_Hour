@@ -32,8 +32,8 @@
 #ifndef DYNAMICAUDIOEVENTINFO_H_INCLUDED
 #define DYNAMICAUDIOEVENTINFO_H_INCLUDED
 
-#include "Common/AudioEventInfo.h"
-#include "Common/Bitflags.h"
+#include "common/AudioEventInfo.h"
+#include "common/Bitflags.h"
 
 class AsciiString;
 class Xfer;

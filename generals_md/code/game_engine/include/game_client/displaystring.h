@@ -53,11 +53,11 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
-#include "GameClient/GameFont.h"
-#include "GameClient/Color.h"
-#include "Common/AsciiString.h"
-#include "Common/UnicodeString.h"
-#include "Common/GameMemory.h"
+#include "game_client/GameFont.h"
+#include "game_client/Color.h"
+#include "common/AsciiString.h"
+#include "common/UnicodeString.h"
+#include "common/GameMemory.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 class DisplayStringManager;

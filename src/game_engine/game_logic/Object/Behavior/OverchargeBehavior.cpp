@@ -40,7 +40,7 @@
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/OverchargeBehavior.h"
 #include "GameLogic/Module/PowerPlantUpdate.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 
 #ifdef _INTERNAL

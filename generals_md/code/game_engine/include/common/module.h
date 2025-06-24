@@ -36,9 +36,9 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/ini.h"
-#include "Common/GameMemory.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/Snapshot.h"
+#include "common/GameMemory.h"
+#include "common/NameKeyGenerator.h"
+#include "common/Snapshot.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 enum TimeOfDay;

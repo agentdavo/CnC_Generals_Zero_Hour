@@ -32,7 +32,7 @@
 #ifndef __MESSAGEBOX_H_
 #define __MESSAGEBOX_H_
 
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GameWindowManager.h"
 
 GameWindow *MessageBoxYesNo(UnicodeString titleString,UnicodeString bodyString,GameWinMsgBoxFunc yesCallback,GameWinMsgBoxFunc noCallback);  ///< convenience function for displaying a Message box with Yes and No buttons
 GameWindow *QuitMessageBoxYesNo(UnicodeString titleString,UnicodeString bodyString,GameWinMsgBoxFunc yesCallback,GameWinMsgBoxFunc noCallback);  ///< convenience function for displaying a Message box with Yes and No buttons

@@ -31,11 +31,11 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Player.h"
-#include "Common/Science.h"
-#include "Common/SpecialPower.h"
+#include "common/Player.h"
+#include "common/Science.h"
+#include "common/SpecialPower.h"
 #include "GameLogic/Object.h"
-#include "Common/BitFlagsIO.h"
+#include "common/BitFlagsIO.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

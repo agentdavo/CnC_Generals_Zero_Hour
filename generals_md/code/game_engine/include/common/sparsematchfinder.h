@@ -33,7 +33,7 @@
 #define __SparseMatchFinder_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/BitFlags.h"
+#include "common/BitFlags.h"
 #include "common/stl_type_defs.h"
 
 #if defined(_DEBUG) || defined(_INTERNAL)

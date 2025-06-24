@@ -30,9 +30,9 @@
 #include "GameLogic/Scripts.h"
 #include "GameLogic/SidesList.h"
 #include "GameLogic/PolygonTrigger.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingSort.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/ThingSort.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // EditObjectParameter dialog

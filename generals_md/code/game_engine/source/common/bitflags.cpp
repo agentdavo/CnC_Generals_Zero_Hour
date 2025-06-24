@@ -32,9 +32,9 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
-#include "Common/BitFlags.h" 
-#include "Common/BitFlagsIO.h"
-#include "Common/ModelState.h"
+#include "common/BitFlags.h" 
+#include "common/BitFlagsIO.h"
+#include "common/ModelState.h"
 #include "GameLogic/ArmorSet.h"
 
 const char* ModelConditionFlags::s_bitNameList[] = 

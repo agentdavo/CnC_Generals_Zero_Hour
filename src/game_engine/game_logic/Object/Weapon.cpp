@@ -50,10 +50,10 @@
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
  
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ParticleSys.h"
 
 #include "GameLogic/Damage.h"
 #include "GameLogic/ExperienceTracker.h"

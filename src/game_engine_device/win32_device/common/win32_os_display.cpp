@@ -35,7 +35,7 @@
 #include "common/AsciiString.h"
 #include "common/SystemInfo.h"
 #include "common/UnicodeString.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 
 #ifdef _INTERNAL
 // #pragma optimize("", off)

@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/ini.h"
-#include "Common/GameMemory.h"
+#include "common/GameMemory.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Module/UpdateModule.h"
 

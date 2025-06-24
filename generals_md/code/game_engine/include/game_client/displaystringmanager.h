@@ -33,7 +33,7 @@
 #define __DISPLAYSTRINGMANAGER_H_
 
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/DisplayString.h"
+#include "game_client/DisplayString.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Factory for managing and creating display strings */

@@ -37,9 +37,9 @@
 
 #include "common/stl_type_defs.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameMemory.h"
-#include "Common/AsciiString.h"
-#include "GameClient/Drawable.h"
+#include "common/GameMemory.h"
+#include "common/AsciiString.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 
 class ThingTemplate;

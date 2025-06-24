@@ -37,10 +37,10 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/GameWindow.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameClient/CampaignManager.h"
-#include "GameClient/ChallengeGenerals.h"
+#include "game_client/GameWindow.h"
+#include "game_network/GameInfo.h"
+#include "game_client/CampaignManager.h"
+#include "game_client/ChallengeGenerals.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

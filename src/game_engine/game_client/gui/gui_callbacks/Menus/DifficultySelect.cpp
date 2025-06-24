@@ -52,14 +52,14 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "common/UserPreferences.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetRadioButton.h"
-#include "GameClient/CampaignManager.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetRadioButton.h"
+#include "game_client/CampaignManager.h"
 
 #include "GameLogic/ScriptEngine.h"
 

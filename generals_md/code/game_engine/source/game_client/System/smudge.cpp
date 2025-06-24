@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the Game
-#include "GameClient/Smudge.h"
+#include "game_client/Smudge.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

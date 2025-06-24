@@ -51,20 +51,20 @@
 #include "common/Recorder.h"
 >>>>>>> Stashed changes:src/game_engine/GameNetwork/ConnectionManager.cpp
 
-#include "GameClient/Diplomacy.h"
-#include "GameClient/GameText.h"
-#include "GameClient/MessageBox.h"
-#include "GameNetwork/ConnectionManager.h"
-#include "GameNetwork/LANAPICallbacks.h"
-#include "GameNetwork/NAT.h"
-#include "GameNetwork/NetCommandWrapperList.h"
-#include "GameNetwork/NetworkUtil.h"
+#include "game_client/Diplomacy.h"
+#include "game_client/GameText.h"
+#include "game_client/MessageBox.h"
+#include "game_network/ConnectionManager.h"
+#include "game_network/LANAPICallbacks.h"
+#include "game_network/NAT.h"
+#include "game_network/NetCommandWrapperList.h"
+#include "game_network/NetworkUtil.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/ScriptActions.h"
 #include "GameLogic/ScriptEngine.h"
 #include "GameLogic/VictoryConditions.h"
-#include "GameClient/DisconnectMenu.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/DisconnectMenu.h"
+#include "game_client/InGameUI.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

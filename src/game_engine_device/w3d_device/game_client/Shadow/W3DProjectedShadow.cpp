@@ -33,7 +33,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "always.h"
-#include "GameClient/View.h"
+#include "game_client/View.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/Light.h"
 #include "WW3D2/DX8Wrapper.h"
@@ -54,7 +54,7 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/TerrainLogic.h"
-#include "GameClient/drawable.h"
+#include "game_client/drawable.h"
 #include "W3DDevice/GameClient/Module/W3DModelDraw.h"
 #include "W3DDevice/GameClient/W3DShadow.h"
 #include "W3DDevice/GameClient/Heightmap.h"

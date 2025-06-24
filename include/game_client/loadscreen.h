@@ -38,7 +38,7 @@
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "game_client/GameWindow.h"
-#include "GameNetwork/GameInfo.h"
+#include "game_network/GameInfo.h"
 #include "game_client/CampaignManager.h"
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

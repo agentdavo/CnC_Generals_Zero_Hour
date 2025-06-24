@@ -33,9 +33,9 @@
 #define __WATER_H_
 
 // INLCLUDES //////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameType.h"
-#include "Common/Overridable.h"
-#include "Common/Override.h"
+#include "common/GameType.h"
+#include "common/Overridable.h"
+#include "common/Override.h"
 
 //-------------------------------------------------------------------------------------------------
 struct FieldParse;

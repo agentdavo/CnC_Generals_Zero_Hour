@@ -53,8 +53,8 @@
 //----------------------------------------------------------------------------
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/AsciiString.h"
-#include "Common/FileSystem.h" // for typedefs, etc.
+#include "common/AsciiString.h"
+#include "common/FileSystem.h" // for typedefs, etc.
 #include "common/stl_type_defs.h"
 
 //----------------------------------------------------------------------------

@@ -37,7 +37,7 @@
 
 #include "common/GameEngine.h"
 #include "game_logic/game_logic.h"
-#include "GameNetwork/NetworkInterface.h"
+#include "game_network/NetworkInterface.h"
 #include "miles_audio_device/miles_audio_manager.h"
 #include "win32_device/common/Win32BIGFileSystem.h"
 #include "win32_device/common/Win32LocalFileSystem.h"

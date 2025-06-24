@@ -48,10 +48,10 @@
 #include "common/windows.h"
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
-#include "Common/FunctionLexicon.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
+#include "common/Debug.h"
+#include "common/FunctionLexicon.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
 #include "GUIEdit.h"
 #include "Resource.h"
 #include "Properties.h"

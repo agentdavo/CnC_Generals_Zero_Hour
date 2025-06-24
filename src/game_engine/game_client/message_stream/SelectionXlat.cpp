@@ -45,16 +45,16 @@
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Display.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Keyboard.h"
-#include "GameClient/SelectionInfo.h"
-#include "GameClient/SelectionXlat.h"
-#include "GameClient/TerrainVisual.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Display.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/GameText.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Keyboard.h"
+#include "game_client/SelectionInfo.h"
+#include "game_client/SelectionXlat.h"
+#include "game_client/TerrainVisual.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

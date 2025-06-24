@@ -31,8 +31,8 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Xfer.h"
-#include "Common/ThingTemplate.h"
+#include "common/Xfer.h"
+#include "common/ThingTemplate.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

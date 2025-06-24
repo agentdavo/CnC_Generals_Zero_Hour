@@ -30,11 +30,11 @@
 
 #define DEFINE_WEAPONSLOTTYPE_NAMES
 
-#include "Common/GameAudio.h"
-#include "Common/PerfTimer.h"
-#include "Common/RandomValue.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/GameAudio.h"
+#include "common/PerfTimer.h"
+#include "common/RandomValue.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/AIUpdate.h"

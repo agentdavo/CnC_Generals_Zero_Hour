@@ -31,8 +31,8 @@
 #ifndef __LANGAMEINFO_H__
 #define __LANGAMEINFO_H__
 
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/LANPlayer.h"
+#include "game_network/GameInfo.h"
+#include "game_network/LANPlayer.h"
 
 class GameWindow;
 

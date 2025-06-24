@@ -31,7 +31,7 @@
 #ifndef _AUDIOREQUEST_H_
 #define _AUDIOREQUEST_H_
 
-#include "Common/GameAudio.h"
+#include "common/GameAudio.h"
 #include "common/gamememory.h"
 
 class AudioEventRTS;

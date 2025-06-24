@@ -41,9 +41,9 @@
 #include "W3DDevice/GameClient/W3DDisplay.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "W3DDevice/GameClient/W3DScene.h"
-#include "GameClient/Display.h"
-#include "GameClient/Image.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Display.h"
+#include "game_client/Image.h"
+#include "game_client/InGameUI.h"
 #include "mutex.h"
 #include "thread.h"
 

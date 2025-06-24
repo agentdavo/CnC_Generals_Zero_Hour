@@ -32,7 +32,7 @@
 #define __PEERTHREAD_H__
 
 #include "Peer/peer.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/NetworkDefs.h"
 
 enum SerialAuthResult
 {

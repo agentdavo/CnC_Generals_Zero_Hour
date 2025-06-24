@@ -30,7 +30,7 @@
 #define __FRAMEMETRICS_H
 
 #include "lib/base_type.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/NetworkDefs.h"
 
 class FrameMetrics {
 public:

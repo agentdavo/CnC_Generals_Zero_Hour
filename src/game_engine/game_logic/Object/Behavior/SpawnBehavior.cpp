@@ -40,8 +40,8 @@
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/SpawnBehavior.h"
 #include "GameLogic/Module/BodyModule.h"
-#include "GameClient/Drawable.h" //selection logic
-#include "GameClient/InGameUI.h" // selection logic
+#include "game_client/Drawable.h" //selection logic
+#include "game_client/InGameUI.h" // selection logic
 #include "GameLogic/ExperienceTracker.h" //veterancy logic
 
 

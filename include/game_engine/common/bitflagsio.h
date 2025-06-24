@@ -32,9 +32,9 @@
 #ifndef __BitFlagsIO_H_
 #define __BitFlagsIO_H_
 
-#include "Common/BitFlags.h"
-#include "Common/INI.h"
-#include "Common/Xfer.h"
+#include "common/BitFlags.h"
+#include "common/INI.h"
+#include "common/Xfer.h"
 
 //-------------------------------------------------------------------------------------------------
 

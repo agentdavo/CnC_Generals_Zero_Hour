@@ -24,7 +24,7 @@
 // Author: Robert Minsk May 12, 2003
 // ============================================================================
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
-#include "GameClient/ParabolicEase.h"
+#include "game_client/ParabolicEase.h"
 // ============================================================================
 #ifdef _INTERNAL
 // for occasional debugging...

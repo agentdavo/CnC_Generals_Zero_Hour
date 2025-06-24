@@ -48,7 +48,7 @@
 #ifndef _H_WELLKNOWNKEYS
 #define _H_WELLKNOWNKEYS
 
-#include "Common/NameKeyGenerator.h"
+#include "common/NameKeyGenerator.h"
 
 #ifdef INSTANTIATE_WELL_KNOWN_KEYS
 	#define DEFINE_KEY(NAME) 	extern const StaticNameKey TheKey_##NAME; const StaticNameKey TheKey_##NAME(#NAME);

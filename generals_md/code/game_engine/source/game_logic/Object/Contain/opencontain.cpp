@@ -33,18 +33,18 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/BitFlagsIO.h"
-#include "Common/GameAudio.h"
-#include "Common/GameState.h"
-#include "Common/Module.h"
-#include "Common/Player.h"
-#include "Common/RandomValue.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/BitFlagsIO.h"
+#include "common/GameAudio.h"
+#include "common/GameState.h"
+#include "common/Module.h"
+#include "common/Player.h"
+#include "common/RandomValue.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ControlBar.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"

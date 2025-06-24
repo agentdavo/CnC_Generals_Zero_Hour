@@ -32,7 +32,7 @@
 #include "common/GlobalData.h"
 #include "GameLogic/LogicRandomValue.h"
 #include "W3DDevice/GameClient/HeightMap.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 #include "DrawObject.h"
 #include "GroveOptions.h"
 #include "GameLogic/PolygonTrigger.h"

@@ -29,9 +29,9 @@
 #include "common/CommandLine.h"
 #include "common/CRCDebug.h"
 #include "common/localfilesystem.h"
-#include "common/Version.h"
-#include "GameClient/TerrainVisual.h" // for TERRAIN_LOD_MIN definition
-#include "GameClient/GameText.h"
+#include "common/version.h"
+#include "game_client/TerrainVisual.h" // for TERRAIN_LOD_MIN definition
+#include "game_client/GameText.h"
 
 Bool TheDebugIgnoreSyncErrors = FALSE;
 extern Int DX8Wrapper_PreserveFPU;

@@ -38,17 +38,17 @@
 /*---------------------------------------------------------------------------*/
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/PerfTimer.h"
-#include "Common/Team.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/PerfTimer.h"
+#include "common/Team.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/AITNGuard.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/CollideModule.h"
-#include "Common/TunnelTracker.h"
+#include "common/TunnelTracker.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/PolygonTrigger.h"

@@ -34,8 +34,8 @@
 #include "common/TunnelTracker.h"
 #include "common/Xfer.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

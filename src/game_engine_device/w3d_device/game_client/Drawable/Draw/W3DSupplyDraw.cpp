@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "W3DDevice/GameClient/Module/W3DSupplyDraw.h"
 
 //-------------------------------------------------------------------------------------------------

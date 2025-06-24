@@ -31,8 +31,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_VETERANCY_NAMES				// for TheVeterancyNames[]
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/VeterancyGainCreate.h"

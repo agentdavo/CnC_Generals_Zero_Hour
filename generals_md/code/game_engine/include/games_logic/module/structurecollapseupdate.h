@@ -36,7 +36,7 @@
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/DieModule.h"
 #include "GameLogic/Module/UpdateModule.h"
-#include "Common/RandomValue.h"
+#include "common/RandomValue.h"
 
 class FXList;
 class ObjectCreationList;

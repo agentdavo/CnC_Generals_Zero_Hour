@@ -33,8 +33,8 @@
 #ifndef __IMAGE_H_
 #define __IMAGE_H_
 
-#include "Common/AsciiString.h"
-#include "Common/GameMemory.h"
+#include "common/AsciiString.h"
+#include "common/GameMemory.h"
 #include "game_engine/common/subsystem_interface.h"
 #include <map>
 

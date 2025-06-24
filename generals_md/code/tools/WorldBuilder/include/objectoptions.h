@@ -27,7 +27,7 @@
 
 #include "ObjectPreview.h"
 #include "OptionsPanel.h"
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 class WorldHeightMapEdit;
 class MapObject;
 /////////////////////////////////////////////////////////////////////////////

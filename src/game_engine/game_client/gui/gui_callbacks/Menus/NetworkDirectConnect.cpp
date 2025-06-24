@@ -35,20 +35,20 @@
 
 #include "common/QuotedPrintable.h"
 #include "common/UserPreferences.h"
-#include "GameClient/AnimateWindowManager.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/Shell.h"
-#include "GameClient/GameWindowTransitions.h"
+#include "game_client/AnimateWindowManager.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameText.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/Shell.h"
+#include "game_client/GameWindowTransitions.h"
 
-#include "GameNetwork/IPEnumeration.h"
-#include "GameNetwork/LANAPI.h"
-#include "GameNetwork/LANAPICallbacks.h"
+#include "game_network/IPEnumeration.h"
+#include "game_network/LANAPI.h"
+#include "game_network/LANAPICallbacks.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

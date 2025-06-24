@@ -48,10 +48,10 @@
 //-----------------------------------------------------------------------------
 //           Includes                                                      
 //-----------------------------------------------------------------------------
-#include "Common/GameMemory.h"
-#include "Common/GameCommon.h"
-#include "Common/Science.h"
-//#include "GameClient/ControlBar.h"
+#include "common/GameMemory.h"
+#include "common/GameCommon.h"
+#include "common/Science.h"
+//#include "game_client/ControlBar.h"
 
 //-----------------------------------------------------------------------------
 class ThingTemplate;

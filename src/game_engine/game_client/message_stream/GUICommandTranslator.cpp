@@ -40,12 +40,12 @@
 #include "common/PlayerList.h"
 #include "common/SpecialPower.h"
 #include "common/ThingTemplate.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
 #include "common/Geometry.h"
-#include "GameClient/GUICommandTranslator.h"
-#include "GameClient/CommandXlat.h"
+#include "game_client/GUICommandTranslator.h"
+#include "game_client/CommandXlat.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

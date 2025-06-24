@@ -33,8 +33,8 @@
 #define __GAMEINFOWINDOW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "GameClient/GameWindow.h"
-#include "GameNetwork/LANGameInfo.h"
+#include "game_client/GameWindow.h"
+#include "game_network/LANGameInfo.h"
 
 // Function Stubs for GameInfoWindow
 extern void CreateLANGameInfoWindow( GameWindow *sizeAndPosWin );

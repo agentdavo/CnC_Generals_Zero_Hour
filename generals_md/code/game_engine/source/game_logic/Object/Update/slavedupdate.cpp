@@ -32,12 +32,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
-#include "Common/Team.h"
-#include "Common/MiscAudio.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/ParticleSys.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
+#include "common/Team.h"
+#include "common/MiscAudio.h"
+#include "game_client/Drawable.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"

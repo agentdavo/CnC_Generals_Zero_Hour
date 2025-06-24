@@ -44,7 +44,7 @@
 #include "GameClient\Drawable.h"
 #include "GameClient\ParticleSys.h"
 #include "GameClient\FXList.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 
 #include "GameLogic\Locomotor.h"
 #include "GameLogic\GameLogic.h"

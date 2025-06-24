@@ -33,10 +33,10 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Player.h"
-#include "Common/SpecialPower.h"
-#include "Common/Team.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/SpecialPower.h"
+#include "common/Team.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/Module/DefectorSpecialPower.h"
 #include "GameLogic/Object.h"

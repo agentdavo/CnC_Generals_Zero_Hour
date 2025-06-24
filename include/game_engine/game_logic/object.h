@@ -32,11 +32,11 @@
 
 #include "lib/base_type.h"
 
-#include "Common/Geometry.h"
-#include "Common/Snapshot.h"
-#include "Common/SpecialPowerMaskType.h"
-#include "Common/DisabledTypes.h"
-#include "Common/Thing.h"
+#include "common/Geometry.h"
+#include "common/Snapshot.h"
+#include "common/SpecialPowerMaskType.h"
+#include "common/DisabledTypes.h"
+#include "common/Thing.h"
 
 #include "game_client/Color.h"
 

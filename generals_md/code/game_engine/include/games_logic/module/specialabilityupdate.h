@@ -33,10 +33,10 @@
 #define __SPECIAL_ABILITY_UPDATE_H
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 #include "common/ini.h"
 #include "GameLogic/Module/SpecialPowerUpdateModule.h"
-#include "GameClient/ParticleSys.h"	
+#include "game_client/ParticleSys.h"	
 
 class DamageInfo;
 class SpecialPowerTemplate;

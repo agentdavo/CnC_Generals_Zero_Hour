@@ -31,7 +31,7 @@
 #define _JET_AI_UPDATE_H_
 
 #include "common/stl_type_defs.h"
-#include "Common/GameMemory.h"
+#include "common/GameMemory.h"
 #include "GameLogic/AIStateMachine.h"
 #include "GameLogic/Module/AIUpdate.h"
 

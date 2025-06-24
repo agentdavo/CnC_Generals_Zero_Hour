@@ -52,7 +52,7 @@
 #include "WW3D2/WW3D.h"
 #include "WW3D2/AssetMgr.h"
 #include "WW3D2/Render2DSentence.h"
-#include "GameClient/GlobalLanguage.h"
+#include "game_client/GlobalLanguage.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

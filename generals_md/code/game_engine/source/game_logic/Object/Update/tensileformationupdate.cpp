@@ -30,9 +30,9 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Xfer.h"
-#include "Common/QuickTrig.h"
-#include "Common/AudioEventRTS.h"
+#include "common/Xfer.h"
+#include "common/QuickTrig.h"
+#include "common/AudioEventRTS.h"
 
 #include "GameLogic/Object.h"
 #include "GameLogic/TerrainLogic.h"
@@ -43,8 +43,8 @@
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 
-#include "GameClient/TerrainVisual.h"
-#include "GameClient/Drawable.h"
+#include "game_client/TerrainVisual.h"
+#include "game_client/Drawable.h"
 
 
 

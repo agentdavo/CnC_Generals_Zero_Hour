@@ -35,9 +35,9 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameMemory.h"
-#include "GameClient/Display.h"	// for ShroudLevel
-#include "GameClient/Color.h"
+#include "common/GameMemory.h"
+#include "game_client/Display.h"	// for ShroudLevel
+#include "game_client/Color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class GameWindow;

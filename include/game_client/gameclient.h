@@ -32,8 +32,8 @@
 #define _GAME_INTERFACE_H_
 
 #include "common/GameType.h"
-#include "Common/MessageStream.h" // for GameMessageTranslator
-#include "Common/Snapshot.h"
+#include "common/MessageStream.h" // for GameMessageTranslator
+#include "common/Snapshot.h"
 #include "common/stl_type_defs.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "game_client/CommandXlat.h"

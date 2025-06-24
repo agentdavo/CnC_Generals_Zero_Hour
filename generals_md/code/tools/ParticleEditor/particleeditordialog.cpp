@@ -22,7 +22,7 @@
 
 #include "CParticleEditorPage.h"
 #include "EmissionTypePanels.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 #include "ParticleEditorExport.h"
 #include "ParticleTypePanels.h"
 #include "VelocityTypePanels.h"

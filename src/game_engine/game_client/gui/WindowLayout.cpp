@@ -30,9 +30,9 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Shell.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Shell.h"
+#include "game_client/GameWindowManager.h"
 #ifdef _INTERNAL
 
 // for occasional debugging...

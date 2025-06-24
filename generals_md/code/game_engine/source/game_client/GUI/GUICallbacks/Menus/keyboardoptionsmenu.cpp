@@ -46,27 +46,27 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameAudio.h"
-#include "Common/GameEngine.h"
-#include "Common/UserPreferences.h"
+#include "common/GameAudio.h"
+#include "common/GameEngine.h"
+#include "common/UserPreferences.h"
 
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GadgetCheckBox.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetSlider.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/IMEManager.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/GameText.h"
-#include "GameClient/MetaEvent.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/GadgetCheckBox.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetSlider.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/IMEManager.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Mouse.h"
+#include "game_client/GameText.h"
+#include "game_client/MetaEvent.h"
 
-#include "GameNetwork/FirewallHelper.h"
-#include "GameNetwork/IPEnumeration.h"
+#include "game_network/FirewallHelper.h"
+#include "game_network/IPEnumeration.h"
 
 // PRIVATE DATA ///////////////////////////////////////////////////////////////////////////////////
 WindowMsgHandledType KeyboardTextEntryInput( GameWindow *window, UnsignedInt msg,

@@ -28,7 +28,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameCommon.h"
+#include "common/GameCommon.h"
 
 const char *TheVeterancyNames[] = 
 {

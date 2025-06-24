@@ -31,9 +31,9 @@
 #ifndef _MISSILE_UPDATE_H_
 #define _MISSILE_UPDATE_H_
 
-#include "GameClient/RadiusDecal.h"
-#include "Common/GameType.h"
-#include "Common/GlobalData.h"
+#include "game_client/RadiusDecal.h"
+#include "common/GameType.h"
+#include "common/GlobalData.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
 #include "common/ini.h"

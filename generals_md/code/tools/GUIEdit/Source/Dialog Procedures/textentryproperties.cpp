@@ -49,7 +49,7 @@
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"
-#include "GameClient/GadgetTextEntry.h"
+#include "game_client/GadgetTextEntry.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

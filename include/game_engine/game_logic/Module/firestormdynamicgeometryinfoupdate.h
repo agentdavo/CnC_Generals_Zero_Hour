@@ -33,7 +33,7 @@
 #define __FIRESTORM_DYNAMIC_GEOMETRY_INFO_UPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/Geometry.h"
+#include "common/Geometry.h"
 #include "GameLogic/Module/DynamicGeometryInfoUpdate.h"
 
 // ------------------------------------------------------------------------------------------------

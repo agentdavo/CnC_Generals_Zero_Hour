@@ -33,8 +33,8 @@
 #define __NAT_H
 
 #include "Lib\BaseType.h"
-#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/FirewallHelper.h"
+#include "game_network/NetworkInterface.h"
+#include "game_network/FirewallHelper.h"
 
 class Transport;
 class GameSlot;

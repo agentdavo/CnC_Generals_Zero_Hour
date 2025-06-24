@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_WEAPONSLOTTYPE_NAMES
-#include "Common/Xfer.h"
+#include "common/Xfer.h"
 #include "GameLogic/Module/LockWeaponCreate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/WeaponSet.h"

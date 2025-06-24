@@ -35,10 +35,10 @@
 #define __MODULE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "common/gamememory.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/Snapshot.h"
+#include "common/NameKeyGenerator.h"
+#include "common/Snapshot.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 enum TimeOfDay;

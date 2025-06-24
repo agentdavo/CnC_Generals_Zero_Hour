@@ -48,13 +48,13 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/NameKeyGenerator.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GameWindowManager.h"
 #include "GUIEdit.h"
 #include "HierarchyView.h"
 #include "Properties.h"
 #include "Resource.h"
-#include "GameClient/GadgetTabControl.h"
-#include "GameClient/Gadget.h"
+#include "game_client/GadgetTabControl.h"
+#include "game_client/Gadget.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

@@ -48,9 +48,9 @@
 #include "common/Xfer.h"
 #include "common/XferCRC.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"  // useful for printing quick debug strings when we need to
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"  // useful for printing quick debug strings when we need to
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

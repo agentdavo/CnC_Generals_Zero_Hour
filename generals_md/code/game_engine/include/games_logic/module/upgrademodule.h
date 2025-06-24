@@ -32,12 +32,12 @@
 #ifndef __UPGRADE_MODULE_H_
 #define __UPGRADE_MODULE_H_
 
-#include "Common/Module.h"
+#include "common/Module.h"
 #include "common/stl_type_defs.h"
-#include "Common/Upgrade.h"
+#include "common/Upgrade.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
 
 #include "GameLogic/Module/BehaviorModule.h"
 

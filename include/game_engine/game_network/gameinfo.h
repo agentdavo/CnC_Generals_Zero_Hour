@@ -31,9 +31,9 @@
 #ifndef __GAMEINFO_H__
 #define __GAMEINFO_H__
 
-#include "Common/Snapshot.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/FirewallHelper.h"
+#include "common/Snapshot.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/FirewallHelper.h"
 
 enum SlotState
 {

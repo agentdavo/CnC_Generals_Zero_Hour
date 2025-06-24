@@ -35,20 +35,20 @@
 
 #define NO_DEBUG_CRC
 
-#include "Common/AudioEventRTS.h"
-#include "Common/DrawModule.h"
-#include "Common/GlobalData.h"
+#include "common/AudioEventRTS.h"
+#include "common/DrawModule.h"
+#include "common/GlobalData.h"
 #include "common/ini.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/GameLOD.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/GameLOD.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ParticleSys.h"
-#include "GameClient/Shadow.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/ParticleSys.h"
+#include "game_client/Shadow.h"
 
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/GameLogic.h"
@@ -71,7 +71,7 @@
 #include "GameLogic/AIPathfind.h"
 
 
-#include "Common/CRCDebug.h"
+#include "common/CRCDebug.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

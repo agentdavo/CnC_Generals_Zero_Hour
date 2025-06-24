@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"
-#include "GameClient/SelectionInfo.h"
+#include "game_client/SelectionInfo.h"
 
 #include "common/ActionManager.h"
 #include "GameLogic/Damage.h"
@@ -31,11 +31,11 @@
 #include "common/PlayerList.h"
 #include "common/ThingTemplate.h"
 
-#include "GameClient/CommandXlat.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/KeyDefs.h"
+#include "game_client/CommandXlat.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/KeyDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

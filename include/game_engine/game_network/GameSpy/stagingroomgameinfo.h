@@ -31,8 +31,8 @@
 #ifndef __STAGINGROOMGAMEINFO_H__
 #define __STAGINGROOMGAMEINFO_H__
 
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/Transport.h"
+#include "game_network/GameInfo.h"
+#include "game_network/Transport.h"
 
 class GameSpyGameSlot : public GameSlot
 {

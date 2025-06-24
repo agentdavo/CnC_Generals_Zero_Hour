@@ -30,11 +30,11 @@
 #include "PreRTS.h"
 #include "GameLogic/ObjectTypes.h"
 
-#include "Common/GameState.h"
-#include "Common/Player.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/Player.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 //-------------------------------------------------------------------------------------------------
 ObjectTypes::ObjectTypes()

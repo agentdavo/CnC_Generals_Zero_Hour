@@ -28,7 +28,7 @@
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "TileTool.h"
-#include "Common/TerrainTypes.h"
+#include "common/TerrainTypes.h"
 #include "W3DDevice/GameClient/TerrainTex.h"	  
 
 BlendMaterial *BlendMaterial::m_staticThis = NULL;

@@ -31,16 +31,16 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameEngine.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameNetwork/IPEnumeration.h"
-//#include "GameNetwork/WOL.h"
+#include "common/GameEngine.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_network/IPEnumeration.h"
+//#include "game_network/WOL.h"
 
 
 

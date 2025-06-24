@@ -49,10 +49,10 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Language.h"
-#include "GameClient/Image.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GameFont.h"
+#include "game_client/Image.h"
+#include "game_client/Display.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GameFont.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

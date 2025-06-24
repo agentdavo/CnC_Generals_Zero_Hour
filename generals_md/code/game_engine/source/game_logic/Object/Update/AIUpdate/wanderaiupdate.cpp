@@ -28,7 +28,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/RandomValue.h"
+#include "common/RandomValue.h"
 #include "GameLogic/Module/WanderAIUpdate.h"
 #include "GameLogic/Object.h"
 

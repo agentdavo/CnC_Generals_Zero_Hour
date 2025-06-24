@@ -31,10 +31,10 @@
 #ifndef _NETWORK_INTERFACE_H_
 #define _NETWORK_INTERFACE_H_
 
-#include "Common/MessageStream.h"
-#include "GameNetwork/ConnectionManager.h"
-#include "GameNetwork/User.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "common/MessageStream.h"
+#include "game_network/ConnectionManager.h"
+#include "game_network/User.h"
+#include "game_network/NetworkDefs.h"
 
 // forward declarations
 

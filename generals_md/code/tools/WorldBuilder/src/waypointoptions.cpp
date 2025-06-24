@@ -31,7 +31,7 @@
 #include "WaypointTool.h"
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/Scripts.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 #include "LayersList.h"
 
 WaypointOptions *WaypointOptions::m_staticThis = NULL;

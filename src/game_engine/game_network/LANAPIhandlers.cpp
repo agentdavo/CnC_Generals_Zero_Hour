@@ -36,9 +36,9 @@
 #include "common/GlobalData.h"
 #include "common/QuotedPrintable.h"
 #include "common/UserPreferences.h"
-#include "GameNetwork/LANAPI.h"
-#include "GameNetwork/LANAPICallbacks.h"
-#include "GameClient/MapUtil.h"
+#include "game_network/LANAPI.h"
+#include "game_network/LANAPICallbacks.h"
+#include "game_client/MapUtil.h"
 
 void LANAPI::handleRequestLocations( LANMessage *msg, UnsignedInt senderIP )
 {

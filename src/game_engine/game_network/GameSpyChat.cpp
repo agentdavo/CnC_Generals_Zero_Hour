@@ -28,11 +28,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameText.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/LanguageFilter.h"
-#include "GameNetwork/GameSpy.h"
-#include "GameNetwork/GameSpyChat.h"
+#include "game_client/GameText.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/LanguageFilter.h"
+#include "game_network/GameSpy.h"
+#include "game_network/GameSpyChat.h"
 #include "common/QuotedPrintable.h"
 
 typedef set<AsciiString>::const_iterator AsciiSetIter;

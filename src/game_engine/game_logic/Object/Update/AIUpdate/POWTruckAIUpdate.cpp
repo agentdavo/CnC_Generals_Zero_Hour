@@ -35,7 +35,7 @@
 #include "common/Money.h"
 #include "common/Player.h"
 #include "common/ThingTemplate.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Locomotor.h"
 #include "GameLogic/Object.h"

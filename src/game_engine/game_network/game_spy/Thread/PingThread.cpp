@@ -30,7 +30,7 @@
 
 #include <winsock.h>	// This one has to be here. Prevents collisions with windsock2.h
 
-#include "GameNetwork/GameSpy/PingThread.h"
+#include "game_network/GameSpy/PingThread.h"
 #include "mutex.h"
 #include "thread.h"
 

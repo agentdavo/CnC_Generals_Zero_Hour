@@ -31,11 +31,11 @@
 #ifndef _LANAPI_H_
 #define _LANAPI_H_
 
-#include "GameNetwork/Transport.h"
-#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/LANPlayer.h"
-#include "GameNetwork/LANGameInfo.h"
+#include "game_network/Transport.h"
+#include "game_network/NetworkInterface.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/LANPlayer.h"
+#include "game_network/LANGameInfo.h"
 
 //static const Int g_lanPlayerNameLength = 20;
 static const Int g_lanPlayerNameLength = 12; // reduced length because of game option length

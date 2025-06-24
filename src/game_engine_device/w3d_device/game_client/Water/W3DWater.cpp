@@ -55,7 +55,7 @@
 #include "common/Xfer.h"
 #include "common/GameLOD.h"
 
-#include "GameClient/Water.h"
+#include "game_client/Water.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/ScriptEngine.h"

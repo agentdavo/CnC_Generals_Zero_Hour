@@ -58,7 +58,7 @@
 #include "GameLogic/Object.h"
 #endif
 #include "GameLogic/SidesList.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/NetworkDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

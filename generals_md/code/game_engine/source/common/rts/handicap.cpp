@@ -44,10 +44,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Handicap.h"
-#include "Common/Player.h"
-#include "Common/Dict.h"
-#include "Common/ThingTemplate.h"
+#include "common/Handicap.h"
+#include "common/Player.h"
+#include "common/Dict.h"
+#include "common/ThingTemplate.h"
 
 //-----------------------------------------------------------------------------
 Handicap::Handicap() 

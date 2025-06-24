@@ -26,13 +26,13 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/EstablishConnectionsMenu.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/EstablishConnectionsMenu.h"
 #include "common/NameKeyGenerator.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GameText.h"
 
 EstablishConnectionsMenu *TheEstablishConnectionsMenu = NULL;
 

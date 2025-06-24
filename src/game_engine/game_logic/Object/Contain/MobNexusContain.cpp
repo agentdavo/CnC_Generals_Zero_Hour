@@ -33,7 +33,7 @@
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Locomotor.h"

@@ -31,7 +31,7 @@
 #ifndef _TURRETAI_H_
 #define _TURRETAI_H_
 
-#include "Common/StateMachine.h"
+#include "common/StateMachine.h"
 #include "common/gamememory.h"
 
 const Real DEFAULT_TURN_RATE = 0.01f;

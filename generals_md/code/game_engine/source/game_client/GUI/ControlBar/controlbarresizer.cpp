@@ -50,11 +50,11 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "GameClient/ControlBar.h"
-#include "GameClient/ControlBarResizer.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Display.h"
+#include "game_client/ControlBar.h"
+#include "game_client/ControlBarResizer.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Display.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

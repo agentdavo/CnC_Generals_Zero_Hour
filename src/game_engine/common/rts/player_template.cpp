@@ -51,7 +51,7 @@
 #include "common/Player.h"
 #include "common/ini.h"
 #include "common/Science.h"
-#include "GameClient/Image.h"
+#include "game_client/Image.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

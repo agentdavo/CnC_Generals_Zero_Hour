@@ -32,11 +32,11 @@
 #ifndef _LANAPI_CALLBACKS_H_
 #define _LANAPI_CALLBACKS_H_
 
-#include "Common/NameKeyGenerator.h"
+#include "common/NameKeyGenerator.h"
 #include "game_client/Shell.h"
 #include "game_client/GadgetListBox.h"
 #include "game_client/GadgetTextEntry.h"
-#include "GameNetwork/LANAPI.h"
+#include "game_network/LANAPI.h"
 
 // LAN API Singleton ----------------------------------------------------------------------
 extern LANAPI *TheLAN;

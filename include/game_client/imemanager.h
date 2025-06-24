@@ -52,7 +52,7 @@
 
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/UnicodeString.h"
+#include "common/UnicodeString.h"
 
 //----------------------------------------------------------------------------
 //           Forward References

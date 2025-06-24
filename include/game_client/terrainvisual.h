@@ -32,8 +32,8 @@
 #ifndef __TERRAINVISUAL_H_
 #define __TERRAINVISUAL_H_
 
-#include "Common/Terrain.h"
-#include "Common/Snapshot.h"
+#include "common/Terrain.h"
+#include "common/Snapshot.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class TerrainType;

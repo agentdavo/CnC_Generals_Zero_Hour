@@ -47,20 +47,20 @@
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
 
-#include "Common/Debug.h"
-#include "Common/Energy.h"
-#include "Common/GameType.h"
-#include "Common/Handicap.h"
-#include "Common/KindOf.h"
-#include "Common/MissionStats.h"
-#include "Common/Money.h"
-#include "Common/Science.h"
-#include "Common/UnicodeString.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/Thing.h"
+#include "common/Debug.h"
+#include "common/Energy.h"
+#include "common/GameType.h"
+#include "common/Handicap.h"
+#include "common/KindOf.h"
+#include "common/MissionStats.h"
+#include "common/Money.h"
+#include "common/Science.h"
+#include "common/UnicodeString.h"
+#include "common/NameKeyGenerator.h"
+#include "common/Thing.h"
 #include "common/stl_type_defs.h"
-#include "Common/ScoreKeeper.h"
-#include "Common/Team.h"
+#include "common/ScoreKeeper.h"
+#include "common/Team.h"
 #include "common/stl_type_defs.h"
 
 // ----------------------------------------------------------------------------------------------

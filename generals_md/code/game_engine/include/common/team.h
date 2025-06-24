@@ -31,9 +31,9 @@
 #ifndef _TEAM_H_
 #define _TEAM_H_
 
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
-#include "Common/Thing.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
+#include "common/Thing.h"
 #include "GameLogic/Object.h"
 
 // ------------------------------------------------------------------------------------------------

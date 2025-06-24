@@ -30,9 +30,9 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameWindow.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameClient.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameClient.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Input procedure for the control bar */

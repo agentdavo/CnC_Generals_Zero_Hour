@@ -28,7 +28,7 @@
  
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/DrawGroupInfo.h"
+#include "game_client/DrawGroupInfo.h"
 
 // Useful defaults.
 

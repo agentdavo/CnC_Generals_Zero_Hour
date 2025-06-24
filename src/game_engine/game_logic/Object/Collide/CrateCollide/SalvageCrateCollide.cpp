@@ -39,8 +39,8 @@
 #include "common/Player.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/GameText.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/GameText.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Object.h"
 

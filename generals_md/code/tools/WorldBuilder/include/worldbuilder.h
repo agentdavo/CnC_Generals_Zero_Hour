@@ -57,7 +57,7 @@
 #include "RampTool.h"
 #include "ScorchTool.h"
 #include "RulerTool.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // CWorldBuilderApp:

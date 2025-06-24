@@ -33,7 +33,7 @@
 #define _Armor_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/NameKeyGenerator.h"
+#include "common/NameKeyGenerator.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Damage.h"
 

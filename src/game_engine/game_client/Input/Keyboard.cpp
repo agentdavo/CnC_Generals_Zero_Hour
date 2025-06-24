@@ -32,8 +32,8 @@
 #include "common/Language.h"
 #include "common/GameEngine.h"
 #include "common/MessageStream.h"
-#include "GameClient/Keyboard.h"
-#include "GameClient/KeyDefs.h"
+#include "game_client/Keyboard.h"
+#include "game_client/KeyDefs.h"
 
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////

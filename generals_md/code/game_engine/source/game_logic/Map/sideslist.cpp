@@ -45,11 +45,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/DataChunk.h"
-#include "Common/GameState.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/Xfer.h"
+#include "common/DataChunk.h"
+#include "common/GameState.h"
+#include "common/PlayerTemplate.h"
+#include "common/WellKnownKeys.h"
+#include "common/Xfer.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/Scripts.h"
 #include "GameLogic/SidesList.h"

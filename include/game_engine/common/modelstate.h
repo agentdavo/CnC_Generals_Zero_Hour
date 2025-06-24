@@ -32,8 +32,8 @@
 #define _ModelState_H_
 
 #include "lib/base_type.h"
-#include "Common/INI.h"
-#include "Common/BitFlags.h"
+#include "common/INI.h"
+#include "common/BitFlags.h"
 
 //-------------------------------------------------------------------------------------------------
 

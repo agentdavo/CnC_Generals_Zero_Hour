@@ -30,23 +30,23 @@
 
 #include "common/DataChunk.h"
 #include "common/file.h"
-#include "Common/FileSystem.h"
-#include "Common/GameEngine.h"
-#include "Common/GameState.h"
-#include "Common/LatchRestore.h"
-#include "Common/MessageStream.h"
-#include "Common/PerfTimer.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Team.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/FileSystem.h"
+#include "common/GameEngine.h"
+#include "common/GameState.h"
+#include "common/LatchRestore.h"
+#include "common/MessageStream.h"
+#include "common/PerfTimer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Team.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
-#include "GameClient/MessageBox.h"
-#include "GameClient/Shell.h"
-#include "GameClient/View.h"
-#include "GameClient/CampaignManager.h"
+#include "game_client/MessageBox.h"
+#include "game_client/Shell.h"
+#include "game_client/View.h"
+#include "game_client/CampaignManager.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/AIUpdate.h"
@@ -76,8 +76,8 @@ static HMODULE st_DebugDLL;
 
 // These are for particle editor
 #define DEFINE_PARTICLE_SYSTEM_NAMES 1
-#include "GameClient/ParticleSys.h"
-#include "Common/MapObject.h"
+#include "game_client/ParticleSys.h"
+#include "common/MapObject.h"
 #include "../../GameEngineDevice/Include/W3DDevice/GameClient/W3DAssetManagerExposed.h"
 
 static void _addUpdatedParticleSystem( AsciiString particleSystemName );
@@ -136,8 +136,8 @@ static const Int FRAMES_TO_FADE_IN_AT_START = 33;
 
 
 //------------------------------------------------------------------------------ Performance Timers 
-//#include "Common/PerfMetrics.h"
-//#include "Common/PerfTimer.h"
+//#include "common/PerfMetrics.h"
+//#include "common/PerfTimer.h"
 
 // GLOBALS ////////////////////////////////////////////////////////////////////////////////////////
 ScriptEngine *TheScriptEngine = NULL;

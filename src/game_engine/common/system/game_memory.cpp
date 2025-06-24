@@ -53,7 +53,7 @@
 #include "common/GlobalData.h"
 #include "common/PerfTimer.h"
 #ifdef MEMORYPOOL_DEBUG
-#include "GameClient/ClientRandomValue.h"
+#include "game_client/ClientRandomValue.h"
 #endif
 #ifdef MEMORYPOOL_STACKTRACE
 	#include "common/StackDump.h"

@@ -33,7 +33,7 @@
 #define __TERRAINROADS_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameMemory.h"
+#include "common/GameMemory.h"
 #include "game_engine/common/subsystem_interface.h"
 
 #include "GameLogic/Module/BodyModule.h"

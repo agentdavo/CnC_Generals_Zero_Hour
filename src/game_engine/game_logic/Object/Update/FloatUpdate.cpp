@@ -36,7 +36,7 @@
 #include "GameLogic/Module/FloatUpdate.h"
 #include "GameLogic/GameLogic.h"
 
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 
 

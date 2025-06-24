@@ -28,8 +28,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 
-#include "Common/Module.h"
-#include "Common/Player.h"
+#include "common/Module.h"
+#include "common/Player.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/AIDock.h"
 #include "GameLogic/Module/AIUpdate.h"

@@ -33,12 +33,12 @@
 
 #define DEFINE_WEAPONSLOTTYPE_NAMES  //TheWeaponSlotTypeNamesLookupList
 
-#include "Common/Player.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

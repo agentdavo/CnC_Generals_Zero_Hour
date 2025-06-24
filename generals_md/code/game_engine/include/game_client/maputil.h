@@ -32,8 +32,8 @@
 #ifndef __MAPUTIL_H__
 #define __MAPUTIL_H__
 
-#include "Common/AsciiString.h"
-#include "Common/UnicodeString.h"
+#include "common/AsciiString.h"
+#include "common/UnicodeString.h"
 
 #include "common/stl_type_defs.h"
 

@@ -25,11 +25,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/CRCDebug.h"
-#include "Common/Debug.h"
-#include "Common/PerfTimer.h"
-#include "GameClient/InGameUI.h"
-#include "GameNetwork/IPEnumeration.h"
+#include "common/CRCDebug.h"
+#include "common/Debug.h"
+#include "common/PerfTimer.h"
+#include "game_client/InGameUI.h"
+#include "game_network/IPEnumeration.h"
 #include <cstdarg>
 
 #ifdef _INTERNAL

@@ -35,8 +35,8 @@
 #include <stdio.h>
 #include "common/ascii_string.h"
 #include "common/gamememory.h"
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "game_client/ClientRandomValue.h"
 

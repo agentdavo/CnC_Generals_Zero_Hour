@@ -53,21 +53,21 @@
 #include <stdio.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetRadioButton.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetCheckBox.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/HeaderTemplate.h"
+#include "common/Debug.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetRadioButton.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetCheckBox.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/HeaderTemplate.h"
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "EditWindow.h"
 #include "Resource.h"
 #include "HierarchyView.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

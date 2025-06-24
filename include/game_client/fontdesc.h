@@ -30,7 +30,7 @@
 #ifndef _FONTDESC_H_
 #define _FONTDESC_H_
 
-#include "Common/GameType.h"
+#include "common/GameType.h"
 
 struct FontDesc
 {

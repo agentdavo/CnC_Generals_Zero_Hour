@@ -33,7 +33,7 @@
 
 #include "common/UserPreferences.h"
 #include "common/PlayerTemplate.h"
-#include "GameNetwork/GameSpy/PersistentStorageThread.h"
+#include "game_network/GameSpy/PersistentStorageThread.h"
 
 #include "mutex.h"
 #include "thread.h"

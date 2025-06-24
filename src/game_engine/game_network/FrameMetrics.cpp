@@ -26,9 +26,9 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/FrameMetrics.h"
-#include "GameClient/Display.h"
-#include "GameNetwork/NetworkUtil.h"
+#include "game_network/FrameMetrics.h"
+#include "game_client/Display.h"
+#include "game_network/NetworkUtil.h"
 
 FrameMetrics::FrameMetrics() 
 {

@@ -43,7 +43,7 @@
 #include "common/PlayerTemplate.h"
 #include "common/FileSystem.h"
 #include "GameLogic/SidesList.h"
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "WW3D2/DX8Wrapper.h"

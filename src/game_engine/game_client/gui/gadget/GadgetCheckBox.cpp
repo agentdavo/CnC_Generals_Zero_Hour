@@ -48,9 +48,9 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Language.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Keyboard.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Keyboard.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

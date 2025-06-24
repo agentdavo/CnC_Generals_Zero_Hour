@@ -49,16 +49,16 @@
 #define DEFINE_OBJECT_STATUS_NAMES
 #define DEFINE_SCIENCE_AVAILABILITY_NAMES
 
-#include "Common/BorderColors.h"
-#include "Common/DataChunk.h"
-#include "Common/GameState.h"
-#include "Common/KindOf.h"
-#include "Common/Radar.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/BorderColors.h"
+#include "common/DataChunk.h"
+#include "common/GameState.h"
+#include "common/KindOf.h"
+#include "common/Radar.h"
+#include "common/ThingTemplate.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 
-#include "GameClient/ShellHooks.h"
+#include "game_client/ShellHooks.h"
 
 #include "GameLogic/Ai.h"
 #include "GameLogic/Object.h"

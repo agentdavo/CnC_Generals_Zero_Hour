@@ -45,11 +45,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"
-#include "GameClient/GraphDraw.h"
+#include "game_client/GraphDraw.h"
 
-#include "GameClient/Display.h"
-#include "GameClient/DisplayString.h"
-#include "GameClient/DisplayStringManager.h"
+#include "game_client/Display.h"
+#include "game_client/DisplayString.h"
+#include "game_client/DisplayStringManager.h"
 
 #ifdef PERF_TIMERS
 

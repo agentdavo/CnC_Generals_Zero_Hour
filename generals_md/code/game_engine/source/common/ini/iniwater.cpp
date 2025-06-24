@@ -33,10 +33,10 @@
 #define DEFINE_TIME_OF_DAY_NAMES
 
 #include "common/ini.h"
-#include "Common/GameType.h"
+#include "common/GameType.h"
 
-#include "GameClient/TerrainVisual.h"
-#include "GameClient/Water.h"
+#include "game_client/TerrainVisual.h"
+#include "game_client/Water.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // PUBLIC FUNCTIONS ///////////////////////////////////////////////////////////////////////////////

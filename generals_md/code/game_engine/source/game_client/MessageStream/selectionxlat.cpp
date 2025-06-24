@@ -28,14 +28,14 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/ActionManager.h"
-#include "Common/GameAudio.h"
-#include "Common/GameEngine.h"
-#include "Common/MessageStream.h"
-#include "Common/MiscAudio.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingTemplate.h"
+#include "common/ActionManager.h"
+#include "common/GameAudio.h"
+#include "common/GameEngine.h"
+#include "common/MessageStream.h"
+#include "common/MiscAudio.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ThingTemplate.h"
 
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"
@@ -45,16 +45,16 @@
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Display.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Keyboard.h"
-#include "GameClient/SelectionInfo.h"
-#include "GameClient/SelectionXlat.h"
-#include "GameClient/TerrainVisual.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Display.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/GameText.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Keyboard.h"
+#include "game_client/SelectionInfo.h"
+#include "game_client/SelectionXlat.h"
+#include "game_client/TerrainVisual.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

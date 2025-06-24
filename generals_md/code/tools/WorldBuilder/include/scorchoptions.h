@@ -27,8 +27,8 @@
 
 #include "WBPopupSlider.h"
 #include "OptionsPanel.h"
-#include "Common/Dict.h"
-#include "Common/GameType.h"
+#include "common/Dict.h"
+#include "common/GameType.h"
 
 class MapObject;
 /////////////////////////////////////////////////////////////////////////////

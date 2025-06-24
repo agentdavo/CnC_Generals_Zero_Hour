@@ -23,7 +23,7 @@
 #include "worldbuilder.h"
 #include "worldbuilderDoc.h"
 #include "MeshMoldOptions.h"
-#include "Common/FileSystem.h"
+#include "common/FileSystem.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // MeshMoldOptions dialog

@@ -32,11 +32,11 @@
 #ifndef __SCRIPTENGINE_H_
 #define __SCRIPTENGINE_H_
 
-#include "Common/GameType.h"
+#include "common/GameType.h"
 #include "common/gamememory.h"
 #include "common/stl_type_defs.h"
-#include "Common/Science.h"
-#include "Common/Snapshot.h"
+#include "common/Science.h"
+#include "common/Snapshot.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "GameLogic/Scripts.h"
 

@@ -32,8 +32,8 @@
 #define __ARCHIVEFILE_H
 
 #include "lib/base_type.h"
-#include "Common/AsciiString.h"
-#include "Common/ArchiveFileSystem.h"
+#include "common/AsciiString.h"
+#include "common/ArchiveFileSystem.h"
 
 class File;
 

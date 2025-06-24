@@ -34,8 +34,8 @@
 
 #include "game_engine/common/subsystem_interface.h"
 #include "lib/base_type.h"
-#include "Common/AsciiString.h"
-#include "Common/GameMemory.h"
+#include "common/AsciiString.h"
+#include "common/GameMemory.h"
 
 //-------------------------------------------------------------------------------------------------
 /** A font for use in the device independent game */

@@ -37,7 +37,7 @@
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
 #include "lib/base_type.h"
-#include "Common/RandomValue.h"
+#include "common/RandomValue.h"
 #include "game_client/ParticleSys.h"
 
 class FXList;

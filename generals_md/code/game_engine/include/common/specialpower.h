@@ -34,13 +34,13 @@
 #define __SPECIALPOWER_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
-#include "Common/GameMemory.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameMemory.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "lib/base_type.h"
-#include "Common/BitFlags.h"
-#include "Common/Overridable.h"
-#include "Common/Override.h"
+#include "common/BitFlags.h"
+#include "common/Overridable.h"
+#include "common/Override.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class ObjectCreationList;
@@ -50,10 +50,10 @@ struct FieldParse;
 enum AcademyClassificationType;
 
 // For SpecialPowerType and SpecialPowerMaskType::s_bitNameList. Part of detangling.
-#include "Common/SpecialPowerType.h"
+#include "common/SpecialPowerType.h"
 
 // For SpecialPowerMaskType. Part of detangling.
-#include "Common/SpecialPowerMaskType.h"
+#include "common/SpecialPowerMaskType.h"
 
 #define MAKE_SPECIALPOWER_MASK(k) SpecialPowerMaskType(SpecialPowerMaskType::kInit, (k))
 

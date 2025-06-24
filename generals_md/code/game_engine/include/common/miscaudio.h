@@ -30,7 +30,7 @@
 #ifndef _MISCAUDIO_H_
 #define _MISCAUDIO_H_
 
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 
 struct MiscAudio
 {

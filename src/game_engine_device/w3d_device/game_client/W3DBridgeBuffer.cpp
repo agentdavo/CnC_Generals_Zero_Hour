@@ -55,7 +55,7 @@
 #include "common/RandomValue.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
-#include "GameClient/TerrainRoads.h"
+#include "game_client/TerrainRoads.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "W3DDevice/GameLogic/W3DTerrainLogic.h"

@@ -32,10 +32,10 @@
 #include "WorldBuilderDoc.h"
 #include "WorldBuilderView.h"
 #include "W3DDevice/GameClient/HeightMap.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "GameClient/Line2D.h"
+#include "common/WellKnownKeys.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "game_client/Line2D.h"
 //
 // RoadTool class.
 //

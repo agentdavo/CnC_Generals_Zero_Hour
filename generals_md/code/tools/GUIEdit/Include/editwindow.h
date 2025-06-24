@@ -55,8 +55,8 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "GUIEditColor.h"
 #include "lib/base_type.h"
-#include "GameClient/Image.h"
-#include "GameClient/GameWindow.h"
+#include "game_client/Image.h"
+#include "game_client/GameWindow.h"
 #include "WW3D2/AssetMgr.h"
 #include "WW3D2/Render2D.h"
 

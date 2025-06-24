@@ -49,7 +49,7 @@
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"
-#include "GameClient/GadgetCheckBox.h"
+#include "game_client/GadgetCheckBox.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

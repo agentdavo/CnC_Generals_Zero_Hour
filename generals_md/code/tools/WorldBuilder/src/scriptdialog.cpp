@@ -32,15 +32,15 @@
 #include "CFixTeamOwnerDialog.h"
 #include "GameLogic/SidesList.h"
 #include "GameLogic/PolygonTrigger.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/DataChunk.h"
-#include "Common/FileSystem.h"
+#include "common/WellKnownKeys.h"
+#include "common/DataChunk.h"
+#include "common/FileSystem.h"
 #include "EditGroup.h"
 #include "EditParameter.h"
 #include "ExportScriptsOptions.h"
-#include "Common/ThingFactory.h"
+#include "common/ThingFactory.h"
 #include "WaypointOptions.h"
-#include "Common/UnicodeString.h"
+#include "common/UnicodeString.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

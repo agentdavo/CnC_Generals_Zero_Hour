@@ -33,7 +33,7 @@
 #define __ACTIVEBODY_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/DamageFX.h"
+#include "common/DamageFX.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/Armor.h"

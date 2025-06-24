@@ -33,9 +33,9 @@
 #define __SCIENCE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/Overridable.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/UnicodeString.h"
+#include "common/Overridable.h"
+#include "common/NameKeyGenerator.h"
+#include "common/UnicodeString.h"
 
 class Player;
 

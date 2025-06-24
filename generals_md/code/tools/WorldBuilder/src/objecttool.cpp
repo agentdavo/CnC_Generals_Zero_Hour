@@ -31,8 +31,8 @@
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "WorldBuilderView.h"
-#include "Common/ThingTemplate.h"
-#include "Common/WellKnownKeys.h"
+#include "common/ThingTemplate.h"
+#include "common/WellKnownKeys.h"
 //
 // ObjectTool class.
 //

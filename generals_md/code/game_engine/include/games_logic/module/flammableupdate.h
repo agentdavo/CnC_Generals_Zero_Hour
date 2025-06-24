@@ -33,7 +33,7 @@
 #define __FLAMMABLE_UPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 #include "GameLogic/Module/DamageModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 

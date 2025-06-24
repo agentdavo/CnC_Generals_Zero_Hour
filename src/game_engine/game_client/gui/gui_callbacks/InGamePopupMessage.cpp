@@ -54,15 +54,15 @@
 
 #include "common/GlobalData.h"
 #include "common/NameKeyGenerator.h"
-#include "common/Version.h"
+#include "common/version.h"
 #include "common/MessageStream.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/DisplayStringManager.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/InGameUI.h"
+#include "game_client/DisplayStringManager.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

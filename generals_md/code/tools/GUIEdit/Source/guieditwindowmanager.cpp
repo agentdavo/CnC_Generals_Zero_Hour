@@ -35,8 +35,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "Common/Debug.h"
-#include "GameClient/GadgetSlider.h"
+#include "common/Debug.h"
+#include "game_client/GadgetSlider.h"
 
 #include "GUIEditWindowManager.h"
 #include "EditWindow.h"

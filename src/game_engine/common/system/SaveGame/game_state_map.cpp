@@ -35,10 +35,10 @@
 #include "common/GameStateMap.h"
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/MapUtil.h"
+#include "game_client/GameClient.h"
+#include "game_client/MapUtil.h"
 #include "GameLogic/GameLogic.h"
-#include "GameNetwork/GameInfo.h"
+#include "game_network/GameInfo.h"
 
 // GLOBALS ////////////////////////////////////////////////////////////////////////////////////////
 GameStateMap *TheGameStateMap = NULL;

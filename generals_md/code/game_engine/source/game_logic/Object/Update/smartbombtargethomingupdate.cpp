@@ -29,8 +29,8 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/SmartBombTargetHomingUpdate.h"

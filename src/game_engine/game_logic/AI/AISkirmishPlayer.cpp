@@ -54,7 +54,7 @@
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/ScriptEngine.h"
 #include "GameLogic/Module/ProductionUpdate.h"
-#include "GameClient/TerrainVisual.h"	
+#include "game_client/TerrainVisual.h"	
 
 #ifdef _INTERNAL
 // for occasional debugging...

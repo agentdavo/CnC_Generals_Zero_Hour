@@ -30,10 +30,10 @@
 #ifndef _H_AUDIOEVENTRTS_
 #define _H_AUDIOEVENTRTS_
 
-#include "Common/AsciiString.h"
-#include "Common/GameAudio.h"
-#include "Common/GameMemory.h"
-#include "Common/GameType.h"
+#include "common/AsciiString.h"
+#include "common/GameAudio.h"
+#include "common/GameMemory.h"
+#include "common/GameType.h"
 
 // forward declarations ///////////////////////////////////////////////////////////////////////////
 struct AudioEventInfo;

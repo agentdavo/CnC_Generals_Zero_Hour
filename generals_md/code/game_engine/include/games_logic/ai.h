@@ -31,10 +31,10 @@
 #ifndef _AI_H_
 #define _AI_H_
 
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameMemory.h"
-#include "Common/GameType.h"
+#include "common/GameMemory.h"
+#include "common/GameType.h"
 #include "GameLogic/Damage.h"
 #include "common/stl_type_defs.h"
 

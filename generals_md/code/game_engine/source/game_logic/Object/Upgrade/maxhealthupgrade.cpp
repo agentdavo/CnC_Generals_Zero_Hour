@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_MAXHEALTHCHANGETYPE_NAMES
-#include "Common/Xfer.h"
+#include "common/Xfer.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Module/MaxHealthUpgrade.h"

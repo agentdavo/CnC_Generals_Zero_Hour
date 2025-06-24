@@ -26,11 +26,11 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 
-#include "GameClient/GameWindowManager.h"
-#include "Common/NameKeyGenerator.h"
-#include "GameClient/EstablishConnectionsMenu.h"
-#include "GameNetwork/GUIUtil.h"
-#include "GameNetwork/GameSpy/StagingRoomGameInfo.h"
+#include "game_client/GameWindowManager.h"
+#include "common/NameKeyGenerator.h"
+#include "game_client/EstablishConnectionsMenu.h"
+#include "game_network/GUIUtil.h"
+#include "game_network/GameSpy/StagingRoomGameInfo.h"
 
 static WindowLayout *establishConnectionsLayout;
 

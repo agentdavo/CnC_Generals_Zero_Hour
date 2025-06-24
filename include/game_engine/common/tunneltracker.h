@@ -32,9 +32,9 @@
 #ifndef TUNNEL_TRACKER_H
 #define TUNNEL_TRACKER_H
 
-#include "Common/GameType.h"
+#include "common/GameType.h"
 #include "common/gamememory.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 #include "GameLogic/Module/ContainModule.h"
 
 class TunnelTracker : public MemoryPoolObject,

@@ -30,14 +30,14 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Radar.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/FXList.h"
-#include "GameClient/Line2D.h"
-#include "GameClient/TerrainRoads.h"
+#include "common/Radar.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
+#include "game_client/InGameUI.h"
+#include "game_client/FXList.h"
+#include "game_client/Line2D.h"
+#include "game_client/TerrainRoads.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Object.h"

@@ -33,7 +33,7 @@
 #define __OBJECT_WEAPON_STATUS_HELPER_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/ThingTemplate.h"
+#include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/ObjectHelper.h"
 

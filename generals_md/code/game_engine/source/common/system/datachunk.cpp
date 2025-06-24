@@ -31,9 +31,9 @@
 #include "stdlib.h"
 #include "string.h"
 #include "Compression.h"
-#include "Common/DataChunk.h"
+#include "common/DataChunk.h"
 #include "common/file.h"
-#include "Common/FileSystem.h"
+#include "common/FileSystem.h"
 
 // If verbose, lots of debug logging.
 #define not_VERBOSE

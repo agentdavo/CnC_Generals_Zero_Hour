@@ -43,13 +43,13 @@
 //-----------------------------------------------------------------------------
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/Money.h"
+#include "common/Money.h"
 
-#include "Common/GameAudio.h"
-#include "Common/MiscAudio.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Xfer.h"
+#include "common/GameAudio.h"
+#include "common/MiscAudio.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Xfer.h"
 
 // ------------------------------------------------------------------------------------------------
 UnsignedInt Money::withdraw(UnsignedInt amountToWithdraw, Bool playSound)

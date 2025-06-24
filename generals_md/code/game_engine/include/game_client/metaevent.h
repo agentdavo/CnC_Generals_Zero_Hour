@@ -31,7 +31,7 @@
 #define _H_MetaEvent
 
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 
 enum MappableKeyCategories

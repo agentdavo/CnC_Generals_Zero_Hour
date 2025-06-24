@@ -59,7 +59,7 @@
 ///////GAMEENGINE HEADERS////////////
 #include "common/UnicodeString.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 #endif
 
 //*****************************************************************************

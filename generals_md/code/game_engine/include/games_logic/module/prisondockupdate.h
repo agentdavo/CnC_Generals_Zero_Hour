@@ -33,7 +33,7 @@
 #define __PRISON_DOCK_UPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameMemory.h"
+#include "common/GameMemory.h"
 #include "GameLogic/Module/DockUpdate.h"
 
 #ifdef ALLOW_SURRENDER

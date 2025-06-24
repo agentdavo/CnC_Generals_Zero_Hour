@@ -33,8 +33,8 @@
 #define _VIEW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
 #include "lib/base_type.h"
 #include "WW3D2/ColType.h"			///< we don't generally do this, but we need the W3D collision types
 

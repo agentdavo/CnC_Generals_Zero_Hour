@@ -31,10 +31,10 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "game_engine/common/function_lexicon.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/Gadget.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/Gadget.h"
 
 // Popup Ladder Select --------------------------------------------------------------------------
 extern void PopupLadderSelectInit( WindowLayout *layout, void *userData );

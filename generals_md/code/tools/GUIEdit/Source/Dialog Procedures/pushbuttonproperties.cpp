@@ -49,7 +49,7 @@
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"
-#include "GameClient/GadgetPushButton.h"
+#include "game_client/GadgetPushButton.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

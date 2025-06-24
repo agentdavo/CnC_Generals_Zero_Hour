@@ -32,7 +32,7 @@
 #define _PHYSICSUPDATE_H_
 
 #include "common/audioEventRTS.h"
-#include "Common/GameAudio.h"
+#include "common/GameAudio.h"
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/CollideModule.h"

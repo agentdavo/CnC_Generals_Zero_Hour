@@ -32,9 +32,9 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/GameState.h"
-#include "GameClient/MapUtil.h"
-#include "GameNetwork/GameSpy/GSConfig.h"
-#include "GameNetwork/RankPointValue.h"
+#include "game_client/MapUtil.h"
+#include "game_network/GameSpy/GSConfig.h"
+#include "game_network/RankPointValue.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -53,10 +53,10 @@
 #include <string.h>
 #include <sys/stat.h>
 
-#include "Common/AsciiString.h"
-#include "Common/FileSystem.h"
-#include "Common/StreamingArchiveFile.h"
-#include "Common/PerfTimer.h"
+#include "common/AsciiString.h"
+#include "common/FileSystem.h"
+#include "common/StreamingArchiveFile.h"
+#include "common/PerfTimer.h"
 									
 
 //----------------------------------------------------------------------------

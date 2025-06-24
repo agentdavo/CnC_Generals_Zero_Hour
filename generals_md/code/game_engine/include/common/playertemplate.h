@@ -48,14 +48,14 @@
 #define _PLAYERTEMPLATE_H_
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameMemory.h"
-#include "Common/Debug.h"
-#include "Common/Handicap.h"
-#include "Common/Money.h"
-#include "Common/Science.h"
-#include "Common/AsciiString.h"
-#include "Common/UnicodeString.h"
-#include "Common/NameKeyGenerator.h"
+#include "common/GameMemory.h"
+#include "common/Debug.h"
+#include "common/Handicap.h"
+#include "common/Money.h"
+#include "common/Science.h"
+#include "common/AsciiString.h"
+#include "common/UnicodeString.h"
+#include "common/NameKeyGenerator.h"
 #include "common/stl_type_defs.h"
 
 

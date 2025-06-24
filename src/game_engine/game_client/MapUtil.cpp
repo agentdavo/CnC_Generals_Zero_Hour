@@ -69,18 +69,18 @@
 #include "common/ThingTemplate.h"
 #include "common/MapObject.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/MapUtil.cpp
-#include "GameClient/GameText.h" 
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Image.h"
-#include "GameClient/Shell.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/MapUtil.h"
+#include "game_client/GameText.h" 
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/Image.h"
+#include "game_client/Shell.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/MapUtil.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/FPUControl.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/GameInfo.h"
+#include "game_network/NetworkDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -33,7 +33,7 @@
 #include "common/Debug.h"
 #include "common/GlobalData.h"
 #include "common/localfilesystem.h"
-#include "GameClient/GameClient.h"
+#include "game_client/GameClient.h"
 #include "win32_device/game_client/win32_mouse.h"
 #include "WinMain.h"
 

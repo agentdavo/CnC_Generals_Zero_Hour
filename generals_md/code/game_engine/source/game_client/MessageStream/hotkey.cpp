@@ -50,14 +50,14 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "GameClient/HotKey.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/MetaEvent.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/keyboard.h"
-#include "GameClient/GameText.h"
-#include "Common/AudioEventRTS.h"
+#include "game_client/HotKey.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/MetaEvent.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/keyboard.h"
+#include "game_client/GameText.h"
+#include "common/AudioEventRTS.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

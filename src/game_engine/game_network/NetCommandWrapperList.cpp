@@ -27,8 +27,8 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/NetCommandWrapperList.h"
-#include "GameNetwork/NetPacket.h"
+#include "game_network/NetCommandWrapperList.h"
+#include "game_network/NetPacket.h"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////// NetCommandWrapperListNode ///////////////////////////////////////////////////////////////////

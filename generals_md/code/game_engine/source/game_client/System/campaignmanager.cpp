@@ -52,13 +52,13 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/CampaignManager.h"
+#include "game_client/CampaignManager.h"
 
 #include "common/ini.h"
-#include "Common/Xfer.h"
-#include "GameClient/ChallengeGenerals.h"//For TheChallengeGenerals, so I can save it too.
-#include "GameClient/GameClient.h"
-#include "GameNetwork/GameInfo.h" //For Challenge Info.  It and Skirmish info are in the wrong place it seems.
+#include "common/Xfer.h"
+#include "game_client/ChallengeGenerals.h"//For TheChallengeGenerals, so I can save it too.
+#include "game_client/GameClient.h"
+#include "game_network/GameInfo.h" //For Challenge Info.  It and Skirmish info are in the wrong place it seems.
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

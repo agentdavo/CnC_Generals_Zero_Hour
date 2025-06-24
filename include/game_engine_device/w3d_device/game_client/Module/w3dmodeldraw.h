@@ -33,8 +33,8 @@
 #define __W3DModelDraw_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/ModelState.h"
-#include "Common/DrawModule.h"
+#include "common/ModelState.h"
+#include "common/DrawModule.h"
 #ifdef BRUTAL_TIMING_HACK // hack for collecting model timing info.  jba.
 class RenderObjClass
 {
@@ -53,7 +53,7 @@ public:
 #else
 #include "WW3D2/RendObj.h"
 #endif
-#include "Common/SparseMatchFinder.h"
+#include "common/SparseMatchFinder.h"
 #include "game_client/ParticleSys.h"
 #include "common/stl_type_defs.h"
 

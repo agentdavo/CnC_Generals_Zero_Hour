@@ -32,7 +32,7 @@
 #define _AI_PLAYER_H_
 
 #include "common/gamememory.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 
 enum { INVALID_SKILLSET_SELECTION = -1 };
 

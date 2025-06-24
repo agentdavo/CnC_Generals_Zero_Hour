@@ -31,7 +31,7 @@
 #include "PolygonTool.h"
 #include "WaypointTool.h"
 #include "GameLogic/PolygonTrigger.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 #include "LayersList.h"
 
 WaterOptions *WaterOptions::m_staticThis = NULL;

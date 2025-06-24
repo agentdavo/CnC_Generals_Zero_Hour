@@ -30,19 +30,19 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/WindowLayout.h"
-#include "GameClient/MapUtil.h"
-#include "GameClient/Shell.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetStaticText.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/MapUtil.h"
+#include "game_client/Shell.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetStaticText.h"
 
-#include "GameClient/GameText.h"
-#include "GameClient/GameInfoWindow.h"
-#include "Common/MultiplayerSettings.h"
-#include "Common/PlayerTemplate.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/LANAPI.h"
+#include "game_client/GameText.h"
+#include "game_client/GameInfoWindow.h"
+#include "common/MultiplayerSettings.h"
+#include "common/PlayerTemplate.h"
+#include "game_network/GameInfo.h"
+#include "game_network/LANAPI.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -38,12 +38,12 @@
 #include "common/GameLOD.h"
 #include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/DebugDisplay.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/DebugDisplay.h"
+#include "game_client/Display.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ParticleSys.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

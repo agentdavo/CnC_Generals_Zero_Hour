@@ -33,7 +33,7 @@
 #define _MissileLauncherBuildingUpdate_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 #include "common/ini.h"
 #include "GameLogic/Module/SpecialPowerUpdateModule.h"
 class DamageInfo;

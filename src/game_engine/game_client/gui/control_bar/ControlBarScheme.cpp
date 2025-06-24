@@ -56,12 +56,12 @@
 #include "common/Player.h"
 #include "common/PlayerTemplate.h"
 #include "common/Recorder.h"
-#include "GameClient/ControlBarScheme.h"
-#include "GameClient/Display.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Image.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
+#include "game_client/ControlBarScheme.h"
+#include "game_client/Display.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Image.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
 #ifdef _INTERNAL
 // for occasional debugging...
 //#pragma optimize("", off)

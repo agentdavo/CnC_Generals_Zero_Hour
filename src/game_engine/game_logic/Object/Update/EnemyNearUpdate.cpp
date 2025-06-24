@@ -33,7 +33,7 @@
 #include "common/PerfTimer.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Module/EnemyNearUpdate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/AI.h"

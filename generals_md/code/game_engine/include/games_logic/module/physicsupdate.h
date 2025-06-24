@@ -31,8 +31,8 @@
 #ifndef _PHYSICSUPDATE_H_
 #define _PHYSICSUPDATE_H_
 
-#include "Common/AudioEventRTS.h"
-#include "Common/GameAudio.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameAudio.h"
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/CollideModule.h"

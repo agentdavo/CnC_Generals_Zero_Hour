@@ -48,17 +48,17 @@
 
 #include "common/GameEngine.h"
 #include "common/NameKeyGenerator.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GadgetProgressBar.h"
-#include "GameClient/GameText.h"
-#include "GameClient/MessageBox.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GadgetProgressBar.h"
+#include "game_client/GameText.h"
+#include "game_client/MessageBox.h"
 
 #include "GameLogic/GameLogic.h"
 
-#include "GameNetwork/DownloadManager.h"
-#include "GameNetwork/GameSpy/MainMenuUtils.h"
+#include "game_network/DownloadManager.h"
+#include "game_network/GameSpy/MainMenuUtils.h"
 
 // PRIVATE DATA ///////////////////////////////////////////////////////////////////////////////////
 static NameKeyType buttonCancelID = NAMEKEY_INVALID;

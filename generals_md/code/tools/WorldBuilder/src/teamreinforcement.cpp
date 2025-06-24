@@ -23,7 +23,7 @@
 #include "worldbuilder.h"
 #include "TeamReinforcement.h"
 #include "EditParameter.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // TeamReinforcement dialog

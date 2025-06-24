@@ -30,20 +30,20 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameEngine.h"
-#include "Common/MessageStream.h"
-#include "Common/UserPreferences.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameText.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/Shell.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetRadioButton.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameNetwork/LANAPICallbacks.h"
-#include "GameClient/MapUtil.h"
+#include "common/GameEngine.h"
+#include "common/MessageStream.h"
+#include "common/UserPreferences.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameText.h"
+#include "game_client/Mouse.h"
+#include "game_client/Shell.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetRadioButton.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_network/LANAPICallbacks.h"
+#include "game_client/MapUtil.h"
 
 // PRIVATE DATA ///////////////////////////////////////////////////////////////////////////////////
 static NameKeyType buttonBack = NAMEKEY_INVALID;

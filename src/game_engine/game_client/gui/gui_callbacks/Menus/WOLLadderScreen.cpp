@@ -31,12 +31,12 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/GameEngine.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/MessageBox.h"
-#include "GameNetwork/WOLBrowser/WebBrowser.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/MessageBox.h"
+#include "game_network/WOLBrowser/WebBrowser.h"
 
 // window ids -------------------------------------------------------------------------------------
 static NameKeyType parentWindowID = NAMEKEY_INVALID;

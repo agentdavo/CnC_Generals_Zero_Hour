@@ -23,8 +23,8 @@
 
 #include "stdafx.h"
 #include "TeamObjectProperties.h"
-#include "Common/MapObject.h"
-#include "Common/WellKnownKeys.h"
+#include "common/MapObject.h"
+#include "common/WellKnownKeys.h"
 
 
 /////////////////////////////////////////////////////////////////////////////

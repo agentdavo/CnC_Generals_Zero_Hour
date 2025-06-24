@@ -52,13 +52,13 @@
 //-----------------------------------------------------------------------------
 //           Includes                                                      
 //-----------------------------------------------------------------------------
-#include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
+#include "common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
 #include "GameLogic/ObjectIter.h"
-#include "Common/ObjectStatusTypes.h"
-#include "Common/KindOf.h"
-#include "Common/Snapshot.h"
-#include "Common/Geometry.h"
-#include "GameClient/Display.h"	// for ShroudLevel
+#include "common/ObjectStatusTypes.h"
+#include "common/KindOf.h"
+#include "common/Snapshot.h"
+#include "common/Geometry.h"
+#include "game_client/Display.h"	// for ShroudLevel
 
 //-----------------------------------------------------------------------------
 //           defines                                                      

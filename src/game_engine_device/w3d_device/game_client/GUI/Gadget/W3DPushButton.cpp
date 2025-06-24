@@ -48,11 +48,11 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowGlobal.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/Display.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowGlobal.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/Display.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"
 #include "W3DDevice/GameClient/W3DGadget.h"

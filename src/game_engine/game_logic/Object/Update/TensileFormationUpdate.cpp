@@ -43,8 +43,8 @@
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 
-#include "GameClient/TerrainVisual.h"
-#include "GameClient/Drawable.h"
+#include "game_client/TerrainVisual.h"
+#include "game_client/Drawable.h"
 
 
 

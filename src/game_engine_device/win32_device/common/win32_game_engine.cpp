@@ -33,7 +33,7 @@
 #include "win32_device/common/win32_game_engine.h"
 #include "common/PerfTimer.h"
 
-#include "GameNetwork/LANAPICallbacks.h"
+#include "game_network/LANAPICallbacks.h"
 
 extern DWORD TheMessageTime;
 

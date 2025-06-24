@@ -32,8 +32,8 @@
 
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
-#include "GameClient/ParticleSys.h"
-#include "GameClient/TerrainVisual.h"
+#include "game_client/ParticleSys.h"
+#include "game_client/TerrainVisual.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/AIUpdate.h"

@@ -30,11 +30,11 @@
 #define _WeaponSet_H_
 
 #include "lib/base_type.h"
-#include "Common/GameType.h"
-#include "Common/KindOf.h"
-#include "Common/ModelState.h"
-#include "Common/SparseMatchFinder.h"
-#include "Common/Snapshot.h"
+#include "common/GameType.h"
+#include "common/KindOf.h"
+#include "common/ModelState.h"
+#include "common/SparseMatchFinder.h"
+#include "common/Snapshot.h"
 
 //-------------------------------------------------------------------------------------------------
 class INI;

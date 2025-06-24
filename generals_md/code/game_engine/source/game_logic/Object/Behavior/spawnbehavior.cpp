@@ -29,19 +29,19 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameState.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/SpawnBehavior.h"
 #include "GameLogic/Module/BodyModule.h"
-#include "GameClient/Drawable.h" //selection logic
-#include "GameClient/InGameUI.h" // selection logic
+#include "game_client/Drawable.h" //selection logic
+#include "game_client/InGameUI.h" // selection logic
 #include "GameLogic/ExperienceTracker.h" //veterancy logic
 #include "GameLogic/Module/StealthUpdate.h"
 

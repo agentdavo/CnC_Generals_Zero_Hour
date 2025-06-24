@@ -46,9 +46,9 @@
 
 #define DEFINE_WEAPONSLOTTYPE_NAMES //For access to TheWeaponSlotTypeNames
 
-#include "Common/Player.h"
-#include "Common/ThingFactory.h"
-#include "Common/Xfer.h"
+#include "common/Player.h"
+#include "common/ThingFactory.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

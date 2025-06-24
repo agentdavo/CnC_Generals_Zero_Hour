@@ -30,11 +30,11 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Thing.h"
-#include "Common/ThingTemplate.h"
+#include "common/Thing.h"
+#include "common/ThingTemplate.h"
 #include "common/ini.h"
-#include "Common/RandomValue.h"
-#include "Common/Player.h"
+#include "common/RandomValue.h"
+#include "common/Player.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/EMPUpdate.h"
 #include "GameLogic/ObjectIter.h"
@@ -43,9 +43,9 @@
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/PhysicsUpdate.h"
 #include "GameLogic/Object.h"
-#include "GameClient/Drawable.h"
-#include "Common/KindOf.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "common/KindOf.h"
+#include "game_client/ParticleSys.h"
 
 
 

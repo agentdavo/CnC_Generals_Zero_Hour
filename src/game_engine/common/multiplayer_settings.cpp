@@ -35,7 +35,7 @@
 
 #include "common/MultiplayerSettings.h"
 #include "common/ini.h"
-#include "GameNetwork/GameInfo.h" // for PLAYERTEMPLATE_*
+#include "game_network/GameInfo.h" // for PLAYERTEMPLATE_*
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 MultiplayerSettings *TheMultiplayerSettings = NULL;				///< The MultiplayerSettings singleton

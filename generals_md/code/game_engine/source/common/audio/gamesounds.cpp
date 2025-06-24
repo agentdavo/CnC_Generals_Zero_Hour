@@ -45,13 +45,13 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "lib/base_type.h"
-#include "Common/GameSounds.h"
+#include "common/GameSounds.h"
 
-#include "Common/AudioEventInfo.h"
-#include "Common/AudioEventRTS.h"
-#include "Common/AudioRequest.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
+#include "common/AudioEventInfo.h"
+#include "common/AudioEventRTS.h"
+#include "common/AudioRequest.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
 
 #include "GameLogic/PartitionManager.h"
 

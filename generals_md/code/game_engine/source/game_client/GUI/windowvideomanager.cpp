@@ -66,10 +66,10 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/WindowVideoManager.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/VideoPlayer.h"
-#include "GameClient/Display.h"
+#include "game_client/WindowVideoManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/VideoPlayer.h"
+#include "game_client/Display.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

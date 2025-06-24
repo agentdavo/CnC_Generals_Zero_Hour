@@ -58,12 +58,12 @@
 #include "common/PlayerTemplate.h"
 #include "common/KindOf.h"
 #include "common/Recorder.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GameText.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GameText.h"
+#include "game_network/NetworkDefs.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

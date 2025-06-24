@@ -54,8 +54,8 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/AsciiString.h"
-#include "Common/UnicodeString.h"
+#include "common/AsciiString.h"
+#include "common/UnicodeString.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

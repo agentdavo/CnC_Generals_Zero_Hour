@@ -31,11 +31,11 @@
 #ifndef _MISSILE_AI_UPDATE_H_
 #define _MISSILE_AI_UPDATE_H_
 
-#include "Common/GameType.h"
-#include "Common/GlobalData.h"
+#include "common/GameType.h"
+#include "common/GlobalData.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/WeaponBonusConditionFlags.h"
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "WWMath/Matrix3D.h"
 
 enum ParticleSystemID;

@@ -30,19 +30,19 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/NameKeyGenerator.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
+#include "common/NameKeyGenerator.h"
+#include "common/ThingTemplate.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/OpenContain.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/Hotkey.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/Hotkey.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

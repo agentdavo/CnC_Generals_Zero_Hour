@@ -30,8 +30,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/GameAudio.h"
-#include "Common/AudioEventInfo.h"
+#include "common/GameAudio.h"
+#include "common/AudioEventInfo.h"
 
 AudioEventInfo::~AudioEventInfo()
 {

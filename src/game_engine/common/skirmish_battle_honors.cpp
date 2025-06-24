@@ -42,7 +42,7 @@
 #include "common/PlayerTemplate.h"
 #include "common/QuotedPrintable.h"
 #include "common/MultiplayerSettings.h"
-#include "GameClient/MapUtil.h"
+#include "game_client/MapUtil.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

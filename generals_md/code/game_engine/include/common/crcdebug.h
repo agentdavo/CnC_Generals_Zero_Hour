@@ -31,7 +31,7 @@
 #ifndef __CRCDEBUG_H__
 #define __CRCDEBUG_H__
 
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 #ifndef NO_DEBUG_CRC
 	#ifdef DEBUG_LOGGING
@@ -41,7 +41,7 @@
 
 #ifdef DEBUG_CRC
 
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 #include "GameLogic/GameLogic.h"
 #include "lib/base_type.h"
 #include "wwmath/vector3.h"

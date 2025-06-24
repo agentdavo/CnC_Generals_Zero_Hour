@@ -30,7 +30,7 @@
 #ifndef _H_LookAtXlat
 #define _H_LookAtXlat
 
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 //-----------------------------------------------------------------------------
 class LookAtTranslator : public GameMessageTranslator

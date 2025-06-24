@@ -49,9 +49,9 @@
 #define __ACADEMY_STATS_H
 
 #include "lib/base_type.h"
-#include "Common/Debug.h"
-#include "Common/Snapshot.h"
-#include "Common/UnicodeString.h"
+#include "common/Debug.h"
+#include "common/Snapshot.h"
+#include "common/UnicodeString.h"
 
 class Object;
 class Player;

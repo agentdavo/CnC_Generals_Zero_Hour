@@ -25,13 +25,13 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
-#include "Common/ArchiveFileSystem.h"
-#include "Common/CommandLine.h"
-#include "Common/CRCDebug.h"
-#include "Common/LocalFileSystem.h"
-#include "Common/Version.h"
-#include "GameClient/TerrainVisual.h" // for TERRAIN_LOD_MIN definition
-#include "GameClient/GameText.h"
+#include "common/ArchiveFileSystem.h"
+#include "common/CommandLine.h"
+#include "common/CRCDebug.h"
+#include "common/LocalFileSystem.h"
+#include "common/version.h"
+#include "game_client/TerrainVisual.h" // for TERRAIN_LOD_MIN definition
+#include "game_client/GameText.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

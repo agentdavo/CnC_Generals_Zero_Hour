@@ -36,7 +36,7 @@
 
 #include "game_client/Color.h"
 #include "common/stl_type_defs.h"
-#include "GameNetwork/GameSpy/StagingRoomGameInfo.h"
+#include "game_network/GameSpy/StagingRoomGameInfo.h"
 
 class GameWindow;
 class PSPlayerStats;

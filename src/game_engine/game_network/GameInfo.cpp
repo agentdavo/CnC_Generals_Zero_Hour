@@ -39,17 +39,17 @@
 #include "common/FileSystem.h"
 #include "common/GameState.h"
 >>>>>>> Stashed changes:src/game_engine/GameNetwork/GameInfo.cpp
-#include "GameClient/GameText.h"
-#include "GameClient/MapUtil.h"
+#include "game_client/GameText.h"
+#include "game_client/MapUtil.h"
 #include "common/MultiplayerSettings.h"
 #include "common/PlayerTemplate.h"
 #include "common/Xfer.h"
-#include "GameNetwork/FileTransfer.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/GameSpy/ThreadUtils.h"
-#include "GameNetwork/GameSpy/StagingRoomGameInfo.h"
-#include "GameNetwork/LANAPI.h"						// for testing packet size
-#include "GameNetwork/LANAPICallbacks.h"	// for testing packet size
+#include "game_network/FileTransfer.h"
+#include "game_network/GameInfo.h"
+#include "game_network/GameSpy/ThreadUtils.h"
+#include "game_network/GameSpy/StagingRoomGameInfo.h"
+#include "game_network/LANAPI.h"						// for testing packet size
+#include "game_network/LANAPICallbacks.h"	// for testing packet size
 #include "strtok_r.h"
 
 #ifdef _INTERNAL

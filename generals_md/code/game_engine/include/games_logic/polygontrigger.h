@@ -36,8 +36,8 @@
 #ifndef PolygonTrigger_H
 #define PolygonTrigger_H
 
-#include "Common/GameMemory.h"
-#include "Common/Snapshot.h"
+#include "common/GameMemory.h"
+#include "common/Snapshot.h"
 #include "common/stl_type_defs.h"
 
 class DataChunkInput;

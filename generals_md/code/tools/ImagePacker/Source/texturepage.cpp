@@ -43,7 +43,7 @@
 #include <stdio.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
+#include "common/Debug.h"
 #include "TexturePage.h"
 #include "ImagePacker.h"
 

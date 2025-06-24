@@ -33,8 +33,8 @@
 #ifndef RESOURCE_GATHER_MANAGER_H
 #define RESOURCE_GATHER_MANAGER_H
 
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
+#include "common/GameType.h"
+#include "common/Snapshot.h"
 
 class Object;
 

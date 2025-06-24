@@ -32,12 +32,12 @@
 
 #include "Common\Player.h"
 #include "Common\PlayerList.h"
-#include "Common/Xfer.h"
-#include "Common/DrawModule.h"
-#include "Common/ThingTemplate.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/ParticleSys.h"
+#include "common/Xfer.h"
+#include "common/DrawModule.h"
+#include "common/ThingTemplate.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/Object.h" 
 #include "GameLogic/GameLogic.h" // For frame number
 #include "GameLogic/Module/LaserUpdate.h"

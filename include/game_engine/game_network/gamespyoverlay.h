@@ -31,7 +31,7 @@
 #ifndef __GAMESPYOVERLAY_H__
 #define __GAMESPYOVERLAY_H__
 
-#include "Common/NameKeyGenerator.h"
+#include "common/NameKeyGenerator.h"
 #include "game_client/WindowLayout.h"
 #include "game_client/Gadget.h"
 #include "game_client/Shell.h"

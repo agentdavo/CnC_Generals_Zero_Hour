@@ -33,10 +33,10 @@
 #define __DAMAGE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/BitFlags.h"
-#include "Common/GameType.h"
-#include "Common/ObjectStatusTypes.h" // Precompiled header anyway, no detangling possibility
-#include "Common/Snapshot.h"
+#include "common/BitFlags.h"
+#include "common/GameType.h"
+#include "common/ObjectStatusTypes.h" // Precompiled header anyway, no detangling possibility
+#include "common/Snapshot.h"
 
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

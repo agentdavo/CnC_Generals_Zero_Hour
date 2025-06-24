@@ -29,9 +29,9 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/Upgrade.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/Upgrade.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 #include "GameLogic/Module/BunkerBusterBehavior.h"
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/AIUpdate.h"
@@ -39,7 +39,7 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/Weapon.h"
 
-#include "GameClient/TerrainVisual.h"//Seismic simulations!
+#include "game_client/TerrainVisual.h"//Seismic simulations!
 
 #ifdef _INTERNAL
 // for occasional debugging...

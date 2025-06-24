@@ -40,9 +40,9 @@
 
 #include "GameLogic/Squad.h"
 
-#include "Common/GameState.h"
-#include "Common/Team.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/Team.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/GameLogic.h"

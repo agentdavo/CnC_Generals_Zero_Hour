@@ -34,8 +34,8 @@
 
 #define DEFINE_VETERANCY_NAMES
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameCommon.h"
-#include "Common/Science.h"
+#include "common/GameCommon.h"
+#include "common/Science.h"
 #include "GameLogic/Module/CreateModule.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

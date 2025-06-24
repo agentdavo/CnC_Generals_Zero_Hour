@@ -50,11 +50,11 @@
 
 #include "common/crc.h"
 #include "common/UserPreferences.h"
-#include "GameNetwork/FirewallHelper.h"
-#include "GameNetwork/NAT.h"
-#include "GameNetwork/udp.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/GameSpy/GSConfig.h"
+#include "game_network/FirewallHelper.h"
+#include "game_network/NAT.h"
+#include "game_network/udp.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/GameSpy/GSConfig.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -28,9 +28,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Xfer.h"
-#include "Common/Player.h"
-#include "GameClient/ControlBar.h"
+#include "common/Xfer.h"
+#include "common/Player.h"
+#include "game_client/ControlBar.h"
 #include "GameLogic/Module/CommandSetUpgrade.h"
 #include "GameLogic/Object.h"
 

@@ -30,7 +30,7 @@
 #include "common/PlayerTemplate.h"
 #include "common/MultiplayerSettings.h"
 #include "GameLogic/SidesList.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 #include "common/UnicodeString.h"
 
 static const char* NEUTRAL_NAME_STR = "(neutral)";

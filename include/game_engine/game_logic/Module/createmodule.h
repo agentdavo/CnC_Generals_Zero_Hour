@@ -32,7 +32,7 @@
 #ifndef __CreateModule_H_
 #define __CreateModule_H_
 
-#include "Common/Module.h"
+#include "common/Module.h"
 #include "GameLogic/Module/BehaviorModule.h"
 
 //-------------------------------------------------------------------------------------------------

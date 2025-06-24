@@ -42,10 +42,10 @@
 #include "common/ThingFactory.h"
 #include "common/Xfer.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/GameClient.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/GameClient.h"
 
 #include "GameLogic/Damage.h"
 #include "GameLogic/Object.h"

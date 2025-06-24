@@ -52,10 +52,10 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/ProcessAnimateWindow.h"
-#include "GameClient/AnimateWindowManager.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/Display.h"
+#include "game_client/ProcessAnimateWindow.h"
+#include "game_client/AnimateWindowManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Display.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

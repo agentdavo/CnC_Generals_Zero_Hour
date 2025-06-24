@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "GameClient/DrawGroupInfo.h"
+#include "game_client/DrawGroupInfo.h"
 
 void parseInt( INI* ini, void * /*instance*/, void *store, const void* userData )
 {

@@ -59,11 +59,11 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Image.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/Gadget.h"
+#include "game_client/Image.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

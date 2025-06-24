@@ -30,11 +30,11 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/CRCDebug.h"
-#include "Common/Player.h"
-#include "Common/RandomValue.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h" 
+#include "common/CRCDebug.h"
+#include "common/Player.h"
+#include "common/RandomValue.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h" 
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Locomotor.h"
@@ -44,7 +44,7 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 
 const Real NO_START_Z = 1e10;

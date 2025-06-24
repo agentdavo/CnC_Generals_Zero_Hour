@@ -30,10 +30,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/LoadScreen.h"
-#include "GameClient/Shell.h"
-#include "GameNetwork/FileTransfer.h"
-#include "GameNetwork/NetworkUtil.h"
+#include "game_client/LoadScreen.h"
+#include "game_client/Shell.h"
+#include "game_network/FileTransfer.h"
+#include "game_network/NetworkUtil.h"
 
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------

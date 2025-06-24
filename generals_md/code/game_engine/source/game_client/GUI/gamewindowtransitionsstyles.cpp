@@ -56,16 +56,16 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Common/AudioEventRTS.h"
-#include "Common/GameAudio.h"
-#include "GameClient/GameWindowTransitions.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Display.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/Controlbar.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameAudio.h"
+#include "game_client/GameWindowTransitions.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Display.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/Controlbar.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

@@ -30,8 +30,8 @@
 
 #include "common/GameEngine.h"
 #include "common/Xfer.h"
-#include "GameClient/View.h"
-#include "GameClient/Drawable.h"
+#include "game_client/View.h"
+#include "game_client/Drawable.h"
 
 UnsignedInt View::m_idNext = 1;
 

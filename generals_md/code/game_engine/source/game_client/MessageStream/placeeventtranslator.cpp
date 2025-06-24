@@ -27,18 +27,18 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/BuildAssistant.h"
-#include "Common/GameAudio.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/SpecialPower.h"
-#include "Common/ThingTemplate.h"
+#include "common/BuildAssistant.h"
+#include "common/GameAudio.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/SpecialPower.h"
+#include "common/ThingTemplate.h"
 
-#include "GameClient/CommandXlat.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/PlaceEventTranslator.h"
+#include "game_client/CommandXlat.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/PlaceEventTranslator.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

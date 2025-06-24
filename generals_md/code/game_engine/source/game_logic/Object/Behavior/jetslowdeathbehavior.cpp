@@ -30,11 +30,11 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GlobalData.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
+#include "common/GlobalData.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Locomotor.h"
 #include "GameLogic/Module/AIUpdate.h"

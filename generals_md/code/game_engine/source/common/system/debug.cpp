@@ -49,16 +49,16 @@
 // USER INCLUDES 
 #define DEBUG_THREADSAFE
 #ifdef DEBUG_THREADSAFE
-#include "Common/CriticalSection.h"
+#include "common/CriticalSection.h"
 #endif
-#include "Common/Debug.h"
-#include "Common/SystemInfo.h"
-#include "Common/UnicodeString.h"
-#include "GameClient/GameText.h"
-#include "GameClient/Keyboard.h"
-#include "GameClient/Mouse.h"
+#include "common/Debug.h"
+#include "common/SystemInfo.h"
+#include "common/UnicodeString.h"
+#include "game_client/GameText.h"
+#include "game_client/Keyboard.h"
+#include "game_client/Mouse.h"
 #if defined(DEBUG_STACKTRACE) || defined(IG_DEBUG_STACKTRACE)
-	#include "Common/StackDump.h"
+	#include "common/StackDump.h"
 #endif
 
 // Horrible reference, but we really, really need to know if we are windowed.

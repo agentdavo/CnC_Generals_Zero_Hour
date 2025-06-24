@@ -32,7 +32,7 @@
 #include "common/CRCDebug.h"
 #include "common/Xfer.h"
 #include "common/ThingTemplate.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Module/AIUpdate.h"

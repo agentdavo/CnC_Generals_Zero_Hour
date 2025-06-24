@@ -57,16 +57,16 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Common/GameAudio.h"
-#include "Common/AudioEventRTS.h"
-#include "Common/AudioHandleSpecialValues.h"
+#include "common/GameAudio.h"
+#include "common/AudioEventRTS.h"
+#include "common/AudioHandleSpecialValues.h"
 
-#include "GameClient/Credits.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/Credits.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

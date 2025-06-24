@@ -28,11 +28,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameState.h"
-#include "Common/Thing.h"
-#include "Common/ThingTemplate.h"
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/Thing.h"
+#include "common/ThingTemplate.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/GameLogic.h"
@@ -43,10 +43,10 @@
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/PhysicsUpdate.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ParticleSys.h"
 
 static const Real STRAIGHT_DOWN_SLOW_FACTOR = 0.5f;
 

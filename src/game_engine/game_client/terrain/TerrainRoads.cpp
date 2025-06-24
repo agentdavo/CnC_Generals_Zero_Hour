@@ -32,7 +32,7 @@
 
 #define DEFINE_BODYDAMAGETYPE_NAMES
 #include "common/ini.h"
-#include "GameClient/TerrainRoads.h"
+#include "game_client/TerrainRoads.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 TerrainRoadCollection *TheTerrainRoads = NULL;

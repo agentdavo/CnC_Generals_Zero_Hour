@@ -31,22 +31,22 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 #include "common/CustomMatchPreferences.h"
 #include "common/GameEngine.h"
 #include "common/GameSpyMiscPreferences.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
 #include "common/GlobalData.h"
-#include "GameNetwork/GameSpyOverlay.h"
-#include "GameNetwork/GameSpy/PeerDefs.h"
-#include "GameNetwork/GameSpy/PeerThread.h"
-#include "GameNetwork/GameSpy/PersistentStorageDefs.h"
-#include "GameNetwork/GameSpy/PersistentStorageThread.h"
+#include "game_network/GameSpyOverlay.h"
+#include "game_network/GameSpy/PeerDefs.h"
+#include "game_network/GameSpy/PeerThread.h"
+#include "game_network/GameSpy/PersistentStorageDefs.h"
+#include "game_network/GameSpy/PersistentStorageThread.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

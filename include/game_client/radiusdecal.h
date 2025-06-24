@@ -30,8 +30,8 @@
 #ifndef _RadiusDecal_H_
 #define _RadiusDecal_H_
 
-#include "Common/GameCommon.h"
-#include "Common/GameType.h"
+#include "common/GameCommon.h"
+#include "common/GameType.h"
 #include "game_client/Color.h"
 
 enum ShadowType;

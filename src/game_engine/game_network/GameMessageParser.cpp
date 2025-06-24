@@ -25,7 +25,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/GameMessageParser.h"
+#include "game_network/GameMessageParser.h"
 
 //----------------------------------------------------------------------------
 GameMessageParser::GameMessageParser() 

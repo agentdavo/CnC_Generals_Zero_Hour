@@ -46,12 +46,12 @@
 
 #define DEFINE_VETERANCY_NAMES				// for TheVeterancyNames[]
 
-#include "Common/GameCommon.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/Player.h"
+#include "common/GameCommon.h"
+#include "common/PlayerTemplate.h"
+#include "common/Player.h"
 #include "common/ini.h"
-#include "Common/Science.h"
-#include "GameClient/Image.h"
+#include "common/Science.h"
+#include "game_client/Image.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

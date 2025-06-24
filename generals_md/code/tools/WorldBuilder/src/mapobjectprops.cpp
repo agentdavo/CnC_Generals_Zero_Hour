@@ -28,10 +28,10 @@
 #include "cundoable.h"
 #include "EditParameter.h"
 
-#include "Common/ThingTemplate.h"
-#include "Common/UnicodeString.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/AudioEventInfo.h"
+#include "common/ThingTemplate.h"
+#include "common/UnicodeString.h"
+#include "common/WellKnownKeys.h"
+#include "common/AudioEventInfo.h"
 
 #include "GameLogic/Module/UpgradeModule.h"
 #include "GameLogic/Module/GenerateMinefieldBehavior.h"

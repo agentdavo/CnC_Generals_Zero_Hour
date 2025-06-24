@@ -38,8 +38,8 @@
 #include "GameLogic/Module/SupplyWarehouseDockUpdate.h"
 #include "GameLogic/Module/WorkerAIUpdate.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

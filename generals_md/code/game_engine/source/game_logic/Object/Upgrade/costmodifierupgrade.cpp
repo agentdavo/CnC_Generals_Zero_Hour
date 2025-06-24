@@ -52,11 +52,11 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/player.h"
-#include "Common/Xfer.h"
+#include "common/player.h"
+#include "common/Xfer.h"
 #include "GameLogic/Module/CostModifierUpgrade.h"
 #include "GameLogic/Object.h"
-#include "Common/BitFlagsIO.h"
+#include "common/BitFlagsIO.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

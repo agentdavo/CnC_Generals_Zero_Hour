@@ -27,22 +27,22 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/GUIUtil.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/MapUtil.h"
+#include "game_network/GUIUtil.h"
+#include "game_network/NetworkDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/MapUtil.h"
 #include "common/NameKeyGenerator.h"
 
 #include "common/MultiplayerSettings.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GameText.h"
-#include "GameNetwork/GameInfo.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GameText.h"
+#include "game_network/GameInfo.h"
 #include "common/PlayerTemplate.h"
-#include "GameNetwork/LANAPICallbacks.h" // for acceptTrueColor, etc
+#include "game_network/LANAPICallbacks.h" // for acceptTrueColor, etc
 
 #ifdef _INTERNAL
 // for occasional debugging...

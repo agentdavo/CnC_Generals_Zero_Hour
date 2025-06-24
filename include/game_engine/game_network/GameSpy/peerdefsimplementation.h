@@ -31,8 +31,8 @@
 #ifndef __PEERDEFSIMPLEMENTATION_H__
 #define __PEERDEFSIMPLEMENTATION_H__
 
-#include "GameNetwork/GameSpy/PeerDefs.h"
-#include "GameNetwork/GameSpy/PersistentStorageThread.h"
+#include "game_network/GameSpy/PeerDefs.h"
+#include "game_network/GameSpy/PersistentStorageThread.h"
 
 
 class GameSpyInfo : public GameSpyInfoInterface

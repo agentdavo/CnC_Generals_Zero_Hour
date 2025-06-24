@@ -47,7 +47,7 @@
 
 #include "PreRTS.h"
 
-#include "Common/List.h"
+#include "common/List.h"
 
 // 'assignment within condition expression'.
 #pragma warning(disable : 4706)

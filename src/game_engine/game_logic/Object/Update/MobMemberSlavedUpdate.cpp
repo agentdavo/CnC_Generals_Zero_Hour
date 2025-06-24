@@ -31,12 +31,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/InGameUI.h"// selection logic
-#include "GameClient/Drawable.h"
+#include "game_client/InGameUI.h"// selection logic
+#include "game_client/Drawable.h"
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"
@@ -48,8 +48,8 @@
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/MobMemberSlavedUpdate.h"
 #include "GameLogic/Module/SpawnBehavior.h"
-#include "GameClient/InGameUI.h"// selection logic
-#include "GameClient/Drawable.h"
+#include "game_client/InGameUI.h"// selection logic
+#include "game_client/Drawable.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h" 
 

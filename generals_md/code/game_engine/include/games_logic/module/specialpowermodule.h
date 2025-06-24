@@ -33,9 +33,9 @@
 #define __SPECIALPOWERMODULE_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
-#include "Common/Module.h"
-#include "Common/Science.h"
+#include "common/AudioEventRTS.h"
+#include "common/Module.h"
+#include "common/Science.h"
 #include "GameLogic/Module/BehaviorModule.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

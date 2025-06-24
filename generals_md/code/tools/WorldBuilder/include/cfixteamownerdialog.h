@@ -18,7 +18,7 @@
 
 
 
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 class TeamsInfo;
 class SidesList;
 

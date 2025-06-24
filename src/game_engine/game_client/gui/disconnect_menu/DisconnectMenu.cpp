@@ -24,16 +24,16 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/DisconnectMenu.h"
-#include "GameClient/GUICallbacks.h"
+#include "game_client/DisconnectMenu.h"
+#include "game_client/GUICallbacks.h"
 #include "common/NameKeyGenerator.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GameText.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/NetworkInterface.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GameText.h"
+#include "game_network/GameInfo.h"
+#include "game_network/NetworkInterface.h"
 
 char *DisconnectMenu::m_playerNameTextControlNames[] = {
 	"DisconnectScreen.wnd:StaticPlayer1Name",

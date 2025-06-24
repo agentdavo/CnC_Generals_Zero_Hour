@@ -41,7 +41,7 @@ so forth is all handled in the object options panel.  jba. */
 #include "common/ThingFactory.h"
 #include "common/ThingSort.h"
 #include "GameLogic/SidesList.h"
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 
 #include <list>
 

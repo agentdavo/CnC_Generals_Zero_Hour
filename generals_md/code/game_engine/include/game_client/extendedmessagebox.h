@@ -33,7 +33,7 @@
 #ifndef __EXTENDEDMESSAGEBOX_H_
 #define __EXTENDEDMESSAGEBOX_H_
 
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GameWindowManager.h"
 
 // return codes for message box callbacks
 enum MessageBoxReturnType {

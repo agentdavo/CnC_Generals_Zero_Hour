@@ -40,9 +40,9 @@
 #include "common/Player.h"
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/GenerateMinefieldBehavior.h"
@@ -52,7 +52,7 @@
 #include "GameLogic/ObjectCreationList.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Weapon.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -33,7 +33,7 @@
 #define __JET_SLOW_DEATH_BEHAVIOR_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/SlowDeathBehavior.h"
 

@@ -45,16 +45,16 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameText.h"
-#include "Common/Language.h"
-#include "Common/Registry.h"
-#include "GameClient/LanguageFilter.h"
-#include "Common/Debug.h"
-#include "Common/UnicodeString.h"
-#include "Common/AsciiString.h"
-#include "Common/GlobalData.h"
+#include "game_client/GameText.h"
+#include "common/Language.h"
+#include "common/Registry.h"
+#include "game_client/LanguageFilter.h"
+#include "common/Debug.h"
+#include "common/UnicodeString.h"
+#include "common/AsciiString.h"
+#include "common/GlobalData.h"
 #include "common/file.h"
-#include "Common/FileSystem.h"
+#include "common/FileSystem.h"
 
 
 #ifdef _INTERNAL

@@ -28,16 +28,16 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/GameSpy/ThreadUtils.h"
-#include "GameNetwork/GameSpy/LadderDefs.h"
-#include "GameNetwork/GameSpy/PeerDefs.h"
-#include "GameNetwork/GameSpy/GSConfig.h"
+#include "game_network/GameSpy/ThreadUtils.h"
+#include "game_network/GameSpy/LadderDefs.h"
+#include "game_network/GameSpy/PeerDefs.h"
+#include "game_network/GameSpy/GSConfig.h"
 #include "common/GameState.h"
 #include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/PlayerTemplate.h"
-#include "GameClient/GameText.h"
-#include "GameClient/MapUtil.h"
+#include "game_client/GameText.h"
+#include "game_client/MapUtil.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

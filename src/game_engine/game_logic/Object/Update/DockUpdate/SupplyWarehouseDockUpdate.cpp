@@ -31,7 +31,7 @@
 
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Module/SupplyWarehouseDockUpdate.h"
 #include "GameLogic/Module/SupplyTruckAIUpdate.h"
 #include "GameLogic/Object.h"

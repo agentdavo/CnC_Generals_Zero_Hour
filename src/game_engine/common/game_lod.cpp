@@ -34,12 +34,12 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
 #include "common/GameLOD.h"
-#include "GameClient/TerrainVisual.h"
-#include "GameClient/GameClient.h"
+#include "game_client/TerrainVisual.h"
+#include "game_client/GameClient.h"
 #include "common/UserPreferences.h"
 
 #define DEFINE_PARTICLE_SYSTEM_NAMES
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

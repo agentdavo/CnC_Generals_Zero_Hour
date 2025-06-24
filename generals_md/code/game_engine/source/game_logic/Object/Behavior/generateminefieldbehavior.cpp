@@ -32,17 +32,17 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #define DEFINE_SLOWDEATHPHASE_NAMES
 
-#include "Common/GlobalData.h"
-#include "Common/Thing.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
+#include "common/GlobalData.h"
+#include "common/Thing.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
 #include "common/ini.h"
-#include "Common/Player.h"
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
+#include "common/Player.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/GenerateMinefieldBehavior.h"
@@ -52,7 +52,7 @@
 #include "GameLogic/ObjectCreationList.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Weapon.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

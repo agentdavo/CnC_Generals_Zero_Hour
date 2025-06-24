@@ -44,8 +44,8 @@
 #define __COMMON_GAMESOUNDS_H_
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/GameAudio.h"
-#include "Common/GameType.h"
+#include "common/GameAudio.h"
+#include "common/GameType.h"
 
 // Forward declarations
 class AudioEventRTS;

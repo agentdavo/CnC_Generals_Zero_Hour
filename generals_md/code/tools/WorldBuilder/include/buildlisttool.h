@@ -26,7 +26,7 @@
 #define BUILDLISTTOOL_H
 
 #include "Tool.h"
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 #include "PickUnitDialog.h"
 class WorldHeightMapEdit;
 class BuildListInfo;

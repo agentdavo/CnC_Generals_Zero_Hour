@@ -33,7 +33,7 @@
 #define __TERRAINLOGIC_H_
 
 #include "common/gamememory.h"
-#include "Common/Snapshot.h"
+#include "common/Snapshot.h"
 #include "common/stl_type_defs.h"
 #include "game_client/TerrainRoads.h"
 

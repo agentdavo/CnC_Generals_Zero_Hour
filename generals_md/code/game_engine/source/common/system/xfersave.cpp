@@ -29,9 +29,9 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/XferSave.h"
-#include "Common/Snapshot.h"
-#include "Common/GameMemory.h"
+#include "common/XferSave.h"
+#include "common/Snapshot.h"
+#include "common/GameMemory.h"
 
 // PRIVATE TYPES //////////////////////////////////////////////////////////////////////////////////
 class XferBlockData : public MemoryPoolObject

@@ -31,7 +31,7 @@
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "WorldBuilderView.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 //
 // FenceTool class.
 //

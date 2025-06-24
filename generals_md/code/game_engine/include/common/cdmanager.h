@@ -51,9 +51,9 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "Common/List.h"
+#include "common/List.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/AsciiString.h"
+#include "common/AsciiString.h"
 
 
 //----------------------------------------------------------------------------

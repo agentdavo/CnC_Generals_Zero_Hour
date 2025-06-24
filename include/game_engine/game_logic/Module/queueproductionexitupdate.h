@@ -34,7 +34,7 @@
 #define _QUEUE_PRODUCTION_EXIT_UPDATE_H
 
 #include "GameLogic/Module/UpdateModule.h"
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "lib/base_type.h"
 
 class Object;

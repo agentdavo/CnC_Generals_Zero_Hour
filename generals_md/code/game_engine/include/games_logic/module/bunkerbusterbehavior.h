@@ -36,7 +36,7 @@
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class FXList;

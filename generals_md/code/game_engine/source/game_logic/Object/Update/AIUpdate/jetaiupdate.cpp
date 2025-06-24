@@ -28,13 +28,13 @@
 
 #define DEFINE_LOCOMOTORSET_NAMES
 
-#include "Common/ActionManager.h"
-#include "Common/GlobalData.h"
-#include "Common/MiscAudio.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
+#include "common/ActionManager.h"
+#include "common/GlobalData.h"
+#include "common/MiscAudio.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Locomotor.h"
 #include "GameLogic/Module/BodyModule.h"

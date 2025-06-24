@@ -30,7 +30,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/Player.h"
+#include "common/Player.h"
 #include "GameLogic/RankInfo.h"
 
 RankInfoStore* TheRankInfoStore = NULL;

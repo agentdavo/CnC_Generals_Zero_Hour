@@ -30,7 +30,7 @@
 #ifndef __NETCOMMANDWRAPPERLIST_H
 #define __NETCOMMANDWRAPPERLIST_H
 
-#include "GameNetwork/NetCommandList.h"
+#include "game_network/NetCommandList.h"
 
 class NetCommandWrapperListNode : public MemoryPoolObject
 {

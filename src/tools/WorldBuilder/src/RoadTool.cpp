@@ -35,7 +35,7 @@
 #include "common/WellKnownKeys.h"
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"
-#include "GameClient/Line2D.h"
+#include "game_client/Line2D.h"
 //
 // RoadTool class.
 //

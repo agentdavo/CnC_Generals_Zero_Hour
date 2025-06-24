@@ -63,9 +63,9 @@
 #include "GameLogic/Module/AutoDepositUpdate.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Object.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/Color.h"
-#include "GameClient/GameText.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Color.h"
+#include "game_client/GameText.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

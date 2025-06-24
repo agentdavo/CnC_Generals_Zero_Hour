@@ -30,15 +30,15 @@
 #ifndef _DRAWABLE_H_
 #define _DRAWABLE_H_
 
-#include "Common/AudioEventRTS.h"
-#include "Common/GameType.h"
-#include "Common/ModelState.h"
-#include "Common/ModuleFactory.h"
-#include "Common/Thing.h"
-#include "Common/Geometry.h"
-#include "GameClient/Color.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameType.h"
+#include "common/ModelState.h"
+#include "common/ModuleFactory.h"
+#include "common/Thing.h"
+#include "common/Geometry.h"
+#include "game_client/Color.h"
 #include "WWMath/Matrix3D.h"
-#include "GameClient/DrawableInfo.h"
+#include "game_client/DrawableInfo.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class PositionalSound;

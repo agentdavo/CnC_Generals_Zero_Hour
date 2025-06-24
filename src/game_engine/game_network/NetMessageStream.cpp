@@ -36,8 +36,8 @@
 #include "common/MessageStream.h"
 #include "common/GameEngine.h"
 #include "GameLogic/GameLogic.h"
-#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/NetworkInterface.h"
+#include "game_network/NetworkDefs.h"
 
 
 

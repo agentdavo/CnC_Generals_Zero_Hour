@@ -43,9 +43,9 @@
 #include "GameLogic/Module/DieModule.h"
 #include "GameLogic/Module/DamageModule.h"
 #include "common/audioEventRTS.h"
-#include "Common/KindOf.h"
+#include "common/KindOf.h"
 #include "common/gamememory.h"
-#include "Common/ModelState.h"
+#include "common/ModelState.h"
 
 // ------------------------------------------------------------------------------------------------
 enum { CONTAIN_MAX_UNKNOWN = -1 };  // means we don't care, infinite, unassigned, whatever

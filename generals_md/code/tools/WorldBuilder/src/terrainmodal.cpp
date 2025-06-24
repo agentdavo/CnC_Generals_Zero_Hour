@@ -28,7 +28,7 @@
 #include "terrainmaterial.h"
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
-#include "Common/TerrainTypes.h"
+#include "common/TerrainTypes.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // TerrainModal dialog

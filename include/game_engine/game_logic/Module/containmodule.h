@@ -32,7 +32,7 @@
 #ifndef __ContainModule_H_
 #define __ContainModule_H_
 
-#include "Common/Module.h"
+#include "common/Module.h"
 
 //-------------------------------------------------------------------------------------------------
 class OpenContain;

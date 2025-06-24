@@ -47,13 +47,13 @@
 
 #include "PreRTS.h"
 #include "common/file.h"
-#include "Common/FileSystem.h"
+#include "common/FileSystem.h"
 
-#include "Common/ArchiveFileSystem.h"
-#include "Common/CDManager.h"
-#include "Common/GameAudio.h"
-#include "Common/LocalFileSystem.h"
-#include "Common/PerfTimer.h"
+#include "common/ArchiveFileSystem.h"
+#include "common/CDManager.h"
+#include "common/GameAudio.h"
+#include "common/LocalFileSystem.h"
+#include "common/PerfTimer.h"
 
 
 DECLARE_PERF_TIMER(FileSystem)

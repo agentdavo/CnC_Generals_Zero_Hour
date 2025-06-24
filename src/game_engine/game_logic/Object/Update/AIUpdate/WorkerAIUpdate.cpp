@@ -44,9 +44,9 @@
 #include "common/GlobalData.h"
 #include "common/ResourceGatheringManager.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
+#include "game_client/InGameUI.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Locomotor.h"

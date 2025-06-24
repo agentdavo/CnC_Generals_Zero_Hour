@@ -39,7 +39,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "always.h"
-#include "GameClient/View.h"
+#include "game_client/View.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/Light.h"
 #include "WW3D2/DX8Wrapper.h"
@@ -57,7 +57,7 @@
 #include "WW3D2/statistics.h"
 #include "GameLogic/TerrainLogic.h"
 #include "WW3D2/DX8Caps.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

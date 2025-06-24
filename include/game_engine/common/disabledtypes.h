@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
-#include "Common/BitFlags.h"
+#include "common/BitFlags.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Kind of flags for determining groups of things that belong together

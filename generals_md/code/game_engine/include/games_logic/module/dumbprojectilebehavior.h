@@ -31,8 +31,8 @@
 #ifndef _DumbProjectileBehavior_H_
 #define _DumbProjectileBehavior_H_
 
-#include "Common/GameType.h"
-#include "Common/GlobalData.h"
+#include "common/GameType.h"
+#include "common/GlobalData.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/CollideModule.h"

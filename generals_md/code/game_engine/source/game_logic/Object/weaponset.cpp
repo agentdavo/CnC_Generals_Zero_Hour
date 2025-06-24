@@ -37,11 +37,11 @@
 #include "GameLogic/WeaponSet.h"
 
 #include "common/ini.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/BitFlagsIO.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/BitFlagsIO.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/Object.h"

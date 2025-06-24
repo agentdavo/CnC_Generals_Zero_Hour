@@ -32,7 +32,7 @@
 #ifndef __BODYMODULE_H_
 #define __BODYMODULE_H_
 
-#include "Common/Module.h"
+#include "common/Module.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/ArmorSet.h"
 #include "GameLogic/Module/BehaviorModule.h"

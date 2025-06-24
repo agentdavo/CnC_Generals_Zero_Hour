@@ -29,8 +29,8 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/Xfer.h"
-#include "GameClient/InGameUI.h"
+#include "common/Xfer.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/BridgeScaffoldBehavior.h"

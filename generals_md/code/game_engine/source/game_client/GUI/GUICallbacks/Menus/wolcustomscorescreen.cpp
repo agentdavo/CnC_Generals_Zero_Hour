@@ -32,18 +32,18 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "lib/base_type.h"
-#include "Common/GameEngine.h"
-#include "Common/NameKeyGenerator.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/Shell.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "Common/GlobalData.h"
-//#include "GameNetwork/WOL.h"
-//#include "GameNetwork/WOLmenus.h"
+#include "common/GameEngine.h"
+#include "common/NameKeyGenerator.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/Gadget.h"
+#include "game_client/Shell.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "common/GlobalData.h"
+//#include "game_network/WOL.h"
+//#include "game_network/WOLmenus.h"
 
 
 

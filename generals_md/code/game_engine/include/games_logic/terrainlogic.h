@@ -32,10 +32,10 @@
 #ifndef __TERRAINLOGIC_H_
 #define __TERRAINLOGIC_H_
 
-#include "Common/GameMemory.h"
-#include "Common/Snapshot.h"
+#include "common/GameMemory.h"
+#include "common/Snapshot.h"
 #include "common/stl_type_defs.h"
-#include "GameClient/TerrainRoads.h"
+#include "game_client/TerrainRoads.h"
 
 typedef std::vector<ICoord2D> VecICoord2D;
 

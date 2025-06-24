@@ -31,9 +31,9 @@
 #include "common/PerfTimer.h"
 
 #include "common/GlobalData.h"
-#include "GameClient/DebugDisplay.h"
-#include "GameClient/Display.h"
-#include "GameClient/GraphDraw.h"
+#include "game_client/DebugDisplay.h"
+#include "game_client/Display.h"
+#include "game_client/GraphDraw.h"
 
 
 #ifdef _INTERNAL

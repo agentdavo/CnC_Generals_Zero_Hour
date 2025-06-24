@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Common/CDManager.h"
+#include "common/CDManager.h"
 
 class Win32CDDrive : public CDDrive
 {

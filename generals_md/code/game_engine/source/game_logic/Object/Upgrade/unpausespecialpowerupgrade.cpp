@@ -31,8 +31,8 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/SpecialPower.h"
-#include "Common/Xfer.h"
+#include "common/SpecialPower.h"
+#include "common/Xfer.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/SpecialPowerModule.h"
 #include "GameLogic/Module/UnpauseSpecialPowerUpgrade.h"

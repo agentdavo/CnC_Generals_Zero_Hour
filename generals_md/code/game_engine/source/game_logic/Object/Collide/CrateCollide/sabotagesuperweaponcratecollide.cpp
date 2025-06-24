@@ -35,18 +35,18 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameAudio.h"
-#include "Common/MiscAudio.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Radar.h"
-#include "Common/SpecialPower.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/GameAudio.h"
+#include "common/MiscAudio.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Radar.h"
+#include "common/SpecialPower.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/InGameUI.h"  // useful for printing quick debug strings when we need to
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/InGameUI.h"  // useful for printing quick debug strings when we need to
 
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Object.h"

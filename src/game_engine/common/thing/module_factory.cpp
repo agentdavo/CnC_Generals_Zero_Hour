@@ -250,9 +250,9 @@
 // (none)
 
 // client update includes
-#include "GameClient/Module/AnimatedParticleSysBoneClientUpdate.h"
-#include "GameClient/Module/SwayClientUpdate.h"
-#include "GameClient/Module/BeaconClientUpdate.h"
+#include "game_client/Module/AnimatedParticleSysBoneClientUpdate.h"
+#include "game_client/Module/SwayClientUpdate.h"
+#include "game_client/Module/BeaconClientUpdate.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 ModuleFactory *TheModuleFactory = NULL;  ///< the module factory singleton

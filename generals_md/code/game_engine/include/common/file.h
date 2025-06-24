@@ -53,10 +53,10 @@
 //----------------------------------------------------------------------------
 
 #include "lib/base_type.h"
-#include "Common/AsciiString.h"
-#include "Common/GameMemory.h"
+#include "common/AsciiString.h"
+#include "common/GameMemory.h"
 // include FileSystem.h as it will be used alot with File.h
-//#include "Common/FileSystem.h"
+//#include "common/FileSystem.h"
 
 //----------------------------------------------------------------------------
 //           Forward References

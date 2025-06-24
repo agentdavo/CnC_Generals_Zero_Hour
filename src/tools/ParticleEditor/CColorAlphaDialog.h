@@ -19,7 +19,7 @@
 #pragma once
 
 #include "CButtonShowColor.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 
 class CColorAlphaDialog : public CDialog
 {

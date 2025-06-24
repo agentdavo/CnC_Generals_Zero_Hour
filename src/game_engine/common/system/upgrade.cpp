@@ -35,8 +35,8 @@
 #include "common/Upgrade.h"
 #include "common/Player.h"
 #include "common/Xfer.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/Image.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Image.h"
 
 // PUBLIC /////////////////////////////////////////////////////////////////////////////////////////
 class UpgradeCenter *TheUpgradeCenter = NULL;

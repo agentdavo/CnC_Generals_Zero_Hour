@@ -33,7 +33,7 @@
 #define __WORKER_AI_UPDATE_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/StateMachine.h"
+#include "common/StateMachine.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/DozerAIUpdate.h"
 #include "GameLogic/Module/SupplyTruckAIUpdate.h"

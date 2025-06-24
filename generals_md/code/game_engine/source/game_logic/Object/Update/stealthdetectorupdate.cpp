@@ -32,24 +32,24 @@
 #define DEFINE_STEALTHLEVEL_NAMES
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/MiscAudio.h"
-#include "Common/Radar.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/GameText.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ParticleSys.h"
+#include "common/MiscAudio.h"
+#include "common/Radar.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/GameText.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/StealthUpdate.h"
 #include "GameLogic/Module/StealthDetectorUpdate.h"
-#include "Common/BitFlagsIO.h"
-#include "Common/PlayerList.h"
-#include "Common/Player.h"
+#include "common/BitFlagsIO.h"
+#include "common/PlayerList.h"
+#include "common/Player.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

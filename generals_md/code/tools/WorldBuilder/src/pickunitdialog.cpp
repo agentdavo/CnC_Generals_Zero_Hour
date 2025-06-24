@@ -25,11 +25,11 @@
 #include "resource.h"
 #include "PickUnitDialog.h"
 
-#include "Common/ThingTemplate.h"
+#include "common/ThingTemplate.h"
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingSort.h"
+#include "common/ThingFactory.h"
+#include "common/ThingSort.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // PickUnitDialog dialog

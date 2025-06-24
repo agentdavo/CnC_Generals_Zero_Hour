@@ -31,11 +31,11 @@
 #define _DRAWABLE_H_
 
 #include "common/audioEventRTS.h"
-#include "Common/GameType.h"
-#include "Common/ModelState.h"
-#include "Common/ModuleFactory.h"
-#include "Common/Thing.h"
-#include "Common/Geometry.h"
+#include "common/GameType.h"
+#include "common/ModelState.h"
+#include "common/ModuleFactory.h"
+#include "common/Thing.h"
+#include "common/Geometry.h"
 #include "game_client/Color.h"
 #include "WWMath/Matrix3D.h"
 #include "game_client/DrawableInfo.h"

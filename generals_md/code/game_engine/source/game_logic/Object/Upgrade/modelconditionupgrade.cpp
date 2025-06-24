@@ -30,7 +30,7 @@
 
 #include "GameLogic/Module/ModelConditionUpgrade.h"
 
-#include "Common/ModelState.h"
+#include "common/ModelState.h"
 #include "GameLogic/Object.h"
 
 // ------------------------------------------------------------------------------------------------

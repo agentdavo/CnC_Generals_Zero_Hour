@@ -43,8 +43,8 @@
 #include "common/GameState.h"
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Locomotor.h"
@@ -53,7 +53,7 @@
 #include "GameLogic/Module/BridgeTowerBehavior.h"
 #include "GameLogic/Module/CreateModule.h"
 #include "GameLogic/Module/DozerAIUpdate.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -32,12 +32,12 @@
 
 #include "lib/base_type.h"
 #include "common/ini.h"
-#include "GameClient/MapUtil.h"
-#include "GameClient/GameText.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/QuotedPrintable.h"
+#include "game_client/MapUtil.h"
+#include "game_client/GameText.h"
+#include "game_network/NetworkDefs.h"
+#include "common/NameKeyGenerator.h"
+#include "common/WellKnownKeys.h"
+#include "common/QuotedPrintable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

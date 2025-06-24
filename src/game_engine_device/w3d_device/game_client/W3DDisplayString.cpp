@@ -49,11 +49,11 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameClient/GameClient.h"
+#include "game_client/GameClient.h"
 #include "W3DDevice/GameClient/W3DDisplayString.h"
-#include "GameClient/HotKey.h"
-#include "GameClient/GameFont.h"
-#include "GameClient/GlobalLanguage.h"
+#include "game_client/HotKey.h"
+#include "game_client/GameFont.h"
+#include "game_client/GlobalLanguage.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 #ifdef _INTERNAL

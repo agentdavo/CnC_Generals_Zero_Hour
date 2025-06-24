@@ -28,9 +28,9 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Player.h"
-#include "Common/ResourceGatheringManager.h"
-#include "Common/ThingTemplate.h"
+#include "common/Player.h"
+#include "common/ResourceGatheringManager.h"
+#include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/SupplyTruckAIUpdate.h"
@@ -38,8 +38,8 @@
 #include "GameLogic/Module/SupplyWarehouseDockUpdate.h"
 #include "GameLogic/Module/WorkerAIUpdate.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

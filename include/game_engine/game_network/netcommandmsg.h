@@ -32,8 +32,8 @@
 #define __NETCOMMANDMSG_H
 
 #include "lib/base_type.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "Common/UnicodeString.h"
+#include "game_network/NetworkDefs.h"
+#include "common/UnicodeString.h"
 
 //-----------------------------------------------------------------------------
 class NetCommandMsg : public MemoryPoolObject

@@ -26,17 +26,17 @@
 #include "common/windows.h"
 #include <process.h>
 
-#include "Common/Debug.h"
-#include "Common/DataChunk.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/MapReaderWriterInfo.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/WellKnownKeys.h"
+#include "common/Debug.h"
+#include "common/DataChunk.h"
+#include "common/PlayerTemplate.h"
+#include "common/MapReaderWriterInfo.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/WellKnownKeys.h"
 
-#include "GameClient/Line2D.h"
-#include "GameClient/View.h"
-#include "GameClient/GameText.h"
+#include "game_client/Line2D.h"
+#include "game_client/View.h"
+#include "game_client/GameText.h"
 
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/SidesList.h"

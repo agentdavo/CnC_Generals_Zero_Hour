@@ -53,9 +53,9 @@
 #include "PreRTS.h"
 
 #include "common/ini.h"
-#include "Common/Registry.h"
-#include "GameClient/GlobalLanguage.h"
-#include "Common/Filesystem.h"
+#include "common/Registry.h"
+#include "game_client/GlobalLanguage.h"
+#include "common/Filesystem.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

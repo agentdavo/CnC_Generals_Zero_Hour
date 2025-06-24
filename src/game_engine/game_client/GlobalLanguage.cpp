@@ -54,7 +54,7 @@
 
 #include "common/ini.h"
 #include "common/Registry.h"
-#include "GameClient/GlobalLanguage.h"
+#include "game_client/GlobalLanguage.h"
 #include "common/Filesystem.h"
 
 //-----------------------------------------------------------------------------

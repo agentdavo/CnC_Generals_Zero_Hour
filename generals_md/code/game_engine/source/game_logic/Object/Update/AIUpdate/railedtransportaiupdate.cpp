@@ -30,8 +30,8 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/ThingTemplate.h"
-#include "Common/GameState.h"
+#include "common/ThingTemplate.h"
+#include "common/GameState.h"
 #include "GameLogic/Locomotor.h"
 #include "GameLogic/Module/RailedTransportAIUpdate.h"
 #include "GameLogic/Module/RailedTransportDockUpdate.h"

@@ -28,8 +28,8 @@
 
 #include "PreRTS.h"
 
-#include "Common/KindOf.h"
-#include "Common/BitFlagsIO.h"
+#include "common/KindOf.h"
+#include "common/BitFlagsIO.h"
 
 const char* KindOfMaskType::s_bitNameList[] = 
 {

@@ -31,12 +31,12 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/Module.h"
-#include "Common/Thing.h"
+#include "common/Module.h"
+#include "common/Thing.h"
 #include "common/ini.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Upgrade.h"
-#include "Common/Xfer.h"
+#include "common/ThingTemplate.h"
+#include "common/Upgrade.h"
+#include "common/Xfer.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BodyModule.h"

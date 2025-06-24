@@ -24,7 +24,7 @@
 #include "lib/base_type.h"
 #include "WBPopupSlider.h"
 #include "resource.h"
-#include "Common/Debug.h"
+#include "common/Debug.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // WBPopupSliderButton public member functions

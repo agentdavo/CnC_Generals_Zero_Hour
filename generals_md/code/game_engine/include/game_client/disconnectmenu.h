@@ -28,7 +28,7 @@
 #ifndef __DISCONNECTDIALOG_H
 #define __DISCONNECTDIALOG_H
 
-#include "GameNetwork/DisconnectManager.h"
+#include "game_network/DisconnectManager.h"
 
 enum DisconnectMenuStateType {
 	DISCONNECTMENUSTATETYPE_SCREENON,

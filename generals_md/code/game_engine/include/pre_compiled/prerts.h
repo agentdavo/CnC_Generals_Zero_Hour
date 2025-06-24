@@ -103,27 +103,27 @@ class STLSpecialAlloc;
 // Icky. These have to be in this order.
 #include "lib/base_type.h"
 #include "common/stl_type_defs.h"
-#include "Common/Errors.h"
-#include "Common/Debug.h"
-#include "Common/AsciiString.h"
+#include "common/Errors.h"
+#include "common/Debug.h"
+#include "common/AsciiString.h"
 #include "game_engine/common/subsystem_interface.h"
 
-#include "Common/GameCommon.h"
-#include "Common/GameMemory.h"
-#include "Common/GameType.h"
-#include "Common/GlobalData.h"
+#include "common/GameCommon.h"
+#include "common/GameMemory.h"
+#include "common/GameType.h"
+#include "common/GlobalData.h"
 
 // You might not want Kindof in here because it seems like it changes frequently, but the problem
 // is that Kindof is included EVERYWHERE, so it might as well be precompiled.
 #include "common/ini.h"
-#include "Common/KindOf.h"
-#include "Common/DisabledTypes.h"
-#include "Common/NameKeyGenerator.h"
-#include "GameClient/ClientRandomValue.h"
+#include "common/KindOf.h"
+#include "common/DisabledTypes.h"
+#include "common/NameKeyGenerator.h"
+#include "game_client/ClientRandomValue.h"
 #include "GameLogic/LogicRandomValue.h"
-#include "Common/ObjectStatusTypes.h"
+#include "common/ObjectStatusTypes.h"
 
-#include "Common/Thing.h"
-#include "Common/UnicodeString.h"
+#include "common/Thing.h"
+#include "common/UnicodeString.h"
 
 #endif /* __PRERTS_H__ */

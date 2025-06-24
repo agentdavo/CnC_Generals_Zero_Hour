@@ -45,7 +45,7 @@
 
 #include "W3DDevice/GameClient/heightmap.h"
 #include "W3DDevice/GameClient/W3DWaterTracks.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/TerrainLogic.h"
 #include "common/GlobalData.h"
 #include "common/UnicodeString.h"
@@ -1065,7 +1065,7 @@ void WaterTracksRenderSystem::loadTracks(void)
 
 /**@todo: this is a quick hack for adding/removing/testing breaking waves inside the client.
 Will need to move this code to an external editor at some pont. */
-#include "GameClient/Display.h"
+#include "game_client/Display.h"
 
 extern HWND ApplicationHWnd;
 

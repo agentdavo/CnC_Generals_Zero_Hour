@@ -32,11 +32,11 @@
 #define _MISSILE_UPDATE_H_
 
 #include "game_client/RadiusDecal.h"
-#include "Common/GameType.h"
-#include "Common/GlobalData.h"
+#include "common/GameType.h"
+#include "common/GlobalData.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "WWMath/Matrix3D.h"
 
 enum ParticleSystemID;

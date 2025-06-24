@@ -28,8 +28,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/Xfer.h"
-#include "GameClient/TerrainVisual.h"
+#include "common/Xfer.h"
+#include "game_client/TerrainVisual.h"
 
 
 #ifdef _INTERNAL

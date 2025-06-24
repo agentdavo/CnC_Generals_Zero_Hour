@@ -31,15 +31,15 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/Thing.h"
-#include "Common/ThingTemplate.h"
+#include "common/Thing.h"
+#include "common/ThingTemplate.h"
 #include "common/ini.h"
-#include "Common/Player.h"
-#include "Common/ThingFactory.h"
-#include "Common/Xfer.h"
-#include "GameClient/ParticleSys.h"
-#include "GameClient/Anim2D.h"
-#include "GameClient/InGameUI.h"
+#include "common/Player.h"
+#include "common/ThingFactory.h"
+#include "common/Xfer.h"
+#include "game_client/ParticleSys.h"
+#include "game_client/Anim2D.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/Module/CountermeasuresBehavior.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/PhysicsUpdate.h"

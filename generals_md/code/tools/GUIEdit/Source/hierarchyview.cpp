@@ -49,8 +49,8 @@
 #include <string.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Debug.h"
-#include "GameClient/Gadget.h"
+#include "common/Debug.h"
+#include "game_client/Gadget.h"
 #include "Resource.h"
 #include "HierarchyView.h"
 #include "WinMain.h"

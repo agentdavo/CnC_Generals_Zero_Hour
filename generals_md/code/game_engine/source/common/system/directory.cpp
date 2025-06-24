@@ -25,7 +25,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #if (0)
 
-#include "Common/Directory.h"
+#include "common/Directory.h"
 
 //-------------------------------------------------------------------------------------------------
 

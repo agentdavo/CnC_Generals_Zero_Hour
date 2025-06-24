@@ -30,27 +30,27 @@
 
 #include "windows.h"
 
-#include "Common/GameType.h"
-#include "Common/MessageStream.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Recorder.h"
-#include "Common/StatsCollector.h"
+#include "common/GameType.h"
+#include "common/MessageStream.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Recorder.h"
+#include "common/StatsCollector.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
-#include "GameClient/Display.h"
-#include "GameClient/GameText.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/Shell.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/KeyDefs.h"
-#include "GameClient/View.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/LookAtXlat.h"
+#include "game_client/Display.h"
+#include "game_client/GameText.h"
+#include "game_client/Mouse.h"
+#include "game_client/Shell.h"
+#include "game_client/GameClient.h"
+#include "game_client/KeyDefs.h"
+#include "game_client/View.h"
+#include "game_client/Drawable.h"
+#include "game_client/LookAtXlat.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/GameLogic.h"
 
-#include "Common/GlobalData.h"			// for camera pitch angle only
+#include "common/GlobalData.h"			// for camera pitch angle only
 
 LookAtTranslator *TheLookAtTranslator = NULL;
 

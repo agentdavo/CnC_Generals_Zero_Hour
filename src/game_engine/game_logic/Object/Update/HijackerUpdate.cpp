@@ -38,7 +38,7 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/HijackerUpdate.h"
 #include "GameLogic/Module/AIUpdate.h"

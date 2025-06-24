@@ -33,7 +33,7 @@
 #define _W3D_PROJECTILE_STREAM_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/DrawModule.h"
+#include "common/DrawModule.h"
 #include "GameLogic/Module/ProjectileStreamUpdate.h" // I am the draw module for this update.  Very tight.
 
 class SegmentedLineClass;

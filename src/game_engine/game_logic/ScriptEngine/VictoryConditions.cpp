@@ -39,17 +39,17 @@
 #include "common/Radar.h"
 #include "common/Recorder.h"
 
-#include "GameClient/InGameUI.h"
-#include "GameClient/Diplomacy.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/MessageBox.h"
+#include "game_client/InGameUI.h"
+#include "game_client/Diplomacy.h"
+#include "game_client/GameText.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/MessageBox.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/ScriptActions.h"
 #include "GameLogic/VictoryConditions.h"
-#include "GameNetwork/GameInfo.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "game_network/GameInfo.h"
+#include "game_network/NetworkDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

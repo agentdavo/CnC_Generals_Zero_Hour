@@ -26,8 +26,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/CRC.h"
-#include "GameNetwork/Transport.h"
-#include "GameNetwork/NetworkInterface.h"
+#include "game_network/Transport.h"
+#include "game_network/NetworkInterface.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

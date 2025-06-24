@@ -34,9 +34,9 @@
 #include "common/ThingFactory.h"
 #include "common/WellKnownKeys.h"
 
-#include "GameClient/Line2D.h"
-#include "GameClient/View.h"
-#include "GameClient/GameText.h"
+#include "game_client/Line2D.h"
+#include "game_client/View.h"
+#include "game_client/GameText.h"
 
 #include "GameLogic/PolygonTrigger.h"
 #include "GameLogic/SidesList.h"

@@ -31,14 +31,14 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include "GameLogic/Module/NeutronBlastBehavior.h"
 
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/AIUpdate.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

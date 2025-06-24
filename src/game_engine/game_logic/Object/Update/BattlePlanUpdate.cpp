@@ -40,12 +40,12 @@
 #include "common/Player.h"
 #include "common/Xfer.h"
 
-#include "GameClient/GameClient.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
-#include "GameClient/ParticleSys.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/GameClient.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
+#include "game_client/ParticleSys.h"
+#include "game_client/FXList.h"
+#include "game_client/ControlBar.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"

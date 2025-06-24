@@ -33,19 +33,19 @@
 #ifndef _IN_GAME_UI_H_
 #define _IN_GAME_UI_H_
 
-#include "Common/GameCommon.h"
-#include "Common/GameType.h"
-#include "Common/MessageStream.h"		// for GameMessageTranslator
-#include "Common/KindOf.h"
-#include "Common/SpecialPowerType.h"
-#include "Common/Snapshot.h"
+#include "common/GameCommon.h"
+#include "common/GameType.h"
+#include "common/MessageStream.h"		// for GameMessageTranslator
+#include "common/KindOf.h"
+#include "common/SpecialPowerType.h"
+#include "common/Snapshot.h"
 #include "common/stl_type_defs.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/UnicodeString.h"
-#include "GameClient/DisplayString.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/RadiusDecal.h"
-#include "GameClient/View.h"
+#include "common/UnicodeString.h"
+#include "game_client/DisplayString.h"
+#include "game_client/Mouse.h"
+#include "game_client/RadiusDecal.h"
+#include "game_client/View.h"
 
 // FORWARD DECLARATIONS ///////////////////////////////////////////////////////////////////////////
 class Drawable;

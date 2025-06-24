@@ -31,11 +31,11 @@
 #ifndef _STATE_MACHINE_H_
 #define _STATE_MACHINE_H_
 
-#include "Common/GameMemory.h"
-#include "Common/GameType.h"
-#include "Common/ModelState.h"
-#include "Common/Snapshot.h"
-#include "Common/Xfer.h"
+#include "common/GameMemory.h"
+#include "common/GameType.h"
+#include "common/ModelState.h"
+#include "common/Snapshot.h"
+#include "common/Xfer.h"
 
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------

@@ -29,15 +29,15 @@
 
 #include "GameLogic/AIPathfind.h"
 
-#include "Common/PerfTimer.h"
-#include "Common/Player.h"
-#include "Common/CRCDebug.h"
-#include "Common/GlobalData.h"
-#include "Common/LatchRestore.h"	 
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"							 
+#include "common/PerfTimer.h"
+#include "common/Player.h"
+#include "common/CRCDebug.h"
+#include "common/GlobalData.h"
+#include "common/LatchRestore.h"	 
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"							 
 
-#include "GameClient/Line2D.h"
+#include "game_client/Line2D.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/GameLogic.h"
@@ -50,7 +50,7 @@
 #include "GameLogic/TerrainLogic.h"
 #include "GameLogic/Weapon.h"
 
-#include "Common/UnitTimings.h" //Contains the DO_UNIT_TIMINGS define jba.	
+#include "common/UnitTimings.h" //Contains the DO_UNIT_TIMINGS define jba.	
 
 
 #define no_INTENSE_DEBUG
@@ -61,12 +61,12 @@
 #include "GameLogic/ScriptEngine.h"
 #endif
 
-#include "Common/Xfer.h"
-#include "Common/XferCRC.h"
+#include "common/Xfer.h"
+#include "common/XferCRC.h"
 
 //------------------------------------------------------------------------------ Performance Timers 
-#include "Common/PerfMetrics.h"
-#include "Common/PerfTimer.h"
+#include "common/PerfMetrics.h"
+#include "common/PerfTimer.h"
 
 //-------------------------------------------------------------------------------------------------
 

@@ -33,11 +33,11 @@
 #include "common/Player.h"
 #include "common/Team.h"
 #include "common/Xfer.h"
-#include "GameClient/GameText.h"
+#include "game_client/GameText.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/CashHackSpecialPower.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------

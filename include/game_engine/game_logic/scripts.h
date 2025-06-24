@@ -32,8 +32,8 @@
 #ifndef SCRIPTS_H
 #define SCRIPTS_H
 
-#include "Common/Snapshot.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "common/Snapshot.h"
+#include "game_network/NetworkDefs.h"
 
 #define THIS_TEAM "<This Team>"
 #define ANY_TEAM "<Any Team>"

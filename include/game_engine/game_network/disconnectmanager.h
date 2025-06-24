@@ -28,9 +28,9 @@
 #ifndef __DISCONNECTMANAGER_H
 #define __DISCONNECTMANAGER_H
 
-#include "GameNetwork/NetCommandRef.h"
+#include "game_network/NetCommandRef.h"
 #include "lib/base_type.h"
-//#include "GameNetwork/ConnectionManager.h"
+//#include "game_network/ConnectionManager.h"
 
 enum DisconnectStateType {
 	DISCONNECTSTATETYPE_SCREENON,

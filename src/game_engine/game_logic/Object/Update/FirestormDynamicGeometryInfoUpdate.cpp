@@ -32,10 +32,10 @@
 
 #include "common/Xfer.h"
 
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/FXList.h"
+#include "game_client/ParticleSys.h"
 
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"

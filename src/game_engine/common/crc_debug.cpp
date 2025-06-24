@@ -28,8 +28,8 @@
 #include "common/CRCDebug.h"
 #include "common/Debug.h"
 #include "common/PerfTimer.h"
-#include "GameClient/InGameUI.h"
-#include "GameNetwork/IPEnumeration.h"
+#include "game_client/InGameUI.h"
+#include "game_network/IPEnumeration.h"
 #include <cstdarg>
 
 #ifdef _INTERNAL

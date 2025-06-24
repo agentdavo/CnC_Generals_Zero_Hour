@@ -32,15 +32,15 @@
 #ifndef _GLOBALDATA_H_
 #define _GLOBALDATA_H_
 
-#include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
-#include "Common/AsciiString.h"
-#include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
+#include "common/AsciiString.h"
+#include "common/GameType.h"
+#include "common/GameMemory.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "GameClient/Color.h"
+#include "game_client/Color.h"
 #include "common/stl_type_defs.h"
-#include "Common/GameCommon.h"
-#include "Common/Money.h"
+#include "common/GameCommon.h"
+#include "common/Money.h"
 
 // FORWARD DECLARATIONS ///////////////////////////////////////////////////////////////////////////
 struct FieldParse;

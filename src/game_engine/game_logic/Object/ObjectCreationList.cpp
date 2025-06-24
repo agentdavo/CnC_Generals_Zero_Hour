@@ -45,10 +45,10 @@
 #include "common/ThingFactory.h"
 #include "common/GameLOD.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ParticleSys.h"
-#include "GameClient/Shadow.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/ParticleSys.h"
+#include "game_client/Shadow.h"
 
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/GameLogic.h"

@@ -33,8 +33,8 @@
 #define __BRIDGE_BEHAVIOR_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
-#include "GameClient/TerrainRoads.h"
+#include "common/AudioEventRTS.h"
+#include "game_client/TerrainRoads.h"
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/DamageModule.h"
 #include "GameLogic/Module/Diemodule.h"

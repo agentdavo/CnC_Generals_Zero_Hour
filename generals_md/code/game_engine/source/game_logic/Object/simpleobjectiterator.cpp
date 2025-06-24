@@ -29,7 +29,7 @@
 
 #include "GameLogic/ObjectIter.h"
 
-#include "Common/ThingTemplate.h"
+#include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
 
 

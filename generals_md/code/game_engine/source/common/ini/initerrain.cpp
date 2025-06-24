@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/TerrainTypes.h"
+#include "common/TerrainTypes.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Parse Terrain type entry */

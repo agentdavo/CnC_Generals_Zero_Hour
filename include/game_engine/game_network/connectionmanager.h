@@ -32,13 +32,13 @@
 #ifndef __CONNECTIONMANAGER_H
 #define __CONNECTIONMANAGER_H
 
-#include "GameNetwork/Connection.h"
-#include "GameNetwork/NetCommandList.h"
-#include "GameNetwork/Transport.h"
-#include "GameNetwork/FrameDataManager.h"
-#include "GameNetwork/FrameMetrics.h"
-#include "GameNetwork/NetworkDefs.h"
-#include "GameNetwork/DisconnectManager.h"
+#include "game_network/Connection.h"
+#include "game_network/NetCommandList.h"
+#include "game_network/Transport.h"
+#include "game_network/FrameDataManager.h"
+#include "game_network/FrameMetrics.h"
+#include "game_network/NetworkDefs.h"
+#include "game_network/DisconnectManager.h"
 
 class GameInfo;
 class NetCommandWrapperList;

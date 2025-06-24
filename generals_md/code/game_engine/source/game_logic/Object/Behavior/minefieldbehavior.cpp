@@ -31,11 +31,11 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #define DEFINE_RELATIONSHIP_NAMES
-#include "Common/GameState.h"
-#include "Common/RandomValue.h"
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/InGameUI.h"
+#include "common/GameState.h"
+#include "common/RandomValue.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/AIUpdate.h"

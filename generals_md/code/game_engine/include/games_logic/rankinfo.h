@@ -33,8 +33,8 @@
 #define __RankInfo_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/Science.h"
-#include "Common/UnicodeString.h"
+#include "common/Science.h"
+#include "common/UnicodeString.h"
 #include "common/stl_type_defs.h"
 
 class Player;

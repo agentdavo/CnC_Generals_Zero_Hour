@@ -29,13 +29,13 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "Common/Xfer.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/Module/BattleBusSlowDeathBehavior.h"
 
-#include "Common/ModelState.h"
+#include "common/ModelState.h"
 
-#include "GameClient/FXList.h"
+#include "game_client/FXList.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

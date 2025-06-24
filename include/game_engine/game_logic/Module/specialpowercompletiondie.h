@@ -33,7 +33,7 @@
 #define _SPECIAL_POWER_COMPLETION_DIE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/INI.h"
+#include "common/INI.h"
 #include "GameLogic/Module/DieModule.h"
 
 class SpecialPowerTemplate;

@@ -49,7 +49,7 @@
 #define DEFINE_OBJECT_STATUS_NAMES
 #include "common/Player.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/SubObjectsUpgrade.h"
 

@@ -31,8 +31,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
 #include "GameLogic/Module/OpenContain.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

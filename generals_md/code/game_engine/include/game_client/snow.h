@@ -24,8 +24,8 @@
 
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/Overridable.h"
-#include "Common/Override.h"
+#include "common/Overridable.h"
+#include "common/Override.h"
 #include "WWMATH/Vector3.h"
 #include "WWMATH/Vector4.h"
 

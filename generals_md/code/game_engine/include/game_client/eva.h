@@ -31,7 +31,7 @@
 #define __EVA_H__
 
 #include "game_engine/common/subsystem_interface.h"
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 
 class Player;
 class INI;

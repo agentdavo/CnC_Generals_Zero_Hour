@@ -50,12 +50,12 @@
 #include "Properties.h"
 #include "LayoutScheme.h"
 #include "Resource.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetSlider.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GameWindowManager.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetSlider.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GameWindowManager.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

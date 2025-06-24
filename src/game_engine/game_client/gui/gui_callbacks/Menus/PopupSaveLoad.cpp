@@ -50,15 +50,15 @@
 #include "common/GameEngine.h"
 #include "common/GameState.h"
 #include "common/MessageStream.h"
-#include "GameClient/CampaignManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GUICallbacks.h"
-#include "GameClient/Shell.h"
+#include "game_client/CampaignManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GameText.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GUICallbacks.h"
+#include "game_client/Shell.h"
 #include "GameLogic/GameLogic.h"
-#include "GameClient/GameWindowTransitions.h"
+#include "game_client/GameWindowTransitions.h"
 
 // PRIVATE DATA ///////////////////////////////////////////////////////////////////////////////////
 static NameKeyType buttonBackKey					= NAMEKEY_INVALID;

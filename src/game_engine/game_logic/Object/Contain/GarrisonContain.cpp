@@ -49,10 +49,10 @@
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Weapon.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/View.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/InGameUI.h"
+#include "game_client/View.h"
 
 #ifdef _INTERNAL
 //#pragma optimize("", off)

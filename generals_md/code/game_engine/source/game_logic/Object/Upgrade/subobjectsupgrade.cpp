@@ -47,9 +47,9 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_OBJECT_STATUS_NAMES
-#include "Common/Player.h"
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/SubObjectsUpgrade.h"
 

@@ -33,7 +33,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "always.h"
-#include "GameClient/View.h"
+#include "game_client/View.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/Light.h"
 #include "WW3D2/DX8Wrapper.h"

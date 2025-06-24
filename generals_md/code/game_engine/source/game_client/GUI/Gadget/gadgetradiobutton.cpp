@@ -47,9 +47,9 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Language.h"
-#include "Gameclient/GameWindowManager.h"
-#include "GameClient/Gadget.h"
+#include "common/Language.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Gadget.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

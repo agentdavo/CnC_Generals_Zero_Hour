@@ -31,9 +31,9 @@
 // please talk to MDC (x36804) before taking this out
 #define NO_DEBUG_CRC
 
-#include "Common/PerfTimer.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/PerfTimer.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/BodyModule.h"
@@ -65,7 +65,7 @@ const Real MAX_FRICTION = 0.99f;
 
 const Real STUN_RELIEF_EPSILON = 0.5f;
 
-#include "Common/CRCDebug.h"
+#include "common/CRCDebug.h"
 
 const Int MOTIVE_FRAMES = LOGICFRAMES_PER_SECOND / 3;
 

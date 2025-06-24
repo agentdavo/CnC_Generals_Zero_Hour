@@ -38,7 +38,7 @@
 #include "common/Debug.h"
 #include "common/ini.h"
 #include "common/GlobalData.h"
-#include "GameClient/Image.h"
+#include "game_client/Image.h"
 
 
 // PRIVATE DATA ///////////////////////////////////////////////////////////////////////////////////

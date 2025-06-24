@@ -43,7 +43,7 @@
 #include "WorldBuilder.h"
 #include "WorldBuilderDoc.h"
 
-#include "GameClient/Line2D.h"
+#include "game_client/Line2D.h"
 
 
 #include "W3DDevice/GameClient/HeightMap.h"

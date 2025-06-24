@@ -35,8 +35,8 @@
 #include "common/GlobalData.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Weapon.h"
 #include "GameLogic/GameLogic.h"		// for logic frame count

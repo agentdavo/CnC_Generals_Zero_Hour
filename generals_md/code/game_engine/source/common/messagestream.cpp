@@ -28,12 +28,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/MessageStream.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Recorder.h"
+#include "common/MessageStream.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Recorder.h"
 
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 
 /// The singleton message stream for messages going to TheGameLogic

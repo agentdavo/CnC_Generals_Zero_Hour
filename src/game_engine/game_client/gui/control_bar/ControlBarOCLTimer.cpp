@@ -34,13 +34,13 @@
 #include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/OCLUpdate.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GadgetProgressBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GadgetProgressBar.h"
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

@@ -30,12 +30,12 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameWindow.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/IMEManager.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/DisplayString.h"
-#include "GameClient/DisplayStringManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Gadget.h"
+#include "game_client/IMEManager.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/DisplayString.h"
+#include "game_client/DisplayStringManager.h"
 
 
 Int	IMECandidateWindowLineSpacing = 2;

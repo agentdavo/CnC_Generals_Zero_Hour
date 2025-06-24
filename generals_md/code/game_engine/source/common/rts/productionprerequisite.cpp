@@ -44,13 +44,13 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/ProductionPrerequisite.h"
-#include "Common/Player.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
+#include "common/ProductionPrerequisite.h"
+#include "common/Player.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

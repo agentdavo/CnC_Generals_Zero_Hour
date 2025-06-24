@@ -32,7 +32,7 @@
 #include "WorldBuilderView.h"
 #include "MainFrm.h"
 #include "DrawObject.h"
-#include "Common/WellKnownKeys.h"
+#include "common/WellKnownKeys.h"
 
 //
 // WaypointTool class.

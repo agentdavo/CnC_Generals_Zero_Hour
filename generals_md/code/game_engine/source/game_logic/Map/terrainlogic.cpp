@@ -30,16 +30,16 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 
-#include "Common/DataChunk.h"
-#include "Common/GameState.h"
-#include "Common/MapObject.h"
-#include "Common/Radar.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/Xfer.h"
+#include "common/DataChunk.h"
+#include "common/GameState.h"
+#include "common/MapObject.h"
+#include "common/Radar.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/WellKnownKeys.h"
+#include "common/Xfer.h"
 
-#include "GameClient/TerrainVisual.h"
+#include "game_client/TerrainVisual.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

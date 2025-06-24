@@ -28,19 +28,19 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameInfoWindow.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameNetwork/LANGameInfo.h"
-#include "GameNetwork/LANAPICallbacks.h"
+#include "game_client/GameInfoWindow.h"
+#include "game_client/GameText.h"
+#include "game_client/GadgetListBox.h"
+#include "game_network/LANGameInfo.h"
+#include "game_network/LANAPICallbacks.h"
 #include "common/MultiplayerSettings.h"
 #include "strtok_r.h"
 /*
-#include "GameNetwork/LAN.h"
-#include "GameNetwork/LANGame.h"
-#include "GameNetwork/LANPing.h"
-#include "GameNetwork/LANusers.h"
-#include "GameNetwork/LANmenus.h"
+#include "game_network/LAN.h"
+#include "game_network/LANGame.h"
+#include "game_network/LANPing.h"
+#include "game_network/LANusers.h"
+#include "game_network/LANmenus.h"
 */
 
 // Singleton ------------------------------------------

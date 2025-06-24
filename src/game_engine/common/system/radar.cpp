@@ -40,11 +40,11 @@
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/Eva.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/InGameUI.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/Eva.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/InGameUI.h"
+#include "game_client/ControlBar.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

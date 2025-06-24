@@ -45,7 +45,7 @@
 #include "common/GameAudio.h"
 #include "common/ini.h"
 #include "common/UserPreferences.h"
-#include "common/Version.h"
+#include "common/version.h"
 =======
 #include "common/CRC.h"
 #include "common/file.h"
@@ -53,17 +53,17 @@
 #include "common/GameAudio.h"
 #include "common/ini.h"
 #include "common/UserPreferences.h"
-#include "common/Version.h"
+#include "common/version.h"
 >>>>>>> Stashed changes:src/game_engine/common/GlobalData.cpp
 
 #include "GameLogic/AI.h"
 #include "GameLogic/Weapon.h"
 #include "GameLogic/Module/BodyModule.h"
 
-#include "GameClient/Color.h"
-#include "GameClient/TerrainVisual.h"
+#include "game_client/Color.h"
+#include "game_client/TerrainVisual.h"
 
-#include "GameNetwork/FirewallHelper.h"
+#include "game_network/FirewallHelper.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 GlobalData* TheWritableGlobalData = NULL;				///< The global data singleton

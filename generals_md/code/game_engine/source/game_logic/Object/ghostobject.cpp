@@ -29,7 +29,7 @@
  
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Xfer.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/GhostObject.h"
 #include "GameLogic/Object.h"

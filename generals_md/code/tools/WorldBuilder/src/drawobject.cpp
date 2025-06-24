@@ -51,13 +51,13 @@
 #include "WaterTool.h"
 #include "BuildListTool.h"
 #include "LayersList.h"
-#include "Common/WellKnownKeys.h"
-#include "Common/BorderColors.h"
-#include "Common/ThingTemplate.h"
+#include "common/WellKnownKeys.h"
+#include "common/BorderColors.h"
+#include "common/ThingTemplate.h"
 #include "W3DDevice/Common/W3DConvert.h"
 #include "render2d.h"
 #include "GameLogic/Weapon.h"
-#include "Common/AudioEventInfo.h"
+#include "common/AudioEventInfo.h"
 
 #ifdef _DEBUG
 #define NO_INTENSE_DEBUG 1

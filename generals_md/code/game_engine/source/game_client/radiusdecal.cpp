@@ -29,11 +29,11 @@
 
 #define DEFINE_SHADOW_NAMES
 
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Xfer.h"
-#include "GameClient/RadiusDecal.h"
-#include "GameClient/Shadow.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Xfer.h"
+#include "game_client/RadiusDecal.h"
+#include "game_client/Shadow.h"
 #include "GameLogic/GameLogic.h"
 
 #ifdef _INTERNAL

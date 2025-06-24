@@ -28,10 +28,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Thing.h"
-#include "Common/ThingTemplate.h"
-#include "Common/RandomValue.h"
-#include "Common/BitFlagsIO.h"
+#include "common/Thing.h"
+#include "common/ThingTemplate.h"
+#include "common/RandomValue.h"
+#include "common/BitFlagsIO.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/ExperienceTracker.h"
@@ -46,9 +46,9 @@
 #include "GameLogic/TerrainLogic.h"
 #include "GameLogic/Weapon.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ParticleSys.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/ParticleSys.h"
 
 const Real BIGNUM = 99999.0f;
 

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Common/GameEngine.h"
-#include "GameNetwork/NetworkInterface.h"
+#include "common/GameEngine.h"
+#include "game_network/NetworkInterface.h"
 #include "GameLogic/GameLogic.h"
 
 class LvglGameEngine : public GameEngine

@@ -32,12 +32,12 @@
 #ifndef _GAME_LOGIC_H_
 #define _GAME_LOGIC_H_
 
-#include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
-#include "Common/GameType.h"
-#include "Common/Snapshot.h"
+#include "common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
+#include "common/GameType.h"
+#include "common/Snapshot.h"
 #include "common/stl_type_defs.h"
-#include "Common/ObjectStatusTypes.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "common/ObjectStatusTypes.h"
+#include "game_network/NetworkDefs.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Module/UpdateModule.h"	// needed for DIRECT_UPDATEMODULE_ACCESS
 

@@ -32,20 +32,20 @@
 #define DEFINE_MAXHEALTHCHANGETYPE_NAMES						// for TheMaxHealthChangeTypeNames[]
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/BitFlagsIO.h"
-#include "Common/Radar.h"
-#include "Common/PlayerList.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/Player.h"
-#include "Common/Xfer.h"
+#include "common/BitFlagsIO.h"
+#include "common/Radar.h"
+#include "common/PlayerList.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/Player.h"
+#include "common/Xfer.h"
 
-#include "GameClient/GameClient.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameText.h"
-#include "GameClient/ParticleSys.h"
-#include "GameClient/FXList.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/GameClient.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameText.h"
+#include "game_client/ParticleSys.h"
+#include "game_client/FXList.h"
+#include "game_client/ControlBar.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"

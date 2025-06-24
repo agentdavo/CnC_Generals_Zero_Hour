@@ -33,7 +33,7 @@
 #define DEFINE_TERRAIN_TYPE_NAMES
 
 #include "common/ini.h"
-#include "Common/TerrainTypes.h"
+#include "common/TerrainTypes.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 TerrainTypeCollection *TheTerrainTypes = NULL;

@@ -38,24 +38,24 @@
 /*---------------------------------------------------------------------------*/
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/AudioEventRTS.h"
+#include "common/AudioEventRTS.h"
 
-#include "Common/AudioEventInfo.h"
-#include "Common/AudioRandomValue.h"
-#include "Common/AudioSettings.h"
+#include "common/AudioEventInfo.h"
+#include "common/AudioRandomValue.h"
+#include "common/AudioSettings.h"
 #include "common/file.h"
-#include "Common/FileSystem.h"
-#include "Common/GameSounds.h"
-#include "Common/GlobalData.h"
-#include "Common/Player.h"
-#include "Common/Registry.h"
+#include "common/FileSystem.h"
+#include "common/GameSounds.h"
+#include "common/GlobalData.h"
+#include "common/Player.h"
+#include "common/Registry.h"
 
 #include "GameLogic/GameLogic.h"	// For getObjectByID
 #include "GameLogic/LogicRandomValue.h"
 #include "GameLogic/Object.h"
 
-#include "GameClient/Drawable.h"	// For getPosition
-#include "GameClient/GameClient.h"	// For getDrawableByID
+#include "game_client/Drawable.h"	// For getPosition
+#include "game_client/GameClient.h"	// For getDrawableByID
 
 #ifdef _INTERNAL
 //#pragma optimize("", off)

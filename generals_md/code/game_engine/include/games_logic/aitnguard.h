@@ -42,7 +42,7 @@
 #define _H_AITNGUARD_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////
-#include "Common/GameMemory.h"
+#include "common/GameMemory.h"
 #include "GameLogic/AIStateMachine.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

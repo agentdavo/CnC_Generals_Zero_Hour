@@ -25,7 +25,7 @@
 
 #pragma once
 
-#include "Common/MessageStream.h"
+#include "common/MessageStream.h"
 #include "common/gamememory.h"
 
 //----------------------------------------------------------------------------

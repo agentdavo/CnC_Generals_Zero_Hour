@@ -30,10 +30,10 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/XferCRC.h"
-#include "Common/XferDeepCRC.h"
-#include "Common/CRC.h"
-#include "Common/Snapshot.h"
+#include "common/XferCRC.h"
+#include "common/XferDeepCRC.h"
+#include "common/CRC.h"
+#include "common/Snapshot.h"
 #include "winsock2.h" // for htonl
 
 //-------------------------------------------------------------------------------------------------

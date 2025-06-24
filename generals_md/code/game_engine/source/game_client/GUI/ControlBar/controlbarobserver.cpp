@@ -52,18 +52,18 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/NameKeyGenerator.h"
-#include "Common/PlayerList.h"
-#include "Common/Player.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/KindOf.h"
-#include "Common/Recorder.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/GameText.h"
-#include "GameNetwork/NetworkDefs.h"
+#include "common/NameKeyGenerator.h"
+#include "common/PlayerList.h"
+#include "common/Player.h"
+#include "common/PlayerTemplate.h"
+#include "common/KindOf.h"
+#include "common/Recorder.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/GameText.h"
+#include "game_network/NetworkDefs.h"
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------

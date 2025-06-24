@@ -38,30 +38,30 @@
 #define DEFINE_RADAR_PRIORITY_NAMES				// for RadarPriorityNames[]
 #define DEFINE_BUILDABLE_STATUS_NAMES			// for BuildableStatusNames[]
 
-#include "Common/DamageFX.h"
-#include "Common/GameAudio.h"
-#include "Common/GameCommon.h"
-#include "Common/GlobalData.h"
+#include "common/DamageFX.h"
+#include "common/GameAudio.h"
+#include "common/GameCommon.h"
+#include "common/GlobalData.h"
 #include "common/ini.h"
-#include "Common/MessageStream.h"
-#include "Common/Module.h"
-#include "Common/ModuleFactory.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/ProductionPrerequisite.h"
-#include "Common/Radar.h"
-#include "Common/RandomValue.h"
-#include "Common/Science.h"
-#include "Common/ThingTemplate.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingSort.h"
-#include "Common/BitFlagsIO.h"
+#include "common/MessageStream.h"
+#include "common/Module.h"
+#include "common/ModuleFactory.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/ProductionPrerequisite.h"
+#include "common/Radar.h"
+#include "common/RandomValue.h"
+#include "common/Science.h"
+#include "common/ThingTemplate.h"
+#include "common/ThingFactory.h"
+#include "common/ThingSort.h"
+#include "common/BitFlagsIO.h"
 
-#include "GameClient/Drawable.h"
-#include "GameClient/FXList.h"
-#include "GameClient/GameText.h"
-#include "GameClient/Image.h"
-#include "GameClient/Shadow.h"
+#include "game_client/Drawable.h"
+#include "game_client/FXList.h"
+#include "game_client/GameText.h"
+#include "game_client/Image.h"
+#include "game_client/Shadow.h"
 
 #include "GameLogic/Armor.h"
 #include "GameLogic/Module/AIUpdate.h"
@@ -70,7 +70,7 @@
 #include "GameLogic/Powers.h"
 #include "GameLogic/Weapon.h"
 
-#include "Common/UnitTimings.h" //Contains the DO_UNIT_TIMINGS define jba.	
+#include "common/UnitTimings.h" //Contains the DO_UNIT_TIMINGS define jba.	
 
 #ifdef _INTERNAL
 // for occasional debugging...

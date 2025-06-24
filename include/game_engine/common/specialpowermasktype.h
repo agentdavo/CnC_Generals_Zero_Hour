@@ -30,8 +30,8 @@
 #ifndef __SPECIALPOWERMASKTYPE_H__
 #define __SPECIALPOWERMASKTYPE_H__
 
-#include "Common/BitFlags.h"
-#include "Common/SpecialPowerType.h"
+#include "common/BitFlags.h"
+#include "common/SpecialPowerType.h"
 
 typedef BitFlags<SPECIALPOWER_COUNT>	SpecialPowerMaskType;
 

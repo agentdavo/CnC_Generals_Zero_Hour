@@ -28,12 +28,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/Display.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/VideoPlayer.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GlobalLanguage.h"
+#include "game_client/Display.h"
+#include "game_client/Mouse.h"
+#include "game_client/VideoPlayer.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/GameText.h"
+#include "game_client/GlobalLanguage.h"
 //#include "GameLogic/ScriptEngine.h"
 //#include "GameLogic/GameLogic.h"
 

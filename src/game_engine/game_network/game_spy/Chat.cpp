@@ -30,13 +30,13 @@
 
 #include "common/AudioEventRTS.h"
 #include "common/ini.h"
-#include "GameClient/GameText.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/LanguageFilter.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameNetwork/GameSpy/PeerDefsImplementation.h"
-#include "GameNetwork/GameSpy/PeerThread.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/GameText.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/LanguageFilter.h"
+#include "game_client/GameWindowManager.h"
+#include "game_network/GameSpy/PeerDefsImplementation.h"
+#include "game_network/GameSpy/PeerThread.h"
+#include "game_client/InGameUI.h"
 #ifdef _INTERNAL
 // for occasional debugging...
 //#pragma optimize("", off)

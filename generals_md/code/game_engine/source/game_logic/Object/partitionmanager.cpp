@@ -49,19 +49,19 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/ActionManager.h"
-#include "Common/DiscreteCircle.h"
-#include "Common/GameEngine.h"
-#include "Common/GameState.h"
-#include "Common/MessageStream.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/PerfTimer.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/Radar.h"
-#include "Common/ThingFactory.h"	// for bullet type hack
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/ActionManager.h"
+#include "common/DiscreteCircle.h"
+#include "common/GameEngine.h"
+#include "common/GameState.h"
+#include "common/MessageStream.h"
+#include "common/NameKeyGenerator.h"
+#include "common/PerfTimer.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/Radar.h"
+#include "common/ThingFactory.h"	// for bullet type hack
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"
@@ -76,12 +76,12 @@
 #include "GameLogic/Squad.h"
 #include "GameLogic/GhostObject.h"
 
-#include "GameClient/Line2D.h"
-#include "GameClient/ControlBar.h"
+#include "game_client/Line2D.h"
+#include "game_client/ControlBar.h"
 
 #ifdef _DEBUG
-//#include "GameClient/InGameUI.h"	// for debugHints
-#include "Common/PlayerList.h"
+//#include "game_client/InGameUI.h"	// for debugHints
+#include "common/PlayerList.h"
 #endif
 
 #ifdef PM_CACHE_TERRAIN_HEIGHT
@@ -109,8 +109,8 @@ const Real HUGE_DIST_SQR = (HUGE_DIST*HUGE_DIST);
 #define DISABLE_INVALID_PREVENTION	//Steven, I had to turn this off because it was causing problem with map border resizing (USA04). -MW
 
 //------------------------------------------------------------------------------ Performance Timers 
-//#include "Common/PerfMetrics.h"
-//#include "Common/PerfTimer.h"
+//#include "common/PerfMetrics.h"
+//#include "common/PerfTimer.h"
 
 //-------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------

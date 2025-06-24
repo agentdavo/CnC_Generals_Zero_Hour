@@ -29,7 +29,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameFont.h"
+#include "game_client/GameFont.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////
 FontLibrary *TheFontLibrary = NULL;

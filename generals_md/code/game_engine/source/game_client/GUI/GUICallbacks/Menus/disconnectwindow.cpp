@@ -30,15 +30,15 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameText.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/DisconnectMenu.h"
-#include "GameClient/GameWindowManager.h"
-#include "Common/NameKeyGenerator.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameText.h"
+#include "game_client/Gadget.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GameClient.h"
+#include "game_client/DisconnectMenu.h"
+#include "game_client/GameWindowManager.h"
+#include "common/NameKeyGenerator.h"
 
 // Private Data -----------------------------
 static WindowLayout *disconnectMenuLayout;

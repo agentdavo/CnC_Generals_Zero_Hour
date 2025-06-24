@@ -55,11 +55,11 @@
 #include "common/GlobalData.h"
 #include "common/ScopedMutex.h"
 
-#include "GameClient/DebugDisplay.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/VideoPlayer.h"
-#include "GameClient/View.h"
+#include "game_client/DebugDisplay.h"
+#include "game_client/Drawable.h"
+#include "game_client/GameClient.h"
+#include "game_client/VideoPlayer.h"
+#include "game_client/View.h"
 
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/TerrainLogic.h"

@@ -33,9 +33,9 @@
 #define __W3D_DEBRIS_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameType.h"
-#include "Common/DrawModule.h"
-#include "Common/FileSystem.h"	// this is only here to pull in LOAD_TEST_ASSETS
+#include "common/GameType.h"
+#include "common/DrawModule.h"
+#include "common/FileSystem.h"	// this is only here to pull in LOAD_TEST_ASSETS
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Thing;

@@ -33,11 +33,11 @@
 #define __CONTROLBAR_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/AudioEventRTS.h"
-#include "Common/GameType.h"
-#include "Common/Overridable.h"
-#include "Common/Science.h"
-#include "GameClient/Color.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameType.h"
+#include "common/Overridable.h"
+#include "common/Science.h"
+#include "game_client/Color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Drawable;

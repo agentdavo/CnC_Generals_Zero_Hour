@@ -31,16 +31,16 @@
 #include "PreRTS.h"
 
 #include "common/file.h"
-#include "Common/FileSystem.h"
-#include "Common/GameState.h"
-#include "Common/GameStateMap.h"
-#include "Common/GlobalData.h"
-#include "Common/Xfer.h"
-#include "GameClient/CampaignManager.h"
-#include "GameClient/GameClient.h"
-#include "GameClient/MapUtil.h"
+#include "common/FileSystem.h"
+#include "common/GameState.h"
+#include "common/GameStateMap.h"
+#include "common/GlobalData.h"
+#include "common/Xfer.h"
+#include "game_client/CampaignManager.h"
+#include "game_client/GameClient.h"
+#include "game_client/MapUtil.h"
 #include "GameLogic/GameLogic.h"
-#include "GameNetwork/GameInfo.h"
+#include "game_network/GameInfo.h"
 
 // GLOBALS ////////////////////////////////////////////////////////////////////////////////////////
 GameStateMap *TheGameStateMap = NULL;

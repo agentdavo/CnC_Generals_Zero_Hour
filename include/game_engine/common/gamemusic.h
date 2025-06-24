@@ -49,7 +49,7 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "Common/GameAudio.h"
+#include "common/GameAudio.h"
 #include "common/gamememory.h"
 
 

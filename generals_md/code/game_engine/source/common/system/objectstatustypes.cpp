@@ -29,8 +29,8 @@
 
 #include "PreRTS.h"
 
-#include "Common/ObjectStatusTypes.h"
-#include "Common/BitFlagsIO.h"
+#include "common/ObjectStatusTypes.h"
+#include "common/BitFlagsIO.h"
 
 const char* ObjectStatusMaskType::s_bitNameList[] = 
 {

@@ -36,8 +36,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include "common/Player.h"
 #include "common/Xfer.h"
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/OverlordContain.h"
 #include "GameLogic/Object.h"

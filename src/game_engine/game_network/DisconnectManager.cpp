@@ -26,14 +26,14 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/Recorder.h"
-#include "GameClient/DisconnectMenu.h"
-#include "GameClient/InGameUI.h"
+#include "game_client/DisconnectMenu.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
-#include "GameNetwork/DisconnectManager.h"
-#include "GameNetwork/NetworkInterface.h"
-#include "GameNetwork/NetworkUtil.h"
-#include "GameNetwork/GameSpy/PingThread.h"
-#include "GameNetwork/GameSpy/GSConfig.h"
+#include "game_network/DisconnectManager.h"
+#include "game_network/NetworkInterface.h"
+#include "game_network/NetworkUtil.h"
+#include "game_network/GameSpy/PingThread.h"
+#include "game_network/GameSpy/GSConfig.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

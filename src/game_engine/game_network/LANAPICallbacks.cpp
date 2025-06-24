@@ -38,14 +38,14 @@
 #include "common/QuotedPrintable.h"
 #include "common/RandomValue.h"
 #include "common/UserPreferences.h"
-#include "GameClient/GameText.h"
-#include "GameClient/LanguageFilter.h"
-#include "GameClient/MapUtil.h"
-#include "GameClient/MessageBox.h"
+#include "game_client/GameText.h"
+#include "game_client/LanguageFilter.h"
+#include "game_client/MapUtil.h"
+#include "game_client/MessageBox.h"
 #include "GameLogic/GameLogic.h"
-#include "GameNetwork/FileTransfer.h"
-#include "GameNetwork/LANAPICallbacks.h"
-#include "GameNetwork/NetworkUtil.h"
+#include "game_network/FileTransfer.h"
+#include "game_network/LANAPICallbacks.h"
+#include "game_network/NetworkUtil.h"
 
 LANAPI *TheLAN = NULL;
 extern Bool LANbuttonPushed;

@@ -33,12 +33,12 @@
 #define __GrantStealthBehavior_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/UpgradeModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DamageModule.h"
-#include "Common/BitFlagsIO.h"
+#include "common/BitFlagsIO.h"
 
 class ParticleSystem;
 class ParticleSystemTemplate;

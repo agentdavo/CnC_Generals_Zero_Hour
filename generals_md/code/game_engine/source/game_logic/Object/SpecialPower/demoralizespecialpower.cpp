@@ -32,9 +32,9 @@
 
 #ifdef ALLOW_DEMORALIZE
 
-#include "Common/Xfer.h"
-#include "GameClient/FXList.h"
-#include "GameClient/InGameUI.h"
+#include "common/Xfer.h"
+#include "game_client/FXList.h"
+#include "game_client/InGameUI.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/AIUpdate.h"

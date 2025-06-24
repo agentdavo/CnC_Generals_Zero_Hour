@@ -24,7 +24,7 @@
 
 #pragma once
 
-#include "Common/BezierSegment.h"
+#include "common/BezierSegment.h"
 
 class BezFwdIterator
 {

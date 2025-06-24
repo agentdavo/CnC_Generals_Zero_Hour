@@ -28,12 +28,12 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Errors.h"
-#include "Common/StateMachine.h"
-#include "Common/ThingTemplate.h"
-#include "Common/GameState.h"
-#include "Common/GlobalData.h"
-#include "Common/Xfer.h"
+#include "common/Errors.h"
+#include "common/StateMachine.h"
+#include "common/ThingTemplate.h"
+#include "common/GameState.h"
+#include "common/GlobalData.h"
+#include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 
@@ -45,8 +45,8 @@
 #endif
 
 //------------------------------------------------------------------------------ Performance Timers 
-//#include "Common/PerfMetrics.h"
-//#include "Common/PerfTimer.h"
+//#include "common/PerfMetrics.h"
+//#include "common/PerfTimer.h"
 
 //static PerfTimer s_stateMachineTimer("StateMachine::update", false, PERFMETRICS_LOGIC_STARTFRAME, PERFMETRICS_LOGIC_STOPFRAME);
 //-------------------------------------------------------------------------------------------------

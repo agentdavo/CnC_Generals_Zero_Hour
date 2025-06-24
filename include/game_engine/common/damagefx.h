@@ -33,8 +33,8 @@
 #define _DamageFX_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameCommon.h"
-#include "Common/NameKeyGenerator.h"
+#include "common/GameCommon.h"
+#include "common/NameKeyGenerator.h"
 #include "common/stl_type_defs.h"
 #include "GameLogic/Damage.h"
 

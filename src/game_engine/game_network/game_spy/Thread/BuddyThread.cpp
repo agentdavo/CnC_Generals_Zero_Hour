@@ -31,10 +31,10 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "GameNetwork/GameSpy/BuddyThread.h"
-#include "GameNetwork/GameSpy/PeerThread.h"
-#include "GameNetwork/GameSpy/PersistentStorageThread.h"
-#include "GameNetwork/GameSpy/ThreadUtils.h"
+#include "game_network/GameSpy/BuddyThread.h"
+#include "game_network/GameSpy/PeerThread.h"
+#include "game_network/GameSpy/PersistentStorageThread.h"
+#include "game_network/GameSpy/ThreadUtils.h"
 
 #include "common/StackDump.h"
 

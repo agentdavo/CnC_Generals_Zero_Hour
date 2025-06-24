@@ -61,9 +61,9 @@
 #include "common/GlobalData.h"
 #include "common/PerfTimer.h"
 
-#include "GameClient/TerrainVisual.h"
-#include "GameClient/View.h"
-#include "GameClient/Water.h"
+#include "game_client/TerrainVisual.h"
+#include "game_client/View.h"
+#include "game_client/Water.h"
 
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/TerrainLogic.h"

@@ -33,7 +33,7 @@
 #define __BONEFXUPDATE_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "GameClient/ParticleSys.h"
+#include "game_client/ParticleSys.h"
 #include "GameLogic/Module/UpdateModule.h"
 
 //#include "GameLogic/Module/DamageModule.h" -- Yikes... not necessary to include this! (KM)

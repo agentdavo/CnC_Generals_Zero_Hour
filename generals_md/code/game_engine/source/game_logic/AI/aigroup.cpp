@@ -28,19 +28,19 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 
-#include "Common/ActionManager.h"
-#include "Common/BuildAssistant.h"
-#include "Common/CRCDebug.h"
-#include "Common/Player.h"
-#include "Common/SpecialPower.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Upgrade.h"
-#include "Common/Xfer.h"
-#include "Common/XferCRC.h"
+#include "common/ActionManager.h"
+#include "common/BuildAssistant.h"
+#include "common/CRCDebug.h"
+#include "common/Player.h"
+#include "common/SpecialPower.h"
+#include "common/ThingTemplate.h"
+#include "common/Upgrade.h"
+#include "common/Xfer.h"
+#include "common/XferCRC.h"
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/Drawable.h"
-#include "GameClient/Line2D.h"
+#include "game_client/ControlBar.h"
+#include "game_client/Drawable.h"
+#include "game_client/Line2D.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

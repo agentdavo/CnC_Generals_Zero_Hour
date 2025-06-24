@@ -50,17 +50,17 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/AudioEventRTS.h"
 #include "common/Language.h"
-#include "GameClient/WindowLayout.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GadgetStaticText.h"
-#include "GameClient/Mouse.h"
-#include "GameClient/SelectionXlat.h"
+#include "game_client/WindowLayout.h"
+#include "game_client/GameWindow.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/Gadget.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GadgetStaticText.h"
+#include "game_client/Mouse.h"
+#include "game_client/SelectionXlat.h"
 #ifdef _INTERNAL
 // for occasional debugging...
 //#pragma optimize("", off)

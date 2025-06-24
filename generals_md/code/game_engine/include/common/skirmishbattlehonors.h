@@ -36,8 +36,8 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Common/UnicodeString.h"
-#include "Common/UserPreferences.h"
+#include "common/UnicodeString.h"
+#include "common/UserPreferences.h"
 
 class Image;
 class GameWindow;

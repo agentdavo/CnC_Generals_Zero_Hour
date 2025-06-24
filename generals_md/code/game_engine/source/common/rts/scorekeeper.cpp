@@ -55,13 +55,13 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameState.h"
-#include "Common/KindOf.h"
-#include "Common/Player.h"
-#include "Common/ScoreKeeper.h"
-#include "Common/ThingFactory.h"
-#include "Common/ThingTemplate.h"
-#include "Common/Xfer.h"
+#include "common/GameState.h"
+#include "common/KindOf.h"
+#include "common/Player.h"
+#include "common/ScoreKeeper.h"
+#include "common/ThingFactory.h"
+#include "common/ThingTemplate.h"
+#include "common/Xfer.h"
 
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"

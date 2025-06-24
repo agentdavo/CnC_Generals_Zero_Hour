@@ -36,20 +36,20 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Common/GameSpyMiscPreferences.h"
-#include "Common/UserPreferences.h"
-#include "Common/LadderPreferences.h"
-#include "Common/Player.h"
-#include "Common/PlayerTemplate.h"
-#include "Common/Registry.h"
-#include "Common/QuickmatchPreferences.h"
-#include "Common/CustomMatchPreferences.h"
-#include "Common/IgnorePreferences.h"
-#include "Common/QuotedPrintable.h"
-#include "Common/MultiplayerSettings.h"
-#include "GameClient/MapUtil.h"
-#include "GameClient/ChallengeGenerals.h"
-#include "GameNetwork/GameSpy/PeerDefs.h"
+#include "common/GameSpyMiscPreferences.h"
+#include "common/UserPreferences.h"
+#include "common/LadderPreferences.h"
+#include "common/Player.h"
+#include "common/PlayerTemplate.h"
+#include "common/Registry.h"
+#include "common/QuickmatchPreferences.h"
+#include "common/CustomMatchPreferences.h"
+#include "common/IgnorePreferences.h"
+#include "common/QuotedPrintable.h"
+#include "common/MultiplayerSettings.h"
+#include "game_client/MapUtil.h"
+#include "game_client/ChallengeGenerals.h"
+#include "game_network/GameSpy/PeerDefs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -30,8 +30,8 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "Common/DrawModule.h"
-#include "Common/Xfer.h"
+#include "common/DrawModule.h"
+#include "common/Xfer.h"
 
 // ------------------------------------------------------------------------------------------------
 /** CRC */

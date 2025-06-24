@@ -30,8 +30,8 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/Xfer.h"
-#include "GameClient/Drawable.h"
+#include "common/Xfer.h"
+#include "game_client/Drawable.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/GameLogic.h"

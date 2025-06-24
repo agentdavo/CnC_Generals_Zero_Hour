@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/audioEventRTS.h"
-#include "Common/GameCommon.h"
+#include "common/GameCommon.h"
 
 #include "GameLogic/Damage.h"
 

@@ -65,11 +65,11 @@
 #include "common/WellKnownKeys.h"
 >>>>>>> Stashed changes
 
-#include "GameClient/ControlBar.h"
-#include "GameClient/GameText.h"
-#include "GameClient/VideoPlayer.h"
-#include "GameClient/Anim2D.h"
-#include "GameClient/ShellHooks.h"
+#include "game_client/ControlBar.h"
+#include "game_client/GameText.h"
+#include "game_client/VideoPlayer.h"
+#include "game_client/Anim2D.h"
+#include "game_client/ShellHooks.h"
 
 #include "GameLogic/Ai.h"
 #include "GameLogic/PolygonTrigger.h"

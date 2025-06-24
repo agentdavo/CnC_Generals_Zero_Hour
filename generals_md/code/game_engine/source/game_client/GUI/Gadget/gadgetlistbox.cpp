@@ -49,19 +49,19 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/AudioEventRTS.h"
-#include "Common/Language.h"
-#include "Common/Debug.h"
-#include "Common/GameAudio.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetSlider.h"
-#include "GameClient/GameWindowGlobal.h"
-#include "GameClient/Keyboard.h"
+#include "common/AudioEventRTS.h"
+#include "common/Language.h"
+#include "common/Debug.h"
+#include "common/GameAudio.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetSlider.h"
+#include "game_client/GameWindowGlobal.h"
+#include "game_client/Keyboard.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

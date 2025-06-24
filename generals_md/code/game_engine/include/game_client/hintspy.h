@@ -30,7 +30,7 @@
 #ifndef _H_HintSpy
 #define _H_HintSpy
 
-#include "GameClient/InGameUI.h"
+#include "game_client/InGameUI.h"
 
 //-----------------------------------------------------------------------------
 class HintSpyTranslator : public GameMessageTranslator

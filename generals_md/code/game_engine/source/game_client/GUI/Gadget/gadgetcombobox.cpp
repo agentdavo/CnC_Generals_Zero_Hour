@@ -48,20 +48,20 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Common/Language.h"
-#include "Common/AudioEventRTS.h"
-#include "Common/GameAudio.h"
-#include "Common/Debug.h"
-#include "GameClient/DisplayStringManager.h"
-#include "GameClient/GameWindow.h"
-#include "GameClient/Gadget.h"
-#include "GameClient/GameWindowManager.h"
-#include "GameClient/GadgetListBox.h"
-#include "GameClient/GadgetComboBox.h"
-#include "GameClient/GadgetTextEntry.h"
-#include "GameClient/GadgetPushButton.h"
-#include "GameClient/GadgetSlider.h"
-#include "GameClient/GameWindowGlobal.h"
+#include "common/Language.h"
+#include "common/AudioEventRTS.h"
+#include "common/GameAudio.h"
+#include "common/Debug.h"
+#include "game_client/DisplayStringManager.h"
+#include "game_client/GameWindow.h"
+#include "game_client/Gadget.h"
+#include "game_client/GameWindowManager.h"
+#include "game_client/GadgetListBox.h"
+#include "game_client/GadgetComboBox.h"
+#include "game_client/GadgetTextEntry.h"
+#include "game_client/GadgetPushButton.h"
+#include "game_client/GadgetSlider.h"
+#include "game_client/GameWindowGlobal.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

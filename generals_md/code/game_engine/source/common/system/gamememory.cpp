@@ -47,16 +47,16 @@
 // SYSTEM INCLUDES 
 
 // USER INCLUDES 
-#include "Common/GameMemory.h"
-#include "Common/CriticalSection.h"
-#include "Common/Errors.h"
-#include "Common/GlobalData.h"
-#include "Common/PerfTimer.h"
+#include "common/GameMemory.h"
+#include "common/CriticalSection.h"
+#include "common/Errors.h"
+#include "common/GlobalData.h"
+#include "common/PerfTimer.h"
 #ifdef MEMORYPOOL_DEBUG
-#include "GameClient/ClientRandomValue.h"
+#include "game_client/ClientRandomValue.h"
 #endif
 #ifdef MEMORYPOOL_STACKTRACE
-	#include "Common/StackDump.h"
+	#include "common/StackDump.h"
 #endif
 
 #ifdef MEMORYPOOL_DEBUG

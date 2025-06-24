@@ -45,11 +45,11 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/GameMusic.h"
+#include "common/GameMusic.h"
 
-#include "Common/AudioEventRTS.h"
-#include "Common/AudioRequest.h"
-#include "Common/GameAudio.h"
+#include "common/AudioEventRTS.h"
+#include "common/AudioRequest.h"
+#include "common/GameAudio.h"
 #include "common/ini.h"
 
 #ifdef _INTERNAL
