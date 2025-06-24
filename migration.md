@@ -279,3 +279,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Unified `src/game_engine/common` with snake_case source files and removed legacy `Common` duplicate.
 - Renamed radar implementation to snake_case under w3d_device/common/system.
 - Introduced a portable `tchar.h` wrapper and added case-correct alias headers for cross-platform builds.
+- Added lvgl_hello example under src/examples. A minimal program opens an 800x600 LVGL window and displays a 'Hello world' label. Building with -DBUILD_ENGINE=OFF skips the main Generals engine.
