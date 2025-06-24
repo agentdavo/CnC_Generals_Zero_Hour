@@ -53,7 +53,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "GameEngine/Common/subsystem_interface.h"
-#include "game_client/KeyDefs.h"
+#include "game_client/keydefs.h"
 #include "Lib/BaseType.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////

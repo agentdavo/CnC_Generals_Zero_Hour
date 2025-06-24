@@ -56,11 +56,12 @@ target_include_directories(gameenginedevice PUBLIC
     ${PROJECT_SOURCE_DIR}/include/game_engine
     ${PROJECT_SOURCE_DIR}/include/game_engine_device
     ${PROJECT_SOURCE_DIR}/include/pre_compiled
+    ${PROJECT_SOURCE_DIR}/src
 )
 
 # Link against the Miles Sound System stub which in turn
 # bridges legacy audio calls to miniaudio. This removes the
 # remaining DirectSound dependency from the GameEngineDevice
 # module.
-target_link_libraries(gameenginedevice PUBLIC milesstub miniaudio LvglPlatform)
+target_link_libraries(gameenginedevice PUBLIC milesstub miniaudio lvgl_platform)
 # Partial migration of GameEngineDevice sources

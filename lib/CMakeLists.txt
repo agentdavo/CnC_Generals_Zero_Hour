@@ -112,8 +112,9 @@ endif()
 add_library(uGLES INTERFACE)
 target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/uGLES)
 
-add_subdirectory(UniSpySDK)
-target_include_directories(UniSpySDK PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/UniSpySDK)
+# The UniSpySDK sources use a lowercase directory name
+add_subdirectory(uni_spy_sdk)
+target_include_directories(UniSpySDK PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/uni_spy_sdk)
 
 add_library(STLport INTERFACE)
 target_include_directories(STLport INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/STLport)

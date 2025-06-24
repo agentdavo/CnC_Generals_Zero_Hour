@@ -1,7 +1,7 @@
 #include "lvgl_device/game_client/lvglkeyboard.h"
-#include "common/Debug.h"
+#include "game_engine/common/debug.h"
 #include "common/Logger.h"
-#include "GameClient/KeyDefs.h"
+#include "game_client/keydefs.h"
 #include <cstring>
 
 LvglKeyboard::LvglKeyboard()

@@ -1,6 +1,6 @@
 -- Configuring bundled libraries
 -- Git version 2.43.0 found at '/usr/bin/git'.
--- Git using branch 'main', commit 3e91e77bbb90d86bc1872c4119bb937ba9b836c3/'Merge pull request #124 from agentdavo/codex/re-run-cmake-build-and-document-findings'.
+-- Git using branch 'main', commit ca7376046dbbbc4e66e3ea3fe31bb60a4bbab84c/'snake case renames'.
 -- Enabled features:
 
 -- Disabled features:
@@ -10,7 +10,7 @@
 -- Configuring core sources
 -- Configuring migrated engine modules
 -- Configuring done (0.1s)
--- Generating done (0.2s)
+-- Generating done (0.3s)
 -- Build files have been written to: /workspace/CnC_Generals_Zero_Hour/build
 /usr/bin/cmake -P /workspace/CnC_Generals_Zero_Hour/build/CMakeFiles/VerifyGlobs.cmake
 /usr/bin/cmake -S/workspace/CnC_Generals_Zero_Hour -B/workspace/CnC_Generals_Zero_Hour/build --check-build-system CMakeFiles/Makefile.cmake 0
@@ -35,193 +35,193 @@ gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake[2]: Nothing to be done for 'lib/CMakeFiles/miniaudio.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 51%] Built target miniaudio
-/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/gt2/CMakeFiles/usgt2.dir/build.make lib/uni_spy_sdk/gt2/CMakeFiles/usgt2.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/gt2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/gt2 /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/gt2/CMakeFiles/usgt2.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build.make lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/gt2/CMakeFiles/usgt2.dir/build.make lib/uni_spy_sdk/gt2/CMakeFiles/usgt2.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/gt2/CMakeFiles/usgt2.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/gt2/CMakeFiles/usgt2.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 52%] Built target usgt2
-/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/common/CMakeFiles/uscommon.dir/build.make lib/uni_spy_sdk/common/CMakeFiles/uscommon.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/common/CMakeFiles/uscommon.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/common /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/common /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/common/CMakeFiles/uscommon.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build.make lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/common/CMakeFiles/uscommon.dir/build.make lib/uni_spy_sdk/common/CMakeFiles/uscommon.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/common/CMakeFiles/uscommon.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/common/CMakeFiles/uscommon.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 54%] Built target uscommon
-/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/ghttp/CMakeFiles/ushttp.dir/build.make lib/uni_spy_sdk/ghttp/CMakeFiles/ushttp.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/ghttp /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/ghttp /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/ghttp/CMakeFiles/ushttp.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build.make lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/ghttp/CMakeFiles/ushttp.dir/build.make lib/uni_spy_sdk/ghttp/CMakeFiles/ushttp.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/ghttp/CMakeFiles/ushttp.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/ghttp/CMakeFiles/ushttp.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 55%] Built target ushttp
-/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/webservices/CMakeFiles/uswebservice.dir/build.make lib/uni_spy_sdk/webservices/CMakeFiles/uswebservice.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/webservices /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/webservices /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/webservices/CMakeFiles/uswebservice.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build.make lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/webservices/CMakeFiles/uswebservice.dir/build.make lib/uni_spy_sdk/webservices/CMakeFiles/uswebservice.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/webservices/CMakeFiles/uswebservice.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/webservices/CMakeFiles/uswebservice.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 56%] Built target uswebservice
-/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/brigades/CMakeFiles/usbrigades.dir/build.make lib/uni_spy_sdk/brigades/CMakeFiles/usbrigades.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/brigades /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/brigades /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/brigades/CMakeFiles/usbrigades.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build.make lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/brigades/CMakeFiles/usbrigades.dir/build.make lib/uni_spy_sdk/brigades/CMakeFiles/usbrigades.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/brigades/CMakeFiles/usbrigades.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/brigades/CMakeFiles/usbrigades.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 56%] Built target usbrigades
-/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/Chat/CMakeFiles/uschat.dir/build.make lib/uni_spy_sdk/Chat/CMakeFiles/uschat.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/Chat /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Chat /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Chat/CMakeFiles/uschat.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build.make lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/Chat/CMakeFiles/uschat.dir/build.make lib/uni_spy_sdk/Chat/CMakeFiles/uschat.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Chat/CMakeFiles/uschat.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/Chat/CMakeFiles/uschat.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 57%] Built target uschat
-/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/natneg/CMakeFiles/usnatneg.dir/build.make lib/uni_spy_sdk/natneg/CMakeFiles/usnatneg.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/natneg /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/natneg /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/natneg/CMakeFiles/usnatneg.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build.make lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/natneg/CMakeFiles/usnatneg.dir/build.make lib/uni_spy_sdk/natneg/CMakeFiles/usnatneg.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/natneg/CMakeFiles/usnatneg.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/natneg/CMakeFiles/usnatneg.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 58%] Built target usnatneg
-/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/qr2/CMakeFiles/usqr2.dir/build.make lib/uni_spy_sdk/qr2/CMakeFiles/usqr2.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/qr2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/qr2 /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/qr2/CMakeFiles/usqr2.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build.make lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/qr2/CMakeFiles/usqr2.dir/build.make lib/uni_spy_sdk/qr2/CMakeFiles/usqr2.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/qr2/CMakeFiles/usqr2.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/qr2/CMakeFiles/usqr2.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 58%] Built target usqr2
-/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/uni_spy_sdk/gcdkey/CMakeFiles/uscdkey.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/gcdkey /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/gcdkey /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/gcdkey/CMakeFiles/uscdkey.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/gcdkey/CMakeFiles/uscdkey.dir/build.make lib/uni_spy_sdk/gcdkey/CMakeFiles/uscdkey.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/gcdkey/CMakeFiles/uscdkey.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/gcdkey/CMakeFiles/uscdkey.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 58%] Built target uscdkey
-/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/GP/CMakeFiles/usgp.dir/build.make lib/uni_spy_sdk/GP/CMakeFiles/usgp.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/GP/CMakeFiles/usgp.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/GP /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/GP /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/GP/CMakeFiles/usgp.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build.make lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/GP/CMakeFiles/usgp.dir/build.make lib/uni_spy_sdk/GP/CMakeFiles/usgp.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/GP/CMakeFiles/usgp.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/GP/CMakeFiles/usgp.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 59%] Built target usgp
-/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/gstats/CMakeFiles/usstats.dir/build.make lib/uni_spy_sdk/gstats/CMakeFiles/usstats.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/gstats /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/gstats /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/gstats/CMakeFiles/usstats.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build.make lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/gstats/CMakeFiles/usstats.dir/build.make lib/uni_spy_sdk/gstats/CMakeFiles/usstats.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/gstats/CMakeFiles/usstats.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/gstats/CMakeFiles/usstats.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 59%] Built target usstats
-/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/pinger/CMakeFiles/uspinger.dir/build.make lib/uni_spy_sdk/pinger/CMakeFiles/uspinger.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/pinger /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/pinger /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/pinger/CMakeFiles/uspinger.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build.make lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/pinger/CMakeFiles/uspinger.dir/build.make lib/uni_spy_sdk/pinger/CMakeFiles/uspinger.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/pinger/CMakeFiles/uspinger.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/pinger/CMakeFiles/uspinger.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 59%] Built target uspinger
-/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/uni_spy_sdk/serverbrowsing/CMakeFiles/usserverbrowsing.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/serverbrowsing /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/serverbrowsing/CMakeFiles/usserverbrowsing.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build.make lib/uni_spy_sdk/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/serverbrowsing/CMakeFiles/usserverbrowsing.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 59%] Built target usserverbrowsing
-/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/Peer/CMakeFiles/uspeer.dir/build.make lib/uni_spy_sdk/Peer/CMakeFiles/uspeer.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/Peer /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Peer /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Peer/CMakeFiles/uspeer.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build.make lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/Peer/CMakeFiles/uspeer.dir/build.make lib/uni_spy_sdk/Peer/CMakeFiles/uspeer.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Peer/CMakeFiles/uspeer.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/Peer/CMakeFiles/uspeer.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 60%] Built target uspeer
-/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/pt/CMakeFiles/uspt.dir/build.make lib/uni_spy_sdk/pt/CMakeFiles/uspt.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/pt/CMakeFiles/uspt.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/pt /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/pt /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/pt/CMakeFiles/uspt.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build.make lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/pt/CMakeFiles/uspt.dir/build.make lib/uni_spy_sdk/pt/CMakeFiles/uspt.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/pt/CMakeFiles/uspt.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/pt/CMakeFiles/uspt.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 60%] Built target uspt
-/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/sake/CMakeFiles/ussake.dir/build.make lib/uni_spy_sdk/sake/CMakeFiles/ussake.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sake/CMakeFiles/ussake.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/sake /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/sake /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/sake/CMakeFiles/ussake.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build.make lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/sake/CMakeFiles/ussake.dir/build.make lib/uni_spy_sdk/sake/CMakeFiles/ussake.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/sake/CMakeFiles/ussake.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/sake/CMakeFiles/ussake.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 61%] Built target ussake
-/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/sc/CMakeFiles/ussc.dir/build.make lib/uni_spy_sdk/sc/CMakeFiles/ussc.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sc/CMakeFiles/ussc.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/sc /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/sc /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/sc/CMakeFiles/ussc.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build.make lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/sc/CMakeFiles/ussc.dir/build.make lib/uni_spy_sdk/sc/CMakeFiles/ussc.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/sc/CMakeFiles/ussc.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/sc/CMakeFiles/ussc.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 62%] Built target ussc
-/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/uni_spy_sdk/Direct2Game/CMakeFiles/usd2g.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/Direct2Game /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Direct2Game /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Direct2Game/CMakeFiles/usd2g.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/Direct2Game/CMakeFiles/usd2g.dir/build.make lib/uni_spy_sdk/Direct2Game/CMakeFiles/usd2g.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Direct2Game/CMakeFiles/usd2g.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/Direct2Game/CMakeFiles/usd2g.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 63%] Built target usd2g
-/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/uni_spy_sdk/Voice2/libgsm/CMakeFiles/gsm.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Voice2/libgsm /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Voice2/libgsm/CMakeFiles/gsm.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/Voice2/libgsm/CMakeFiles/gsm.dir/build.make lib/uni_spy_sdk/Voice2/libgsm/CMakeFiles/gsm.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/libgsm/CMakeFiles/gsm.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/Voice2/libgsm/CMakeFiles/gsm.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 65%] Built target gsm
-/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/Voice2/CMakeFiles/usvoice2.dir/build.make lib/uni_spy_sdk/Voice2/CMakeFiles/usvoice2.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2 /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/Voice2 /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Voice2 /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/Voice2/CMakeFiles/usvoice2.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build.make lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/Voice2/CMakeFiles/usvoice2.dir/build.make lib/uni_spy_sdk/Voice2/CMakeFiles/usvoice2.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/Voice2/CMakeFiles/usvoice2.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/Voice2/CMakeFiles/usvoice2.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 66%] Built target usvoice2
-/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/depend
+/usr/bin/gmake  -f lib/uni_spy_sdk/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/uni_spy_sdk/sharedDll/CMakeFiles/UniSpySDK.dir/depend
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll /workspace/CnC_Generals_Zero_Hour/build/lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/DependInfo.cmake "--color="
+cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/CnC_Generals_Zero_Hour /workspace/CnC_Generals_Zero_Hour/lib/uni_spy_sdk/sharedDll /workspace/CnC_Generals_Zero_Hour/build /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/sharedDll /workspace/CnC_Generals_Zero_Hour/build/lib/uni_spy_sdk/sharedDll/CMakeFiles/UniSpySDK.dir/DependInfo.cmake "--color="
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-/usr/bin/gmake  -f lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build
+/usr/bin/gmake  -f lib/uni_spy_sdk/sharedDll/CMakeFiles/UniSpySDK.dir/build.make lib/uni_spy_sdk/sharedDll/CMakeFiles/UniSpySDK.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[2]: Nothing to be done for 'lib/UniSpySDK/sharedDll/CMakeFiles/UniSpySDK.dir/build'.
+gmake[2]: Nothing to be done for 'lib/uni_spy_sdk/sharedDll/CMakeFiles/UniSpySDK.dir/build'.
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 [ 66%] Built target UniSpySDK
 /usr/bin/gmake  -f lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/build.make lib/miles-sdk-stub/CMakeFiles/milescleanup.dir/depend
@@ -275,39 +275,25 @@ cd /workspace/CnC_Generals_Zero_Hour/build && /usr/bin/cmake -E cmake_depends "U
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 /usr/bin/gmake  -f src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make src/game_engine_device/CMakeFiles/gameenginedevice.dir/build
 gmake[2]: Entering directory '/workspace/CnC_Generals_Zero_Hour/build'
-[ 69%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o
-cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file.cpp
+[ 69%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/game_client/lvgl_keyboard.cpp.o
+cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++ -DLV_USE_X11=1 -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/src -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -I/workspace/CnC_Generals_Zero_Hour/include/precompiled -I/workspace/CnC_Generals_Zero_Hour/lib -I/workspace/CnC_Generals_Zero_Hour/lib/lvgl -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/game_client/lvgl_keyboard.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/game_client/lvgl_keyboard.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/game_client/lvgl_keyboard.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/game_client/lvgl_keyboard.cpp
 In file included from /usr/include/c++/13/backward/hash_map:60,
                  from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/stltypedefs.h:74,
                  from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:38,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/subsystem_interface.h:35,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/localfilesystem.h:34,
-                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file.cpp:2:
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/../game_engine/common/subsystem_interface.h:35,
+                 from /workspace/CnC_Generals_Zero_Hour/include/GameEngine/Common/subsystem_interface.h:2,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_client/keyboard.h:55,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine_device/lvgl_device/game_client/lvglkeyboard.h:3,
+                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/game_client/lvgl_keyboard.cpp:1:
 /usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
-In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/file.h:57,
-                 from /workspace/CnC_Generals_Zero_Hour/include/common/File.h:3,
-                 from /workspace/CnC_Generals_Zero_Hour/include/common/local_file.h:3,
-                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file.cpp:1:
+In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h:38,
+                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:37:
 /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h: In static member function ‘static void* MemoryPoolObject::operator new(size_t)’:
 /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:748:98: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
   748 |         inline void *operator new(size_t s) { DEBUG_CRASH(("This should be impossible")); return 0; }
       |                                                                                                  ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/file.h: In static member function ‘static void* File::operator new(size_t, FileMagicEnum)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:693:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  693 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
-   84 |         MEMORY_POOL_GLUE_ABC(File)
-      |         ^~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/file.h: In static member function ‘static void* File::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:706:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  706 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/file.h:84:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_ABC’
-   84 |         MEMORY_POOL_GLUE_ABC(File)
-      |         ^~~~~~~~~~~~~~~~~~~~
 /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/namekeygenerator.h: In static member function ‘static void* Bucket::operator new(size_t)’:
 /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
   651 |                 return 0; \
@@ -338,45 +324,317 @@ In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/comm
 /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/science.h:54:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
    54 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE( ScienceInfo, "ScienceInfo"  )
       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ramfile.h: In static member function ‘static void* RAMFile::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  651 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
-  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ramfile.h:77:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
-   77 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(RAMFile, "RAMFile")
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/streamingarchivefile.h: In static member function ‘static void* StreamingArchiveFile::operator new(size_t)’:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:651:24: warning: ‘operator new’ must not return NULL unless it is declared ‘throw()’ (or ‘-fcheck-new’ is in effect)
-  651 |                 return 0; \
-      |                        ^
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/GameMemory.h:677:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITHOUT_GCMP’
-  677 |         MEMORY_POOL_GLUE_WITHOUT_GCMP(ARGCLASS) \
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/streamingarchivefile.h:77:9: note: in expansion of macro ‘MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE’
-   77 |         MEMORY_POOL_GLUE_WITH_USERLOOKUP_CREATE(StreamingArchiveFile, "StreamingArchiveFile")
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[ 69%] Building CXX object src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file_system.cpp.o
-cd /workspace/CnC_Generals_Zero_Hour/build/src/game_engine_device && /usr/bin/c++  -I/workspace/CnC_Generals_Zero_Hour/include -I/workspace/CnC_Generals_Zero_Hour/include/game_engine -I/workspace/CnC_Generals_Zero_Hour/include/game_engine_device -I/workspace/CnC_Generals_Zero_Hour/include/pre_compiled -I/workspace/CnC_Generals_Zero_Hour/lib/miniaudio -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub -I/workspace/CnC_Generals_Zero_Hour/lib/miles-sdk-stub/mss -O3 -DNDEBUG -std=gnu++17 -MD -MT src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file_system.cpp.o -MF CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file_system.cpp.o.d -o CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file_system.cpp.o -c /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file_system.cpp
-In file included from /usr/include/c++/13/backward/hash_map:60,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/stltypedefs.h:74,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/ini.h:38,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/subsystem_interface.h:35,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefilesystem.h:55,
-                 from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/archivefile.h:36,
-                 from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file_system.cpp:2:
-/usr/include/c++/13/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-   32 | #warning \
-      |  ^~~~~~~
-In file included from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file_system.cpp:5:
-/workspace/CnC_Generals_Zero_Hour/include/game_engine/common/gameaudio.h:51:10: fatal error: GameEngine/common/audioEventInfo.h: No such file or directory
-   51 | #include "GameEngine/common/audioEventInfo.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-gmake[2]: *** [src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make:93: src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file_system.cpp.o] Error 1
+In file included from /workspace/CnC_Generals_Zero_Hour/include/game_client/keyboard.h:56:
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h: At global scope:
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:112:83: error: ‘DIK_NUMPAD0’ was not declared in this scope
+  112 |         KEY_KP0                                                                 = DIK_NUMPAD0,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:113:83: error: ‘DIK_NUMPAD1’ was not declared in this scope
+  113 |         KEY_KP1                                                                 = DIK_NUMPAD1,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:114:83: error: ‘DIK_NUMPAD2’ was not declared in this scope
+  114 |         KEY_KP2                                                                 = DIK_NUMPAD2,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:115:83: error: ‘DIK_NUMPAD3’ was not declared in this scope
+  115 |         KEY_KP3                                                                 = DIK_NUMPAD3,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:116:83: error: ‘DIK_NUMPAD4’ was not declared in this scope
+  116 |         KEY_KP4                                                                 = DIK_NUMPAD4,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:117:83: error: ‘DIK_NUMPAD5’ was not declared in this scope
+  117 |         KEY_KP5                                                                 = DIK_NUMPAD5,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:118:83: error: ‘DIK_NUMPAD6’ was not declared in this scope
+  118 |         KEY_KP6                                                                 = DIK_NUMPAD6,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:119:83: error: ‘DIK_NUMPAD7’ was not declared in this scope
+  119 |         KEY_KP7                                                                 = DIK_NUMPAD7,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:120:83: error: ‘DIK_NUMPAD8’ was not declared in this scope
+  120 |         KEY_KP8                                                                 = DIK_NUMPAD8,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:121:83: error: ‘DIK_NUMPAD9’ was not declared in this scope
+  121 |         KEY_KP9                                                                 = DIK_NUMPAD9,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:122:75: error: ‘DIK_NUMPADPERIOD’ was not declared in this scope
+  122 |         KEY_KPDEL                                                       = DIK_NUMPADPERIOD,
+      |                                                                           ^~~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:123:75: error: ‘DIK_NUMPADSTAR’ was not declared in this scope
+  123 |         KEY_KPSTAR                                                      = DIK_NUMPADSTAR,
+      |                                                                           ^~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:124:67: error: ‘DIK_NUMPADMINUS’ was not declared in this scope
+  124 |         KEY_KPMINUS                                             = DIK_NUMPADMINUS,
+      |                                                                   ^~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:125:75: error: ‘DIK_NUMPADPLUS’ was not declared in this scope
+  125 |         KEY_KPPLUS                                                      = DIK_NUMPADPLUS,
+      |                                                                           ^~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:128:83: error: ‘DIK_ESCAPE’ was not declared in this scope
+  128 |         KEY_ESC                                                                 = DIK_ESCAPE,
+      |                                                                                   ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:129:59: error: ‘DIK_BACK’ was not declared in this scope
+  129 |         KEY_BACKSPACE                                   = DIK_BACK,
+      |                                                           ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:130:75: error: ‘DIK_RETURN’ was not declared in this scope; did you mean ‘DIK_YEN’?
+  130 |         KEY_ENTER                                                       = DIK_RETURN,
+      |                                                                           ^~~~~~~~~~
+      |                                                                           DIK_YEN
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:131:75: error: ‘DIK_SPACE’ was not declared in this scope
+  131 |         KEY_SPACE                                                       = DIK_SPACE,
+      |                                                                           ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:132:83: error: ‘DIK_TAB’ was not declared in this scope
+  132 |         KEY_TAB                                                                 = DIK_TAB,
+      |                                                                                   ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:133:83: error: ‘DIK_F1’ was not declared in this scope
+  133 |         KEY_F1                                                                  = DIK_F1,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:134:83: error: ‘DIK_F2’ was not declared in this scope
+  134 |         KEY_F2                                                                  = DIK_F2,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:135:83: error: ‘DIK_F3’ was not declared in this scope
+  135 |         KEY_F3                                                                  = DIK_F3,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:136:83: error: ‘DIK_F4’ was not declared in this scope
+  136 |         KEY_F4                                                                  = DIK_F4,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:137:83: error: ‘DIK_F5’ was not declared in this scope
+  137 |         KEY_F5                                                                  = DIK_F5,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:138:83: error: ‘DIK_F6’ was not declared in this scope
+  138 |         KEY_F6                                                                  = DIK_F6,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:139:83: error: ‘DIK_F7’ was not declared in this scope
+  139 |         KEY_F7                                                                  = DIK_F7,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:140:83: error: ‘DIK_F8’ was not declared in this scope
+  140 |         KEY_F8                                                                  = DIK_F8,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:141:83: error: ‘DIK_F9’ was not declared in this scope
+  141 |         KEY_F9                                                                  = DIK_F9,
+      |                                                                                   ^~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:142:83: error: ‘DIK_F10’ was not declared in this scope
+  142 |         KEY_F10                                                                 = DIK_F10,
+      |                                                                                   ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:143:83: error: ‘DIK_F11’ was not declared in this scope
+  143 |         KEY_F11                                                                 = DIK_F11,
+      |                                                                                   ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:144:83: error: ‘DIK_F12’ was not declared in this scope
+  144 |         KEY_F12                                                                 = DIK_F12,
+      |                                                                                   ^~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:145:83: error: ‘DIK_A’ was not declared in this scope
+  145 |         KEY_A                                                                   = DIK_A,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:146:83: error: ‘DIK_B’ was not declared in this scope
+  146 |         KEY_B                                                                   = DIK_B,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:147:83: error: ‘DIK_C’ was not declared in this scope
+  147 |         KEY_C                                                                   = DIK_C,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:148:83: error: ‘DIK_D’ was not declared in this scope
+  148 |         KEY_D                                                                   = DIK_D,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:149:83: error: ‘DIK_E’ was not declared in this scope; did you mean ‘DIK_YEN’?
+  149 |         KEY_E                                                                   = DIK_E,
+      |                                                                                   ^~~~~
+      |                                                                                   DIK_YEN
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:150:83: error: ‘DIK_F’ was not declared in this scope
+  150 |         KEY_F                                                                   = DIK_F,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:151:83: error: ‘DIK_G’ was not declared in this scope
+  151 |         KEY_G                                                                   = DIK_G,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:152:83: error: ‘DIK_H’ was not declared in this scope
+  152 |         KEY_H                                                                   = DIK_H,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:153:83: error: ‘DIK_I’ was not declared in this scope
+  153 |         KEY_I                                                                   = DIK_I,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:154:83: error: ‘DIK_J’ was not declared in this scope
+  154 |         KEY_J                                                                   = DIK_J,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:155:83: error: ‘DIK_K’ was not declared in this scope
+  155 |         KEY_K                                                                   = DIK_K,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:156:83: error: ‘DIK_L’ was not declared in this scope
+  156 |         KEY_L                                                                   = DIK_L,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:157:83: error: ‘DIK_M’ was not declared in this scope
+  157 |         KEY_M                                                                   = DIK_M,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:158:83: error: ‘DIK_N’ was not declared in this scope; did you mean ‘DIK_YEN’?
+  158 |         KEY_N                                                                   = DIK_N,
+      |                                                                                   ^~~~~
+      |                                                                                   DIK_YEN
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:159:83: error: ‘DIK_O’ was not declared in this scope
+  159 |         KEY_O                                                                   = DIK_O,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:160:83: error: ‘DIK_P’ was not declared in this scope
+  160 |         KEY_P                                                                   = DIK_P,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:161:83: error: ‘DIK_Q’ was not declared in this scope
+  161 |         KEY_Q                                                                   = DIK_Q,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:162:83: error: ‘DIK_R’ was not declared in this scope
+  162 |         KEY_R                                                                   = DIK_R,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:163:83: error: ‘DIK_S’ was not declared in this scope
+  163 |         KEY_S                                                                   = DIK_S,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:164:83: error: ‘DIK_T’ was not declared in this scope
+  164 |         KEY_T                                                                   = DIK_T,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:165:83: error: ‘DIK_U’ was not declared in this scope
+  165 |         KEY_U                                                                   = DIK_U,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:166:83: error: ‘DIK_V’ was not declared in this scope
+  166 |         KEY_V                                                                   = DIK_V,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:167:83: error: ‘DIK_W’ was not declared in this scope
+  167 |         KEY_W                                                                   = DIK_W,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:168:83: error: ‘DIK_X’ was not declared in this scope
+  168 |         KEY_X                                                                   = DIK_X,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:169:83: error: ‘DIK_Y’ was not declared in this scope; did you mean ‘DIK_YEN’?
+  169 |         KEY_Y                                                                   = DIK_Y,
+      |                                                                                   ^~~~~
+      |                                                                                   DIK_YEN
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:170:83: error: ‘DIK_Z’ was not declared in this scope
+  170 |         KEY_Z                                                                   = DIK_Z,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:171:83: error: ‘DIK_1’ was not declared in this scope
+  171 |         KEY_1                                                                   = DIK_1,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:172:83: error: ‘DIK_2’ was not declared in this scope
+  172 |         KEY_2                                                                   = DIK_2,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:173:83: error: ‘DIK_3’ was not declared in this scope
+  173 |         KEY_3                                                                   = DIK_3,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:174:83: error: ‘DIK_4’ was not declared in this scope
+  174 |         KEY_4                                                                   = DIK_4,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:175:83: error: ‘DIK_5’ was not declared in this scope
+  175 |         KEY_5                                                                   = DIK_5,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:176:83: error: ‘DIK_6’ was not declared in this scope
+  176 |         KEY_6                                                                   = DIK_6,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:177:83: error: ‘DIK_7’ was not declared in this scope
+  177 |         KEY_7                                                                   = DIK_7,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:178:83: error: ‘DIK_8’ was not declared in this scope
+  178 |         KEY_8                                                                   = DIK_8,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:179:83: error: ‘DIK_9’ was not declared in this scope
+  179 |         KEY_9                                                                   = DIK_9,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:180:83: error: ‘DIK_0’ was not declared in this scope
+  180 |         KEY_0                                                                   = DIK_0,
+      |                                                                                   ^~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:181:75: error: ‘DIK_MINUS’ was not declared in this scope
+  181 |         KEY_MINUS                                                       = DIK_MINUS,
+      |                                                                           ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:182:75: error: ‘DIK_EQUALS’ was not declared in this scope
+  182 |         KEY_EQUAL                                                       = DIK_EQUALS,
+      |                                                                           ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:183:67: error: ‘DIK_LBRACKET’ was not declared in this scope
+  183 |         KEY_LBRACKET                                            = DIK_LBRACKET,
+      |                                                                   ^~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:184:67: error: ‘DIK_RBRACKET’ was not declared in this scope; did you mean ‘KEY_LBRACKET’?
+  184 |         KEY_RBRACKET                                            = DIK_RBRACKET,
+      |                                                                   ^~~~~~~~~~~~
+      |                                                                   KEY_LBRACKET
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:185:59: error: ‘DIK_SEMICOLON’ was not declared in this scope
+  185 |         KEY_SEMICOLON                                   = DIK_SEMICOLON,
+      |                                                           ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:186:59: error: ‘DIK_APOSTROPHE’ was not declared in this scope
+  186 |         KEY_APOSTROPHE                                  = DIK_APOSTROPHE,
+      |                                                           ^~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:187:83: error: ‘DIK_GRAVE’ was not declared in this scope
+  187 |         KEY_TICK                                                                = DIK_GRAVE,
+      |                                                                                   ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:188:59: error: ‘DIK_BACKSLASH’ was not declared in this scope
+  188 |         KEY_BACKSLASH                                   = DIK_BACKSLASH,
+      |                                                           ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:189:75: error: ‘DIK_COMMA’ was not declared in this scope
+  189 |         KEY_COMMA                                                       = DIK_COMMA,
+      |                                                                           ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:190:75: error: ‘DIK_PERIOD’ was not declared in this scope
+  190 |         KEY_PERIOD                                                      = DIK_PERIOD,
+      |                                                                           ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:191:75: error: ‘DIK_SLASH’ was not declared in this scope
+  191 |         KEY_SLASH                                                       = DIK_SLASH,
+      |                                                                           ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:194:75: error: ‘DIK_SYSRQ’ was not declared in this scope
+  194 |         KEY_SYSREQ                                                      = DIK_SYSRQ,
+      |                                                                           ^~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:196:83: error: ‘DIK_CAPSLOCK’ was not declared in this scope
+  196 |         KEY_CAPS                                                                = DIK_CAPSLOCK,
+      |                                                                                   ^~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:197:83: error: ‘DIK_NUMLOCK’ was not declared in this scope
+  197 |         KEY_NUM                                                                 = DIK_NUMLOCK,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:198:75: error: ‘DIK_SCROLL’ was not declared in this scope
+  198 |         KEY_SCROLL                                                      = DIK_SCROLL,
+      |                                                                           ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:199:75: error: ‘DIK_LCONTROL’ was not declared in this scope
+  199 |         KEY_LCTRL                                                       = DIK_LCONTROL,
+      |                                                                           ^~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:200:83: error: ‘DIK_LALT’ was not declared in this scope
+  200 |         KEY_LALT                                                                = DIK_LALT,
+      |                                                                                   ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:201:75: error: ‘DIK_LSHIFT’ was not declared in this scope
+  201 |         KEY_LSHIFT                                                      = DIK_LSHIFT,
+      |                                                                           ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:202:75: error: ‘DIK_RSHIFT’ was not declared in this scope
+  202 |         KEY_RSHIFT                                                      = DIK_RSHIFT,
+      |                                                                           ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:204:83: error: ‘DIK_UPARROW’ was not declared in this scope
+  204 |         KEY_UP                                                                  = DIK_UPARROW,
+      |                                                                                   ^~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:205:83: error: ‘DIK_DOWNARROW’ was not declared in this scope
+  205 |         KEY_DOWN                                                                = DIK_DOWNARROW,
+      |                                                                                   ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:206:83: error: ‘DIK_LEFTARROW’ was not declared in this scope
+  206 |         KEY_LEFT                                                                = DIK_LEFTARROW,
+      |                                                                                   ^~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:207:75: error: ‘DIK_RIGHTARROW’ was not declared in this scope
+  207 |         KEY_RIGHT                                                       = DIK_RIGHTARROW,
+      |                                                                           ^~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:208:83: error: ‘DIK_RALT’ was not declared in this scope
+  208 |         KEY_RALT                                                                = DIK_RALT,
+      |                                                                                   ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:209:75: error: ‘DIK_RCONTROL’ was not declared in this scope
+  209 |         KEY_RCTRL                                                       = DIK_RCONTROL,
+      |                                                                           ^~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:210:83: error: ‘DIK_HOME’ was not declared in this scope
+  210 |         KEY_HOME                                                                = DIK_HOME,
+      |                                                                                   ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:211:83: error: ‘DIK_END’ was not declared in this scope; did you mean ‘DIK_YEN’?
+  211 |         KEY_END                                                                 = DIK_END,
+      |                                                                                   ^~~~~~~
+      |                                                                                   DIK_YEN
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:212:83: error: ‘DIK_PGUP’ was not declared in this scope
+  212 |         KEY_PGUP                                                                = DIK_PGUP,
+      |                                                                                   ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:213:83: error: ‘DIK_PGDN’ was not declared in this scope
+  213 |         KEY_PGDN                                                                = DIK_PGDN,
+      |                                                                                   ^~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:214:83: error: ‘DIK_INSERT’ was not declared in this scope; did you mean ‘DIK_CONVERT’?
+  214 |         KEY_INS                                                                 = DIK_INSERT,
+      |                                                                                   ^~~~~~~~~~
+      |                                                                                   DIK_CONVERT
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:215:83: error: ‘DIK_DELETE’ was not declared in this scope
+  215 |         KEY_DEL                                                                 = DIK_DELETE,
+      |                                                                                   ^~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:216:67: error: ‘DIK_NUMPADENTER’ was not declared in this scope
+  216 |         KEY_KPENTER                                             = DIK_NUMPADENTER,
+      |                                                                   ^~~~~~~~~~~~~~~
+/workspace/CnC_Generals_Zero_Hour/include/game_client/keydefs.h:217:67: error: ‘DIK_NUMPADSLASH’ was not declared in this scope
+  217 |         KEY_KPSLASH                                             = DIK_NUMPADSLASH,
+      |                                                                   ^~~~~~~~~~~~~~~
+gmake[2]: *** [src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make:149: src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/game_client/lvgl_keyboard.cpp.o] Error 1
 gmake[2]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
-gmake[1]: *** [CMakeFiles/Makefile2:1941: src/game_engine_device/CMakeFiles/gameenginedevice.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:1943: src/game_engine_device/CMakeFiles/gameenginedevice.dir/all] Error 2
 gmake[1]: Leaving directory '/workspace/CnC_Generals_Zero_Hour/build'
 gmake: *** [Makefile:94: all] Error 2
