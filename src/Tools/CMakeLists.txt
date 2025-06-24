@@ -1,4 +1,4 @@
 add_subdirectory(MapCacheBuilder)
-add_subdirectory(versionUpdate)
-add_subdirectory(buildVersionUpdate)
-add_subdirectory(Compress)
+add_subdirectory(version_update)
+add_subdirectory(build_version_update)
+add_subdirectory(compress)
