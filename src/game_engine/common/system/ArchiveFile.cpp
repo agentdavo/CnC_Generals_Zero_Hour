@@ -27,6 +27,7 @@
 ////////////////////////////////////////////////
 
 #include "PreRTS.h"
+#include <memory>
 
 <<<<<<< Updated upstream:src/GameEngine/Common/System/ArchiveFile.cpp
 #include "Common/ArchiveFile.h"
@@ -126,7 +127,7 @@ void ArchiveFile::addFile(const AsciiString& path, const ArchivedFileInfo& fileI
 		temp.nextToken(&token, "\\/");
 	}
 
-	dirInfo->m_files[fileInfo.m_filename] = fileInfo;
+        dirInfo->m_files[fileInfo.m_filename] = std::make_unique<ArchivedFileInfo>(fileInfo);
 	//path.concat(fileInfo.m_filename);
 }
 
@@ -176,15 +177,15 @@ void ArchiveFile::getFileListInDirectory(const DetailedArchivedDirectoryInfo *di
 		diriter++;
 	}
 
-	ArchivedFileInfoMap::const_iterator fileiter = dirInfo->m_files.begin();
-	while (fileiter != dirInfo->m_files.end()) {
-		if (SearchStringMatches(fileiter->second.m_filename, searchName)) {
-			AsciiString tempfilename;
-			tempfilename = currentDirectory;
-			if ((tempfilename.getLength() > 0) && (!tempfilename.endsWith("\\"))) {
-				tempfilename.concat('\\');
-			}
-			tempfilename.concat(fileiter->second.m_filename);
+        ArchivedFileInfoMap::const_iterator fileiter = dirInfo->m_files.begin();
+        while (fileiter != dirInfo->m_files.end()) {
+                if (SearchStringMatches(fileiter->second->m_filename, searchName)) {
+                        AsciiString tempfilename;
+                        tempfilename = currentDirectory;
+                        if ((tempfilename.getLength() > 0) && (!tempfilename.endsWith("\\"))) {
+                                tempfilename.concat('\\');
+                        }
+                        tempfilename.concat(fileiter->second->m_filename);
 			if (filenameList.find(tempfilename) == filenameList.end()) {
 				// only insert into the list if its not already in there.
 				filenameList.insert(tempfilename);
@@ -229,14 +230,14 @@ const ArchivedFileInfo * ArchiveFile::getArchivedFileInfo(const AsciiString& fil
 		path.nextToken(&token, "\\/");
 	}
 
-	ArchivedFileInfoMap::const_iterator it = dirInfo->m_files.find(token);
-	if (it != dirInfo->m_files.end())
-	{
-		return &it->second;
-	}
-	else
-	{
-		return NULL;
-	}
+        ArchivedFileInfoMap::const_iterator it = dirInfo->m_files.find(token);
+        if (it != dirInfo->m_files.end())
+        {
+                return it->second.get();
+        }
+        else
+        {
+                return NULL;
+        }
 
 }
