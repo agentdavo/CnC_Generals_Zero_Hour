@@ -56,4 +56,4 @@ This repository is for preservation purposes only and is archived without suppor
 
 ## License
 
-This repository and its contents are licensed under the GPL v3 license, with additional terms applied. Please see [LICENSE.md](LICENSE.md) for details.
+This repository and its contents are licensed under the GPL v3 license, with additional terms applied. Please see [license.md](license.md) for details.
