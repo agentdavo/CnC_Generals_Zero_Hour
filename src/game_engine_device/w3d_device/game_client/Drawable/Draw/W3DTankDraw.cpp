@@ -32,7 +32,7 @@
 #include <math.h>
 #include "common/Thing.h"
 #include "common/ThingFactory.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 #include "GameLogic/Weapon.h"

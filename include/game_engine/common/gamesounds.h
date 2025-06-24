@@ -44,7 +44,7 @@
 #define __COMMON_GAMESOUNDS_H_
 
 #include "game_engine/common/subsystem_interface.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameType.h"
 
 // Forward declarations

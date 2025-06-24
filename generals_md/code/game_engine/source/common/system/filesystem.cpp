@@ -51,7 +51,7 @@
 
 #include "common/ArchiveFileSystem.h"
 #include "common/CDManager.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/LocalFileSystem.h"
 #include "common/PerfTimer.h"
 

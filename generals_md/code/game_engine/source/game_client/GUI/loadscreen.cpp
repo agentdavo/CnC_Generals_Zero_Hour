@@ -56,7 +56,7 @@
 #include "common/AudioAffect.h"
 #include "common/AudioEventRTS.h"
 #include "common/AudioHandleSpecialValues.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/GameLOD.h"
 #include "common/GameState.h"

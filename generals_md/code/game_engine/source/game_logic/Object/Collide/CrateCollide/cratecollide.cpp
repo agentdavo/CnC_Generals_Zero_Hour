@@ -32,7 +32,7 @@
 #include "common/BitFlagsIO.h"
 #include "common/Player.h"
 #include "common/Xfer.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/MiscAudio.h"
 #include "game_client/Anim2D.h"
 #include "game_client/FXList.h"

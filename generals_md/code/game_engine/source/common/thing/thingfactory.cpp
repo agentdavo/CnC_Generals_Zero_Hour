@@ -33,7 +33,7 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "common/FileSystem.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/MapObject.h"
 #include "common/ModuleFactory.h"
 #include "common/RandomValue.h"

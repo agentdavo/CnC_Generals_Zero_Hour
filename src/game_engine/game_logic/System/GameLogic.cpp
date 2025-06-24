@@ -34,7 +34,7 @@
 #include "common/BuildAssistant.h"
 #include "common/CopyProtection.h"
 #include "common/CRCDebug.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/GameState.h"
 #include "common/ini.h"

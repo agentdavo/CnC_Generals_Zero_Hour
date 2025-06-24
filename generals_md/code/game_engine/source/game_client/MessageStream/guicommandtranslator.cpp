@@ -34,7 +34,7 @@
 
 #include "common/ActionManager.h"
 #include "common/GameCommon.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/NameKeyGenerator.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"

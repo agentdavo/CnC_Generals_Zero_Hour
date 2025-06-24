@@ -39,7 +39,7 @@
 #define DEFINE_BUILDABLE_STATUS_NAMES			// for BuildableStatusNames[]
 
 #include "common/DamageFX.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameCommon.h"
 #include "common/GlobalData.h"
 #include "common/ini.h"

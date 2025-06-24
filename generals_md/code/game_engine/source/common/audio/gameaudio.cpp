@@ -43,7 +43,7 @@
 //----------------------------------------------------------------------------
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 
 #include "common/AudioAffect.h"
 #include "common/AudioEventInfo.h"

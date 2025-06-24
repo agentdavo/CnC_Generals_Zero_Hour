@@ -39,7 +39,7 @@
 #include "common/BorderColors.h"
 #include "common/File.h"
 #include "common/FileSystem.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/Player.h"
 #include "common/PlayerTemplate.h"
 #include "common/Radar.h"

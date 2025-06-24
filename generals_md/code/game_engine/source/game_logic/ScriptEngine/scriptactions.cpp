@@ -31,7 +31,7 @@
 
 #include "common/AudioAffect.h"
 #include "common/AudioHandleSpecialValues.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/MapObject.h"							// For MAP_XY_FACTOR
 #include "common/PartitionSolver.h"

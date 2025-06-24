@@ -41,7 +41,7 @@
 #include "common/CRC.h"
 #include "common/file.h"
 #include "common/FileSystem.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/ini.h"
 #include "common/registry.h"
 #include "common/UserPreferences.h"

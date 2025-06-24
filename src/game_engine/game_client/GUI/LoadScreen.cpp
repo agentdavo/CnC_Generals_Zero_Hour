@@ -65,7 +65,7 @@
 #include "common/PlayerList.h"
 #include "common/Player.h"
 #include "common/GameLOD.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/AudioEventRTS.h"
 #include "common/AudioHandleSpecialValues.h"
 #include "common/AudioAffect.h"

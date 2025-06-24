@@ -57,7 +57,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "common/AudioEventRTS.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "game_client/GameWindowTransitions.h"
 #include "game_client/GameWindow.h"
 #include "game_client/GameWindowManager.h"

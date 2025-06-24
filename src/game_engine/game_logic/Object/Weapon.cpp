@@ -41,7 +41,7 @@
 
 #include "common/CRC.h"
 #include "common/CRCDebug.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameState.h"
 #include "common/ini.h"
 #include "common/PerfTimer.h"

@@ -33,7 +33,7 @@
 #include "game_client/FXList.h"
 
 #include "common/DrawModule.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/ini.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"

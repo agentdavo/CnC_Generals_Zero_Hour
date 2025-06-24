@@ -31,7 +31,7 @@
 #include "common/ActionManager.h"
 #include "common/AudioHandleSpecialValues.h"
 #include "common/CRCDebug.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GlobalData.h"
 #include "common/Money.h"
 #include "common/PerfTimer.h"

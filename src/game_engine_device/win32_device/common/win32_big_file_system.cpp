@@ -31,7 +31,7 @@
 #include "common/ArchiveFile.h"
 #include "common/ArchiveFileSystem.h"
 #include "common/file.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/gamememory.h"
 #include "common/LocalFileSystem.h"
 #include "win32_device/common/win32_big_file.h"

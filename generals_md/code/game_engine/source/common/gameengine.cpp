@@ -36,7 +36,7 @@
 #include "common/PlayerTemplate.h"
 #include "common/Team.h"
 #include "common/PlayerList.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/ini.h"
 #include "common/INIException.h"

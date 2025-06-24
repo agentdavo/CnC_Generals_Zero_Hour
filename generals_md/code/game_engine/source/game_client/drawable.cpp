@@ -36,7 +36,7 @@
 #include "common/BuildAssistant.h"
 #include "common/ClientUpdateModule.h"
 #include "common/DrawModule.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/GameLOD.h"
 #include "common/GameState.h"

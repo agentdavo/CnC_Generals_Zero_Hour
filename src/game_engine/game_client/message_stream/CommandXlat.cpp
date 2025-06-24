@@ -32,7 +32,7 @@
 
 #include "common/AudioAffect.h"
 #include "common/ActionManager.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/GameType.h"
 #include "common/GlobalData.h"

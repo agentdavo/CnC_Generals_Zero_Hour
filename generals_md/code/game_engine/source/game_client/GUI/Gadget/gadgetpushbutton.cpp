@@ -49,7 +49,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/AudioEventRTS.h"
 #include "common/Language.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "game_client/Gadget.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/InGameUI.h"

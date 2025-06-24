@@ -35,7 +35,7 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "common/DamageFX.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 
 #include "game_client/FXList.h"
 #include "GameLogic/Damage.h"

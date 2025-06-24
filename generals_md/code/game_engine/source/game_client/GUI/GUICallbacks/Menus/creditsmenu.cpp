@@ -57,7 +57,7 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/AudioEventRTS.h"
 #include "common/AudioHandleSpecialValues.h"
 

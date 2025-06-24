@@ -50,7 +50,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Language.h"
 #include "common/AudioEventRTS.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/Debug.h"
 #include "game_client/DisplayStringManager.h"
 #include "game_client/GameWindow.h"

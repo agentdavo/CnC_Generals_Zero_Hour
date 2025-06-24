@@ -35,7 +35,7 @@
 #include "common/GlobalData.h"
 #include "common/Player.h"
 #include "common/ThingTemplate.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/ThingFactory.h"
 #include "common/Team.h"
 #include "common/TerrainTypes.h"

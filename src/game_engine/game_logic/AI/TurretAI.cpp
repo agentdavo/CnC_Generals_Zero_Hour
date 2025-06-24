@@ -30,7 +30,7 @@
 
 #define DEFINE_WEAPONSLOTTYPE_NAMES
 
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/PerfTimer.h"
 #include "common/RandomValue.h"
 #include "common/ThingTemplate.h"

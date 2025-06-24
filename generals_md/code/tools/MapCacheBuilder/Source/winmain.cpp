@@ -68,7 +68,7 @@
 #include "common/Science.h"
 #include "common/ThingFactory.h"
 #include "common/ini.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/SpecialPower.h"
 #include "common/TerrainTypes.h"
 #include "common/DamageFX.h"

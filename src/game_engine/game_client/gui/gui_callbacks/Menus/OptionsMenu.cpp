@@ -34,7 +34,7 @@
 
 #include "common/AudioAffect.h"
 #include "common/AudioSettings.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/UserPreferences.h"
 #include "common/GameLOD.h"

@@ -31,7 +31,7 @@
 
 #include "common/AudioHandleSpecialValues.h"
 #include "common/GameType.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/PerfTimer.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"

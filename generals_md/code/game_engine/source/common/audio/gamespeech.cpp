@@ -47,7 +47,7 @@
 #include "wpaudio/Streamer.h"
 
 #define DEFINE_DLG_EVENT_PRIORITY_NAMES
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameSpeech.h"
 #include "common/ini.h"
 

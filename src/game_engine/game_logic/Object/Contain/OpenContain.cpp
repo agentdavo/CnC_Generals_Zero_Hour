@@ -34,7 +34,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/BitFlagsIO.h"
-#include "common/GameAudio.h"
+#include "common/gameaudio.h"
 #include "common/GameState.h"
 #include "common/Module.h"
 #include "common/Player.h"
