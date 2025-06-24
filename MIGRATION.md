@@ -272,3 +272,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Replaced Windows allocation macros with standard new in aabtreebuilder.cpp.
 - nox_compress now calls LZHLDecompress with size_t sizes.
 - Fixed return type of lib/zlib/maketree.c main for standards compliance.
+- Renamed tool directories versionUpdate, buildVersionUpdate and Compress to snake_case and updated CMake references.
