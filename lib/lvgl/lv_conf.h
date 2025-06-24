@@ -3,9 +3,9 @@
 
 #define LV_CONF_INCLUDE_SIMPLE
 
-/* Use X11 by default for development */
-#define LV_USE_SDL 0
-#define LV_USE_X11 1
+/* Use SDL by default for development */
+#define LV_USE_SDL 1
+#define LV_USE_X11 0
 #define LV_USE_WAYLAND 0
 #define LV_USE_LINUX_FBDEV 0
 #define LV_USE_NUTTX 0

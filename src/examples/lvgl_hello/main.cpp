@@ -8,7 +8,7 @@ static void btn_event_cb(lv_event_t *e)
 }
 
 int main() {
-    lv_display_t *disp = LvglPlatform::create_window(800, 600, nullptr);
+    lv_display_t *disp = LvglPlatform::create_window(800, 600, "sdl");
     if(!disp) return 1;
     lv_obj_t *hello = lv_label_create(lv_screen_active());
     lv_label_set_text(hello, "Hello world");
