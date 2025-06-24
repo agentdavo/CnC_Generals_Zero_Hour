@@ -10,4 +10,4 @@ target_include_directories(wwaudio PUBLIC
     ${PROJECT_SOURCE_DIR}/lib/miles-sdk-stub/mss
 )
 
-target_link_libraries(wwaudio PUBLIC milesstub)
+target_link_libraries(wwaudio PUBLIC milesstub wwlib)

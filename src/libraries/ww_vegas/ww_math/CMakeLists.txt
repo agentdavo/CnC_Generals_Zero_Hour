@@ -8,3 +8,5 @@ target_include_directories(wwmath PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/src/Libraries/WWVegas/WWMath
 )
+
+target_link_libraries(wwmath PUBLIC wwlib)
