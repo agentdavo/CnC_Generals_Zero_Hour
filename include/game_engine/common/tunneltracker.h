@@ -32,7 +32,7 @@
 #ifndef TUNNEL_TRACKER_H
 #define TUNNEL_TRACKER_H
 
-#include "common/GameType.h"
+#include "game_engine/common/gametype.h"
 #include "common/gamememory.h"
 #include "common/Snapshot.h"
 #include "GameLogic/Module/ContainModule.h"

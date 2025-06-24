@@ -31,7 +31,7 @@
 #ifndef _TEAM_H_
 #define _TEAM_H_
 
-#include "common/GameType.h"
+#include "game_engine/common/gametype.h"
 #include "common/Snapshot.h"
 #include "common/Thing.h"
 #include "GameLogic/Object.h"

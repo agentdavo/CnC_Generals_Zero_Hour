@@ -40,7 +40,7 @@
 #define _W3D_OVERLORD_AIRCRAFT_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "W3DDevice/game_client/Module/W3DModelDraw.h"
+#include "game_engine_device/w3d_device/game_client/Module/w3dmodeldraw.h"
 
 //-------------------------------------------------------------------------------------------------
 class W3DOverlordAircraftDrawModuleData : public W3DModelDrawModuleData

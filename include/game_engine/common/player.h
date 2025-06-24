@@ -49,7 +49,7 @@
 
 #include "common/Debug.h"
 #include "common/Energy.h"
-#include "common/GameType.h"
+#include "game_engine/common/gametype.h"
 #include "common/Handicap.h"
 #include "common/KindOf.h"
 #include "common/MissionStats.h"

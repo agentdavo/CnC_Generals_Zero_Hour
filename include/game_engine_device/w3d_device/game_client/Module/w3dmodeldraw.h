@@ -33,8 +33,8 @@
 #define __W3DModelDraw_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/ModelState.h"
-#include "common/DrawModule.h"
+#include "game_engine/common/modelstate.h"
+#include "game_engine/common/drawmodule.h"
 #ifdef BRUTAL_TIMING_HACK // hack for collecting model timing info.  jba.
 class RenderObjClass
 {
@@ -51,10 +51,10 @@ public:
 };
 
 #else
-#include "WW3D2/RendObj.h"
+#include "libraries/ww_vegas/ww_3d2/rendobj.h"
 #endif
-#include "common/SparseMatchFinder.h"
-#include "game_client/ParticleSys.h"
+#include "game_engine/common/sparsematchfinder.h"
+#include "game_client/particlesys.h"
 #include "common/stl_type_defs.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

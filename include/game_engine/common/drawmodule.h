@@ -33,10 +33,10 @@
 #define __DRAWMODULE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/GameType.h"
-#include "common/Module.h"
-#include "common/ModelState.h"
-#include "game_client/Color.h"
+#include "game_engine/common/gametype.h"
+#include "game_engine/common/module.h"
+#include "game_engine/common/modelstate.h"
+#include "game_client/color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Matrix3D;
