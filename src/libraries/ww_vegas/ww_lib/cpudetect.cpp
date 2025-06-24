@@ -20,7 +20,9 @@
 #include "wwstring.h"
 #include "wwdebug.h"
 #include "thread.h"
+#ifdef _WIN32
 #include "mpu.h"
+#endif
 #pragma warning (disable : 4201)	// Nonstandard extension - nameless struct
 #include "common/windows.h"
 #include "systimer.h"
@@ -28,6 +30,99 @@
 #ifdef _UNIX
 # include <time.h>  // for time(), localtime() and timezone variable.
 #endif
+
+#ifndef _WIN32
+
+#include <cstring>
+
+StringClass CPUDetectClass::ProcessorLog;
+StringClass CPUDetectClass::CompactLog;
+
+int CPUDetectClass::ProcessorType = 0;
+int CPUDetectClass::ProcessorFamily = 0;
+int CPUDetectClass::ProcessorModel = 0;
+int CPUDetectClass::ProcessorRevision = 0;
+int CPUDetectClass::ProcessorSpeed = 0;
+sint64 CPUDetectClass::ProcessorTicksPerSecond = 0;
+double CPUDetectClass::InvProcessorTicksPerSecond = 0.0;
+
+CPUDetectClass::ProcessorManufacturerType CPUDetectClass::ProcessorManufacturer = CPUDetectClass::MANUFACTURER_UNKNOWN;
+CPUDetectClass::IntelProcessorType CPUDetectClass::IntelProcessor = CPUDetectClass::INTEL_PROCESSOR_UNKNOWN;
+CPUDetectClass::AMDProcessorType CPUDetectClass::AMDProcessor = CPUDetectClass::AMD_PROCESSOR_UNKNOWN;
+CPUDetectClass::VIAProcessorType CPUDetectClass::VIAProcessor = CPUDetectClass::VIA_PROCESSOR_UNKNOWN;
+CPUDetectClass::RiseProcessorType CPUDetectClass::RiseProcessor = CPUDetectClass::RISE_PROCESSOR_UNKNOWN;
+
+unsigned CPUDetectClass::FeatureBits = 0;
+unsigned CPUDetectClass::ExtendedFeatureBits = 0;
+
+unsigned CPUDetectClass::L2CacheSize = 0;
+unsigned CPUDetectClass::L2CacheLineSize = 0;
+unsigned CPUDetectClass::L2CacheSetAssociative = 0;
+unsigned CPUDetectClass::L1DataCacheSize = 0;
+unsigned CPUDetectClass::L1DataCacheLineSize = 0;
+unsigned CPUDetectClass::L1DataCacheSetAssociative = 0;
+unsigned CPUDetectClass::L1InstructionCacheSize = 0;
+unsigned CPUDetectClass::L1InstructionCacheLineSize = 0;
+unsigned CPUDetectClass::L1InstructionCacheSetAssociative = 0;
+unsigned CPUDetectClass::L1InstructionTraceCacheSize = 0;
+unsigned CPUDetectClass::L1InstructionTraceCacheSetAssociative = 0;
+
+unsigned CPUDetectClass::TotalPhysicalMemory = 0;
+unsigned CPUDetectClass::AvailablePhysicalMemory = 0;
+unsigned CPUDetectClass::TotalPageMemory = 0;
+unsigned CPUDetectClass::AvailablePageMemory = 0;
+unsigned CPUDetectClass::TotalVirtualMemory = 0;
+unsigned CPUDetectClass::AvailableVirtualMemory = 0;
+
+unsigned CPUDetectClass::OSVersionNumberMajor = 0;
+unsigned CPUDetectClass::OSVersionNumberMinor = 0;
+unsigned CPUDetectClass::OSVersionBuildNumber = 0;
+unsigned CPUDetectClass::OSVersionPlatformId = 0;
+StringClass CPUDetectClass::OSVersionExtraInfo;
+
+bool CPUDetectClass::HasCPUIDInstruction = false;
+bool CPUDetectClass::HasRDTSCInstruction = false;
+bool CPUDetectClass::HasSSESupport = false;
+bool CPUDetectClass::HasSSE2Support = false;
+bool CPUDetectClass::HasCMOVSupport = false;
+bool CPUDetectClass::HasMMXSupport = false;
+bool CPUDetectClass::Has3DNowSupport = false;
+bool CPUDetectClass::HasExtended3DNowSupport = false;
+
+char CPUDetectClass::VendorID[20] = "";
+char CPUDetectClass::ProcessorString[48] = "";
+
+const char* CPUDetectClass::Get_Processor_Manufacturer_Name()
+{
+    return "<Unknown>";
+}
+
+bool CPUDetectClass::CPUID(unsigned&, unsigned&, unsigned&, unsigned&, unsigned)
+{
+    return false;
+}
+
+void CPUDetectClass::Init_CPUID_Instruction() {}
+void CPUDetectClass::Init_Processor_Speed() {}
+void CPUDetectClass::Init_Processor_String() { ProcessorString[0] = '\0'; }
+void CPUDetectClass::Init_Processor_Manufacturer() {}
+void CPUDetectClass::Init_Processor_Family() {}
+void CPUDetectClass::Init_Processor_Features() {}
+void CPUDetectClass::Init_Memory() {}
+void CPUDetectClass::Init_OS() {}
+void CPUDetectClass::Init_Intel_Processor_Type() {}
+void CPUDetectClass::Init_AMD_Processor_Type() {}
+void CPUDetectClass::Init_VIA_Processor_Type() {}
+void CPUDetectClass::Init_Rise_Processor_Type() {}
+void CPUDetectClass::Init_Cache() {}
+void CPUDetectClass::Init_Processor_Log() {}
+void CPUDetectClass::Init_Compact_Log() {}
+
+struct OSInfoStruct { const char* Code; const char* SubCode; const char* VersionString; unsigned char VersionMajor; unsigned char VersionMinor; unsigned short VersionSub; unsigned char BuildMajor; unsigned char BuildMinor; unsigned short BuildSub; };
+
+static void Get_OS_Info(OSInfoStruct&, unsigned, unsigned, unsigned, unsigned) {}
+
+#else // _WIN32
 
 struct OSInfoStruct {
 	const char* Code;
@@ -1330,3 +1425,4 @@ void Get_OS_Info(
 		}
 	}
 }
+#endif // _WIN32
