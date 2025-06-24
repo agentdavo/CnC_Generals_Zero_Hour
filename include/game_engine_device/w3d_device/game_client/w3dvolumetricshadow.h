@@ -28,7 +28,7 @@
 #define __W3DVOLUMETRICSHADOW_H_
 
 #include "matrix4.h"
-#include "w3d_device/game_client/W3DBufferManager.h"
+#include "W3DDevice/game_client/W3DBufferManager.h"
 #include "game_client/Shadow.h"
 
 ///@todo Make the 100 below a 'better' number. Was 32, increased because of overcomplex models.

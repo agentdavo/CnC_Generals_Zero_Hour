@@ -34,7 +34,7 @@
 #define _W3D_OVERLORD_TANK_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "w3d_device/game_client/Module/W3DTankDraw.h"
+#include "W3DDevice/game_client/Module/W3DTankDraw.h"
 
 //-------------------------------------------------------------------------------------------------
 class W3DOverlordTankDrawModuleData : public W3DTankDrawModuleData

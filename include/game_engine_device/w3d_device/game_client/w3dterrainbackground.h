@@ -59,7 +59,7 @@
 #include "vertmaterial.h"
 #include "lib/base_type.h"
 #include "common/GameType.h"
-#include "common/ascii_string.h"
+#include "common/asciiString.h"
 
 //-----------------------------------------------------------------------------
 //           Forward References

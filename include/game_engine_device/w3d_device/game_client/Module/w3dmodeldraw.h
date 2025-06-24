@@ -33,8 +33,8 @@
 #define __W3DModelDraw_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/ModelState.h"
-#include "common/DrawModule.h"
+#include "Common/ModelState.h"
+#include "Common/DrawModule.h"
 #ifdef BRUTAL_TIMING_HACK // hack for collecting model timing info.  jba.
 class RenderObjClass
 {
@@ -53,7 +53,7 @@ public:
 #else
 #include "WW3D2/RendObj.h"
 #endif
-#include "common/SparseMatchFinder.h"
+#include "Common/SparseMatchFinder.h"
 #include "game_client/ParticleSys.h"
 #include "common/stl_type_defs.h"
 
@@ -412,7 +412,7 @@ public:
 	virtual ObjectDrawInterface *getObjectDrawInterface() { return this; }
 	virtual const ObjectDrawInterface *getObjectDrawInterface() const { return this; }
 
-	///@todo: I had to make this public because w3d_device needs access for casting shadows -MW
+	///@todo: I had to make this public because W3DDevice needs access for casting shadows -MW
 	inline RenderObjClass *getRenderObject() { return m_renderObject; }
 	virtual Bool updateBonesForClientParticleSystems(void); ///< this will reposition particle systems on the fly ML
 

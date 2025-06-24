@@ -35,7 +35,7 @@
 
 #include "lib/base_type.h"
 #include "WWLib/RefCount.h"
-#include "common/ascii_string.h"
+#include "common/asciiString.h"
 
 typedef struct {
 	Int blendNdx;

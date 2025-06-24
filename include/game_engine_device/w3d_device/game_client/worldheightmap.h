@@ -34,7 +34,7 @@
 #include "lib/base_type.h"
 #include "WWLib/RefCount.h"
 #include "WWMath/Vector3.h"
-#include "w3d_device/game_client/TileData.h"
+#include "W3DDevice/game_client/TileData.h"
 #include "../../game_engine/include/common/MapObject.h"
 
 #include "common/stl_type_defs.h"

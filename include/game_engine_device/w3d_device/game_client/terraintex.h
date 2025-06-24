@@ -35,7 +35,7 @@
 
 #include "WW3D2/Texture.h"
 #include "WWMATH/Matrix3d.h"
-#include "common/ascii_string.h"
+#include "common/asciiString.h"
 
 class WorldHeightMap;
 #define TILE_OFFSET 8

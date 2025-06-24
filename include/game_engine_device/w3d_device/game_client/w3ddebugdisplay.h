@@ -35,7 +35,7 @@
 //
 // Module:     Debug
 //
-// File name:  w3d_device/game_client/W3DDebugDisplay.h
+// File name:  W3DDevice/game_client/W3DDebugDisplay.h
 //
 // Created:    11/13/01 TR
 //

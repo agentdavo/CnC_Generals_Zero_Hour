@@ -58,10 +58,10 @@
 #include "shader.h"
 #include "vertmaterial.h"
 //#include "common/GameFileSystem.h"
-#include "common/FileSystem.h" // for LOAD_TEST_ASSETS
+#include "Common/FileSystem.h" // for LOAD_TEST_ASSETS
 #include "lib/base_type.h"
 #include "common/GameType.h"
-#include "common/ascii_string.h"
+#include "common/asciiString.h"
 
 //-----------------------------------------------------------------------------
 //           Forward References

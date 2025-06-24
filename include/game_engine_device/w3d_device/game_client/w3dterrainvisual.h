@@ -33,7 +33,7 @@
 #define __W3DTERRAINVISUAL_H_
 
 #include "game_client/TerrainVisual.h"
-#include "w3d_device/game_client/W3DWater.h"
+#include "W3DDevice/game_client/W3DWater.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Matrix3D;

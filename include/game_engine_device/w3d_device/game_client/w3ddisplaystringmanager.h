@@ -33,7 +33,7 @@
 #define _W3DDISPLAYSTRINGMANAGER_H_
 
 #include "game_client/DisplayStringManager.h"
-#include "w3d_device/game_client/W3DDisplayString.h"
+#include "W3DDevice/game_client/W3DDisplayString.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Access for creating game managed display strings */

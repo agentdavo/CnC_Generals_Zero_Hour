@@ -53,7 +53,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "game_client/Gadget.h"
-#include "w3d_device/game_client/W3DGameWindow.h"
+#include "W3DDevice/game_client/W3DGameWindow.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

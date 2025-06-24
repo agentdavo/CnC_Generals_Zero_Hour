@@ -59,8 +59,8 @@
 #include "vertmaterial.h"
 #include "lib/base_type.h"
 #include "common/GameType.h"
-#include "common/Dict.h"
-#include "common/ascii_string.h"
+#include "Common/Dict.h"
+#include "common/asciiString.h"
 
 //-----------------------------------------------------------------------------
 //           Forward References

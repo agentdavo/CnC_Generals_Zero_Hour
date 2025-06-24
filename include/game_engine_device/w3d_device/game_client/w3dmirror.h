@@ -36,7 +36,7 @@
 #include "shader.h"
 #include "vertmaterial.h"
 #include "lib/base_type.h"
-#include "common/GameType.h"
+#include "Common/GameType.h"
 
 /// Custom render object that draws mirrors, water, and skies.
 /**

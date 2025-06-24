@@ -34,7 +34,7 @@
 //
 // Project:    RTS3
 //
-// File name:  win32_mouse.h
+// File name:  Win32Mouse.h
 //
 // Created:    Mark Wilczynski, Jan 2002
 //
@@ -51,7 +51,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "win32_device/game_client/win32_mouse.h"
+#include "Win32Device/game_client/Win32Mouse.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 class CameraClass;

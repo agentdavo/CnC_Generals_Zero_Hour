@@ -35,8 +35,8 @@
 #define __W3DGAMEWINDOWMANAGER_H_
 
 #include "game_client/GameWindowManager.h"
-#include "w3d_device/game_client/W3DGameWindow.h"
-#include "w3d_device/game_client/W3DGadget.h"
+#include "W3DDevice/game_client/W3DGameWindow.h"
+#include "W3DDevice/game_client/W3DGadget.h"
 
 //-------------------------------------------------------------------------------------------------
 /** W3D implementation of the game window manager which controls all windows

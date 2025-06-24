@@ -41,18 +41,18 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "game_client/GameClient.h"
-#include "w3d_device/game_client/W3DParticleSys.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/W3DInGameUI.h"
-#include "w3d_device/game_client/W3DTerrainVisual.h"
-#include "w3d_device/game_client/W3DGameWindowManager.h"
-#include "w3d_device/game_client/W3DGameFont.h"
-#include "w3d_device/game_client/W3DDisplayStringManager.h"
-#include "video_device/bink/bink_video_player.h"
-#include "win32_device/game_client/win32_di_keyboard.h"
-#include "win32_device/game_client/win32_di_mouse.h"
-#include "win32_device/game_client/win32_mouse.h"
-#include "w3d_device/game_client/W3DMouse.h"
+#include "W3DDevice/game_client/W3DParticleSys.h"
+#include "W3DDevice/game_client/W3DDisplay.h"
+#include "W3DDevice/game_client/W3DInGameUI.h"
+#include "W3DDevice/game_client/W3DTerrainVisual.h"
+#include "W3DDevice/game_client/W3DGameWindowManager.h"
+#include "W3DDevice/game_client/W3DGameFont.h"
+#include "W3DDevice/game_client/W3DDisplayStringManager.h"
+#include "VideoDevice/Bink/BinkVideoPlayer.h"
+#include "Win32Device/game_client/Win32DIKeyboard.h"
+#include "Win32Device/game_client/Win32DIMouse.h"
+#include "Win32Device/game_client/Win32Mouse.h"
+#include "W3DDevice/game_client/W3DMouse.h"
 
 class ThingTemplate;
 

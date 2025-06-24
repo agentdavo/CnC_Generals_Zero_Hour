@@ -33,9 +33,9 @@
 #define _W3D_TANK_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/DrawModule.h"
+#include "Common/DrawModule.h"
 #include "game_client/ParticleSys.h"
-#include "w3d_device/game_client/Module/W3DModelDraw.h"
+#include "W3DDevice/game_client/Module/W3DModelDraw.h"
 #include "WW3D2/HAnim.h"
 #include "WW3D2/RendObj.h"
 #include "WW3D2/Part_Emt.h"

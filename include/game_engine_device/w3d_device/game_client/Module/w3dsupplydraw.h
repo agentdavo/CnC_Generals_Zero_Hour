@@ -33,7 +33,7 @@
 #define _W3D_SUPPLY_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "w3d_device/game_client/Module/W3DModelDraw.h"
+#include "W3DDevice/game_client/Module/W3DModelDraw.h"
 
 //-------------------------------------------------------------------------------------------------
 class W3DSupplyDrawModuleData : public W3DModelDrawModuleData

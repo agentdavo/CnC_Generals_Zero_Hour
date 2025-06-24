@@ -33,9 +33,9 @@
 #define __W3DPOLICECARDRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/DrawModule.h"
-#include "w3d_device/game_client/Module/W3DTruckDraw.h"
-#include "w3d_device/game_client/W3DDynamicLight.h"
+#include "Common/DrawModule.h"
+#include "W3DDevice/game_client/Module/W3DTruckDraw.h"
+#include "W3DDevice/game_client/W3DDynamicLight.h"
 #include "WW3D2/Line3D.h"
 
 //-------------------------------------------------------------------------------------------------

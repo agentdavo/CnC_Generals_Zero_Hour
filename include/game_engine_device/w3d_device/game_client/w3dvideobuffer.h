@@ -33,7 +33,7 @@
 //
 // Project:    Generals
 //
-// File name:  w3d_device/game_client/W3DVideoBuffer.h
+// File name:  W3DDevice/game_client/W3DVideoBuffer.h
 //
 // Created:    10/23/01
 //
