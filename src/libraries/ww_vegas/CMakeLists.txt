@@ -1,4 +1,5 @@
 add_subdirectory(miles_6)
+add_subdirectory(ww_lib)
 add_subdirectory(ww_3d2)
 add_subdirectory(ww_audio)
 add_subdirectory(ww_debug)
