@@ -51,7 +51,7 @@
 #include "GUIEdit.h"
 #include "common/Debug.h"
 #include "common/NameKeyGenerator.h"
-#include "common/FunctionLexicon.h"
+#include "game_engine/common/function_lexicon.h"
 #include "GameClient/Display.h"
 #include "GameClient/GameWindow.h"
 #include "GameClient/GameWindowManager.h"

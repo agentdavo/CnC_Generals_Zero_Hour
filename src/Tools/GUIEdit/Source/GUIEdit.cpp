@@ -75,7 +75,7 @@
 #include "GameClient/WindowXlat.h"
 #include "GameClient/HeaderTemplate.h"
 
-#include "W3DDevice/common/W3DFunctionLexicon.h"
+#include "w3d_device/common/w3d_function_lexicon.h"
 #include "W3DDevice/GameClient/W3DGameWindowManager.h"
 #include "W3DDevice/GameClient/W3DDisplay.h"
 #include "W3DDevice/GameClient/W3DGameWindowManager.h"

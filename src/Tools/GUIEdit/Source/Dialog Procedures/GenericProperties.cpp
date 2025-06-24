@@ -52,7 +52,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Debug.h"
-#include "common/FunctionLexicon.h"
+#include "game_engine/common/function_lexicon.h"
 #include "GUIEdit.h"
 #include "Properties.h"
 #include "Resource.h"
