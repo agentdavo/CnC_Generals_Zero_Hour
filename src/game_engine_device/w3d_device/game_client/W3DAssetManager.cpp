@@ -44,7 +44,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include <always.h>
-#include "w3d_device/game_client/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "proto.h"
 #include "rendobj.h"
 #include <vector3.h>
@@ -66,7 +66,7 @@
 #include "font3d.h"
 #include "render2dsentence.h"
 #include <stdio.h>
-#include "w3d_device/game_client/W3DGranny.h"
+#include "W3DDevice/GameClient/W3DGranny.h"
 #include "common/PerfTimer.h"
 #include "common/GlobalData.h"
 

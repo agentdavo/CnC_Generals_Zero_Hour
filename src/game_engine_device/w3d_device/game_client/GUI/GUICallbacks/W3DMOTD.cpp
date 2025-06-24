@@ -49,10 +49,10 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/NameKeyGenerator.h"
-#include "game_client/GameWindow.h"
-#include "game_client/GameWindowManager.h"
-#include "game_client/DisplayStringManager.h"
-#include "game_client/GadgetSlider.h"
+#include "GameClient/GameWindow.h"
+#include "GameClient/GameWindowManager.h"
+#include "GameClient/DisplayStringManager.h"
+#include "GameClient/GadgetSlider.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 // DEFINES ////////////////////////////////////////////////////////////////////

@@ -32,11 +32,11 @@
 										 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "stdio.h"
-#include "w3d_device/game_client/W3DWater.h"
-#include "w3d_device/game_client/heightmap.h"
-#include "w3d_device/game_client/W3DShroud.h"
-#include "w3d_device/game_client/W3DWaterTracks.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DWater.h"
+#include "W3DDevice/GameClient/heightmap.h"
+#include "W3DDevice/GameClient/W3DShroud.h"
+#include "W3DDevice/GameClient/W3DWaterTracks.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "texture.h"
 #include "assetmgr.h"
 #include "rinfo.h"
@@ -55,15 +55,15 @@
 #include "common/Xfer.h"
 #include "common/GameLOD.h"
 
-#include "game_client/Water.h"
-#include "game_logic/GameLogic.h"
-#include "game_logic/PolygonTrigger.h"
-#include "game_logic/ScriptEngine.h"
-#include "w3d_device/game_client/W3DShaderManager.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/W3DPoly.h"
-#include "w3d_device/game_client/W3DScene.h"
-#include "w3d_device/game_client/W3DCustomScene.h"
+#include "GameClient/Water.h"
+#include "GameLogic/GameLogic.h"
+#include "GameLogic/PolygonTrigger.h"
+#include "GameLogic/ScriptEngine.h"
+#include "W3DDevice/GameClient/W3DShaderManager.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/W3DPoly.h"
+#include "W3DDevice/GameClient/W3DScene.h"
+#include "W3DDevice/GameClient/W3DCustomScene.h"
 
 
 #ifdef _INTERNAL

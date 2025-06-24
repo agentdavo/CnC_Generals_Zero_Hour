@@ -30,12 +30,12 @@
 #include <stdlib.h>
 
 #include "common/Debug.h"
-#include "game_client/GameClient.h"
-#include "game_client/GameText.h"
-#include "game_client/DisplayString.h"
-#include "game_client/DrawGroupInfo.h"
-#include "game_client/GlobalLanguage.h"
-#include "w3d_device/game_client/W3DDisplayStringManager.h"
+#include "GameClient/GameClient.h"
+#include "GameClient/GameText.h"
+#include "GameClient/DisplayString.h"
+#include "GameClient/DrawGroupInfo.h"
+#include "GameClient/GlobalLanguage.h"
+#include "W3DDevice/GameClient/W3DDisplayStringManager.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // PUBLIC FUNCTIONS 

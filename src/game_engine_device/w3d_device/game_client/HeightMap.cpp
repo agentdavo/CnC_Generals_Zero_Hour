@@ -45,7 +45,7 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/heightmap.h"
+#include "W3DDevice/GameClient/heightmap.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,32 +61,32 @@
 #include "common/GlobalData.h"
 #include "common/PerfTimer.h"
 
-#include "game_client/TerrainVisual.h"
-#include "game_client/View.h"
-#include "game_client/Water.h"
+#include "GameClient/TerrainVisual.h"
+#include "GameClient/View.h"
+#include "GameClient/Water.h"
 
-#include "game_logic/AIPathfind.h"
-#include "game_logic/TerrainLogic.h"
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/W3DDynamicLight.h"
-#include "w3d_device/game_client/W3DScene.h"
-#include "w3d_device/game_client/W3DTerrainTracks.h"
-#include "w3d_device/game_client/W3DBibBuffer.h"
-#include "w3d_device/game_client/W3DTreeBuffer.h"
-#include "w3d_device/game_client/W3DRoadBuffer.h"
-#include "w3d_device/game_client/W3DBridgeBuffer.h"
-#include "w3d_device/game_client/W3DWaypointBuffer.h"
-#include "w3d_device/game_client/W3DCustomEdging.h"
-#include "w3d_device/game_client/WorldHeightMap.h"
-#include "w3d_device/game_client/W3DShaderManager.h"
-#include "w3d_device/game_client/W3DShadow.h"
-#include "w3d_device/game_client/W3DWater.h"
-#include "w3d_device/game_client/W3DShroud.h"
+#include "GameLogic/AIPathfind.h"
+#include "GameLogic/TerrainLogic.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/W3DDynamicLight.h"
+#include "W3DDevice/GameClient/W3DScene.h"
+#include "W3DDevice/GameClient/W3DTerrainTracks.h"
+#include "W3DDevice/GameClient/W3DBibBuffer.h"
+#include "W3DDevice/GameClient/W3DTreeBuffer.h"
+#include "W3DDevice/GameClient/W3DRoadBuffer.h"
+#include "W3DDevice/GameClient/W3DBridgeBuffer.h"
+#include "W3DDevice/GameClient/W3DWaypointBuffer.h"
+#include "W3DDevice/GameClient/W3DCustomEdging.h"
+#include "W3DDevice/GameClient/WorldHeightMap.h"
+#include "W3DDevice/GameClient/W3DShaderManager.h"
+#include "W3DDevice/GameClient/W3DShadow.h"
+#include "W3DDevice/GameClient/W3DWater.h"
+#include "W3DDevice/GameClient/W3DShroud.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/Light.h"
 #include "WW3D2/Scene.h"
-#include "w3d_device/game_client/W3DPoly.h"
-#include "w3d_device/game_client/W3DCustomScene.h"
+#include "W3DDevice/GameClient/W3DPoly.h"
+#include "W3DDevice/GameClient/W3DCustomScene.h"
 
 #include "common/PerfTimer.h"
 #include "common/UnitTimings.h" //Contains the DO_UNIT_TIMINGS define jba.		 

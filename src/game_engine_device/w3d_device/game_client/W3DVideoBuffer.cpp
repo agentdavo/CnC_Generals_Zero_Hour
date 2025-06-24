@@ -35,7 +35,7 @@
 //
 // Module:    Video
 //
-// File name: w3d_device/game_client/W3DVideoBuffer.cpp
+// File name: W3DDevice/GameClient/W3DVideoBuffer.cpp
 //
 // Created:   10/23/01 TR
 //
@@ -48,7 +48,7 @@
 #include "common/GameMemory.h"
 #include "WW3D2/texture.h"
 #include "WW3D2/textureloader.h"
-#include "w3d_device/game_client/W3DVideoBuffer.h"
+#include "W3DDevice/GameClient/W3DVideoBuffer.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

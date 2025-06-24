@@ -47,11 +47,11 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "game_client/Gadget.h"
-#include "game_client/GameWindowGlobal.h"
-#include "w3d_device/game_client/W3DGameWindow.h"
-#include "w3d_device/game_client/W3DGameWindowManager.h"
-#include "w3d_device/game_client/W3DDisplay.h"
+#include "GameClient/Gadget.h"
+#include "GameClient/GameWindowGlobal.h"
+#include "W3DDevice/GameClient/W3DGameWindow.h"
+#include "W3DDevice/GameClient/W3DGameWindowManager.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 enum

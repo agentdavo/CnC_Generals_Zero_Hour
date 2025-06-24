@@ -48,12 +48,12 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/GlobalData.h"
-#include "game_client/GameWindowGlobal.h"
-#include "game_client/GameWindowManager.h"
-#include "game_client/GadgetStaticText.h"
-#include "w3d_device/game_client/W3DGameWindow.h"
-#include "w3d_device/game_client/W3DGadget.h"
-#include "w3d_device/game_client/W3DDisplay.h"
+#include "GameClient/GameWindowGlobal.h"
+#include "GameClient/GameWindowManager.h"
+#include "GameClient/GadgetStaticText.h"
+#include "W3DDevice/GameClient/W3DGameWindow.h"
+#include "W3DDevice/GameClient/W3DGadget.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

@@ -43,7 +43,7 @@
 
 #ifdef INCLUDE_GRANNY_IN_BUILD
 
-#include "w3d_device/game_client/W3DGranny.h"
+#include "W3DDevice/GameClient/W3DGranny.h"
 #include "common/GlobalData.h"
 #include "texture.h"
 #include "colmath.h"

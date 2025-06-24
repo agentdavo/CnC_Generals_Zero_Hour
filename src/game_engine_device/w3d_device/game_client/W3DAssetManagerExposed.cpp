@@ -23,8 +23,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-#include "w3d_device/game_client/W3DAssetManagerExposed.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DAssetManagerExposed.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
 
 void ReloadAllTextures(void)
 {

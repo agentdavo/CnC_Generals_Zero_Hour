@@ -43,14 +43,14 @@
 #include "common/ThingTemplate.h"
 #include "common/WellKnownKeys.h"
 
-#include "game_logic/PolygonTrigger.h"
-#include "game_logic/SidesList.h"
+#include "GameLogic/PolygonTrigger.h"
+#include "GameLogic/SidesList.h"
 
-#include "w3d_device/game_client/WorldHeightMap.h"
-#include "w3d_device/game_client/TileData.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/W3DShadow.h"
+#include "W3DDevice/GameClient/WorldHeightMap.h"
+#include "W3DDevice/GameClient/TileData.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/W3DShadow.h"
 
 #include "common/file.h"
 

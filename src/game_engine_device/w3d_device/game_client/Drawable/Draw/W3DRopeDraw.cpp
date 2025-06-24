@@ -33,15 +33,15 @@
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/ClientRandomValue.h"
-#include "game_client/Color.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
-#include "game_logic/GameLogic.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/Module/W3DRopeDraw.h"
+#include "GameClient/ClientRandomValue.h"
+#include "GameClient/Color.h"
+#include "GameClient/Drawable.h"
+#include "GameClient/GameClient.h"
+#include "GameLogic/GameLogic.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/Module/W3DRopeDraw.h"
 #include "WW3D2/Line3D.h"
-#include "w3d_device/game_client/W3DScene.h"
+#include "W3DDevice/GameClient/W3DScene.h"
 #include "common/GameState.h"
 
 #ifdef _INTERNAL
@@ -138,11 +138,11 @@ void W3DRopeDraw::tossSegments()
 //-------------------------------------------------------------------------------------------------
 void W3DRopeDraw::initRopeParms(Real length, Real width, const RGBColor &color, Real wobbleLen, Real wobbleAmp, Real wobbleRate)
 {
-    m_maxLen = ww_max(1.0f, length);
+	m_maxLen = max(1.0f, length);
 	m_curLen = 0.0f;
 	m_width = width;
 	m_color = color;
-    m_wobbleLen = ww_min(m_maxLen, wobbleLen);
+	m_wobbleLen = min(m_maxLen, wobbleLen);
 	m_wobbleAmp = wobbleAmp;
 	m_wobbleRate = wobbleRate;
 	m_curZOffset = 0.0f;

@@ -45,7 +45,7 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/W3DPropBuffer.h"
+#include "W3DDevice/GameClient/W3DPropBuffer.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -59,10 +59,10 @@
 #include "WW3D2/Light.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/dx8renderer.h"
-#include "w3d_device/game_client/Module/W3DPropDraw.h"
-#include "w3d_device/game_client/W3DShroud.h"
-#include "w3d_device/game_client/BaseHeightMap.h"
-#include "game_logic/PartitionManager.h"
+#include "W3DDevice/GameClient/Module/W3DPropDraw.h"
+#include "W3DDevice/GameClient/W3DShroud.h"
+#include "W3DDevice/GameClient/BaseHeightMap.h"
+#include "GameLogic/PartitionManager.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

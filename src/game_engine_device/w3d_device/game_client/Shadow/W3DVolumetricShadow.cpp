@@ -39,7 +39,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "always.h"
-#include "game_client/View.h"
+#include "GameClient/View.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/Light.h"
 #include "WW3D2/DX8Wrapper.h"
@@ -47,17 +47,17 @@
 #include "WW3D2/mesh.h"
 #include "WW3D2/meshmdl.h"
 #include "Lib/BaseType.h"
-#include "w3d_device/game_client/W3DGranny.h"
-#include "w3d_device/game_client/Heightmap.h"
+#include "W3DDevice/GameClient/W3DGranny.h"
+#include "W3DDevice/GameClient/Heightmap.h"
 #include "D3dx8math.h"
 #include "common/GlobalData.h"
 #include "common/drawmodule.h"
-#include "w3d_device/game_client/W3DVolumetricShadow.h"
-#include "w3d_device/game_client/W3DShadow.h"
+#include "W3DDevice/GameClient/W3DVolumetricShadow.h"
+#include "W3DDevice/GameClient/W3DShadow.h"
 #include "WW3D2/statistics.h"
-#include "game_logic/TerrainLogic.h"
+#include "GameLogic/TerrainLogic.h"
 #include "WW3D2/DX8Caps.h"
-#include "game_client/Drawable.h"
+#include "GameClient/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

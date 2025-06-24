@@ -48,11 +48,11 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Debug.h"
-#include "w3d_device/game_client/W3DGameFont.h"
+#include "W3DDevice/GameClient/W3DGameFont.h"
 #include "WW3D2/WW3D.h"
 #include "WW3D2/AssetMgr.h"
 #include "WW3D2/Render2DSentence.h"
-#include "game_client/GlobalLanguage.h"
+#include "GameClient/GlobalLanguage.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

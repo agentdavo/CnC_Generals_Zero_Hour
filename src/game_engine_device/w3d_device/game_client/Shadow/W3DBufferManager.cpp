@@ -24,7 +24,7 @@
 
 
 #include "common/Debug.h"
-#include "w3d_device/game_client/W3DBufferManager.h"
+#include "W3DDevice/GameClient/W3DBufferManager.h"
 
 W3DBufferManager *TheW3DBufferManager=NULL;	//singleton
 

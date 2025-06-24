@@ -45,10 +45,10 @@
 //         Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "w3d_device/game_client/W3DDebugDisplay.h"
-#include "game_client/GameFont.h"
-#include "game_client/DisplayStringManager.h"
-#include "game_client/DisplayString.h"
+#include "W3DDevice/GameClient/W3DDebugDisplay.h"
+#include "GameClient/GameFont.h"
+#include "GameClient/DisplayStringManager.h"
+#include "GameClient/DisplayString.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

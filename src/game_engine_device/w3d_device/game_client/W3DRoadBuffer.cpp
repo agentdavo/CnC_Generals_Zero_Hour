@@ -45,7 +45,7 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/W3DRoadBuffer.h"
+#include "W3DDevice/GameClient/W3DRoadBuffer.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -55,13 +55,13 @@
 #include "common/RandomValue.h"
 //#include "common/GameFileSystem.h"
 #include "common/FileSystem.h" // for LOAD_TEST_ASSETS
-#include "game_client/TerrainRoads.h"
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
-#include "w3d_device/game_client/W3DDynamicLight.h"
-#include "w3d_device/game_client/WorldHeightMap.h"
-#include "w3d_device/game_client/W3DShaderManager.h"
+#include "GameClient/TerrainRoads.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DDynamicLight.h"
+#include "W3DDevice/GameClient/WorldHeightMap.h"
+#include "W3DDevice/GameClient/W3DShaderManager.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/DX8Renderer.h"

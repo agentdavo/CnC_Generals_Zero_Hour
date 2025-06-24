@@ -51,7 +51,7 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/W3DWaypointBuffer.h"
+#include "W3DDevice/GameClient/W3DWaypointBuffer.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -63,16 +63,16 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
-#include "game_client/InGameUI.h"
+#include "GameClient/Drawable.h"
+#include "GameClient/GameClient.h"
+#include "GameClient/InGameUI.h"
 
-#include "game_logic/Object.h"
+#include "GameLogic/Object.h"
 
-#include "game_logic/Module/AIUpdate.h"
+#include "GameLogic/Module/AIUpdate.h"
 
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/HeightMap.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/HeightMap.h"
 
 #include "WW3D2/Camera.h"
 #include "WW3D2/DX8Wrapper.h"

@@ -35,19 +35,19 @@
 #include "common/GlobalData.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "game_client/ParticleSys.h"
-#include "game_logic/AIPathfind.h"
-#include "game_logic/Weapon.h"
-#include "game_logic/GameLogic.h"		// for logic frame count
-#include "game_logic/PartitionManager.h"
-#include "game_logic/Locomotor.h"
-#include "game_logic/Module/PhysicsUpdate.h"
-#include "game_logic/Module/BodyModule.h"
-#include "game_logic/Module/AIUpdate.h"
-#include "game_logic/ScriptEngine.h"
-#include "w3d_device/game_client/W3DGameClient.h"
-#include "w3d_device/game_client/Module/W3DTruckDraw.h"
+#include "GameClient/Drawable.h"
+#include "GameClient/ParticleSys.h"
+#include "GameLogic/AIPathfind.h"
+#include "GameLogic/Weapon.h"
+#include "GameLogic/GameLogic.h"		// for logic frame count
+#include "GameLogic/PartitionManager.h"
+#include "GameLogic/Locomotor.h"
+#include "GameLogic/Module/PhysicsUpdate.h"
+#include "GameLogic/Module/BodyModule.h"
+#include "GameLogic/Module/AIUpdate.h"
+#include "GameLogic/ScriptEngine.h"
+#include "W3DDevice/GameClient/W3DGameClient.h"
+#include "W3DDevice/GameClient/Module/W3DTruckDraw.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

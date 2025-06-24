@@ -27,7 +27,7 @@
 // Author: John Ahlquist, April 2001
 #include <stdlib.h>
 
-#include "w3d_device/game_client/W3DDynamicLight.h"
+#include "W3DDevice/GameClient/W3DDynamicLight.h"
 
 W3DDynamicLight::W3DDynamicLight(void):
 LightClass(LightClass::POINT)

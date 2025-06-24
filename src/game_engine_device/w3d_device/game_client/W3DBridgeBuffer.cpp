@@ -45,26 +45,26 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/W3DBridgeBuffer.h"
+#include "W3DDevice/GameClient/W3DBridgeBuffer.h"
 
 #include <stdio.h>
 #include <string.h>
-#include "w3d_device/game_client/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
 #include <texture.h>
 #include "common/GlobalData.h"
 #include "common/RandomValue.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
-#include "game_client/TerrainRoads.h"
-#include "game_logic/Damage.h"
-#include "game_logic/Module/BodyModule.h"
-#include "w3d_device/game_logic/W3DTerrainLogic.h"
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/W3DDynamicLight.h"
-#include "w3d_device/game_client/Module/W3DModelDraw.h"
-#include "w3d_device/game_client/W3DShaderManager.h"
-#include "w3d_device/game_client/W3DShroud.h"
+#include "GameClient/TerrainRoads.h"
+#include "GameLogic/Damage.h"
+#include "GameLogic/Module/BodyModule.h"
+#include "W3DDevice/GameLogic/W3DTerrainLogic.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/W3DDynamicLight.h"
+#include "W3DDevice/GameClient/Module/W3DModelDraw.h"
+#include "W3DDevice/GameClient/W3DShaderManager.h"
+#include "W3DDevice/GameClient/W3DShroud.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/DX8Renderer.h"

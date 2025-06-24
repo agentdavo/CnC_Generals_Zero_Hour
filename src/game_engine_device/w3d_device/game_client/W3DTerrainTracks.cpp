@@ -43,8 +43,8 @@
 //			  moves.
 //-----------------------------------------------------------------------------
 
-#include "w3d_device/game_client/W3DTerrainTracks.h"
-#include "w3d_device/game_client/heightmap.h"
+#include "W3DDevice/GameClient/W3DTerrainTracks.h"
+#include "W3DDevice/GameClient/heightmap.h"
 #include "common/PerfTimer.h"
 #include "common/GlobalData.h"
 #include "common/Debug.h"
@@ -56,9 +56,9 @@
 #include "assetmgr.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/Scene.h"
-#include "game_logic/TerrainLogic.h"
-#include "game_logic/Object.h"
-#include "game_client/Drawable.h"
+#include "GameLogic/TerrainLogic.h"
+#include "GameLogic/Object.h"
+#include "GameClient/Drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

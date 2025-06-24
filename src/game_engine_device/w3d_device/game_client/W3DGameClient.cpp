@@ -44,16 +44,16 @@
 #include "common/RandomValue.h"
 #include "common/GlobalData.h"
 #include "common/GameLOD.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
-#include "game_client/ParticleSys.h"
-#include "game_client/RayEffect.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
-#include "w3d_device/game_client/W3DGameClient.h"
-#include "w3d_device/game_client/W3DStatusCircle.h"
-#include "w3d_device/game_client/W3DScene.h"
-#include "w3d_device/game_client/W3DShadow.h"
-#include "w3d_device/game_client/heightmap.h"
+#include "GameClient/Drawable.h"
+#include "GameClient/GameClient.h"
+#include "GameClient/ParticleSys.h"
+#include "GameClient/RayEffect.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DGameClient.h"
+#include "W3DDevice/GameClient/W3DStatusCircle.h"
+#include "W3DDevice/GameClient/W3DScene.h"
+#include "W3DDevice/GameClient/W3DShadow.h"
+#include "W3DDevice/GameClient/heightmap.h"
 #include "WW3D2/Part_emt.h"
 #include "WW3D2/HAnim.h"
 #include "WW3D2/HTree.h"
@@ -111,7 +111,7 @@ void W3DGameClient::reset( void )
 /** allocate a new drawable using the thing template for initialization.
 	* if we want to have the thing manager actually contain the pools of
 	* object and drawable storage it seems OK to have it be friends with the
-	* game_logic/Client for those purposes, or we could put the allocation pools
+	* GameLogic/Client for those purposes, or we could put the allocation pools
 	* in the GameLogic and GameClient themselves */
 //-------------------------------------------------------------------------------------------------
 Drawable *W3DGameClient::friend_createDrawable( const ThingTemplate *tmplate,

@@ -25,12 +25,12 @@
 ////// W3DWebBrowser.cpp ///////////////
 // July 2002 Bryan Cleveland
 
-#include "w3d_device/game_client/W3DWebBrowser.h"
+#include "W3DDevice/GameClient/W3DWebBrowser.h"
 #include "WW3D2/Texture.h"
 #include "WW3D2/TextureLoader.h"
 #include "WW3D2/SurfaceClass.h"
-#include "game_client/Image.h"
-#include "game_client/GameWindow.h"
+#include "GameClient/Image.h"
+#include "GameClient/GameWindow.h"
 #include "vector2i.h"
 #include <d3dx8.h>
 #include "WW3D2/dx8wrapper.h"

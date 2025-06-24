@@ -26,8 +26,8 @@
 // Class to handle tile data.
 // Author: John Ahlquist, April 2001
 
-#include "w3d_device/game_client/TileData.h"
-#include "w3d_device/game_client/WorldHeightMap.h"
+#include "W3DDevice/GameClient/TileData.h"
+#include "W3DDevice/GameClient/WorldHeightMap.h"
 
 
 

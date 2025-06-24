@@ -45,17 +45,17 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/W3DTreeBuffer.h"
+#include "W3DDevice/GameClient/W3DTreeBuffer.h"
 
 #include <stdio.h>
 #include <string.h>
 #include <assetmgr.h>
 #include <texture.h>
 #include "common/GlobalData.h"
-#include "game_client/ClientRandomValue.h"
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/W3DDynamicLight.h"
+#include "GameClient/ClientRandomValue.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/W3DDynamicLight.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/DX8Renderer.h"

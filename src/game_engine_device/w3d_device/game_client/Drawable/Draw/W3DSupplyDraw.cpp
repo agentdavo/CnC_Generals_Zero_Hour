@@ -28,8 +28,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "w3d_device/game_client/Module/W3DSupplyDraw.h"
+#include "GameClient/Drawable.h"
+#include "W3DDevice/GameClient/Module/W3DSupplyDraw.h"
 
 //-------------------------------------------------------------------------------------------------
 W3DSupplyDrawModuleData::W3DSupplyDrawModuleData() 
@@ -82,13 +82,13 @@ void W3DSupplyDraw::updateDrawModuleSupplyStatus( Int maxSupply, Int currentSupp
 	// Figure the % of our bones we should show, and if it is a different % than last time
 	// start showing and hiding them.
 	Int bonesToShow = ceil(m_totalBones * ( currentSupply / (float)maxSupply ));
-    bonesToShow = ww_min( bonesToShow, m_totalBones );
+	bonesToShow = min( bonesToShow, m_totalBones );
 
 	if( bonesToShow != m_lastNumberShown )
 	{
 		// Show/hide the bones that are now different, the indices between last and now (low, high].
-            Int lowIndex = ww_min( m_lastNumberShown, bonesToShow );
-            Int highIndex = ww_max( m_lastNumberShown, bonesToShow );
+		Int lowIndex = min( m_lastNumberShown, bonesToShow );
+		Int highIndex = max( m_lastNumberShown, bonesToShow );
 		Bool hide = bonesToShow < m_lastNumberShown;
 		Int currentIndex = lowIndex + 1;
 

@@ -47,9 +47,9 @@
 //-----------------------------------------------------------------------------
 #include <stdlib.h>
 
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/WorldHeightMap.h"
-#include "w3d_device/game_client/TileData.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/WorldHeightMap.h"
+#include "W3DDevice/GameClient/TileData.h"
 #include "common/GlobalData.h"
 #include "WW3D2/dx8wrapper.h"
 #include "d3dx8tex.h"

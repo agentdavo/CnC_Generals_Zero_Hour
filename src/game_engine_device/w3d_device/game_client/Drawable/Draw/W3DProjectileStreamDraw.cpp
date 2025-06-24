@@ -28,11 +28,11 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "game_logic/Object.h"
-#include "w3d_device/game_client/Module/W3DProjectileStreamDraw.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/W3DScene.h"
+#include "GameClient/Drawable.h"
+#include "GameLogic/Object.h"
+#include "W3DDevice/GameClient/Module/W3DProjectileStreamDraw.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/W3DScene.h"
 #include "WW3D2/AssetMgr.h"
 #include "WW3D2/Segline.h"
 #include "WWMath/Vector3.h"
@@ -151,7 +151,7 @@ void W3DProjectileStreamDraw::doDrawModule(const Matrix3D* )
 		// If I have a drawing cap, I need to increase the start point in the array.  The furthest (oldest)
 		// point from the tank is in spot zero.
 		currentMasterPoint = pointsUsed - data->m_maxSegments;
-            currentMasterPoint = ww_max( 0, currentMasterPoint ); // (but if they say to draw more than exists, draw all)
+		currentMasterPoint = max( 0, currentMasterPoint ); // (but if they say to draw more than exists, draw all)
 	}
 
 	// Okay.  I have an array of ordered points that may have blanks in it.  I need to copy to the staging area

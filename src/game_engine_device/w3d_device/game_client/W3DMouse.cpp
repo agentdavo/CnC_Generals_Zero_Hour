@@ -36,14 +36,14 @@
 
 #include "assetmgr.h"
 
-#include "w3d_device/common/W3DConvert.h"
-#include "w3d_device/game_client/W3DMouse.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
-#include "w3d_device/game_client/W3DScene.h"
-#include "game_client/Display.h"
-#include "game_client/Image.h"
-#include "game_client/InGameUI.h"
+#include "W3DDevice/common/W3DConvert.h"
+#include "W3DDevice/GameClient/W3DMouse.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DScene.h"
+#include "GameClient/Display.h"
+#include "GameClient/Image.h"
+#include "GameClient/InGameUI.h"
 #include "mutex.h"
 #include "thread.h"
 

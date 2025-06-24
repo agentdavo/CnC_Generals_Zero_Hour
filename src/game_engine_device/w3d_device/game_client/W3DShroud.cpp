@@ -33,14 +33,14 @@
 #include "dx8wrapper.h"
 #include "common/MapObject.h"
 #include "common/PerfTimer.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/W3DPoly.h"
-#include "w3d_device/game_client/W3DShaderManager.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/W3DPoly.h"
+#include "W3DDevice/GameClient/W3DShaderManager.h"
 #include "assetmgr.h"
-#include "w3d_device/game_client/W3DShroud.h"
+#include "W3DDevice/GameClient/W3DShroud.h"
 #include "WW3D2/textureloader.h"
 #include "common/GlobalData.h"
-#include "game_logic/PartitionManager.h"
+#include "GameLogic/PartitionManager.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

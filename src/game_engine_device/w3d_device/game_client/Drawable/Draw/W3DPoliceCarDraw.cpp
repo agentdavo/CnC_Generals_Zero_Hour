@@ -32,12 +32,12 @@
 #include "common/STLTypedefs.h"
 #include "common/Thing.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "w3d_device/game_client/Module/W3DPoliceCarDraw.h"
-#include "w3d_device/game_client/W3DDisplay.h"
+#include "GameClient/Drawable.h"
+#include "W3DDevice/GameClient/Module/W3DPoliceCarDraw.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
 #include "common/RandomValue.h"
 #include "WW3D2/HAnim.h"
-#include "w3d_device/game_client/W3DScene.h"
+#include "W3DDevice/GameClient/W3DScene.h"
 
 // PRIVATE FUNCTIONS //////////////////////////////////////////////////////////////////////////////
 

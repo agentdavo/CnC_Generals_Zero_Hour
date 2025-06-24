@@ -33,10 +33,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "game_logic/Object.h"
-#include "game_logic/Module/ContainModule.h"
-#include "w3d_device/game_client/Module/W3DDependencyModelDraw.h"
+#include "GameClient/Drawable.h"
+#include "GameLogic/Object.h"
+#include "GameLogic/Module/ContainModule.h"
+#include "W3DDevice/GameClient/Module/W3DDependencyModelDraw.h"
 
 //-------------------------------------------------------------------------------------------------
 W3DDependencyModelDrawModuleData::W3DDependencyModelDrawModuleData() 

@@ -46,10 +46,10 @@
 //         Includes                                                      
 //-----------------------------------------------------------------------------
 
-#include "w3d_device/game_client/W3DDebugIcons.h"
+#include "W3DDevice/GameClient/W3DDebugIcons.h"
 
 #include "common/GlobalData.h"
-#include "game_logic/GameLogic.h"
+#include "GameLogic/GameLogic.h"
 #include "common/MapObject.h"
 #include "WW3D2/DX8Wrapper.h"
 

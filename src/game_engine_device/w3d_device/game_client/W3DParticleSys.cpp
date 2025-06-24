@@ -26,11 +26,11 @@
 // W3D Particle System implementation
 // Author: Michael S. Booth, November 2001
 
-#include "game_client/Color.h"
-#include "w3d_device/game_client/W3DParticleSys.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/heightmap.h"
+#include "GameClient/Color.h"
+#include "W3DDevice/GameClient/W3DParticleSys.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/heightmap.h"
 #include "WW3D2/Camera.h"
 
 //------------------------------------------------------------------------------ Performance Timers 

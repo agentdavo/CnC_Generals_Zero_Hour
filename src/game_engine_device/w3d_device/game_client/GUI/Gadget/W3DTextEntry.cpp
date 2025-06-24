@@ -47,11 +47,11 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "game_client/GameWindowGlobal.h"
-#include "game_client/GadgetTextEntry.h"
-#include "game_client/IMEManager.h"
-#include "w3d_device/game_client/W3DGadget.h"
-#include "w3d_device/game_client/W3DDisplay.h"
+#include "GameClient/GameWindowGlobal.h"
+#include "GameClient/GadgetTextEntry.h"
+#include "GameClient/IMEManager.h"
+#include "W3DDevice/GameClient/W3DGadget.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

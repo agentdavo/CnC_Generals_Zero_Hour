@@ -46,7 +46,7 @@
 #include "common/GlobalData.h"
 #include "common/MapObject.h"
 #include "common/Registry.h"
-#include "w3d_device/game_client/W3DFileSystem.h"
+#include "W3DDevice/GameClient/W3DFileSystem.h"
 // DEFINES ////////////////////////////////////////////////////////////////////////////////////////
 
 #include <io.h>

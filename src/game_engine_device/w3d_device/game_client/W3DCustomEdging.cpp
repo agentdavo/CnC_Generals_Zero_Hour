@@ -45,7 +45,7 @@
 //-----------------------------------------------------------------------------
 //         Includes                                                      
 //-----------------------------------------------------------------------------
-#include "w3d_device/game_client/W3DCustomEdging.h"
+#include "W3DDevice/GameClient/W3DCustomEdging.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -53,9 +53,9 @@
 #include <texture.h>
 #include "common/GlobalData.h"
 #include "common/RandomValue.h"
-#include "w3d_device/game_client/TerrainTex.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/W3DDynamicLight.h"
+#include "W3DDevice/GameClient/TerrainTex.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/W3DDynamicLight.h"
 #include "WW3D2/Camera.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/DX8Renderer.h"

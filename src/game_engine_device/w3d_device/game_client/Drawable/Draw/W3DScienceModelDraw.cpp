@@ -27,7 +27,7 @@
 // Desc: Draw module just like Model, except it only draws if the local player has the specified science
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include "w3d_device/game_client/Module/W3DScienceModelDraw.h"
+#include "W3DDevice/GameClient/Module/W3DScienceModelDraw.h"
 
 #include "common/Player.h"
 #include "common/PlayerList.h"

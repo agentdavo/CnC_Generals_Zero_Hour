@@ -33,10 +33,10 @@
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_logic/Object.h"
-#include "game_client/Drawable.h"
-#include "w3d_device/game_client/Module/W3DPropDraw.h"
-#include "w3d_device/game_client/BaseHeightMap.h"
+#include "GameLogic/Object.h"
+#include "GameClient/Drawable.h"
+#include "W3DDevice/GameClient/Module/W3DPropDraw.h"
+#include "W3DDevice/GameClient/BaseHeightMap.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

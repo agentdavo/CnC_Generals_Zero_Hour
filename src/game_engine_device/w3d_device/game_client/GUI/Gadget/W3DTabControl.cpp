@@ -34,7 +34,7 @@
 //
 // Project:   RTS3
 //
-// File name: projects\RTS\code\gameenginedevice\Source\w3d_device\GameClient\GUI\Gadget\W3DTabControl.cpp
+// File name: projects\RTS\code\gameenginedevice\Source\W3DDevice\GameClient\GUI\Gadget\W3DTabControl.cpp
 //
 // Created:   Graham Smallwood, November 2001
 //
@@ -47,12 +47,12 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "game_client/GameWindowGlobal.h"
-#include "game_client/GameWindowManager.h"
-#include "game_client/GadgetTabControl.h"
-#include "w3d_device/game_client/W3DGameWindow.h"
-#include "w3d_device/game_client/W3DGadget.h"
-#include "w3d_device/game_client/W3DDisplay.h"
+#include "GameClient/GameWindowGlobal.h"
+#include "GameClient/GameWindowManager.h"
+#include "GameClient/GadgetTabControl.h"
+#include "W3DDevice/GameClient/W3DGameWindow.h"
+#include "W3DDevice/GameClient/W3DGadget.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
 
 // DEFINES ////////////////////////////////////////////////////////////////////
 

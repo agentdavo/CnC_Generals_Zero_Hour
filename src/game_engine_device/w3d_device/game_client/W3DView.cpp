@@ -46,41 +46,41 @@
 #include "common/PlayerList.h"
 #include "common/Player.h"
 
-#include "game_client/Color.h"
-#include "game_client/CommandXlat.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
-#include "game_client/GameWindowManager.h"
-#include "game_client/Image.h"
-#include "game_client/InGameUI.h"
-#include "game_client/Line2D.h"
-#include "game_client/SelectionInfo.h"
-#include "game_client/Shell.h"
-#include "game_client/TerrainVisual.h"
-#include "game_client/Water.h"
+#include "GameClient/Color.h"
+#include "GameClient/CommandXlat.h"
+#include "GameClient/Drawable.h"
+#include "GameClient/GameClient.h"
+#include "GameClient/GameWindowManager.h"
+#include "GameClient/Image.h"
+#include "GameClient/InGameUI.h"
+#include "GameClient/Line2D.h"
+#include "GameClient/SelectionInfo.h"
+#include "GameClient/Shell.h"
+#include "GameClient/TerrainVisual.h"
+#include "GameClient/Water.h"
 
-#include "game_logic/AI.h"		  ///< For AI debug (yes, I'm cheating for now)
-#include "game_logic/AIPathfind.h" ///< For AI debug (yes, I'm cheating for now)
-#include "game_logic/ExperienceTracker.h"
-#include "game_logic/GameLogic.h"
-#include "game_logic/Module/AIUpdate.h"
-#include "game_logic/Module/BodyModule.h"
-#include "game_logic/Module/ContainModule.h"
-#include "game_logic/Module/OpenContain.h"
-#include "game_logic/Object.h"
-#include "game_logic/ScriptEngine.h"
-#include "game_logic/TerrainLogic.h" ///< @todo This should be TerrainVisual (client side)
+#include "GameLogic/AI.h"		  ///< For AI debug (yes, I'm cheating for now)
+#include "GameLogic/AIPathfind.h" ///< For AI debug (yes, I'm cheating for now)
+#include "GameLogic/ExperienceTracker.h"
+#include "GameLogic/GameLogic.h"
+#include "GameLogic/Module/AIUpdate.h"
+#include "GameLogic/Module/BodyModule.h"
+#include "GameLogic/Module/ContainModule.h"
+#include "GameLogic/Module/OpenContain.h"
+#include "GameLogic/Object.h"
+#include "GameLogic/ScriptEngine.h"
+#include "GameLogic/TerrainLogic.h" ///< @todo This should be TerrainVisual (client side)
 
-#include "w3d_device/common/W3DConvert.h"
-#include "w3d_device/game_client/HeightMap.h"
-#include "w3d_device/game_client/W3DAssetManager.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/W3DScene.h"
-#include "w3d_device/game_client/W3DView.h"
+#include "W3DDevice/common/W3DConvert.h"
+#include "W3DDevice/GameClient/HeightMap.h"
+#include "W3DDevice/GameClient/W3DAssetManager.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/W3DScene.h"
+#include "W3DDevice/GameClient/W3DView.h"
 #include "D3dx8math.h"
-#include "w3d_device/game_client/W3DShaderManager.h"
-#include "w3d_device/game_client/Module/W3DModelDraw.h"
-#include "w3d_device/game_client/W3DCustomScene.h"
+#include "W3DDevice/GameClient/W3DShaderManager.h"
+#include "W3DDevice/GameClient/Module/W3DModelDraw.h"
+#include "W3DDevice/GameClient/W3DCustomScene.h"
 
 #include "WW3D2/DX8Renderer.h"
 #include "WW3D2/Light.h"
@@ -150,10 +150,10 @@ static Real getHeightAroundPos(Real x, Real y)
 
 	// find best approximation of max terrain height we can see
 	Real terrainHeightMax = terrainHeight;
-    terrainHeightMax = ww_max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x + TERRAIN_SAMPLE_SIZE, y - TERRAIN_SAMPLE_SIZE));
-    terrainHeightMax = ww_max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x - TERRAIN_SAMPLE_SIZE, y - TERRAIN_SAMPLE_SIZE));
-    terrainHeightMax = ww_max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x + TERRAIN_SAMPLE_SIZE, y + TERRAIN_SAMPLE_SIZE));
-    terrainHeightMax = ww_max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x - TERRAIN_SAMPLE_SIZE, y + TERRAIN_SAMPLE_SIZE));
+	terrainHeightMax = max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x + TERRAIN_SAMPLE_SIZE, y - TERRAIN_SAMPLE_SIZE));
+	terrainHeightMax = max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x - TERRAIN_SAMPLE_SIZE, y - TERRAIN_SAMPLE_SIZE));
+	terrainHeightMax = max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x + TERRAIN_SAMPLE_SIZE, y + TERRAIN_SAMPLE_SIZE));
+	terrainHeightMax = max(terrainHeightMax, TheTerrainLogic->getGroundHeight(x - TERRAIN_SAMPLE_SIZE, y + TERRAIN_SAMPLE_SIZE));
 
 	return terrainHeightMax;
 }

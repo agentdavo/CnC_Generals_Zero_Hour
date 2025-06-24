@@ -53,23 +53,23 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "game_client/GameWindow.h"
+#include "GameClient/GameWindow.h"
 #include "Lib/BaseType.h"
-#include "w3d_device/game_client/W3DGameWindow.h"
-#include "game_client/Display.h"
-#include "game_logic/GameLogic.h"
-#include "game_client/Shell.h"
-#include "game_client/ShellMenuScheme.h"
-#include "game_client/Credits.h"
+#include "W3DDevice/GameClient/W3DGameWindow.h"
+#include "GameClient/Display.h"
+#include "GameLogic/GameLogic.h"
+#include "GameClient/Shell.h"
+#include "GameClient/ShellMenuScheme.h"
+#include "GameClient/Credits.h"
 
-#include "game_client/Gadget.h"
-#include "game_client/GameWindowGlobal.h"
-#include "game_client/GameWindowManager.h"
-#include "game_client/GadgetPushButton.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/W3DGadget.h"
+#include "GameClient/Gadget.h"
+#include "GameClient/GameWindowGlobal.h"
+#include "GameClient/GameWindowManager.h"
+#include "GameClient/GadgetPushButton.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/W3DGadget.h"
 
-#include "game_client/GUICallbacks.h"
+#include "GameClient/GUICallbacks.h"
 
 //-----------------------------------------------------------------------------
 // DEFINES ////////////////////////////////////////////////////////////////////

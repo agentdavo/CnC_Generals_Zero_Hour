@@ -33,13 +33,13 @@
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
-#include "game_logic/GameLogic.h"
-#include "w3d_device/game_client/W3DDisplay.h"
-#include "w3d_device/game_client/Module/W3DTracerDraw.h"
+#include "GameClient/Drawable.h"
+#include "GameClient/GameClient.h"
+#include "GameLogic/GameLogic.h"
+#include "W3DDevice/GameClient/W3DDisplay.h"
+#include "W3DDevice/GameClient/Module/W3DTracerDraw.h"
 #include "WW3D2/Line3D.h"
-#include "w3d_device/game_client/W3DScene.h"
+#include "W3DDevice/GameClient/W3DScene.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

@@ -22,7 +22,7 @@
 //																																						//
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "w3d_device/game_client/W3DStatusCircle.h"
+#include "W3DDevice/GameClient/W3DStatusCircle.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -38,8 +38,8 @@
 #include "WW3D2/Shader.h"
 #include "common/GlobalData.h"
 #include "common/MapObject.h"
-#include "game_logic/GameLogic.h"
-#include "game_logic/ScriptEngine.h"
+#include "GameLogic/GameLogic.h"
+#include "GameLogic/ScriptEngine.h"
 
 #define SC_DETAIL_BLEND ( SHADE_CNST(ShaderClass::PASS_LEQUAL, ShaderClass::DEPTH_WRITE_ENABLE, ShaderClass::COLOR_WRITE_ENABLE, ShaderClass::SRCBLEND_ONE, \
 	ShaderClass::DSTBLEND_ZERO, ShaderClass::FOG_DISABLE, ShaderClass::GRADIENT_MODULATE, ShaderClass::SECONDARY_GRADIENT_DISABLE, ShaderClass::TEXTURING_ENABLE, \
