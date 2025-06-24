@@ -54,7 +54,6 @@
 #include "wwprofile.h"
 #include "wwdebug.h"
 #include <chrono>
-#include "common/windows.h"
 #include <cstdint>
 
 /***********************************************************************************************
@@ -71,23 +70,8 @@
  *=============================================================================================*/
 inline void WWProfile_Get_Ticks(int64_t *ticks)
 {
-#ifdef _WIN32
-        __asm
-        {
-                push edx;
-                push ecx;
-                mov ecx,ticks;
-                _emit 0Fh
-                _emit 31h
-                mov [ecx],eax;
-                mov [ecx+4],edx;
-                pop ecx;
-                pop edx;
-        }
-#else
         using namespace std::chrono;
         *ticks = duration_cast<nanoseconds>(steady_clock::now().time_since_epoch()).count();
-#endif
 }
 
 /***********************************************************************************************
@@ -104,20 +88,8 @@ inline void WWProfile_Get_Ticks(int64_t *ticks)
  *=============================================================================================*/
 inline float WWProfile_Get_Tick_Rate(void)
 {
-#ifdef _UNIX
-	return (0);
-#else
-	static float _CPUFrequency = -1.0f;
-
-	if (_CPUFrequency == -1.0f)
-	{
-		int64_t curr_rate = 0;
-		::QueryPerformanceFrequency((LARGE_INTEGER *)&curr_rate);
-		_CPUFrequency = (float)curr_rate;
-	}
-
-	return _CPUFrequency;
-#endif
+        // steady_clock reports time in nanoseconds
+        return 1000000000.0f;
 }
 
 /***********************************************************************************************
