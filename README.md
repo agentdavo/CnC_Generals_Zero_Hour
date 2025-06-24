@@ -46,6 +46,7 @@ cmake -S . -B build
 cmake --build build
 ```
 This will compile a placeholder executable while migration is in progress.
+You can redirect the output to a log file if desired, but it is not required.
 
 To try the minimal LVGL example without the game engine run:
 ```
