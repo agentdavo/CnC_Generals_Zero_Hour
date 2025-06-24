@@ -167,12 +167,13 @@ VectorClass<T>::VectorClass(int size, T const * array) :
 	**	object in this vector.
 	*/
 	if (size) {
-		if (array) {
-			Vector = new((void*)array) T[size];
-		} else {
-			Vector = W3DNEWARRAY T[size];
-			IsAllocated = true;
-		}
+               Vector = W3DNEWARRAY T[size];
+               IsAllocated = true;
+               if (array) {
+                        for (int i = 0; i < size; ++i) {
+                                Vector[i] = array[i];
+                        }
+               }
 	}
 }
 
@@ -416,11 +417,12 @@ bool VectorClass<T>::Resize(int newsize, T const * array)
 		**	elements may look to the vector to fetch their ID number.
 		*/
 		IsValid = false;
-		if (!array) {
-			newptr = W3DNEWARRAY T[newsize];
-		} else {
-			newptr = new((void*)array) T[newsize];
-		}
+               newptr = W3DNEWARRAY T[newsize];
+               if (array) {
+                        for (int i = 0; i < newsize; ++i) {
+                                newptr[i] = array[i];
+                        }
+               }
 		IsValid = true;
 		if (!newptr) {
 			return(false);
@@ -669,7 +671,7 @@ bool DynamicVectorClass<T>::Add(T const & object)
 {
 	if (ActiveCount >= Length()) {
 		if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
-			if (!Resize(Length() + GrowthStep)) {
+			if (!this->Resize(this->Length() + GrowthStep)) {
 
 				/*
 				**	Failure to increase the size of the vector is an error condition.
@@ -866,9 +868,9 @@ bool DynamicVectorClass<T>::Delete(int index)
 template<class T>
 void DynamicVectorClass<T>::Delete_All(void) 
 {
-	int len = VectorMax;
-	Clear();		// Forces destructor call on each object.
-	Resize(len);
+	int len = this->VectorMax;
+	this->Clear();		// Forces destructor call on each object.
+	this->Resize(len);
 }
 
 
@@ -894,9 +896,9 @@ void DynamicVectorClass<T>::Delete_All(void)
 template<class T>
 T * DynamicVectorClass<T>::Uninitialized_Add(void)
 {
-	if (ActiveCount >= Length()) {
-		if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
-			if (!Resize(Length() + GrowthStep)) {
+	if (this->ActiveCount >= this->Length()) {
+		if ((this->IsAllocated || !this->VectorMax) && GrowthStep > 0) {
+			if (!this->Resize(this->Length() + GrowthStep)) {
 
 				/*
 				**	Failure to increase the size of the vector is an error condition.
@@ -918,7 +920,7 @@ T * DynamicVectorClass<T>::Uninitialized_Add(void)
 	**	There is room for the new space now. Add it to the end of the object
    ** vector. and return a pointer to it.
 	*/
-   return &((*this)[ActiveCount++]);
+   return &((*this)[this->ActiveCount++]);
 }
 
 

@@ -60,3 +60,50 @@ static inline DWORD timeGetTime()
                                   steady_clock::now().time_since_epoch())
                                   .count());
 }
+
+// Minimal Win32 synchronization stubs
+#ifndef _WIN32
+#include <mutex>
+
+struct WinMutex {
+    std::mutex m;
+};
+
+static inline HANDLE CreateMutex(LPVOID, BOOL initialOwner, LPCSTR)
+{
+    auto *wm = new WinMutex();
+    if (initialOwner)
+        wm->m.lock();
+    return wm;
+}
+
+static inline BOOL ReleaseMutex(HANDLE h)
+{
+    auto *wm = static_cast<WinMutex *>(h);
+    wm->m.unlock();
+    return 1;
+}
+
+static inline DWORD WaitForSingleObject(HANDLE h, DWORD ms)
+{
+    auto *wm = static_cast<WinMutex *>(h);
+    if (ms == INFINITE) {
+        wm->m.lock();
+        return WAIT_OBJECT_0;
+    }
+    using namespace std::chrono;
+    auto deadline = steady_clock::now() + milliseconds(ms);
+    while (!wm->m.try_lock()) {
+        if (steady_clock::now() >= deadline)
+            return WAIT_TIMEOUT;
+        std::this_thread::sleep_for(milliseconds(1));
+    }
+    return WAIT_OBJECT_0;
+}
+
+static inline BOOL CloseHandle(HANDLE h)
+{
+    delete static_cast<WinMutex *>(h);
+    return 1;
+}
+#endif // _WIN32

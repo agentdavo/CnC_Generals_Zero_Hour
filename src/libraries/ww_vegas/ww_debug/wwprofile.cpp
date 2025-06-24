@@ -54,11 +54,6 @@
 #include "wwprofile.h"
 #include "wwdebug.h"
 #include "common/windows.h"
-<<<<<<< Updated upstream:src/Libraries/WWVegas/WWDebug/wwprofile.cpp
-
-
-=======
->>>>>>> Stashed changes:src/libraries/ww_vegas/WWDebug/wwprofile.cpp
 
 /***********************************************************************************************
  * WWProfile_Get_Ticks -- Retrieves the cpu performance counter                                *
