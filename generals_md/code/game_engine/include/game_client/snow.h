@@ -23,7 +23,7 @@
 #define _SNOW_H_
 
 #include "lib/base_type.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "Common/Overridable.h"
 #include "Common/Override.h"
 #include "WWMATH/Vector3.h"

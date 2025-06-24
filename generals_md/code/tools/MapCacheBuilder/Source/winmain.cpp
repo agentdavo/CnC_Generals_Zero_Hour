@@ -54,7 +54,7 @@
 #include "Common/FileSystem.h"
 #include "Win32Device/Common/Win32LocalFileSystem.h"
 #include "Win32Device/Common/Win32BIGFileSystem.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameClient/MapUtil.h"
 #include "W3DDevice/Common/W3DModuleFactory.h"
 
@@ -67,7 +67,7 @@
 #include "Common/GameMemory.h"
 #include "Common/Science.h"
 #include "Common/ThingFactory.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/GameAudio.h"
 #include "Common/SpecialPower.h"
 #include "Common/TerrainTypes.h"

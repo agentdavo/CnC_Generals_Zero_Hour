@@ -28,7 +28,7 @@
 #ifndef __LANGUAGEFILTER_H
 #define __LANGUAGEFILTER_H
 
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "common/ascii_string.h"
 #include "Common/UnicodeString.h"
 

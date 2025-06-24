@@ -32,7 +32,7 @@
 #ifndef __GAMEFONT_H_
 #define __GAMEFONT_H_
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "lib/base_type.h"
 #include "Common/AsciiString.h"
 #include "Common/GameMemory.h"

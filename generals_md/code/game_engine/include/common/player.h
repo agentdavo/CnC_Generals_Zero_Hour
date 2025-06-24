@@ -59,7 +59,7 @@
 #include "Common/UnicodeString.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/Thing.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Common/ScoreKeeper.h"
 #include "Common/Team.h"
 #include "Common/Upgrade.h"

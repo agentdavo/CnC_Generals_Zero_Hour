@@ -31,7 +31,7 @@
 #ifndef _RANDOM_VALUE_H_
 #define _RANDOM_VALUE_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 extern void InitRandom( void );
 extern void InitRandom( UnsignedInt seed );

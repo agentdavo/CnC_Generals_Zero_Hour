@@ -33,7 +33,7 @@
 #include "common/MessageStream.h"
 #include "common/GameEngine.h"
 #include "common/GlobalData.h"
-#include "common/INI.h"
+#include "common/ini.h"
 
 #include "GameClient/Display.h"
 #include "GameClient/DisplayStringManager.h"

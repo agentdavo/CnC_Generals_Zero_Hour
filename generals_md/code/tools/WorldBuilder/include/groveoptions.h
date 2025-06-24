@@ -25,7 +25,7 @@
 #include <vector>
 #include "worldbuilder.h"
 #include "OptionsPanel.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 // Used to store Display names in conjunction with internal names.
 typedef std::pair<AsciiString, UnicodeString>							PairNameDisplayName;

@@ -23,16 +23,16 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include <set>
 
-<<<<<<< Updated upstream:src/GameEngine/GameNetwork/GameSpy/PeerDefs.cpp
-#include "Common/GameState.h"
-#include "Common/RandomValue.h"
-#include "Common/IgnorePreferences.h"
-#include "Common/CustomMatchPreferences.h"
-#include "Common/GameSpyMiscPreferences.h"
-#include "Common/Recorder.h"
-#include "Common/Player.h"
-#include "Common/PlayerList.h"
-#include "Common/PlayerTemplate.h"
+<<<<<<< Updated upstream:src/game_engine/GameNetwork/GameSpy/PeerDefs.cpp
+#include "common/GameState.h"
+#include "common/RandomValue.h"
+#include "common/IgnorePreferences.h"
+#include "common/CustomMatchPreferences.h"
+#include "common/GameSpyMiscPreferences.h"
+#include "common/Recorder.h"
+#include "common/Player.h"
+#include "common/PlayerList.h"
+#include "common/PlayerTemplate.h"
 =======
 #include "common/GameState.h"
 #include "common/RandomValue.h"
@@ -44,7 +44,7 @@
 #include "common/PlayerList.h"
 #include "common/PlayerTemplate.h"
 >>>>>>> Stashed changes:src/game_engine/GameNetwork/GameSpy/PeerDefs.cpp
-#include "common/File.h"
+#include "common/file.h"
 #include "GameClient/MapUtil.h"
 #include "GameClient/ShellHooks.h"
 #include "GameClient/GameText.h"

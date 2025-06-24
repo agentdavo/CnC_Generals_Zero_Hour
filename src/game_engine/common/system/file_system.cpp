@@ -46,12 +46,12 @@
 //----------------------------------------------------------------------------
 
 #include "PreRTS.h"
-#include "common/File.h"
-<<<<<<< Updated upstream:src/GameEngine/Common/System/FileSystem.cpp
-#include "Common/FileSystem.h"
+#include "common/file.h"
+<<<<<<< Updated upstream:src/game_engine/common/System/FileSystem.cpp
+#include "common/FileSystem.h"
 =======
 #include "common/FileSystem.h"
->>>>>>> Stashed changes:src/game_engine/Common/System/FileSystem.cpp
+>>>>>>> Stashed changes:src/game_engine/common/System/FileSystem.cpp
 
 #include "common/ArchiveFileSystem.h"
 #include "common/CDManager.h"

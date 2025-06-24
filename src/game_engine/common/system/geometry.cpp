@@ -32,7 +32,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "common/Geometry.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
 

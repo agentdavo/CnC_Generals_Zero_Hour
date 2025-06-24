@@ -27,7 +27,7 @@
 
 #include "GameClient/LanguageFilter.h"
 #include "Common/FileSystem.h"
-#include "common/File.h"
+#include "common/file.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

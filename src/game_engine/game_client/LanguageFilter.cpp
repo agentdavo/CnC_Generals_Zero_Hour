@@ -26,12 +26,12 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "GameClient/LanguageFilter.h"
-<<<<<<< Updated upstream:src/GameEngine/GameClient/LanguageFilter.cpp
-#include "Common/FileSystem.h"
+<<<<<<< Updated upstream:src/game_engine/GameClient/LanguageFilter.cpp
+#include "common/FileSystem.h"
 =======
 #include "common/FileSystem.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/LanguageFilter.cpp
-#include "common/File.h"
+#include "common/file.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

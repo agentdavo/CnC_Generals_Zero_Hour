@@ -31,7 +31,7 @@
 #ifndef __GAMERESULTSTHREAD_H__
 #define __GAMERESULTSTHREAD_H__
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 
 // this class encapsulates a request for the thread
 class GameResultsRequest

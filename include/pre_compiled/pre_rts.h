@@ -84,7 +84,7 @@ class STLSpecialAlloc;
 #include "game_engine/common/subsystem_interface.h"
 
 #include "game_engine/common/GameCommon.h"
-#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/gamememory.h"
 #include "game_engine/common/GameType.h"
 #include "game_engine/common/GlobalData.h"
 

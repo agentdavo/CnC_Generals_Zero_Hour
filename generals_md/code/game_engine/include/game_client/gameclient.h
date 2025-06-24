@@ -34,8 +34,8 @@
 #include "common/GameType.h"
 #include "Common/MessageStream.h"		// for GameMessageTranslator
 #include "Common/Snapshot.h"
-#include "Common/STLTypedefs.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "common/stl_type_defs.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameClient/CommandXlat.h"
 #include "GameClient/Drawable.h"
 

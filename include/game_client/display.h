@@ -32,7 +32,7 @@
 #define _GAME_DISPLAY_H_
 
 #include <stdio.h>
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "View.h"
 #include "game_client/Color.h"
 #include "game_client/gamefont.h"

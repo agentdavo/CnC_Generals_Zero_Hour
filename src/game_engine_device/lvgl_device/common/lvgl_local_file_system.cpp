@@ -5,7 +5,7 @@
 #include "common/local_file.h"
 #include <fstream>
 #include <filesystem>
-#include "common/File.h"
+#include "common/file.h"
 
 File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 {

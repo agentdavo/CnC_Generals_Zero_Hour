@@ -33,7 +33,7 @@
 #define __UPGRADE_MODULE_H_
 
 #include "Common/Module.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 #include "game_client/Drawable.h"
 #include "game_client/FXList.h"

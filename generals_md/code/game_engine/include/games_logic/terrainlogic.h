@@ -34,7 +34,7 @@
 
 #include "Common/GameMemory.h"
 #include "Common/Snapshot.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GameClient/TerrainRoads.h"
 
 typedef std::vector<ICoord2D> VecICoord2D;

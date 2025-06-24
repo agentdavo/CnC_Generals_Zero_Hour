@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include "Common/Thing.h"
 #include "Common/ThingTemplate.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Player.h"
 #include "Common/Xfer.h"
 #include "GameClient/ParticleSys.h"

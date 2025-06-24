@@ -31,9 +31,9 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 #include "Common/GameEngine.h"
 #include "Common/GameSpyMiscPreferences.h"

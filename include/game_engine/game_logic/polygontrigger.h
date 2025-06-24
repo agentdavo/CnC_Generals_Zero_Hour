@@ -38,7 +38,7 @@
 
 #include "common/gamememory.h"
 #include "Common/Snapshot.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class DataChunkInput;
 class DataChunkOutput;

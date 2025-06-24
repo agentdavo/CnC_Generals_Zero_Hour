@@ -102,11 +102,11 @@ class STLSpecialAlloc;
 //------------------------------------------------------------------------------------ RTS Includes
 // Icky. These have to be in this order.
 #include "lib/base_type.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Common/Errors.h"
 #include "Common/Debug.h"
 #include "Common/AsciiString.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 
 #include "Common/GameCommon.h"
 #include "Common/GameMemory.h"
@@ -115,7 +115,7 @@ class STLSpecialAlloc;
 
 // You might not want Kindof in here because it seems like it changes frequently, but the problem
 // is that Kindof is included EVERYWHERE, so it might as well be precompiled.
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/KindOf.h"
 #include "Common/DisabledTypes.h"
 #include "Common/NameKeyGenerator.h"

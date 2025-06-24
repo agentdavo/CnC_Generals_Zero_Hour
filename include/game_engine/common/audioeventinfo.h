@@ -31,8 +31,8 @@
 #define _H_AUDIOEVENTINFO_
 
 #include "common/ascii_string.h"
-#include "game_engine/common/GameMemory.h"
-#include "Common/STLTypedefs.h"
+#include "game_engine/common/gamememory.h"
+#include "common/stl_type_defs.h"
 
 // DEFINES
 #define NO_INTENSIVE_AUDIO_DEBUG

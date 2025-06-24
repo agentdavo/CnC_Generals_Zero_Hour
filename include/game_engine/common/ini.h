@@ -35,7 +35,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include <stddef.h>	// for offsetof, which we don't use but everyone who includes us does
 #include "game_engine/common/namekeygenerator.h"
-#include "common/stltypedefs.h"
+#include "common/stl_type_defs.h"
 #include "common/ascii_string.h"
 #include "common/science.h"
 #include "common/gamecommon.h"

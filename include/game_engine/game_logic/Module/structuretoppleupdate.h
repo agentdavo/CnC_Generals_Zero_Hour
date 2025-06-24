@@ -36,7 +36,7 @@
 #include "GameLogic/Module/BehaviorModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/RandomValue.h"
 #include "game_client/ParticleSys.h"
 

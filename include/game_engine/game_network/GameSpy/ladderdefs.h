@@ -33,7 +33,7 @@
 
 #include "Common/UnicodeString.h"
 #include "common/ascii_string.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class GameWindow;
 

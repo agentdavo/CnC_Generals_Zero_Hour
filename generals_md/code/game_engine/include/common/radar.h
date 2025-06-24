@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "Common/GameMemory.h"
 #include "GameClient/Display.h"	// for ShroudLevel
 #include "GameClient/Color.h"

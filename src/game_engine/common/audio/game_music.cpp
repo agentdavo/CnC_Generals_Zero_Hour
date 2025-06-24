@@ -50,7 +50,7 @@
 #include "common/AudioEventRTS.h"
 #include "common/AudioRequest.h"
 #include "common/GameAudio.h"
-#include "common/INI.h"
+#include "common/ini.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

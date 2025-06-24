@@ -46,7 +46,7 @@
 //----------------------------------------------------------------------------
 
 #include "PreRTS.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 
 #include "Common/ArchiveFileSystem.h"

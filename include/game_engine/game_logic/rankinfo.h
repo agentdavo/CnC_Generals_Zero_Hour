@@ -35,7 +35,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "Common/Science.h"
 #include "Common/UnicodeString.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class Player;
 

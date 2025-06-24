@@ -29,17 +29,17 @@
 #include "PreRTS.h"
 #include <memory>
 
-<<<<<<< Updated upstream:src/GameEngine/Common/System/ArchiveFile.cpp
-#include "Common/ArchiveFile.h"
-#include "Common/ArchiveFileSystem.h"
-#include "common/File.h"
-#include "Common/PerfTimer.h"
+<<<<<<< Updated upstream:src/game_engine/common/System/ArchiveFile.cpp
+#include "common/ArchiveFile.h"
+#include "common/ArchiveFileSystem.h"
+#include "common/file.h"
+#include "common/PerfTimer.h"
 =======
 #include "common/ArchiveFile.h"
 #include "common/ArchiveFileSystem.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/PerfTimer.h"
->>>>>>> Stashed changes:src/game_engine/Common/System/ArchiveFile.cpp
+>>>>>>> Stashed changes:src/game_engine/common/System/ArchiveFile.cpp
 
 
 // checks to see if str matches searchString.  Search string is done in the

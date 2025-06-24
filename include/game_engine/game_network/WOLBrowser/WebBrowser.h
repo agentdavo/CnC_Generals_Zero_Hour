@@ -45,7 +45,7 @@
 #ifndef __WEBBROWSER_H__
 #define __WEBBROWSER_H__
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include <atlbase.h>
 #include "common/windows.h"
 #include <Common/GameMemory.h>

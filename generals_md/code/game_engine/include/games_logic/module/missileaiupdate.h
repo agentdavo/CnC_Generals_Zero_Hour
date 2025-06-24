@@ -35,7 +35,7 @@
 #include "Common/GlobalData.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/WeaponBonusConditionFlags.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "WWMath/Matrix3D.h"
 
 enum ParticleSystemID;

@@ -31,8 +31,8 @@
 #ifndef __VICTORYCONDITIONS_H__
 #define __VICTORYCONDITIONS_H__
 
-#include "GameEngine/Common/subsystem_interface.h"
-#include "Lib/BaseType.h"
+#include "game_engine/common/subsystem_interface.h"
+#include "lib/base_type.h"
 
 class Player;
 

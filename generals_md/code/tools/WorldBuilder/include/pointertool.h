@@ -27,7 +27,7 @@
 
 #include "PolygonTool.h"
 class WorldHeightMapEdit;
-#include "../../gameengine/include/common/MapObject.h"
+#include "../../game_engine/include/common/MapObject.h"
 
 class ModifyObjectUndoable;
 /*************************************************************************/

@@ -35,7 +35,7 @@
 #include "thread.h"
 
 #include "common/StackDump.h"
-#include "GameEngine/common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 
 //-------------------------------------------------------------------------
 

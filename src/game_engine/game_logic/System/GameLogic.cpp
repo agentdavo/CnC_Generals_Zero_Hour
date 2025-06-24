@@ -37,7 +37,7 @@
 #include "common/GameAudio.h"
 #include "common/GameEngine.h"
 #include "common/GameState.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/LatchRestore.h"
 #include "common/MapObject.h"
 #include "common/MultiplayerSettings.h"

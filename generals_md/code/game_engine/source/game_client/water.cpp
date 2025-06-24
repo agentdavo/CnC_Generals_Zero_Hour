@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "GameClient/Water.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 
 // GLOBALS ////////////////////////////////////////////////////////////////////////////////////////
 WaterSetting WaterSettings[ TIME_OF_DAY_COUNT ];

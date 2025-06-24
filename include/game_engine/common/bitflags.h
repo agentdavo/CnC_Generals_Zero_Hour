@@ -33,7 +33,7 @@
 #define __BitFlags_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class INI;
 class Xfer;

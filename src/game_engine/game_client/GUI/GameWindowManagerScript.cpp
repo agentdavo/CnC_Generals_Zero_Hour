@@ -49,20 +49,20 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
-<<<<<<< Updated upstream:src/GameEngine/GameClient/GUI/GameWindowManagerScript.cpp
-#include "Common/Debug.h"
-#include "common/File.h"
-#include "Common/FileSystem.h"
+<<<<<<< Updated upstream:src/game_engine/GameClient/GUI/GameWindowManagerScript.cpp
+#include "common/Debug.h"
+#include "common/file.h"
+#include "common/FileSystem.h"
 #include "common/gamememory.h"
-#include "common/Logger.h"
-#include "Common/NameKeyGenerator.h"
+#include "common/logger.h"
+#include "common/NameKeyGenerator.h"
 #include "game_engine/common/function_lexicon.h"
 =======
 #include "common/Debug.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/gamememory.h"
-#include "common/Logger.h"
+#include "common/logger.h"
 #include "common/NameKeyGenerator.h"
 #include "game_engine/common/function_lexicon.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/GUI/GameWindowManagerScript.cpp

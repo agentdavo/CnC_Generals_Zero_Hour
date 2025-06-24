@@ -33,7 +33,7 @@
 #include "common/GameState.h"
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/RandomValue.h"
 #include "common/Xfer.h"
 #include "GameClient/FXList.h"

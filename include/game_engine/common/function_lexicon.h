@@ -33,9 +33,9 @@
 #ifndef __FUNCTIONLEXICON_H_
 #define __FUNCTIONLEXICON_H_
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "game_engine/common/namekeygenerator.h"
-#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/gamememory.h"
 #include "game_client/gamewindow.h"
 #include "game_client/windowlayout.h"
 

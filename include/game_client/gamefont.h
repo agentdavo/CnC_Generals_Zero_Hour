@@ -32,10 +32,10 @@
 #ifndef __GAMEFONT_H_
 #define __GAMEFONT_H_
 
-#include "GameEngine/Common/subsystem_interface.h"
-#include "Lib/BaseType.h"
+#include "game_engine/common/subsystem_interface.h"
+#include "lib/base_type.h"
 #include "common/ascii_string.h"
-#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/gamememory.h"
 
 //-------------------------------------------------------------------------------------------------
 /** A font for use in the device independent game */

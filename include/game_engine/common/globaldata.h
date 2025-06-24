@@ -36,9 +36,9 @@
 #include "common/ascii_string.h"
 #include "Common/GameType.h"
 #include "common/gamememory.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "game_client/Color.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 // FORWARD DECLARATIONS ///////////////////////////////////////////////////////////////////////////
 struct FieldParse;

@@ -52,12 +52,12 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "game_client/gamefont.h"
 #include "game_client/color.h"
 #include "common/ascii_string.h"
 #include "game_engine/common/unicodestring.h"
-#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/gamememory.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 class DisplayStringManager;

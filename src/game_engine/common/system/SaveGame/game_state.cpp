@@ -29,7 +29,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/GameEngine.h"
 #include "common/GameState.h"

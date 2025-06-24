@@ -26,9 +26,9 @@
 #define CUNDOABLE_H
 
 #include "Lib\BaseType.h"
-#include "../../gameengine/include/common/MapObject.h"
-#include "../../gameengine/include/common/GameCommon.h"
-#include "../../gameengine/include/GameLogic/SidesList.h"
+#include "../../game_engine/include/common/MapObject.h"
+#include "../../game_engine/include/common/GameCommon.h"
+#include "../../game_engine/include/GameLogic/SidesList.h"
 #include "RefCount.h"
 #include <vector>
 

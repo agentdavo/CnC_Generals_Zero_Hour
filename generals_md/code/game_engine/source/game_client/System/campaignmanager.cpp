@@ -54,7 +54,7 @@
 
 #include "GameClient/CampaignManager.h"
 
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Xfer.h"
 #include "GameClient/ChallengeGenerals.h"//For TheChallengeGenerals, so I can save it too.
 #include "GameClient/GameClient.h"

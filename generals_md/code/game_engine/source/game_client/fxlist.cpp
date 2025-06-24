@@ -34,7 +34,7 @@
 
 #include "Common/DrawModule.h"
 #include "Common/GameAudio.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Player.h"
 #include "Common/PlayerList.h"
 #include "Common/RandomValue.h"

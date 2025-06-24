@@ -22,7 +22,7 @@
 //																																						//
 ////////////////////////////////////////////////////////////////////////////////
 
-// FILE: GameEngine/Common/subsystem_interface.h /////////////////////////////////////////////////////////////////////
+// FILE: game_engine/common/subsystem_interface.h /////////////////////////////////////////////////////////////////////
 // Author: Colin Day, October 2001
 // Description: Framework for subsystems singletons of the game engine
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,8 +32,8 @@
 #ifndef __SUBSYSTEMINTERFACE_H_
 #define __SUBSYSTEMINTERFACE_H_
 
-#include "Common/INI.h"
-#include "Common/STLTypedefs.h"	
+#include "common/ini.h"
+#include "common/stl_type_defs.h"	
 
 class Xfer;
 

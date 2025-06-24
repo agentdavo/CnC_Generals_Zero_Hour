@@ -35,7 +35,7 @@
 // no, please do NOT include this.
 //#include "GameLogic/Locomotor.h"
 #include "Common/GameCommon.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Common/Snapshot.h"
 
 class Locomotor;

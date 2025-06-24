@@ -46,7 +46,7 @@
 #include "Common/ProductionPrerequisite.h"
 #include "GameClient/GameClient.h"
 #include "GameClient/Drawable.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...
@@ -438,7 +438,7 @@ AsciiString TheThingTemplateBeingParsedName;
 //#define CHECK_THING_NAMES
 #ifdef CHECK_THING_NAMES
 
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 const char *outFilenameINI				= "thing.txt";
 const char *outFilenameStringFile	= "thingString.txt";

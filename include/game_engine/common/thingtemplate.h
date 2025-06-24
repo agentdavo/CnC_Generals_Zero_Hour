@@ -33,7 +33,7 @@
 #define __THINGTEMPLATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #include "common/audioEventRTS.h"
 #include "Common/FileSystem.h"
@@ -48,7 +48,7 @@
 
 #include "GameLogic/ArmorSet.h"
 #include "GameLogic/WeaponSet.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "game_client/Color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

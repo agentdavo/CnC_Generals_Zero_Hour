@@ -33,8 +33,8 @@
 #define __RAYEFFECT_H_
 
 // INCLUDE ////////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "lib/base_type.h"
+#include "game_engine/common/subsystem_interface.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Drawable;

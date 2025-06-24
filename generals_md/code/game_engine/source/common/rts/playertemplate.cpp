@@ -49,7 +49,7 @@
 #include "Common/GameCommon.h"
 #include "Common/PlayerTemplate.h"
 #include "Common/Player.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Science.h"
 #include "GameClient/Image.h"
 

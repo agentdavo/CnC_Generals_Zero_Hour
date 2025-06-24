@@ -34,7 +34,7 @@
 #define DEFINE_TIME_OF_DAY_NAMES
 
 #include "common/MultiplayerSettings.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "GameNetwork/GameInfo.h" // for PLAYERTEMPLATE_*
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////

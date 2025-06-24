@@ -55,7 +55,7 @@ public:
 #endif
 #include "Common/SparseMatchFinder.h"
 #include "game_client/ParticleSys.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Thing;

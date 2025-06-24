@@ -35,8 +35,8 @@
 #define __GAMEWINDOWMANAGER_H_
 
 
-#include "Common/STLTypedefs.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "common/stl_type_defs.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameClient/WindowLayout.h"
 #include "GameClient/KeyDefs.h"
 #include "GameClient/Gadget.h"

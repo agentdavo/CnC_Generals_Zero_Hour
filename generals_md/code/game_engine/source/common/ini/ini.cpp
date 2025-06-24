@@ -31,11 +31,11 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #define DEFINE_DEATH_NAMES
 
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/INIException.h"
 
 #include "Common/DamageFX.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 #include "Common/GameAudio.h"
 #include "Common/Science.h"

@@ -29,7 +29,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/AudioEventRTS.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "GameClient/GameText.h"
 #include "GameClient/GadgetListBox.h"
 #include "GameClient/LanguageFilter.h"

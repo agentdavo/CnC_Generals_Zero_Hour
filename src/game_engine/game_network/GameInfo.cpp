@@ -28,14 +28,14 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-<<<<<<< Updated upstream:src/GameEngine/GameNetwork/GameInfo.cpp
-#include "Common/CRCDebug.h"
-#include "common/File.h"
-#include "Common/FileSystem.h"
-#include "Common/GameState.h"
+<<<<<<< Updated upstream:src/game_engine/GameNetwork/GameInfo.cpp
+#include "common/CRCDebug.h"
+#include "common/file.h"
+#include "common/FileSystem.h"
+#include "common/GameState.h"
 =======
 #include "common/CRCDebug.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/GameState.h"
 >>>>>>> Stashed changes:src/game_engine/GameNetwork/GameInfo.cpp

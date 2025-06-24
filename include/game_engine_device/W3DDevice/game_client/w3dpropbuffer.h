@@ -53,7 +53,7 @@
 #include "always.h"
 #include "rendobj.h"
 #include "w3d_file.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/GameType.h"
 #include "common/asciiString.h"
 #include "common/GlobalData.h"

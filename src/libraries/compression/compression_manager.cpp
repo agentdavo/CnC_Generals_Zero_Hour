@@ -369,7 +369,7 @@ Int CompressionManager::decompressData(void *srcVoid, Int srcLen, void *destVoid
 
 #include "game_client/maputil.h"
 #include "common/FileSystem.h"
-#include "common/File.h"
+#include "common/file.h"
 
 #include "common/PerfTimer.h"
 enum

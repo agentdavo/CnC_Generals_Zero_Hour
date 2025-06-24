@@ -35,8 +35,8 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
 
-#include "Common/STLTypedefs.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "common/stl_type_defs.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "Common/GameMemory.h"
 #include "Common/AsciiString.h"
 #include "GameClient/Drawable.h"

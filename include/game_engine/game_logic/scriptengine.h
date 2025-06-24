@@ -34,10 +34,10 @@
 
 #include "Common/GameType.h"
 #include "common/gamememory.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Common/Science.h"
 #include "Common/Snapshot.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameLogic/Scripts.h"
 
 class DataChunkInput;

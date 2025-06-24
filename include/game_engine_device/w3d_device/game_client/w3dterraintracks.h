@@ -34,7 +34,7 @@
 #include "dx8indexbuffer.h"
 #include "shader.h"
 #include "vertmaterial.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #define MAX_TRACK_EDGE_COUNT	100	//maximum number of edges or divisions in track mark
 #define MAX_TRACK_OPAQUE_EDGE	25	//linear fade of edges will begin at this edge

@@ -33,7 +33,7 @@
 #define __GSCONFIG_H__
 
 #include "common/ascii_string.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class GameSpyConfigInterface
 {

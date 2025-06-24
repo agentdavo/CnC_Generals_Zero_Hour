@@ -29,7 +29,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include <stdlib.h>
-#include "common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "common/Thing.h"
 #include "common/Xfer.h"
 #include "GameClient/Drawable.h"

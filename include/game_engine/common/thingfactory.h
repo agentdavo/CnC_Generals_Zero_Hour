@@ -33,10 +33,10 @@
 #define __THINGFACTORY_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
-#include "Common/STLTypedefs.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "common/stl_type_defs.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "common/gamememory.h"
 #include "common/ascii_string.h"
 #include "game_client/Drawable.h"

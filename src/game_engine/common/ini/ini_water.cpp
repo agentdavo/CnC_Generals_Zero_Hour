@@ -32,7 +32,7 @@
 
 #define DEFINE_TIME_OF_DAY_NAMES
 
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/GameType.h"
 
 #include "GameClient/TerrainVisual.h"

@@ -22,7 +22,7 @@
 
 #include "StdAfx.h" 
 #include "resource.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "WHeightMapEdit.h"
 #include "W3DDevice/GameClient/TileData.h"
 #include "W3DDevice/GameClient/TerrainTex.h"

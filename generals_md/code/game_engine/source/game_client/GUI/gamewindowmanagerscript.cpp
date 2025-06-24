@@ -50,7 +50,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
 #include "Common/Debug.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 #include "Common/GameMemory.h"
 #include "Common/NameKeyGenerator.h"

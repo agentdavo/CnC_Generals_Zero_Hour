@@ -60,7 +60,7 @@
 #include "GameNetwork/GameSpy/PersistentStorageDefs.h"
 #include "GameNetwork/GameSpy/GSConfig.h"
 
-#include "common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

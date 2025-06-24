@@ -47,7 +47,7 @@
 #ifndef _MONEY_H_
 #define _MONEY_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/Debug.h"
 #include "Common/Snapshot.h"
 

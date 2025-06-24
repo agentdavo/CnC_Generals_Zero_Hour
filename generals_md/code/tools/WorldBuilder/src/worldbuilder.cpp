@@ -46,7 +46,7 @@
 #include "Common/GameMemory.h"
 #include "Common/Science.h"
 #include "Common/ThingFactory.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/GameAudio.h"
 #include "Common/SpecialPower.h"
 #include "Common/TerrainTypes.h"

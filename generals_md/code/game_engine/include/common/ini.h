@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include <stddef.h>	// for offsetof, which we don't use but everyone who includes us does
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Common/AsciiString.h"
 #include "Common/GameCommon.h"
 

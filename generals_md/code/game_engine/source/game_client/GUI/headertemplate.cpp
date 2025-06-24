@@ -54,7 +54,7 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"
 
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Filesystem.h"
 #include "Common/Registry.h"
 #include "GameClient/HeaderTemplate.h"

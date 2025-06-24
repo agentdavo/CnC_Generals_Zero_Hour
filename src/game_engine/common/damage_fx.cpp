@@ -33,7 +33,7 @@
 
 #define DEFINE_DAMAGE_NAMES						// for DamageNames[]
 
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "common/DamageFX.h"

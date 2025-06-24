@@ -31,7 +31,7 @@
 #include "common/windows.h"
 #include "stdlib.h"
 #include <string.h>
-#include "common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 #include "common/DataChunk.h"
 // #include "common/GameFileSystem.h"

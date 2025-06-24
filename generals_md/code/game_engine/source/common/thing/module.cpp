@@ -33,7 +33,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "Common/Module.h"
 #include "Common/Thing.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/ThingTemplate.h"
 #include "Common/Upgrade.h"
 #include "Common/Xfer.h"

@@ -56,7 +56,7 @@
 #include "dx8wrapper.h"
 #include "assetmgr.h"
 #include "lib/base_type.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "W3DDevice/GameClient/W3DShaderManager.h"
 #include "W3DDevice/GameClient/W3DShroud.h"

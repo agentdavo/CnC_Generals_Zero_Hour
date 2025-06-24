@@ -32,7 +32,7 @@
 
 #define DEFINE_TERRAIN_TYPE_NAMES
 
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/TerrainTypes.h"
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////

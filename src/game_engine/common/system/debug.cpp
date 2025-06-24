@@ -51,17 +51,17 @@
 #ifdef DEBUG_THREADSAFE
 #include "common/CriticalSection.h"
 #endif
-<<<<<<< Updated upstream:src/GameEngine/Common/System/Debug.cpp
-#include "Common/Debug.h"
+<<<<<<< Updated upstream:src/game_engine/common/System/Debug.cpp
+#include "common/Debug.h"
 #include "common/registry.h"
-#include "Common/SystemInfo.h"
-#include "Common/UnicodeString.h"
+#include "common/SystemInfo.h"
+#include "common/UnicodeString.h"
 =======
 #include "common/Debug.h"
 #include "common/registry.h"
 #include "common/SystemInfo.h"
 #include "common/UnicodeString.h"
->>>>>>> Stashed changes:src/game_engine/Common/System/Debug.cpp
+>>>>>>> Stashed changes:src/game_engine/common/System/Debug.cpp
 #include "GameClient/GameText.h"
 #include "GameClient/Keyboard.h"
 #include "GameClient/Mouse.h"
@@ -707,11 +707,11 @@ void ReleaseCrash(const char *reason)
 
 	if (!GetRegistryLanguage().compareNoCase("german2") || !GetRegistryLanguage().compareNoCase("german") )
 	{
-<<<<<<< Updated upstream:src/GameEngine/Common/System/Debug.cpp
+<<<<<<< Updated upstream:src/game_engine/common/System/Debug.cpp
 		::MessageBox(NULL, "Es ist ein gravierender Fehler aufgetreten. Solche Fehler können durch viele verschiedene Dinge wie Viren, überhitzte Hardware und Hardware, die den Mindestanforderungen des Spiels nicht entspricht, ausgelöst werden. Tipps zur Vorgehensweise findest du in den Foren unter www.generals.ea.com, Informationen zum Technischen Kundendienst im Handbuch zum Spiel.", "Fehler...", MB_OK|MB_TASKMODAL|MB_ICONERROR);
 =======
 		::MessageBox(NULL, "Es ist ein gravierender Fehler aufgetreten. Solche Fehler k�nnen durch viele verschiedene Dinge wie Viren, �berhitzte Hardware und Hardware, die den Mindestanforderungen des Spiels nicht entspricht, ausgel�st werden. Tipps zur Vorgehensweise findest du in den Foren unter www.generals.ea.com, Informationen zum Technischen Kundendienst im Handbuch zum Spiel.", "Fehler...", MB_OK|MB_TASKMODAL|MB_ICONERROR);
->>>>>>> Stashed changes:src/game_engine/Common/System/Debug.cpp
+>>>>>>> Stashed changes:src/game_engine/common/System/Debug.cpp
 	} 
 	else
 	{

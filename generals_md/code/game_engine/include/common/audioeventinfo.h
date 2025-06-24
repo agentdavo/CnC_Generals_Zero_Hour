@@ -32,7 +32,7 @@
 
 #include "Common/AsciiString.h"
 #include "Common/GameMemory.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 // DEFINES
 #define NO_INTENSIVE_AUDIO_DEBUG

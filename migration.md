@@ -53,7 +53,7 @@ Stub CMake files exist under `Generals/Code` for `Main`, `GameEngine`, and `Game
 The original Windows entry point now lives in `src/Main/WinMain.cpp` after initial restructuring.
 Partial GameEngine and GameEngineDevice sources have been moved to `src/GameEngine` and `src/GameEngineDevice`.
 The audio subsystem under `GameEngine/Source/Common` has been migrated into
-`src/GameEngine/Common/Audio` with corresponding headers now located in
+`src/game_engine/common/Audio` with corresponding headers now located in
 `include/GameEngine/Common`.
 Several UI related classes from `GameEngine/Source/game_client` have been moved
 into `src/GameEngine/game_client` with headers under `include/game_client`. The
@@ -66,10 +66,10 @@ Bezier math helpers (`BezFwdIterator`, `BezierSegment`) and the `CRCDebug`
 logging utilities have been migrated into `src/GameEngine/Common` with headers
 under `include/GameEngine/Common`. A small stub of `d3dx8_math.h` now lives in
 `include/` to keep these sources compiling on non-Windows hosts.
-The INI configuration system has been relocated under `src/GameEngine/Common/INI`
+The INI configuration system has been relocated under `src/game_engine/common/INI`
 with accompanying headers in `include/GameEngine/Common`.
 Fast trigonometry helpers (`QuickTrig`) and general game constants (`GameCommon`)
-are now located in `src/GameEngine/Common/System` with their headers available
+are now located in `src/game_engine/common/System` with their headers available
 in `include/GameEngine/Common`.
 String handling utilities (`AsciiString`, `UnicodeString`, and the legacy
 `WSYS_String` wrapper) along with thread primitives (`CriticalSection` and
@@ -166,7 +166,7 @@ are now detected and `convert_lv_key()` translates every key listed in
 linked unconditionally from `src/CMakeLists.txt`.
 
 Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
-- The W3D device common files (radar, convert and factory helpers) now live under `src/game_engine_device/w3d_device/Common` with their headers available in `include/game_engine_device/w3d_device`. Basic player management classes have been moved to `src/GameEngine/Common/RTS` and corresponding headers under `include/GameEngine/Common`.
+- The W3D device common files (radar, convert and factory helpers) now live under `src/game_engine_device/w3d_device/Common` with their headers available in `include/game_engine_device/w3d_device`. Basic player management classes have been moved to `src/game_engine/common/RTS` and corresponding headers under `include/GameEngine/Common`.
 - The GameLogic subsystem has been relocated from `Generals/Code/GameEngine/Source/GameLogic` and `Generals/Code/GameEngine/Include/GameLogic` into `src/GameEngine/GameLogic` and `include/GameEngine/GameLogic`. `src/GameEngine/CMakeLists.txt` now globs these files into the `gameengine` library.
 - The precompiled source `PreRTS.cpp` moved to `src/GameEngine/Precompiled` and the header now excludes Windows-only includes. CMake builds use `target_precompile_headers` when available.
 - A lightweight `Logger` utility now lives in `src/Common` and `include/common`. `Logger::init()` writes to `std::clog` and optionally a file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_ERROR` replace direct console output in `src/main.cpp`.
@@ -198,11 +198,11 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - GitHub Actions now installs `build-essential`, X11 and Mesa development packages so Linux builds compile on CI.
 
 - LocalFile compilation issues fixed on case-sensitive builds by disabling memory pool macros and using standard allocation during migration.
-- A portable LocalFile implementation now lives under `src/GameEngine/Common/System` with its header in `include/common`.  The class wraps the C stdio API instead of Win32 handles.
+- A portable LocalFile implementation now lives under `src/game_engine/common/System` with its header in `include/common`.  The class wraps the C stdio API instead of Win32 handles.
 - Header paths updated to prefer `common/File.h` so the new implementation is used on case-sensitive systems.
 - LocalFile now overrides `operator new` and `delete` to sidestep the old memory pool hooks.
 - Added `GameNetwork/transport.h` shim header to resolve case sensitive include errors on Linux.
-- SubsystemInterface has been relocated to src/GameEngine/Common/System with its header in include/GameEngine/Common/subsystem_interface.h. Includes have been updated to use this lowercase path.
+- SubsystemInterface has been relocated to src/game_engine/common/System with its header in include/game_engine/common/subsystem_interface.h. Includes have been updated to use this lowercase path.
 - Legacy references to `Generals/Code/GameEngine/Include` have been dropped from
   `src/GameEngineDevice` CMake files. All headers are expected under the new
   `include/` hierarchy.
@@ -250,7 +250,7 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Fixed case sensitive includes for the WWVegas libraries. `wwlib`, `wwmath` and
   `ww3d2` now add the global `include/` directory to their CMake
   `target_include_directories` so macOS builds resolve headers such as
-  `common/windows.h` and `GameEngine/Common/Debug.h`.
+  `common/windows.h` and `game_engine/common/Debug.h`.
 - Renamed `Vector.H` to `vector.h` and updated all includes to use the lowercase
   path to compile on case sensitive filesystems.
 - Corrected `WWDownload` headers to include `ftp.h` directly and match file

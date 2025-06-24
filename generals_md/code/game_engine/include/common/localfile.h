@@ -52,7 +52,7 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "common/File.h"
+#include "common/file.h"
 
 // srj sez: this was purely an experiment in optimization.
 // at the present time, it doesn't appear to be a good one.

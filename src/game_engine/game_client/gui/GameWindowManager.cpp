@@ -31,13 +31,13 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-<<<<<<< Updated upstream:src/GameEngine/GameClient/GUI/GameWindowManager.cpp
-#include "Common/Debug.h"
-#include "common/Logger.h"
-#include "Common/Language.h"
+<<<<<<< Updated upstream:src/game_engine/GameClient/GUI/GameWindowManager.cpp
+#include "common/Debug.h"
+#include "common/logger.h"
+#include "common/Language.h"
 =======
 #include "common/Debug.h"
-#include "common/Logger.h"
+#include "common/logger.h"
 #include "common/Language.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/GUI/GameWindowManager.cpp
 #include "GameClient/Display.h"

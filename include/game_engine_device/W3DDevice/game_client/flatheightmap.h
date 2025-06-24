@@ -36,7 +36,7 @@
 #include "dx8wrapper.h"
 #include "shader.h"
 #include "vertmaterial.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/GameType.h"
 #include "WorldHeightMap.h"
 #include "BaseHeightMap.h"

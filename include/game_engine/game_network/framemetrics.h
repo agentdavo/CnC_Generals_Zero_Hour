@@ -29,7 +29,7 @@
 #ifndef __FRAMEMETRICS_H
 #define __FRAMEMETRICS_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameNetwork/NetworkDefs.h"
 
 class FrameMetrics {

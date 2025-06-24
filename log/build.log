@@ -4783,7 +4783,7 @@ In file included from /workspace/CnC_Generals_Zero_Hour/include/game_engine/comm
                  from /workspace/CnC_Generals_Zero_Hour/include/game_engine/common/localfilesystem.h:34,
                  from /workspace/CnC_Generals_Zero_Hour/src/game_engine_device/lvgl_device/common/lvgl_big_file.cpp:2:
 /workspace/CnC_Generals_Zero_Hour/include/game_engine/../../generals_md/code/game_engine/include/common/subsysteminterface.h:35:10: fatal error: Common/INI.h: No such file or directory
-   35 | #include "Common/INI.h"
+   35 | #include "common/ini.h"
       |          ^~~~~~~~~~~~~~
 compilation terminated.
 gmake[2]: *** [src/game_engine_device/CMakeFiles/gameenginedevice.dir/build.make:79: src/game_engine_device/CMakeFiles/gameenginedevice.dir/lvgl_device/common/lvgl_big_file.cpp.o] Error 1

@@ -38,23 +38,23 @@
 #define DEFINE_BODYDAMAGETYPE_NAMES
 #define DEFINE_PANNING_NAMES
 
-<<<<<<< Updated upstream:src/GameEngine/Common/GlobalData.cpp
-#include "Common/CRC.h"
-#include "common/File.h"
-#include "Common/FileSystem.h"
-#include "Common/GameAudio.h"
-#include "Common/INI.h"
-#include "Common/UserPreferences.h"
-#include "Common/Version.h"
-=======
+<<<<<<< Updated upstream:src/game_engine/common/GlobalData.cpp
 #include "common/CRC.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/GameAudio.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/UserPreferences.h"
 #include "common/Version.h"
->>>>>>> Stashed changes:src/game_engine/Common/GlobalData.cpp
+=======
+#include "common/CRC.h"
+#include "common/file.h"
+#include "common/FileSystem.h"
+#include "common/GameAudio.h"
+#include "common/ini.h"
+#include "common/UserPreferences.h"
+#include "common/Version.h"
+>>>>>>> Stashed changes:src/game_engine/common/GlobalData.cpp
 
 #include "GameLogic/AI.h"
 #include "GameLogic/Weapon.h"

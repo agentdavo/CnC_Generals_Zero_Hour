@@ -47,7 +47,7 @@
 #ifndef _PLAYERLIST_H_
 #define _PLAYERLIST_H_
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "Common/GameCommon.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/Snapshot.h"

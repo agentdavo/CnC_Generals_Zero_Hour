@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/ThingFactory.h"
 #include "GameLogic/Armor.h"
 #include "GameLogic/Damage.h"

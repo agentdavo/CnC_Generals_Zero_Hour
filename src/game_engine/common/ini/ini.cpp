@@ -32,11 +32,11 @@
 #define DEFINE_DAMAGE_NAMES
 #define DEFINE_DEATH_NAMES
 
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/INIException.h"
 
 #include "common/DamageFX.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/GameAudio.h"
 #include "common/Science.h"

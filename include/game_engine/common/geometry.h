@@ -32,7 +32,7 @@
 #ifndef __GEOMETRY_H_
 #define __GEOMETRY_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/ascii_string.h"
 #include "Common/Snapshot.h"
 

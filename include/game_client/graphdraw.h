@@ -51,7 +51,7 @@
 #define __GRAPHDRAW_H__
 
 #include "Common/PerfTimer.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 #ifdef PERF_TIMERS
 

@@ -30,7 +30,7 @@
 
 #include "Common/ArchiveFile.h"
 #include "Common/ArchiveFileSystem.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/PerfTimer.h"
 
 

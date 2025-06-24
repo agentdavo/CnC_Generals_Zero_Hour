@@ -46,12 +46,12 @@
 #ifdef TEST_COMPRESSION
 
 #include "GameClient/MapUtil.h"
-<<<<<<< Updated upstream:src/GameEngine/Common/System/Compression.cpp
-#include "Common/FileSystem.h"
+<<<<<<< Updated upstream:src/game_engine/common/System/Compression.cpp
+#include "common/FileSystem.h"
 =======
 #include "common/FileSystem.h"
->>>>>>> Stashed changes:src/game_engine/Common/System/Compression.cpp
-#include "common/File.h"
+>>>>>>> Stashed changes:src/game_engine/common/System/Compression.cpp
+#include "common/file.h"
 
 #include "common/PerfTimer.h"
 enum { NUM_TIMES = 1 };

@@ -49,9 +49,9 @@
 #define DEFINE_DLG_EVENT_PRIORITY_NAMES
 #include "Common/GameAudio.h"
 #include "Common/GameSpeech.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 
 //----------------------------------------------------------------------------

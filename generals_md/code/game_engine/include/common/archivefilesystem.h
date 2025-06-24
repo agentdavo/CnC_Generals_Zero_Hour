@@ -52,10 +52,10 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "Common/AsciiString.h"
 #include "Common/FileSystem.h" // for typedefs, etc.
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 //----------------------------------------------------------------------------
 //           Forward References

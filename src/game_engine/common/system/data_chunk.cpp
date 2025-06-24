@@ -30,17 +30,17 @@
 
 #include "stdlib.h"
 #include "string.h"
-<<<<<<< Updated upstream:src/GameEngine/Common/System/DataChunk.cpp
+<<<<<<< Updated upstream:src/game_engine/common/System/DataChunk.cpp
 #include <libraries/compression/compression.h>
-#include "Common/DataChunk.h"
-#include "common/File.h"
-#include "Common/FileSystem.h"
+#include "common/DataChunk.h"
+#include "common/file.h"
+#include "common/FileSystem.h"
 =======
 #include <libraries/compression/compression.h>
 #include "common/DataChunk.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
->>>>>>> Stashed changes:src/game_engine/Common/System/DataChunk.cpp
+>>>>>>> Stashed changes:src/game_engine/common/System/DataChunk.cpp
 
 // If verbose, lots of debug logging.
 #define not_VERBOSE

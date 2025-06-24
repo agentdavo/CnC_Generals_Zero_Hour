@@ -32,7 +32,7 @@
 
 #include "resource.h"       // main symbols
 
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 #include "BrushTool.h"
 #include "TileTool.h"

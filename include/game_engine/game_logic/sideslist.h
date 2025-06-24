@@ -37,7 +37,7 @@
 #include "Common/GameType.h"
 #include "Common/Snapshot.h"
 #include "common/gamememory.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class DataChunkInput;
 struct DataChunkInfo;

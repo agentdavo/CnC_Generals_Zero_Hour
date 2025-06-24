@@ -1,7 +1,7 @@
 #include "common/audioaffect.h"
 #include "common/archivefile.h"
 #include "common/archivefilesystem.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/gameaudio.h"
 #include "common/gamememory.h"
 #include "common/localfilesystem.h"

@@ -17,7 +17,7 @@
 */
 
 #include "StdAfx.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GroveOptions.h"
 #include "Common/ThingFactory.h"
 #include "Common/ThingSort.h"

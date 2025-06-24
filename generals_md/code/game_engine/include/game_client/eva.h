@@ -30,7 +30,7 @@
 #ifndef __EVA_H__
 #define __EVA_H__
 
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "Common/AudioEventRTS.h"
 
 class Player;

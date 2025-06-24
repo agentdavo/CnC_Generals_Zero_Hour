@@ -42,7 +42,7 @@
 #include "common/GameAudio.h"
 #include "common/GameCommon.h"
 #include "common/GlobalData.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/MessageStream.h"
 #include "common/Module.h"
 #include "common/ModuleFactory.h"

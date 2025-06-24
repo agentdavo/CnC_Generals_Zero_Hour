@@ -31,7 +31,7 @@
 #include "always.h"
 #include "rendobj.h"
 #include "vertmaterial.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #if defined _DEBUG || defined _INTERNAL
 struct DebugIcon;

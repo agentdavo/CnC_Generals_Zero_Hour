@@ -53,7 +53,7 @@
 #include "Common/UnicodeString.h"
 #include "Common/AsciiString.h"
 #include "Common/GlobalData.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 
 

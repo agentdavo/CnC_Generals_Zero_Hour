@@ -43,7 +43,7 @@
 #include "Common/AudioEventInfo.h"
 #include "Common/AudioRandomValue.h"
 #include "Common/AudioSettings.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 #include "Common/GameSounds.h"
 #include "Common/GlobalData.h"

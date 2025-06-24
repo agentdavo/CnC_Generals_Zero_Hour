@@ -39,10 +39,10 @@
 #define DEFINE_PANNING_NAMES
 
 #include "Common/CRC.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "Common/FileSystem.h"
 #include "Common/GameAudio.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "common/registry.h"
 #include "Common/UserPreferences.h"
 #include "Common/Version.h"

@@ -30,7 +30,7 @@
 #include "common/AudioAffect.h"
 #include "common/ArchiveFile.h"
 #include "common/ArchiveFileSystem.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/GameAudio.h"
 #include "common/gamememory.h"
 #include "common/LocalFileSystem.h"

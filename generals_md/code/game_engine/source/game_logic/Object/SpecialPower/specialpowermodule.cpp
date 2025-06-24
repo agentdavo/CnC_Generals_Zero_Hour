@@ -32,7 +32,7 @@
 
 #include "Common/GameAudio.h"
 #include "Common/GlobalData.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Player.h"
 #include "Common/PlayerList.h"
 #include "Common/Science.h"

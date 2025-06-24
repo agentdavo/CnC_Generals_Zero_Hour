@@ -50,7 +50,7 @@
 #define W3DASSETMANAGER_H
 
 #include "assetmgr.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 class Vector3;
 class VertexMaterialClass;

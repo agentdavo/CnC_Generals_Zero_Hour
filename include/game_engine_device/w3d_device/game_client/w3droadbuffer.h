@@ -59,7 +59,7 @@
 #include "vertmaterial.h"
 //#include "common/GameFileSystem.h"
 #include "common/FileSystem.h" // for LOAD_TEST_ASSETS
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/GameType.h"
 #include "common/ascii_string.h"
 

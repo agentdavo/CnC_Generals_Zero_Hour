@@ -35,9 +35,9 @@
 #include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
 #include "Common/GameType.h"
 #include "Common/Snapshot.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GameNetwork/NetworkDefs.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GameLogic/Module/UpdateModule.h"	// needed for DIRECT_UPDATEMODULE_ACCESS
 
 /*

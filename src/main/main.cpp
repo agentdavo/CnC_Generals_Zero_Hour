@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <cstring>
-#include "common/Logger.h"
+#include "common/logger.h"
 #include <unistd.h>
 
 #include "lvgl_platform/lvgl_platform.h"

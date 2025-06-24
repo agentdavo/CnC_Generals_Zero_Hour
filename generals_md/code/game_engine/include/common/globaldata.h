@@ -36,9 +36,9 @@
 #include "Common/AsciiString.h"
 #include "Common/GameType.h"
 #include "Common/GameMemory.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameClient/Color.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Common/GameCommon.h"
 #include "Common/Money.h"
 

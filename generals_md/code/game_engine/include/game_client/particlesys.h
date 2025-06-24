@@ -37,11 +37,11 @@
 #include "Common/GameMemory.h"
 #include "Common/GameType.h"
 #include "Common/Snapshot.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameClient/ClientRandomValue.h"
 
 #include "WWMath/Matrix3D.h"		///< @todo Replace with our own matrix library
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
  
 /// @todo Once the client framerate is decoupled, the frame counters within will have to become time-based

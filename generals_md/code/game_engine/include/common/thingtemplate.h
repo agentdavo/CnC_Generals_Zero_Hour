@@ -48,7 +48,7 @@
 
 #include "GameLogic/ArmorSet.h"
 #include "GameLogic/WeaponSet.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GameClient/Color.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////

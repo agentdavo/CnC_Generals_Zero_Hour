@@ -35,7 +35,7 @@
 #define DEFINE_LOCO_Z_NAMES
 #define DEFINE_LOCO_APPEARANCE_NAMES
 
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Locomotor.h"

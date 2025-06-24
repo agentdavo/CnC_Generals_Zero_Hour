@@ -32,7 +32,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_DAMAGE_NAMES
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 #include "GameClient/FXList.h"

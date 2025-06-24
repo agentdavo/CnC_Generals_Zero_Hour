@@ -32,7 +32,7 @@
 #define _ModelState_H_
 
 #include "lib/base_type.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/BitFlags.h"
 #include "Common/BitFlagsIO.h"
 

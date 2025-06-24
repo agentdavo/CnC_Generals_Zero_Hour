@@ -52,7 +52,7 @@
 //-----------------------------------------------------------------------------
 #include "PreRTS.h"
 
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/Registry.h"
 #include "GameClient/GlobalLanguage.h"
 #include "common/Filesystem.h"

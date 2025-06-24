@@ -35,7 +35,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "Common/INI.h"
 #include "common/gamememory.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GameLogic/Module/UpdateModule.h"
 
 enum

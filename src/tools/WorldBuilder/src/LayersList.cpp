@@ -32,7 +32,7 @@
 /*---------------------------------------------------------------------------*/
 
 #include "StdAfx.h"
-#include "common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "Resource.h"
 #include "LayersList.h"
 

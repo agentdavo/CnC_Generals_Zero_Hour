@@ -32,7 +32,7 @@
 #define DEFINE_PARTICLE_SYSTEM_NAMES
 
 #include "common/GameState.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/PerfTimer.h"
 #include "common/ThingFactory.h"
 #include "common/GameLOD.h"

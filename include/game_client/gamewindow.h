@@ -52,8 +52,8 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
-#include "game_engine/common/GameMemory.h"
+#include "lib/base_type.h"
+#include "game_engine/common/gamememory.h"
 #include "game_client/image.h"
 #include "game_client/displaystring.h"
 #include "game_client/wininstancedata.h"

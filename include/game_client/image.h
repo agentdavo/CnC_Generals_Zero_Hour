@@ -34,8 +34,8 @@
 #define __IMAGE_H_
 
 #include "common/ascii_string.h"
-#include "game_engine/common/GameMemory.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/gamememory.h"
+#include "game_engine/common/subsystem_interface.h"
 
 struct FieldParse;
 class INI;

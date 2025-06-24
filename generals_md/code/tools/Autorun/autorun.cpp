@@ -116,7 +116,7 @@
 #include "leanAndMeanAutorun.h"
 
 #ifndef LEAN_AND_MEAN
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameClient/GameText.h"
 #include "Common/UnicodeString.h"
 #include "Win32Device/Common/Win32LocalFileSystem.h"

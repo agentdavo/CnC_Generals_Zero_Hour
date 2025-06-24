@@ -34,7 +34,7 @@
 #include "Peer/peer.h"
 
 #include "game_client/Color.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class GameSpyGroupRoom
 {

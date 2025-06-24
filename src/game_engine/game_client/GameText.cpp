@@ -49,19 +49,19 @@
 #include "common/Language.h"
 #include "common/Registry.h"
 #include "GameClient/LanguageFilter.h"
-<<<<<<< Updated upstream:src/GameEngine/GameClient/GameText.cpp
-#include "Common/Debug.h"
-#include "Common/UnicodeString.h"
-#include "Common/AsciiString.h"
-#include "Common/GlobalData.h"
-#include "common/File.h"
-#include "Common/FileSystem.h"
+<<<<<<< Updated upstream:src/game_engine/GameClient/GameText.cpp
+#include "common/Debug.h"
+#include "common/UnicodeString.h"
+#include "common/AsciiString.h"
+#include "common/GlobalData.h"
+#include "common/file.h"
+#include "common/FileSystem.h"
 =======
 #include "common/Debug.h"
 #include "common/UnicodeString.h"
 #include "common/AsciiString.h"
 #include "common/GlobalData.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/GameText.cpp
 

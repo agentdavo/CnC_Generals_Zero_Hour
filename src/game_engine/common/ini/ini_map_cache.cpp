@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "lib/base_type.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "GameClient/MapUtil.h"
 #include "GameNetwork/NetworkDefs.h"
 #include "common/NameKeyGenerator.h"

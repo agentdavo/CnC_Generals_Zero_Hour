@@ -32,7 +32,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #define DEFINE_SLOWDEATHPHASE_NAMES
 #include "Common/GameLOD.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/RandomValue.h"
 #include "Common/Thing.h"
 #include "Common/ThingTemplate.h"

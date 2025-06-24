@@ -32,7 +32,7 @@
 
 #define DEFINE_DAMAGE_NAMES						// for DamageNames[]
 
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/ThingFactory.h"
 #include "GameLogic/Armor.h"
 #include "GameLogic/Damage.h"

@@ -55,7 +55,7 @@
 #include "game_engine/common/subsystem_interface.h"
 #include "common/ascii_string.h"
 #include "common/filesystem.h" // for typedefs, etc.
-#include "common/stltypedefs.h"
+#include "common/stl_type_defs.h"
 #include <filesystem>
 #include <memory>
 

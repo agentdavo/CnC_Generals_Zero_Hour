@@ -34,9 +34,9 @@
 #define __BUILDASSISTANT_H_
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "lib/base_type.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "GameLogic/Object.h"
 
 // FORWARD DECLARATIONS ///////////////////////////////////////////////////////////////////////////

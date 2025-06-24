@@ -52,9 +52,9 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "game_client/keydefs.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

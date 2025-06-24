@@ -30,8 +30,8 @@
 #include "common/windows.h"
 #include "common/OSDisplay.h"
 
-#include "GameEngine/common/subsystem_interface.h"
-#include "common/STLTypeDefs.h"
+#include "game_engine/common/subsystem_interface.h"
+#include "common/stl_type_defs.h"
 #include "common/AsciiString.h"
 #include "common/SystemInfo.h"
 #include "common/UnicodeString.h"

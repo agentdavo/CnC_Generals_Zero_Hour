@@ -35,7 +35,7 @@
 #include "GP/gp.h"
 
 #include "game_client/Color.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 #include "GameNetwork/GameSpy/StagingRoomGameInfo.h"
 
 class GameWindow;

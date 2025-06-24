@@ -32,7 +32,7 @@
 
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/RandomValue.h"
 #include "common/GlobalData.h"
 #include "common/Xfer.h"

@@ -45,10 +45,10 @@
 #define __COMMON_GAMEAUDIO_H_
 
 // Includes                                                      
-#include "Lib/BaseType.h"
-#include "Common/STLTypedefs.h"
-#include "GameEngine/Common/subsystem_interface.h"
-#include "GameEngine/common/audioEventInfo.h"
+#include "lib/base_type.h"
+#include "common/stl_type_defs.h"
+#include "game_engine/common/subsystem_interface.h"
+#include "game_engine/common/audioEventInfo.h"
 
 
 // Forward Declarations

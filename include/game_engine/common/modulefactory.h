@@ -43,11 +43,11 @@
 #include <stdlib.h>
 
 #include "common/gamememory.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "common/ascii_string.h"
 #include "Common/NameKeyGenerator.h"
 #include "Common/Module.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Thing;

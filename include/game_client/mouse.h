@@ -52,8 +52,8 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "lib/base_type.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "common/ascii_string.h"
 #include "game_engine/common/unicodestring.h"
 

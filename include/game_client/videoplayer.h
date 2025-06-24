@@ -50,10 +50,10 @@
 
 #include <lib/BaseType.h>
 #include "WWMath/rect.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "common/ascii_string.h"
 #include "Common/INI.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 //----------------------------------------------------------------------------
 //           Forward References

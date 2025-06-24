@@ -31,16 +31,16 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
-#include "common/File.h"
-<<<<<<< Updated upstream:src/GameEngine/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp
-#include "Common/FileSystem.h"
-#include "Common/GameEngine.h"
-#include "Common/GameSpyMiscPreferences.h"
-#include "Common/QuotedPrintable.h"
-#include "Common/Registry.h"
-#include "Common/UserPreferences.h"
+#include "common/file.h"
+<<<<<<< Updated upstream:src/game_engine/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp
+#include "common/FileSystem.h"
+#include "common/GameEngine.h"
+#include "common/GameSpyMiscPreferences.h"
+#include "common/QuotedPrintable.h"
+#include "common/Registry.h"
+#include "common/UserPreferences.h"
 =======
 #include "common/FileSystem.h"
 #include "common/GameEngine.h"

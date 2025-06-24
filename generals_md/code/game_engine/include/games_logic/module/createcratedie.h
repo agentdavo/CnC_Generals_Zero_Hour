@@ -33,9 +33,9 @@
 #define _CREATE_CRATE_DIE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "GameLogic/Module/DieModule.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class CrateTemplate;

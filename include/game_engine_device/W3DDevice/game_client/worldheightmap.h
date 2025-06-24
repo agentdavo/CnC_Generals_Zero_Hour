@@ -31,13 +31,13 @@
 #ifndef WorldHeightMap_H
 #define WorldHeightMap_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "WWLib/RefCount.h"
 #include "WWMath/Vector3.h"
 #include "W3DDevice/game_client/TileData.h"
-#include "../../gameengine/include/common/MapObject.h"
+#include "../../game_engine/include/common/MapObject.h"
 
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 typedef std::vector<ICoord2D> VecICoord2D;
 
 /** MapObject class

@@ -49,7 +49,7 @@
 #include "GameLogic/TerrainLogic.h"
 #include "common/GlobalData.h"
 #include "common/UnicodeString.h"
-#include "common/File.h"
+#include "common/file.h"
 #include "common/FileSystem.h"
 #include "texture.h"
 #include "colmath.h"

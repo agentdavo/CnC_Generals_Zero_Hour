@@ -51,7 +51,7 @@
 //----------------------------------------------------------------------------
 
 //#include "common/File.h"
-#include "common/stltypedefs.h"
+#include "common/stl_type_defs.h"
 #include "game_engine/common/subsystem_interface.h"
 
 //----------------------------------------------------------------------------

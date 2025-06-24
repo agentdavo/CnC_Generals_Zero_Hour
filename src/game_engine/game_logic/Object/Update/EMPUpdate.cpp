@@ -32,7 +32,7 @@
 
 #include "common/Thing.h"
 #include "common/ThingTemplate.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/RandomValue.h"
 #include "common/Player.h"
 #include "GameLogic/GameLogic.h"

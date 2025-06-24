@@ -36,7 +36,7 @@
 #include "Common/Thing.h"
 #include "Common/ThingFactory.h"
 #include "Common/ThingTemplate.h"
-#include "Common/INI.h"
+#include "common/ini.h"
 #include "Common/Player.h"
 #include "Common/RandomValue.h"
 #include "Common/Xfer.h"

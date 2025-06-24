@@ -1,7 +1,7 @@
 #pragma once
 // Cross platform stubs for Windows registry helpers
 #include "game_engine/common/ascii_string.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 struct RegistryClass {};
 

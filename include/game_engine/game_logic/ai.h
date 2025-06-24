@@ -32,11 +32,11 @@
 #define _AI_H_
 
 #include "Common/Snapshot.h"
-#include "GameEngine/Common/subsystem_interface.h"
+#include "game_engine/common/subsystem_interface.h"
 #include "common/gamememory.h"
 #include "Common/GameType.h"
 #include "GameLogic/Damage.h"
-#include "Common/STLTypedefs.h"
+#include "common/stl_type_defs.h"
 
 class AIGroup;
 class AttackPriorityInfo;

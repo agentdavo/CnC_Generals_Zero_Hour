@@ -28,7 +28,7 @@
 #ifndef __NETWORKDEFS_H
 #define __NETWORKDEFS_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/MessageStream.h"
 
 static const Int WOL_NAME_LEN = 64;
