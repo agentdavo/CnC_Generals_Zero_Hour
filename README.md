@@ -47,6 +47,16 @@ cmake --build build
 ```
 This will compile a placeholder executable while migration is in progress.
 
+To try the minimal LVGL example without the game engine run:
+```
+cmake -S . -B build -DBUILD_ENGINE=OFF
+cmake --build build -j1
+./build/src/examples/lvgl_hello/lvgl_hello
+```
+This uses LVGL's SDL backend to open an 800x600 window showing a "Hello world"
+label and a centred button. No engine code is compiled when
+`BUILD_ENGINE` is set to OFF.
+
 On **macOS** you must use the Apple Clang compiler (usually `/usr/bin/clang`).
 Using GCC will fail because the audio backend requires Clang's `-fblocks`
 extension when compiling against CoreAudio headers.
