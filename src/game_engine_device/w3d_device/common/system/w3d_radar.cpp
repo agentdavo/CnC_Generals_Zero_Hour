@@ -29,7 +29,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/AudioEventRTS.h"
+#include "common/audioeventrts.h"
 #include "common/Debug.h"
 #include "common/GlobalData.h"
 #include "common/Player.h"
@@ -48,7 +48,7 @@
 #include "game_client/Image.h"
 #include "game_client/Line2D.h"
 #include "game_client/TerrainVisual.h"
-#include "w3d_device/common/W3DRadar.h"
+#include "w3d_device/common/w3d_radar.h"
 #include "w3d_device/game_client/HeightMap.h"
 #include "w3d_device/game_client/W3DShroud.h"
 #include "WW3D2/Texture.h"

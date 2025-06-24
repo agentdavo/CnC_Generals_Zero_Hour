@@ -31,8 +31,8 @@
 
 #pragma once
 
-#ifndef __W3DRADAR_H_
-#define __W3DRADAR_H_
+#ifndef __W3D_RADAR_H_
+#define __W3D_RADAR_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/Radar.h"
@@ -122,4 +122,4 @@ protected:
 };
 
 
-#endif // __W3DRADAR_H_
+#endif // __W3D_RADAR_H_

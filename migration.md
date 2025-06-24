@@ -277,3 +277,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Renamed tool directories versionUpdate, buildVersionUpdate and Compress to snake_case and updated CMake references.
 - Building with `cmake --build build -- -j1` avoids the 'No child processes' error seen on some hosts when using parallel Makefiles.
 - Unified `src/game_engine/common` with snake_case source files and removed legacy `Common` duplicate.
+- Renamed radar implementation to snake_case under w3d_device/common/system.
