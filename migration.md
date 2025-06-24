@@ -273,3 +273,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - nox_compress now calls LZHLDecompress with size_t sizes.
 - Fixed return type of lib/zlib/maketree.c main for standards compliance.
 - Renamed tool directories versionUpdate, buildVersionUpdate and Compress to snake_case and updated CMake references.
+- Building with `cmake --build build -- -j1` avoids the 'No child processes' error seen on some hosts when using parallel Makefiles.
