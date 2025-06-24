@@ -56,6 +56,14 @@
 #include <chrono>
 #include "common/windows.h"
 #include <cstdint>
+#ifndef _WIN32
+#include <thread>
+static inline unsigned long GetCurrentThreadId()
+{
+        auto id = std::this_thread::get_id();
+        return std::hash<std::thread::id>()(id);
+}
+#endif
 
 /***********************************************************************************************
  * WWProfile_Get_Ticks -- Retrieves the cpu performance counter                                *
@@ -70,6 +78,7 @@
  *   9/24/2000  gth : Created.                                                                 *
  *=============================================================================================*/
 inline void WWProfile_Get_Ticks(int64_t *ticks)
+{
 #ifdef _WIN32
         __asm
         {
@@ -103,19 +112,20 @@ inline void WWProfile_Get_Ticks(int64_t *ticks)
  *=============================================================================================*/
 inline float WWProfile_Get_Tick_Rate(void)
 {
-#ifdef _UNIX
-	return (0);
+#ifdef _WIN32
+        static float _CPUFrequency = -1.0f;
+
+        if (_CPUFrequency == -1.0f)
+        {
+                int64_t curr_rate = 0;
+                ::QueryPerformanceFrequency((LARGE_INTEGER *)&curr_rate);
+                _CPUFrequency = (float)curr_rate;
+        }
+
+        return _CPUFrequency;
 #else
-	static float _CPUFrequency = -1.0f;
-
-	if (_CPUFrequency == -1.0f)
-	{
-		int64_t curr_rate = 0;
-		::QueryPerformanceFrequency((LARGE_INTEGER *)&curr_rate);
-		_CPUFrequency = (float)curr_rate;
-	}
-
-	return _CPUFrequency;
+        // std::chrono based frequency for non-Windows builds
+        return 1000000000.0f; // nanoseconds
 #endif
 }
 
