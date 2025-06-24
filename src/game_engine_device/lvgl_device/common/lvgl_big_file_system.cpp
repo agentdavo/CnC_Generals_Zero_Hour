@@ -10,6 +10,7 @@
 #include "common/registry.h"
 #include "common/win32_compat.h"
 #include <memory>
+#include <filesystem>
 #include <cstdint>
 #include <cctype>
 #include <cstring>
@@ -60,27 +61,27 @@ void Win32BIGFileSystem::reset() {}
 void Win32BIGFileSystem::update() {}
 void Win32BIGFileSystem::postProcessLoad() {}
 
-ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
-    File *fp = TheLocalFileSystem->openFile(filename, File::READ | File::BINARY);
-    AsciiString archiveFileName = filename;
+ArchiveFile * Win32BIGFileSystem::openArchiveFile(const std::filesystem::path &filename) {
+    File *fp = TheLocalFileSystem->openFile(filename.generic_string().c_str(), File::READ | File::BINARY);
+    AsciiString archiveFileName = filename.generic_string().c_str();
     archiveFileName.toLower();
     Int archiveFileSize = 0;
     Int numLittleFiles = 0;
 
     std::unique_ptr<ArchiveFile> archiveFile(new Win32BIGFile);
 
-    DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - opening BIG file %s\n", filename));
+    DEBUG_LOG(("Win32BIGFileSystem::openArchiveFile - opening BIG file %s\n", filename.generic_string().c_str()));
 
     if (fp == NULL) {
-        DEBUG_CRASH(("Could not open archive file %s for parsing", filename));
+        DEBUG_CRASH(("Could not open archive file %s for parsing", filename.generic_string().c_str()));
         return NULL;
     }
 
-    char buffer[_MAX_PATH];
-    fp->read(buffer, 4);
-    buffer[4] = 0;
-    if (strcmp(buffer, BIGFileIdentifier) != 0) {
-        DEBUG_CRASH(("Error reading BIG file identifier in file %s", filename));
+    char id[5];
+    fp->read(id, 4);
+    id[4] = 0;
+    if (strcmp(id, BIGFileIdentifier) != 0) {
+        DEBUG_CRASH(("Error reading BIG file identifier in file %s", filename.generic_string().c_str()));
         fp->close();
         fp = NULL;
         return NULL;
@@ -109,22 +110,18 @@ ArchiveFile * Win32BIGFileSystem::openArchiveFile(const Char *filename) {
         fileInfo->m_offset = fileOffset;
         fileInfo->m_size = filesize;
 
-        Int pathIndex = -1;
+        std::string entryPathStr;
+        char ch;
         do {
-            ++pathIndex;
-            fp->read(buffer + pathIndex, 1);
-        } while (buffer[pathIndex] != 0);
+            fp->read(&ch, 1);
+            if (ch != 0)
+                entryPathStr.push_back(ch);
+        } while (ch != 0);
 
-        Int filenameIndex = pathIndex;
-        while ((buffer[filenameIndex] != '\\') && (buffer[filenameIndex] != '/') && (filenameIndex >= 0)) {
-            --filenameIndex;
-        }
-
-        fileInfo->m_filename = (char *)(buffer + filenameIndex + 1);
+        std::filesystem::path entryPath(entryPathStr);
+        fileInfo->m_filename = entryPath.filename().string().c_str();
         fileInfo->m_filename.toLower();
-        buffer[filenameIndex + 1] = 0;
-
-        AsciiString path = buffer;
+        AsciiString path = entryPath.parent_path().generic_string().c_str();
         archiveFile->addFile(path, *fileInfo);
     }
 
@@ -159,7 +156,7 @@ Bool Win32BIGFileSystem::loadBigFilesFromDirectory(AsciiString dir, AsciiString 
     Bool actuallyAdded = FALSE;
     FilenameListIter it = filenameList.begin();
     while (it != filenameList.end()) {
-        ArchiveFile *archiveFile = openArchiveFile((*it).str());
+        ArchiveFile *archiveFile = openArchiveFile(std::filesystem::path((*it).str()));
 
         if (archiveFile != NULL) {
             DEBUG_LOG(("Win32BIGFileSystem::loadBigFilesFromDirectory - loading %s into the directory tree.\n", (*it).str()));

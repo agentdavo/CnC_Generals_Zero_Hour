@@ -56,6 +56,7 @@
 #include "common/ascii_string.h"
 #include "common/filesystem.h" // for typedefs, etc.
 #include "common/stltypedefs.h"
+#include <filesystem>
 
 //----------------------------------------------------------------------------
 //           Forward References
@@ -156,7 +157,7 @@ class ArchiveFileSystem : public SubsystemInterface
 	virtual void postProcessLoad( void ) = 0;
 
 	// ArchiveFile operations
-	virtual ArchiveFile*	openArchiveFile( const Char *filename ) = 0;		///< Create new or return existing Archive file from file name
+	virtual ArchiveFile*    openArchiveFile( const std::filesystem::path &filename ) = 0;		///< Create new or return existing Archive file from file name
 	virtual void					closeArchiveFile( const Char *filename ) = 0;		///< Close the one specified big file.
 	virtual void					closeAllArchiveFiles( void ) = 0;								///< Close all Archivefiles currently open
 
