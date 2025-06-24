@@ -67,6 +67,8 @@ static inline DWORD timeGetTime()
 #include <atomic>
 #include <thread>
 #include <cstdint>
+#include <condition_variable>
+#include <new>
 
 struct WinMutex {
     std::mutex m;
@@ -108,6 +110,66 @@ static inline BOOL CloseHandle(HANDLE h)
 {
     delete static_cast<WinMutex *>(h);
     return 1;
+}
+
+struct CRITICAL_SECTION {
+    std::recursive_mutex m;
+};
+
+struct CONDITION_VARIABLE {
+    std::condition_variable_any cv;
+};
+
+static inline void InitializeCriticalSection(CRITICAL_SECTION *cs)
+{
+    new (cs) CRITICAL_SECTION();
+}
+
+static inline void DeleteCriticalSection(CRITICAL_SECTION *cs)
+{
+    cs->~CRITICAL_SECTION();
+}
+
+static inline void EnterCriticalSection(CRITICAL_SECTION *cs)
+{
+    cs->m.lock();
+}
+
+static inline void LeaveCriticalSection(CRITICAL_SECTION *cs)
+{
+    cs->m.unlock();
+}
+
+static inline void InitializeConditionVariable(CONDITION_VARIABLE *cv)
+{
+    new (cv) CONDITION_VARIABLE();
+}
+
+static inline BOOL SleepConditionVariableCS(CONDITION_VARIABLE *cv,
+                                            CRITICAL_SECTION *cs,
+                                            DWORD ms)
+{
+    std::unique_lock<std::recursive_mutex> lock(cs->m, std::adopt_lock);
+    BOOL ret = 1;
+    if (ms == INFINITE) {
+        cv->cv.wait(lock);
+    } else {
+        auto status = cv->cv.wait_for(lock, std::chrono::milliseconds(ms));
+        if (status == std::cv_status::timeout)
+            ret = 0;
+    }
+    lock.release();
+    return ret;
+}
+
+static inline void WakeConditionVariable(CONDITION_VARIABLE *cv)
+{
+    cv->cv.notify_one();
+}
+
+static inline void WakeAllConditionVariable(CONDITION_VARIABLE *cv)
+{
+    cv->cv.notify_all();
 }
 
 struct LARGE_INTEGER { long long QuadPart; };
