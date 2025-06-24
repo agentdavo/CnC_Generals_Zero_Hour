@@ -44,6 +44,7 @@ These components appear in `Code/Libraries` and in various engine devices.  Many
    `src/` and headers under `include/`.
 9. **Continuous Integration** – add automated builds on all supported platforms to ensure the port stays compilable.
 10. **Documentation** – update the README with new build instructions and maintain `migration.md` as progress continues.
+11. **GameEngineDevice Snake Case** – rename the `GameEngineDevice` tree to `game_engine_device` and convert headers/sources to snake case. Update all include paths and create temporary stubs in `include/common` so the build remains green during the transition.
 
 ## Status
 
