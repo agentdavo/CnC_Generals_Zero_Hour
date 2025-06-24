@@ -64,6 +64,9 @@ static inline DWORD timeGetTime()
 // Minimal Win32 synchronization stubs
 #ifndef _WIN32
 #include <mutex>
+#include <atomic>
+#include <thread>
+#include <cstdint>
 
 struct WinMutex {
     std::mutex m;
@@ -105,5 +108,27 @@ static inline BOOL CloseHandle(HANDLE h)
 {
     delete static_cast<WinMutex *>(h);
     return 1;
+}
+
+struct LARGE_INTEGER { long long QuadPart; };
+
+static inline BOOL QueryPerformanceFrequency(LARGE_INTEGER *li)
+{
+    li->QuadPart = 1000000000LL; // nanoseconds per second
+    return 1;
+}
+
+static inline BOOL QueryPerformanceCounter(LARGE_INTEGER *li)
+{
+    using namespace std::chrono;
+    li->QuadPart =
+        duration_cast<nanoseconds>(steady_clock::now().time_since_epoch()).count();
+    return 1;
+}
+
+static inline unsigned long GetCurrentThreadId()
+{
+    auto id = std::this_thread::get_id();
+    return std::hash<std::thread::id>()(id);
 }
 #endif // _WIN32
