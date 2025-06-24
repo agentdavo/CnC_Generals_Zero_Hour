@@ -57,6 +57,7 @@
 #include "common/filesystem.h" // for typedefs, etc.
 #include "common/stltypedefs.h"
 #include <filesystem>
+#include <memory>
 
 //----------------------------------------------------------------------------
 //           Forward References
@@ -87,7 +88,7 @@ class ArchivedFileInfo;
 
 typedef std::map<AsciiString, DetailedArchivedDirectoryInfo> DetailedArchivedDirectoryInfoMap;
 typedef std::map<AsciiString, ArchivedDirectoryInfo> ArchivedDirectoryInfoMap;
-typedef std::map<AsciiString, ArchivedFileInfo> ArchivedFileInfoMap;
+typedef std::map<AsciiString, std::unique_ptr<ArchivedFileInfo>> ArchivedFileInfoMap;
 typedef std::map<AsciiString, ArchiveFile *> ArchiveFileMap;
 typedef std::map<AsciiString, AsciiString> ArchivedFileLocationMap; // first string is the file name, second one is the archive filename.
 
