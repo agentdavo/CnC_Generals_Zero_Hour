@@ -32,8 +32,8 @@
 #define _ModelState_H_
 
 #include "lib/base_type.h"
-#include "common/INI.h"
-#include "common/BitFlags.h"
+#include "game_engine/common/ini.h"
+#include "game_engine/common/bitflags.h"
 
 //-------------------------------------------------------------------------------------------------
 

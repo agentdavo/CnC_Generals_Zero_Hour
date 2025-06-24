@@ -45,7 +45,7 @@
 
 #include "game_engine/common/subsystem_interface.h"
 #include "common/gameaudio.h"
-#include "common/GameType.h"
+#include "game_engine/common/gametype.h"
 
 // Forward declarations
 class AudioEventRTS;

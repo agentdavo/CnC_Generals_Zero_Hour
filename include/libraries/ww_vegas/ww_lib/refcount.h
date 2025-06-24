@@ -45,7 +45,7 @@
 #endif
 
 #ifndef LISTNODE_H
-#include "listnode.h"
+#include "libraries/ww_vegas/ww_lib/LISTNODE.H"
 #endif
 
 class RefCountClass;

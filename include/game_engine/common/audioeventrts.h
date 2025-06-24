@@ -33,7 +33,7 @@
 #include "common/ascii_string.h"
 #include "common/gameaudio.h"
 #include "common/gamememory.h"
-#include "common/GameType.h"
+#include "game_engine/common/gametype.h"
 
 // forward declarations ///////////////////////////////////////////////////////////////////////////
 struct AudioEventInfo;

@@ -32,7 +32,7 @@
 #define _STATE_MACHINE_H_
 
 #include "common/gamememory.h"
-#include "common/GameType.h"
+#include "game_engine/common/gametype.h"
 #include "common/ModelState.h"
 #include "common/Snapshot.h"
 #include "common/Xfer.h"

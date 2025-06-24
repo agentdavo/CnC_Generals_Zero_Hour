@@ -33,9 +33,9 @@
 #define __W3DDEFAULTDRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/GameType.h"
-#include "common/DrawModule.h"
-#include "common/FileSystem.h"	// this is only here to pull in LOAD_TEST_ASSETS
+#include "game_engine/common/gametype.h"
+#include "game_engine/common/drawmodule.h"
+#include "game_engine/common/filesystem.h"	// this is only here to pull in LOAD_TEST_ASSETS
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////////////////////////
 class Thing;
