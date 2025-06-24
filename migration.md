@@ -43,7 +43,7 @@ These components appear in `Code/Libraries` and in various engine devices.  Many
    root `CMakeLists.txt` and per-module CMake files, placing source code under
    `src/` and headers under `include/`.
 9. **Continuous Integration** – add automated builds on all supported platforms to ensure the port stays compilable.
-10. **Documentation** – update the README with new build instructions and maintain `MIGRATION.md` as progress continues.
+10. **Documentation** – update the README with new build instructions and maintain `migration.md` as progress continues.
 
 ## Status
 

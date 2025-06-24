@@ -1818,13 +1818,13 @@ src/tools/GUIEdit/Include/HierarchyView.h
 src/tools/GUIEdit/Include/LayoutScheme.h
 src/tools/GUIEdit/Include/WinMain.h
 src/tools/GUIEdit/Resource/GUIEdit.rc
-src/tools/GUIEdit/Source/Dialog Procedures/CallbackEditor.cpp
-src/tools/GUIEdit/Source/Dialog Procedures/ColorDialog.cpp
-src/tools/GUIEdit/Source/Dialog Procedures/GenericProperties.cpp
-src/tools/GUIEdit/Source/Dialog Procedures/GridSettings.cpp
-src/tools/GUIEdit/Source/Dialog Procedures/NewLayoutDialog.cpp
-src/tools/GUIEdit/Source/Dialog Procedures/RadioButtonProperties.cpp
-src/tools/GUIEdit/Source/Dialog Procedures/TabControlProperties.cpp
+src/tools/GUIEdit/Source/dialog_procedures/CallbackEditor.cpp
+src/tools/GUIEdit/Source/dialog_procedures/ColorDialog.cpp
+src/tools/GUIEdit/Source/dialog_procedures/GenericProperties.cpp
+src/tools/GUIEdit/Source/dialog_procedures/GridSettings.cpp
+src/tools/GUIEdit/Source/dialog_procedures/NewLayoutDialog.cpp
+src/tools/GUIEdit/Source/dialog_procedures/RadioButtonProperties.cpp
+src/tools/GUIEdit/Source/dialog_procedures/TabControlProperties.cpp
 src/tools/GUIEdit/Source/EditWindow.cpp
 src/tools/GUIEdit/Source/GUIEdit.cpp
 src/tools/GUIEdit/Source/GUIEditWindowManager.cpp
@@ -1838,11 +1838,11 @@ src/tools/ImagePacker/Include/WinMain.h
 src/tools/ImagePacker/Source/ImagePacker.cpp
 src/tools/ImagePacker/Source/TexturePage.cpp
 src/tools/ImagePacker/Source/WinMain.cpp
-src/tools/ImagePacker/Source/Window Procedures/DirectorySelect.cpp
-src/tools/ImagePacker/Source/Window Procedures/ImageErrorProc.cpp
-src/tools/ImagePacker/Source/Window Procedures/ImagePackerProc.cpp
-src/tools/ImagePacker/Source/Window Procedures/PageErrorProc.cpp
-src/tools/ImagePacker/Source/Window Procedures/PreviewProc.cpp
+src/tools/ImagePacker/Source/window_procedures/DirectorySelect.cpp
+src/tools/ImagePacker/Source/window_procedures/ImageErrorProc.cpp
+src/tools/ImagePacker/Source/window_procedures/ImagePackerProc.cpp
+src/tools/ImagePacker/Source/window_procedures/PageErrorProc.cpp
+src/tools/ImagePacker/Source/window_procedures/PreviewProc.cpp
 src/tools/Launcher/DatGen/DatGen.cpp
 src/tools/Launcher/Protect.cpp
 src/tools/Launcher/Protect.h

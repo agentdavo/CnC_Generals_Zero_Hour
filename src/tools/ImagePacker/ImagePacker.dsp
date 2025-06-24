@@ -122,28 +122,28 @@ LINK32=link.exe
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
-# Begin Group "Window Procedures"
+# Begin Group "window_procedures"
 
 # PROP Default_Filter ""
 # Begin Source File
 
-SOURCE=".\Source\Window Procedures\DirectorySelect.cpp"
+SOURCE=".\Source\window_procedures\DirectorySelect.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Window Procedures\ImageErrorProc.cpp"
+SOURCE=".\Source\window_procedures\ImageErrorProc.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Window Procedures\ImagePackerProc.cpp"
+SOURCE=".\Source\window_procedures\ImagePackerProc.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Window Procedures\PageErrorProc.cpp"
+SOURCE=".\Source\window_procedures\PageErrorProc.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Window Procedures\PreviewProc.cpp"
+SOURCE=".\Source\window_procedures\PreviewProc.cpp"
 # End Source File
 # End Group
 # Begin Source File

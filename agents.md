@@ -15,12 +15,12 @@ This project contains the preserved source code for **Command & Conquer Generals
 
 ## Documentation
 
-- Update `MIGRATION.md` with any significant porting progress.
+ - Update `migration.md` with any significant porting progress.
 - Keep the root `README.md` intact except for clarifications about the new build system when available.
 
 ## Pull Requests
 
-- Each pull request should include a summary of the changes and reference any relevant sections of `MIGRATION.md`.
+ - Each pull request should include a summary of the changes and reference any relevant sections of `migration.md`.
 - Build the project with CMake before submitting:
   `cmake -S . -B build && cmake --build build`.
 - Save the full build output to `log/build.log` for troubleshooting. Example:
@@ -32,4 +32,4 @@ the default build.
 
 ## Migration Plan
 
-See [MIGRATION.md](MIGRATION.md) for the current strategy to move the codebase from its legacy Win32/DirectX roots to a portable C++11 engine using LVGL, OpenGL ES 1.1 and miniaudio.
+See [migration.md](migration.md) for the current strategy to move the codebase from its legacy Win32/DirectX roots to a portable C++11 engine using LVGL, OpenGL ES 1.1 and miniaudio.

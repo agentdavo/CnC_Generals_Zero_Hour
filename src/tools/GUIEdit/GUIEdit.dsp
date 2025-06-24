@@ -124,68 +124,68 @@ LINK32=link.exe
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
-# Begin Group "Dialog Procedures"
+# Begin Group "dialog_procedures"
 
 # PROP Default_Filter ""
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\CallbackEditor.cpp"
+SOURCE=".\Source\dialog_procedures\CallbackEditor.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\CheckBoxProperties.cpp"
+SOURCE=".\Source\dialog_procedures\CheckBoxProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\ColorDialog.cpp"
+SOURCE=".\Source\dialog_procedures\ColorDialog.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\ComboBoxProperties.cpp"
+SOURCE=".\Source\dialog_procedures\ComboBoxProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\GenericProperties.cpp"
+SOURCE=".\Source\dialog_procedures\GenericProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\GridSettings.cpp"
+SOURCE=".\Source\dialog_procedures\GridSettings.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\ListboxProperties.cpp"
+SOURCE=".\Source\dialog_procedures\ListboxProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\NewLayoutDialog.cpp"
+SOURCE=".\Source\dialog_procedures\NewLayoutDialog.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\ProgressBarProperties.cpp"
+SOURCE=".\Source\dialog_procedures\ProgressBarProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\PushButtonProperties.cpp"
+SOURCE=".\Source\dialog_procedures\PushButtonProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\RadioButtonProperties.cpp"
+SOURCE=".\Source\dialog_procedures\RadioButtonProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\SliderProperties.cpp"
+SOURCE=".\Source\dialog_procedures\SliderProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\StaticTextProperties.cpp"
+SOURCE=".\Source\dialog_procedures\StaticTextProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\TabControlProperties.cpp"
+SOURCE=".\Source\dialog_procedures\TabControlProperties.cpp"
 # End Source File
 # Begin Source File
 
-SOURCE=".\Source\Dialog Procedures\TextEntryProperties.cpp"
+SOURCE=".\Source\dialog_procedures\TextEntryProperties.cpp"
 # End Source File
 # End Group
 # Begin Source File
