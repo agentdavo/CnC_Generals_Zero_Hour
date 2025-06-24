@@ -17,6 +17,9 @@
 */
 
 #include <cstddef>
+#ifndef __cdecl
+#define __cdecl
+#endif
 
 /***********************************************************************************************
  ***              C O N F I D E N T I A L  ---  W E S T W O O D  S T U D I O S               ***
