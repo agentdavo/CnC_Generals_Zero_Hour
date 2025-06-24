@@ -2,7 +2,7 @@
 #include "common/localfilesystem.h"
 #include "common/ramfile.h"
 #include "common/streamingarchivefile.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/perftimer.h"
 #include "game_engine_device/lvgl_device/common/win32_big_file.h"
 

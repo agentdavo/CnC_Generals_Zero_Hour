@@ -33,7 +33,7 @@
 
 #include <stdio.h>
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "WWLib/RefCount.h"
 #include "Common/AsciiString.h"
 

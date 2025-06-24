@@ -35,7 +35,7 @@
 #include "Common/GameCommon.h" // ensure we get DUMP_PERF_STATS, or not
 #include "common/ascii_string.h"
 #include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "game_client/Color.h"
 #include "Common/STLTypedefs.h"

@@ -47,7 +47,7 @@
 // SYSTEM INCLUDES 
 
 // USER INCLUDES 
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/CriticalSection.h"
 #include "common/Errors.h"
 #include "common/GlobalData.h"

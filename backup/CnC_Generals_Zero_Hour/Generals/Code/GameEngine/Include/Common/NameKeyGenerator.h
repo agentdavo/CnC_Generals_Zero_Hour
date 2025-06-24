@@ -33,7 +33,7 @@
 #ifndef __NAMEKEYGENERATOR_H_
 #define __NAMEKEYGENERATOR_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/SubsystemInterface.h"
 #include "Common/GameMemory.h"
 #include "Common/AsciiString.h"

@@ -32,7 +32,7 @@
 #ifndef _GHOSTOBJECT_H_
 #define _GHOSTOBJECT_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/Snapshot.h"
 
 // #define DEBUG_FOG_MEMORY	///< this define is used to force object snapshots for all players, not just local player.

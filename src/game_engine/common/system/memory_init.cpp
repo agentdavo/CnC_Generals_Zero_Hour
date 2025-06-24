@@ -46,8 +46,8 @@
 // SYSTEM INCLUDES
 
 // USER INCLUDES 
-#include "Lib/BaseType.h"
-#include "common/GameMemory.h"
+#include "lib/base_type.h"
+#include "common/gamememory.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

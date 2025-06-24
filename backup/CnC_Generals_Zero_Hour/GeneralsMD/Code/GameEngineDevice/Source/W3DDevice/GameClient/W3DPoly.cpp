@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "W3DDevice/GameClient/W3DPoly.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Delete all vertices in polygon */

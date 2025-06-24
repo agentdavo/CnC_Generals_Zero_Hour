@@ -28,7 +28,7 @@
 
 #include "common/windows.h"
 #include "common/AsciiString.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/PerfTimer.h"
 #include "win32_device/common/win32_local_file_system.h"
 #include "win32_device/common/Win32LocalFile.h"

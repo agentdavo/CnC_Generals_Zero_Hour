@@ -31,7 +31,7 @@
 #ifndef __NETCOMMANDMSG_H
 #define __NETCOMMANDMSG_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameNetwork/NetworkDefs.h"
 #include "Common/UnicodeString.h"
 

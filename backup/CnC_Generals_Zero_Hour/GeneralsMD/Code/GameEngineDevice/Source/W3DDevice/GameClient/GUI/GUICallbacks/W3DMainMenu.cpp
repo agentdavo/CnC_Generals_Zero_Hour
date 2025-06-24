@@ -55,7 +55,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "GameClient/GameWindow.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
 #include "GameClient/Display.h"
 #include "GameLogic/GameLogic.h"
@@ -1057,7 +1057,7 @@ void W3DCreditsMenuDraw( GameWindow *window, WinInstanceData *instData )
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "GameClient/GameWindow.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
 #include "GameClient/Display.h"
 #include "GameLogic/GameLogic.h"

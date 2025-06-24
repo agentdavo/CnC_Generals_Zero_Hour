@@ -44,7 +44,7 @@
 #include "GameLogic/Module/DamageModule.h"
 #include "common/audioEventRTS.h"
 #include "Common/KindOf.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/ModelState.h"
 
 // ------------------------------------------------------------------------------------------------

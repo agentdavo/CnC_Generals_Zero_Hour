@@ -21,7 +21,7 @@
 #ifndef _H_CBUTTONSHOWCOLOR_
 #define _H_CBUTTONSHOWCOLOR_
 
-#include "Lib/Basetype.h"
+#include "lib/base_type.h"
 
 class CButtonShowColor : public CButton
 {

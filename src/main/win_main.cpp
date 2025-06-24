@@ -41,14 +41,14 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "main/win_main.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/CopyProtection.h"
 #include "common/CriticalSection.h"
 #include "common/GlobalData.h"
 #include "common/GameEngine.h"
 #include "common/GameSounds.h"
 #include "common/Debug.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/SafeDisc/CdaPfn.h"
 #include "common/StackDump.h"
 #include "common/MessageStream.h"

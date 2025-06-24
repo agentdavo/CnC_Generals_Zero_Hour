@@ -32,7 +32,7 @@
 #ifndef __TERRAINLOGIC_H_
 #define __TERRAINLOGIC_H_
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/Snapshot.h"
 #include "Common/STLTypedefs.h"
 #include "game_client/TerrainRoads.h"

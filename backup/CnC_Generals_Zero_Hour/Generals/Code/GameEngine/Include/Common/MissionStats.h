@@ -47,7 +47,7 @@
 #ifndef _MISSIONSTATS_H_
 #define _MISSIONSTATS_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameCommon.h"
 #include "Common/Snapshot.h"
 

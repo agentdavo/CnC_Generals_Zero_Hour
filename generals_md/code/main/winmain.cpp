@@ -41,7 +41,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "WinMain.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/CopyProtection.h"
 #include "Common/CriticalSection.h"
 #include "Common/GlobalData.h"

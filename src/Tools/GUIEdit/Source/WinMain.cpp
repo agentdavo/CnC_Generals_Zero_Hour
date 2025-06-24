@@ -50,12 +50,12 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Debug.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/GameEngine.h"
 #include "GameClient/GameWindowManager.h"
 #include "win32_device/game_client/win32_mouse.h"
 #include "Resource.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GUIEdit.h"
 #include "EditWindow.h"
 #include "DialogProc.h"

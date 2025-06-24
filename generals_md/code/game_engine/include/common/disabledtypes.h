@@ -33,7 +33,7 @@
 #define __DISABLED_TYPES_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/BitFlags.h"
 #include "Common/BitFlagsIO.h"
 

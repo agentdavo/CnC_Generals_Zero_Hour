@@ -55,7 +55,7 @@
 #include "GameClient/GameWindowManager.h"
 #include "Win32Device/GameClient/Win32Mouse.h"
 #include "Resource.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GUIEdit.h"
 #include "EditWindow.h"
 #include "DialogProc.h"

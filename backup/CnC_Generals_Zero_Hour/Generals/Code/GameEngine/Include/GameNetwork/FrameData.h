@@ -28,7 +28,7 @@
 #ifndef __FRAMEDATA_H
 #define __FRAMEDATA_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameNetwork/NetCommandList.h"
 
 enum FrameDataReturnType {

@@ -37,7 +37,7 @@
 #include "shader.h"
 #include "vertmaterial.h"
 #include "light.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameType.h"
 #include "Common/Snapshot.h"
 

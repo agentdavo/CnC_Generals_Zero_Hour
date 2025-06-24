@@ -35,7 +35,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "Lib/BaseType.h"
 #include "GameEngine/Common/subsystem_interface.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "game_client/Display.h" // for ShroudLevel
 #include "game_client/Color.h"
 

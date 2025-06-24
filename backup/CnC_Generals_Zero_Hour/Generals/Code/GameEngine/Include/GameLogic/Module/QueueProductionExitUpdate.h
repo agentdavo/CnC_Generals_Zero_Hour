@@ -35,7 +35,7 @@
 
 #include "GameLogic/Module/UpdateModule.h"
 #include "Common/INI.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 class Object;
 

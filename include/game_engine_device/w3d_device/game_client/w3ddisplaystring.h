@@ -53,7 +53,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "game_client/DisplayString.h"
 #include "WW3D2/Render2DSentence.h"
 

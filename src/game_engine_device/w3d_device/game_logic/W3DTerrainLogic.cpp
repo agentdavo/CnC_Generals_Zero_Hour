@@ -27,7 +27,7 @@
 // Author: Colin Day, April 2001
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "w3d_device/game_client/HeightMap.h"
 #include "w3d_device/game_logic/W3DTerrainLogic.h"
 #include "w3d_device/game_client/WorldHeightMap.h"

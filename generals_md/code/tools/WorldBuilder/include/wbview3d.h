@@ -30,7 +30,7 @@
 // wbview3d.h : header file
 //
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "rendobj.h"
 #include "robjlist.h"
 #include "WbView.h"

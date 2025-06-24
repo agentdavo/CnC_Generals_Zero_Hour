@@ -27,7 +27,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "W3DDevice/GameClient/WorldHeightMap.h"
 #include "WbView.h"
 

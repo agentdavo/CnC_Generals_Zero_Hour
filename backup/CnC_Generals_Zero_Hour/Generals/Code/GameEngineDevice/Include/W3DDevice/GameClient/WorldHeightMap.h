@@ -32,7 +32,7 @@
 #ifndef WorldHeightMap_H
 #define WorldHeightMap_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "WWLib/RefCount.h"
 #include "WWMath/Vector3.h"
 #include "W3DDevice/GameClient/TileData.h"

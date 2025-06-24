@@ -39,7 +39,7 @@
 /*---------------------------------------------------------------------------*/
 
 #include <dsound.h>
-#include "Lib/Basetype.h"
+#include "lib/base_type.h"
 #include "MilesAudioDevice/MilesAudioManager.h"
 
 #include "Common/AudioAffect.h"

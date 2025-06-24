@@ -27,7 +27,7 @@
 #include "dx8indexbuffer.h"
 #include "shader.h"
 #include "vertmaterial.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/AsciiString.h"
 
 // The draw objects draw a circle of diameter 1.0 cells.

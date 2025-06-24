@@ -31,7 +31,7 @@
 #ifndef _GAME_TYPE_H_
 #define _GAME_TYPE_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 // the default size of the world map
 #define DEFAULT_WORLD_WIDTH		64

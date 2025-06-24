@@ -51,7 +51,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/Debug.h"
 #include "Common/Errors.h"
 

@@ -32,7 +32,7 @@
 #define _OBJECT_ITER_H_
 
 #include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 
 // forward declaration
 class Object;

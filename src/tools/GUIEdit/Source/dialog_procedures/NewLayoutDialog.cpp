@@ -47,7 +47,7 @@
 #include "common/windows.h"
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Resource.h"
 #include "EditWindow.h"
 #include "GUIEdit.h"

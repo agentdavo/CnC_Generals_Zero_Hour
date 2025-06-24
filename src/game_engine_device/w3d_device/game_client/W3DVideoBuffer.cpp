@@ -45,7 +45,7 @@
 //         Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "WW3D2/texture.h"
 #include "WW3D2/textureloader.h"
 #include "W3DDevice/GameClient/W3DVideoBuffer.h"

@@ -21,7 +21,7 @@
 
 #include "stdafx.h"
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "WBPopupSlider.h"
 #include "resource.h"
 #include "Common/Debug.h"

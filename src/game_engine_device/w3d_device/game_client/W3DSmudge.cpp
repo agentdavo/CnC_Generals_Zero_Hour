@@ -27,11 +27,11 @@
 // Author: Mark Wilczynski, June 2003
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include "Lib/Basetype.h"
+#include "lib/base_type.h"
 #include "always.h"
 #include "W3DDevice/GameClient/W3DSmudge.h"
 #include "W3DDevice/GameClient/W3DShaderManager.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameClient/view.h"
 #include "GameClient/display.h"
 #include "WW3D2/texture.h"

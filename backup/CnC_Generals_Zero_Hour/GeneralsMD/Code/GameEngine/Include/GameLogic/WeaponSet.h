@@ -29,7 +29,7 @@
 #ifndef _WeaponSet_H_
 #define _WeaponSet_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameType.h"
 #include "Common/KindOf.h"
 #include "Common/ModelState.h"

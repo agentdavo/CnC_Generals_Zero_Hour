@@ -25,7 +25,7 @@
 // ObjectPreview.h : header file
 //
 
-#include "lib/BaseType.h"
+#include "lib/base_type.h"
 /////////////////////////////////////////////////////////////////////////////
 // ObjectPreview window
 

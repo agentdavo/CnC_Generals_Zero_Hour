@@ -48,7 +48,7 @@
 #define _PLAYERTEMPLATE_H_
 
 #include "GameEngine/Common/subsystem_interface.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/Debug.h"
 #include "Common/Handicap.h"
 #include "Common/Money.h"

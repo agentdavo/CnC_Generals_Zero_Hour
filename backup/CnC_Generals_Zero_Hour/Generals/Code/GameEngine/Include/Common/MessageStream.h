@@ -33,7 +33,7 @@
 
 #include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
 #include "Common/SubsystemInterface.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameMemory.h"
 
 

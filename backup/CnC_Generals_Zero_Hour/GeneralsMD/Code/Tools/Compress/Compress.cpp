@@ -18,7 +18,7 @@
 
 #include <string>
 #include <cstdio>
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Compression/Compression.h"
 #include "../CRCDiff/Debug.h"
 

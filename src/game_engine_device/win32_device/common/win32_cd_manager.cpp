@@ -47,7 +47,7 @@
 
 #include "common/windows.h"
 
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/FileSystem.h"
 
 #include "Win32DEvice/common/Win32CDManager.h"

@@ -31,7 +31,7 @@
 #ifndef _AI_DOCK_H_
 #define _AI_DOCK_H_
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameLogic/AIStateMachine.h"
 
 /** 

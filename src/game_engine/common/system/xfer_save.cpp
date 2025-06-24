@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 #include "common/XferSave.h"
 #include "common/Snapshot.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 
 // PRIVATE TYPES //////////////////////////////////////////////////////////////////////////////////
 class XferBlockData : public MemoryPoolObject

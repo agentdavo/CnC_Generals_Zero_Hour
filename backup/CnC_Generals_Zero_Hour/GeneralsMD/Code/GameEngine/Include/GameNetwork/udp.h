@@ -55,7 +55,7 @@
 #include <sys/select.h>
 #endif
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #define DEFAULT_PROTOCOL 0
 

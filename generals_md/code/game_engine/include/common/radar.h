@@ -33,7 +33,7 @@
 #define __RADAR_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameMemory.h"
 #include "GameClient/Display.h"	// for ShroudLevel

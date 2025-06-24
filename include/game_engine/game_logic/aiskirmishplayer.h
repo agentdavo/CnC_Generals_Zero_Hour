@@ -31,7 +31,7 @@
 #ifndef _AI_SKIRMISH_PLAYER_H_
 #define _AI_SKIRMISH_PLAYER_H_
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameLogic/AIPlayer.h"
 
 class BuildListInfo;	

@@ -25,7 +25,7 @@
 // TerrainSwatches.h : header file
 //
 
-#include "lib/BaseType.h"
+#include "lib/base_type.h"
 /////////////////////////////////////////////////////////////////////////////
 // TerrainSwatches window
 

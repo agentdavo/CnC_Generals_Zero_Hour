@@ -32,7 +32,7 @@
 #include <math.h>
 #include <limits.h>
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Lib/Trig.h"
 
 #define TWOPI			6.28318530718f

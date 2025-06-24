@@ -26,7 +26,7 @@
 #pragma once
 
 #include "Common/MessageStream.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 
 //----------------------------------------------------------------------------
 class GameMessageParserArgumentType : public MemoryPoolObject

@@ -52,7 +52,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/SubsystemInterface.h"
 #include "Common/AsciiString.h"
 #include "Common/UnicodeString.h"

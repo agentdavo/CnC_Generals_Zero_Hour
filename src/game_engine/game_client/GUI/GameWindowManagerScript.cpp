@@ -48,12 +48,12 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 <<<<<<< Updated upstream:src/GameEngine/GameClient/GUI/GameWindowManagerScript.cpp
 #include "Common/Debug.h"
 #include "common/File.h"
 #include "Common/FileSystem.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/Logger.h"
 #include "Common/NameKeyGenerator.h"
 #include "game_engine/common/function_lexicon.h"
@@ -61,7 +61,7 @@
 #include "common/Debug.h"
 #include "common/File.h"
 #include "common/FileSystem.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/Logger.h"
 #include "common/NameKeyGenerator.h"
 #include "game_engine/common/function_lexicon.h"

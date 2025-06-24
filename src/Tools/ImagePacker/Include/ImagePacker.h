@@ -46,7 +46,7 @@
 #include "common/windows.h"
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "WWLib/Targa.h"
 #include "ImageDirectory.h"
 #include "ImageInfo.h"

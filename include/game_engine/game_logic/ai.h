@@ -33,7 +33,7 @@
 
 #include "Common/Snapshot.h"
 #include "GameEngine/Common/subsystem_interface.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/GameType.h"
 #include "GameLogic/Damage.h"
 #include "Common/STLTypedefs.h"

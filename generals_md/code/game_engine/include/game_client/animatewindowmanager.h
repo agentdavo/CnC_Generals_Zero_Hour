@@ -57,7 +57,7 @@
 //-----------------------------------------------------------------------------
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "Common/GameMemory.h"
 

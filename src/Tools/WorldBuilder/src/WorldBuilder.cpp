@@ -43,7 +43,7 @@
 #include "common/CDManager.h"
 #include "common/Debug.h"
 #include "common/StackDump.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/Science.h"
 #include "common/ThingFactory.h"
 #include "common/INI.h"

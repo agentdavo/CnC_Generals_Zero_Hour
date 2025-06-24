@@ -32,7 +32,7 @@
 #define __VICTORYCONDITIONS_H__
 
 #include "Common/SubsystemInterface.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 class Player;
 

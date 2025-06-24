@@ -33,7 +33,7 @@
 #define _W3DGHOSTOBJECT_H_
 
 #include "GameLogic/GhostObject.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameCommon.h"
 #include "GameClient/DrawableInfo.h"
 

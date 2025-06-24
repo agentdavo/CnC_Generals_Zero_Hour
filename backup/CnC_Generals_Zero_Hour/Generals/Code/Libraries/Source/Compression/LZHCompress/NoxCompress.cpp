@@ -22,7 +22,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Lib/basetype.h"
+#include "lib/base_type.h"
 #include "Noxcompress.h"
 #include "CompLibHeader/lzhl.h"
 

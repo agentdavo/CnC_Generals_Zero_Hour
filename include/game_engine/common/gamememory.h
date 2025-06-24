@@ -70,7 +70,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/win32_compat.h"
 #include "common/debug.h"
 #include "common/errors.h"

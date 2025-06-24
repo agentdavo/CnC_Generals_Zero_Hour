@@ -34,7 +34,7 @@
 
 #include "Common/GameCommon.h"
 #include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/Snapshot.h"
 
 class Object;

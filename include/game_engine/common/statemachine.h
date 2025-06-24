@@ -31,7 +31,7 @@
 #ifndef _STATE_MACHINE_H_
 #define _STATE_MACHINE_H_
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/GameType.h"
 #include "Common/ModelState.h"
 #include "Common/Snapshot.h"

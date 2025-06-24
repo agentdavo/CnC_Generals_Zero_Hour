@@ -31,7 +31,7 @@
 
 #ifdef DEBUG_LOGGING
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameLogic/GameLogic.h"
 #include <cstdarg>
 class LogClass

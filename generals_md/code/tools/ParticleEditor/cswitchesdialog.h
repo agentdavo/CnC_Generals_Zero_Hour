@@ -19,7 +19,7 @@
 
 #pragma once
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 class DebugWindowDialog;
 

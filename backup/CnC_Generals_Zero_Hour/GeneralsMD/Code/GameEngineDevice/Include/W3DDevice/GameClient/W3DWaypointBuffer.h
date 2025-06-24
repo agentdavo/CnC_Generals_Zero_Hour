@@ -63,7 +63,7 @@
 #include "dx8indexbuffer.h"
 #include "shader.h"
 #include "vertmaterial.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/GameType.h"
 
 class SegmentedLineClass;

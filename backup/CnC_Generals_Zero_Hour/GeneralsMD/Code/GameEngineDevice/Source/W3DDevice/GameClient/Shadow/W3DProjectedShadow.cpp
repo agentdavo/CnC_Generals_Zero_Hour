@@ -43,7 +43,7 @@
 #include "WW3D2/assetmgr.h"
 #include "WW3D2/texproject.h"
 #include "WW3D2/dx8renderer.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "W3DDevice/GameClient/W3DGranny.h"
 #include "W3DDevice/GameClient/Heightmap.h"
 #include "D3dx8math.h"

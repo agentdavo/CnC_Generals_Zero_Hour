@@ -4,7 +4,7 @@
 =======
 #include "GameEngine/common/AsciiString.h"
 >>>>>>> Stashed changes
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include <cstdlib>
 
 Bool GetStringFromGeneralsRegistry(AsciiString path, AsciiString key, AsciiString& val)

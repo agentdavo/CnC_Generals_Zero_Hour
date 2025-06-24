@@ -30,7 +30,7 @@
 #ifndef _OBJECT_H_
 #define _OBJECT_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #include "Common/Geometry.h"
 #include "Common/Snapshot.h"

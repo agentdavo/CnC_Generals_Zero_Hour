@@ -32,7 +32,7 @@
 
 #include "common/ascii_string.h"
 #include "Common/GameAudio.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/GameType.h"
 
 // forward declarations ///////////////////////////////////////////////////////////////////////////

@@ -52,7 +52,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <wchar.h>
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/debug.h"
 #include "common/errors.h"
 

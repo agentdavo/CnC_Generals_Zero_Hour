@@ -34,7 +34,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #define DEFINE_IMAGE_STATUS_NAMES
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/Debug.h"
 #include "Common/INI.h"
 #include "Common/GlobalData.h"

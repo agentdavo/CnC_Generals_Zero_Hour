@@ -34,7 +34,7 @@
 #include "Common/GameCommon.h"	// ensure we get DUMP_PERF_STATS, or not
 #include "GameEngine/Common/subsystem_interface.h"
 #include "Lib/BaseType.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 
 
 enum { TRANSLATOR_ID_INVALID = -1 };

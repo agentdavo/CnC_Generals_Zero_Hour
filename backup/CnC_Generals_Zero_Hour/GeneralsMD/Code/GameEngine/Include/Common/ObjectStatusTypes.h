@@ -33,7 +33,7 @@
 #define __OBJECT_STATUS_TYPES_H
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/BitFlags.h"
 #include "Common/BitFlagsIO.h"
 

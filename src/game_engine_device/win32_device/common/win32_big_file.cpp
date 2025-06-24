@@ -30,7 +30,7 @@
 #include "common/localfilesystem.h"
 #include "common/ramfile.h"
 #include "common/streamingarchivefile.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/perftimer.h"
 #include "win32_device/common/win32_big_file.h"
 

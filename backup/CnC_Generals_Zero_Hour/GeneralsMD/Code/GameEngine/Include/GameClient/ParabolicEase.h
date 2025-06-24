@@ -27,7 +27,7 @@
 #ifndef _PARABOLICEASE_H
 #define _PARABOLICEASE_H
 // ============================================================================
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 // ============================================================================
 /// Ease in and out based on a linear velocity.
 /**

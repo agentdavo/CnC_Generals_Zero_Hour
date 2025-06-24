@@ -29,7 +29,7 @@
 #define __DISCONNECTMANAGER_H
 
 #include "GameNetwork/NetCommandRef.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 //#include "GameNetwork/ConnectionManager.h"
 
 enum DisconnectStateType {

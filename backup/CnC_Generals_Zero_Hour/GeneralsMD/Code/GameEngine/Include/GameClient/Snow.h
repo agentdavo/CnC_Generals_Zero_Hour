@@ -22,7 +22,7 @@
 #ifndef _SNOW_H_
 #define _SNOW_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/SubsystemInterface.h"
 #include "Common/Overridable.h"
 #include "Common/Override.h"

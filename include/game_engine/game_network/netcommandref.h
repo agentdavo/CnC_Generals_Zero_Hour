@@ -29,7 +29,7 @@
 #define __NETCOMMANDREF_H
 
 #include "GameNetwork/NetCommandMsg.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 
 #if defined(_INTERNAL) || defined(_DEBUG)
 //	#define DEBUG_NETCOMMANDREF

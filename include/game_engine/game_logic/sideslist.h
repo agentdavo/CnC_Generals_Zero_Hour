@@ -36,7 +36,7 @@
 #include "Common/Errors.h"
 #include "Common/GameType.h"
 #include "Common/Snapshot.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/STLTypedefs.h"
 
 class DataChunkInput;

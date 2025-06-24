@@ -28,7 +28,7 @@
 #ifndef __NETCOMMANDLIST_H
 #define __NETCOMMANDLIST_H
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameNetwork/NetCommandRef.h"
 
 /**

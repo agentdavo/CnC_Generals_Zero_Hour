@@ -29,7 +29,7 @@
 #ifndef _ArmorSet_H_
 #define _ArmorSet_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameType.h"
 #include "Common/SparseMatchFinder.h"
 #include "Common/SparseMatchFinder.h"

@@ -42,7 +42,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include <stdlib.h>
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "common/ascii_string.h"
 #include "Common/NameKeyGenerator.h"

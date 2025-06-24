@@ -34,7 +34,7 @@
 #include "Lib/Basetype.h"
 
 #include "common/audioEventRTS.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/StateMachine.h"
 
 #include "GameLogic/TerrainLogic.h"

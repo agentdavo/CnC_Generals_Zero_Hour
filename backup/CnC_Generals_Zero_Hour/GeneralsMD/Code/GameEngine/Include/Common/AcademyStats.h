@@ -48,7 +48,7 @@
 #ifndef __ACADEMY_STATS_H
 #define __ACADEMY_STATS_H
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/Debug.h"
 #include "Common/Snapshot.h"
 #include "Common/UnicodeString.h"

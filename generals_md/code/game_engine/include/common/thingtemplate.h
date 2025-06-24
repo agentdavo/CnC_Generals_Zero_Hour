@@ -33,7 +33,7 @@
 #define __THINGTEMPLATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
  
 #include "Common/AudioEventRTS.h"
 #include "Common/FileSystem.h"

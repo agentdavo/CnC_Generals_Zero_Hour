@@ -31,7 +31,7 @@
 #ifndef _DATA_CHUNK_H_
 #define _DATA_CHUNK_H_
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/Dict.h"
 #include "Common/MapReaderWriterInfo.h"
 

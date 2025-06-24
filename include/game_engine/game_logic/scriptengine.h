@@ -33,7 +33,7 @@
 #define __SCRIPTENGINE_H_
 
 #include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/STLTypedefs.h"
 #include "Common/Science.h"
 #include "Common/Snapshot.h"

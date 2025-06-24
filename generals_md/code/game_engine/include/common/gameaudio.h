@@ -45,7 +45,7 @@
 #define __COMMON_GAMEAUDIO_H_
 
 // Includes                                                      
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/STLTypedefs.h"
 #include "GameEngine/Common/subsystem_interface.h"
 

@@ -27,7 +27,7 @@
 // Desc:      Code to support rendering of shrouded units/terrain.
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "camera.h"
 #include "simplevec.h"
 #include "dx8wrapper.h"

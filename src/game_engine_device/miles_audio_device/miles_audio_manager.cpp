@@ -39,7 +39,7 @@
 /*---------------------------------------------------------------------------*/
 
 #include "mss.h"
-#include "Lib/Basetype.h"
+#include "lib/base_type.h"
 #include "miles_audio_device/miles_audio_manager.h"
 
 #include "common/AudioAffect.h"

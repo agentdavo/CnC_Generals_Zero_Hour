@@ -52,9 +52,9 @@
 //           Includes                                                      
 //----------------------------------------------------------------------------
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/ascii_string.h"
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 // include FileSystem.h as it will be used alot with File.h
 //#include "Common/FileSystem.h"
 

@@ -36,7 +36,7 @@
 #ifndef PolygonTrigger_H
 #define PolygonTrigger_H
 
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/Snapshot.h"
 #include "Common/STLTypedefs.h"
 

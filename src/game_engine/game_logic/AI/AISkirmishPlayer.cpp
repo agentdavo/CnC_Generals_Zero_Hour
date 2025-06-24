@@ -29,7 +29,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "common/GlobalData.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"

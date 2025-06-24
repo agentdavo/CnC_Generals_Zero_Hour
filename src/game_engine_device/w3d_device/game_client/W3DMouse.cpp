@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-#include "common/GameMemory.h"
+#include "common/gamememory.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/RendObj.h"
 #include "WW3D2/HAnim.h"

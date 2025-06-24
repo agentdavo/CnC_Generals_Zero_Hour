@@ -33,7 +33,7 @@
 #define __REPAIRDOCKUPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "GameLogic/Module/SupplyCenterDockUpdate.h"
 
 // ------------------------------------------------------------------------------------------------

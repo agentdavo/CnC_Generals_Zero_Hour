@@ -42,7 +42,7 @@ be specialized code.
 #include "NetworkDefs.h"
 #include "GameNetwork/NetCommandList.h"
 #include "Common/MessageStream.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 
 class NetPacket;
 

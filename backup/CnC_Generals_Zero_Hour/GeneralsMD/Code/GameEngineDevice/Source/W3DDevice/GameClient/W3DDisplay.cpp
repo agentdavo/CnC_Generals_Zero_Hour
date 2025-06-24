@@ -64,7 +64,7 @@ static void drawFramerateBar(void);
 
 #include "GameNetwork/NetworkInterface.h"
 #include "Common/ModelState.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "W3DDevice/Common/W3DConvert.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "W3DDevice/GameClient/W3DGameClient.h"
@@ -99,7 +99,7 @@ static void drawFramerateBar(void);
 #include "WW3D2/Meshmdl.h"
 #include "WW3D2/rddesc.h"
 #include "targa.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #include "GameLogic/ScriptEngine.h"		// For TheScriptEngine - jkmcd
 #include "GameLogic/GameLogic.h"
@@ -3261,7 +3261,7 @@ static void drawFramerateBar(void);
 
 #include "GameNetwork/NetworkInterface.h"
 #include "Common/ModelState.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "W3DDevice/Common/W3DConvert.h"
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include "W3DDevice/GameClient/W3DGameClient.h"
@@ -3296,7 +3296,7 @@ static void drawFramerateBar(void);
 #include "WW3D2/Meshmdl.h"
 #include "WW3D2/rddesc.h"
 #include "targa.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 #include "GameLogic/ScriptEngine.h"		// For TheScriptEngine - jkmcd
 #include "GameLogic/GameLogic.h"

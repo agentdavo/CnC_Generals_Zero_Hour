@@ -43,7 +43,7 @@
 
 #include "Common/AsciiString.h"
 #include "GameLogic/GameLogic.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "wwmath/vector3.h"
 #include "wwmath/matrix3d.h"
 

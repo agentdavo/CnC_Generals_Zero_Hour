@@ -33,7 +33,7 @@
 #include "common/RandomValue.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Module/AIUpdate.h"

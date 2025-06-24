@@ -42,8 +42,8 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
-#include "common/GameMemory.h"
+#include "lib/base_type.h"
+#include "common/gamememory.h"
 #include "common/Debug.h"
 #include "ImagePacker.h"
 #include "Resource.h"

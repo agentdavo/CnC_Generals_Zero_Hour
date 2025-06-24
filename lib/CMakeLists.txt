@@ -110,16 +110,16 @@ if(APPLE)
 endif()
 
 add_library(uGLES INTERFACE)
-target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/uGLES)
+target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/u_GLES)
 
 # The UniSpySDK sources use a lowercase directory name
 add_subdirectory(uni_spy_sdk)
 target_include_directories(UniSpySDK PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/uni_spy_sdk)
 
 add_library(STLport INTERFACE)
-target_include_directories(STLport INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/STLport)
+target_include_directories(STLport INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/stlport)
 
-add_subdirectory(miles-sdk-stub)
+add_subdirectory(miles_sdk_stub)
 add_subdirectory(zlib)
 add_subdirectory(liblzhl)
 

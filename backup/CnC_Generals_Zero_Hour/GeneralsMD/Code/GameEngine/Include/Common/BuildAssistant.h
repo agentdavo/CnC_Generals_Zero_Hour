@@ -35,7 +35,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "Common/STLTypedefs.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/SubsystemInterface.h"
 #include "GameLogic/Object.h"
 

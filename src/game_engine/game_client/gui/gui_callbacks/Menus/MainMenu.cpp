@@ -32,7 +32,7 @@
 
 #include "GameSpy/ghttp/ghttp.h"
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "common/GameEngine.h"
 #include "common/GameState.h"
 #include "common/GlobalData.h"

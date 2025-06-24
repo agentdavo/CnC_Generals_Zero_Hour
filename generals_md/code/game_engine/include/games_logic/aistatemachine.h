@@ -31,7 +31,7 @@
 #ifndef _AI_STATE_MACHINE_H_
 #define _AI_STATE_MACHINE_H_
 
-#include "Lib/Basetype.h"
+#include "lib/base_type.h"
 
 #include "Common/AudioEventRTS.h"
 #include "Common/GameMemory.h"

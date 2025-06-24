@@ -52,7 +52,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/GameMemory.h"
 #include "GameClient/Image.h"
 #include "GameClient/DisplayString.h"

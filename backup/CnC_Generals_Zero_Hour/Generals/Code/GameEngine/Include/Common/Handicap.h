@@ -47,7 +47,7 @@
 #ifndef _HANDICAP_H_
 #define _HANDICAP_H_
 
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 
 // ----------------------------------------------------------------------------------------------
 class Object;

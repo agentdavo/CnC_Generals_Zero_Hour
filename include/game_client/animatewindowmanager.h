@@ -59,7 +59,7 @@
 //-----------------------------------------------------------------------------
 #include "Lib/BaseType.h"
 #include "GameEngine/Common/subsystem_interface.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 
 //-----------------------------------------------------------------------------
 // FORWARD REFERENCES /////////////////////////////////////////////////////////

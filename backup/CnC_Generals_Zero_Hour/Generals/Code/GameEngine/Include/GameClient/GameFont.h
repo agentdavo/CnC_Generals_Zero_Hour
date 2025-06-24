@@ -33,7 +33,7 @@
 #define __GAMEFONT_H_
 
 #include "Common/SubsystemInterface.h"
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 #include "Common/AsciiString.h"
 #include "Common/GameMemory.h"
 

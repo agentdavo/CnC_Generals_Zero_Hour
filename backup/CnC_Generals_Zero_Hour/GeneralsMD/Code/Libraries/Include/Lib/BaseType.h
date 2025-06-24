@@ -1,6 +1,6 @@
 <<<<<<< Updated upstream:include/Lib/BaseType.h
 #pragma once
-#include "Lib/BaseType.h"
+#include "lib/base_type.h"
 =======
 /*
 **	Command & Conquer Generals Zero Hour(tm)

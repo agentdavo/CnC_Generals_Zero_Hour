@@ -33,7 +33,7 @@
 #define TUNNEL_TRACKER_H
 
 #include "Common/GameType.h"
-#include "Common/GameMemory.h"
+#include "common/gamememory.h"
 #include "Common/Snapshot.h"
 #include "GameLogic/Module/ContainModule.h"
 
