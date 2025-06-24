@@ -49,7 +49,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/Debug.h"
-#include "common/FunctionLexicon.h"
+#include "game_engine/common/function_lexicon.h"
 #include "GameClient/Gadget.h"
 #include "GameClient/GameWindowManager.h"
 #include "GUIEdit.h"

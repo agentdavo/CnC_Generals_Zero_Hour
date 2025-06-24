@@ -56,7 +56,7 @@
 #include "Common/GameMemory.h"
 #include "common/Logger.h"
 #include "Common/NameKeyGenerator.h"
-#include "Common/FunctionLexicon.h"
+#include "game_engine/common/function_lexicon.h"
 =======
 #include "common/Debug.h"
 #include "common/File.h"
@@ -64,7 +64,7 @@
 #include "common/GameMemory.h"
 #include "common/Logger.h"
 #include "common/NameKeyGenerator.h"
-#include "common/FunctionLexicon.h"
+#include "game_engine/common/function_lexicon.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/GUI/GameWindowManagerScript.cpp
 #include "GameClient/Display.h"
 #include "GameClient/WindowLayout.h"

@@ -94,7 +94,7 @@ common/System/Directory.cpp
 common/System/DisabledTypes.cpp
 common/System/File.cpp
 common/System/FileSystem.cpp
-common/System/FunctionLexicon.cpp
+common/system/function_lexicon.cpp
 common/System/GameMemory.cpp
 common/System/GameType.cpp
 common/System/Geometry.cpp

@@ -45,9 +45,9 @@
 #include "w3d_device/game_logic/W3Dgame_logic.h"
 #include "w3d_device/game_client/W3Dgame_client.h"
 #include "w3d_device/game_client/W3DWebBrowser.h"
-#include "w3d_device/common/w3dfunctionlexicon.h"
+#include "w3d_device/common/w3d_function_lexicon.h"
 #include "w3d_device/common/W3DRadar.h"
-#include "w3d_device/common/w3dfunctionlexicon.h"
+#include "w3d_device/common/w3d_function_lexicon.h"
 #include "w3d_device/common/W3DThingFactory.h"
 
 //-------------------------------------------------------------------------------------------------

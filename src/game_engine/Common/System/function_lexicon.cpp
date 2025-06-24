@@ -30,7 +30,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "common/FunctionLexicon.h"
+#include "game_engine/common/function_lexicon.h"
 #include "GameClient/GameWindow.h"
 #include "GameClient/GameWindowManager.h"
 #include "GameClient/GUICallbacks.h"
