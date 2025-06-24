@@ -38,8 +38,18 @@
 #ifndef _SYSTIMER_H
 
 #include "always.h"
-#include <windows.h>
-#include "mmsys.h"
+#ifdef _WIN32
+#  include <windows.h>
+#  include "mmsys.h"
+#else
+#  include <chrono>
+   static inline unsigned long timeGetTime()
+   {
+       using namespace std::chrono;
+       return (unsigned long)duration_cast<milliseconds>(
+           steady_clock::now().time_since_epoch()).count();
+   }
+#endif
 
 #define TIMEGETTIME SystemTime.Get
 

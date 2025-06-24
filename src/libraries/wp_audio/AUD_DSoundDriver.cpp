@@ -72,8 +72,7 @@
 // #undef INITGUID  // see comment above
 #include "common/windows.h"
 
-#include "asimp3\mss.h"
-#include "asimp3\mp3dec.h"
+#include <mss.h>
 
 #include <wpaudio/profiler.h>
 #include <wpaudio/device.h>

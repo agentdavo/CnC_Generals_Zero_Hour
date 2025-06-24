@@ -20,7 +20,6 @@
 #include "wwstring.h"
 #include "wwdebug.h"
 #include "thread.h"
-#include "mpu.h"
 #pragma warning (disable : 4201)	// Nonstandard extension - nameless struct
 #include "common/windows.h"
 #include "systimer.h"

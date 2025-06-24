@@ -1,4 +1,5 @@
 file(GLOB WWLIB_SRCS CONFIGURE_DEPENDS *.cpp)
+list(REMOVE_ITEM WWLIB_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/cpudetect.cpp)
 add_library(wwlib STATIC ${WWLIB_SRCS})
 
 # Expose headers for dependent targets

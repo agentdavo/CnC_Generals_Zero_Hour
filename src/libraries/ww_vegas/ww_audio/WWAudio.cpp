@@ -57,7 +57,7 @@
 #include "wwprofile.h"
 
 #ifdef G_CODE_BASE
-#include "..\wwlib\argv.h"
+#include "libraries/ww_vegas/ww_lib/argv.h"
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,146 +1,129 @@
-/*
-**	Command & Conquer Generals Zero Hour(tm)
-**	Copyright 2025 Electronic Arts Inc.
-**
-**	This program is free software: you can redistribute it and/or modify
-**	it under the terms of the GNU General Public License as published by
-**	the Free Software Foundation, either version 3 of the License, or
-**	(at your option) any later version.
-**
-**	This program is distributed in the hope that it will be useful,
-**	but WITHOUT ANY WARRANTY; without even the implied warranty of
-**	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-**	GNU General Public License for more details.
-**
-**	You should have received a copy of the GNU General Public License
-**	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 #include "mutex.h"
 #include "wwdebug.h"
 #include "common/windows.h"
+#ifndef _WIN32
+#include <mutex>
+#include <chrono>
+#endif
 
-
-// ----------------------------------------------------------------------------
-
-MutexClass::MutexClass(const char* name) : handle(NULL), locked(false)
+MutexClass::MutexClass(const char* name) : handle(nullptr), locked(false)
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		handle=CreateMutex(NULL,false,name);
-		WWASSERT(handle);
-	#endif
+#ifdef _WIN32
+    handle = CreateMutex(NULL,false,name);
+    WWASSERT(handle);
+#else
+    (void)name;
+    handle = new std::timed_mutex();
+#endif
 }
 
 MutexClass::~MutexClass()
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		WWASSERT(!locked); // Can't delete locked mutex!
-		CloseHandle(handle);
-	#endif
+#ifdef _WIN32
+    WWASSERT(!locked);
+    CloseHandle(handle);
+#else
+    delete static_cast<std::timed_mutex*>(handle);
+#endif
 }
 
 bool MutexClass::Lock(int time)
 {
-	#ifdef _UNIX
-		//assert(0);
-		return true;
-	#else
-		int res = WaitForSingleObject(handle,time==WAIT_INFINITE ? INFINITE : time);
-		if (res!=WAIT_OBJECT_0) return false;
-		locked++;
-		return true;
-	#endif
+#ifdef _WIN32
+    int res = WaitForSingleObject(handle, time==WAIT_INFINITE ? INFINITE : time);
+    if (res != WAIT_OBJECT_0) return false;
+    locked++;
+    return true;
+#else
+    auto m = static_cast<std::timed_mutex*>(handle);
+    if (time == WAIT_INFINITE) {
+        m->lock();
+        locked++;
+        return true;
+    }
+    if (m->try_lock_for(std::chrono::milliseconds(time))) {
+        locked++;
+        return true;
+    }
+    return false;
+#endif
 }
 
 void MutexClass::Unlock()
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		WWASSERT(locked);
-		locked--;
-		int res=ReleaseMutex(handle);
-		res;	// silence compiler warnings
-		WWASSERT(res);
-	#endif
+#ifdef _WIN32
+    WWASSERT(locked);
+    locked--;
+    int res = ReleaseMutex(handle);
+    (void)res;
+    WWASSERT(res);
+#else
+    WWASSERT(locked);
+    locked--;
+    static_cast<std::timed_mutex*>(handle)->unlock();
+#endif
 }
 
-// ----------------------------------------------------------------------------
-
-MutexClass::LockClass::LockClass(MutexClass& mutex_,int time) : mutex(mutex_)
+MutexClass::LockClass::LockClass(MutexClass& m,int time) : mutex(m)
 {
-	failed=!mutex.Lock(time);
+    failed = !mutex.Lock(time);
 }
 
 MutexClass::LockClass::~LockClass()
 {
-	if (!failed) mutex.Unlock();
+    if(!failed) mutex.Unlock();
 }
 
-
-
-
-
-
-
-// ----------------------------------------------------------------------------
-
-CriticalSectionClass::CriticalSectionClass() : handle(NULL), locked(false)
+CriticalSectionClass::CriticalSectionClass() : handle(nullptr), locked(false)
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		handle=W3DNEWARRAY char[sizeof(CRITICAL_SECTION)];
-		InitializeCriticalSection((CRITICAL_SECTION*)handle);
-	#endif
+#ifdef _WIN32
+    handle = W3DNEWARRAY char[sizeof(CRITICAL_SECTION)];
+    InitializeCriticalSection((CRITICAL_SECTION*)handle);
+#else
+    handle = new std::timed_mutex();
+#endif
 }
 
 CriticalSectionClass::~CriticalSectionClass()
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		WWASSERT(!locked); // Can't delete locked mutex!
-		DeleteCriticalSection((CRITICAL_SECTION*)handle);
-		delete[] handle;
-	#endif
+#ifdef _WIN32
+    WWASSERT(!locked);
+    DeleteCriticalSection((CRITICAL_SECTION*)handle);
+    delete[] static_cast<char*>(handle);
+#else
+    delete static_cast<std::timed_mutex*>(handle);
+#endif
 }
 
 void CriticalSectionClass::Lock()
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		EnterCriticalSection((CRITICAL_SECTION*)handle);
-		locked++;
-	#endif
+#ifdef _WIN32
+    EnterCriticalSection((CRITICAL_SECTION*)handle);
+#else
+    static_cast<std::timed_mutex*>(handle)->lock();
+#endif
+    locked++;
 }
 
 void CriticalSectionClass::Unlock()
 {
-	#ifdef _UNIX
-		//assert(0);
-	#else
-		WWASSERT(locked);
-		locked--;
-		LeaveCriticalSection((CRITICAL_SECTION*)handle);
-	#endif
+#ifdef _WIN32
+    WWASSERT(locked);
+    locked--;
+    LeaveCriticalSection((CRITICAL_SECTION*)handle);
+#else
+    WWASSERT(locked);
+    locked--;
+    static_cast<std::timed_mutex*>(handle)->unlock();
+#endif
 }
 
-// ----------------------------------------------------------------------------
-
-CriticalSectionClass::LockClass::LockClass(CriticalSectionClass& critical_section) : CriticalSection(critical_section)
+CriticalSectionClass::LockClass::LockClass(CriticalSectionClass& cs) : CriticalSection(cs)
 {
-	CriticalSection.Lock();
+    CriticalSection.Lock();
 }
 
 CriticalSectionClass::LockClass::~LockClass()
 {
-	CriticalSection.Unlock();
+    CriticalSection.Unlock();
 }
-
-
