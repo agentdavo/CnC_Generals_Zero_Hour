@@ -166,8 +166,8 @@ void AABTreeBuilderClass::Build_AABTree(int polycount,Vector3i * polys,int vertc
 	*/
 	VertCount = vertcount;
 	PolyCount = polycount;
-	Verts = W3DNEWARRAY Vector3[VertCount];
-	Polys = W3DNEWARRAY Vector3i[PolyCount];
+       Verts = new Vector3[VertCount];
+       Polys = new Vector3i[PolyCount];
 
 	for (int vi=0; vi<VertCount; vi++) {
 		Verts[vi] = verts[vi];
@@ -179,7 +179,7 @@ void AABTreeBuilderClass::Build_AABTree(int polycount,Vector3i * polys,int vertc
 	/*
 	** First, create a list of all of the poly indices
 	*/
-	int * polyindices = W3DNEWARRAY int[PolyCount];
+       int * polyindices = new int[PolyCount];
 	for (int i=0; i<PolyCount; i++) {
 		polyindices[i] = i;
 	}
@@ -188,7 +188,7 @@ void AABTreeBuilderClass::Build_AABTree(int polycount,Vector3i * polys,int vertc
 	** Build the tree, note that the array of poly indices will be
 	** deleted by the Build_Tree function.
 	*/
-	Root = W3DNEW CullNodeStruct;
+       Root = new CullNodeStruct;
 	Build_Tree(Root,PolyCount,polyindices);
 	polyindices = NULL;
 
@@ -272,7 +272,7 @@ void AABTreeBuilderClass::Build_Tree(CullNodeStruct * node,int polycount,int * p
 	*/
 	if (arrays.FrontCount) {
 		WWASSERT(arrays.FrontPolys != NULL);
-		node->Front = W3DNEW CullNodeStruct;
+               node->Front = new CullNodeStruct;
 		Build_Tree(node->Front,arrays.FrontCount,arrays.FrontPolys);
 		arrays.FrontPolys = NULL;
 	}
@@ -284,7 +284,7 @@ void AABTreeBuilderClass::Build_Tree(CullNodeStruct * node,int polycount,int * p
 	if (arrays.BackCount) {
 		WWASSERT(arrays.BackPolys != NULL);
 
-		node->Back = W3DNEW CullNodeStruct;
+               node->Back = new CullNodeStruct;
 		Build_Tree(node->Back,arrays.BackCount,arrays.BackPolys);
 		arrays.BackPolys = NULL;
 	}
@@ -510,11 +510,11 @@ void AABTreeBuilderClass::Split_Polys
 	** track of the memory this routine allocates.
 	*/
 	if (sc.FrontCount > 0) {
-		arrays->FrontPolys = W3DNEWARRAY int[sc.FrontCount];
+           arrays->FrontPolys = new int[sc.FrontCount];
 	}
 
 	if (sc.BackCount > 0) {
-		arrays->BackPolys = W3DNEWARRAY int[sc.BackCount];
+           arrays->BackPolys = new int[sc.BackCount];
 	}
 
 	arrays->FrontCount = 0;
@@ -821,8 +821,8 @@ void AABTreeBuilderClass::Export(ChunkSaveClass & csave)
 	/*
 	** Pack the tree into an array of W3dMeshAABTreeNode's and polygon indices
 	*/
-	W3dMeshAABTreeNode * nodes = W3DNEWARRAY W3dMeshAABTreeNode[Node_Count()];
-	uint32 * poly_indices = W3DNEWARRAY uint32[Poly_Count()];
+       W3dMeshAABTreeNode * nodes = new W3dMeshAABTreeNode[Node_Count()];
+       uint32 * poly_indices = new uint32[Poly_Count()];
 
 	int cur_node = 0;
 	int cur_poly = 0;

@@ -264,3 +264,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - zlib is now built with `Z_PREFIX` to avoid type clashes with the project's
   `Byte` alias. `CompressionManager` calls updated to use the prefixed
   `z_compress2` and `z_uncompress` APIs.
+- Added compatibility wrappers for refcount.h and STLTypedefs.h.
+- Introduced cross-platform fram_grab stubs and renamed files to snake_case.
+- Replaced Windows allocation macros with standard new in aabtreebuilder.cpp.
+- nox_compress now calls LZHLDecompress with size_t sizes.
+- Fixed return type of lib/zlib/maketree.c main for standards compliance.

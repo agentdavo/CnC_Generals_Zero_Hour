@@ -117,7 +117,7 @@
 
 
 #ifndef _UNIX
-#include "framgrab.h"
+#include "fram_grab.h"
 #endif
 
 

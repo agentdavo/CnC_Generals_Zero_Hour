@@ -20,14 +20,17 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "framgrab.h"
+#include "fram_grab.h"
+
+#ifdef _WIN32
 #include <stdio.h>
 #include <io.h>
-//#include <errno.h>
+#endif
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
+#ifdef _WIN32
 
 FrameGrabClass::FrameGrabClass(const char *filename, MODE mode, int width, int height, int bitcount, float framerate)
 {
@@ -164,7 +167,7 @@ void FrameGrabClass::Grab(void *BitmapPointer)
 }
 
 
-void FrameGrabClass::ConvertFrame(void *BitmapPointer) 
+void FrameGrabClass::ConvertFrame(void *BitmapPointer)
 {
 
 	int width = BitmapInfoHeader.biWidth;
@@ -186,6 +189,18 @@ void FrameGrabClass::ConvertFrame(void *BitmapPointer)
 			c[0] = c[2];
 			c[2] = c[3];
 			c[3] = 0;
-		}
-	}
+        }
+}
+#else
+
+FrameGrabClass::FrameGrabClass(const char *, MODE, int, int, int, float) {}
+FrameGrabClass::~FrameGrabClass() {}
+void FrameGrabClass::CleanupAVI() {}
+void FrameGrabClass::GrabAVI(void *) {}
+void FrameGrabClass::GrabRawFrame(void *) {}
+void FrameGrabClass::ConvertGrab(void *) {}
+void FrameGrabClass::Grab(void *) {}
+void FrameGrabClass::ConvertFrame(void *) {}
+
+#endif
 }
