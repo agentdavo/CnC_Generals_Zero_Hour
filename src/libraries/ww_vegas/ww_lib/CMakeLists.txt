@@ -10,7 +10,8 @@ add_library(wwlib STATIC ${WWLIB_SRCS})
 target_include_directories(wwlib PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/libraries/ww_vegas/ww_lib
+    ${PROJECT_SOURCE_DIR}/include/libraries/ww_vegas/ww_debug
     ${PROJECT_SOURCE_DIR}/src/libraries/ww_vegas/ww_lib
 )
 
-target_link_libraries(wwlib PUBLIC wwdebug)
+# wwlib does not directly depend on wwdebug
