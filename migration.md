@@ -193,7 +193,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   `src/GameEngineDevice/CMakeLists.txt` now globs these sources from
   `src/game_engine_device/w3d_device/Common`.
 
-- Networking now links against the full UniSpySDK library. GameEngine sources include headers from `lib/UniSpySDK` and no longer rely on GameSpy stubs.
+- Networking now links against the full UniSpySDK library. GameEngine sources include headers from `lib/uni_spy_sdk` and no longer rely on GameSpy stubs.
+- Third-party library directories `UniSpySDK` and `STLport` were renamed to `uni_spy_sdk` and `stlport`. CMake include paths and link targets updated accordingly.
 - GitHub Actions now installs `build-essential`, X11 and Mesa development packages so Linux builds compile on CI.
 
 - LocalFile compilation issues fixed on case-sensitive builds by disabling memory pool macros and using standard allocation during migration.
