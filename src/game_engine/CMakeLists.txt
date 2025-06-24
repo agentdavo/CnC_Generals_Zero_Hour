@@ -1,131 +1,131 @@
 add_library(gameengine EXCLUDE_FROM_ALL
-    common/BitFlags.cpp
-    common/Audio/AudioEventRTS.cpp
-    common/Audio/AudioRequest.cpp
-    common/Audio/GameAudio.cpp
-    common/Audio/GameMusic.cpp
-    common/Audio/GameSounds.cpp
-    common/Audio/GameSpeech.cpp
-    common/Audio/simpleplayer.cpp
-    common/Audio/urllaunch.cpp
-    common/CRCDebug.cpp
-    common/Bezier/BezFwdIterator.cpp
-    common/Bezier/BezierSegment.cpp
-    common/System/GameCommon.cpp
-    common/System/QuickTrig.cpp
-    common/System/AsciiString.cpp
-    common/System/UnicodeString.cpp
-    common/System/String.cpp
-    common/System/CriticalSection.cpp
-    common/System/LocalFile.cpp
-    common/PerfTimer.cpp
-    common/StatsCollector.cpp
-    ../common/Logger.cpp
-    ../common/File.cpp
+    common/bit_flags.cpp
+    common/audio/audio_event_rts.cpp
+    common/audio/audio_request.cpp
+    common/audio/game_audio.cpp
+    common/audio/game_music.cpp
+    common/audio/game_sounds.cpp
+    common/audio/game_speech.cpp
+    common/audio/simpleplayer.cpp
+    common/audio/urllaunch.cpp
+    common/crc_debug.cpp
+    common/bezier/bez_fwd_iterator.cpp
+    common/bezier/bezier_segment.cpp
+    common/system/game_common.cpp
+    common/system/quick_trig.cpp
+    common/system/ascii_string.cpp
+    common/system/unicode_string.cpp
+    common/system/string.cpp
+    common/system/critical_section.cpp
+    common/system/local_file.cpp
+    common/perf_timer.cpp
+    common/stats_collector.cpp
+    ../common/logger.cpp
+    ../common/file.cpp
     ../common/registry.cpp
     Precompiled/PreRTS.cpp
-    common/INI/INI.cpp
-    common/INI/INIAiData.cpp
-    common/INI/INIAnimation.cpp
-    common/INI/INIAudioEventInfo.cpp
-    common/INI/INICommandButton.cpp
-    common/INI/INICommandSet.cpp
-    common/INI/INIControlBarScheme.cpp
-    common/INI/INICrate.cpp
-    common/INI/INIDamageFX.cpp
-    common/INI/INIDrawGroupInfo.cpp
-    common/INI/INIGameData.cpp
-    common/INI/INIMapCache.cpp
-    common/INI/INIMapData.cpp
-    common/INI/INIMappedImage.cpp
-    common/INI/INIMiscAudio.cpp
-    common/INI/INIModel.cpp
-    common/INI/INIMultiplayer.cpp
-    common/INI/INIObject.cpp
-    common/INI/INIParticleSys.cpp
-    common/INI/INISpecialPower.cpp
-    common/INI/INITerrain.cpp
-    common/INI/INITerrainBridge.cpp
-    common/INI/INITerrainRoad.cpp
-    common/INI/INIUpgrade.cpp
-    common/INI/INIVideo.cpp
-    common/INI/INIWater.cpp
-    common/INI/INIWeapon.cpp
-    common/INI/INIWebpageURL.cpp
-common/CommandLine.cpp
-common/DamageFX.cpp
-common/Dict.cpp
-common/DiscreteCircle.cpp
-common/GameEngine.cpp
-common/GameLOD.cpp
-common/GameMain.cpp
-common/GlobalData.cpp
-common/Language.cpp
-common/MessageStream.cpp
-common/MiniLog.cpp
-common/MultiplayerSettings.cpp
-common/NameKeyGenerator.cpp
-common/PartitionSolver.cpp
-common/RTS/ActionManager.cpp
-common/RTS/Energy.cpp
-common/RTS/Handicap.cpp
-common/RTS/MissionStats.cpp
-common/RTS/Money.cpp
-common/RTS/ProductionPrerequisite.cpp
-common/RTS/ResourceGatheringManager.cpp
-common/RTS/Science.cpp
-common/RTS/ScoreKeeper.cpp
-common/RTS/SpecialPower.cpp
-common/RTS/Team.cpp
-common/RTS/TunnelTracker.cpp
-common/RandomValue.cpp
-common/Recorder.cpp
-common/SkirmishBattleHonors.cpp
-common/StateMachine.cpp
-common/System/ArchiveFile.cpp
-common/System/ArchiveFileSystem.cpp
-common/System/BuildAssistant.cpp
-common/System/CDManager.cpp
-common/System/Compression.cpp
-common/System/CopyProtection.cpp
-common/System/DataChunk.cpp
-common/System/Debug.cpp
-common/System/Directory.cpp
-common/System/DisabledTypes.cpp
-common/System/File.cpp
-common/System/FileSystem.cpp
+    common/ini/ini.cpp
+    common/ini/ini_ai_data.cpp
+    common/ini/ini_animation.cpp
+    common/ini/ini_audio_event_info.cpp
+    common/ini/ini_command_button.cpp
+    common/ini/ini_command_set.cpp
+    common/ini/ini_control_bar_scheme.cpp
+    common/ini/ini_crate.cpp
+    common/ini/ini_damage_fx.cpp
+    common/ini/ini_draw_group_info.cpp
+    common/ini/ini_game_data.cpp
+    common/ini/ini_map_cache.cpp
+    common/ini/ini_map_data.cpp
+    common/ini/ini_mapped_image.cpp
+    common/ini/ini_misc_audio.cpp
+    common/ini/ini_model.cpp
+    common/ini/ini_multiplayer.cpp
+    common/ini/ini_object.cpp
+    common/ini/ini_particle_sys.cpp
+    common/ini/ini_special_power.cpp
+    common/ini/ini_terrain.cpp
+    common/ini/ini_terrain_bridge.cpp
+    common/ini/ini_terrain_road.cpp
+    common/ini/ini_upgrade.cpp
+    common/ini/ini_video.cpp
+    common/ini/ini_water.cpp
+    common/ini/ini_weapon.cpp
+    common/ini/ini_webpage_url.cpp
+common/command_line.cpp
+common/damage_fx.cpp
+common/dict.cpp
+common/discrete_circle.cpp
+common/game_engine.cpp
+common/game_lod.cpp
+common/game_main.cpp
+common/global_data.cpp
+common/language.cpp
+common/message_stream.cpp
+common/mini_log.cpp
+common/multiplayer_settings.cpp
+common/name_key_generator.cpp
+common/partition_solver.cpp
+common/rts/action_manager.cpp
+common/rts/energy.cpp
+common/rts/handicap.cpp
+common/rts/mission_stats.cpp
+common/rts/money.cpp
+common/rts/production_prerequisite.cpp
+common/rts/resource_gathering_manager.cpp
+common/rts/science.cpp
+common/rts/score_keeper.cpp
+common/rts/special_power.cpp
+common/rts/team.cpp
+common/rts/tunnel_tracker.cpp
+common/random_value.cpp
+common/recorder.cpp
+common/skirmish_battle_honors.cpp
+common/state_machine.cpp
+common/system/archive_file.cpp
+common/system/archive_file_system.cpp
+common/system/build_assistant.cpp
+common/system/cd_manager.cpp
+common/system/compression.cpp
+common/system/copy_protection.cpp
+common/system/data_chunk.cpp
+common/system/debug.cpp
+common/system/directory.cpp
+common/system/disabled_types.cpp
+common/system/file.cpp
+common/system/file_system.cpp
 common/system/function_lexicon.cpp
-common/System/GameMemory.cpp
-common/System/GameType.cpp
-common/System/Geometry.cpp
-common/System/KindOf.cpp
-common/System/List.cpp
-common/System/LocalFileSystem.cpp
-common/System/MemoryInit.cpp
-common/System/QuotedPrintable.cpp
-common/System/RAMFile.cpp
-common/System/Radar.cpp
-common/System/SaveGame/GameState.cpp
-common/System/SaveGame/GameStateMap.cpp
-common/System/Snapshot.cpp
-common/System/StackDump.cpp
-common/System/StreamingArchiveFile.cpp
-common/System/Trig.cpp
-common/System/Upgrade.cpp
-common/System/Xfer.cpp
-common/System/XferCRC.cpp
-common/System/XferLoad.cpp
-common/System/XferSave.cpp
-common/System/encrypt.cpp
-common/System/registry.cpp
-common/TerrainTypes.cpp
-common/Thing/DrawModule.cpp
-common/Thing/Module.cpp
-common/Thing/ModuleFactory.cpp
-common/Thing/Thing.cpp
-common/Thing/ThingFactory.cpp
-common/Thing/ThingTemplate.cpp
-common/UserPreferences.cpp
+common/system/game_memory.cpp
+common/system/game_type.cpp
+common/system/geometry.cpp
+common/system/kind_of.cpp
+common/system/list.cpp
+common/system/local_file_system.cpp
+common/system/memory_init.cpp
+common/system/quoted_printable.cpp
+common/system/ram_file.cpp
+common/system/radar.cpp
+common/system/SaveGame/game_state.cpp
+common/system/SaveGame/game_state_map.cpp
+common/system/snapshot.cpp
+common/system/stack_dump.cpp
+common/system/streaming_archive_file.cpp
+common/system/trig.cpp
+common/system/upgrade.cpp
+common/system/xfer.cpp
+common/system/xfer_crc.cpp
+common/system/xfer_load.cpp
+common/system/xfer_save.cpp
+common/system/encrypt.cpp
+common/system/registry.cpp
+common/terrain_types.cpp
+common/thing/draw_module.cpp
+common/thing/module.cpp
+common/thing/module_factory.cpp
+common/thing/thing.cpp
+common/thing/thing_factory.cpp
+common/thing/thing_template.cpp
+common/user_preferences.cpp
 common/crc.cpp
 common/version.cpp
 )
