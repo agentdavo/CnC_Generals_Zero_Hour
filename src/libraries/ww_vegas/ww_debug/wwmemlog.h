@@ -129,7 +129,7 @@ protected:
 	static void				Pop_Active_Category(void);
 
 	static MemLogClass * Get_Log(void);
-	static void __cdecl Release_Log(void);
+        static int __cdecl Release_Log(void);
 
 	friend class WWMemorySampleClass;
 };

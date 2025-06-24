@@ -63,5 +63,15 @@ target_include_directories(gameenginedevice PUBLIC
 # bridges legacy audio calls to miniaudio. This removes the
 # remaining DirectSound dependency from the GameEngineDevice
 # module.
-target_link_libraries(gameenginedevice PUBLIC milesstub miniaudio lvgl_platform)
+target_link_libraries(gameenginedevice PUBLIC
+    milesstub
+    miniaudio
+    lvgl_platform
+    wwmath
+    ww3d2
+    wwutil
+    wwsaveload
+    wwaudio
+    wwdebug
+)
 # Partial migration of GameEngineDevice sources

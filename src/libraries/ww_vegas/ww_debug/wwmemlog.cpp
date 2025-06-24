@@ -40,8 +40,16 @@
 
 #include "wwmemlog.h"
 #include "wwdebug.h"
-#include "vector.h"
+#include "libraries/ww_vegas/ww_lib/vector.h"
+#include "lib/base_type.h"
 #include "common/windows.h"
+#ifndef _WIN32
+#include <thread>
+static inline unsigned long GetCurrentThreadId() {
+    auto id = std::this_thread::get_id();
+    return std::hash<std::thread::id>()(id);
+}
+#endif
 
 #if (STEVES_NEW_CATCHER || PARAM_EDITING_ON)
 #define DISABLE_MEMLOG 1
@@ -441,14 +449,15 @@ MemLogClass *WWMemoryLogClass::Get_Log(void)
  * HISTORY:                                                                                    *
  *   6/13/2001 8:55PM ST : Created                                                             *
  *=============================================================================================*/
-void __cdecl WWMemoryLogClass::Release_Log(void)
+int __cdecl WWMemoryLogClass::Release_Log(void)
 {
 	MemLogMutexLockClass lock;
 	if (_TheMemLog)
 	{
 		delete _TheMemLog;
 		_TheMemLog = NULL;
-	}
+        }
+        return 0;
 }
 
 /***************************************************************************************************

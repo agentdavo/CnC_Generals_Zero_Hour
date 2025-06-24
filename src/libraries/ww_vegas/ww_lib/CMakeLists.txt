@@ -12,3 +12,5 @@ target_include_directories(wwlib PUBLIC
     ${PROJECT_SOURCE_DIR}/include/libraries/ww_vegas/ww_lib
     ${PROJECT_SOURCE_DIR}/src/libraries/ww_vegas/ww_lib
 )
+
+target_link_libraries(wwlib PUBLIC wwdebug)

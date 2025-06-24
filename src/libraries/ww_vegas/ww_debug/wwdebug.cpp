@@ -43,16 +43,28 @@
 
 #include "wwdebug.h"
 #include "common/windows.h"
-<<<<<<< Updated upstream:src/Libraries/WWVegas/WWDebug/wwdebug.cpp
-//#include "win.h" can use this if allowed to see wwlib
-=======
-
->>>>>>> Stashed changes:src/libraries/ww_vegas/WWDebug/wwdebug.cpp
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+
+#ifndef _WIN32
+#include <errno.h>
+static inline unsigned long FormatMessage(unsigned long, LPCVOID, unsigned int id,
+                                          unsigned int, char* buf,
+                                          unsigned long len, va_list*)
+{
+    const char* msg = strerror(id);
+    if (!msg) msg = "unknown";
+    if (len) {
+        strncpy(buf, msg, len - 1);
+        buf[len - 1] = 0;
+    }
+    return strlen(buf);
+}
+static inline int GetLastError() { return errno; }
+#endif
 
 static PrintFunc _CurMessageHandler = NULL;
 static AssertPrintFunc _CurAssertHandler = NULL;
@@ -65,21 +77,32 @@ static ProfileFunc _CurProfileStopHandler = NULL;
 
 void Convert_System_Error_To_String(int id, char *buffer, int buf_len)
 {
-#ifndef _UNIX
-	FormatMessage(
-		FORMAT_MESSAGE_FROM_SYSTEM,
-		NULL,
-		id,
-		0,
-		buffer,
-		buf_len,
-		NULL);
+#ifdef _WIN32
+    FormatMessage(
+        FORMAT_MESSAGE_FROM_SYSTEM,
+        NULL,
+        id,
+        0,
+        buffer,
+        buf_len,
+        NULL);
+#else
+    const char* msg = strerror(id);
+    if (!msg) msg = "unknown";
+    if (buf_len > 0) {
+        strncpy(buffer, msg, buf_len - 1);
+        buffer[buf_len - 1] = 0;
+    }
 #endif
 }
 
 int Get_Last_System_Error()
 {
-	return GetLastError();
+#ifdef _WIN32
+    return GetLastError();
+#else
+    return errno;
+#endif
 }
 
 /***********************************************************************************************
