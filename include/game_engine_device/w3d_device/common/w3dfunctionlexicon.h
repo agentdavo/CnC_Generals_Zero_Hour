@@ -32,7 +32,7 @@
 #ifndef __W3DFUNCTIONLEXICON_H_
 #define __W3DFUNCTIONLEXICON_H_
 
-#include "common/FunctionLexicon.h"
+#include "game_engine/common/functionlexicon.h"
 
 //-------------------------------------------------------------------------------------------------
 /** The function lexicon that can also contain w3d device methods */

@@ -64,6 +64,8 @@
 
 #ifdef _WIN32
 #include <dinput.h>
+#else
+#include "game_client/dinput_keys.h"
 #endif
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
@@ -74,33 +76,7 @@
 // TYPE DEFINES ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-#ifndef DIK_OEM_102
-#define DIK_OEM_102         0x56    /* < > | on UK/Germany keyboards  */
-#endif
 
-#ifndef DIK_KANA
-#define DIK_KANA            0x70    /* (Japanese keyboard)            */
-#endif
-
-#ifndef DIK_CONVERT
-#define DIK_CONVERT         0x79    /* (Japanese keyboard)            */
-#endif
-
-#ifndef DIK_NOCONVERT
-#define DIK_NOCONVERT       0x7B    /* (Japanese keyboard)            */
-#endif
-
-#ifndef DIK_YEN
-#define DIK_YEN             0x7D    /* (Japanese keyboard)            */
-#endif
-
-#ifndef DIK_CIRCUMFLEX
-#define DIK_CIRCUMFLEX      0x90    /* (Japanese keyboard)            */
-#endif
-
-#ifndef DIK_KANJI
-#define DIK_KANJI           0x94    /* (Japanese keyboard)            */
-#endif
 
 //=============================================================================
 /** The key tables */

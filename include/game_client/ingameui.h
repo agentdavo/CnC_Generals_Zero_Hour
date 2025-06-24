@@ -41,7 +41,7 @@
 #include "GameEngine/Common/subsystem_interface.h"
 #include "Common/UnicodeString.h"
 #include "game_client/DisplayString.h"
-#include "game_client/Mouse.h"
+#include "game_client/mouse.h"
 #include "game_client/RadiusDecal.h"
 #include "game_client/View.h"
 #include "Common/Snapshot.h"

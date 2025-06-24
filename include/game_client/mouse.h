@@ -55,7 +55,7 @@
 #include "Lib/BaseType.h"
 #include "GameEngine/Common/subsystem_interface.h"
 #include "common/ascii_string.h"
-#include "Common/UnicodeString.h"
+#include "game_engine/common/unicodestring.h"
 
 // FORWARD REFERENCES /////////////////////////////////////////////////////////
 

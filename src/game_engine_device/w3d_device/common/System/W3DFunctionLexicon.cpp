@@ -29,8 +29,8 @@
 
 #include <stdlib.h>
 
-#include "game_client/GameWindow.h"
-#include "w3d_device/common/W3DFunctionLexicon.h"
+#include "game_client/gamewindow.h"
+#include "w3d_device/common/w3dfunctionlexicon.h"
 #include "w3d_device/game_client/W3DGUICallbacks.h"
 #include "w3d_device/game_client/W3DGameWindow.h"
 #include "w3d_device/game_client/W3DGadget.h"

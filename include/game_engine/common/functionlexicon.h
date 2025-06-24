@@ -34,10 +34,10 @@
 #define __FUNCTIONLEXICON_H_
 
 #include "GameEngine/Common/subsystem_interface.h"
-#include "Common/NameKeyGenerator.h"
-#include "Common/GameMemory.h"
-#include "game_client/GameWindow.h"
-#include "game_client/WindowLayout.h"
+#include "game_engine/common/namekeygenerator.h"
+#include "game_engine/common/GameMemory.h"
+#include "game_client/gamewindow.h"
+#include "game_client/windowlayout.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Collection of function pointers to help us in managing callbacks */

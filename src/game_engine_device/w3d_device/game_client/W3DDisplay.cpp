@@ -57,7 +57,7 @@ static void drawFramerateBar(void);
 #include "game_client/GameText.h"
 #include "game_client/GraphDraw.h"
 #include "game_client/Line2D.h"
-#include "game_client/Mouse.h"
+#include "game_client/mouse.h"
 #include "game_client/GlobalLanguage.h"
 #include "game_client/Water.h"
 
