@@ -45,24 +45,21 @@
 #include "always.h"
 #endif
 
+#ifdef _WIN32
 #if defined(_MSC_VER)
-#pragma warning(push, 3) // (gth) system headers complain at warning level 4...
+#pragma warning(push, 3)
 #endif
-
-#ifndef _WINDOWS_
 #include "common/windows.h"
-#endif
-
-#ifndef _INC_WINDOWSX
 #include "windowsx.h"
-#endif
-
-#ifndef _INC_VFW
-#include "vfw.h"
-#endif
-
+#include <vfw.h>
 #if defined(_MSC_VER)
 #pragma warning(pop)
+#endif
+#else
+using PAVIFILE = void*;
+using PAVISTREAM = void*;
+struct AVISTREAMINFO { int dummy; };
+struct BITMAPINFOHEADER { int dummy; };
 #endif
 
 // FramGrab.h: interface for the FrameGrabClass class.
