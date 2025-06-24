@@ -62,7 +62,9 @@
 #	define DIRECTINPUT_VERSION	0x800
 #endif
 
+#ifdef _WIN32
 #include <dinput.h>
+#endif
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 

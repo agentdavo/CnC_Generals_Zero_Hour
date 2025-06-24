@@ -1,7 +1,7 @@
-#include "common/OSDisplay.h"
-#include "common/AsciiString.h"
-#include "common/UnicodeString.h"
-#include "GameClient/GameText.h"
+#include "game_engine/common/osdisplay.h"
+#include "game_engine/common/ascii_string.h"
+#include "game_engine/common/unicodestring.h"
+#include "game_client/gametext.h"
 #include "lvgl_platform/lvgl_platform.h"
 #include <lvgl.h>
 

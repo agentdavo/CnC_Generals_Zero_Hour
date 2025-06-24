@@ -31,7 +31,7 @@
 #ifndef __LVGLDEVICE_WIN32BIGFILESYSTEM_H_
 #define __LVGLDEVICE_WIN32BIGFILESYSTEM_H_
 
-#include "common/archiveFileSystem.h"
+#include "game_engine/common/archivefilesystem.h"
 
 class Win32BIGFileSystem : public ArchiveFileSystem
 {

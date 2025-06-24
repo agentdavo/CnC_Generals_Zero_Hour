@@ -31,7 +31,7 @@
 #ifndef __WIN32BIGFILESYSTEM_H
 #define __WIN32BIGFILESYSTEM_H
 
-#include "common/archiveFileSystem.h"
+#include "game_engine/common/archivefilesystem.h"
 
 class Win32BIGFileSystem : public ArchiveFileSystem
 {

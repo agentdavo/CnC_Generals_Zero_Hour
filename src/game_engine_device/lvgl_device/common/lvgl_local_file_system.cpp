@@ -1,7 +1,7 @@
-#include "game_engine_device/lvgl_device/common/LvglLocalFileSystem.h"
-#include "common/AsciiString.h"
-#include "common/GameMemory.h"
-#include "common/PerfTimer.h"
+#include "game_engine_device/lvgl_device/common/lvgllocalfilesystem.h"
+#include "game_engine/common/ascii_string.h"
+#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/perftimer.h"
 #include "common/local_file.h"
 #include <fstream>
 #include <filesystem>

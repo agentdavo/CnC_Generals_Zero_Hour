@@ -1,6 +1,6 @@
 #pragma once
 
-#include "game_client/Keyboard.h"
+#include "game_client/keyboard.h"
 #include <lvgl.h>
 
 class LvglKeyboard : public Keyboard
