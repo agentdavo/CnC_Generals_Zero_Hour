@@ -174,7 +174,7 @@ void ArchiveFileSystem::loadIntoDirectoryTree(const ArchiveFile *archiveFile, co
 void ArchiveFileSystem::loadMods() {
 	if (TheGlobalData->m_modBIG.isNotEmpty())
 	{
-		ArchiveFile *archiveFile = openArchiveFile(TheGlobalData->m_modBIG.str());
+                ArchiveFile *archiveFile = openArchiveFile(std::filesystem::path(TheGlobalData->m_modBIG.str()));
 
 		if (archiveFile != NULL) {
 			DEBUG_LOG(("ArchiveFileSystem::loadMods - loading %s into the directory tree.\n", TheGlobalData->m_modBIG.str()));

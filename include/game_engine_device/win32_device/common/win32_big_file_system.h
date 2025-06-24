@@ -48,7 +48,7 @@ public:
 	virtual void closeAllArchiveFiles( void );											///< Close all Archivefiles currently open
 
 	// File operations
-	virtual ArchiveFile * openArchiveFile(const Char *filename);
+        virtual ArchiveFile * openArchiveFile(const std::filesystem::path &filename);
 	virtual void closeArchiveFile(const Char *filename);
 	virtual void closeAllFiles( void );															///< Close all files associated with ArchiveFiles
 
