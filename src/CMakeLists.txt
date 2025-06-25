@@ -42,4 +42,4 @@ if(BUILD_ENGINE)
     target_link_libraries(Generals PRIVATE milesstub)
 endif()
 
-add_subdirectory(examples/lvgl_hello)
+add_subdirectory(examples)
