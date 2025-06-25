@@ -183,7 +183,12 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF);
 HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF, DWORD Declaration[MAX_FVF_DECL_SIZE]);
 
 // Last created device's display mode for adapter queries
-static D3DDISPLAYMODE g_current_display_mode;
+static D3DDISPLAYMODE g_current_display_mode = {
+    800,        /* Width */
+    600,        /* Height */
+    60,         /* RefreshRate */
+    D3DFMT_X8R8G8B8 /* Format */
+};
 
 static float dword_to_float(DWORD v) {
     union {
@@ -1082,7 +1087,15 @@ static HRESULT D3DAPI d3d8_enum_adapter_modes(IDirect3D8 *This,
     *pMode = g_current_display_mode;
     return D3D_OK;
 }
-static HRESULT D3DAPI d3d8_get_adapter_display_mode(IDirect3D8 *This, UINT Adapter, D3DDISPLAYMODE *pMode) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI d3d8_get_adapter_display_mode(IDirect3D8 *This,
+                                                    UINT Adapter,
+                                                    D3DDISPLAYMODE *pMode) {
+    if (Adapter != D3DADAPTER_DEFAULT || !pMode)
+        return D3DERR_INVALIDCALL;
+
+    *pMode = g_current_display_mode;
+    return D3D_OK;
+}
 static HRESULT D3DAPI d3d8_check_device_type(IDirect3D8 *This, UINT Adapter, D3DDEVTYPE CheckType, D3DFORMAT DisplayFormat, D3DFORMAT BackBufferFormat, BOOL Windowed) { return D3D_OK; }
 static HRESULT D3DAPI d3d8_check_device_format(IDirect3D8 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT AdapterFormat, DWORD Usage, D3DRESOURCETYPE RType, D3DFORMAT CheckFormat) { return D3D_OK; }
 static HRESULT D3DAPI d3d8_check_device_multi_sample_type(IDirect3D8 *This, UINT Adapter, D3DDEVTYPE DeviceType, D3DFORMAT SurfaceFormat, BOOL Windowed, D3DMULTISAMPLE_TYPE MultiSampleType) { return D3DERR_NOTAVAILABLE; }
