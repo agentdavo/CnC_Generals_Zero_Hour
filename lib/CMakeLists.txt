@@ -65,7 +65,14 @@ target_include_directories(lvgl PUBLIC
 
 if(LVGL_USE_SDL)
     target_link_libraries(lvgl PUBLIC SDL2::SDL2)
+    target_include_directories(lvgl PUBLIC ${SDL2_INCLUDE_DIRS})
     target_compile_definitions(lvgl PUBLIC LV_USE_SDL=1)
+    if(APPLE)
+        # When SDL2 is installed as a framework on macOS, CMake's package
+        # configuration may not inject the required "-framework SDL2" linker
+        # option.  Add it explicitly so lvgl links correctly.
+        target_link_options(lvgl PUBLIC "-framework" "SDL2")
+    endif()
 endif()
 
 if(LVGL_USE_X11)

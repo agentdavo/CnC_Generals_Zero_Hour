@@ -210,6 +210,9 @@ static uint32_t keycode_to_ctrl_key(SDL_Keycode sdl_key)
         case SDLK_END:
             return LV_KEY_END;
 
+        case SDLK_CAPSLOCK:
+            return LV_KEY_CAPS_LOCK;
+
         default:
             return '\0';
     }

@@ -19,4 +19,5 @@ protected:
 
 private:
     lv_indev_t *m_indev;
+    Bool m_caps_state;
 };

@@ -40,7 +40,6 @@
 #include <unistd.h>
 
 #define stricmp strcasecmp
-#define FILE_ATTRIBUTE_READONLY 0x01
 static inline char *strupr(char *s)
 {
     for (char *p = s; *p; ++p)
@@ -56,6 +55,7 @@ static inline unsigned long GetFileAttributes_local(const char *filename)
     }
     return 0xFFFFFFFF;
 }
+
 static inline void DeleteFile(const char *filename) { unlink(filename); }
 #define GetFileAttributes GetFileAttributes_local
 

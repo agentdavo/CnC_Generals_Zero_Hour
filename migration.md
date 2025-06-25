@@ -167,6 +167,8 @@ are now detected and `convert_lv_key()` translates every key listed in
 `KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  The new
 `lvglDevice` library now lives under `src/game_engine_device/lvgl_device` and is
 linked unconditionally from `src/CMakeLists.txt`.
+Caps Lock state is now tracked inside `LvglKeyboard` using `lv_indev_get_key()`
+so text entry mirrors the Win32 behaviour.
 
 Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
 - The W3D device common files (radar, convert and factory helpers) now live under `src/game_engine_device/w3d_device/Common` with their headers available in `include/game_engine_device/w3d_device`. Basic player management classes have been moved to `src/game_engine/common/RTS` and corresponding headers under `include/GameEngine/Common`.
@@ -314,8 +316,19 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Began implementing D3DX utility functions. D3DXComputeBoundingSphere and D3DXComputeNormals now have working shims.
 - Implemented additional D3DX helpers used by WW3D2 including D3DXCreateTexture,
   D3DXCreateTextureFromFileExA, D3DXLoadSurfaceFromSurface and D3DXFilterTexture.
+- Removed unused Win32 headers from `lvgl_device/common` and deleted the old
+    `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
+    `std::filesystem` directly for directory creation and existence checks.
+- Added lvgl_ugles_demo example under src/examples. It initialises the
+  microGLES software renderer to draw a triangle and presents the framebuffer on
+  an LVGL canvas. The example builds only when `BUILD_ENGINE=OFF`.
 - Added D3DXVec3Transform and D3DXComputeBoundingBox implementations in the
   d3d8_gles shim.
+- Implemented D3DXCreateCylinder and GetAdapterDisplayMode with corresponding
+  regression tests.
 - Removed unused Win32 headers from `lvgl_device/common` and deleted the old
   `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
   `std::filesystem` directly for directory creation and existence checks.
+- CMake now exports SDL2 include directories for LVGL so SDL.h resolves on macOS.
+- macOS builds now link the LVGL library against the SDL2 framework
+  (`-framework SDL2`) when the SDL backend is enabled.
