@@ -39,7 +39,7 @@
 #ifndef __SOUND_SCENE_OBJ_H
 #define __SOUND_SCENE_OBJ_H
 
-#include "Refcount.H"
+#include "refcount.h"
 #include "WWAudio.H"
 #include "BitType.H"
 #include "persist.h"

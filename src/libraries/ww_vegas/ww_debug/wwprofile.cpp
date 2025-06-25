@@ -53,6 +53,7 @@
 #include "always.h"
 #include "wwprofile.h"
 #include "wwdebug.h"
+#include "common/windows.h"
 #include <chrono>
 #include <cstdint>
 

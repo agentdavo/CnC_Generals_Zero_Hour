@@ -64,11 +64,80 @@ static inline DWORD timeGetTime()
 // Minimal Win32 synchronization stubs
 #ifndef _WIN32
 #include <mutex>
+#include <strings.h>
 #include <atomic>
 #include <thread>
 #include <cstdint>
 #include <condition_variable>
 #include <new>
+#include <cerrno>
+
+#define stricmp strcasecmp
+#define _stricmp strcasecmp
+#define strnicmp strncasecmp
+#define _strnicmp strncasecmp
+
+#define SEVERITY_ERROR 1
+#define FACILITY_ITF 4
+#define MAKE_HRESULT(sev, fac, code) \
+    ((HRESULT)(((unsigned long)(sev) << 31) | ((unsigned long)(fac) << 16) | \
+               ((unsigned long)(code))))
+#ifndef S_OK
+#define S_OK 0
+#endif
+#ifndef E_FAIL
+#define E_FAIL ((HRESULT)0x80004005L)
+#endif
+
+// Minimal registry API stubs for non-Windows builds
+using HKEY = void *;
+#define HKEY_CURRENT_USER   ((HKEY)1)
+#define HKEY_LOCAL_MACHINE  ((HKEY)2)
+
+#define KEY_READ   0x20019
+#define KEY_WRITE  0x20006
+#define REG_OPTION_NON_VOLATILE 0
+#define REG_SZ     1
+#define REG_DWORD  4
+
+#ifndef ERROR_SUCCESS
+#define ERROR_SUCCESS 0
+#endif
+#ifndef ERROR_FILE_NOT_FOUND
+#define ERROR_FILE_NOT_FOUND ENOENT
+#endif
+
+static inline LONG RegOpenKeyEx(HKEY, LPCSTR, DWORD, DWORD, HKEY *)
+{
+    return ERROR_FILE_NOT_FOUND;
+}
+
+static inline LONG RegQueryValueEx(HKEY, LPCSTR, DWORD *, DWORD *, LPBYTE,
+                                   DWORD *)
+{
+    return ERROR_FILE_NOT_FOUND;
+}
+
+static inline LONG RegSetValueEx(HKEY, LPCSTR, DWORD, DWORD, const BYTE *,
+                                 DWORD)
+{
+    return ERROR_SUCCESS;
+}
+
+static inline LONG RegCreateKeyEx(HKEY, LPCSTR, DWORD, LPCSTR, DWORD, DWORD,
+                                  LPVOID, HKEY *out, DWORD *disp)
+{
+    if (out)
+        *out = nullptr;
+    if (disp)
+        *disp = 0;
+    return ERROR_FILE_NOT_FOUND;
+}
+
+static inline LONG RegCloseKey(HKEY)
+{
+    return ERROR_SUCCESS;
+}
 
 struct WinMutex {
     std::mutex m;

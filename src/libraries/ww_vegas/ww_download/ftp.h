@@ -24,10 +24,11 @@
 
 //#include "../resource.h"       // main symbols
 
+#include "common/windows.h"
 #include "winsock.h"
 #include "stdio.h"
 
-#include "WWDownload/ftpdefs.h"
+#include "ftpdefs.h"
 
 // FTP server return codes.  See RFC 959
 
