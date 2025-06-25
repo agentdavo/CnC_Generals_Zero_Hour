@@ -5,7 +5,7 @@
 #include <cstring>
 
 LvglKeyboard::LvglKeyboard()
-    : m_indev(nullptr)
+    : m_indev(nullptr), m_caps_state(FALSE)
 {
 }
 
@@ -28,6 +28,7 @@ static UnsignedByte convert_lv_key(uint32_t k)
         case LV_KEY_PREV:      return KEY_TAB;
         case LV_KEY_HOME:      return KEY_HOME;
         case LV_KEY_END:       return KEY_END;
+        case LV_KEY_CAPS_LOCK: return KEY_CAPS;
         default: break;
     }
 
@@ -119,7 +120,7 @@ void LvglKeyboard::update()
 
 Bool LvglKeyboard::getCapsState()
 {
-    return FALSE;
+    return m_caps_state;
 }
 
 void LvglKeyboard::getKey(KeyboardIO *key)
@@ -148,6 +149,9 @@ void LvglKeyboard::getKey(KeyboardIO *key)
         return;
 
     key->key = convert_lv_key(data.key);
+    if(data.key == LV_KEY_CAPS_LOCK && data.state == LV_INDEV_STATE_PRESSED)
+        m_caps_state = !m_caps_state;
+
     key->state = (data.state == LV_INDEV_STATE_PRESSED) ? KEY_STATE_DOWN : KEY_STATE_UP;
     key->sequence = lv_tick_get();
 

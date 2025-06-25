@@ -167,6 +167,8 @@ are now detected and `convert_lv_key()` translates every key listed in
 `KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  The new
 `lvglDevice` library now lives under `src/game_engine_device/lvgl_device` and is
 linked unconditionally from `src/CMakeLists.txt`.
+Caps Lock state is now tracked inside `LvglKeyboard` using `lv_indev_get_key()`
+so text entry mirrors the Win32 behaviour.
 
 Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
 - The W3D device common files (radar, convert and factory helpers) now live under `src/game_engine_device/w3d_device/Common` with their headers available in `include/game_engine_device/w3d_device`. Basic player management classes have been moved to `src/game_engine/common/RTS` and corresponding headers under `include/GameEngine/Common`.
@@ -265,6 +267,7 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - MapCacheBuilder tool relocated to `src/tools/map_cache_builder` and the entry
   point renamed to `win_main.cpp`.
 - Win32BIGFile.cpp and Win32BIGFileSystem.cpp stubs removed; lvgl_big_file.cpp and lvgl_big_file_system.cpp now supply the BIG archive loader.
+- Engine startup creates LvglLocalFileSystem and Win32BIGFileSystem so .big archives load automatically.
 - BIG file loaders now allocate ArchiveFile objects via std::unique_ptr to avoid leaks on early exit.
 - ArchivedFileInfo entries in ArchiveFile are now managed by std::unique_ptr and
   addFile takes a const reference. This removes manual delete logic and improves
@@ -320,3 +323,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Removed unused Win32 headers from `lvgl_device/common` and deleted the old
   `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
   `std::filesystem` directly for directory creation and existence checks.
+- CMake now exports SDL2 include directories for LVGL so SDL.h resolves on macOS.
+- macOS builds now link the LVGL library against the SDL2 framework
+  (`-framework SDL2`) when the SDL backend is enabled.

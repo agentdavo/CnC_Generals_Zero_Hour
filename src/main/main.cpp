@@ -7,6 +7,11 @@
 #include "lvgl_device/game_client/lvglkeyboard.h"
 #include "lvgl_device/game_client/lvglmouse.h"
 #include "lvgl_game_engine/lvgl_game_engine.h"
+#include "game_engine_device/lvgl_device/common/lvgllocalfilesystem.h"
+#include "game_engine_device/lvgl_device/common/win32_big_file_system.h"
+#include "game_engine/common/filesystem.h"
+#include "game_engine/common/localfilesystem.h"
+#include "game_engine/common/archivefilesystem.h"
 
 static uint32_t window_width = 800;
 static uint32_t window_height = 600;
@@ -40,6 +45,14 @@ int main(int argc, char **argv)
         return 1;
     }
     LOG_INFO("Window created");
+
+    static LvglLocalFileSystem local_fs;
+    static Win32BIGFileSystem archive_fs;
+    static FileSystem fs;
+    TheLocalFileSystem = &local_fs;
+    TheArchiveFileSystem = &archive_fs;
+    TheFileSystem = &fs;
+    TheFileSystem->init();
 
     LvglKeyboard keyboard;
     LvglMouse mouse;
