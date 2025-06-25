@@ -76,7 +76,7 @@
 #include "texture.h"
 #include "vector.h"
 #include "vp.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "dx8wrapper.h"
 #include "dx8vertexbuffer.h"
 #include "dx8indexbuffer.h"

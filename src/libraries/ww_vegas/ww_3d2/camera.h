@@ -53,7 +53,7 @@
 #include "frustum.h"
 #include "obbox.h"
 #include "vector2.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "colmath.h"
 
 class RenderInfoClass;

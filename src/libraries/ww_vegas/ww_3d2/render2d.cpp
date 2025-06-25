@@ -39,7 +39,7 @@
 #include "font3d.h"
 #include "rect.h"
 #include "texture.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "matrix3d.h"
 #include "dx8wrapper.h"
 #include "dx8indexbuffer.h"

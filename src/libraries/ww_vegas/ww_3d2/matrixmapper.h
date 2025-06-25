@@ -42,7 +42,7 @@
 
 #include "always.h"
 #include "bittype.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "mapper.h"
 
 // Modified to use DX 8 texture matrices

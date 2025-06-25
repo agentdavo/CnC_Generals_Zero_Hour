@@ -46,7 +46,7 @@
 #include "always.h"
 #include "dllist.h"
 #include "d3d8.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "statistics.h"
 #include "wwstring.h"
 #include "lightenvironment.h"

@@ -45,7 +45,7 @@
 #include "sr_util.h"
 #include "wwdebug.h"
 #include "camera.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 
 #ifdef WW3D_DX8
 
