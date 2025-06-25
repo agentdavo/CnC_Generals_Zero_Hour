@@ -460,6 +460,13 @@ static void setup_vertex_attributes(GLES_Device *gles, DWORD fvf, BYTE *data,
 
     int tex_count = (fvf & D3DFVF_TEXCOUNT_MASK) >> D3DFVF_TEXCOUNT_SHIFT;
     int limit = tex_count > 2 ? 2 : tex_count;
+    /*
+     * gles->texcoord_index0 selects which vertex texcoord set feeds
+     * texture stage 0. When it equals 1 with TEX2 data present, the
+     * second coordinate array is bound to GL_TEXTURE0 and the first
+     * array becomes GL_TEXTURE1. This mirrors the D3DTSS_TEXCOORDINDEX
+     * behaviour for two stages.
+     */
     for (int i = 0; i < limit; i++) {
         int unit = i;
         if (gles->texcoord_index0 < limit) {
