@@ -2,6 +2,9 @@
 
 #ifndef _WIN32
 #include <cstdint>
+#include <cstring>
+#include <unistd.h>
+#include <sys/stat.h>
 #ifndef __cdecl
 #define __cdecl
 #endif
@@ -31,5 +34,26 @@ using HWND   = HANDLE;
 #endif
 #ifndef FAILED
 #define FAILED(hr) ((hr) < 0)
+#endif
+
+static inline int lstrcmpi(const char *a, const char *b) { return strcasecmp(a, b); }
+static inline char *lstrcpy(char *d, const char *s) { return strcpy(d, s); }
+static inline char *lstrcat(char *d, const char *s) { return strcat(d, s); }
+static inline size_t lstrlen(const char *s) { return strlen(s); }
+static inline char *lstrcpyn(char *d, const char *s, size_t n) {
+    if (n == 0) return d; strncpy(d, s, n - 1); d[n - 1] = '\0'; return d;
+}
+static inline DWORD GetCurrentDirectory(DWORD n, char *b) {
+    char *r = getcwd(b, n); return r ? strlen(r) : 0;
+}
+#ifndef GetFileAttributes
+static inline DWORD GetFileAttributes(const char *p) {
+    struct stat st; return stat(p, &st) == 0 ? 0 : 0xFFFFFFFFu;
+}
+#endif
+static inline char *_strdup(const char *s) { return strdup(s); }
+#ifndef TRUE
+#define TRUE 1
+#define FALSE 0
 #endif
 #endif // _WIN32

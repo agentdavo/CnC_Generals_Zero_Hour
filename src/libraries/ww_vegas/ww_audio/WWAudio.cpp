@@ -36,7 +36,7 @@
 
 #include "always.h"
 #include "common/windows.h"
-#include "WWAudio.H"
+#include "WWAudio.h"
 #include "WWDebug.H"
 #include "Utils.H"
 #include "RealCRC.H"

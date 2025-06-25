@@ -38,7 +38,7 @@
 #include "GameLogic/Module/CollideModule.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/WeaponBonusConditionFlags.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "WWMath/Matrix3D.h"
 
 class ParticleSystem;

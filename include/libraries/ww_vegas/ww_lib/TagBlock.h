@@ -43,7 +43,7 @@
 #define TAGBLOCK_H
 
 #include "slist.h"
-#include "crc.h"
+#include "game_engine/common/crc.h"
 #include "rawfile.h"
 
 #include <string.h>

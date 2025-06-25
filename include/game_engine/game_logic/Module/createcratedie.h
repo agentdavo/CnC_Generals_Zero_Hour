@@ -33,7 +33,7 @@
 #define _CREATE_CRATE_DIE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/INI.h"
+#include "common/ini.h"
 #include "GameLogic/Module/DieModule.h"
 #include "common/stl_type_defs.h"
 

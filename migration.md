@@ -104,7 +104,7 @@ with optional support for SDL, Wayland, DRM, fbdev and NuttX via
 
 Miniaudio is also compiled as a small static library so the engine can
 link it directly.
-A Miles SDK stub under `lib/miles-sdk-stub` now links against miniaudio to provide the legacy `mss32.dll` interface.
+A Miles SDK stub under `lib/miles_sdk_stub` now links against miniaudio to provide the legacy `mss32.dll` interface.
 The stub has been expanded with additional `AIL_*` helpers so more of the
 original audio subsystem compiles against the new backend. It now stores
 per-sample user data and exposes a minimal 3D provider interface so older
@@ -184,7 +184,7 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   in the log output.
 - Miles audio management header moved to `include/GameEngineDevice/MilesAudioDevice`. CMake no longer references `Generals/Code/GameEngineDevice/ A lightweight `Logger` utility now lives in `src/Common` and `include/common`. `Logger::init()` writes to `std::clog` and an optional file. Macros `LOG_INFO`, `LOG_WARN` and `LOG_E
 - MilesAudioManager now builds against a miniaudio-based shim which replaces DirectSound. The gameenginedevice module links with the `milesstub` library and audio headers have moved to `include/GameEngineDevice`.
-- `gameenginedevice` now links against `milesstub` from `lib/miles-sdk-stub`.
+- `gameenginedevice` now links against `milesstub` from `lib/miles_sdk_stub`.
 - `miniaudio` builds as its own static library. When compiling on macOS the file
   is built with Clang and the `-fblocks` option so the CoreAudio backend works.
   The `gameenginedevice` module links directly against this library.

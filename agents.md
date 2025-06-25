@@ -6,6 +6,7 @@ This project contains the preserved source code for **Command & Conquer Generals
 
 - Use `-std=gnu++11` and write portable C++.
 - Target cross platform builds. New code must avoid Win32 specific APIs and instead rely on portable wrappers.
+- Prefer **snake_case** naming for all files and folders to avoid cross platform case issues.
 - The repository is being refactored around a `src/`, `include/` and `lib/` layout.
 - The long term goal is to use **LVGL** for the window/canvas layer with automatic fallback to X11 where required.
 - Rendering should use **OpenGL ES 1.1**. A translation layer from the original DirectX interfaces is expected.
