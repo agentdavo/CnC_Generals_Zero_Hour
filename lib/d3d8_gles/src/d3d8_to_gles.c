@@ -1,9 +1,10 @@
 // src/d3d8_to_gles.c
 #include "d3d8_to_gles.h"
 #include "x_mesh_parser.h"
+#include <EGL/eglext.h>
 #include <stdlib.h>
 #include <string.h>
-#include <EGL/eglext.h>
+
 #ifdef USE_MICROGLES
 #include "../../u_gles/src/gl_init.h"
 #endif
@@ -12,10 +13,10 @@
 
 #include <math.h>
 #include <stdalign.h>
+#include <stdint.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
-#include <stdint.h>
 
 #ifdef D3D8_GLES_LOGGING
 #include <stdarg.h>
@@ -271,12 +272,64 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF);
 HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF,
                                      DWORD Declaration[MAX_FVF_DECL_SIZE]);
 
+// Forward declarations for ID3DXMesh methods
+static HRESULT D3DAPI d3dx_mesh_query_interface(void *This, REFIID iid,
+                                                void **ppv);
+static ULONG D3DAPI d3dx_mesh_add_ref(void *This);
+static ULONG D3DAPI d3dx_mesh_release(void *ptr);
+static HRESULT D3DAPI d3dx_mesh_draw_subset(void *ptr, DWORD AttribId);
+static DWORD D3DAPI d3dx_mesh_get_num_faces(void *ptr);
+static DWORD D3DAPI d3dx_mesh_get_num_vertices(void *ptr);
+static DWORD D3DAPI d3dx_mesh_get_fvf(void *ptr);
+static HRESULT D3DAPI
+d3dx_mesh_get_declaration(void *ptr, DWORD Declaration[MAX_FVF_DECL_SIZE]);
+static DWORD D3DAPI d3dx_mesh_get_options(void *ptr);
+static HRESULT D3DAPI d3dx_mesh_get_device(void *ptr,
+                                           LPDIRECT3DDEVICE8 *ppDevice);
+static HRESULT D3DAPI d3dx_mesh_clone_mesh_fvf(void *ptr, DWORD Options,
+                                               DWORD FVF,
+                                               LPDIRECT3DDEVICE8 pD3DDevice,
+                                               LPD3DXMESH *ppCloneMesh);
+static HRESULT D3DAPI d3dx_mesh_clone_mesh(void *ptr, DWORD Options,
+                                           CONST DWORD *pDeclaration,
+                                           LPDIRECT3DDEVICE8 pD3DDevice,
+                                           LPD3DXMESH *ppCloneMesh);
+static HRESULT D3DAPI
+d3dx_mesh_get_vertex_buffer(void *ptr, LPDIRECT3DVERTEXBUFFER8 *ppVB);
+static HRESULT D3DAPI d3dx_mesh_get_index_buffer(void *ptr,
+                                                 LPDIRECT3DINDEXBUFFER8 *ppIB);
+static HRESULT D3DAPI d3dx_mesh_lock_vertex_buffer(void *ptr, DWORD Flags,
+                                                   BYTE **ppData);
+static HRESULT D3DAPI d3dx_mesh_unlock_vertex_buffer(void *ptr);
+static HRESULT D3DAPI d3dx_mesh_lock_index_buffer(void *ptr, DWORD Flags,
+                                                  BYTE **ppData);
+static HRESULT D3DAPI d3dx_mesh_unlock_index_buffer(void *ptr);
+static HRESULT D3DAPI d3dx_mesh_get_attribute_table(
+    void *ptr, D3DXATTRIBUTERANGE *pAttribTable, DWORD *pAttribTableSize);
+static HRESULT D3DAPI d3dx_mesh_convert_point_reps_to_adjacency(
+    void *ptr, CONST DWORD *pPRep, DWORD *pAdjacency);
+static HRESULT D3DAPI d3dx_mesh_convert_adjacency_to_point_reps(
+    void *ptr, CONST DWORD *pAdjacency, DWORD *pPRep);
+static HRESULT D3DAPI d3dx_mesh_generate_adjacency(void *ptr, FLOAT Epsilon,
+                                                   DWORD *pAdjacency);
+static HRESULT D3DAPI d3dx_mesh_lock_attribute_buffer(void *ptr, DWORD Flags,
+                                                      DWORD **ppData);
+static HRESULT D3DAPI d3dx_mesh_unlock_attribute_buffer(void *ptr);
+static HRESULT D3DAPI d3dx_mesh_optimize(
+    void *ptr, DWORD Flags, CONST DWORD *pAdjacencyIn, DWORD *pAdjacencyOut,
+    DWORD *pFaceRemap, LPD3DXBUFFER *ppVertexRemap, LPD3DXMESH *ppOptMesh);
+static HRESULT D3DAPI d3dx_mesh_optimize_inplace(void *ptr, DWORD Flags,
+                                                 CONST DWORD *pAdjacencyIn,
+                                                 DWORD *pAdjacencyOut,
+                                                 DWORD *pFaceRemap,
+                                                 LPD3DXBUFFER *ppVertexRemap);
+
 // Last created device's display mode for adapter queries. Initialise with a
 // sane default so adapter queries succeed before any device is created.
 static D3DDISPLAYMODE g_current_display_mode = {
-    800,        /* Width */
-    600,        /* Height */
-    60,         /* RefreshRate */
+    800,            /* Width */
+    600,            /* Height */
+    60,             /* RefreshRate */
     D3DFMT_X8R8G8B8 /* Format */
 };
 
@@ -1159,7 +1212,140 @@ static HRESULT D3DAPI d3dx_mesh_clone_mesh_fvf(void *ptr, DWORD Options,
                                                LPDIRECT3DDEVICE8 pD3DDevice,
                                                LPD3DXMESH *ppCloneMesh) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  if (!ppCloneMesh)
+    return D3DERR_INVALIDCALL;
+
+  if (!pD3DDevice)
+    pD3DDevice = This->device;
+  if (!pD3DDevice)
+    return D3DERR_INVALIDCALL;
+
+  IDirect3DVertexBuffer8 *src_vb = This->vb;
+  IDirect3DIndexBuffer8 *src_ib = This->ib;
+
+  IDirect3DVertexBuffer8 *vb = calloc(
+      1, sizeof(IDirect3DVertexBuffer8) + sizeof(IDirect3DVertexBuffer8Vtbl));
+  if (!vb)
+    return D3DERR_OUTOFVIDEOMEMORY;
+  static const IDirect3DVertexBuffer8Vtbl vb_vtbl = {
+      .QueryInterface = vb_query_interface,
+      .AddRef = vb_add_ref,
+      .Release = vb_release,
+      .GetDevice = d3d8_vb_get_device,
+      .SetPrivateData = d3d8_vb_set_private_data,
+      .GetPrivateData = d3d8_vb_get_private_data,
+      .FreePrivateData = d3d8_vb_free_private_data,
+      .SetPriority = d3d8_vb_set_priority,
+      .GetPriority = d3d8_vb_get_priority,
+      .PreLoad = d3d8_vb_pre_load,
+      .GetType = d3d8_vb_get_type,
+      .Lock = d3d8_vb_lock,
+      .Unlock = d3d8_vb_unlock,
+      .GetDesc = d3d8_vb_get_desc};
+  vb->lpVtbl = &vb_vtbl;
+  vb->buffer = src_vb->buffer;
+  vb->device = pD3DDevice;
+
+  IDirect3DIndexBuffer8 *ib = calloc(1, sizeof(IDirect3DIndexBuffer8) +
+                                            sizeof(IDirect3DIndexBuffer8Vtbl));
+  if (!ib) {
+    free(vb);
+    return D3DERR_OUTOFVIDEOMEMORY;
+  }
+  static const IDirect3DIndexBuffer8Vtbl ib_vtbl = {
+      .QueryInterface = ib_query_interface,
+      .AddRef = ib_add_ref,
+      .Release = ib_release,
+      .GetDevice = d3d8_ib_get_device,
+      .SetPrivateData = d3d8_ib_set_private_data,
+      .GetPrivateData = d3d8_ib_get_private_data,
+      .FreePrivateData = d3d8_ib_free_private_data,
+      .SetPriority = d3d8_ib_set_priority,
+      .GetPriority = d3d8_ib_get_priority,
+      .PreLoad = d3d8_ib_pre_load,
+      .GetType = d3d8_ib_get_type,
+      .Lock = d3d8_ib_lock,
+      .Unlock = d3d8_ib_unlock,
+      .GetDesc = d3d8_ib_get_desc};
+  ib->lpVtbl = &ib_vtbl;
+  ib->buffer = src_ib->buffer;
+  ib->device = pD3DDevice;
+
+  ID3DXMesh *mesh = calloc(1, sizeof(ID3DXMesh) + sizeof(ID3DXMeshVtbl));
+  if (!mesh) {
+    free(vb);
+    free(ib);
+    return D3DERR_OUTOFVIDEOMEMORY;
+  }
+
+  mesh->attrib_table = NULL;
+  mesh->attrib_table_size = This->attrib_table_size;
+  if (This->attrib_table_size) {
+    mesh->attrib_table =
+        calloc(This->attrib_table_size, sizeof(D3DXATTRIBUTERANGE));
+    if (!mesh->attrib_table) {
+      free(vb);
+      free(ib);
+      free(mesh);
+      return D3DERR_OUTOFVIDEOMEMORY;
+    }
+    memcpy(mesh->attrib_table, This->attrib_table,
+           This->attrib_table_size * sizeof(D3DXATTRIBUTERANGE));
+  }
+
+  mesh->attrib_buffer = NULL;
+  if (This->num_faces && This->attrib_buffer) {
+    mesh->attrib_buffer = calloc(This->num_faces, sizeof(DWORD));
+    if (!mesh->attrib_buffer) {
+      free(mesh->attrib_table);
+      free(vb);
+      free(ib);
+      free(mesh);
+      return D3DERR_OUTOFVIDEOMEMORY;
+    }
+    memcpy(mesh->attrib_buffer, This->attrib_buffer,
+           This->num_faces * sizeof(DWORD));
+  }
+
+  static const ID3DXMeshVtbl mesh_vtbl = {
+      .QueryInterface = d3dx_mesh_query_interface,
+      .AddRef = d3dx_mesh_add_ref,
+      .Release = d3dx_mesh_release,
+      .DrawSubset = d3dx_mesh_draw_subset,
+      .GetNumFaces = d3dx_mesh_get_num_faces,
+      .GetNumVertices = d3dx_mesh_get_num_vertices,
+      .GetFVF = d3dx_mesh_get_fvf,
+      .GetDeclaration = d3dx_mesh_get_declaration,
+      .GetOptions = d3dx_mesh_get_options,
+      .GetDevice = d3dx_mesh_get_device,
+      .CloneMeshFVF = d3dx_mesh_clone_mesh_fvf,
+      .CloneMesh = d3dx_mesh_clone_mesh,
+      .GetVertexBuffer = d3dx_mesh_get_vertex_buffer,
+      .GetIndexBuffer = d3dx_mesh_get_index_buffer,
+      .LockVertexBuffer = d3dx_mesh_lock_vertex_buffer,
+      .UnlockVertexBuffer = d3dx_mesh_unlock_vertex_buffer,
+      .LockIndexBuffer = d3dx_mesh_lock_index_buffer,
+      .UnlockIndexBuffer = d3dx_mesh_unlock_index_buffer,
+      .GetAttributeTable = d3dx_mesh_get_attribute_table,
+      .ConvertPointRepsToAdjacency = d3dx_mesh_convert_point_reps_to_adjacency,
+      .ConvertAdjacencyToPointReps = d3dx_mesh_convert_adjacency_to_point_reps,
+      .GenerateAdjacency = d3dx_mesh_generate_adjacency,
+      .LockAttributeBuffer = d3dx_mesh_lock_attribute_buffer,
+      .UnlockAttributeBuffer = d3dx_mesh_unlock_attribute_buffer,
+      .Optimize = d3dx_mesh_optimize,
+      .OptimizeInplace = d3dx_mesh_optimize_inplace};
+
+  mesh->pVtbl = &mesh_vtbl;
+  mesh->device = pD3DDevice;
+  mesh->vb = vb;
+  mesh->ib = ib;
+  mesh->num_vertices = This->num_vertices;
+  mesh->num_faces = This->num_faces;
+  mesh->fvf = FVF ? FVF : This->fvf;
+  mesh->options = Options ? Options : This->options;
+
+  *ppCloneMesh = mesh;
+  return D3D_OK;
 }
 
 static HRESULT D3DAPI d3dx_mesh_clone_mesh(void *ptr, DWORD Options,
@@ -1167,7 +1353,9 @@ static HRESULT D3DAPI d3dx_mesh_clone_mesh(void *ptr, DWORD Options,
                                            LPDIRECT3DDEVICE8 pD3DDevice,
                                            LPD3DXMESH *ppCloneMesh) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  (void)pDeclaration;
+  return d3dx_mesh_clone_mesh_fvf(This, Options, This->fvf, pD3DDevice,
+                                  ppCloneMesh);
 }
 
 static HRESULT D3DAPI
@@ -1221,19 +1409,34 @@ static HRESULT D3DAPI d3dx_mesh_get_attribute_table(
 static HRESULT D3DAPI d3dx_mesh_convert_point_reps_to_adjacency(
     void *ptr, CONST DWORD *pPRep, DWORD *pAdjacency) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  (void)pPRep;
+  if (!pAdjacency)
+    return D3DERR_INVALIDCALL;
+  for (DWORD i = 0; i < This->num_faces * 3; i++)
+    pAdjacency[i] = 0xFFFFFFFFu;
+  return D3D_OK;
 }
 
 static HRESULT D3DAPI d3dx_mesh_convert_adjacency_to_point_reps(
     void *ptr, CONST DWORD *pAdjacency, DWORD *pPRep) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  (void)pAdjacency;
+  if (!pPRep)
+    return D3DERR_INVALIDCALL;
+  for (DWORD i = 0; i < This->num_vertices; i++)
+    pPRep[i] = i;
+  return D3D_OK;
 }
 
 static HRESULT D3DAPI d3dx_mesh_generate_adjacency(void *ptr, FLOAT Epsilon,
                                                    DWORD *pAdjacency) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  (void)Epsilon;
+  if (!pAdjacency)
+    return D3DERR_INVALIDCALL;
+  for (DWORD i = 0; i < This->num_faces * 3; i++)
+    pAdjacency[i] = 0xFFFFFFFFu;
+  return D3D_OK;
 }
 
 static HRESULT D3DAPI d3dx_mesh_lock_attribute_buffer(void *ptr, DWORD Flags,
@@ -1254,7 +1457,19 @@ static HRESULT D3DAPI d3dx_mesh_optimize(
     void *ptr, DWORD Flags, CONST DWORD *pAdjacencyIn, DWORD *pAdjacencyOut,
     DWORD *pFaceRemap, LPD3DXBUFFER *ppVertexRemap, LPD3DXMESH *ppOptMesh) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  (void)pAdjacencyIn;
+  if (pAdjacencyOut)
+    for (DWORD i = 0; i < This->num_faces * 3; i++)
+      pAdjacencyOut[i] = 0xFFFFFFFFu;
+  if (pFaceRemap)
+    for (DWORD i = 0; i < This->num_faces; i++)
+      pFaceRemap[i] = i;
+  if (ppVertexRemap)
+    D3DXCreateBuffer(This->num_vertices * sizeof(DWORD), ppVertexRemap);
+  if (ppOptMesh)
+    return d3dx_mesh_clone_mesh_fvf(This, Flags, This->fvf, This->device,
+                                    ppOptMesh);
+  return D3D_OK;
 }
 
 static HRESULT D3DAPI d3dx_mesh_optimize_inplace(void *ptr, DWORD Flags,
@@ -1263,7 +1478,16 @@ static HRESULT D3DAPI d3dx_mesh_optimize_inplace(void *ptr, DWORD Flags,
                                                  DWORD *pFaceRemap,
                                                  LPD3DXBUFFER *ppVertexRemap) {
   ID3DXMesh *This = ptr;
-  return D3DXERR_NOTAVAILABLE;
+  (void)pAdjacencyIn;
+  if (pAdjacencyOut)
+    for (DWORD i = 0; i < This->num_faces * 3; i++)
+      pAdjacencyOut[i] = 0xFFFFFFFFu;
+  if (pFaceRemap)
+    for (DWORD i = 0; i < This->num_faces; i++)
+      pFaceRemap[i] = i;
+  if (ppVertexRemap)
+    D3DXCreateBuffer(This->num_vertices * sizeof(DWORD), ppVertexRemap);
+  return D3D_OK;
 }
 
 // IDirect3D8 methods
@@ -2244,9 +2468,10 @@ d3d8_set_texture_stage_state(IDirect3DDevice8 *This, DWORD Stage,
   return D3D_OK;
 }
 
-static HRESULT D3DAPI d3d8_set_vertex_shader_constant(
-    IDirect3DDevice8 *This, DWORD Register, CONST void *pConstantData,
-    DWORD ConstantCount) {
+static HRESULT D3DAPI d3d8_set_vertex_shader_constant(IDirect3DDevice8 *This,
+                                                      DWORD Register,
+                                                      CONST void *pConstantData,
+                                                      DWORD ConstantCount) {
   if (!pConstantData || Register + ConstantCount > 96)
     return D3DERR_INVALIDCALL;
   memcpy(&This->gles->vs_const[Register], pConstantData,
@@ -2254,9 +2479,10 @@ static HRESULT D3DAPI d3d8_set_vertex_shader_constant(
   return D3D_OK;
 }
 
-static HRESULT D3DAPI d3d8_set_pixel_shader_constant(
-    IDirect3DDevice8 *This, DWORD Register, CONST void *pConstantData,
-    DWORD ConstantCount) {
+static HRESULT D3DAPI d3d8_set_pixel_shader_constant(IDirect3DDevice8 *This,
+                                                     DWORD Register,
+                                                     CONST void *pConstantData,
+                                                     DWORD ConstantCount) {
   if (!pConstantData || Register + ConstantCount > 8)
     return D3DERR_INVALIDCALL;
   memcpy(&This->gles->ps_const[Register], pConstantData,
@@ -2378,121 +2604,120 @@ HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF,
   return D3D_OK;
 }
 
-static HRESULT create_mesh_from_data(LPDIRECT3DDEVICE8 device,
-                                     VertexPN *verts, DWORD vcount,
-                                     WORD *indices, DWORD fcount,
+static HRESULT create_mesh_from_data(LPDIRECT3DDEVICE8 device, VertexPN *verts,
+                                     DWORD vcount, WORD *indices, DWORD fcount,
                                      LPD3DXMESH *pp_mesh) {
-    DWORD fvf = D3DFVF_XYZ | D3DFVF_NORMAL;
-    UINT vb_size = vcount * sizeof(VertexPN);
-    UINT ib_size = fcount * 3 * sizeof(WORD);
-    DWORD options = D3DXMESH_MANAGED;
+  DWORD fvf = D3DFVF_XYZ | D3DFVF_NORMAL;
+  UINT vb_size = vcount * sizeof(VertexPN);
+  UINT ib_size = fcount * 3 * sizeof(WORD);
+  DWORD options = D3DXMESH_MANAGED;
 
-    IDirect3DVertexBuffer8 *vb;
-    HRESULT hr = device->lpVtbl->CreateVertexBuffer(device, vb_size,
-                                                    D3DUSAGE_WRITEONLY, fvf,
-                                                    D3DPOOL_MANAGED, &vb);
-    if (FAILED(hr)) return hr;
+  IDirect3DVertexBuffer8 *vb;
+  HRESULT hr = device->lpVtbl->CreateVertexBuffer(
+      device, vb_size, D3DUSAGE_WRITEONLY, fvf, D3DPOOL_MANAGED, &vb);
+  if (FAILED(hr))
+    return hr;
 
-    BYTE *vb_data;
-    hr = vb->lpVtbl->Lock(vb, 0, vb_size, &vb_data, 0);
-    if (SUCCEEDED(hr)) {
-        memcpy(vb_data, verts, vb_size);
-        vb->lpVtbl->Unlock(vb);
-    } else {
-        vb->lpVtbl->Release(vb);
-        return hr;
-    }
+  BYTE *vb_data;
+  hr = vb->lpVtbl->Lock(vb, 0, vb_size, &vb_data, 0);
+  if (SUCCEEDED(hr)) {
+    memcpy(vb_data, verts, vb_size);
+    vb->lpVtbl->Unlock(vb);
+  } else {
+    vb->lpVtbl->Release(vb);
+    return hr;
+  }
 
-    IDirect3DIndexBuffer8 *ib;
-    hr = device->lpVtbl->CreateIndexBuffer(device, ib_size, D3DUSAGE_WRITEONLY,
-                                           D3DFMT_INDEX16, D3DPOOL_MANAGED, &ib);
-    if (FAILED(hr)) {
-        vb->lpVtbl->Release(vb);
-        return hr;
-    }
+  IDirect3DIndexBuffer8 *ib;
+  hr = device->lpVtbl->CreateIndexBuffer(device, ib_size, D3DUSAGE_WRITEONLY,
+                                         D3DFMT_INDEX16, D3DPOOL_MANAGED, &ib);
+  if (FAILED(hr)) {
+    vb->lpVtbl->Release(vb);
+    return hr;
+  }
 
-    BYTE *ib_data;
-    hr = ib->lpVtbl->Lock(ib, 0, ib_size, &ib_data, 0);
-    if (SUCCEEDED(hr)) {
-        memcpy(ib_data, indices, ib_size);
-        ib->lpVtbl->Unlock(ib);
-    } else {
-        vb->lpVtbl->Release(vb);
-        ib->lpVtbl->Release(ib);
-        return hr;
-    }
+  BYTE *ib_data;
+  hr = ib->lpVtbl->Lock(ib, 0, ib_size, &ib_data, 0);
+  if (SUCCEEDED(hr)) {
+    memcpy(ib_data, indices, ib_size);
+    ib->lpVtbl->Unlock(ib);
+  } else {
+    vb->lpVtbl->Release(vb);
+    ib->lpVtbl->Release(ib);
+    return hr;
+  }
 
-    ID3DXMesh *mesh = calloc(1, sizeof(ID3DXMesh) + sizeof(ID3DXMeshVtbl));
-    if (!mesh) {
-        vb->lpVtbl->Release(vb);
-        ib->lpVtbl->Release(ib);
-        return D3DERR_OUTOFVIDEOMEMORY;
-    }
+  ID3DXMesh *mesh = calloc(1, sizeof(ID3DXMesh) + sizeof(ID3DXMeshVtbl));
+  if (!mesh) {
+    vb->lpVtbl->Release(vb);
+    ib->lpVtbl->Release(ib);
+    return D3DERR_OUTOFVIDEOMEMORY;
+  }
 
-    mesh->attrib_table = calloc(1, sizeof(D3DXATTRIBUTERANGE));
-    if (!mesh->attrib_table) {
-        vb->lpVtbl->Release(vb);
-        ib->lpVtbl->Release(ib);
-        free(mesh);
-        return D3DERR_OUTOFVIDEOMEMORY;
-    }
-    mesh->attrib_table[0].AttribId = 0;
-    mesh->attrib_table[0].FaceStart = 0;
-    mesh->attrib_table[0].FaceCount = fcount;
-    mesh->attrib_table[0].VertexStart = 0;
-    mesh->attrib_table[0].VertexCount = vcount;
-    mesh->attrib_table_size = 1;
+  mesh->attrib_table = calloc(1, sizeof(D3DXATTRIBUTERANGE));
+  if (!mesh->attrib_table) {
+    vb->lpVtbl->Release(vb);
+    ib->lpVtbl->Release(ib);
+    free(mesh);
+    return D3DERR_OUTOFVIDEOMEMORY;
+  }
+  mesh->attrib_table[0].AttribId = 0;
+  mesh->attrib_table[0].FaceStart = 0;
+  mesh->attrib_table[0].FaceCount = fcount;
+  mesh->attrib_table[0].VertexStart = 0;
+  mesh->attrib_table[0].VertexCount = vcount;
+  mesh->attrib_table_size = 1;
 
-    mesh->attrib_buffer = calloc(fcount, sizeof(DWORD));
-    if (!mesh->attrib_buffer) {
-        vb->lpVtbl->Release(vb);
-        ib->lpVtbl->Release(ib);
-        free(mesh->attrib_table);
-        free(mesh);
-        return D3DERR_OUTOFVIDEOMEMORY;
-    }
-    for (DWORD i2 = 0; i2 < fcount; i2++) mesh->attrib_buffer[i2] = 0;
+  mesh->attrib_buffer = calloc(fcount, sizeof(DWORD));
+  if (!mesh->attrib_buffer) {
+    vb->lpVtbl->Release(vb);
+    ib->lpVtbl->Release(ib);
+    free(mesh->attrib_table);
+    free(mesh);
+    return D3DERR_OUTOFVIDEOMEMORY;
+  }
+  for (DWORD i2 = 0; i2 < fcount; i2++)
+    mesh->attrib_buffer[i2] = 0;
 
-    static const ID3DXMeshVtbl mesh_vtbl = {
-        .QueryInterface = d3dx_mesh_query_interface,
-        .AddRef = d3dx_mesh_add_ref,
-        .Release = d3dx_mesh_release,
-        .DrawSubset = d3dx_mesh_draw_subset,
-        .GetNumFaces = d3dx_mesh_get_num_faces,
-        .GetNumVertices = d3dx_mesh_get_num_vertices,
-        .GetFVF = d3dx_mesh_get_fvf,
-        .GetDeclaration = d3dx_mesh_get_declaration,
-        .GetOptions = d3dx_mesh_get_options,
-        .GetDevice = d3dx_mesh_get_device,
-        .CloneMeshFVF = d3dx_mesh_clone_mesh_fvf,
-        .CloneMesh = d3dx_mesh_clone_mesh,
-        .GetVertexBuffer = d3dx_mesh_get_vertex_buffer,
-        .GetIndexBuffer = d3dx_mesh_get_index_buffer,
-        .LockVertexBuffer = d3dx_mesh_lock_vertex_buffer,
-        .UnlockVertexBuffer = d3dx_mesh_unlock_vertex_buffer,
-        .LockIndexBuffer = d3dx_mesh_lock_index_buffer,
-        .UnlockIndexBuffer = d3dx_mesh_unlock_index_buffer,
-        .GetAttributeTable = d3dx_mesh_get_attribute_table,
-        .ConvertPointRepsToAdjacency = d3dx_mesh_convert_point_reps_to_adjacency,
-        .ConvertAdjacencyToPointReps = d3dx_mesh_convert_adjacency_to_point_reps,
-        .GenerateAdjacency = d3dx_mesh_generate_adjacency,
-        .LockAttributeBuffer = d3dx_mesh_lock_attribute_buffer,
-        .UnlockAttributeBuffer = d3dx_mesh_unlock_attribute_buffer,
-        .Optimize = d3dx_mesh_optimize,
-        .OptimizeInplace = d3dx_mesh_optimize_inplace
-    };
+  static const ID3DXMeshVtbl mesh_vtbl = {
+      .QueryInterface = d3dx_mesh_query_interface,
+      .AddRef = d3dx_mesh_add_ref,
+      .Release = d3dx_mesh_release,
+      .DrawSubset = d3dx_mesh_draw_subset,
+      .GetNumFaces = d3dx_mesh_get_num_faces,
+      .GetNumVertices = d3dx_mesh_get_num_vertices,
+      .GetFVF = d3dx_mesh_get_fvf,
+      .GetDeclaration = d3dx_mesh_get_declaration,
+      .GetOptions = d3dx_mesh_get_options,
+      .GetDevice = d3dx_mesh_get_device,
+      .CloneMeshFVF = d3dx_mesh_clone_mesh_fvf,
+      .CloneMesh = d3dx_mesh_clone_mesh,
+      .GetVertexBuffer = d3dx_mesh_get_vertex_buffer,
+      .GetIndexBuffer = d3dx_mesh_get_index_buffer,
+      .LockVertexBuffer = d3dx_mesh_lock_vertex_buffer,
+      .UnlockVertexBuffer = d3dx_mesh_unlock_vertex_buffer,
+      .LockIndexBuffer = d3dx_mesh_lock_index_buffer,
+      .UnlockIndexBuffer = d3dx_mesh_unlock_index_buffer,
+      .GetAttributeTable = d3dx_mesh_get_attribute_table,
+      .ConvertPointRepsToAdjacency = d3dx_mesh_convert_point_reps_to_adjacency,
+      .ConvertAdjacencyToPointReps = d3dx_mesh_convert_adjacency_to_point_reps,
+      .GenerateAdjacency = d3dx_mesh_generate_adjacency,
+      .LockAttributeBuffer = d3dx_mesh_lock_attribute_buffer,
+      .UnlockAttributeBuffer = d3dx_mesh_unlock_attribute_buffer,
+      .Optimize = d3dx_mesh_optimize,
+      .OptimizeInplace = d3dx_mesh_optimize_inplace};
 
-    mesh->pVtbl = &mesh_vtbl;
-    mesh->device = device;
-    mesh->vb = vb;
-    mesh->ib = ib;
-    mesh->num_vertices = vcount;
-    mesh->num_faces = fcount;
-    mesh->fvf = fvf;
-    mesh->options = options;
+  mesh->pVtbl = &mesh_vtbl;
+  mesh->device = device;
+  mesh->vb = vb;
+  mesh->ib = ib;
+  mesh->num_vertices = vcount;
+  mesh->num_faces = fcount;
+  mesh->fvf = fvf;
+  mesh->options = options;
 
-    *pp_mesh = mesh;
-    return D3D_OK;
+  *pp_mesh = mesh;
+  return D3D_OK;
 }
 
 HRESULT WINAPI D3DXCreateBox(LPDIRECT3DDEVICE8 pDevice, FLOAT Width,
@@ -2833,9 +3058,8 @@ HRESULT WINAPI D3DXCreateTextureFromFileExA(
   if (Format == D3DFMT_UNKNOWN)
     Format = D3DFMT_A8R8G8B8;
 
-  HRESULT hr =
-      D3DXCreateTexture(pDevice, tex_w, tex_h, MipLevels, Usage, Format, Pool,
-                        ppTexture);
+  HRESULT hr = D3DXCreateTexture(pDevice, tex_w, tex_h, MipLevels, Usage,
+                                 Format, Pool, ppTexture);
   if (hr != D3D_OK) {
     free(pixels);
     return hr;
@@ -3744,66 +3968,94 @@ HRESULT WINAPI D3DXComputeNormals(LPD3DXBASEMESH pMesh,
   return D3D_OK;
 }
 
-
 // Load mesh from an .x file using the minimal parser
 HRESULT WINAPI D3DXLoadMeshFromX(LPSTR filename, DWORD Options,
                                  LPDIRECT3DDEVICE8 device,
                                  LPD3DXBUFFER *ppAdjacency,
                                  LPD3DXBUFFER *ppMaterials,
-                                 DWORD *pNumMaterials,
-                                 LPD3DXMESH *ppMesh) {
-    (void)Options;
-    if (!filename || !device || !ppMesh) return D3DERR_INVALIDCALL;
+                                 DWORD *pNumMaterials, LPD3DXMESH *ppMesh) {
+  (void)Options;
+  if (!filename || !device || !ppMesh)
+    return D3DERR_INVALIDCALL;
 
-    FILE *f = fopen(filename, "rb");
-    if (!f) return D3DXERR_INVALIDDATA;
-    fseek(f, 0, SEEK_END);
-    long size = ftell(f);
-    fseek(f, 0, SEEK_SET);
-    if (size <= 0) { fclose(f); return D3DXERR_INVALIDDATA; }
-    BYTE *data = malloc(size);
-    if (!data) { fclose(f); return D3DERR_OUTOFVIDEOMEMORY; }
-    if (fread(data, 1, size, f) != (size_t)size) {
-        fclose(f); free(data); return D3DXERR_INVALIDDATA; }
+  FILE *f = fopen(filename, "rb");
+  if (!f)
+    return D3DXERR_INVALIDDATA;
+  fseek(f, 0, SEEK_END);
+  long size = ftell(f);
+  fseek(f, 0, SEEK_SET);
+  if (size <= 0) {
     fclose(f);
-
-    VertexPN *verts = NULL; WORD *indices = NULL; DWORD vcount = 0, fcount = 0;
-    HRESULT hr;
-    if (size > 16 && memcmp(data, "xof ", 4) == 0 &&
-        (memcmp(data + 8, "txt", 3) == 0 || memcmp(data + 8, "bin", 3) == 0)) {
-        const char *head = (const char *)data + 16;
-        if (memcmp(data + 8, "txt", 3) == 0)
-            hr = parse_text_mesh(head, &verts, &vcount, &indices, &fcount);
-        else
-            hr = parse_binary_mesh((const BYTE *)head, size - 16, &verts, &vcount,
-                                   &indices, &fcount);
-    } else {
-        hr = parse_text_mesh((const char *)data, &verts, &vcount, &indices, &fcount);
-    }
+    return D3DXERR_INVALIDDATA;
+  }
+  BYTE *data = malloc(size);
+  if (!data) {
+    fclose(f);
+    return D3DERR_OUTOFVIDEOMEMORY;
+  }
+  if (fread(data, 1, size, f) != (size_t)size) {
+    fclose(f);
     free(data);
-    if (FAILED(hr)) return hr;
+    return D3DXERR_INVALIDDATA;
+  }
+  fclose(f);
 
-    hr = create_mesh_from_data(device, verts, vcount, indices, fcount, ppMesh);
-    free(verts);
-    free(indices);
-    if (FAILED(hr)) return hr;
+  VertexPN *verts = NULL;
+  WORD *indices = NULL;
+  DWORD vcount = 0, fcount = 0;
+  HRESULT hr;
+  if (size > 16 && memcmp(data, "xof ", 4) == 0 &&
+      (memcmp(data + 8, "txt", 3) == 0 || memcmp(data + 8, "bin", 3) == 0)) {
+    const char *head = (const char *)data + 16;
+    if (memcmp(data + 8, "txt", 3) == 0)
+      hr = parse_text_mesh(head, &verts, &vcount, &indices, &fcount);
+    else
+      hr = parse_binary_mesh((const BYTE *)head, size - 16, &verts, &vcount,
+                             &indices, &fcount);
+  } else {
+    hr =
+        parse_text_mesh((const char *)data, &verts, &vcount, &indices, &fcount);
+  }
+  free(data);
+  if (FAILED(hr))
+    return hr;
 
-    if (ppAdjacency) {
-        hr = D3DXCreateBuffer(fcount * 3 * sizeof(DWORD), ppAdjacency);
-        if (SUCCEEDED(hr)) {
-            DWORD *adj = (DWORD *)(*ppAdjacency)->pVtbl->GetBufferPointer(*ppAdjacency);
-            memset(adj, 0xFFFFFFFF, fcount * 3 * sizeof(DWORD));
-        }
+  hr = create_mesh_from_data(device, verts, vcount, indices, fcount, ppMesh);
+  free(verts);
+  free(indices);
+  if (FAILED(hr))
+    return hr;
+
+  if (ppAdjacency) {
+    hr = D3DXCreateBuffer(fcount * 3 * sizeof(DWORD), ppAdjacency);
+    if (SUCCEEDED(hr)) {
+      DWORD *adj =
+          (DWORD *)(*ppAdjacency)->pVtbl->GetBufferPointer(*ppAdjacency);
+      memset(adj, 0xFFFFFFFF, fcount * 3 * sizeof(DWORD));
     }
-    if (ppMaterials) *ppMaterials = NULL;
-    if (pNumMaterials) *pNumMaterials = 0;
+  }
+  if (ppMaterials)
+    *ppMaterials = NULL;
+  if (pNumMaterials)
+    *pNumMaterials = 0;
 
-    D3DXComputeNormals(*ppMesh, NULL);
-    return D3D_OK;
+  D3DXComputeNormals(*ppMesh, NULL);
+  return D3D_OK;
 }
 
-HRESULT WINAPI D3DXCreateSkinMesh(DWORD NumFaces, DWORD NumVertices, DWORD NumBones, DWORD Options, CONST DWORD *pDeclaration, LPDIRECT3DDEVICE8 pD3D, LPD3DXSKINMESH *ppSkinMesh) { return D3DXERR_SKINNINGNOTSUPPORTED; }
-HRESULT WINAPI D3DXCreateSkinMeshFVF(DWORD NumFaces, DWORD NumVertices, DWORD NumBones, DWORD Options, DWORD FVF, LPDIRECT3DDEVICE8 pD3D, LPD3DXSKINMESH *ppSkinMesh) { return D3DXERR_SKINNINGNOTSUPPORTED; }
+HRESULT WINAPI D3DXCreateSkinMesh(DWORD NumFaces, DWORD NumVertices,
+                                  DWORD NumBones, DWORD Options,
+                                  CONST DWORD *pDeclaration,
+                                  LPDIRECT3DDEVICE8 pD3D,
+                                  LPD3DXSKINMESH *ppSkinMesh) {
+  return D3DXERR_SKINNINGNOTSUPPORTED;
+}
+HRESULT WINAPI D3DXCreateSkinMeshFVF(DWORD NumFaces, DWORD NumVertices,
+                                     DWORD NumBones, DWORD Options, DWORD FVF,
+                                     LPDIRECT3DDEVICE8 pD3D,
+                                     LPD3DXSKINMESH *ppSkinMesh) {
+  return D3DXERR_SKINNINGNOTSUPPORTED;
+}
 
 // Direct3DCreate8
 // IUnknown-style helpers for IDirect3D8
