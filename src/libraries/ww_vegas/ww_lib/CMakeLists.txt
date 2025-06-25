@@ -12,6 +12,7 @@ target_include_directories(wwlib PUBLIC
     ${PROJECT_SOURCE_DIR}/include/libraries/ww_vegas/ww_lib
     ${PROJECT_SOURCE_DIR}/include/libraries/ww_vegas/ww_debug
     ${PROJECT_SOURCE_DIR}/src/libraries/ww_vegas/ww_lib
+    ${PROJECT_SOURCE_DIR}/src/tools/WW3D/pluglib
 )
 
 # wwlib does not directly depend on wwdebug

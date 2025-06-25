@@ -57,16 +57,15 @@ void		WWMath::Init(void)
 		_FastAcosTable[a]=acos(cv);
 		_FastAsinTable[a]=asin(cv);
 	}
+        for (int a=0;a<SIN_TABLE_SIZE;++a) {
+                float cv= (float)a * 2.0f * WWMATH_PI / SIN_TABLE_SIZE;
+                _FastSinTable[a]=sin(cv);
 
-	for (a=0;a<SIN_TABLE_SIZE;++a) {
-		float cv= (float)a * 2.0f * WWMATH_PI / SIN_TABLE_SIZE; //float(a-SIN_TABLE_SIZE/2)*(1.0f/(SIN_TABLE_SIZE/2));
-		_FastSinTable[a]=sin(cv);
-		
-		if (a>0) {
-			_FastInvSinTable[a]=1.0f/_FastSinTable[a];
-		} else {
-			_FastInvSinTable[a]=WWMATH_FLOAT_MAX;
-		}
+                if (a>0) {
+                        _FastInvSinTable[a]=1.0f/_FastSinTable[a];
+                } else {
+                        _FastInvSinTable[a]=WWMATH_FLOAT_MAX;
+                }
 	}
 }
 

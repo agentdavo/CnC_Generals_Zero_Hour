@@ -37,12 +37,12 @@
 #pragma once
 #endif // _MSC_VER >= 1000
 
-#ifndef WWFILE_Hx
-#define WWFILE_Hx
+#ifndef WWFILE_H
+#define WWFILE_H
 
 #ifdef _UNIX
 #include "osdep.h"
-#endif
+#endif // WWFILE_H
 
 #define YEAR(dt)	(((dt & 0xFE000000) >> (9 + 16)) + 1980)
 #define MONTH(dt)	 ((dt & 0x01E00000) >> (5 + 16))

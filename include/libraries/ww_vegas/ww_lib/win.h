@@ -59,11 +59,12 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 
-#include	<windows.h>
-//#include <mmsystem.h>
-//#include	<windowsx.h>
-//#include	<winnt.h>
-//#include	<winuser.h>
+#ifdef _WIN32
+#include <windows.h>
+#else
+typedef void* HINSTANCE;
+typedef void* HWND;
+#endif
 
 #if (_MSC_VER >= 1200)
 #pragma warning(pop)
