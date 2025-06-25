@@ -329,3 +329,5 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
   `std::filesystem` directly for directory creation and existence checks.
 - CMake now exports SDL2 include directories for LVGL so SDL.h resolves on macOS.
+- macOS builds now link the LVGL library against the SDL2 framework
+  (`-framework SDL2`) when the SDL backend is enabled.
