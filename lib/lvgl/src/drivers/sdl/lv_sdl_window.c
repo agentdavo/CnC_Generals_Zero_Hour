@@ -33,8 +33,12 @@
 #define SDL_MAIN_HANDLED /*To fix SDL's "undefined reference to WinMain" issue*/
 #include "lv_sdl_private.h"
 
-#if LV_COLOR_DEPTH == 1 && LV_SDL_RENDER_MODE != LV_DISPLAY_RENDER_MODE_PARTIAL
-    #error SDL LV_COLOR_DEPTH 1 requires LV_SDL_RENDER_MODE LV_DISPLAY_RENDER_MODE_PARTIAL
+#ifdef LV_COLOR_DEPTH
+#if LV_COLOR_DEPTH == 1
+    #if LV_SDL_RENDER_MODE != LV_DISPLAY_RENDER_MODE_PARTIAL
+        #error SDL LV_COLOR_DEPTH 1 requires LV_SDL_RENDER_MODE LV_DISPLAY_RENDER_MODE_PARTIAL
+    #endif
+#endif
 #endif
 
 /*********************
@@ -130,12 +134,18 @@ lv_display_t * lv_sdl_window_create(int32_t hor_res, int32_t ver_res)
         lv_display_set_buffers(disp, dsc->buf1, dsc->buf2, buffer_size_bytes, LV_DISPLAY_RENDER_MODE_PARTIAL);
     }
     /*LV_DISPLAY_RENDER_MODE_DIRECT or FULL */
-    else {
-        uint32_t stride = lv_draw_buf_width_to_stride(disp->hor_res,
-                                                      lv_display_get_color_format(disp));
-        lv_display_set_buffers(disp, dsc->fb1, dsc->fb2, stride * disp->ver_res,
-                               LV_SDL_RENDER_MODE);
-    }
+        else {
+            uint32_t stride = lv_draw_buf_width_to_stride(disp->hor_res,
+                                                          lv_display_get_color_format(disp));
+            dsc->fb1 = sdl_draw_buf_realloc_aligned(NULL, stride * disp->ver_res);
+    #if LV_SDL_BUF_COUNT == 2
+            dsc->fb2 = sdl_draw_buf_realloc_aligned(NULL, stride * disp->ver_res);
+    #else
+            dsc->fb2 = NULL;
+    #endif
+            lv_display_set_buffers(disp, dsc->fb1, dsc->fb2, stride * disp->ver_res,
+                                   LV_SDL_RENDER_MODE);
+        }
 #else /*LV_USE_DRAW_SDL == 1*/
     /*It will render directly to default Texture, so the buffer is not used, so just set something*/
     static lv_draw_buf_t draw_buf;

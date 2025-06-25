@@ -1069,36 +1069,36 @@ SOURCE=.\ww3dids.h
 SOURCE=.\ww3dtrig.h
 # End Source File
 # End Group
-# Begin Group "RequiredAssets"
+# Begin Group "required_assets"
 
 # PROP Default_Filter "*.tga;*.w3d"
 # Begin Source File
 
-SOURCE=.\RequiredAssets\AddProjectorGradient.tga
+SOURCE=.\required_assets\AddProjectorGradient.tga
 # End Source File
 # Begin Source File
 
-SOURCE=.\RequiredAssets\Dazzle.INI
+SOURCE=.\required_assets\Dazzle.INI
 # End Source File
 # Begin Source File
 
-SOURCE=.\RequiredAssets\MultProjectorGradient.tga
+SOURCE=.\required_assets\MultProjectorGradient.tga
 # End Source File
 # Begin Source File
 
-SOURCE=.\RequiredAssets\ShatterAVel.tbl
+SOURCE=.\required_assets\ShatterAVel.tbl
 # End Source File
 # Begin Source File
 
-SOURCE=.\RequiredAssets\ShatterPlanes0.w3d
+SOURCE=.\required_assets\ShatterPlanes0.w3d
 # End Source File
 # Begin Source File
 
-SOURCE=.\RequiredAssets\ShatterVel.tbl
+SOURCE=.\required_assets\ShatterVel.tbl
 # End Source File
 # Begin Source File
 
-SOURCE=.\RequiredAssets\w3d_missing_texture.tga
+SOURCE=.\required_assets\w3d_missing_texture.tga
 # End Source File
 # End Group
 # Begin Source File

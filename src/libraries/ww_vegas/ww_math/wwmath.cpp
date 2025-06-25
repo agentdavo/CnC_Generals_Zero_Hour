@@ -34,13 +34,30 @@
  * Functions:                                                                                  *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-
 #include "wwmath.h"
 #include "wwhack.h"
 #include "lookuptable.h"
 #include <stdlib.h>
+#include <float.h>
 #include "wwdebug.h"
 #include "wwprofile.h"
+
+// Define missing constants
+#ifndef ARC_TABLE_SIZE
+#define ARC_TABLE_SIZE 2048
+#endif
+
+#ifndef SIN_TABLE_SIZE
+#define SIN_TABLE_SIZE 4096
+#endif
+
+#ifndef WWMATH_PI
+#define WWMATH_PI 3.14159265358979323846f
+#endif
+
+#ifndef WWMATH_FLOAT_MAX
+#define WWMATH_FLOAT_MAX FLT_MAX
+#endif
 
 // TODO: convert to use loouptablemanager...
 float _FastAcosTable[ARC_TABLE_SIZE];
@@ -48,37 +65,41 @@ float _FastAsinTable[ARC_TABLE_SIZE];
 float _FastSinTable[SIN_TABLE_SIZE];
 float _FastInvSinTable[SIN_TABLE_SIZE];
 
-void		WWMath::Init(void)
+void WWMath::Init(void)
 {
 	LookupTableMgrClass::Init();
 
-	for (int a=0;a<ARC_TABLE_SIZE;++a) {
-		float cv=float(a-ARC_TABLE_SIZE/2)*(1.0f/(ARC_TABLE_SIZE/2));
-		_FastAcosTable[a]=acos(cv);
-		_FastAsinTable[a]=asin(cv);
+	for (int a = 0; a < ARC_TABLE_SIZE; ++a)
+	{
+		float cv = float(a - ARC_TABLE_SIZE / 2) * (1.0f / (ARC_TABLE_SIZE / 2));
+		_FastAcosTable[a] = acos(cv);
+		_FastAsinTable[a] = asin(cv);
 	}
-        for (int a=0;a<SIN_TABLE_SIZE;++a) {
-                float cv= (float)a * 2.0f * WWMATH_PI / SIN_TABLE_SIZE;
-                _FastSinTable[a]=sin(cv);
+	for (int a = 0; a < SIN_TABLE_SIZE; ++a)
+	{
+		float cv = (float)a * 2.0f * WWMATH_PI / SIN_TABLE_SIZE;
+		_FastSinTable[a] = sin(cv);
 
-                if (a>0) {
-                        _FastInvSinTable[a]=1.0f/_FastSinTable[a];
-                } else {
-                        _FastInvSinTable[a]=WWMATH_FLOAT_MAX;
-                }
+		if (a > 0)
+		{
+			_FastInvSinTable[a] = 1.0f / _FastSinTable[a];
+		}
+		else
+		{
+			_FastInvSinTable[a] = WWMATH_FLOAT_MAX;
+		}
 	}
 }
 
-void		WWMath::Shutdown(void)
+void WWMath::Shutdown(void)
 {
 	LookupTableMgrClass::Shutdown();
 }
 
-float		WWMath::Random_Float(void) 
-{ 
-	return ((float)(rand() & 0xFFF)) / (float)(0xFFF); 
+float WWMath::Random_Float(void)
+{
+	return ((float)(rand() & 0xFFF)) / (float)(0xFFF);
 }
-
 
 /*
 ** Force link some modules from this library.
@@ -91,4 +112,3 @@ void Do_Force_Links(void)
 	FORCE_LINK(cardinalspline);
 	FORCE_LINK(tcbspline);
 }
-
