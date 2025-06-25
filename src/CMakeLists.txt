@@ -40,6 +40,7 @@ if(BUILD_ENGINE)
     target_link_libraries(Generals PRIVATE gameenginedevice)
     target_link_libraries(Generals PRIVATE gameengine)
     target_link_libraries(Generals PRIVATE milesstub)
+    target_link_libraries(Generals PRIVATE uGLES)
 endif()
 
 add_subdirectory(examples)
