@@ -459,13 +459,13 @@ static void setup_vertex_attributes(GLES_Device *gles, DWORD fvf, BYTE *data,
     }
 
     int tex_count = (fvf & D3DFVF_TEXCOUNT_MASK) >> D3DFVF_TEXCOUNT_SHIFT;
-    int limit = tex_count > 2 ? 2 : tex_count;
+    int limit = tex_count > 4 ? 4 : tex_count;
     /*
      * gles->texcoord_index0 selects which vertex texcoord set feeds
      * texture stage 0. When it equals 1 with TEX2 data present, the
      * second coordinate array is bound to GL_TEXTURE0 and the first
      * array becomes GL_TEXTURE1. This mirrors the D3DTSS_TEXCOORDINDEX
-     * behaviour for two stages.
+     * behaviour for up to four sets.
      */
     for (int i = 0; i < limit; i++) {
         int unit = i;
@@ -481,7 +481,7 @@ static void setup_vertex_attributes(GLES_Device *gles, DWORD fvf, BYTE *data,
         glTexCoordPointer(2, GL_FLOAT, stride, data + offset);
         offset += 8;
     }
-    for (int i = limit; i < 2; i++) {
+    for (int i = limit; i < 4; i++) {
         glClientActiveTexture(GL_TEXTURE0 + i);
         glDisableClientState(GL_TEXTURE_COORD_ARRAY);
     }
@@ -1738,7 +1738,8 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF) {
     if (!(FVF & (D3DFVF_XYZ | D3DFVF_XYZRHW))) return 0;
 
     if (FVF & ~(D3DFVF_XYZ | D3DFVF_XYZRHW | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
-                 D3DFVF_SPECULAR | D3DFVF_TEX1 | D3DFVF_TEX2))
+                 D3DFVF_SPECULAR | D3DFVF_TEX1 | D3DFVF_TEX2 |
+                 D3DFVF_TEX3 | D3DFVF_TEX4))
         return 0;
 
     UINT size = (FVF & D3DFVF_XYZRHW) ? 4 * sizeof(float) : 3 * sizeof(float);
@@ -1747,7 +1748,7 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF) {
     if (FVF & D3DFVF_SPECULAR) size += sizeof(DWORD);
 
     UINT tex_count = (FVF & D3DFVF_TEXCOUNT_MASK) >> D3DFVF_TEXCOUNT_SHIFT;
-    if (tex_count > 2) return 0;
+    if (tex_count > 4) return 0;
     size += tex_count * 2 * sizeof(float); // each texcoord set is 2 floats
     return size;
 }
@@ -1757,7 +1758,8 @@ HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF,
     if (!(FVF & (D3DFVF_XYZ | D3DFVF_XYZRHW))) return D3DERR_INVALIDCALL;
     if ((FVF & D3DFVF_XYZ) && (FVF & D3DFVF_XYZRHW)) return D3DERR_INVALIDCALL;
     if (FVF & ~(D3DFVF_XYZ | D3DFVF_XYZRHW | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
-                D3DFVF_SPECULAR | D3DFVF_TEX1 | D3DFVF_TEX2))
+                D3DFVF_SPECULAR | D3DFVF_TEX1 | D3DFVF_TEX2 |
+                D3DFVF_TEX3 | D3DFVF_TEX4))
         return D3DERR_INVALIDCALL;
 
     int i = 0;
@@ -1778,6 +1780,10 @@ HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF,
         Declaration[i++] = D3DVSD_REG(D3DVSDE_TEXCOORD0, D3DVSDT_FLOAT2);
     if (tex_count > 1)
         Declaration[i++] = D3DVSD_REG(D3DVSDE_TEXCOORD1, D3DVSDT_FLOAT2);
+    if (tex_count > 2)
+        Declaration[i++] = D3DVSD_REG(D3DVSDE_TEXCOORD2, D3DVSDT_FLOAT2);
+    if (tex_count > 3)
+        Declaration[i++] = D3DVSD_REG(D3DVSDE_TEXCOORD3, D3DVSDT_FLOAT2);
     Declaration[i++] = D3DVSD_END();
 
     for (; i < MAX_FVF_DECL_SIZE; i++) Declaration[i] = D3DVSD_END();
