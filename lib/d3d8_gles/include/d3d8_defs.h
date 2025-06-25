@@ -306,6 +306,10 @@ typedef struct _D3DXVECTOR4 {
     float x, y, z, w;
 } D3DXVECTOR4;
 
+typedef struct _D3DXQUATERNION {
+    float x, y, z, w;
+} D3DXQUATERNION;
+
 typedef struct _D3DXMATRIX {
     union {
         struct {

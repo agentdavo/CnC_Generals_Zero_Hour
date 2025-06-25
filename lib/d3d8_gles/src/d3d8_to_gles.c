@@ -706,6 +706,32 @@ D3DXMATRIX *WINAPI D3DXMatrixLookAtLH(D3DXMATRIX *pOut, CONST D3DXVECTOR3 *pEye,
   return pOut;
 }
 
+D3DXMATRIX *WINAPI D3DXMatrixLookAtRH(D3DXMATRIX *pOut, CONST D3DXVECTOR3 *pEye,
+                                      CONST D3DXVECTOR3 *pAt,
+                                      CONST D3DXVECTOR3 *pUp) {
+  D3DXVECTOR3 zaxis, xaxis, yaxis;
+  D3DXVec3Subtract(&zaxis, pEye, pAt);
+  D3DXVec3Normalize(&zaxis, &zaxis);
+  D3DXVec3Cross(&xaxis, pUp, &zaxis);
+  D3DXVec3Normalize(&xaxis, &xaxis);
+  D3DXVec3Cross(&yaxis, &zaxis, &xaxis);
+
+  D3DXMatrixIdentity(pOut);
+  pOut->_11 = xaxis.x;
+  pOut->_12 = yaxis.x;
+  pOut->_13 = zaxis.x;
+  pOut->_21 = xaxis.y;
+  pOut->_22 = yaxis.y;
+  pOut->_23 = zaxis.y;
+  pOut->_31 = xaxis.z;
+  pOut->_32 = yaxis.z;
+  pOut->_33 = zaxis.z;
+  pOut->_41 = -D3DXVec3Dot(&xaxis, pEye);
+  pOut->_42 = -D3DXVec3Dot(&yaxis, pEye);
+  pOut->_43 = -D3DXVec3Dot(&zaxis, pEye);
+  return pOut;
+}
+
 D3DXMATRIX *WINAPI D3DXMatrixPerspectiveFovLH(D3DXMATRIX *pOut, FLOAT fovy,
                                               FLOAT Aspect, FLOAT zn,
                                               FLOAT zf) {
@@ -717,6 +743,21 @@ D3DXMATRIX *WINAPI D3DXMatrixPerspectiveFovLH(D3DXMATRIX *pOut, FLOAT fovy,
   pOut->_33 = zf / (zf - zn);
   pOut->_34 = 1.0f;
   pOut->_43 = -zn * zf / (zf - zn);
+  pOut->_44 = 0.0f;
+  return pOut;
+}
+
+D3DXMATRIX *WINAPI D3DXMatrixPerspectiveFovRH(D3DXMATRIX *pOut, FLOAT fovy,
+                                              FLOAT Aspect, FLOAT zn,
+                                              FLOAT zf) {
+  float yscale = 1.0f / tanf(fovy / 2.0f);
+  float xscale = yscale / Aspect;
+  D3DXMatrixIdentity(pOut);
+  pOut->_11 = xscale;
+  pOut->_22 = yscale;
+  pOut->_33 = zn / (zn - zf);
+  pOut->_34 = -1.0f;
+  pOut->_43 = zn * zf / (zn - zf);
   pOut->_44 = 0.0f;
   return pOut;
 }
@@ -2913,6 +2954,45 @@ D3DXMATRIX *WINAPI D3DXMatrixRotationYawPitchRoll(D3DXMATRIX *pOut, FLOAT Yaw,
   D3DXMatrixRotationZ(&rotZ, Roll);
   D3DXMatrixMultiply(&temp, &rotX, &rotY);
   D3DXMatrixMultiply(pOut, &temp, &rotZ);
+  return pOut;
+}
+
+D3DXMATRIX *WINAPI D3DXMatrixRotationQuaternion(D3DXMATRIX *pOut,
+                                                CONST D3DXQUATERNION *pQ) {
+  float x = pQ->x, y = pQ->y, z = pQ->z, w = pQ->w;
+  float xx = x + x, yy = y + y, zz = z + z;
+  float xy = x * yy, xz = x * zz, yz = y * zz;
+  float wx = w * xx, wy = w * yy, wz = w * zz;
+  D3DXMatrixIdentity(pOut);
+  pOut->_11 = 1.0f - (y * yy + z * zz);
+  pOut->_12 = xy + wz;
+  pOut->_13 = xz - wy;
+  pOut->_21 = xy - wz;
+  pOut->_22 = 1.0f - (x * xx + z * zz);
+  pOut->_23 = yz + wx;
+  pOut->_31 = xz + wy;
+  pOut->_32 = yz - wx;
+  pOut->_33 = 1.0f - (x * xx + y * yy);
+  return pOut;
+}
+
+D3DXMATRIX *WINAPI D3DXMatrixOrthoLH(D3DXMATRIX *pOut, FLOAT w, FLOAT h,
+                                     FLOAT zn, FLOAT zf) {
+  D3DXMatrixIdentity(pOut);
+  pOut->_11 = 2.0f / w;
+  pOut->_22 = 2.0f / h;
+  pOut->_33 = 1.0f / (zf - zn);
+  pOut->_43 = -zn / (zf - zn);
+  return pOut;
+}
+
+D3DXMATRIX *WINAPI D3DXMatrixOrthoRH(D3DXMATRIX *pOut, FLOAT w, FLOAT h,
+                                     FLOAT zn, FLOAT zf) {
+  D3DXMatrixIdentity(pOut);
+  pOut->_11 = 2.0f / w;
+  pOut->_22 = 2.0f / h;
+  pOut->_33 = 1.0f / (zn - zf);
+  pOut->_43 = zn / (zn - zf);
   return pOut;
 }
 
