@@ -137,3 +137,6 @@ add_subdirectory(liblzhl)
 # Provide a simple alias matching the previous interface target name
 add_library(liblzhl ALIAS lzhl)
 
+# PNG decoding library used by the DirectX to GLES translation layer
+add_subdirectory(lodepng)
+
