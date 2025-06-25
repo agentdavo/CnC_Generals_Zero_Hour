@@ -112,6 +112,10 @@ endif()
 add_library(uGLES INTERFACE)
 target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/u_GLES)
 
+# DirectX 8 to OpenGL ES 1.1 translation layer
+add_subdirectory(d3d8_gles)
+target_include_directories(d3d8_to_gles PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/d3d8_gles/include)
+
 # The UniSpySDK sources use a lowercase directory name
 add_subdirectory(uni_spy_sdk)
 target_include_directories(UniSpySDK PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/uni_spy_sdk)

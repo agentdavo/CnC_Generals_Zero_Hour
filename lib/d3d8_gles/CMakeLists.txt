@@ -21,18 +21,25 @@ if(NOT GLESv1_CM_LIBRARY OR NOT EGL_LIBRARY)
 endif()
 
 # Include directories
-include_directories(${CMAKE_SOURCE_DIR}/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Source files
 set(SOURCES src/d3d8_to_gles.c)
 
 if(HEADER_ONLY)
     add_library(d3d8_to_gles INTERFACE)
-    target_include_directories(d3d8_to_gles INTERFACE ${CMAKE_SOURCE_DIR}/include)
+    target_include_directories(d3d8_to_gles INTERFACE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_SOURCE_DIR}/include)
 else()
 add_library(d3d8_to_gles STATIC ${SOURCES})
-    target_include_directories(d3d8_to_gles PUBLIC ${CMAKE_SOURCE_DIR}/include)
-    target_link_libraries(d3d8_to_gles PUBLIC ${GLESv1_CM_LIBRARY} ${EGL_LIBRARY} m)
+    target_include_directories(d3d8_to_gles PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_SOURCE_DIR}/include)
+    target_link_libraries(d3d8_to_gles PUBLIC
+        ${GLESv1_CM_LIBRARY}
+        ${EGL_LIBRARY}
+        m)
 endif()
 
 # Example command line tool for choosing EGL configs

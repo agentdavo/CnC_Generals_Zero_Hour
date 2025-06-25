@@ -91,6 +91,7 @@ The key dependencies are:
    The README in `lib/miniaudio` highlights built-in MP3 support which will
     simplify shimming the Miles Sound System calls.
 - **uGLES** – a lightweight OpenGL ES 1.1 wrapper.
+- **d3d8_gles** – custom shim translating DirectX 8 to OpenGL ES 1.1.
 - **UniSpySDK** – open source networking toolkit used in place of GameSpy.
 - **STLport** – patched C++ standard library used by the original code.
 - **zlib** – compression library used by the original asset archives.
