@@ -39,7 +39,7 @@
 #include "common/XferCRC.h"
 
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Line2D.h"
 
 #include "GameLogic/AI.h"

@@ -35,7 +35,7 @@
 #include "common/MapReaderWriterInfo.h"
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 
 #include "game_client/MapUtil.h"
 #include "game_logic/AI.h"

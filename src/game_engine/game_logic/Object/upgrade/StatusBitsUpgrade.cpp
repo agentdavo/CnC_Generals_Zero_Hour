@@ -55,7 +55,7 @@
 
 #define DEFINE_OBJECT_STATUS_NAMES
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/StatusBitsUpgrade.h"
 

@@ -42,7 +42,7 @@
 #include "common/PlayerList.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/ParticleSys.h"
 #include "game_client/Color.h"
 #include "game_client/View.h"

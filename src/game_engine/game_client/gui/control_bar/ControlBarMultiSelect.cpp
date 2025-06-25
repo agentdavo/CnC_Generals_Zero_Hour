@@ -33,8 +33,8 @@
 
 #include "common/ThingTemplate.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
+#include "game_client/drawable.h"
+#include "game_client/gameclient.h"
 #include "game_client/GadgetPushButton.h"
 #include "game_client/GameWindow.h"
 #include "game_client/InGameUI.h"

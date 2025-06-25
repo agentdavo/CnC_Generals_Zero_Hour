@@ -34,7 +34,7 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/ParticleSys.h"
 #include "game_client/TerrainVisual.h"
 #include "GameLogic/GameLogic.h"

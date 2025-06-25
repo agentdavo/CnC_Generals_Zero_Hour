@@ -40,7 +40,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "W3DDevice/game_client/W3DParticleSys.h"
 #include "W3DDevice/game_client/W3DDisplay.h"
 #include "W3DDevice/game_client/W3DInGameUI.h"

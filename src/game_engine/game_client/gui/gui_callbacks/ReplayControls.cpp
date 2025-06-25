@@ -32,7 +32,7 @@
 
 #include "game_client/GameWindow.h"
 #include "game_client/Gadget.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 
 //-------------------------------------------------------------------------------------------------
 /** Input procedure for the control bar */

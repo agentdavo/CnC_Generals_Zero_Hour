@@ -35,7 +35,7 @@
 
 #include "common/GameLOD.h"
 #include "game_client/TerrainVisual.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "common/UserPreferences.h"
 
 #define DEFINE_PARTICLE_SYSTEM_NAMES

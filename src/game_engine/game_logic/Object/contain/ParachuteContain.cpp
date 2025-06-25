@@ -43,7 +43,7 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/PartitionManager.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 
 const Real NO_START_Z = 1e10;

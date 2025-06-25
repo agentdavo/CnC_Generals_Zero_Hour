@@ -52,7 +52,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------
 #include "game_client/ControlBar.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_client/GameWindow.h"
 #include "game_client/Gadget.h"
 #include "game_client/KeyDefs.h"

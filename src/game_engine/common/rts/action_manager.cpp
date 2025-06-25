@@ -43,7 +43,7 @@
 #include "common/Team.h"
 #include "common/ThingTemplate.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/InGameUI.h"
 
 #include "GameLogic/Object.h"

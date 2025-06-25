@@ -37,7 +37,7 @@
 
 #include "game_client/Display.h"
 #include "game_client/DisplayStringManager.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameText.h"
 #include "game_client/GameWindow.h"
 #include "game_client/InGameUI.h"

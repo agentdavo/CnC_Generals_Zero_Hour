@@ -51,7 +51,7 @@
 
 #include "game_client/Anim2D.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Eva.h"
 #include "game_client/InGameUI.h"
 

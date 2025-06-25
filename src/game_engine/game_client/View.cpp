@@ -31,7 +31,7 @@
 #include "common/GameEngine.h"
 #include "common/Xfer.h"
 #include "game_client/View.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 UnsignedInt View::m_idNext = 1;
 

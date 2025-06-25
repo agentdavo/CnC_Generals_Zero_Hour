@@ -48,8 +48,8 @@
 
 #include "game_client/Color.h"
 #include "game_client/CommandXlat.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
+#include "game_client/drawable.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/Image.h"
 #include "game_client/InGameUI.h"

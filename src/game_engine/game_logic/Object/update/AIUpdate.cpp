@@ -49,7 +49,7 @@
 #include "common/XferCRC.h"
 
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/InGameUI.h"  // useful for printing quick debug strings when we need to
 
 #include "GameLogic/AI.h"

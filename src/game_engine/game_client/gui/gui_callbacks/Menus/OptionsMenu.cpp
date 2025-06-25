@@ -41,7 +41,7 @@
 #include "common/Registry.h"
 #include "common/version.h"
 
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/InGameUI.h"
 #include "game_client/WindowLayout.h"
 #include "game_client/Gadget.h"
@@ -60,7 +60,7 @@
 #include "game_client/Display.h"
 #include "game_client/IMEManager.h"
 #include "game_client/ShellHooks.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_network/FirewallHelper.h"
 #include "game_network/IPEnumeration.h"
 #include "game_network/GameSpyOverlay.h"

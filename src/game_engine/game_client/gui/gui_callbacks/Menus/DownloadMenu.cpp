@@ -48,7 +48,7 @@
 
 #include "common/GameEngine.h"
 #include "common/NameKeyGenerator.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GadgetStaticText.h"
 #include "game_client/GadgetProgressBar.h"

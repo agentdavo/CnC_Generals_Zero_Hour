@@ -74,7 +74,7 @@
 #include "GameLogic/VictoryConditions.h"
 #include "game_client/CDCheck.h"
 #include "game_client/Display.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_client/WindowLayout.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/Gadget.h"

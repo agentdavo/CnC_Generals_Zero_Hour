@@ -41,7 +41,7 @@
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Object.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "common/KindOf.h"
 #include "game_client/ParticleSys.h"
 

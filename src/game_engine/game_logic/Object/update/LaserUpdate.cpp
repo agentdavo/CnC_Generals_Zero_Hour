@@ -32,8 +32,8 @@
 
 #include "common/Xfer.h"
 #include "common/DrawModule.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
+#include "game_client/drawable.h"
+#include "game_client/gameclient.h"
 #include "game_client/ParticleSys.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

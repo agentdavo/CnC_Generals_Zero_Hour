@@ -53,7 +53,7 @@
 #include "GameLogic/Weapon.h"
 
 #include "game_client/InGameUI.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/ControlBar.h"
 #include "game_client/GameWindow.h"
 #include "game_client/GameWindowManager.h"

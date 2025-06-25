@@ -38,8 +38,8 @@
 #include "common/RandomValue.h"
 #include "common/GameLOD.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
-#include "game_client/FXList.h"
+#include "game_client/drawable.h"
+#include "game_client/fxlist.h"
 #include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Module/BodyModule.h"
@@ -48,7 +48,7 @@
 #include "GameLogic/Object.h"
 #include "GameLogic/ObjectCreationList.h"
 #include "GameLogic/Weapon.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 //-------------------------------------------------------------------------------------------------
 InstantDeathBehaviorModuleData::InstantDeathBehaviorModuleData()

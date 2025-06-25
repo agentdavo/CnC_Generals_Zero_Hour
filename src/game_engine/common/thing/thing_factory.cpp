@@ -44,8 +44,8 @@
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Module/CreateModule.h"
 #include "common/ProductionPrerequisite.h"
-#include "game_client/GameClient.h"
-#include "game_client/Drawable.h"
+#include "game_client/gameclient.h"
+#include "game_client/drawable.h"
 #include "common/ini.h"
 
 #ifdef _INTERNAL

@@ -34,7 +34,7 @@
 #include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/OCLUpdate.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/GameText.h"
 #include "game_client/ControlBar.h"
 #include "game_client/GameWindow.h"

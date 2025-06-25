@@ -40,7 +40,7 @@
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Object.h"

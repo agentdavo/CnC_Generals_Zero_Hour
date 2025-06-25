@@ -43,7 +43,7 @@
 
 #include "game_client/Color.h"
 #include "game_client/Display.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameWindow.h"
 #include "game_client/Image.h"
 #include "game_client/Line2D.h"

@@ -40,7 +40,7 @@
 #include "GameLogic/Weapon.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/HordeUpdate.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 //-------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------

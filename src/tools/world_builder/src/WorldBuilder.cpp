@@ -70,7 +70,7 @@
 #include "game_client/ParticleSys.h"
 #include "game_client/Water.h"
 #include "game_client/TerrainRoads.h"
-#include "game_client/FXList.h"
+#include "game_client/fxlist.h"
 #include "game_client/VideoPlayer.h"
 #include "GameLogic/Locomotor.h"
 

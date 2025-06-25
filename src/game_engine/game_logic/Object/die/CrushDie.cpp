@@ -36,7 +36,7 @@
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/BodyModule.h"

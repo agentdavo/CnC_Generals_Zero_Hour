@@ -131,18 +131,18 @@ common/version.cpp
 )
 
 file(GLOB_RECURSE GAME_CLIENT_SRCS CONFIGURE_DEPENDS
-    GameClient/*.cpp
+    game_client/*.cpp
 )
 
 file(GLOB GAME_NETWORK_SRCS
-    GameNetwork/*.cpp
-    GameNetwork/GameSpy/*.cpp
-    GameNetwork/GameSpy/Thread/*.cpp
-    GameNetwork/WOLBrowser/*.cpp
+    game_network/*.cpp
+    game_network/game_spy/*.cpp
+    game_network/game_spy/thread/*.cpp
+    game_network/wol_browser/*.cpp
 )
 
 file(GLOB_RECURSE GAME_LOGIC_SRCS CONFIGURE_DEPENDS
-    GameLogic/*.cpp
+    game_logic/*.cpp
 )
 
 target_sources(gameengine PRIVATE ${GAME_NETWORK_SRCS})
@@ -151,8 +151,8 @@ target_sources(gameengine PRIVATE ${GAME_LOGIC_SRCS})
 
 target_include_directories(gameengine PUBLIC
     ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/include/GameEngine
-    ${PROJECT_SOURCE_DIR}/include/game_engine/GameLogic
+    ${PROJECT_SOURCE_DIR}/include/game_engine
+    ${PROJECT_SOURCE_DIR}/include/game_engine/game_logic
     ${PROJECT_SOURCE_DIR}/include/Precompiled
 )
 

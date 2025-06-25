@@ -38,7 +38,7 @@
 
 #include "game_client/CommandXlat.h"
 #include "game_client/PlaceEventTranslator.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Eva.h"
 
 //-------------------------------------------------------------------------------------------------

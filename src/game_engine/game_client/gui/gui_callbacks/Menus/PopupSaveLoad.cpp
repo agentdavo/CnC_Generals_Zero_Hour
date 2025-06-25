@@ -55,7 +55,7 @@
 #include "game_client/GadgetTextEntry.h"
 #include "game_client/GameText.h"
 #include "game_client/GameWindowManager.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_client/Shell.h"
 #include "GameLogic/GameLogic.h"
 #include "game_client/GameWindowTransitions.h"

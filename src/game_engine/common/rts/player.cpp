@@ -72,9 +72,9 @@
 #include "common/SpecialPower.h"
 
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Eva.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameText.h"
 
 #include "GameLogic/AI.h"

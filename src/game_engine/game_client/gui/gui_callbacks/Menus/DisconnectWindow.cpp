@@ -35,7 +35,7 @@
 #include "game_client/Gadget.h"
 #include "game_client/GadgetTextEntry.h"
 #include "game_client/GadgetListBox.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/DisconnectMenu.h"
 #include "game_client/GameWindowManager.h"
 #include "common/NameKeyGenerator.h"

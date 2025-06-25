@@ -42,7 +42,7 @@
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Eva.h"
 #include "game_client/InGameUI.h"  // useful for printing quick debug strings when we need to
 

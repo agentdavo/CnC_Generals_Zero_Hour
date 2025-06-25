@@ -49,7 +49,7 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "W3DDevice/GameClient/W3DDisplayString.h"
 #include "game_client/HotKey.h"
 #include "game_client/GameFont.h"

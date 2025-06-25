@@ -41,7 +41,7 @@
 #include "game_client/AnimateWindowManager.h"
 #include "game_client/WindowLayout.h"
 #include "game_client/Gadget.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/Shell.h"
 #include "game_client/ShellHooks.h"
 #include "game_client/KeyDefs.h"

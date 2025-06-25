@@ -40,7 +40,7 @@
 #include "GameLogic/Module/ContainModule.h"
 #include "GameLogic/Module/DemoTrapUpdate.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Statistics.h"
 
 

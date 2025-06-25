@@ -33,7 +33,7 @@
 #include "common/NameKeyGenerator.h"
 #include "common/ThingTemplate.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/GameWindow.h"
 #include "game_client/GadgetTextEntry.h"
 #include "game_client/InGameUI.h"

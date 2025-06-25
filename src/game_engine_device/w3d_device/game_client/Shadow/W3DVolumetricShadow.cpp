@@ -57,7 +57,7 @@
 #include "WW3D2/statistics.h"
 #include "GameLogic/TerrainLogic.h"
 #include "WW3D2/DX8Caps.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

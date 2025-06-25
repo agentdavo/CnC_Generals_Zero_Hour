@@ -41,7 +41,7 @@
 #include "common/TerrainTypes.h"
 #include "common/MapObject.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/InGameUI.h"
 #include "game_client/TerrainVisual.h"
 #include "GameLogic/AI.h"

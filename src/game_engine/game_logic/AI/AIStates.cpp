@@ -45,7 +45,7 @@
 #include "common/XFerCRC.h"
 
 #include "game_client/ControlBar.h"
-#include "game_client/FXList.h"
+#include "game_client/fxlist.h"
 #include "game_client/InGameUI.h"
 
 #include "GameLogic/AIDock.h"

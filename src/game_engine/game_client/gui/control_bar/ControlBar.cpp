@@ -63,9 +63,9 @@
 #include "game_client/AnimateWindowManager.h"
 #include "game_client/ControlBar.h"
 #include "game_client/ControlBarScheme.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Display.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GameText.h"
 #include "game_client/GadgetPushButton.h"
@@ -78,7 +78,7 @@
 #include "game_client/GadgetListBox.h"
 #include "game_client/HotKey.h"
 #include "game_client/GameWindowTransitions.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 
 #include "game_network/GameInfo.h"
 
