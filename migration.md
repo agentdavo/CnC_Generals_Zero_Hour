@@ -313,6 +313,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Began implementing D3DX utility functions. D3DXComputeBoundingSphere and D3DXComputeNormals now have working shims.
 - Implemented additional D3DX helpers used by WW3D2 including D3DXCreateTexture,
   D3DXCreateTextureFromFileExA, D3DXLoadSurfaceFromSurface and D3DXFilterTexture.
+- D3DXCreateTextureFromFileExA now decodes BMP and PNG files using lodepng and a
+  lightweight BMP parser, uploading the pixels via glTexImage2D.
 - Added D3DXVec3Transform and D3DXComputeBoundingBox implementations in the
   d3d8_gles shim.
 - Removed unused Win32 headers from `lvgl_device/common` and deleted the old

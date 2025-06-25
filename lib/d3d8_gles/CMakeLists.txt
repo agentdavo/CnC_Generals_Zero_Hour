@@ -24,18 +24,21 @@ endif()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Source files
-set(SOURCES src/d3d8_to_gles.c)
+set(SOURCES src/d3d8_to_gles.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/lodepng/lodepng.c)
 
 if(HEADER_ONLY)
     add_library(d3d8_to_gles INTERFACE)
     target_include_directories(d3d8_to_gles INTERFACE
         ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${CMAKE_SOURCE_DIR}/include)
+        ${CMAKE_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/lodepng)
 else()
 add_library(d3d8_to_gles STATIC ${SOURCES})
     target_include_directories(d3d8_to_gles PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${CMAKE_SOURCE_DIR}/include)
+        ${CMAKE_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/lodepng)
     target_link_libraries(d3d8_to_gles PUBLIC
         ${GLESv1_CM_LIBRARY}
         ${EGL_LIBRARY}

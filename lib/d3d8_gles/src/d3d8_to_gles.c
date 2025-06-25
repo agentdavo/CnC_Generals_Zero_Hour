@@ -5,9 +5,11 @@
 #include <math.h>
 #include <stdalign.h>
 #include <EGL/eglext.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "lodepng.h"
 
 #ifdef D3D8_GLES_LOGGING
-#include <stdio.h>
 #include <stdarg.h>
 void d3d8_gles_log(const char *format, ...) {
     va_list args;
@@ -1992,19 +1994,119 @@ HRESULT WINAPI D3DXCreateTexture(LPDIRECT3DDEVICE8 pDevice, UINT Width, UINT Hei
                                           Usage, Format, Pool, ppTexture);
 }
 
+static int load_bmp(const char *filename, unsigned char **out, unsigned *w, unsigned *h) {
+    FILE *f = fopen(filename, "rb");
+    if (!f) return -1;
+    unsigned char header[54];
+    if (fread(header, 1, 54, f) != 54) { fclose(f); return -1; }
+    if (header[0] != 'B' || header[1] != 'M') { fclose(f); return -1; }
+    unsigned offset = header[10] | (header[11] << 8) | (header[12] << 16) | (header[13] << 24);
+    unsigned width  = header[18] | (header[19] << 8) | (header[20] << 16) | (header[21] << 24);
+    unsigned height = header[22] | (header[23] << 8) | (header[24] << 16) | (header[25] << 24);
+    unsigned short bpp = header[28] | (header[29] << 8);
+    if (bpp != 24 && bpp != 32) { fclose(f); return -1; }
+    int row_size = ((bpp * width + 31) / 32) * 4;
+    unsigned char *data = malloc(width * height * 4);
+    if (!data) { fclose(f); return -1; }
+    fseek(f, offset, SEEK_SET);
+    unsigned char *row = malloc(row_size);
+    if (!row) { fclose(f); free(data); return -1; }
+    for (unsigned y = 0; y < height; y++) {
+        if (fread(row, 1, row_size, f) != (size_t)row_size) { free(row); free(data); fclose(f); return -1; }
+        unsigned char *dst = data + (height - 1 - y) * width * 4;
+        for (unsigned x = 0; x < width; x++) {
+            unsigned char b = row[x * (bpp / 8) + 0];
+            unsigned char g = row[x * (bpp / 8) + 1];
+            unsigned char r = row[x * (bpp / 8) + 2];
+            unsigned char a = bpp == 32 ? row[x * 4 + 3] : 255;
+            dst[x * 4 + 0] = r;
+            dst[x * 4 + 1] = g;
+            dst[x * 4 + 2] = b;
+            dst[x * 4 + 3] = a;
+        }
+    }
+    free(row);
+    fclose(f);
+    *out = data;
+    *w = width;
+    *h = height;
+    return 0;
+}
+
+static int load_png(const char *filename, unsigned char **out, unsigned *w, unsigned *h) {
+    unsigned error = lodepng_decode32_file(out, w, h, filename);
+    return error ? -1 : 0;
+}
+
 HRESULT WINAPI D3DXCreateTextureFromFileExA(LPDIRECT3DDEVICE8 pDevice, LPCSTR pSrcFile,
                                             UINT Width, UINT Height, UINT MipLevels,
                                             DWORD Usage, D3DFORMAT Format, D3DPOOL Pool,
                                             DWORD Filter, DWORD MipFilter, D3DCOLOR ColorKey,
                                             D3DXIMAGE_INFO *pSrcInfo, PALETTEENTRY *pPalette,
                                             LPDIRECT3DTEXTURE8 *ppTexture) {
-    (void)pSrcFile; (void)Filter; (void)MipFilter; (void)ColorKey;
-    (void)pSrcInfo; (void)pPalette;
-    if (!pDevice || !ppTexture)
+    (void)Filter; (void)MipFilter; (void)pPalette;
+    if (!pDevice || !pSrcFile || !ppTexture)
         return D3DERR_INVALIDCALL;
-    if (Width == D3DX_DEFAULT) Width = 1;
-    if (Height == D3DX_DEFAULT) Height = 1;
-    return D3DXCreateTexture(pDevice, Width, Height, MipLevels, Usage, Format, Pool, ppTexture);
+
+    unsigned char *pixels = NULL;
+    unsigned w = 0, h = 0;
+    const char *ext = strrchr(pSrcFile, '.');
+    int res = -1;
+    if (ext) {
+        if (strcasecmp(ext + 1, "png") == 0)
+            res = load_png(pSrcFile, &pixels, &w, &h);
+        else if (strcasecmp(ext + 1, "bmp") == 0)
+            res = load_bmp(pSrcFile, &pixels, &w, &h);
+    }
+    if (res != 0) return D3DERR_INVALIDCALL;
+
+    if (ColorKey) {
+        unsigned char ck_r = (ColorKey >> 16) & 0xFF;
+        unsigned char ck_g = (ColorKey >> 8) & 0xFF;
+        unsigned char ck_b = ColorKey & 0xFF;
+        for (unsigned i = 0; i < w * h; i++) {
+            unsigned char *px = pixels + i * 4;
+            if (px[0] == ck_r && px[1] == ck_g && px[2] == ck_b)
+                px[3] = 0;
+        }
+    }
+
+    if (Width == D3DX_DEFAULT) Width = w;
+    if (Height == D3DX_DEFAULT) Height = h;
+
+    HRESULT hr = D3DXCreateTexture(pDevice, Width, Height, MipLevels, Usage,
+                                   Format, Pool, ppTexture);
+    if (hr != D3D_OK) { free(pixels); return hr; }
+
+    D3DLOCKED_RECT lr;
+    hr = (*ppTexture)->lpVtbl->LockRect(*ppTexture, 0, &lr, NULL, 0);
+    if (hr != D3D_OK) { free(pixels); (*ppTexture)->lpVtbl->Release(*ppTexture); return hr; }
+
+    unsigned copy_w = w < Width ? w : Width;
+    unsigned copy_h = h < Height ? h : Height;
+    for (unsigned y = 0; y < copy_h; y++) {
+        memcpy((unsigned char *)lr.pBits + y * lr.Pitch,
+               pixels + y * w * 4, copy_w * 4);
+        if (Width > w)
+            memset((unsigned char *)lr.pBits + y * lr.Pitch + copy_w * 4, 0,
+                   (Width - copy_w) * 4);
+    }
+    for (unsigned y = copy_h; y < Height; y++)
+        memset((unsigned char *)lr.pBits + y * lr.Pitch, 0, Width * 4);
+
+    (*ppTexture)->lpVtbl->UnlockRect(*ppTexture, 0);
+
+    if (pSrcInfo) {
+        pSrcInfo->Width = w;
+        pSrcInfo->Height = h;
+        pSrcInfo->Depth = 1;
+        pSrcInfo->Format = Format;
+        pSrcInfo->ResourceType = D3DRTYPE_TEXTURE;
+        pSrcInfo->MipLevels = MipLevels ? MipLevels : 1;
+    }
+
+    free(pixels);
+    return hr;
 }
 
 HRESULT WINAPI D3DXLoadSurfaceFromSurface(LPDIRECT3DSURFACE8 pDestSurface,
