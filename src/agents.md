@@ -1,0 +1,5 @@
+- files and folders must be portable
+- folders must be snake case
+- files must be snake case
+- use `git mv` when renaming
+- .h headers should be moved to respective include/
