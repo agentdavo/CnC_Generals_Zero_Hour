@@ -44,7 +44,7 @@
 #include "dynamesh.h"
 
 // sgc : wwlib and wwmath contain different rect.h files...
-#include "..\wwmath\rect.h"
+#include "../ww_math/rect.h"
 
 class	Font3DInstanceClass;
 

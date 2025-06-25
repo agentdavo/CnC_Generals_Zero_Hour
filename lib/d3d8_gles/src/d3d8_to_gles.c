@@ -2276,9 +2276,107 @@ HRESULT WINAPI D3DXCleanMesh(LPD3DXMESH pMeshIn, CONST DWORD *pAdjacencyIn, LPD3
 HRESULT WINAPI D3DXValidMesh(LPD3DXMESH pMeshIn, CONST DWORD *pAdjacency, LPD3DXBUFFER *ppErrorsAndWarnings) { return D3DXERR_NOTAVAILABLE; }
 HRESULT WINAPI D3DXGeneratePMesh(LPD3DXMESH pMesh, CONST DWORD *pAdjacency, CONST LPD3DXATTRIBUTEWEIGHTS pVertexAttributeWeights, CONST FLOAT *pVertexWeights, DWORD MinValue, DWORD Options, LPD3DXPMESH *ppPMesh) { return D3DXERR_NOTAVAILABLE; }
 HRESULT WINAPI D3DXSimplifyMesh(LPD3DXMESH pMesh, CONST DWORD *pAdjacency, CONST LPD3DXATTRIBUTEWEIGHTS pVertexAttributeWeights, CONST FLOAT *pVertexWeights, DWORD MinValue, DWORD Options, LPD3DXMESH *ppMesh) { return D3DXERR_NOTAVAILABLE; }
-HRESULT WINAPI D3DXComputeBoundingSphere(PVOID pPointsFVF, DWORD NumVertices, DWORD FVF, D3DXVECTOR3 *pCenter, FLOAT *pRadius) { return D3DXERR_NOTAVAILABLE; }
+HRESULT WINAPI D3DXComputeBoundingSphere(PVOID pPointsFVF, DWORD NumVertices, DWORD FVF, D3DXVECTOR3 *pCenter, FLOAT *pRadius) {
+    if (!pPointsFVF || !pCenter || !pRadius || NumVertices == 0)
+        return D3DERR_INVALIDCALL;
+    if (!(FVF & (D3DFVF_XYZ | D3DFVF_XYZRHW)))
+        return D3DERR_INVALIDCALL;
+
+    UINT stride = D3DXGetFVFVertexSize(FVF);
+    if (!stride)
+        return D3DERR_INVALIDCALL;
+
+    const BYTE *data = (const BYTE *)pPointsFVF;
+    D3DXVECTOR3 vmin = { FLT_MAX, FLT_MAX, FLT_MAX };
+    D3DXVECTOR3 vmax = { -FLT_MAX, -FLT_MAX, -FLT_MAX };
+    for (DWORD i = 0; i < NumVertices; i++) {
+        const float *pos = (const float *)(data + i * stride);
+        D3DXVECTOR3 v = { pos[0], pos[1], pos[2] };
+        if (v.x < vmin.x) vmin.x = v.x;
+        if (v.y < vmin.y) vmin.y = v.y;
+        if (v.z < vmin.z) vmin.z = v.z;
+        if (v.x > vmax.x) vmax.x = v.x;
+        if (v.y > vmax.y) vmax.y = v.y;
+        if (v.z > vmax.z) vmax.z = v.z;
+    }
+
+    pCenter->x = (vmin.x + vmax.x) * 0.5f;
+    pCenter->y = (vmin.y + vmax.y) * 0.5f;
+    pCenter->z = (vmin.z + vmax.z) * 0.5f;
+
+    float max_dist2 = 0.0f;
+    for (DWORD i = 0; i < NumVertices; i++) {
+        const float *pos = (const float *)(data + i * stride);
+        D3DXVECTOR3 v = { pos[0], pos[1], pos[2] };
+        D3DXVECTOR3 diff;
+        D3DXVec3Subtract(&diff, &v, pCenter);
+        float d2 = D3DXVec3Dot(&diff, &diff);
+        if (d2 > max_dist2) max_dist2 = d2;
+    }
+
+    *pRadius = sqrtf(max_dist2);
+    return D3D_OK;
+}
 HRESULT WINAPI D3DXComputeBoundingBox(PVOID pPointsFVF, DWORD NumVertices, DWORD FVF, D3DXVECTOR3 *pMin, D3DXVECTOR3 *pMax) { return D3DXERR_NOTAVAILABLE; }
-HRESULT WINAPI D3DXComputeNormals(LPD3DXBASEMESH pMesh, CONST DWORD *pAdjacency) { return D3DXERR_NOTAVAILABLE; }
+HRESULT WINAPI D3DXComputeNormals(LPD3DXBASEMESH pMesh, CONST DWORD *pAdjacency) {
+    (void)pAdjacency;
+    if (!pMesh) return D3DERR_INVALIDCALL;
+
+    ID3DXMesh *mesh = (ID3DXMesh *)pMesh;
+    if (!(mesh->fvf & (D3DFVF_XYZ | D3DFVF_XYZRHW)) || !(mesh->fvf & D3DFVF_NORMAL))
+        return D3DERR_INVALIDCALL;
+
+    UINT stride = D3DXGetFVFVertexSize(mesh->fvf);
+    if (!stride) return D3DERR_INVALIDCALL;
+
+    UINT normal_offset = (mesh->fvf & D3DFVF_XYZRHW) ? 4 * sizeof(float) : 3 * sizeof(float);
+
+    BYTE *vdata;
+    HRESULT hr = mesh->pVtbl->LockVertexBuffer(mesh, 0, &vdata);
+    if (FAILED(hr)) return hr;
+
+    BYTE *idata;
+    hr = mesh->pVtbl->LockIndexBuffer(mesh, 0, &idata);
+    if (FAILED(hr)) { mesh->pVtbl->UnlockVertexBuffer(mesh); return hr; }
+
+    WORD *indices = (WORD *)idata;
+
+    for (DWORD i = 0; i < mesh->num_vertices; i++) {
+        float *n = (float *)(vdata + i * stride + normal_offset);
+        n[0] = n[1] = n[2] = 0.0f;
+    }
+
+    for (DWORD f = 0; f < mesh->num_faces; f++) {
+        WORD i0 = indices[f * 3];
+        WORD i1 = indices[f * 3 + 1];
+        WORD i2 = indices[f * 3 + 2];
+
+        D3DXVECTOR3 *p0 = (D3DXVECTOR3 *)(vdata + i0 * stride);
+        D3DXVECTOR3 *p1 = (D3DXVECTOR3 *)(vdata + i1 * stride);
+        D3DXVECTOR3 *p2 = (D3DXVECTOR3 *)(vdata + i2 * stride);
+
+        D3DXVECTOR3 e1, e2, fn;
+        D3DXVec3Subtract(&e1, p1, p0);
+        D3DXVec3Subtract(&e2, p2, p0);
+        D3DXVec3Cross(&fn, &e1, &e2);
+
+        float *n0 = (float *)(vdata + i0 * stride + normal_offset);
+        float *n1 = (float *)(vdata + i1 * stride + normal_offset);
+        float *n2 = (float *)(vdata + i2 * stride + normal_offset);
+        n0[0] += fn.x; n0[1] += fn.y; n0[2] += fn.z;
+        n1[0] += fn.x; n1[1] += fn.y; n1[2] += fn.z;
+        n2[0] += fn.x; n2[1] += fn.y; n2[2] += fn.z;
+    }
+
+    for (DWORD i = 0; i < mesh->num_vertices; i++) {
+        D3DXVECTOR3 *n = (D3DXVECTOR3 *)(vdata + i * stride + normal_offset);
+        D3DXVec3Normalize(n, n);
+    }
+
+    mesh->pVtbl->UnlockIndexBuffer(mesh);
+    mesh->pVtbl->UnlockVertexBuffer(mesh);
+    return D3D_OK;
+}
 HRESULT WINAPI D3DXLoadMeshFromX(LPSTR pFilename, DWORD Options, LPDIRECT3DDEVICE8 pD3D, LPD3DXBUFFER *ppAdjacency, LPD3DXBUFFER *ppMaterials, DWORD *pNumMaterials, LPD3DXMESH *ppMesh) { return D3DXERR_NOTAVAILABLE; }
 HRESULT WINAPI D3DXCreateSkinMesh(DWORD NumFaces, DWORD NumVertices, DWORD NumBones, DWORD Options, CONST DWORD *pDeclaration, LPDIRECT3DDEVICE8 pD3D, LPD3DXSKINMESH *ppSkinMesh) { return D3DXERR_SKINNINGNOTSUPPORTED; }
 HRESULT WINAPI D3DXCreateSkinMeshFVF(DWORD NumFaces, DWORD NumVertices, DWORD NumBones, DWORD Options, DWORD FVF, LPDIRECT3DDEVICE8 pD3D, LPD3DXSKINMESH *ppSkinMesh) { return D3DXERR_SKINNINGNOTSUPPORTED; }

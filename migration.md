@@ -299,3 +299,18 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - The microGLES renderer under `lib/u_gles` is built by default. Its `renderer_lib`
   target is aliased as `uGLES` and the Generals executable links this library.
 - DX8 wrapper now enumerates a stub 'microGLES Software Renderer' adapter and exposes a fixed 800x600 display mode so the engine can start without querying real hardware.
+- Introduced a portable `tchar.h` wrapper and added case-correct alias headers for cross-platform builds.
+- Added lvgl_hello example under src/examples. The program opens an 800x600 LVGL window and demonstrates widgets with a 'Hello world' label and a centred button that reacts to clicks. Building with -DBUILD_ENGINE=OFF skips the main Generals engine.
+- lvgl_hello now selects the SDL backend by default, improving rendering on macOS.
+- Added d3d8_triangle example showing the DirectX 8 shim. It opens an SDL window via LvglPlatform and renders a rotating coloured triangle using D3D8 calls.
+- Updated CPU detection code for non-Windows builds and replaced Windows headers with portable stubs.
+- Standardised Vegas WW list headers to snake case.
+- LVGL's X11 backend is now optional. The cmake option `LVGL_USE_X11` defaults to OFF
+  and `lv_conf.h` honours compile definitions so backends can be toggled without
+  warnings.
+- WW3D2 links against the `d3d8_gles` shim and `gameenginedevice` now links this
+  library so DirectX 8 calls route through the OpenGL ES translation layer.
+- Began implementing D3DX utility functions. D3DXComputeBoundingSphere and D3DXComputeNormals now have working shims.
+- Removed unused Win32 headers from `lvgl_device/common` and deleted the old
+  `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
+  `std::filesystem` directly for directory creation and existence checks.
