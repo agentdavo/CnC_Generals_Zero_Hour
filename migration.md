@@ -298,3 +298,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   library so DirectX 8 calls route through the OpenGL ES translation layer.
 - The microGLES renderer under `lib/u_gles` is built by default. Its `renderer_lib`
   target is aliased as `uGLES` and the Generals executable links this library.
+- Removed unused Win32 headers from `lvgl_device/common` and deleted the old
+  `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
+  `std::filesystem` directly for directory creation and existence checks.
