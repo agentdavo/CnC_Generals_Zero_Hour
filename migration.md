@@ -270,6 +270,10 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   `Byte` alias. `CompressionManager` calls updated to use the prefixed
   `z_compress2` and `z_uncompress` APIs.
 - Added compatibility wrappers for refcount.h and STLTypedefs.h.
+- Modernized `wwlib`'s `bittype.h` to use C++11 `using` aliases guarded
+  against redefinition with the win32_compat header. This resolves
+  duplicate typedef errors on macOS and clarifies the intent of the
+  size-specific types.
 - Introduced cross-platform fram_grab stubs and renamed files to snake_case.
 - Replaced Windows allocation macros with standard new in aabtreebuilder.cpp.
 - nox_compress now calls LZHLDecompress with size_t sizes.
