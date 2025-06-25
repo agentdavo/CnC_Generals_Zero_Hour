@@ -90,7 +90,7 @@ class STLSpecialAlloc;
 
 // You might not want Kindof in here because it seems like it changes frequently, but the problem
 // is that Kindof is included EVERYWHERE, so it might as well be precompiled.
-#include "game_engine/common/INI.h"
+#include "game_engine/common/ini.h"
 #include "game_engine/common/KindOf.h"
 #include "game_engine/common/DisabledTypes.h"
 #include "game_engine/common/NameKeyGenerator.h"

@@ -58,7 +58,7 @@
 
 #include "always.h"
 #include "wwmath.h"
-#include <math.h>
+#include <cmath>
 
 
 /*
@@ -394,7 +394,7 @@ WWINLINE float Vector2::Length2() const
  *========================================================================*/
 WWINLINE void Vector2::Rotate(float theta)
 {
-	Rotate(WWMath::Sin(theta), WWMath::Cos(theta));
+        Rotate(std::sin(theta), std::cos(theta));
 }
 
 /************************************************************************** 
@@ -434,7 +434,7 @@ WWINLINE void Vector2::Rotate(float s, float c)
  *========================================================================*/
 WWINLINE bool Vector2::Rotate_Towards_Vector(Vector2 &target, float max_theta, bool & positive_turn)
 {
-	return Rotate_Towards_Vector(target, WWMath::Sin(max_theta), WWMath::Cos(max_theta), positive_turn);
+        return Rotate_Towards_Vector(target, std::sin(max_theta), std::cos(max_theta), positive_turn);
 }
 
 /************************************************************************** 

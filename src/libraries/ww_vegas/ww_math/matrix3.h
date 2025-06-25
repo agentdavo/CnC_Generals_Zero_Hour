@@ -66,6 +66,7 @@
 
 #include "always.h"
 #include "vector3.h"
+#include "wwmath.h"
 #include "wwdebug.h"
 #ifdef _UNIX
 #include "osdep.h"

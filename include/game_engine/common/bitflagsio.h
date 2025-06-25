@@ -33,7 +33,7 @@
 #define __BitFlagsIO_H_
 
 #include "common/BitFlags.h"
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/Xfer.h"
 
 //-------------------------------------------------------------------------------------------------

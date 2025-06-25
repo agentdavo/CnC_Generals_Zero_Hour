@@ -40,7 +40,7 @@
 #define DEFAULT_NO_NEED_TO_CATCH_UP_RADIUS (CATCH_UP_RADIUS_MIN)
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/INI.h"
+#include "common/ini.h"
 #include "GameLogic/Module/UpdateModule.h"
 class DamageInfo;
 enum ModelConditionFlagType;

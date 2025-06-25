@@ -43,7 +43,7 @@
 #define RENDOBJ_H
 
 #include "libraries/ww_vegas/ww_lib/always.h"
-#include "libraries/ww_vegas/ww_lib/refcount.h"
+#include "refcount.h"
 #include "libraries/ww_vegas/ww_math/sphere.h"
 #include "libraries/ww_vegas/ww_3d2/coltype.h"
 #include "libraries/ww_vegas/ww_math/aabox.h"
