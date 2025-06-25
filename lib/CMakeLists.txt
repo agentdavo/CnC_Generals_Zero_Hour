@@ -109,8 +109,8 @@ if(APPLE)
     endif()
 endif()
 
-add_library(uGLES INTERFACE)
-target_include_directories(uGLES INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/u_GLES)
+add_subdirectory(u_gles)
+add_library(uGLES ALIAS renderer_lib)
 
 # DirectX 8 to OpenGL ES 1.1 translation layer
 add_subdirectory(d3d8_gles)
