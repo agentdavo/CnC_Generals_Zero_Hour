@@ -328,3 +328,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Removed unused Win32 headers from `lvgl_device/common` and deleted the old
   `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
   `std::filesystem` directly for directory creation and existence checks.
+- CMake now exports SDL2 include directories for LVGL so SDL.h resolves on macOS.

@@ -65,6 +65,7 @@ target_include_directories(lvgl PUBLIC
 
 if(LVGL_USE_SDL)
     target_link_libraries(lvgl PUBLIC SDL2::SDL2)
+    target_include_directories(lvgl PUBLIC ${SDL2_INCLUDE_DIRS})
     target_compile_definitions(lvgl PUBLIC LV_USE_SDL=1)
 endif()
 
