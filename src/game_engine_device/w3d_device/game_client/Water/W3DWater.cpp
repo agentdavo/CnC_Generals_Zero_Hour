@@ -50,7 +50,7 @@
 #include "matinfo.h"
 
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 #include "common/Xfer.h"
 #include "common/GameLOD.h"

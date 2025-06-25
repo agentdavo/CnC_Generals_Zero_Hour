@@ -39,14 +39,14 @@
 #include "common/GameEngine.h"
 #include "common/GameSpyMiscPreferences.h"
 #include "common/QuotedPrintable.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "common/UserPreferences.h"
 =======
 #include "common/FileSystem.h"
 #include "common/GameEngine.h"
 #include "common/GameSpyMiscPreferences.h"
 #include "common/QuotedPrintable.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "common/UserPreferences.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/GUI/GUICallbacks/Menus/WOLLoginMenu.cpp
 #include "game_client/AnimateWindowManager.h"

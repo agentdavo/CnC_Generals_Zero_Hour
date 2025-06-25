@@ -58,7 +58,7 @@
 #include "common/GameLOD.h"
 #include "common/GameState.h"
 #include "common/GameSpyMiscPreferences.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/NameKeyGenerator.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"

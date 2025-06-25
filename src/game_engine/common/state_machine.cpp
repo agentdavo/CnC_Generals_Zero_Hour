@@ -32,7 +32,7 @@
 #include "common/StateMachine.h"
 #include "common/ThingTemplate.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Xfer.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

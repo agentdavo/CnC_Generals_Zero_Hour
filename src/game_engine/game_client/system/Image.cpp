@@ -37,7 +37,7 @@
 #include "lib/base_type.h"
 #include "common/Debug.h"
 #include "common/ini.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "game_client/Image.h"
 
 

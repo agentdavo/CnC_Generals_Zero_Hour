@@ -37,7 +37,7 @@
 
 #include "common/AudioEventRTS.h"
 #include "common/DrawModule.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ini.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"

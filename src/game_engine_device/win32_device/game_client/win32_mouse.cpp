@@ -31,7 +31,7 @@
 #include "common/windows.h"
 
 #include "common/Debug.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/localfilesystem.h"
 #include "game_client/gameclient.h"
 #include "win32_device/game_client/win32_mouse.h"

@@ -67,7 +67,7 @@
 #include "game_client/display.h"
 #include "game_client/Water.h"
 #include "GameLogic/GameLogic.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/GameLOD.h"
 #include "d3dx8tex.h"
 #include "dx8caps.h"

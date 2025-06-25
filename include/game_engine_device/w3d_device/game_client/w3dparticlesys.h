@@ -34,7 +34,7 @@
 #include "WW3D2/PointGr.h"
 #include "WW3D2/streak.h"
 #include "WW3D2/RInfo.h"
-#include "WWLib/BitType.h"
+#include "ww_lib/bittype.h"
 
 //=============================================================================
 /** W3D implementation of the game display which is responsible for creating

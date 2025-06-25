@@ -28,10 +28,10 @@
 
 #include "common/CRC.h"
 #include "common/GameState.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "game_network/LANAPI.h"
 #include "game_network/NetworkUtil.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/RandomValue.h"
 #include "game_client/GameText.h"
 #include "game_client/MapUtil.h"

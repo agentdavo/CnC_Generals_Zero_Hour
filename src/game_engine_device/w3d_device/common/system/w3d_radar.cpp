@@ -31,7 +31,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/audioeventrts.h"
 #include "common/Debug.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"
 

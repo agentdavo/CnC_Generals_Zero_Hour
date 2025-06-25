@@ -46,7 +46,7 @@
 #include "W3DDevice/GameClient/W3DTerrainTracks.h"
 #include "W3DDevice/GameClient/heightmap.h"
 #include "common/PerfTimer.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Debug.h"
 #include "texture.h"
 #include "colmath.h"

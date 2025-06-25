@@ -41,7 +41,7 @@
 #include "game_client/KeyDefs.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GadgetListBox.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "game_network/GameSpyOverlay.h"
 #include "game_network/GameSpy/PeerDefs.h"
 #include "game_network/GameSpy/PeerThread.h"

@@ -47,7 +47,7 @@
 #include "W3DDevice/GameClient/W3DGranny.h"
 #include "W3DDevice/GameClient/Heightmap.h"
 #include "D3dx8math.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "W3DDevice/GameClient/W3DProjectedShadow.h"
 #include "WW3D2/statistics.h"
 #include "common/Debug.h"

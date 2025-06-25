@@ -86,7 +86,7 @@ class STLSpecialAlloc;
 #include "game_engine/common/GameCommon.h"
 #include "game_engine/common/gamememory.h"
 #include "game_engine/common/GameType.h"
-#include "game_engine/common/GlobalData.h"
+#include "game_engine/common/globaldata.h"
 
 // You might not want Kindof in here because it seems like it changes frequently, but the problem
 // is that Kindof is included EVERYWHERE, so it might as well be precompiled.

@@ -27,7 +27,7 @@
 /////////////////////////////////////////////////////////////
 
 #include "common/byte_swap.h"
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 #include "common/ArchiveFile.h"
 #include "common/ArchiveFileSystem.h"
 #include "common/file.h"

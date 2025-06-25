@@ -29,7 +29,7 @@
 
 #include <stdlib.h>
 
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"
 #include "GameLogic/TerrainLogic.h"

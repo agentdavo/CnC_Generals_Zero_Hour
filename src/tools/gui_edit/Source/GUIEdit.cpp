@@ -52,7 +52,7 @@
 #include "common/Debug.h"
 #include "common/NameKeyGenerator.h"
 #include "common/GameEngine.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "game_client/GlobalLanguage.h"
 #include "common/PlayerList.h"
 #include "GameLogic/RankInfo.h"

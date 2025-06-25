@@ -47,20 +47,20 @@
 
 #include "game_client/GameText.h"
 #include "common/Language.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "game_client/LanguageFilter.h"
 <<<<<<< Updated upstream:src/game_engine/GameClient/GameText.cpp
 #include "common/Debug.h"
 #include "common/UnicodeString.h"
 #include "common/AsciiString.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/file.h"
 #include "common/FileSystem.h"
 =======
 #include "common/Debug.h"
 #include "common/UnicodeString.h"
 #include "common/AsciiString.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/file.h"
 #include "common/FileSystem.h"
 >>>>>>> Stashed changes:src/game_engine/GameClient/GameText.cpp

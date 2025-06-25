@@ -50,7 +50,7 @@
 #include "common/gamememory.h"
 #include "common/CriticalSection.h"
 #include "common/Errors.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 #ifdef MEMORYPOOL_DEBUG
 #include "game_client/ClientRandomValue.h"

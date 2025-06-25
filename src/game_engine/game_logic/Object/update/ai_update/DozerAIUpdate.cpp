@@ -41,7 +41,7 @@
 #include "common/Radar.h"
 #include "common/RandomValue.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Xfer.h"
 #include "game_client/drawable.h"
 #include "game_client/GameText.h"

@@ -29,7 +29,7 @@
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "WorldBuilderView.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "GameLogic/LogicRandomValue.h"
 #include "W3DDevice/GameClient/HeightMap.h"
 #include "common/Debug.h"

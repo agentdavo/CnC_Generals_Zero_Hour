@@ -32,7 +32,7 @@
 #include "common/AudioHandleSpecialValues.h"
 #include "common/CRCDebug.h"
 #include "common/gameaudio.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Money.h"
 #include "common/PerfTimer.h"
 #include "common/Player.h"

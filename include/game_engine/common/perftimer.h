@@ -46,7 +46,7 @@
 #ifdef PERF_TIMERS
 #include "GameLogic/GameLogic.h"
 #include "common/PerfMetrics.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #endif
 
 // Forward Declarations

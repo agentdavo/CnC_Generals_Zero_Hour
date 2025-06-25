@@ -33,7 +33,7 @@
 #include "MainFrm.h"
 #include "DrawObject.h"
 #include "GameLogic/PolygonTrigger.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 
 //
 // WaterTool class.

@@ -30,7 +30,7 @@
 #include <coltest.h>
 #include <rinfo.h>
 #include <camera.h>
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "W3DDevice/GameClient/WorldHeightMap.h"
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "W3DDevice/GameClient/HeightMap.h"

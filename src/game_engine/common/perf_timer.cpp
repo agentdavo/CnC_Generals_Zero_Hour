@@ -30,7 +30,7 @@
 
 #include "common/PerfTimer.h"
 
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "game_client/DebugDisplay.h"
 #include "game_client/Display.h"
 #include "game_client/GraphDraw.h"

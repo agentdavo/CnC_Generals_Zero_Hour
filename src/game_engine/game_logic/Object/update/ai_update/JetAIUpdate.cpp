@@ -29,7 +29,7 @@
 #define DEFINE_LOCOMOTORSET_NAMES
 
 #include "common/ActionManager.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MiscAudio.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"

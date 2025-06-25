@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/ini.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "game_network/WOLBrowser/WebBrowser.h"
 
 #ifdef _INTERNAL

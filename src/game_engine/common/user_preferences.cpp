@@ -41,7 +41,7 @@
 #include "common/LadderPreferences.h"
 #include "common/Player.h"
 #include "common/PlayerTemplate.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "common/QuickmatchPreferences.h"
 #include "common/CustomMatchPreferences.h"
 #include "common/IgnorePreferences.h"

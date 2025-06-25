@@ -46,9 +46,9 @@
 #include "common/file.h"
 #include "common/FileSystem.h"
 #include "common/GameSounds.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Player.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 
 #include "GameLogic/GameLogic.h"	// For getObjectByID
 #include "GameLogic/LogicRandomValue.h"

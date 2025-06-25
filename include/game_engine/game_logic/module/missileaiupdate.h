@@ -32,7 +32,7 @@
 #define _MISSILE_AI_UPDATE_H_
 
 #include "common/GameType.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/WeaponBonusConditionFlags.h"
 #include "common/ini.h"

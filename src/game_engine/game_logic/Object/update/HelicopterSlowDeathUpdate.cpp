@@ -31,7 +31,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/gameaudio.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/RandomValue.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"

@@ -44,7 +44,7 @@
 #include "lib/base_type.h"
 #include "common/CopyProtection.h"
 #include "common/CriticalSection.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/GameEngine.h"
 #include "common/GameSounds.h"
 #include "common/Debug.h"

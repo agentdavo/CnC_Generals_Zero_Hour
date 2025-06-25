@@ -56,7 +56,7 @@
 #include "lib/base_type.h"
 #include "common/GameType.h"
 #include "common/asciiString.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 
 //-----------------------------------------------------------------------------
 //           Forward References

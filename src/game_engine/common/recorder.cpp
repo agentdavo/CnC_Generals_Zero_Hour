@@ -28,7 +28,7 @@
 #include "common/FileSystem.h"
 #include "common/playerlist.h"
 #include "common/Player.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/GameEngine.h"
 #include "game_client/GameWindow.h"
 #include "game_client/GameWindowManager.h"

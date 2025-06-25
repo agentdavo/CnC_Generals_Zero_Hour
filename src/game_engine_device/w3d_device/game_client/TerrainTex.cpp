@@ -50,7 +50,7 @@
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "W3DDevice/GameClient/WorldHeightMap.h"
 #include "W3DDevice/GameClient/TileData.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "WW3D2/dx8wrapper.h"
 #include "d3dx8tex.h"
 

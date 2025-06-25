@@ -47,11 +47,11 @@
 
 #include "lib/base_type.h"
 #include "video_device/bink/bink_video_player.h"
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 #include "common/gameaudio.h"
 #include "common/gamememory.h"
-#include "common/GlobalData.h"
-#include "common/Registry.h"
+#include "common/globaldata.h"
+#include "common/registry.h"
 
 //----------------------------------------------------------------------------
 //         Externals                                                     

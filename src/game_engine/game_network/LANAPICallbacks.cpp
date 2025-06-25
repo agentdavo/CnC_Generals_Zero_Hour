@@ -31,7 +31,7 @@
 
 #include "strtok_r.h"
 #include "common/GameEngine.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MessageStream.h"
 #include "common/MultiplayerSettings.h"
 #include "common/PlayerTemplate.h"

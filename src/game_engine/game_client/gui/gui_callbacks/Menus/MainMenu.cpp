@@ -35,7 +35,7 @@
 #include "lib/base_type.h"
 #include "common/GameEngine.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/NameKeyGenerator.h"
 #include "common/RandomValue.h"
 #include "common/UserPreferences.h"

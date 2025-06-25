@@ -22,7 +22,7 @@
 #include "stdafx.h"
 #include "MainFrm.h"
 
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 
 #include "DrawObject.h"
 #include "LayersList.h"

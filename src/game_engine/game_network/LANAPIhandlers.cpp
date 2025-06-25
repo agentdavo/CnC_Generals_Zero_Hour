@@ -32,8 +32,8 @@
 
 #include "common/CRC.h"
 #include "common/GameState.h"
-#include "common/Registry.h"
-#include "common/GlobalData.h"
+#include "common/registry.h"
+#include "common/globaldata.h"
 #include "common/QuotedPrintable.h"
 #include "common/UserPreferences.h"
 #include "game_network/LANAPI.h"

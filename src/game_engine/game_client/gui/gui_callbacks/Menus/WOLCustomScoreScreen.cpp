@@ -41,7 +41,7 @@
 #include "game_client/GameWindowManager.h"
 #include "game_client/GadgetListBox.h"
 #include "game_client/GadgetTextEntry.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 //#include "game_network/WOL.h"
 //#include "game_network/WOLmenus.h"
 

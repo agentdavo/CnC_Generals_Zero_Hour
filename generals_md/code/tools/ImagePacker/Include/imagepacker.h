@@ -47,7 +47,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
-#include "WWLib/Targa.h"
+#include "ww_lib/TARGA.H"
 #include "ImageDirectory.h"
 #include "ImageInfo.h"
 #include "TexturePage.h"

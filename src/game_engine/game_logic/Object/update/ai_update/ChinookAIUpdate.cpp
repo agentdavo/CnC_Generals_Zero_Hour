@@ -31,7 +31,7 @@
 #include "common/ActionManager.h"
 #include "common/DrawModule.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/RandomValue.h"
 #include "common/Team.h"
 #include "common/ThingFactory.h"

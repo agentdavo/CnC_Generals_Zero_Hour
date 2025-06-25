@@ -47,7 +47,7 @@
 #include "W3DDevice/GameClient/W3DWaterTracks.h"
 #include "game_client/InGameUI.h"
 #include "GameLogic/TerrainLogic.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/UnicodeString.h"
 #include "common/file.h"
 #include "common/FileSystem.h"

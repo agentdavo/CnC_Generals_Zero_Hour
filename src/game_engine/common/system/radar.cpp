@@ -37,7 +37,7 @@
 #include "common/Player.h"
 #include "common/PlayerList.h"
 #include "common/ThingTemplate.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Xfer.h"
 
 #include "game_client/drawable.h"

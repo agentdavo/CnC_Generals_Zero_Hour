@@ -33,7 +33,7 @@
 
 #include "game_client/RadiusDecal.h"
 #include "common/GameType.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/Module/DieModule.h"
 #include "common/ini.h"
