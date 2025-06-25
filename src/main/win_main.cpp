@@ -54,7 +54,7 @@
 #include "common/MessageStream.h"
 #include "common/Team.h"
 #include "game_client/InGameUI.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "GameLogic/GameLogic.h" ///< @todo for demo, remove
 #include "game_client/Mouse.h"
 #include "game_client/IMEManager.h"

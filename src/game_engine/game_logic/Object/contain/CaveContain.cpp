@@ -38,7 +38,7 @@
 #include "common/ThingTemplate.h"
 #include "common/TunnelTracker.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/Module/AIUpdate.h"
 #include "GameLogic/Module/CaveContain.h"
 #include "GameLogic/CaveSystem.h"

@@ -128,8 +128,8 @@
 #include "GameLogic/SidesList.h"
 
 #include "game_client/Display.h"
-#include "game_client/FXList.h"
-#include "game_client/GameClient.h"
+#include "game_client/fxlist.h"
+#include "game_client/gameclient.h"
 #include "game_client/Keyboard.h"
 #include "game_client/Shell.h"
 #include "game_client/GameText.h"
@@ -140,8 +140,8 @@
 #include "game_client/MapUtil.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GlobalLanguage.h"
-#include "game_client/Drawable.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/drawable.h"
+#include "game_client/guicallbacks.h"
 
 #include "game_network/NetworkInterface.h"
 #include "game_network/WOLBrowser/WebBrowser.h"

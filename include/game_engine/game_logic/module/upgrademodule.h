@@ -35,8 +35,8 @@
 #include "common/Module.h"
 #include "common/stl_type_defs.h"
 
-#include "game_client/Drawable.h"
-#include "game_client/FXList.h"
+#include "game_client/drawable.h"
+#include "game_client/fxlist.h"
 
 #include "GameLogic/Module/BehaviorModule.h"
 

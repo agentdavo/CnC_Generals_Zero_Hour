@@ -41,7 +41,7 @@
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/ScriptEngine.h"
 #include "GameLogic/Module/AIUpdate.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/ParticleSys.h"
 #include "W3DDevice/GameClient/W3DGameClient.h"
 #include "W3DDevice/GameClient/Module/W3DTankDraw.h"

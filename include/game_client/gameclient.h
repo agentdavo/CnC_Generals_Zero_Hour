@@ -37,7 +37,7 @@
 #include "common/stl_type_defs.h"
 #include "game_engine/common/subsystem_interface.h"
 #include "game_client/CommandXlat.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 // forward declarations
 class AsciiString;

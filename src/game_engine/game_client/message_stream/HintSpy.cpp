@@ -33,8 +33,8 @@
 #include "game_client/HintSpy.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GameWindow.h"
-#include "game_client/GameClient.h"
-#include "game_client/Drawable.h"
+#include "game_client/gameclient.h"
+#include "game_client/drawable.h"
 /**
  * This message handler displays UI "hints" (ie: a rectangle for drag selection) based
  * upon the messages that pass through it.

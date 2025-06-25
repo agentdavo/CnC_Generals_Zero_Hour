@@ -35,7 +35,7 @@
 #include "common/Xfer.h"
 #include "GameLogic/Module/CheckpointUpdate.h"
 #include "GameLogic/Object.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/Module/AIUpdate.h"
 

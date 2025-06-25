@@ -39,11 +39,11 @@
 #include "common/DamageFX.h"
 #include "common/gameaudio.h"
 
-#include "game_client/FXList.h"
+#include "game_client/fxlist.h"
 #include "GameLogic/Damage.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/InGameUI.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

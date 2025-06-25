@@ -39,7 +39,7 @@
 #include "game_engine/common/subsystem_interface.h"
 #include "common/gamememory.h"
 #include "common/ascii_string.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/Object.h"
 
 class ThingTemplate;

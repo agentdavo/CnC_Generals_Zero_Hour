@@ -58,7 +58,7 @@
 #include "WW3D2/Scene.h"
 #include "GameLogic/TerrainLogic.h"
 #include "GameLogic/Object.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

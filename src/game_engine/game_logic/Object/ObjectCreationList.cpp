@@ -45,8 +45,8 @@
 #include "common/ThingFactory.h"
 #include "common/GameLOD.h"
 
-#include "game_client/Drawable.h"
-#include "game_client/FXList.h"
+#include "game_client/drawable.h"
+#include "game_client/fxlist.h"
 #include "game_client/ParticleSys.h"
 #include "game_client/Shadow.h"
 

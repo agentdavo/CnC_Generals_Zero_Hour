@@ -40,7 +40,7 @@
 #include "common/GlobalData.h"
 #include "common/Xfer.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Eva.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/InGameUI.h"

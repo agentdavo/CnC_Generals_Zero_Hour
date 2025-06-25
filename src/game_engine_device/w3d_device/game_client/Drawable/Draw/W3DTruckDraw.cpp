@@ -35,7 +35,7 @@
 #include "common/GlobalData.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/ParticleSys.h"
 #include "GameLogic/AIPathfind.h"
 #include "GameLogic/Weapon.h"

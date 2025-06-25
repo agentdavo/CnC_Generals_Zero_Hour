@@ -32,7 +32,7 @@
 
 #include "common/Xfer.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 #include "GameLogic/Damage.h"
 #include "GameLogic/Object.h"

@@ -53,7 +53,7 @@ static void drawFramerateBar(void);
 #include "common/DrawModule.h"
 #include "GameLogic/AIPathfind.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/GameText.h"
 #include "game_client/GraphDraw.h"
 #include "game_client/Line2D.h"

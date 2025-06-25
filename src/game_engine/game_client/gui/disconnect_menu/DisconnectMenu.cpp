@@ -25,7 +25,7 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "game_client/DisconnectMenu.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "common/NameKeyGenerator.h"
 #include "game_client/GameWindow.h"
 #include "game_client/GameWindowManager.h"

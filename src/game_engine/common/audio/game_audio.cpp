@@ -62,7 +62,7 @@
 #include "common/UserPreferences.h"
 
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/View.h"
 
 #include "GameLogic/GameLogic.h"

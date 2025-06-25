@@ -57,8 +57,8 @@
 #include "common/ThingSort.h"
 #include "common/BitFlagsIO.h"
 
-#include "game_client/Drawable.h"
-#include "game_client/FXList.h"
+#include "game_client/drawable.h"
+#include "game_client/fxlist.h"
 #include "game_client/GameText.h"
 #include "game_client/Image.h"
 #include "game_client/Shadow.h"

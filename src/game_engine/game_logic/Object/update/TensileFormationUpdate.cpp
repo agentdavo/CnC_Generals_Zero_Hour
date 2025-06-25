@@ -44,7 +44,7 @@
 #include "GameLogic/AIPathfind.h"
 
 #include "game_client/TerrainVisual.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 
 
 

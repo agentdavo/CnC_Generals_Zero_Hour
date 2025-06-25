@@ -49,8 +49,8 @@
 #include "GameLogic/PartitionManager.h"
 #include "GameLogic/Weapon.h"
 
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
+#include "game_client/drawable.h"
+#include "game_client/gameclient.h"
 #include "game_client/InGameUI.h"
 #include "game_client/View.h"
 

@@ -33,7 +33,7 @@
 #include "common/Radar.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
-#include "game_client/FXList.h"
+#include "game_client/fxlist.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/Module/ConvertToCarBombCrateCollide.h"

@@ -29,7 +29,7 @@
 
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/ActionManager.h"
@@ -50,13 +50,13 @@
 #include "game_client/Diplomacy.h"
 #include "game_client/Display.h"
 #include "game_client/DisplayStringManager.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/DrawGroupInfo.h"
 #include "game_client/Eva.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GlobalLanguage.h"
 #include "game_client/GraphDraw.h"
-#include "game_client/GUICommandTranslator.h"
+#include "game_client/guicommandtranslator.h"
 #include "game_client/HeaderTemplate.h"
 #include "game_client/HintSpy.h"
 #include "game_client/HotKey.h"

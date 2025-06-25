@@ -37,7 +37,7 @@
 #include "common/Player.h"
 #include "common/Xfer.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "GameLogic/Module/BodyModule.h"
 #include "GameLogic/Module/OverlordContain.h"
 #include "GameLogic/Object.h"

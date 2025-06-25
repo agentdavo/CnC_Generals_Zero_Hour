@@ -33,8 +33,8 @@
 
 #include "game_client/CommandXlat.h"
 #include "game_client/ControlBar.h"
-#include "game_client/Drawable.h"
-#include "game_client/GameClient.h"
+#include "game_client/drawable.h"
+#include "game_client/gameclient.h"
 #include "game_client/KeyDefs.h"
 
 #ifdef _INTERNAL

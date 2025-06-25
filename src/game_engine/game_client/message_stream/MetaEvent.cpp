@@ -37,15 +37,15 @@
 #include "common/Team.h"
 #include "common/ThingTemplate.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/Mouse.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/InGameUI.h"
 #include "game_client/KeyDefs.h"
 #include "game_client/ParticleSys.h"	// for ParticleSystemDebugDisplay
 #include "game_client/Shell.h"
 #include "game_client/WindowLayout.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_client/DebugDisplay.h"	// for AudioDebugDisplay
 
 #include "game_client/MetaEvent.h"

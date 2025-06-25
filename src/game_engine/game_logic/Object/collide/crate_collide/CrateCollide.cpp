@@ -33,7 +33,7 @@
 #include "common/Player.h"
 #include "common/Xfer.h"
 #include "game_client/Anim2D.h"
-#include "game_client/FXList.h"
+#include "game_client/fxlist.h"
 #include "game_client/InGameUI.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

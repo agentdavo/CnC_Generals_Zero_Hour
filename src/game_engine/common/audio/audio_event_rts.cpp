@@ -54,8 +54,8 @@
 #include "GameLogic/LogicRandomValue.h"
 #include "GameLogic/Object.h"
 
-#include "game_client/Drawable.h"	// For getPosition
-#include "game_client/GameClient.h"	// For getDrawableByID
+#include "game_client/drawable.h"	// For getPosition
+#include "game_client/gameclient.h"	// For getDrawableByID
 
 #ifdef _INTERNAL
 //#pragma optimize("", off)

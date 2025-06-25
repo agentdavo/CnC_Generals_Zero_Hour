@@ -45,7 +45,7 @@
 #include "common/XferSave.h"
 #include "game_client/CampaignManager.h"
 #include "game_client/GadgetListBox.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameText.h"
 #include "game_client/MapUtil.h"
 #include "game_client/MessageBox.h"

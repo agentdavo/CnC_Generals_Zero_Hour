@@ -42,7 +42,7 @@
 #include "game_client/InGameUI.h"
 #include "game_client/Diplomacy.h"
 #include "game_client/GameText.h"
-#include "game_client/GUICallbacks.h"
+#include "game_client/guicallbacks.h"
 #include "game_client/MessageBox.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/PartitionManager.h"

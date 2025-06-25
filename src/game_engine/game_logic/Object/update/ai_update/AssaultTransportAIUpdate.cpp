@@ -32,7 +32,7 @@
 
 #include "common/Player.h"
 #include "common/ThingFactory.h"
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/InGameUI.h"
 #include "GameLogic/ExperienceTracker.h"
 #include "GameLogic/Module/BodyModule.h"

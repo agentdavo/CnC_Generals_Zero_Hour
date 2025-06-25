@@ -38,10 +38,10 @@
 #include "common/GameLOD.h"
 #include "common/Xfer.h"
 
-#include "game_client/Drawable.h"
+#include "game_client/drawable.h"
 #include "game_client/DebugDisplay.h"
 #include "game_client/Display.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/InGameUI.h"
 #include "game_client/ParticleSys.h"
 

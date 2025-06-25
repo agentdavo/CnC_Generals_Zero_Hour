@@ -30,7 +30,7 @@
 #include <stdlib.h>
 
 #include "common/Debug.h"
-#include "game_client/GameClient.h"
+#include "game_client/gameclient.h"
 #include "game_client/GameText.h"
 #include "game_client/DisplayString.h"
 #include "game_client/DrawGroupInfo.h"
