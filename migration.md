@@ -316,16 +316,10 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Began implementing D3DX utility functions. D3DXComputeBoundingSphere and D3DXComputeNormals now have working shims.
 - Implemented additional D3DX helpers used by WW3D2 including D3DXCreateTexture,
   D3DXCreateTextureFromFileExA, D3DXLoadSurfaceFromSurface and D3DXFilterTexture.
-- Removed unused Win32 headers from `lvgl_device/common` and deleted the old
-    `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
-    `std::filesystem` directly for directory creation and existence checks.
-- Added lvgl_ugles_demo example under src/examples. It initialises the
-  microGLES software renderer to draw a triangle and presents the framebuffer on
-  an LVGL canvas. The example builds only when `BUILD_ENGINE=OFF`.
 - Added D3DXVec3Transform and D3DXComputeBoundingBox implementations in the
   d3d8_gles shim.
-- Implemented D3DXCreateCylinder and GetAdapterDisplayMode with corresponding
-  regression tests.
+- Implemented a minimal D3DXLoadMeshFromX loader capable of parsing text and
+  binary .x meshes for positions and normals only.
 - Removed unused Win32 headers from `lvgl_device/common` and deleted the old
   `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
   `std::filesystem` directly for directory creation and existence checks.

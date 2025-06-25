@@ -24,7 +24,7 @@ endif()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Source files
-set(SOURCES src/d3d8_to_gles.c)
+set(SOURCES src/d3d8_to_gles.c src/x_mesh_parser.c)
 
 if(HEADER_ONLY)
     add_library(d3d8_to_gles INTERFACE)

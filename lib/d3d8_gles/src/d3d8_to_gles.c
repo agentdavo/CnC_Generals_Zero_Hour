@@ -1,6 +1,10 @@
 // src/d3d8_to_gles.c
 #include "d3d8_to_gles.h"
+#include "x_mesh_parser.h"
+#include <stdlib.h>
+#include <string.h>
 #include <EGL/eglext.h>
+
 #include <math.h>
 #include <stdalign.h>
 #include <stdlib.h>
@@ -2279,6 +2283,123 @@ HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF,
   return D3D_OK;
 }
 
+static HRESULT create_mesh_from_data(LPDIRECT3DDEVICE8 device,
+                                     VertexPN *verts, DWORD vcount,
+                                     WORD *indices, DWORD fcount,
+                                     LPD3DXMESH *pp_mesh) {
+    DWORD fvf = D3DFVF_XYZ | D3DFVF_NORMAL;
+    UINT vb_size = vcount * sizeof(VertexPN);
+    UINT ib_size = fcount * 3 * sizeof(WORD);
+    DWORD options = D3DXMESH_MANAGED;
+
+    IDirect3DVertexBuffer8 *vb;
+    HRESULT hr = device->lpVtbl->CreateVertexBuffer(device, vb_size,
+                                                    D3DUSAGE_WRITEONLY, fvf,
+                                                    D3DPOOL_MANAGED, &vb);
+    if (FAILED(hr)) return hr;
+
+    BYTE *vb_data;
+    hr = vb->lpVtbl->Lock(vb, 0, vb_size, &vb_data, 0);
+    if (SUCCEEDED(hr)) {
+        memcpy(vb_data, verts, vb_size);
+        vb->lpVtbl->Unlock(vb);
+    } else {
+        vb->lpVtbl->Release(vb);
+        return hr;
+    }
+
+    IDirect3DIndexBuffer8 *ib;
+    hr = device->lpVtbl->CreateIndexBuffer(device, ib_size, D3DUSAGE_WRITEONLY,
+                                           D3DFMT_INDEX16, D3DPOOL_MANAGED, &ib);
+    if (FAILED(hr)) {
+        vb->lpVtbl->Release(vb);
+        return hr;
+    }
+
+    BYTE *ib_data;
+    hr = ib->lpVtbl->Lock(ib, 0, ib_size, &ib_data, 0);
+    if (SUCCEEDED(hr)) {
+        memcpy(ib_data, indices, ib_size);
+        ib->lpVtbl->Unlock(ib);
+    } else {
+        vb->lpVtbl->Release(vb);
+        ib->lpVtbl->Release(ib);
+        return hr;
+    }
+
+    ID3DXMesh *mesh = calloc(1, sizeof(ID3DXMesh) + sizeof(ID3DXMeshVtbl));
+    if (!mesh) {
+        vb->lpVtbl->Release(vb);
+        ib->lpVtbl->Release(ib);
+        return D3DERR_OUTOFVIDEOMEMORY;
+    }
+
+    mesh->attrib_table = calloc(1, sizeof(D3DXATTRIBUTERANGE));
+    if (!mesh->attrib_table) {
+        vb->lpVtbl->Release(vb);
+        ib->lpVtbl->Release(ib);
+        free(mesh);
+        return D3DERR_OUTOFVIDEOMEMORY;
+    }
+    mesh->attrib_table[0].AttribId = 0;
+    mesh->attrib_table[0].FaceStart = 0;
+    mesh->attrib_table[0].FaceCount = fcount;
+    mesh->attrib_table[0].VertexStart = 0;
+    mesh->attrib_table[0].VertexCount = vcount;
+    mesh->attrib_table_size = 1;
+
+    mesh->attrib_buffer = calloc(fcount, sizeof(DWORD));
+    if (!mesh->attrib_buffer) {
+        vb->lpVtbl->Release(vb);
+        ib->lpVtbl->Release(ib);
+        free(mesh->attrib_table);
+        free(mesh);
+        return D3DERR_OUTOFVIDEOMEMORY;
+    }
+    for (DWORD i2 = 0; i2 < fcount; i2++) mesh->attrib_buffer[i2] = 0;
+
+    static const ID3DXMeshVtbl mesh_vtbl = {
+        .QueryInterface = d3dx_mesh_query_interface,
+        .AddRef = d3dx_mesh_add_ref,
+        .Release = d3dx_mesh_release,
+        .DrawSubset = d3dx_mesh_draw_subset,
+        .GetNumFaces = d3dx_mesh_get_num_faces,
+        .GetNumVertices = d3dx_mesh_get_num_vertices,
+        .GetFVF = d3dx_mesh_get_fvf,
+        .GetDeclaration = d3dx_mesh_get_declaration,
+        .GetOptions = d3dx_mesh_get_options,
+        .GetDevice = d3dx_mesh_get_device,
+        .CloneMeshFVF = d3dx_mesh_clone_mesh_fvf,
+        .CloneMesh = d3dx_mesh_clone_mesh,
+        .GetVertexBuffer = d3dx_mesh_get_vertex_buffer,
+        .GetIndexBuffer = d3dx_mesh_get_index_buffer,
+        .LockVertexBuffer = d3dx_mesh_lock_vertex_buffer,
+        .UnlockVertexBuffer = d3dx_mesh_unlock_vertex_buffer,
+        .LockIndexBuffer = d3dx_mesh_lock_index_buffer,
+        .UnlockIndexBuffer = d3dx_mesh_unlock_index_buffer,
+        .GetAttributeTable = d3dx_mesh_get_attribute_table,
+        .ConvertPointRepsToAdjacency = d3dx_mesh_convert_point_reps_to_adjacency,
+        .ConvertAdjacencyToPointReps = d3dx_mesh_convert_adjacency_to_point_reps,
+        .GenerateAdjacency = d3dx_mesh_generate_adjacency,
+        .LockAttributeBuffer = d3dx_mesh_lock_attribute_buffer,
+        .UnlockAttributeBuffer = d3dx_mesh_unlock_attribute_buffer,
+        .Optimize = d3dx_mesh_optimize,
+        .OptimizeInplace = d3dx_mesh_optimize_inplace
+    };
+
+    mesh->pVtbl = &mesh_vtbl;
+    mesh->device = device;
+    mesh->vb = vb;
+    mesh->ib = ib;
+    mesh->num_vertices = vcount;
+    mesh->num_faces = fcount;
+    mesh->fvf = fvf;
+    mesh->options = options;
+
+    *pp_mesh = mesh;
+    return D3D_OK;
+}
+
 typedef struct {
   float x, y, z;    // Position
   float nx, ny, nz; // Normal
@@ -3379,6 +3500,66 @@ HRESULT WINAPI D3DXCreateSkinMeshFVF(DWORD NumFaces, DWORD NumVertices,
                                      LPD3DXSKINMESH *ppSkinMesh) {
   return D3DXERR_SKINNINGNOTSUPPORTED;
 }
+
+// Load mesh from an .x file using the minimal parser
+HRESULT WINAPI D3DXLoadMeshFromX(LPSTR filename, DWORD Options,
+                                 LPDIRECT3DDEVICE8 device,
+                                 LPD3DXBUFFER *ppAdjacency,
+                                 LPD3DXBUFFER *ppMaterials,
+                                 DWORD *pNumMaterials,
+                                 LPD3DXMESH *ppMesh) {
+    (void)Options;
+    if (!filename || !device || !ppMesh) return D3DERR_INVALIDCALL;
+
+    FILE *f = fopen(filename, "rb");
+    if (!f) return D3DXERR_INVALIDDATA;
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    if (size <= 0) { fclose(f); return D3DXERR_INVALIDDATA; }
+    BYTE *data = malloc(size);
+    if (!data) { fclose(f); return D3DERR_OUTOFVIDEOMEMORY; }
+    if (fread(data, 1, size, f) != (size_t)size) {
+        fclose(f); free(data); return D3DXERR_INVALIDDATA; }
+    fclose(f);
+
+    VertexPN *verts = NULL; WORD *indices = NULL; DWORD vcount = 0, fcount = 0;
+    HRESULT hr;
+    if (size > 16 && memcmp(data, "xof ", 4) == 0 &&
+        (memcmp(data + 8, "txt", 3) == 0 || memcmp(data + 8, "bin", 3) == 0)) {
+        const char *head = (const char *)data + 16;
+        if (memcmp(data + 8, "txt", 3) == 0)
+            hr = parse_text_mesh(head, &verts, &vcount, &indices, &fcount);
+        else
+            hr = parse_binary_mesh((const BYTE *)head, size - 16, &verts, &vcount,
+                                   &indices, &fcount);
+    } else {
+        hr = parse_text_mesh((const char *)data, &verts, &vcount, &indices, &fcount);
+    }
+    free(data);
+    if (FAILED(hr)) return hr;
+
+    hr = create_mesh_from_data(device, verts, vcount, indices, fcount, ppMesh);
+    free(verts);
+    free(indices);
+    if (FAILED(hr)) return hr;
+
+    if (ppAdjacency) {
+        hr = D3DXCreateBuffer(fcount * 3 * sizeof(DWORD), ppAdjacency);
+        if (SUCCEEDED(hr)) {
+            DWORD *adj = (DWORD *)(*ppAdjacency)->pVtbl->GetBufferPointer(*ppAdjacency);
+            memset(adj, 0xFFFFFFFF, fcount * 3 * sizeof(DWORD));
+        }
+    }
+    if (ppMaterials) *ppMaterials = NULL;
+    if (pNumMaterials) *pNumMaterials = 0;
+
+    D3DXComputeNormals(*ppMesh, NULL);
+    return D3D_OK;
+}
+
+HRESULT WINAPI D3DXCreateSkinMesh(DWORD NumFaces, DWORD NumVertices, DWORD NumBones, DWORD Options, CONST DWORD *pDeclaration, LPDIRECT3DDEVICE8 pD3D, LPD3DXSKINMESH *ppSkinMesh) { return D3DXERR_SKINNINGNOTSUPPORTED; }
+HRESULT WINAPI D3DXCreateSkinMeshFVF(DWORD NumFaces, DWORD NumVertices, DWORD NumBones, DWORD Options, DWORD FVF, LPDIRECT3DDEVICE8 pD3D, LPD3DXSKINMESH *ppSkinMesh) { return D3DXERR_SKINNINGNOTSUPPORTED; }
 
 // Direct3DCreate8
 // IUnknown-style helpers for IDirect3D8
