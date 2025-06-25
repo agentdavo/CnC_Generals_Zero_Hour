@@ -3,7 +3,7 @@
 # selectively compiled with optional backends.
 
 option(LVGL_USE_SDL "Enable LVGL SDL backend" OFF)
-option(LVGL_USE_X11 "Enable LVGL X11 backend" ON)
+option(LVGL_USE_X11 "Enable LVGL X11 backend" OFF)
 option(LVGL_USE_WAYLAND "Enable LVGL Wayland backend" OFF)
 option(LVGL_USE_LINUX_DRM "Enable LVGL DRM backend" OFF)
 option(LVGL_USE_LINUX_FBDEV "Enable LVGL FBDev backend" OFF)

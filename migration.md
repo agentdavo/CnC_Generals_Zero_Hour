@@ -286,3 +286,7 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Added lvgl_hello example under src/examples. The program opens an 800x600 LVGL window and demonstrates widgets with a 'Hello world' label and a centred button that reacts to clicks. Building with -DBUILD_ENGINE=OFF skips the main Generals engine.
 - lvgl_hello now selects the SDL backend by default, improving rendering on macOS.
 - Updated CPU detection code for non-Windows builds and replaced Windows headers with portable stubs.
+- Standardised Vegas WW list headers to snake case.
+- LVGL's X11 backend is now optional. The cmake option `LVGL_USE_X11` defaults to OFF
+  and `lv_conf.h` honours compile definitions so backends can be toggled without
+  warnings.
