@@ -296,3 +296,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   warnings.
 - WW3D2 links against the `d3d8_gles` shim and `gameenginedevice` now links this
   library so DirectX 8 calls route through the OpenGL ES translation layer.
+- Began implementing D3DX utility functions. D3DXComputeBoundingSphere and D3DXComputeNormals now have working shims.
