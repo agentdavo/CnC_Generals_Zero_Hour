@@ -172,6 +172,14 @@ static HRESULT D3DAPI d3d8_set_transform(IDirect3DDevice8 *This,
 static HRESULT D3DAPI d3d8_draw_indexed_primitive(
     IDirect3DDevice8 *This, D3DPRIMITIVETYPE PrimitiveType, UINT MinVertexIndex,
     UINT NumVertices, UINT StartIndex, UINT PrimitiveCount);
+static HRESULT D3DAPI d3d8_set_vertex_shader_constant(IDirect3DDevice8 *This,
+                                                      DWORD Register,
+                                                      CONST void *pConstantData,
+                                                      DWORD ConstantCount);
+static HRESULT D3DAPI d3d8_set_pixel_shader_constant(IDirect3DDevice8 *This,
+                                                     DWORD Register,
+                                                     CONST void *pConstantData,
+                                                     DWORD ConstantCount);
 
 // Forward declarations for vertex buffer methods
 static HRESULT D3DAPI d3d8_vb_get_device(IDirect3DVertexBuffer8 *This,
@@ -1403,7 +1411,9 @@ static const IDirect3DDevice8Vtbl device_vtbl = {
     .SetIndices = d3d8_set_indices,
     .SetViewport = d3d8_set_viewport,
     .SetTransform = d3d8_set_transform,
-    .DrawIndexedPrimitive = d3d8_draw_indexed_primitive};
+    .DrawIndexedPrimitive = d3d8_draw_indexed_primitive,
+    .SetVertexShaderConstant = d3d8_set_vertex_shader_constant,
+    .SetPixelShaderConstant = d3d8_set_pixel_shader_constant};
 static HRESULT D3DAPI d3d8_register_software_device(IDirect3D8 *This,
                                                     void *pInitializeFunction) {
   return D3DERR_NOTAVAILABLE;
@@ -2211,6 +2221,26 @@ d3d8_set_texture_stage_state(IDirect3DDevice8 *This, DWORD Stage,
   default:
     return D3DERR_INVALIDCALL;
   }
+  return D3D_OK;
+}
+
+static HRESULT D3DAPI d3d8_set_vertex_shader_constant(
+    IDirect3DDevice8 *This, DWORD Register, CONST void *pConstantData,
+    DWORD ConstantCount) {
+  if (!pConstantData || Register + ConstantCount > 96)
+    return D3DERR_INVALIDCALL;
+  memcpy(&This->gles->vs_const[Register], pConstantData,
+         ConstantCount * sizeof(D3DXVECTOR4));
+  return D3D_OK;
+}
+
+static HRESULT D3DAPI d3d8_set_pixel_shader_constant(
+    IDirect3DDevice8 *This, DWORD Register, CONST void *pConstantData,
+    DWORD ConstantCount) {
+  if (!pConstantData || Register + ConstantCount > 8)
+    return D3DERR_INVALIDCALL;
+  memcpy(&This->gles->ps_const[Register], pConstantData,
+         ConstantCount * sizeof(D3DXVECTOR4));
   return D3D_OK;
 }
 
