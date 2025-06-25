@@ -328,3 +328,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   (`-framework SDL2`) when the SDL backend is enabled.
 - Added BMP and PNG texture loading in the `d3d8_gles` layer using lodepng.
 - lv_conf.h now defines LV_SDL_INCLUDE_PATH ensuring SDL2 headers are found. README explains installing SDL2 development packages.
+- Implemented additional D3DX matrix helpers: `D3DXMatrixLookAtRH`,
+  `D3DXMatrixPerspectiveFovRH`, `D3DXMatrixOrthoLH`, `D3DXMatrixOrthoRH` and
+  `D3DXMatrixRotationQuaternion` with accompanying regression tests.
