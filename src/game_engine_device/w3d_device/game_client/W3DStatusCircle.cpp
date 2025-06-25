@@ -36,7 +36,7 @@
 #include <camera.h>
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/Shader.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MapObject.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/ScriptEngine.h"

@@ -41,7 +41,7 @@
 #include "common/DamageFX.h"
 #include "common/gameaudio.h"
 #include "common/GameCommon.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ini.h"
 #include "common/MessageStream.h"
 #include "common/Module.h"

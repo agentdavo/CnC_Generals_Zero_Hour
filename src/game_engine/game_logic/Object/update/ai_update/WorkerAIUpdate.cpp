@@ -41,7 +41,7 @@
 #include "common/Money.h"
 #include "common/Radar.h"
 #include "common/RandomValue.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ResourceGatheringManager.h"
 
 #include "game_client/drawable.h"

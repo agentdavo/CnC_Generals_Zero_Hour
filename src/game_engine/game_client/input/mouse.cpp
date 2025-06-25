@@ -32,7 +32,7 @@
 #include "common/Debug.h"
 #include "common/MessageStream.h"
 #include "common/GameEngine.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ini.h"
 
 #include "game_client/Display.h"

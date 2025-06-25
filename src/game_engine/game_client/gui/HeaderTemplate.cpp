@@ -56,7 +56,7 @@
 
 #include "common/ini.h"
 #include "common/Filesystem.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "game_client/HeaderTemplate.h"
 #include "game_client/GameFont.h"
 #include "game_client/GlobalLanguage.h"

@@ -43,9 +43,9 @@
 #include "common/Debug.h"
 #include "common/file.h"
 #include "common/FileSystem.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MapObject.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "W3DDevice/GameClient/W3DFileSystem.h"
 // DEFINES ////////////////////////////////////////////////////////////////////////////////////////
 

@@ -53,7 +53,7 @@
 #include "PreRTS.h"
 
 #include "common/ini.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "game_client/GlobalLanguage.h"
 #include "common/Filesystem.h"
 

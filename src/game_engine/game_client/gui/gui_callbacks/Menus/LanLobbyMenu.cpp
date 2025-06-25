@@ -34,7 +34,7 @@
 #include "lib/base_type.h"
 #include "common/CRC.h"
 #include "common/GameEngine.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MultiplayerSettings.h"
 #include "common/NameKeyGenerator.h"
 #include "common/Player.h"

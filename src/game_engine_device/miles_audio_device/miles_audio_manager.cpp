@@ -42,7 +42,7 @@
 #include "lib/base_type.h"
 #include "miles_audio_device/miles_audio_manager.h"
 
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 #include "common/AudioHandleSpecialValues.h"
 #include "common/AudioRequest.h"
 #include "common/AudioSettings.h"
@@ -52,7 +52,7 @@
 #include "common/GameCommon.h"
 #include "common/GameSounds.h"
 #include "common/CRCDebug.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ScopedMutex.h"
 
 #include "game_client/DebugDisplay.h"

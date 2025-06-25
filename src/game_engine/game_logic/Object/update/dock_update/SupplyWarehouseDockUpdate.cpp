@@ -29,7 +29,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Xfer.h"
 #include "game_client/drawable.h"
 #include "GameLogic/Module/SupplyWarehouseDockUpdate.h"

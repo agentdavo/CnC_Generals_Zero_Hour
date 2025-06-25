@@ -32,7 +32,7 @@
 #include "common/PerfTimer.h"
 #include "common/Player.h"
 #include "common/CRCDebug.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/LatchRestore.h"	 
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"							 

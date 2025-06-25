@@ -22,7 +22,7 @@
 #include "stdafx.h"
 #include "worldbuilder.h"
 #include "SaveMap.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // SaveMap dialog

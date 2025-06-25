@@ -32,7 +32,7 @@
 #include "common/windows.h"
 
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 #include "common/MapReaderWriterInfo.h"
 #include "common/ThingTemplate.h"

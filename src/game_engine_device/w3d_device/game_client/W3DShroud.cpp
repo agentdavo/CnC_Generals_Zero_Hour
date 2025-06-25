@@ -39,7 +39,7 @@
 #include "assetmgr.h"
 #include "W3DDevice/GameClient/W3DShroud.h"
 #include "WW3D2/textureloader.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "GameLogic/PartitionManager.h"
 
 #ifdef _INTERNAL

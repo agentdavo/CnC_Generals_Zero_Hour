@@ -36,7 +36,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "lib/base_type.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"

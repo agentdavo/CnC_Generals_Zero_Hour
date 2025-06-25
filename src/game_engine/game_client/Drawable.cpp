@@ -39,7 +39,7 @@
 #include "common/GameEngine.h"
 #include "common/GameLOD.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ModuleFactory.h"
 #include "common/PerfTimer.h"
 #include "common/Player.h"

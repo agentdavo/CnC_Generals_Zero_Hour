@@ -51,7 +51,7 @@
 #include "common/CRCDebug.h"
 #include "common/DisabledTypes.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MessageStream.h"
 #include "common/MiscAudio.h"
 #include "common/PerfTimer.h"

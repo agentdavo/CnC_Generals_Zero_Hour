@@ -37,7 +37,7 @@
 #include "common/CRC.h"
 #include "common/CRCDebug.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 #include "common/RandomValue.h"
 #include "common/ThingTemplate.h"

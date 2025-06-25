@@ -38,7 +38,7 @@
 
 // USER INCLUDES //////////////////////////////////////////////////////////////////////////////////
 #include "common/BuildAssistant.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Module.h"
 #include "common/RandomValue.h"
 #include "common/ThingTemplate.h"

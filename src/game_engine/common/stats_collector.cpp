@@ -55,7 +55,7 @@
 #include "common/FileSystem.h"
 #include "common/PlayerList.h"
 #include "common/Player.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Money.h"
 #include "GameLogic/Object.h"
 #include "GameLogic/GameLogic.h"

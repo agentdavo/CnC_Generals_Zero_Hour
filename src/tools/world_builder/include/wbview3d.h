@@ -34,7 +34,7 @@
 #include "robjlist.h"
 #include "WbView.h"
 #include "common/gameType.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ModelState.h"
 #include "dx8wrapper.h"
 

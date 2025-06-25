@@ -68,7 +68,7 @@
 #include "common/gameaudio.h"
 #include "common/AudioEventRTS.h"
 #include "common/AudioHandleSpecialValues.h"
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 
 #include "game_client/LoadScreen.h"
 #include "game_client/Shell.h"

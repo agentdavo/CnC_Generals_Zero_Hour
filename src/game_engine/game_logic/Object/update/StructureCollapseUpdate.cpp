@@ -34,7 +34,7 @@
 #include "common/ThingTemplate.h"
 #include "common/ini.h"
 #include "common/RandomValue.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Xfer.h"
 #include "game_client/fxlist.h"
 #include "GameLogic/GameLogic.h"

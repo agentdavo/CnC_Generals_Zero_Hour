@@ -50,7 +50,7 @@
 #include "GameLogic/Module/UpdateModule.h"
 #include "GameLogic/GameLogic.h"
 
-#include "common/GlobalData.h" // for camera pitch angle only
+#include "common/globaldata.h" // for camera pitch angle only
 
 LookAtTranslator *TheLookAtTranslator = NULL;
 

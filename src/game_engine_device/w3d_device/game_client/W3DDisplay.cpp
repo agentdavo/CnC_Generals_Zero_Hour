@@ -42,7 +42,7 @@ static void drawFramerateBar(void);
 // USER INCLUDES //////////////////////////////////////////////////////////////
 #include "common/ThingFactory.h"
 #include "common/GameEngine.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 #include "common/FileSystem.h"
 #include "common/LocalFileSystem.h"
@@ -80,7 +80,7 @@ static void drawFramerateBar(void);
 #include "W3DDevice/GameClient/W3DProjectedShadow.h"
 #include "W3DDevice/GameClient/W3DShroud.h"
 #include "WWMath/WWMath.h"
-#include "WWLib/Registry.h"
+#include "ww_lib/registry.h"
 #include "WW3D2/WW3D.h"
 #include "WW3D2/PredLod.h"
 #include "WW3D2/Part_Emt.h"

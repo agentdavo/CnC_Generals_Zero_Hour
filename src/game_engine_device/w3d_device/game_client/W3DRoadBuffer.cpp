@@ -51,7 +51,7 @@
 #include <string.h>
 #include <assetmgr.h>
 #include <texture.h>
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/RandomValue.h"
 //#include "common/GameFileSystem.h"
 #include "common/FileSystem.h" // for LOAD_TEST_ASSETS

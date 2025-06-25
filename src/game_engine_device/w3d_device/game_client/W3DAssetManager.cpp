@@ -68,7 +68,7 @@
 #include <stdio.h>
 #include "W3DDevice/GameClient/W3DGranny.h"
 #include "common/PerfTimer.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

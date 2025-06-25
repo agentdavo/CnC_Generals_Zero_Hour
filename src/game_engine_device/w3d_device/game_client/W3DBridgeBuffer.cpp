@@ -51,7 +51,7 @@
 #include <string.h>
 #include "W3DDevice/GameClient/W3DAssetManager.h"
 #include <texture.h>
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/RandomValue.h"
 #include "common/ThingFactory.h"
 #include "common/ThingTemplate.h"

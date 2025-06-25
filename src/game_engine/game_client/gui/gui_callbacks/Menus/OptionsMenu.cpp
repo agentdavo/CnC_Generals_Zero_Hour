@@ -32,13 +32,13 @@
 
 #include "GameSpy/ghttp/ghttp.h"
 
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 #include "common/AudioSettings.h"
 #include "common/gameaudio.h"
 #include "common/GameEngine.h"
 #include "common/UserPreferences.h"
 #include "common/GameLOD.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 #include "common/version.h"
 
 #include "game_client/gameclient.h"

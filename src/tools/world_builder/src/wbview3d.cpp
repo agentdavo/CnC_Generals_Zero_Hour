@@ -75,7 +75,7 @@
 #include "W3DDevice/GameClient/W3DShadow.h"
 #include "DrawObject.h"
 #include "common/MapObject.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "ShadowOptions.h"
 #include "worldbuilder.h"
 #include "wbview3d.h"

@@ -48,7 +48,7 @@
 #include "common/MultiplayerSettings.h"
 #include "common/PlayerTemplate.h"
 #include "common/RandomValue.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/UserPreferences.h"
 #include "GameLogic/ScriptEngine.h"
 

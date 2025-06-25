@@ -57,7 +57,7 @@
 #include <rinfo.h>
 #include <camera.h>
 #include <d3dx8core.h>
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PerfTimer.h"
 
 #include "game_client/TerrainVisual.h"

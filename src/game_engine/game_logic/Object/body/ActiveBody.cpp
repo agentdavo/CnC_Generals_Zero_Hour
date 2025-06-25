@@ -34,7 +34,7 @@
 #include "common/DamageFX.h"
 #include "common/Player.h"
 #include "common/GameState.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/PlayerList.h"
 #include "common/Team.h"
 #include "common/Thing.h"

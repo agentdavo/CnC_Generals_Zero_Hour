@@ -36,7 +36,7 @@
 #include "common/GameEngine.h"
 #include "common/GameSpyMiscPreferences.h"
 #include "common/CustomMatchPreferences.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/UserPreferences.h"
 
 #include "game_client/AnimateWindowManager.h"

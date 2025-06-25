@@ -30,7 +30,7 @@
 
 <<<<<<< Updated upstream:src/game_engine/common/GameEngine.cpp
 #include "common/ActionManager.h"
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 #include "common/BuildAssistant.h"
 #include "common/CRCDebug.h"
 #include "common/Radar.h"
@@ -48,7 +48,7 @@
 #include "common/ArchiveFileSystem.h"
 #include "common/localfilesystem.h"
 #include "common/CDManager.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/perftimer.h"
 #include "common/RandomValue.h"
 #include "common/NameKeyGenerator.h"
@@ -69,10 +69,10 @@
 #include "common/Xfer.h"
 #include "common/XferCRC.h"
 #include "common/GameLOD.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 =======
 #include "common/ActionManager.h"
-#include "common/AudioAffect.h"
+#include "common/audioaffect.h"
 #include "common/BuildAssistant.h"
 #include "common/CRCDebug.h"
 #include "common/Radar.h"
@@ -90,7 +90,7 @@
 #include "common/ArchiveFileSystem.h"
 #include "common/localfilesystem.h"
 #include "common/CDManager.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/perftimer.h"
 #include "common/RandomValue.h"
 #include "common/NameKeyGenerator.h"
@@ -111,7 +111,7 @@
 #include "common/Xfer.h"
 #include "common/XferCRC.h"
 #include "common/GameLOD.h"
-#include "common/Registry.h"
+#include "common/registry.h"
 >>>>>>> Stashed changes:src/game_engine/common/GameEngine.cpp
 
 #include "GameLogic/Armor.h"

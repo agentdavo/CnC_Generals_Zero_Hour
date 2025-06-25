@@ -30,7 +30,7 @@
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 
 #include "common/FileSystem.h"	// this is only here to pull in LOAD_TEST_ASSETS
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/ThingTemplate.h"
 #include "common/Xfer.h"
 #include "game_client/drawable.h"

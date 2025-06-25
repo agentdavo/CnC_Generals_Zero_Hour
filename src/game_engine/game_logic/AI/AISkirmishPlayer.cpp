@@ -30,7 +30,7 @@
 
 
 #include "common/gamememory.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"
 #include "common/Team.h" 

@@ -33,7 +33,7 @@
 
 #include <fcntl.h>
 
-//#include "common/Registry.h"
+//#include "common/registry.h"
 #include "common/UserPreferences.h"
 #include "common/version.h"
 #include "game_client/GameText.h"

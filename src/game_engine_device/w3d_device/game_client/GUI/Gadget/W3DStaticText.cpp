@@ -47,7 +47,7 @@
 #include <stdlib.h>
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "game_client/GameWindowGlobal.h"
 #include "game_client/GameWindowManager.h"
 #include "game_client/GadgetStaticText.h"

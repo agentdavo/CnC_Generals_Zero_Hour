@@ -28,7 +28,7 @@
 #include "W3DDevice/GameClient/TerrainTex.h"
 #include "TerrainModal.h"
 #include "common/Debug.h"
-#include "common/GlobalData.h"
+#include "common/globaldata.h"
 #include "common/MapReaderWriterInfo.h"
 #include "common/FileSystem.h"
 #include "common/TerrainTypes.h"
