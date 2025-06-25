@@ -326,3 +326,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - CMake now exports SDL2 include directories for LVGL so SDL.h resolves on macOS.
 - macOS builds now link the LVGL library against the SDL2 framework
   (`-framework SDL2`) when the SDL backend is enabled.
+- Added BMP and PNG texture loading in the `d3d8_gles` layer using lodepng.

@@ -39,7 +39,8 @@ add_library(d3d8_to_gles STATIC ${SOURCES})
     target_link_libraries(d3d8_to_gles PUBLIC
         ${GLESv1_CM_LIBRARY}
         ${EGL_LIBRARY}
-        m)
+        m
+        lodepng)
 endif()
 
 # Example command line tool for choosing EGL configs
