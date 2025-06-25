@@ -2119,6 +2119,13 @@ D3DXMATRIX* WINAPI D3DXMatrixRotationYawPitchRoll(D3DXMATRIX *pOut, FLOAT Yaw, F
     return pOut;
 }
 
+D3DXVECTOR4* WINAPI D3DXVec3Transform(D3DXVECTOR4 *restrict pOut,
+                                      CONST D3DXVECTOR3 *restrict pV,
+                                      CONST D3DXMATRIX *restrict pM) {
+    D3DXVECTOR4 temp = { pV->x, pV->y, pV->z, 1.0f };
+    return D3DXVec4Transform(pOut, &temp, pM);
+}
+
 // Stubbed D3DX functions
 HRESULT WINAPI D3DXCreatePolygon(LPDIRECT3DDEVICE8 pDevice, FLOAT Length, UINT Sides, LPD3DXMESH *ppMesh, LPD3DXBUFFER *ppAdjacency) { return D3DXERR_NOTAVAILABLE; }
 HRESULT WINAPI D3DXCreateCylinder(LPDIRECT3DDEVICE8 pDevice, FLOAT Radius1, FLOAT Radius2, FLOAT Length, UINT Slices, UINT Stacks, LPD3DXMESH *ppMesh, LPD3DXBUFFER *ppAdjacency) { return D3DXERR_NOTAVAILABLE; }
@@ -2362,7 +2369,33 @@ HRESULT WINAPI D3DXComputeBoundingSphere(PVOID pPointsFVF, DWORD NumVertices, DW
     *pRadius = sqrtf(max_dist2);
     return D3D_OK;
 }
-HRESULT WINAPI D3DXComputeBoundingBox(PVOID pPointsFVF, DWORD NumVertices, DWORD FVF, D3DXVECTOR3 *pMin, D3DXVECTOR3 *pMax) { return D3DXERR_NOTAVAILABLE; }
+HRESULT WINAPI D3DXComputeBoundingBox(PVOID pPointsFVF, DWORD NumVertices, DWORD FVF,
+                                      D3DXVECTOR3 *pMin, D3DXVECTOR3 *pMax) {
+    if (!pPointsFVF || !pMin || !pMax || NumVertices == 0)
+        return D3DERR_INVALIDCALL;
+    if (!(FVF & (D3DFVF_XYZ | D3DFVF_XYZRHW)))
+        return D3DERR_INVALIDCALL;
+
+    UINT stride = D3DXGetFVFVertexSize(FVF);
+    if (!stride)
+        return D3DERR_INVALIDCALL;
+
+    const BYTE *data = (const BYTE *)pPointsFVF;
+    pMin->x = pMin->y = pMin->z = FLT_MAX;
+    pMax->x = pMax->y = pMax->z = -FLT_MAX;
+    for (DWORD i = 0; i < NumVertices; i++) {
+        const float *pos = (const float *)(data + i * stride);
+        float x = pos[0], y = pos[1], z = pos[2];
+        if (x < pMin->x) pMin->x = x;
+        if (y < pMin->y) pMin->y = y;
+        if (z < pMin->z) pMin->z = z;
+        if (x > pMax->x) pMax->x = x;
+        if (y > pMax->y) pMax->y = y;
+        if (z > pMax->z) pMax->z = z;
+    }
+
+    return D3D_OK;
+}
 HRESULT WINAPI D3DXComputeNormals(LPD3DXBASEMESH pMesh, CONST DWORD *pAdjacency) {
     (void)pAdjacency;
     if (!pMesh) return D3DERR_INVALIDCALL;
