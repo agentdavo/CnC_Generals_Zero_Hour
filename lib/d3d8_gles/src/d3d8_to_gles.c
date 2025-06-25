@@ -5,6 +5,11 @@
 #include <math.h>
 #include <stdalign.h>
 #include <EGL/eglext.h>
+#include "lvgl_present.h"
+
+#ifndef HAVE_LVGL_PRESENT
+__attribute__((weak)) void lvgl_present_framebuffer(const struct Framebuffer *fb) { (void)fb; }
+#endif
 
 #ifdef D3D8_GLES_LOGGING
 #include <stdio.h>
@@ -1229,6 +1234,7 @@ static HRESULT D3DAPI d3d8_create_additional_swap_chain(IDirect3DDevice8 *This, 
 static HRESULT D3DAPI d3d8_reset(IDirect3DDevice8 *This, D3DPRESENT_PARAMETERS *pPresentationParameters) { return D3DERR_NOTAVAILABLE; }
 static HRESULT D3DAPI d3d8_present(IDirect3DDevice8 *This, CONST RECT *pSourceRect, CONST RECT *pDestRect, HWND hDestWindowOverride, CONST RGNDATA *pDirtyRegion) {
     eglSwapBuffers(This->gles->display, This->gles->surface);
+    lvgl_present_framebuffer(NULL);
     return D3D_OK;
 }
 static HRESULT D3DAPI d3d8_get_back_buffer(IDirect3DDevice8 *This, UINT BackBuffer, D3DBACKBUFFER_TYPE Type, IDirect3DSurface8 **ppBackBuffer) { return D3DERR_NOTAVAILABLE; }
