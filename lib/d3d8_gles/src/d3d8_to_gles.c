@@ -252,8 +252,14 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF);
 HRESULT WINAPI D3DXDeclaratorFromFVF(DWORD FVF,
                                      DWORD Declaration[MAX_FVF_DECL_SIZE]);
 
-// Last created device's display mode for adapter queries
-static D3DDISPLAYMODE g_current_display_mode;
+// Last created device's display mode for adapter queries. Initialise with a
+// sane default so adapter queries succeed before any device is created.
+static D3DDISPLAYMODE g_current_display_mode = {
+    800,        /* Width */
+    600,        /* Height */
+    60,         /* RefreshRate */
+    D3DFMT_X8R8G8B8 /* Format */
+};
 
 static float dword_to_float(DWORD v) {
   union {
