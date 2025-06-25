@@ -34,6 +34,12 @@ To enable debug logging, set the `ENABLE_LOGGING` option:
 cmake -DENABLE_LOGGING=ON ..
 ```
 
+To use the software renderer provided by `lib/u_gles` and bypass EGL setup,
+enable the `USE_MICROGLES` option at configure time:
+```bash
+cmake -DUSE_MICROGLES=ON ..
+```
+
 The build produces a static library (`libd3d8_to_gles.a`) in `build/`.
 
 ## Usage

@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifdef USE_MICROGLES
+#include "../../u_gles/src/gl_init.h"
+#endif
+
 #include "lodepng.h"
 
 #include <math.h>
@@ -1736,6 +1740,13 @@ static HRESULT D3DAPI d3d8_create_device(
   if (!gles)
     return D3DERR_OUTOFVIDEOMEMORY;
 
+#ifdef USE_MICROGLES
+  GL_init_with_framebuffer(pPresentationParameters->BackBufferWidth,
+                           pPresentationParameters->BackBufferHeight);
+  gles->display = EGL_NO_DISPLAY;
+  gles->surface = EGL_NO_SURFACE;
+  gles->context = EGL_NO_CONTEXT;
+#else
   gles->display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
   if (!eglInitialize(gles->display, NULL, NULL)) {
     gles->display =
@@ -1779,6 +1790,7 @@ static HRESULT D3DAPI d3d8_create_device(
     free(gles);
     return D3DERR_INVALIDCALL;
   }
+#endif
 
   gles->viewport.X = 0;
   gles->viewport.Y = 0;
@@ -1895,8 +1907,17 @@ static HRESULT D3DAPI d3d8_present(IDirect3DDevice8 *This,
                                    CONST RECT *pDestRect,
                                    HWND hDestWindowOverride,
                                    CONST RGNDATA *pDirtyRegion) {
+#ifdef USE_MICROGLES
+  (void)This;
+  (void)pSourceRect;
+  (void)pDestRect;
+  (void)hDestWindowOverride;
+  (void)pDirtyRegion;
+  return D3D_OK;
+#else
   eglSwapBuffers(This->gles->display, This->gles->surface);
   return D3D_OK;
+#endif
 }
 static HRESULT D3DAPI d3d8_get_back_buffer(IDirect3DDevice8 *This,
                                            UINT BackBuffer,
