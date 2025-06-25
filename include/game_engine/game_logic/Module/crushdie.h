@@ -34,7 +34,7 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/audioEventRTS.h"
-#include "common/INI.h"
+#include "common/ini.h"
 
 #include "GameLogic/Module/DieModule.h"
 

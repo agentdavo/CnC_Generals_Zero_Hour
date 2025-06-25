@@ -35,7 +35,7 @@
 #define __MODULE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/gamememory.h"
 #include "common/NameKeyGenerator.h"
 #include "common/Snapshot.h"

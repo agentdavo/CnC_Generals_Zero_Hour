@@ -47,7 +47,7 @@
 #include "assetmgr.h"
 #include "vector3i.h"
 #include "quat.h"
-#include "ini.h"
+#include "common/ini.h"
 #include "point.h"
 #include "rinfo.h"
 #include "vertmaterial.h"

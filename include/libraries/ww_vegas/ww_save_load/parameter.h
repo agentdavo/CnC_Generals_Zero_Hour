@@ -49,7 +49,7 @@
 #include "vector.h"
 #include "wwstring.h"
 #include "bittype.h"
-#include "obbox.h"
+#include "libraries/ww_vegas/ww_math/obbox.h"
 
 
 //////////////////////////////////////////////////////////////////////////////////

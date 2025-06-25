@@ -33,7 +33,7 @@
 #define _SUPPLY_CENTER_DOCK_UPDATE_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/INI.h"
+#include "common/ini.h"
 #include "common/gamememory.h"
 #include "GameLogic/Module/DockUpdate.h"
 

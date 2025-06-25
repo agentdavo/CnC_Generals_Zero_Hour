@@ -37,7 +37,7 @@
 const Int SLAVED_UPDATE_RATE = LOGICFRAMES_PER_SECOND/4; ///< This is a low priority module that only needs to be called every this many frames
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "common/INI.h"
+#include "common/ini.h"
 #include "GameLogic/Module/UpdateModule.h"
 class DamageInfo;
 enum ModelConditionFlagType;

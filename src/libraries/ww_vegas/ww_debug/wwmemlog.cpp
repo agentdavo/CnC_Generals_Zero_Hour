@@ -57,7 +57,7 @@ static unsigned FreeCount;
 ** Name for each memory category.  I'm padding the array with some "undefined" strings in case
 ** someone forgets to set the name when adding a new category.
 */
-static char *_MemoryCategoryNames[] =
+static const char *memory_category_names[] =
 	{
 		"UNKNOWN",
 		"Geometry",
@@ -358,7 +358,7 @@ int WWMemoryLogClass::Get_Category_Count(void)
 
 const char *WWMemoryLogClass::Get_Category_Name(int category)
 {
-	return _MemoryCategoryNames[category];
+       return memory_category_names[category];
 }
 
 int WWMemoryLogClass::Get_Current_Allocated_Memory(int category)
