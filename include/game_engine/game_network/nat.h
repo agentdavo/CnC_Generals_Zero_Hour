@@ -32,7 +32,7 @@
 #ifndef __NAT_H
 #define __NAT_H
 
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "game_network/NetworkInterface.h"
 #include "game_network/FirewallHelper.h"
 
