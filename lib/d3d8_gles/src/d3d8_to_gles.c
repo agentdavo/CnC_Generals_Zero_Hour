@@ -656,20 +656,47 @@ static void setup_vertex_attributes(GLES_Device *gles, DWORD fvf, BYTE *data,
                                     UINT stride) {
   GLint offset = 0;
 
-  if (fvf & D3DFVF_XYZRHW) {
+  DWORD pos = fvf & D3DFVF_POSITION_MASK;
+  int weight_count = 0;
+
+  if (pos == D3DFVF_XYZRHW) {
     glDisable(GL_DEPTH_TEST);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     glEnableClientState(GL_VERTEX_ARRAY);
     glVertexPointer(4, GL_FLOAT, stride, data + offset);
     offset += 16;
-  } else if (fvf & D3DFVF_XYZ) {
+  } else {
     glEnableClientState(GL_VERTEX_ARRAY);
     glVertexPointer(3, GL_FLOAT, stride, data + offset);
     offset += 12;
-  } else {
-    glDisableClientState(GL_VERTEX_ARRAY);
+
+    switch (pos) {
+    case D3DFVF_XYZB1:
+      weight_count = 1;
+      break;
+    case D3DFVF_XYZB2:
+      weight_count = 2;
+      break;
+    case D3DFVF_XYZB3:
+      weight_count = 3;
+      break;
+    case D3DFVF_XYZB4:
+      weight_count = 4;
+      break;
+    case D3DFVF_XYZB5:
+      weight_count = 5;
+      break;
+    default:
+      break;
+    }
   }
+
+  if (weight_count > 0)
+    offset += weight_count * 4;
+
+  if (fvf & D3DFVF_PSIZE)
+    offset += 4;
 
   if (fvf & D3DFVF_NORMAL) {
     glEnableClientState(GL_NORMAL_ARRAY);
@@ -683,12 +710,17 @@ static void setup_vertex_attributes(GLES_Device *gles, DWORD fvf, BYTE *data,
     glEnableClientState(GL_COLOR_ARRAY);
     glColorPointer(4, GL_UNSIGNED_BYTE, stride, data + offset);
     offset += 4;
+  } else if (fvf & D3DFVF_SPECULAR) {
+    /* Use specular color when diffuse color is absent */
+    glEnableClientState(GL_COLOR_ARRAY);
+    glColorPointer(4, GL_UNSIGNED_BYTE, stride, data + offset);
+    offset += 4;
   } else {
     glDisableClientState(GL_COLOR_ARRAY);
   }
 
-  if (fvf & D3DFVF_SPECULAR) {
-    /* Skip specular color for now; GL ES 1.1 lacks secondary color arrays */
+  if (fvf & D3DFVF_SPECULAR && (fvf & D3DFVF_DIFFUSE)) {
+    /* Skip specular bytes when diffuse was used */
     offset += 4;
   }
 
@@ -701,18 +733,20 @@ static void setup_vertex_attributes(GLES_Device *gles, DWORD fvf, BYTE *data,
    * array becomes GL_TEXTURE1. This mirrors the D3DTSS_TEXCOORDINDEX
    * behaviour for two stages.
    */
-  for (int i = 0; i < limit; i++) {
-    int unit = i;
-    if (gles->texcoord_index0 < limit) {
-      if (i == gles->texcoord_index0) {
-        unit = 0;
-      } else if (i < gles->texcoord_index0) {
-        unit = i + 1;
+  for (int i = 0; i < tex_count; i++) {
+    if (i < limit) {
+      int unit = i;
+      if (gles->texcoord_index0 < limit) {
+        if (i == gles->texcoord_index0) {
+          unit = 0;
+        } else if (i < gles->texcoord_index0) {
+          unit = i + 1;
+        }
       }
+      glClientActiveTexture(GL_TEXTURE0 + unit);
+      glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+      glTexCoordPointer(2, GL_FLOAT, stride, data + offset);
     }
-    glClientActiveTexture(GL_TEXTURE0 + unit);
-    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-    glTexCoordPointer(2, GL_FLOAT, stride, data + offset);
     offset += 8;
   }
   for (int i = limit; i < 2; i++) {
@@ -2550,11 +2584,34 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF) {
   if (!(FVF & (D3DFVF_XYZ | D3DFVF_XYZRHW)))
     return 0;
 
-  if (FVF & ~(D3DFVF_XYZ | D3DFVF_XYZRHW | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
-              D3DFVF_SPECULAR | D3DFVF_TEX1 | D3DFVF_TEX2))
+  if (FVF & ~(D3DFVF_POSITION_MASK | D3DFVF_NORMAL | D3DFVF_PSIZE |
+              D3DFVF_DIFFUSE | D3DFVF_SPECULAR | D3DFVF_TEXCOUNT_MASK))
     return 0;
 
   UINT size = (FVF & D3DFVF_XYZRHW) ? 4 * sizeof(float) : 3 * sizeof(float);
+
+  switch (FVF & D3DFVF_POSITION_MASK) {
+  case D3DFVF_XYZB1:
+    size += sizeof(float);
+    break;
+  case D3DFVF_XYZB2:
+    size += 2 * sizeof(float);
+    break;
+  case D3DFVF_XYZB3:
+    size += 3 * sizeof(float);
+    break;
+  case D3DFVF_XYZB4:
+    size += 4 * sizeof(float);
+    break;
+  case D3DFVF_XYZB5:
+    size += 5 * sizeof(float);
+    break;
+  default:
+    break;
+  }
+
+  if (FVF & D3DFVF_PSIZE)
+    size += sizeof(float);
   if (FVF & D3DFVF_NORMAL)
     size += 3 * sizeof(float);
   if (FVF & D3DFVF_DIFFUSE)
@@ -2563,7 +2620,7 @@ UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF) {
     size += sizeof(DWORD);
 
   UINT tex_count = (FVF & D3DFVF_TEXCOUNT_MASK) >> D3DFVF_TEXCOUNT_SHIFT;
-  if (tex_count > 2)
+  if (tex_count > 8)
     return 0;
   size += tex_count * 2 * sizeof(float); // each texcoord set is 2 floats
   return size;
