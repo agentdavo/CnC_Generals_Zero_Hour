@@ -47,7 +47,7 @@
 #include "ww3d.h"
 #include "camera.h"
 #include "wwstring.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "vertmaterial.h"
 #include "rddesc.h"
 #include "lightenvironment.h"

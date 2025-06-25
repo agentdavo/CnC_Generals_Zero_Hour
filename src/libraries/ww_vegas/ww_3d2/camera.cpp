@@ -70,7 +70,7 @@
 
 #include "camera.h"
 #include "ww3d.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "dx8wrapper.h"
 
 

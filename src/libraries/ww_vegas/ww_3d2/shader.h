@@ -44,7 +44,7 @@
 
 #include "always.h"
 
-#if defined (SR_OS_SOLARIS)
+#ifdef PASS_MAX
 #undef PASS_MAX
 #endif
 
