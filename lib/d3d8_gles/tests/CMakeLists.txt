@@ -74,3 +74,11 @@ add_test(NAME compute_bounding_sphere_test COMMAND compute_bounding_sphere_test)
 add_executable(compute_normals_test compute_normals_test.c)
 target_link_libraries(compute_normals_test PRIVATE d3d8_to_gles)
 add_test(NAME compute_normals_test COMMAND compute_normals_test)
+
+add_executable(create_texture_test create_texture_test.c)
+target_link_libraries(create_texture_test PRIVATE d3d8_to_gles)
+add_test(NAME create_texture_test COMMAND create_texture_test)
+
+add_executable(filter_texture_test filter_texture_test.c)
+target_link_libraries(filter_texture_test PRIVATE d3d8_to_gles)
+add_test(NAME filter_texture_test COMMAND filter_texture_test)
