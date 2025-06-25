@@ -5,6 +5,7 @@
 #include "GLES/gl.h"
 #include "GLES/glext.h"
 #include "EGL/egl.h"
+#include <lvgl.h>
 
 #include <limits.h>
 #include <float.h>
@@ -168,6 +169,10 @@ typedef struct {
     DWORD texcoord_index0;
     D3DPRESENT_PARAMETERS present_params;
     D3DDISPLAYMODE display_mode;
+    lv_obj_t *canvas;
+    uint8_t *canvas_buf;
+    size_t canvas_buf_size;
+    struct IDirect3DSurface8 *backbuffer;
 } GLES_Device;
 
 // Vertex/index buffer structure
@@ -412,6 +417,28 @@ struct IDirect3DTexture8 {
     const IDirect3DTexture8Vtbl *lpVtbl;
     GLES_Texture *texture;
     IDirect3DDevice8 *device;
+};
+
+// IDirect3DSurface8 interface
+typedef struct IDirect3DSurface8 IDirect3DSurface8;
+typedef struct {
+    HRESULT (D3DAPI *QueryInterface)(IDirect3DSurface8 *This, REFIID riid, void **ppvObj);
+    ULONG (D3DAPI *AddRef)(IDirect3DSurface8 *This);
+    ULONG (D3DAPI *Release)(IDirect3DSurface8 *This);
+    HRESULT (D3DAPI *GetDevice)(IDirect3DSurface8 *This, IDirect3DDevice8 **ppDevice);
+    HRESULT (D3DAPI *SetPrivateData)(IDirect3DSurface8 *This, REFGUID refguid, CONST void *pData, DWORD SizeOfData, DWORD Flags);
+    HRESULT (D3DAPI *GetPrivateData)(IDirect3DSurface8 *This, REFGUID refguid, void *pData, DWORD *pSizeOfData);
+    HRESULT (D3DAPI *FreePrivateData)(IDirect3DSurface8 *This, REFGUID refguid);
+    HRESULT (D3DAPI *GetContainer)(IDirect3DSurface8 *This, REFIID riid, void **ppContainer);
+    HRESULT (D3DAPI *GetDesc)(IDirect3DSurface8 *This, D3DSURFACE_DESC *pDesc);
+    HRESULT (D3DAPI *LockRect)(IDirect3DSurface8 *This, D3DLOCKED_RECT *pLockedRect, const RECT *pRect, DWORD Flags);
+    HRESULT (D3DAPI *UnlockRect)(IDirect3DSurface8 *This);
+} IDirect3DSurface8Vtbl;
+
+struct IDirect3DSurface8 {
+    const IDirect3DSurface8Vtbl *lpVtbl;
+    IDirect3DDevice8 *device;
+    D3DSURFACE_DESC desc;
 };
 
 // D3DX function prototypes

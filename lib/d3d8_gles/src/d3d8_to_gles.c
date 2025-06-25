@@ -5,6 +5,7 @@
 #include <math.h>
 #include <stdalign.h>
 #include <EGL/eglext.h>
+#include <lvgl.h>
 
 #ifdef D3D8_GLES_LOGGING
 #include <stdio.h>
@@ -170,6 +171,19 @@ static ULONG D3DAPI tex_release(IDirect3DTexture8 *This);
 static HRESULT D3DAPI tex_lock_rect(IDirect3DTexture8 *This, UINT Level, D3DLOCKED_RECT *pLockedRect, const RECT *pRect, DWORD Flags);
 static HRESULT D3DAPI tex_unlock_rect(IDirect3DTexture8 *This, UINT Level);
 static HRESULT D3DAPI tex_get_level_desc(IDirect3DTexture8 *This, UINT Level, D3DSURFACE_DESC *pDesc);
+
+// Forward declarations for surface methods
+static HRESULT D3DAPI surface_query_interface(IDirect3DSurface8 *This, REFIID riid, void **ppv);
+static ULONG D3DAPI surface_add_ref(IDirect3DSurface8 *This);
+static ULONG D3DAPI surface_release(IDirect3DSurface8 *This);
+static HRESULT D3DAPI surface_get_device(IDirect3DSurface8 *This, IDirect3DDevice8 **ppDevice);
+static HRESULT D3DAPI surface_set_private_data(IDirect3DSurface8 *This, REFGUID refguid, CONST void *pData, DWORD SizeOfData, DWORD Flags);
+static HRESULT D3DAPI surface_get_private_data(IDirect3DSurface8 *This, REFGUID refguid, void *pData, DWORD *pSizeOfData);
+static HRESULT D3DAPI surface_free_private_data(IDirect3DSurface8 *This, REFGUID refguid);
+static HRESULT D3DAPI surface_get_container(IDirect3DSurface8 *This, REFIID riid, void **ppContainer);
+static HRESULT D3DAPI surface_get_desc(IDirect3DSurface8 *This, D3DSURFACE_DESC *pDesc);
+static HRESULT D3DAPI surface_lock_rect(IDirect3DSurface8 *This, D3DLOCKED_RECT *pLockedRect, const RECT *pRect, DWORD Flags);
+static HRESULT D3DAPI surface_unlock_rect(IDirect3DSurface8 *This);
 
 // Forward declarations for ID3DXBuffer helper methods
 static HRESULT D3DAPI d3dx_buffer_query_interface(ID3DXBuffer *This, REFIID iid, void **ppv);
@@ -1016,6 +1030,18 @@ static HRESULT D3DAPI tex_get_level_desc(IDirect3DTexture8 *This, UINT Level, D3
     return D3D_OK;
 }
 
+static HRESULT D3DAPI surface_query_interface(IDirect3DSurface8 *This, REFIID riid, void **ppv) { return common_query_interface(This, riid, ppv); }
+static ULONG D3DAPI surface_add_ref(IDirect3DSurface8 *This) { return common_add_ref(This); }
+static ULONG D3DAPI surface_release(IDirect3DSurface8 *This) { return common_release(This); }
+static HRESULT D3DAPI surface_get_device(IDirect3DSurface8 *This, IDirect3DDevice8 **ppDevice) { if(!ppDevice) return D3DERR_INVALIDCALL; *ppDevice = This->device; return D3D_OK; }
+static HRESULT D3DAPI surface_set_private_data(IDirect3DSurface8 *This, REFGUID refguid, CONST void *pData, DWORD SizeOfData, DWORD Flags) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI surface_get_private_data(IDirect3DSurface8 *This, REFGUID refguid, void *pData, DWORD *pSizeOfData) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI surface_free_private_data(IDirect3DSurface8 *This, REFGUID refguid) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI surface_get_container(IDirect3DSurface8 *This, REFIID riid, void **ppContainer) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI surface_get_desc(IDirect3DSurface8 *This, D3DSURFACE_DESC *pDesc) { if(!pDesc) return D3DERR_INVALIDCALL; *pDesc = This->desc; return D3D_OK; }
+static HRESULT D3DAPI surface_lock_rect(IDirect3DSurface8 *This, D3DLOCKED_RECT *pLockedRect, const RECT *pRect, DWORD Flags) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI surface_unlock_rect(IDirect3DSurface8 *This) { return D3DERR_NOTAVAILABLE; }
+
 static const IDirect3DDevice8Vtbl device_vtbl = {
     .QueryInterface = d3d8_device_query_interface,
     .AddRef = d3d8_device_add_ref,
@@ -1177,6 +1203,11 @@ static HRESULT D3DAPI d3d8_create_device(IDirect3D8 *This, UINT Adapter, D3DDEVT
     gles->display_mode.Format = pPresentationParameters->BackBufferFormat;
     gles->display_mode.RefreshRate = pPresentationParameters->FullScreen_RefreshRateInHz;
 
+    gles->canvas = NULL;
+    gles->canvas_buf = NULL;
+    gles->canvas_buf_size = 0;
+    gles->backbuffer = NULL;
+
     g_current_display_mode = gles->display_mode;
 
     IDirect3DDevice8 *device = calloc(1, sizeof(IDirect3DDevice8) + sizeof(IDirect3DDevice8Vtbl));
@@ -1226,12 +1257,130 @@ static HRESULT D3DAPI d3d8_set_cursor_properties(IDirect3DDevice8 *This, UINT XH
 static void D3DAPI d3d8_set_cursor_position(IDirect3DDevice8 *This, UINT XScreenSpace, UINT YScreenSpace, DWORD Flags) {}
 static BOOL D3DAPI d3d8_show_cursor(IDirect3DDevice8 *This, BOOL bShow) { return FALSE; }
 static HRESULT D3DAPI d3d8_create_additional_swap_chain(IDirect3DDevice8 *This, D3DPRESENT_PARAMETERS *pPresentationParameters, IDirect3DSwapChain8 **pSwapChain) { return D3DERR_NOTAVAILABLE; }
-static HRESULT D3DAPI d3d8_reset(IDirect3DDevice8 *This, D3DPRESENT_PARAMETERS *pPresentationParameters) { return D3DERR_NOTAVAILABLE; }
-static HRESULT D3DAPI d3d8_present(IDirect3DDevice8 *This, CONST RECT *pSourceRect, CONST RECT *pDestRect, HWND hDestWindowOverride, CONST RGNDATA *pDirtyRegion) {
-    eglSwapBuffers(This->gles->display, This->gles->surface);
+static HRESULT D3DAPI d3d8_reset(IDirect3DDevice8 *This, D3DPRESENT_PARAMETERS *pPresentationParameters) {
+    if(!pPresentationParameters) return D3DERR_INVALIDCALL;
+
+    GLES_Device *gles = This->gles;
+    eglMakeCurrent(gles->display, EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
+    if(gles->context) eglDestroyContext(gles->display, gles->context);
+    if(gles->surface) eglDestroySurface(gles->display, gles->surface);
+
+    BOOL want_window = pPresentationParameters->hDeviceWindow != NULL;
+    EGLConfig config = choose_egl_config(gles->display, pPresentationParameters, want_window);
+    if(!config) return D3DERR_INVALIDCALL;
+
+    if(want_window) {
+        gles->surface = eglCreateWindowSurface(gles->display, config,
+                                               (EGLNativeWindowType)(uintptr_t)pPresentationParameters->hDeviceWindow, NULL);
+    } else {
+        const EGLint pbuffer_attribs[] = {EGL_WIDTH, pPresentationParameters->BackBufferWidth,
+                                          EGL_HEIGHT, pPresentationParameters->BackBufferHeight,
+                                          EGL_NONE};
+        gles->surface = eglCreatePbufferSurface(gles->display, config, pbuffer_attribs);
+    }
+    gles->context = eglCreateContext(gles->display, config, EGL_NO_CONTEXT, NULL);
+    if(!gles->surface || !gles->context ||
+       !eglMakeCurrent(gles->display, gles->surface, gles->surface, gles->context))
+        return D3DERR_INVALIDCALL;
+
+    gles->viewport.X = 0;
+    gles->viewport.Y = 0;
+    gles->viewport.Width = pPresentationParameters->BackBufferWidth;
+    gles->viewport.Height = pPresentationParameters->BackBufferHeight;
+    gles->present_params = *pPresentationParameters;
+    gles->display_mode.Width = pPresentationParameters->BackBufferWidth;
+    gles->display_mode.Height = pPresentationParameters->BackBufferHeight;
+    gles->display_mode.Format = pPresentationParameters->BackBufferFormat;
+    gles->display_mode.RefreshRate = pPresentationParameters->FullScreen_RefreshRateInHz;
+    g_current_display_mode = gles->display_mode;
+
+    glViewport(0, 0, gles->viewport.Width, gles->viewport.Height);
+    size_t bytes = (size_t)gles->viewport.Width * gles->viewport.Height * 4;
+    if(gles->canvas) {
+        if(bytes > gles->canvas_buf_size) {
+            free(gles->canvas_buf);
+            gles->canvas_buf = malloc(bytes);
+            gles->canvas_buf_size = bytes;
+        }
+        lv_canvas_set_buffer(gles->canvas, gles->canvas_buf, gles->viewport.Width, gles->viewport.Height, LV_COLOR_FORMAT_ARGB8888);
+    }
+    if(gles->backbuffer) {
+        gles->backbuffer->desc.Width = gles->viewport.Width;
+        gles->backbuffer->desc.Height = gles->viewport.Height;
+        gles->backbuffer->desc.Format = gles->present_params.BackBufferFormat;
+    }
     return D3D_OK;
 }
-static HRESULT D3DAPI d3d8_get_back_buffer(IDirect3DDevice8 *This, UINT BackBuffer, D3DBACKBUFFER_TYPE Type, IDirect3DSurface8 **ppBackBuffer) { return D3DERR_NOTAVAILABLE; }
+static HRESULT D3DAPI d3d8_present(IDirect3DDevice8 *This, CONST RECT *pSourceRect, CONST RECT *pDestRect, HWND hDestWindowOverride, CONST RGNDATA *pDirtyRegion) {
+    GLES_Device *gles = This->gles;
+    int w = (int)gles->present_params.BackBufferWidth;
+    int h = (int)gles->present_params.BackBufferHeight;
+
+    size_t bytes = (size_t)w * h * 4;
+    if(!gles->canvas) {
+        gles->canvas = lv_canvas_create(lv_screen_active());
+        gles->canvas_buf = malloc(bytes);
+        gles->canvas_buf_size = bytes;
+        lv_canvas_set_buffer(gles->canvas, gles->canvas_buf, w, h, LV_COLOR_FORMAT_ARGB8888);
+        lv_obj_center(gles->canvas);
+    } else if(bytes > gles->canvas_buf_size) {
+        free(gles->canvas_buf);
+        gles->canvas_buf = malloc(bytes);
+        gles->canvas_buf_size = bytes;
+        lv_canvas_set_buffer(gles->canvas, gles->canvas_buf, w, h, LV_COLOR_FORMAT_ARGB8888);
+    }
+
+    uint8_t *tmp = malloc(bytes);
+    if(!tmp) return D3DERR_OUTOFVIDEOMEMORY;
+    glReadPixels(0, 0, w, h, GL_RGBA, GL_UNSIGNED_BYTE, tmp);
+    for(int y=0;y<h;y++) {
+        for(int x=0;x<w;x++) {
+            size_t src = ((size_t)y*w + x)*4;
+            size_t dst = ((size_t)(h-1-y)*w + x)*4;
+            gles->canvas_buf[dst+0] = tmp[src+3];
+            gles->canvas_buf[dst+1] = tmp[src+0];
+            gles->canvas_buf[dst+2] = tmp[src+1];
+            gles->canvas_buf[dst+3] = tmp[src+2];
+        }
+    }
+    free(tmp);
+    lv_obj_invalidate(gles->canvas);
+    eglSwapBuffers(gles->display, gles->surface);
+    return D3D_OK;
+}
+static HRESULT D3DAPI d3d8_get_back_buffer(IDirect3DDevice8 *This, UINT BackBuffer, D3DBACKBUFFER_TYPE Type, IDirect3DSurface8 **ppBackBuffer) {
+    if(!ppBackBuffer || BackBuffer != 0 || Type != D3DBACKBUFFER_TYPE_MONO)
+        return D3DERR_INVALIDCALL;
+
+    GLES_Device *gles = This->gles;
+    if(!gles->backbuffer) {
+        gles->backbuffer = calloc(1, sizeof(IDirect3DSurface8) + sizeof(IDirect3DSurface8Vtbl));
+        if(!gles->backbuffer) return D3DERR_OUTOFVIDEOMEMORY;
+        static const IDirect3DSurface8Vtbl surf_vtbl = {
+            .QueryInterface = surface_query_interface,
+            .AddRef = surface_add_ref,
+            .Release = surface_release,
+            .GetDevice = surface_get_device,
+            .SetPrivateData = surface_set_private_data,
+            .GetPrivateData = surface_get_private_data,
+            .FreePrivateData = surface_free_private_data,
+            .GetContainer = surface_get_container,
+            .GetDesc = surface_get_desc,
+            .LockRect = surface_lock_rect,
+            .UnlockRect = surface_unlock_rect
+        };
+        gles->backbuffer->lpVtbl = &surf_vtbl;
+        gles->backbuffer->device = This;
+    }
+    gles->backbuffer->desc.Format = gles->present_params.BackBufferFormat;
+    gles->backbuffer->desc.Type = D3DRTYPE_SURFACE;
+    gles->backbuffer->desc.Usage = 0;
+    gles->backbuffer->desc.Pool = D3DPOOL_DEFAULT;
+    gles->backbuffer->desc.Width = gles->present_params.BackBufferWidth;
+    gles->backbuffer->desc.Height = gles->present_params.BackBufferHeight;
+    *ppBackBuffer = gles->backbuffer;
+    return D3D_OK;
+}
 static HRESULT D3DAPI d3d8_get_raster_status(IDirect3DDevice8 *This, D3DRASTER_STATUS *pRasterStatus) { return D3DERR_NOTAVAILABLE; }
 static void D3DAPI d3d8_set_gamma_ramp(IDirect3DDevice8 *This, DWORD Flags, CONST D3DGAMMARAMP *pRamp) {}
 static void D3DAPI d3d8_get_gamma_ramp(IDirect3DDevice8 *This, D3DGAMMARAMP *pRamp) {}
