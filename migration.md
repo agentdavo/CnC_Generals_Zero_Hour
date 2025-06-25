@@ -333,3 +333,14 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   `D3DXMatrixRotationQuaternion` with accompanying regression tests.
 - Added `SetVertexShaderConstant` and `SetPixelShaderConstant` implementations
   in the Direct3D 8 shim with basic constant storage.
+- A new LVGL display driver links the microGLES software renderer directly with
+  LVGL so the engine can run without GPU acceleration. Build the project with
+  `-DUSE_MICROGLES=ON` to enable this path:
+
+  ```bash
+  cmake -S . -B build -DUSE_MICROGLES=ON
+  cmake --build build
+  ```
+
+  When enabled the d3d8_gles layer drops its EGL dependency and all rendering
+  occurs through microGLES via the LVGL display API.
