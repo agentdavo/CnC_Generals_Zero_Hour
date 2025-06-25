@@ -1,0 +1,67 @@
+add_executable(capability_test capability_test.c)
+target_link_libraries(capability_test PRIVATE d3d8_to_gles)
+add_test(NAME capability_test COMMAND capability_test)
+
+add_executable(caps_flags_test caps_flags_test.c)
+target_link_libraries(caps_flags_test PRIVATE d3d8_to_gles)
+add_test(NAME caps_flags_test COMMAND caps_flags_test)
+
+add_executable(box_render_test box_render_test.c)
+target_link_libraries(box_render_test PRIVATE d3d8_to_gles)
+add_test(NAME box_render_test COMMAND box_render_test)
+
+add_executable(sphere_stub_test sphere_stub_test.c)
+target_link_libraries(sphere_stub_test PRIVATE d3d8_to_gles)
+add_test(NAME sphere_stub_test COMMAND sphere_stub_test)
+
+add_executable(cylinder_stub_test cylinder_stub_test.c)
+target_link_libraries(cylinder_stub_test PRIVATE d3d8_to_gles)
+add_test(NAME cylinder_stub_test COMMAND cylinder_stub_test)
+
+add_executable(texture_stage_test texture_stage_test.c)
+target_link_libraries(texture_stage_test PRIVATE d3d8_to_gles)
+add_test(NAME texture_stage_test COMMAND texture_stage_test)
+
+add_executable(color_write_mask_test color_write_mask_test.c)
+target_link_libraries(color_write_mask_test PRIVATE d3d8_to_gles)
+add_test(NAME color_write_mask_test COMMAND color_write_mask_test)
+
+add_executable(stencil_enable_test stencil_enable_test.c)
+target_link_libraries(stencil_enable_test PRIVATE d3d8_to_gles)
+add_test(NAME stencil_enable_test COMMAND stencil_enable_test)
+
+add_executable(xyzrhw_test xyzrhw_test.c)
+target_link_libraries(xyzrhw_test PRIVATE d3d8_to_gles)
+add_test(NAME xyzrhw_test COMMAND xyzrhw_test)
+
+add_executable(adapter_info_test adapter_info_test.c)
+target_link_libraries(adapter_info_test PRIVATE d3d8_to_gles)
+add_test(NAME adapter_info_test COMMAND adapter_info_test)
+
+add_executable(tex2_coord_test tex2_coord_test.c)
+target_link_libraries(tex2_coord_test PRIVATE d3d8_to_gles)
+add_test(NAME tex2_coord_test COMMAND tex2_coord_test)
+
+add_executable(texcoord_index_test texcoord_index_test.c)
+target_link_libraries(texcoord_index_test PRIVATE d3d8_to_gles)
+add_test(NAME texcoord_index_test COMMAND texcoord_index_test)
+
+add_executable(color_mask_draw_test color_mask_draw_test.c)
+target_link_libraries(color_mask_draw_test PRIVATE d3d8_to_gles)
+add_test(NAME color_mask_draw_test COMMAND color_mask_draw_test)
+
+add_executable(stencil_mask_draw_test stencil_mask_draw_test.c)
+target_link_libraries(stencil_mask_draw_test PRIVATE d3d8_to_gles)
+add_test(NAME stencil_mask_draw_test COMMAND stencil_mask_draw_test)
+
+add_executable(triangle_strip_test triangle_strip_test.c)
+target_link_libraries(triangle_strip_test PRIVATE d3d8_to_gles)
+add_test(NAME triangle_strip_test COMMAND triangle_strip_test)
+
+add_executable(point_list_test point_list_test.c)
+target_link_libraries(point_list_test PRIVATE d3d8_to_gles)
+add_test(NAME point_list_test COMMAND point_list_test)
+
+add_executable(buffer_lock_flags_test buffer_lock_flags_test.c)
+target_link_libraries(buffer_lock_flags_test PRIVATE d3d8_to_gles)
+add_test(NAME buffer_lock_flags_test COMMAND buffer_lock_flags_test)
