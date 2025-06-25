@@ -69,6 +69,7 @@ target_link_libraries(gameenginedevice PUBLIC
     lvgl_platform
     wwmath
     ww3d2
+    d3d8_to_gles
     wwutil
     wwsaveload
     wwaudio
