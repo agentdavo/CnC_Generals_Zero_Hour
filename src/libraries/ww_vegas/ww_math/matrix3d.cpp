@@ -516,11 +516,8 @@ void Matrix3D::Get_Inverse(Matrix3D & inv) const
 	// TODO: Implement the general purpose inverse function here (once we need it :-)
 	//Get_Orthogonal_Inverse(inv);
 
-	Matrix4x4	mat4(*this);
-	Matrix4x4	mat4Inv;
-
-	float det;
-	D3DXMatrixInverse((D3DXMATRIX *)&mat4Inv, &det, (D3DXMATRIX*)&mat4);
+        Matrix4x4       mat4(*this);
+        Matrix4x4       mat4Inv = mat4.Inverse();
 
 	inv.Row[0][0]=mat4Inv[0][0];
 	inv.Row[0][1]=mat4Inv[0][1];

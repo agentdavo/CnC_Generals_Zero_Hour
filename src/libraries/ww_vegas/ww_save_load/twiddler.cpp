@@ -41,6 +41,7 @@
 #include "simpledefinitionfactory.h"
 #include "persistfactory.h"
 #include "win.h"
+#include <ctime>
 #include "wwhack.h"
 
 
@@ -111,7 +112,7 @@ TwiddlerClass::Twiddle (void) const
 		//
 		//	Get a random index into our definition list
 		//
-		RandomClass randomizer (::GetTickCount ());
+		RandomClass randomizer (static_cast<unsigned>(time(NULL)));
 		int index = randomizer (0, m_DefinitionList.Count () - 1);
 
 		//
