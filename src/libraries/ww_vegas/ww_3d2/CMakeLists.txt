@@ -8,4 +8,5 @@ target_include_directories(ww3d2 PUBLIC
 target_link_libraries(ww3d2 PUBLIC
     wwlib
     wwmath
+    d3d8_to_gles
 )
