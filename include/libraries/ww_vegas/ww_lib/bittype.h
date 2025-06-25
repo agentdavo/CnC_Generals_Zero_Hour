@@ -1,66 +1,50 @@
-/*
-**	Command & Conquer Generals(tm)
-**	Copyright 2025 Electronic Arts Inc.
-**
-**	This program is free software: you can redistribute it and/or modify
-**	it under the terms of the GNU General Public License as published by
-**	the Free Software Foundation, either version 3 of the License, or
-**	(at your option) any later version.
-**
-**	This program is distributed in the hope that it will be useful,
-**	but WITHOUT ANY WARRANTY; without even the implied warranty of
-**	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-**	GNU General Public License for more details.
-**
-**	You should have received a copy of the GNU General Public License
-**	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-/* $Header: /G/wwlib/bittype.h 4     4/02/99 1:37p Eric_c $ */
-/*************************************************************************** 
- ***                  Confidential - Westwood Studios                    *** 
- *************************************************************************** 
- *                                                                         * 
- *                 Project Name : Voxel Technology                         * 
- *                                                                         * 
- *                    File Name : BITTYPE.H                                * 
- *                                                                         * 
- *                   Programmer : Greg Hjelstrom                           * 
- *                                                                         * 
- *                   Start Date : 02/24/97                                 * 
- *                                                                         * 
- *                  Last Update : February 24, 1997 [GH]                   * 
- *                                                                         * 
- *-------------------------------------------------------------------------* 
- * Functions:                                                              * 
- * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-#if _MSC_VER >= 1000
 #pragma once
-#endif // _MSC_VER >= 1000
 
 #ifndef BITTYPE_H
 #define BITTYPE_H
 
-typedef unsigned char	uint8;
-typedef unsigned short	uint16;
-typedef unsigned long	uint32;
-typedef unsigned int    uint;
+#include <cstdint>
+#include "common/win32_compat.h"
 
-typedef signed char		sint8;
-typedef signed short		sint16;
-typedef signed long		sint32;
-typedef signed int      sint;
+// Standard sized aliases
+using uint8  = std::uint8_t;
+using uint16 = std::uint16_t;
+using uint32 = std::uint32_t;
+using uint   = unsigned int;
 
-typedef float				float32;
-typedef double				float64;
+using sint8  = std::int8_t;
+using sint16 = std::int16_t;
+using sint32 = std::int32_t;
+using sint   = int;
 
-typedef unsigned long   DWORD;
-typedef unsigned short	WORD;
-typedef unsigned char   BYTE;
-typedef int             BOOL;
-typedef unsigned short	USHORT;
-typedef const char *		LPCSTR;
-typedef unsigned int    UINT;
-typedef unsigned long   ULONG;
+using float32 = float;
+using float64 = double;
 
-#endif //BITTYPE_H
+// Win32 style aliases guarded against redefinition
+#ifndef DWORD
+using DWORD = std::uint32_t;
+#endif
+#ifndef WORD
+using WORD  = std::uint16_t;
+#endif
+#ifndef BYTE
+using BYTE  = std::uint8_t;
+#endif
+#ifndef BOOL
+using BOOL  = int;
+#endif
+#ifndef USHORT
+using USHORT = std::uint16_t;
+#endif
+#ifndef LPCSTR
+using LPCSTR = const char*;
+#endif
+#ifndef UINT
+using UINT = unsigned int;
+#endif
+#ifndef ULONG
+using ULONG = unsigned long;
+#endif
+
+#endif // BITTYPE_H
+
