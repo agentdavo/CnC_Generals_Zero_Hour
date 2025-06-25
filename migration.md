@@ -331,3 +331,5 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Implemented additional D3DX matrix helpers: `D3DXMatrixLookAtRH`,
   `D3DXMatrixPerspectiveFovRH`, `D3DXMatrixOrthoLH`, `D3DXMatrixOrthoRH` and
   `D3DXMatrixRotationQuaternion` with accompanying regression tests.
+- Added `SetVertexShaderConstant` and `SetPixelShaderConstant` implementations
+  in the Direct3D 8 shim with basic constant storage.

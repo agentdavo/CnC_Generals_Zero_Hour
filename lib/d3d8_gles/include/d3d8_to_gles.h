@@ -176,6 +176,8 @@ typedef struct {
     DWORD texcoord_index0;
     D3DPRESENT_PARAMETERS present_params;
     D3DDISPLAYMODE display_mode;
+    D3DXVECTOR4 vs_const[96];
+    D3DXVECTOR4 ps_const[8];
 } GLES_Device;
 
 // Vertex/index buffer structure
@@ -350,6 +352,8 @@ typedef struct {
     HRESULT (D3DAPI *SetViewport)(IDirect3DDevice8 *This, CONST D3DVIEWPORT8 *pViewport);
     HRESULT (D3DAPI *SetTransform)(IDirect3DDevice8 *This, D3DTRANSFORMSTATETYPE State, CONST D3DXMATRIX *pMatrix);
     HRESULT (D3DAPI *DrawIndexedPrimitive)(IDirect3DDevice8 *This, D3DPRIMITIVETYPE PrimitiveType, UINT MinVertexIndex, UINT NumVertices, UINT StartIndex, UINT PrimitiveCount);
+    HRESULT (D3DAPI *SetVertexShaderConstant)(IDirect3DDevice8 *This, DWORD Register, CONST void *pConstantData, DWORD ConstantCount);
+    HRESULT (D3DAPI *SetPixelShaderConstant)(IDirect3DDevice8 *This, DWORD Register, CONST void *pConstantData, DWORD ConstantCount);
 } IDirect3DDevice8Vtbl;
 
 struct IDirect3DDevice8 {
