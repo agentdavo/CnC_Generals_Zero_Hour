@@ -3,8 +3,6 @@ file(GLOB LVGLDEVICE_SRC CONFIGURE_DEPENDS
     game_client/*.cpp
 )
 list(FILTER LVGLDEVICE_SRC EXCLUDE REGEX "Win32.*\\.cpp$")
-list(FILTER LVGLDEVICE_SRC EXCLUDE REGEX "lvgl_big_file.*\\.cpp$")
-list(FILTER LVGLDEVICE_SRC EXCLUDE REGEX "lvgl_big_file_system.*\\.cpp$")
 
 add_library(lvgl_device STATIC ${LVGLDEVICE_SRC})
 

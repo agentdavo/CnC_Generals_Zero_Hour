@@ -48,7 +48,7 @@ static inline char *strupr(char *s)
     return s;
 }
 
-static inline unsigned long GetFileAttributes(const char *filename)
+static inline unsigned long GetFileAttributes_local(const char *filename)
 {
     struct stat st;
     if (stat(filename, &st) == 0) {
@@ -57,6 +57,7 @@ static inline unsigned long GetFileAttributes(const char *filename)
     return 0xFFFFFFFF;
 }
 static inline void DeleteFile(const char *filename) { unlink(filename); }
+#define GetFileAttributes GetFileAttributes_local
 
 struct IMAGE_FILE_HEADER { unsigned int TimeDateStamp; };
 inline bool Get_Image_File_Header(const char *, IMAGE_FILE_HEADER *) { return false; }
