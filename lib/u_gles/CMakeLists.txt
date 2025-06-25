@@ -103,6 +103,8 @@ add_executable(renderer ${RENDERER_MAIN})
 target_include_directories(renderer_lib PUBLIC
     ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
 # Locate GLES and EGL libraries if available. The headers are provided in

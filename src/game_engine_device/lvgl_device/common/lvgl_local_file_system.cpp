@@ -3,9 +3,7 @@
 #include "game_engine/common/GameMemory.h"
 #include "game_engine/common/perftimer.h"
 #include "common/local_file.h"
-#include <fstream>
 #include <filesystem>
-#include "common/file.h"
 
 File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 {
@@ -13,7 +11,8 @@ File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
     std::filesystem::path p(filename);
 
     if(access & File::WRITE) {
-        FileUtil::createDirectory(p.parent_path().u8string());
+        std::error_code ec;
+        std::filesystem::create_directories(p.parent_path(), ec);
     }
 
     if(file->open(p.u8string().c_str(), access) == FALSE) {
@@ -28,7 +27,7 @@ File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 
 Bool LvglLocalFileSystem::doesFileExist(const Char *filename) const
 {
-    return FileUtil::exists(filename);
+    return std::filesystem::exists(std::filesystem::u8path(filename));
 }
 
 void LvglLocalFileSystem::getFileListInDirectory(const AsciiString &currentDirectory,
@@ -95,5 +94,7 @@ Bool LvglLocalFileSystem::getFileInfo(const AsciiString &filename, FileInfo *fil
 
 Bool LvglLocalFileSystem::createDirectory(AsciiString directory)
 {
-    return FileUtil::createDirectory(directory.str());
+    std::error_code ec;
+    std::filesystem::create_directories(std::filesystem::u8path(directory.str()), ec);
+    return ec ? FALSE : TRUE;
 }
