@@ -65,6 +65,7 @@
 #include "thread.h"
 #include <stdio.h>
 #include <D3dx8core.h>
+#include <d3d8_to_gles.h>
 #include "pot.h"
 #include "wwprofile.h"
 #include "ffactory.h"
@@ -248,7 +249,9 @@ bool DX8Wrapper::Init(void * hwnd)
 	/*
 	** Create the D3D interface object
 	*/
-	D3DInterface = Direct3DCreate8(D3D_SDK_VERSION);		// TODO: handle failure cases...
+	/* Use the d3d8_gles shim instead of the system Direct3D runtime */
+        D3DInterface = Direct3DCreate8(D3D_SDK_VERSION);
+        /* TODO: handle failure cases */
 	if (!D3DInterface)
 		return false;
 	IsInitted = true;	
