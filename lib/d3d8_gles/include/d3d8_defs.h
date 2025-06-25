@@ -40,6 +40,9 @@ typedef enum _D3DPOOL {
     D3DPOOL_FORCE_DWORD = 0x7fffffff
 } D3DPOOL;
 
+typedef unsigned int D3DCOLOR;
+typedef struct _PALETTEENTRY { unsigned char peRed, peGreen, peBlue, peFlags; } PALETTEENTRY;
+
 typedef enum _D3DPRIMITIVETYPE {
     D3DPT_POINTLIST     = 1,
     D3DPT_LINELIST      = 2,
@@ -285,6 +288,15 @@ typedef struct _D3DSURFACE_DESC {
     UINT            Width;
     UINT            Height;
 } D3DSURFACE_DESC;
+
+typedef struct _D3DXIMAGE_INFO {
+    UINT            Width;
+    UINT            Height;
+    UINT            Depth;
+    D3DFORMAT       Format;
+    D3DRESOURCETYPE ResourceType;
+    UINT            MipLevels;
+} D3DXIMAGE_INFO;
 
 typedef struct _D3DXVECTOR3 {
     float x, y, z;

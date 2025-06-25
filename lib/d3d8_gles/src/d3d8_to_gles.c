@@ -1983,6 +1983,51 @@ HRESULT WINAPI D3DXCreateMatrixStack(DWORD Flags, LPD3DXMATRIXSTACK *ppStack) {
     return D3D_OK;
 }
 
+HRESULT WINAPI D3DXCreateTexture(LPDIRECT3DDEVICE8 pDevice, UINT Width, UINT Height,
+                                 UINT MipLevels, DWORD Usage, D3DFORMAT Format,
+                                 D3DPOOL Pool, LPDIRECT3DTEXTURE8 *ppTexture) {
+    if (!pDevice || !ppTexture || Width == 0 || Height == 0)
+        return D3DERR_INVALIDCALL;
+    return pDevice->lpVtbl->CreateTexture(pDevice, Width, Height, MipLevels,
+                                          Usage, Format, Pool, ppTexture);
+}
+
+HRESULT WINAPI D3DXCreateTextureFromFileExA(LPDIRECT3DDEVICE8 pDevice, LPCSTR pSrcFile,
+                                            UINT Width, UINT Height, UINT MipLevels,
+                                            DWORD Usage, D3DFORMAT Format, D3DPOOL Pool,
+                                            DWORD Filter, DWORD MipFilter, D3DCOLOR ColorKey,
+                                            D3DXIMAGE_INFO *pSrcInfo, PALETTEENTRY *pPalette,
+                                            LPDIRECT3DTEXTURE8 *ppTexture) {
+    (void)pSrcFile; (void)Filter; (void)MipFilter; (void)ColorKey;
+    (void)pSrcInfo; (void)pPalette;
+    if (!pDevice || !ppTexture)
+        return D3DERR_INVALIDCALL;
+    if (Width == D3DX_DEFAULT) Width = 1;
+    if (Height == D3DX_DEFAULT) Height = 1;
+    return D3DXCreateTexture(pDevice, Width, Height, MipLevels, Usage, Format, Pool, ppTexture);
+}
+
+HRESULT WINAPI D3DXLoadSurfaceFromSurface(LPDIRECT3DSURFACE8 pDestSurface,
+                                          CONST PALETTEENTRY *pDestPalette,
+                                          CONST RECT *pDestRect,
+                                          LPDIRECT3DSURFACE8 pSrcSurface,
+                                          CONST PALETTEENTRY *pSrcPalette,
+                                          CONST RECT *pSrcRect,
+                                          DWORD Filter,
+                                          D3DCOLOR ColorKey) {
+    (void)pDestSurface; (void)pDestPalette; (void)pDestRect;
+    (void)pSrcSurface; (void)pSrcPalette; (void)pSrcRect;
+    (void)Filter; (void)ColorKey;
+    return D3DXERR_NOTAVAILABLE;
+}
+
+HRESULT WINAPI D3DXFilterTexture(LPDIRECT3DBASETEXTURE8 pBaseTexture,
+                                 CONST PALETTEENTRY *pPalette,
+                                 UINT SrcLevel, DWORD Filter) {
+    (void)pBaseTexture; (void)pPalette; (void)SrcLevel; (void)Filter;
+    return D3D_OK;
+}
+
 HRESULT WINAPI D3DXGetErrorStringA(HRESULT hr, LPSTR pBuffer, UINT BufferLen) {
     const char *msg = "Unknown error";
     switch (hr) {

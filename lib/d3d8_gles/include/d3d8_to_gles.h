@@ -18,6 +18,11 @@
 #define D3D_SDK_VERSION 220
 #define D3DX_DEFAULT ULONG_MAX
 #define D3DX_DEFAULT_FLOAT FLT_MAX
+#define D3DX_FILTER_NONE    (1 << 0)
+#define D3DX_FILTER_POINT   (2 << 0)
+#define D3DX_FILTER_LINEAR  (3 << 0)
+#define D3DX_FILTER_TRIANGLE (4 << 0)
+#define D3DX_FILTER_BOX     (5 << 0)
 
 // Error codes
 #define D3D_OK 0
@@ -102,12 +107,14 @@ typedef struct ID3DXRenderToEnvMap ID3DXRenderToEnvMap;
 typedef struct ID3DXEffect ID3DXEffect;
 typedef struct IDirect3DSurface8 IDirect3DSurface8;
 typedef struct IDirect3DSwapChain8 IDirect3DSwapChain8;
+typedef struct IDirect3DBaseTexture8 IDirect3DBaseTexture8;
 
 typedef IDirect3D8 *LPDIRECT3D8;
 typedef IDirect3DDevice8 *LPDIRECT3DDEVICE8;
 typedef IDirect3DVertexBuffer8 *LPDIRECT3DVERTEXBUFFER8;
 typedef IDirect3DIndexBuffer8 *LPDIRECT3DINDEXBUFFER8;
 typedef IDirect3DTexture8 *LPDIRECT3DTEXTURE8;
+typedef IDirect3DBaseTexture8 *LPDIRECT3DBASETEXTURE8;
 
 typedef ID3DXBuffer *LPD3DXBUFFER;
 typedef ID3DXMesh *LPD3DXMESH;
@@ -416,6 +423,10 @@ HRESULT WINAPI D3DXComputeNormals(LPD3DXBASEMESH pMesh, CONST DWORD *pAdjacency)
 UINT WINAPI D3DXGetFVFVertexSize(DWORD FVF);
 HRESULT WINAPI D3DXGetErrorStringA(HRESULT hr, LPSTR pBuffer, UINT BufferLen);
 HRESULT WINAPI D3DXCreateMatrixStack(DWORD Flags, LPD3DXMATRIXSTACK *ppStack);
+HRESULT WINAPI D3DXCreateTexture(LPDIRECT3DDEVICE8 pDevice, UINT Width, UINT Height, UINT MipLevels, DWORD Usage, D3DFORMAT Format, D3DPOOL Pool, LPDIRECT3DTEXTURE8 *ppTexture);
+HRESULT WINAPI D3DXCreateTextureFromFileExA(LPDIRECT3DDEVICE8 pDevice, LPCSTR pSrcFile, UINT Width, UINT Height, UINT MipLevels, DWORD Usage, D3DFORMAT Format, D3DPOOL Pool, DWORD Filter, DWORD MipFilter, D3DCOLOR ColorKey, D3DXIMAGE_INFO *pSrcInfo, PALETTEENTRY *pPalette, LPDIRECT3DTEXTURE8 *ppTexture);
+HRESULT WINAPI D3DXLoadSurfaceFromSurface(LPDIRECT3DSURFACE8 pDestSurface, CONST PALETTEENTRY *pDestPalette, CONST RECT *pDestRect, LPDIRECT3DSURFACE8 pSrcSurface, CONST PALETTEENTRY *pSrcPalette, CONST RECT *pSrcRect, DWORD Filter, D3DCOLOR ColorKey);
+HRESULT WINAPI D3DXFilterTexture(LPDIRECT3DBASETEXTURE8 pBaseTexture, CONST PALETTEENTRY *pPalette, UINT SrcLevel, DWORD Filter);
 
 // Math functions
 D3DXMATRIX* WINAPI D3DXMatrixIdentity(D3DXMATRIX *pOut);
