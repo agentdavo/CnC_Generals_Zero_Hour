@@ -315,6 +315,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   D3DXCreateTextureFromFileExA, D3DXLoadSurfaceFromSurface and D3DXFilterTexture.
 - Added D3DXVec3Transform and D3DXComputeBoundingBox implementations in the
   d3d8_gles shim.
+- Implemented a minimal D3DXLoadMeshFromX loader capable of parsing text and
+  binary .x meshes for positions and normals only.
 - Removed unused Win32 headers from `lvgl_device/common` and deleted the old
   `Win32BIGFile*.cpp.disabled` sources. `LvglLocalFileSystem` now calls
   `std::filesystem` directly for directory creation and existence checks.

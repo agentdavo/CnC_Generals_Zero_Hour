@@ -37,6 +37,9 @@
 #ifndef D3DXERR_SKINNINGNOTSUPPORTED
 #define D3DXERR_SKINNINGNOTSUPPORTED MAKE_DDHRESULT(2903)
 #endif
+#ifndef D3DXERR_INVALIDDATA
+#define D3DXERR_INVALIDDATA MAKE_DDHRESULT(2905)
+#endif
 
 #ifndef D3DADAPTER_DEFAULT
 #define D3DADAPTER_DEFAULT 0
@@ -75,6 +78,11 @@ typedef struct _D3DXATTRIBUTERANGE {
     DWORD VertexStart;
     DWORD VertexCount;
 } D3DXATTRIBUTERANGE;
+
+typedef struct {
+    float x, y, z;
+    float nx, ny, nz;
+} VertexPN;
 
 typedef D3DXATTRIBUTERANGE *LPD3DXATTRIBUTERANGE;
 
@@ -427,6 +435,9 @@ HRESULT WINAPI D3DXCreateTexture(LPDIRECT3DDEVICE8 pDevice, UINT Width, UINT Hei
 HRESULT WINAPI D3DXCreateTextureFromFileExA(LPDIRECT3DDEVICE8 pDevice, LPCSTR pSrcFile, UINT Width, UINT Height, UINT MipLevels, DWORD Usage, D3DFORMAT Format, D3DPOOL Pool, DWORD Filter, DWORD MipFilter, D3DCOLOR ColorKey, D3DXIMAGE_INFO *pSrcInfo, PALETTEENTRY *pPalette, LPDIRECT3DTEXTURE8 *ppTexture);
 HRESULT WINAPI D3DXLoadSurfaceFromSurface(LPDIRECT3DSURFACE8 pDestSurface, CONST PALETTEENTRY *pDestPalette, CONST RECT *pDestRect, LPDIRECT3DSURFACE8 pSrcSurface, CONST PALETTEENTRY *pSrcPalette, CONST RECT *pSrcRect, DWORD Filter, D3DCOLOR ColorKey);
 HRESULT WINAPI D3DXFilterTexture(LPDIRECT3DBASETEXTURE8 pBaseTexture, CONST PALETTEENTRY *pPalette, UINT SrcLevel, DWORD Filter);
+HRESULT WINAPI D3DXLoadMeshFromX(LPSTR pFilename, DWORD Options, LPDIRECT3DDEVICE8 pD3D,
+                                 LPD3DXBUFFER *ppAdjacency, LPD3DXBUFFER *ppMaterials,
+                                 DWORD *pNumMaterials, LPD3DXMESH *ppMesh);
 
 // Math functions
 D3DXMATRIX* WINAPI D3DXMatrixIdentity(D3DXMATRIX *pOut);
