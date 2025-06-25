@@ -325,4 +325,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   `std::filesystem` directly for directory creation and existence checks.
 - CMake now exports SDL2 include directories for LVGL so SDL.h resolves on macOS.
 - macOS builds now link the LVGL library against the SDL2 framework
-  (`-framework SDL2`) when the SDL backend is enabled.
+- lv_conf.h now defines LV_SDL_INCLUDE_PATH ensuring SDL2 headers are found. README explains installing SDL2 development packages.
