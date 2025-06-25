@@ -298,3 +298,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   library so DirectX 8 calls route through the OpenGL ES translation layer.
 - The microGLES renderer under `lib/u_gles` is built by default. Its `renderer_lib`
   target is aliased as `uGLES` and the Generals executable links this library.
+- DX8 wrapper now enumerates a stub 'microGLES Software Renderer' adapter and exposes a fixed 800x600 display mode so the engine can start without querying real hardware.
