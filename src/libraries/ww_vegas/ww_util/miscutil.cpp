@@ -34,6 +34,34 @@
 #include "mmsys.h"
 #include "ffactory.h"
 
+#ifndef _WIN32
+#include <strings.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+#define stricmp strcasecmp
+#define FILE_ATTRIBUTE_READONLY 0x01
+static inline char *strupr(char *s)
+{
+    for (char *p = s; *p; ++p)
+        *p = static_cast<char>(toupper(static_cast<unsigned char>(*p)));
+    return s;
+}
+
+static inline unsigned long GetFileAttributes(const char *filename)
+{
+    struct stat st;
+    if (stat(filename, &st) == 0) {
+        return (st.st_mode & S_IWUSR) ? 0 : FILE_ATTRIBUTE_READONLY;
+    }
+    return 0xFFFFFFFF;
+}
+static inline void DeleteFile(const char *filename) { unlink(filename); }
+
+struct IMAGE_FILE_HEADER { unsigned int TimeDateStamp; };
+inline bool Get_Image_File_Header(const char *, IMAGE_FILE_HEADER *) { return false; }
+#endif
+
 //
 // cMiscUtil statics 
 //

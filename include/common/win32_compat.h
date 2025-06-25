@@ -12,6 +12,7 @@
 using DWORD = std::uint32_t;
 using WORD  = std::uint16_t;
 using BYTE  = std::uint8_t;
+using HRESULT = std::int32_t;
 using BOOL  = int;
 using LONG  = std::int32_t;
 

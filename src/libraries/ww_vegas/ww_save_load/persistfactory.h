@@ -50,6 +50,7 @@
 #include "chunkio.h"
 #include "wwdebug.h"
 #include "saveload.h"
+#include "persist.h"
 #include <cstdint>
 
 class PersistClass;

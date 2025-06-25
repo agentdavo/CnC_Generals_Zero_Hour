@@ -27,15 +27,13 @@
 #include <sys/types.h>
 #include <sys/timeb.h>
 #include <stdlib.h>
-#include <process.h>
+#include <unistd.h>
 #include <sys/stat.h>
-#include <io.h>
 #include <time.h>
 #include "assert.h"
 #include "ftp.h"
 #include "winsock.h"
-#include <time.h>
-#include <direct.h>
+#include "common/windows.h"
 #include <errno.h>
 //#include "wlib/wstring.h"
 

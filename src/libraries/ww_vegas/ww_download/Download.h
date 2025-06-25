@@ -21,7 +21,7 @@
 #ifndef __DOWNLOAD_H_
 #define __DOWNLOAD_H_
 
-//#include "../resource.h"       // main symbols
+#include "common/windows.h"
 #include "ftp.h"
 #include "downloaddefs.h"
 

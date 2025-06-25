@@ -19,12 +19,19 @@
 // Download.cpp : Implementation of CDownload
 #include "DownloadDebug.h"
 #include "Download.h"
-#include <mmsystem.h>
+#include "common/windows.h"
 #include <assert.h>
-#include <direct.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/stat.h>
+#include <cstring>
+#include <unistd.h>
+
+#ifndef _WIN32
+#define _mkdir(p) mkdir(p, 0755)
+#define _stat stat
+#define MulDiv(a,b,c) ((int)((long long)(a)*(b)/(c)))
+#endif
 
 /////////////////////////////////////////////////////////////////////////////
 // CDownload
