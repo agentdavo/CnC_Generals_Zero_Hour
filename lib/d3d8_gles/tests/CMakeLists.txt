@@ -107,3 +107,11 @@ add_test(NAME rotation_quaternion_test COMMAND rotation_quaternion_test)
 add_executable(shader_constant_test shader_constant_test.c)
 target_link_libraries(shader_constant_test PRIVATE d3d8_to_gles)
 add_test(NAME shader_constant_test COMMAND shader_constant_test)
+
+add_executable(clone_mesh_test clone_mesh_test.c)
+target_link_libraries(clone_mesh_test PRIVATE d3d8_to_gles)
+add_test(NAME clone_mesh_test COMMAND clone_mesh_test)
+
+add_executable(adjacency_optimize_test adjacency_optimize_test.c)
+target_link_libraries(adjacency_optimize_test PRIVATE d3d8_to_gles)
+add_test(NAME adjacency_optimize_test COMMAND adjacency_optimize_test)
