@@ -141,6 +141,8 @@ creates the LVGL window through `LvglPlatform` and enters a simple
 polling loop.  The legacy `WinMain.cpp` remains under `src/Main` but is
 only compiled on Windows targets.
 
+Rendering is now handled by the `d3d8_gles` library which implements the Direct3D 8 runtime on top of OpenGL ES 1.1. SDL windows returned from `LvglPlatform::create_window()` are passed straight into `Direct3DCreate8` so the game continues to use familiar DirectX entry points while the shim draws via EGL.
+
 A new `lvglDevice` directory mirrors the legacy Win32 layout. It currently holds empty source and header files ready for the LVGL-based implementation.
 The first implemented piece is `LvglOSDisplay.cpp` which provides OSDisplayWarningBox() via lv_msgbox.
 `LvglBIGFile.cpp` and `LvglBIGFileSystem.cpp` now port the original BIG archive loader using only standard C++ headers.
