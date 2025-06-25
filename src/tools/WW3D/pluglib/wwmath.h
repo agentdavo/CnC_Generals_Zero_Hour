@@ -42,7 +42,7 @@
 #ifndef WWMATH_H
 #define WWMATH_H
 
-#include "always.h"
+#include <always.h>
 #include <math.h>
 #include <assert.h>
 
@@ -91,7 +91,9 @@ public:
 
 static float		Fabs(float val) { return (float)fabs(val); }
 static float		Sqrt(float val) { return (float)sqrt(val); }
-static float		Inv_Sqrt(float val) { return 1.0f / (float)sqrt(val); }
+static float            Inv_Sqrt(float val) { return 1.0f / (float)sqrt(val); }
+static float            Atan(float x) { return static_cast<float>(atan(x)); }
+static float            Atan2(float y,float x) { return static_cast<float>(atan2(y,x)); }
 static float		Sign(float val);
 static float		Floor(float val) { return (float)floor(val); }
 static bool			Fast_Is_Float_Positive(const float & val);
