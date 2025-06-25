@@ -26,6 +26,10 @@ using LONG  = std::int32_t;
 #define _MAX_PATH MAX_PATH
 #endif
 
+#ifndef FILE_ATTRIBUTE_READONLY
+#define FILE_ATTRIBUTE_READONLY 0x00000001u
+#endif
+
 using HANDLE = void*;
 using HWND   = HANDLE;
 
@@ -48,7 +52,14 @@ static inline DWORD GetCurrentDirectory(DWORD n, char *b) {
 }
 #ifndef GetFileAttributes
 static inline DWORD GetFileAttributes(const char *p) {
-    struct stat st; return stat(p, &st) == 0 ? 0 : 0xFFFFFFFFu;
+    struct stat st;
+    if (stat(p, &st) == 0) {
+        DWORD attr = 0;
+        if (!(st.st_mode & S_IWUSR))
+            attr |= FILE_ATTRIBUTE_READONLY;
+        return attr;
+    }
+    return 0xFFFFFFFFu;
 }
 #endif
 static inline char *_strdup(const char *s) { return strdup(s); }
