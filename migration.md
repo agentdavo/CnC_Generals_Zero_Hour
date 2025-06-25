@@ -167,6 +167,8 @@ are now detected and `convert_lv_key()` translates every key listed in
 `KeyDefs.h`, matching the behaviour of `Win32DIKeyboard`.  The new
 `lvglDevice` library now lives under `src/game_engine_device/lvgl_device` and is
 linked unconditionally from `src/CMakeLists.txt`.
+Caps Lock state is now tracked inside `LvglKeyboard` using `lv_indev_get_key()`
+so text entry mirrors the Win32 behaviour.
 
 Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sensitive buil
 - The W3D device common files (radar, convert and factory helpers) now live under `src/game_engine_device/w3d_device/Common` with their headers available in `include/game_engine_device/w3d_device`. Basic player management classes have been moved to `src/game_engine/common/RTS` and corresponding headers under `include/GameEngine/Common`.
