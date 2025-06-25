@@ -14,9 +14,9 @@ add_executable(sphere_stub_test sphere_stub_test.c)
 target_link_libraries(sphere_stub_test PRIVATE d3d8_to_gles)
 add_test(NAME sphere_stub_test COMMAND sphere_stub_test)
 
-add_executable(cylinder_stub_test cylinder_stub_test.c)
-target_link_libraries(cylinder_stub_test PRIVATE d3d8_to_gles)
-add_test(NAME cylinder_stub_test COMMAND cylinder_stub_test)
+add_executable(cylinder_test cylinder_test.c)
+target_link_libraries(cylinder_test PRIVATE d3d8_to_gles)
+add_test(NAME cylinder_test COMMAND cylinder_test)
 
 add_executable(texture_stage_test texture_stage_test.c)
 target_link_libraries(texture_stage_test PRIVATE d3d8_to_gles)
@@ -37,6 +37,10 @@ add_test(NAME xyzrhw_test COMMAND xyzrhw_test)
 add_executable(adapter_info_test adapter_info_test.c)
 target_link_libraries(adapter_info_test PRIVATE d3d8_to_gles)
 add_test(NAME adapter_info_test COMMAND adapter_info_test)
+
+add_executable(get_adapter_display_mode_test get_adapter_display_mode_test.c)
+target_link_libraries(get_adapter_display_mode_test PRIVATE d3d8_to_gles)
+add_test(NAME get_adapter_display_mode_test COMMAND get_adapter_display_mode_test)
 
 add_executable(tex2_coord_test tex2_coord_test.c)
 target_link_libraries(tex2_coord_test PRIVATE d3d8_to_gles)
