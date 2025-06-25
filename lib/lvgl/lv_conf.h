@@ -7,6 +7,11 @@
 #ifndef LV_USE_SDL
 #define LV_USE_SDL 1
 #endif
+#if LV_USE_SDL
+#ifndef LV_SDL_INCLUDE_PATH
+#define LV_SDL_INCLUDE_PATH <SDL2/SDL.h>
+#endif
+#endif
 #ifndef LV_USE_X11
 #define LV_USE_X11 0
 #endif
