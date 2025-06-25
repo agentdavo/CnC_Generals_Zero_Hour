@@ -13,6 +13,12 @@
 #include "game_engine/common/localfilesystem.h"
 #include "game_engine/common/archivefilesystem.h"
 
+extern "C" {
+#include "gl_init.h"
+#include "gl_thread.h"
+#include "pipeline/gl_framebuffer.h"
+}
+
 static uint32_t window_width = 800;
 static uint32_t window_height = 600;
 
@@ -58,9 +64,33 @@ int main(int argc, char **argv)
     LvglMouse mouse;
     LvglGameEngine engine(&keyboard, &mouse);
 
+    LV_DRAW_BUF_DEFINE_STATIC(frame_buf, window_width, window_height,
+                              LV_COLOR_FORMAT_ARGB8888);
+    LV_DRAW_BUF_INIT_STATIC(frame_buf);
+    lv_obj_t *canvas = lv_canvas_create(lv_screen_active());
+    lv_canvas_set_draw_buf(canvas, &frame_buf);
+    lv_obj_center(canvas);
+
     LOG_INFO("Entering main loop");
     while(true) {
         engine.update();
+        thread_pool_wait();
+        Framebuffer *fb = GL_get_default_framebuffer();
+        if(fb) {
+            lv_color32_t *dst = (lv_color32_t *)frame_buf.data;
+            for(uint32_t y = 0; y < window_height; ++y) {
+                for(uint32_t x = 0; x < window_width; ++x) {
+                    uint32_t p = framebuffer_get_pixel(fb, x, y);
+                    lv_color32_t c;
+                    c.red   = (p >> 16) & 0xFF;
+                    c.green = (p >> 8) & 0xFF;
+                    c.blue  = p & 0xFF;
+                    c.alpha = (p >> 24) & 0xFF;
+                    dst[y * window_width + x] = c;
+                }
+            }
+            lv_obj_invalidate(canvas);
+        }
         LvglPlatform::poll_events();
     }
 
