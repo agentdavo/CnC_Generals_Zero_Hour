@@ -33,7 +33,7 @@
 //
 // Project:    RTS3
 //
-// File name:  C:\projects\RTS\code\gameengine\Include\GameClient\GadgetTabControl.h
+// File name:  game_engine/include/game_client/gadget_tab_control.h
 //
 // Created:    Graham Smallwood, November 2001
 //
