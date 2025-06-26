@@ -46,7 +46,7 @@
 #pragma warning (pop)
 #include "common/windows.h"
 
-//#include <malloc.h>
+//#include <stdlib.h>
 #include "vector3.h"
 #include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "refcount.h"

@@ -65,7 +65,7 @@
 #include <new.h>
 #include <stdio.h>
 #ifdef MEMORYPOOL_OVERRIDE_MALLOC
-	#include <malloc.h>
+        #include <stdlib.h>
 #endif
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
