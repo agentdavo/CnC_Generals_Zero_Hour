@@ -299,6 +299,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - LVGL's X11 backend is now optional. The cmake option `LVGL_USE_X11` defaults to OFF
   and `lv_conf.h` honours compile definitions so backends can be toggled without
   warnings.
+- The build no longer passes `-DLV_USE_X11=1`. `lv_conf.h` sets this flag so the
+  backend can be enabled without compiler warnings.
 - WW3D2 links against the `d3d8_gles` shim and `gameenginedevice` now links this
   library so DirectX 8 calls route through the OpenGL ES translation layer.
 - The microGLES renderer under `lib/u_gles` is built by default. Its `renderer_lib`
