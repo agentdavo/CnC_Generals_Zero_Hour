@@ -41,7 +41,7 @@
 #include "lineseg.h"
 //#include <stdlib.h>
 
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 
 /***********************************************************************************************
  * LineSegClass::Set -- Initialize this 'lineseg' by transforming another 'lineseg'            *

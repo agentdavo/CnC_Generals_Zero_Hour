@@ -73,7 +73,7 @@
 #include "coltest.h"
 #include "inttest.h"
 #include "matrix3.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "assetmgr.h"
 #include "wwstring.h"
 #include "camera.h"

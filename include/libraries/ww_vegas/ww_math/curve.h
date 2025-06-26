@@ -43,7 +43,7 @@
 #define CURVE_H
 
 #ifndef ALWAYS_H
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #endif
 
 #ifndef VECTOR_H

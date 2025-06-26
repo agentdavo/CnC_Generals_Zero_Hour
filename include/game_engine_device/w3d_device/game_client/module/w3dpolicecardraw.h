@@ -34,8 +34,8 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 #include "common/DrawModule.h"
-#include "W3DDevice/game_client/Module/W3DTruckDraw.h"
-#include "W3DDevice/game_client/W3DDynamicLight.h"
+#include "game_engine_device/w3d_device/game_client/module/w3dtruckdraw.h"
+#include "game_engine_device/w3d_device/game_client/w3ddynamiclight.h"
 #include "WW3D2/Line3D.h"
 
 //-------------------------------------------------------------------------------------------------

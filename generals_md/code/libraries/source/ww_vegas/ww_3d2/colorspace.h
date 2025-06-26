@@ -44,7 +44,7 @@
 #define COLORSPACE_H
 
 #include "dx8wrapper.h"
-#include <wwmath.h>
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 
 void RGB_To_HSV(Vector3 &hsv,const Vector3 &rgb);
 void HSV_To_RGB(Vector3 &rgb, const Vector3 &hsv);

@@ -25,7 +25,7 @@
 
 #include "always.h"
 #include "vector3.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "rendobj.h"
 #include "wwstring.h"
 #include "proto.h"

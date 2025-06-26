@@ -56,9 +56,9 @@
 #ifndef SPHERE_H
 #define SPHERE_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "vector3.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 
 
 /////////////////////////////////////////////////////////////////////

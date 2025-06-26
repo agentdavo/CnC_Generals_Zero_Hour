@@ -50,9 +50,9 @@
 
 
 #include "w3dquat.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "matrix4.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 
 #include <stdio.h>
 //#include <iostream.h>

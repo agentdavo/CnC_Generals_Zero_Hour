@@ -23,7 +23,7 @@
 
 #include "stdafx.h"
 #include "resource.h"
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "TerrainModal.h"
 #include "terrainmaterial.h"
 #include "WHeightMapEdit.h"

@@ -56,7 +56,7 @@
 #include <stdio.h>
 #include <hashtemplate.h>
 #include <wwstring.h>
-#include <wwmath.h>
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 
 /*
 ** Class static members:

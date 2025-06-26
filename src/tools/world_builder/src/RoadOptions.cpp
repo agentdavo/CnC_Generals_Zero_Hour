@@ -22,12 +22,12 @@
 
 #include "stdafx.h"
 #include "resource.h"
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "RoadOptions.h"
 #include "CUndoable.h"
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 #include "common/FileSystem.h"
 #include "game_client/TerrainRoads.h"
 

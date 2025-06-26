@@ -42,7 +42,7 @@
 #include "texture.h"
 #include "vertmaterial.h"
 #include "dx8wrapper.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "rinfo.h"
 #include "camera.h"
 #include "dx8indexbuffer.h"

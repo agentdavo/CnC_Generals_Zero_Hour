@@ -42,7 +42,7 @@
 #define __PROXY_H
 
 #include "wwstring.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 
 
 //////////////////////////////////////////////////////////////////////////////////

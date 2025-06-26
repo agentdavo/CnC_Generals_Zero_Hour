@@ -28,7 +28,7 @@
 #include "Lib\BaseType.h"
 #include "../../game_engine/include/common/MapObject.h"
 #include "../../game_engine/include/common/GameCommon.h"
-#include "../../game_engine/include/GameLogic/SidesList.h"
+#include "game_engine/game_logic/sideslist.h"
 #include "RefCount.h"
 #include <vector>
 

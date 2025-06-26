@@ -48,11 +48,11 @@
 #ifndef OBBOX_H
 #define OBBOX_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "vector3.h"
 #include "matrix3.h"
-#include "matrix3d.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "castres.h"
 
 class TriClass;

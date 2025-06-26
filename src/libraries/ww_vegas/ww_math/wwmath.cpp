@@ -44,11 +44,11 @@
 
 // Define missing constants
 #ifndef ARC_TABLE_SIZE
-#define ARC_TABLE_SIZE 2048
+#define ARC_TABLE_SIZE 1024
 #endif
 
 #ifndef SIN_TABLE_SIZE
-#define SIN_TABLE_SIZE 4096
+#define SIN_TABLE_SIZE 1024
 #endif
 
 #ifndef WWMATH_PI

@@ -71,7 +71,7 @@
 #define VECTOR3_H
 
 #include "always.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include <assert.h>
 #ifdef _UNIX
 #include "osdep.h"

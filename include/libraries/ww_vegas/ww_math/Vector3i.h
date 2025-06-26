@@ -42,7 +42,7 @@
 #ifndef VECTOR3I_H
 #define VECTOR3I_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 
 class Vector3i
 {

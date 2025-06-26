@@ -42,7 +42,7 @@
 #ifndef WWMATH_H
 #define WWMATH_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include <math.h>
 #include <float.h>
 #include <assert.h>

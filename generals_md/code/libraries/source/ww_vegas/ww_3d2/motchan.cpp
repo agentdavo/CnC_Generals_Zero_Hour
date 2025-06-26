@@ -48,9 +48,9 @@
 #include "w3d_file.h"
 #include "chunkio.h"
 #include "vector.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "quat.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 //#include <stdio.h>
 //#include "common/windows.h"
 // Static Table, for Adaptive Delta Decompressor

@@ -21,7 +21,7 @@
 
 #include "stdafx.h"
 #include "resource.h"
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "LightOptions.h"
 #include "WorldBuilderView.h"
 #include "WorldBuilderDoc.h"

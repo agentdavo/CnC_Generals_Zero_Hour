@@ -44,7 +44,7 @@
 #define SR_UTIL_H
 
 #include "always.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "vector3i.h"
 
 #include <srVector3i.hpp>

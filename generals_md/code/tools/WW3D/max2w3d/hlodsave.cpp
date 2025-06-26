@@ -48,7 +48,7 @@
 #include "errclass.h"
 #include "util.h"
 #include "w3dappdata.h"
-#include "wwmath.h"	// NO_MAX_SCREEN_SIZE
+#include "libraries/ww_vegas/ww_math/wwmath.h" // NO_MAX_SCREEN_SIZE
 #include "exportlog.h"
 
 

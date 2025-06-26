@@ -42,7 +42,7 @@
 #ifndef PLANE_H
 #define PLANE_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "vector3.h"
 #include "sphere.h"
 

@@ -23,7 +23,7 @@
 #include "resource.h"
 
 #include "ImpassableOptions.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 #include "WbView3d.h"
 #include "WorldBuilderDoc.h"
 

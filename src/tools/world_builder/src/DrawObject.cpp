@@ -31,11 +31,11 @@
 #include <rinfo.h>
 #include <camera.h>
 #include "common/globaldata.h"
-#include "W3DDevice/GameClient/WorldHeightMap.h"
-#include "W3DDevice/GameClient/TerrainTex.h"
-#include "W3DDevice/GameClient/HeightMap.h"
-#include "W3DDevice/GameClient/W3DAssetManager.h"
-#include "W3DDevice/GameClient/W3DWater.h"
+#include "game_engine_device/w3d_device/game_client/worldheightmap.h"
+#include "game_engine_device/w3d_device/game_client/terraintex.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
+#include "game_engine_device/w3d_device/game_client/w3dassetmanager.h"
+#include "game_engine_device/w3d_device/game_client/w3dwater.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "WW3D2/Mesh.h"
 #include "WW3D2/MeshMdl.h"

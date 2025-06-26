@@ -42,11 +42,11 @@
 #ifndef QUAT_H
 #define QUAT_H
 
-#include "always.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "matrix3.h"
 #include "vector3.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 
 
 class Quaternion

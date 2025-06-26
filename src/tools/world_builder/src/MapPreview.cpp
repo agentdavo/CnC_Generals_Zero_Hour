@@ -52,7 +52,7 @@
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "MapPreview.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 #include "common/MapReaderWriterInfo.h"
 #include "common/FileSystem.h"
 #include "ww_lib/targa.h"

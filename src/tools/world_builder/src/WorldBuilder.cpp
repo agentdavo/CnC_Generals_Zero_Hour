@@ -33,7 +33,7 @@
 #include "WbView3d.h"
 
 //#include <wsys/StdFileSystem.h>
-#include "W3DDevice/GameClient/W3DFileSystem.h"
+#include "game_engine_device/w3d_device/game_client/w3dfilesystem.h"
 #include "common/globaldata.h"
 #include "WHeightMapEdit.h"
 //#include "common/GameFileSystem.h"
@@ -75,7 +75,7 @@
 #include "GameLogic/Locomotor.h"
 
 #include "W3DDevice/common/W3DModuleFactory.h"
-#include "W3DDevice/GameClient/W3DParticleSys.h"
+#include "game_engine_device/w3d_device/game_client/w3dparticlesys.h"
 #include "miles_audio_device/miles_audio_manager.h"
 
 #include <io.h>

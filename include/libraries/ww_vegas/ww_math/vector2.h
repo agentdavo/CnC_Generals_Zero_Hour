@@ -56,8 +56,8 @@
 #ifndef VECTOR2_H
 #define VECTOR2_H
 
-#include "always.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include <cmath>
 
 

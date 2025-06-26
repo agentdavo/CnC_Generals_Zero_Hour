@@ -45,7 +45,7 @@
 #include "always.h"
 #include "pivot.h"
 #include "quat.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "vector3.h"
 #include "w3d_file.h"
 #include "wwdebug.h"

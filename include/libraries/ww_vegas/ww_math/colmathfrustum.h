@@ -44,7 +44,7 @@
 #ifndef COLMATHFRUSTUM_H
 #define COLMATHFRUSTUM_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "aabox.h"
 #include "vector3.h"
 #include "lineseg.h"

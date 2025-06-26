@@ -35,7 +35,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include <stdlib.h>
 
 /*
