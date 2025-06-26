@@ -37,7 +37,8 @@
 // MBL Update for CNC3 INCURSION - 10.23.2002 - Expanded param handling, Added STOP command
 //
 
-#include <string.h>	// stricmp()
+#include <string.h>     // stricmp()
+#include "common/windows.h"
 #include "animatedsoundmgr.h"
 #include "game_engine/common/ini.h"
 #include "inisup.h"

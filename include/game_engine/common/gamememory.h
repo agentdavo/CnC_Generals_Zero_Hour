@@ -71,7 +71,7 @@
 // USER INCLUDES //////////////////////////////////////////////////////////////
 
 #include "lib/base_type.h"
-#include "common/debug.h"
+#include "game_engine/common/debug.h"
 #include "common/errors.h"
 
 // MACROS //////////////////////////////////////////////////////////////////
@@ -857,6 +857,7 @@ extern void userMemoryManagerInitPools();
 extern void userMemoryAdjustPoolSize(const char *poolName, Int& initialAllocationCount, Int& overflowAllocationCount);
 
 #ifdef __cplusplus
+#ifdef _WIN32
 
 #ifndef _OPERATOR_NEW_DEFINED_
 
@@ -881,7 +882,8 @@ extern void userMemoryAdjustPoolSize(const char *poolName, Int& initialAllocatio
 	inline void* __cdecl operator new[]						(size_t s, void *p) { return p; }
 	inline void __cdecl operator delete[]					(void *, void *p)		{ }
 
-#endif
+#endif // _OPERATOR_NEW_DEFINED_
+#endif // _WIN32
 
 #ifdef MEMORYPOOL_DEBUG_CUSTOM_NEW
 	#define MSGNEW(MSG)		new(MSG, 0)

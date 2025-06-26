@@ -31,7 +31,7 @@
 #ifndef __CRCDEBUG_H__
 #define __CRCDEBUG_H__
 
-#include "common/debug.h"
+#include "game_engine/common/debug.h"
 
 #ifndef NO_DEBUG_CRC
 	#ifdef DEBUG_LOGGING

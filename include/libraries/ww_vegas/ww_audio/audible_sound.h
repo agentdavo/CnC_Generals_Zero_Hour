@@ -44,6 +44,7 @@
 #pragma warning (push, 3)
 #include "mss.h"
 #pragma warning (pop)
+#include "common/windows.h"
 
 //#include <malloc.h>
 #include "vector3.h"

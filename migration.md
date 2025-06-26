@@ -352,6 +352,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - SDL2 detection now falls back to pkg-config when the CMake configuration is missing, improving compatibility with minimal distributions.
 - Added portable `strupr` and `strlwr` implementations in `windows.h` and renamed
   `INI.H` to `ini.h` to continue the snake_case cleanup.
-- Updated wwdebug headers to include 'game_engine/common/debug.h' and added a compatibility stub under 'include/gameengine/include/common'.
+- Updated wwdebug headers to include 'game_engine/common/debug.h'.
 - CMake subprojects no longer override the standard. All targets now
   compile as C++11 so compile commands use `-std=gnu++11` consistently.
