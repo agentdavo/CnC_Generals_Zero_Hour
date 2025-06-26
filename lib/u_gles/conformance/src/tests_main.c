@@ -41,6 +41,8 @@ int main(int argc, char **argv)
 		return -1;
 	}
 	int cd = chdir("conformance");
+	if (cd != 0)
+		cd = chdir("lib/u_gles/conformance");
 	(void)cd;
 	if (!memory_tracker_init()) {
 		LOG_FATAL("Failed to init Memory Tracker.");

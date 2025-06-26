@@ -155,12 +155,12 @@ static int worker_thread_main(void *arg)
 		uint64_t tail = atomic_load_explicit(&local_queue->tail,
 						     memory_order_acquire);
 		if (head < tail) {
-			uint64_t new_tail = tail - 1;
-			uint64_t slot = new_tail % LOCAL_QUEUE_SIZE;
+			uint64_t slot = head % LOCAL_QUEUE_SIZE;
 			task_t task = local_queue->entries[slot];
-			if (task.token == new_tail) {
+			if (task.token == head) {
+				uint64_t new_head = head + 1;
 				if (atomic_compare_exchange_strong_explicit(
-					    &local_queue->tail, &tail, new_tail,
+					    &local_queue->head, &head, new_head,
 					    memory_order_release,
 					    memory_order_relaxed)) {
 					if (profiling) {
