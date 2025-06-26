@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <stdlib.h>
 #include <d3d8_to_gles.h>
 
 int main(void) {
