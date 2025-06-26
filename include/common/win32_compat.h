@@ -11,6 +11,12 @@
 #ifndef _cdecl
 #define _cdecl
 #endif
+#ifndef __stdcall
+#define __stdcall
+#endif
+#ifndef _stdcall
+#define _stdcall
+#endif
 
 using DWORD = std::uint32_t;
 using WORD  = std::uint16_t;
