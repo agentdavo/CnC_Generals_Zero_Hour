@@ -63,7 +63,7 @@
 //#include <stdio.h>
 #include "vector3.h"
 #include "matrix3.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "quat.h"
 #include "D3dx8math.h"
 

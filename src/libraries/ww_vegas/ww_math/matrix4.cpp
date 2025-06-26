@@ -40,7 +40,7 @@
  *   Matrix4x4::Multiply -- Multiply a Matrix4x4 * Matrix3D                                        *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include <assert.h>
 
 /***********************************************************************************************

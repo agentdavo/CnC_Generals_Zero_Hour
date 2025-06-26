@@ -485,8 +485,9 @@ class DynamicVectorClass : public VectorClass<T>
 		int Count(void) const {return(ActiveCount);};
 
 		// Add object to vector (growing as necessary).
-		bool Add(T const & object);
-		bool Add_Head(T const & object);
+               bool Add(T const & object);
+               bool Add_Head(T const & object);
+               bool Insert(int index, T const & object);
 
 		// Delete object just like this from vector.
 		bool Delete(T const & object);
@@ -590,11 +591,11 @@ DynamicVectorClass<T>::DynamicVectorClass(unsigned size, T const * array)
 template<class T>
 bool DynamicVectorClass<T>::Resize(int newsize, T const * array)
 {
-	if (VectorClass<T>::Resize(newsize, array)) {
-		if (Length() < ActiveCount) ActiveCount = Length();
-		return(true);
-	}
-	return(false);
+       if (VectorClass<T>::Resize(newsize, array)) {
+               if (this->Length() < ActiveCount) ActiveCount = this->Length();
+               return(true);
+       }
+       return(false);
 }
 
 
@@ -646,9 +647,9 @@ int DynamicVectorClass<T>::ID(T const & object)
 template<class T>
 bool DynamicVectorClass<T>::Add(T const & object)
 {
-	if (ActiveCount >= Length()) {
-		if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
-			if (!Resize(Length() + GrowthStep)) {
+       if (ActiveCount >= this->Length()) {
+               if ((this->IsAllocated || !this->VectorMax) && GrowthStep > 0) {
+                       if (!this->Resize(this->Length() + GrowthStep)) {
 
 				/*
 				**	Failure to increase the size of the vector is an error condition.
@@ -692,9 +693,9 @@ bool DynamicVectorClass<T>::Add(T const & object)
 template<class T>
 bool DynamicVectorClass<T>::Add_Head(T const & object)
 {
-	if (ActiveCount >= Length()) {
-		if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
-			if (!Resize(Length() + GrowthStep)) {
+       if (ActiveCount >= this->Length()) {
+               if ((this->IsAllocated || !this->VectorMax) && GrowthStep > 0) {
+                       if (!this->Resize(this->Length() + GrowthStep)) {
 
 				/*
 				**	Failure to increase the size of the vector is an error condition.
@@ -721,7 +722,44 @@ bool DynamicVectorClass<T>::Add_Head(T const & object)
 	(*this)[0] = object;
 	ActiveCount++;
 //	(*this)[ActiveCount++] = object;
-	return(true);
+       return(true);
+}
+
+template<class T>
+bool DynamicVectorClass<T>::Insert(int index, T const & object)
+{
+       if (index < 0) return false;
+       if (index > ActiveCount) return false;
+
+       if (ActiveCount >= this->Length()) {
+               if ((this->IsAllocated || !this->VectorMax) && GrowthStep > 0) {
+                       if (!this->Resize(this->Length() + GrowthStep)) {
+
+                               /*
+                               **      Failure to increase the size of the vector is an error condition.
+                               **      Return with the error flag.
+                               */
+                               return(false);
+                       }
+               } else {
+
+                       /*
+                       **      Increasing the size of this vector is not allowed! Bail this
+                       **      routine with the error code.
+                       */
+                       return(false);
+               }
+       }
+
+       /*
+       **      There is room for the new object now. Add it at the desired position.
+       */
+       if (index < ActiveCount) {
+               memmove(&(*this)[index+1], &(*this)[index], (ActiveCount-index) * sizeof(T));
+       }
+       (*this)[index] = object;
+       ActiveCount++;
+       return(true);
 }
 
 
@@ -812,9 +850,9 @@ bool DynamicVectorClass<T>::Delete(int index)
 template<class T>
 T * DynamicVectorClass<T>::Uninitialized_Add(void)
 {
-	if (ActiveCount >= Length()) {
-		if ((IsAllocated || !VectorMax) && GrowthStep > 0) {
-			if (!Resize(Length() + GrowthStep)) {
+       if (ActiveCount >= this->Length()) {
+               if ((this->IsAllocated || !this->VectorMax) && GrowthStep > 0) {
+                       if (!this->Resize(this->Length() + GrowthStep)) {
 
 				/*
 				**	Failure to increase the size of the vector is an error condition.

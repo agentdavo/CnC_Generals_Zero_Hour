@@ -76,11 +76,11 @@ inline PlaneClass::PlaneClass(const Vector3 & normal,const Vector3 & point)
 
 inline PlaneClass::PlaneClass(const Vector3 & point1, const Vector3 & point2, const Vector3 & point3) 
 {
-	N = Vector3::Cross_Product((point2 - point1), (point3 - point1));
-	if (N != Vector3(0.0f, 0.0f, 0.0f)) {
-		// Points are not colinear. Normalize N and calculate D.
-		N.Normalize();
-		D = N * point1;
+       Vector3::Cross_Product((point2 - point1), (point3 - point1), &N);
+       if (N != Vector3(0.0f, 0.0f, 0.0f)) {
+               // Points are not colinear. Normalize N and calculate D.
+               N.Normalize();
+               D = Vector3::Dot_Product(N, point1);
 	} else {
 		// They are colinear - return default plane (constructors can't fail).
 		N = Vector3(0.0f, 0.0f, 1.0f);
@@ -90,8 +90,8 @@ inline PlaneClass::PlaneClass(const Vector3 & point1, const Vector3 & point2, co
 
 inline bool In_Front(const Vector3 & point,const PlaneClass & plane)
 {
-	double dist = point * plane.N;
-	return (dist > plane.D);
+       double dist = Vector3::Dot_Product(point, plane.N);
+       return (dist > plane.D);
 }
 
 

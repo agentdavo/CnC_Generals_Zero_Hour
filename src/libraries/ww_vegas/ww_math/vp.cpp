@@ -40,7 +40,7 @@
 #include "vector3.h"
 #include "vector4.h"
 #include "matrix3d.h"
-#include "matrix4.h"
+#include "libraries/ww_vegas/ww_math/matrix4.h"
 #include "wwdebug.h"
 #include "cpudetect.h"
 #include <memory.h>
