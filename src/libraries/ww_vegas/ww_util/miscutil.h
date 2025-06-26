@@ -35,7 +35,7 @@
 	#include "always.h"
 #endif
 
-#include	"bittype.h"
+#include "libraries/ww_vegas/ww_lib/bittype.h"
 #include	"wwstring.h"
 
 const float MISCUTIL_EPSILON = 0.0001f;

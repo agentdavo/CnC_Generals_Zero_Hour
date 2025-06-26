@@ -40,7 +40,7 @@
 #include "wwdebug.h"
 #include "utils.h"
 #include "realcrc.h"
-#include "sound_buffer.h"
+#include "libraries/ww_vegas/ww_audio/SoundBuffer.h"
 #include "audible_sound.h"
 #include "sound3d.h"
 #include "raw_file.h"

@@ -47,8 +47,8 @@
 #pragma warning (pop)
 
 #include "vector.h"
-#include "sound_buffer.h"
-#include "audio_events.h"
+#include "libraries/ww_vegas/ww_audio/SoundBuffer.h"
+#include "libraries/ww_vegas/ww_audio/audio_events.h"
 #include "wwstring.h"
 
 /////////////////////////////////////////////////////////////////////////////////
