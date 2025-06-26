@@ -40,12 +40,14 @@
 #include <unistd.h>
 
 #define stricmp strcasecmp
+#ifndef HAVE_STRUPR_DECL
 static inline char *strupr(char *s)
 {
     for (char *p = s; *p; ++p)
         *p = static_cast<char>(toupper(static_cast<unsigned char>(*p)));
     return s;
 }
+#endif
 
 static inline unsigned long GetFileAttributes_local(const char *filename)
 {

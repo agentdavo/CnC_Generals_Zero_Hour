@@ -31,7 +31,7 @@
 #ifndef __CRCDEBUG_H__
 #define __CRCDEBUG_H__
 
-#include "common/Debug.h"
+#include "common/debug.h"
 
 #ifndef NO_DEBUG_CRC
 	#ifdef DEBUG_LOGGING

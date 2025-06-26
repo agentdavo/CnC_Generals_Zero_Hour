@@ -33,7 +33,7 @@
 #define SIDESLIST_H
 
 #include "common/Dict.h"
-#include "common/Errors.h"
+#include "common/errors.h"
 #include "common/GameType.h"
 #include "common/Snapshot.h"
 #include "common/gamememory.h"

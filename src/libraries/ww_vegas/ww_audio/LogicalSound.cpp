@@ -33,7 +33,7 @@
 #include "LogicalSound.H"
 #include "ww_audio.h"
 #include "SoundScene.H"
-#include "SoundChunkIDs.h"
+#include "soundchunkids.h"
 #include "persistfactory.h"
 
 
