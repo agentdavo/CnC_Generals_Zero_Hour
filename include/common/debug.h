@@ -1,2 +1,2 @@
 #pragma once
-#include "../game_engine/common/debug.h"
+#include "game_engine/common/debug.h"
