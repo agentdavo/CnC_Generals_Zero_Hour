@@ -2255,11 +2255,11 @@ void PathfindZoneManager::calculateZones( PathfindCell **map, PathfindLayer laye
 {
 #ifdef DEBUG_QPF
 #if defined(DEBUG_LOGGING) 
-	__int64 startTime64;
-	double timeToUpdate=0.0f;
-	__int64 endTime64,freq64;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
-	QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);
+        __int64 startTime64;
+        double timeToUpdate=0.0f;
+        __int64 endTime64,freq64;
+        freq64 = time_utils::frequency_ns();
+        startTime64 = time_utils::ticks_ns();
 #endif
 #endif
 
@@ -2350,8 +2350,8 @@ void PathfindZoneManager::calculateZones( PathfindCell **map, PathfindLayer laye
 	}
 #ifdef DEBUG_QPF
 #if defined(DEBUG_LOGGING)
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-	timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
+        endTime64 = time_utils::ticks_ns();
+        timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
 	DEBUG_LOG(("Time to calculate first %f\n", timeToUpdate));
 #endif
 #endif
@@ -2409,8 +2409,8 @@ void PathfindZoneManager::calculateZones( PathfindCell **map, PathfindLayer laye
 
 #ifdef DEBUG_QPF
 #if defined(DEBUG_LOGGING) 
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-	timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
+        endTime64 = time_utils::ticks_ns();
+        timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
 	DEBUG_LOG(("Time to calculate second %f\n", timeToUpdate));
 #endif
 #endif
@@ -2516,8 +2516,8 @@ void PathfindZoneManager::calculateZones( PathfindCell **map, PathfindLayer laye
 
 #ifdef DEBUG_QPF
 #if defined(DEBUG_LOGGING) 
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-	timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
+        endTime64 = time_utils::ticks_ns();
+        timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
 	DEBUG_LOG(("Time to calculate zones %f, cells %d\n", timeToUpdate, (globalBounds.hi.x-globalBounds.lo.x)*(globalBounds.hi.y-globalBounds.lo.y)));
 #endif
 #endif
@@ -5388,11 +5388,11 @@ void Pathfinder::processPathfindQueue(void)
 #ifdef DEBUG_QPF
 #if defined _DEBUG || defined _INTERNAL
 	Int startTimeMS = ::GetTickCount();
-	__int64 startTime64;
-	double timeToUpdate=0.0f;
-	__int64 endTime64,freq64;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
-	QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);
+        __int64 startTime64;
+        double timeToUpdate=0.0f;
+        __int64 endTime64,freq64;
+        freq64 = time_utils::frequency_ns();
+        startTime64 = time_utils::ticks_ns();
 #endif
 #endif
 
@@ -5434,8 +5434,8 @@ void Pathfinder::processPathfindQueue(void)
 	if (pathsFound>0) {
 #ifdef DEBUG_QPF
 #if defined _DEBUG || defined _INTERNAL
-		QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-		timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
+                endTime64 = time_utils::ticks_ns();
+                timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
 		if (timeToUpdate>0.01f) 
 		{
 			DEBUG_LOG(("%d Pathfind queue: %d paths, %d cells", TheGameLogic->getFrame(), pathsFound, m_cumulativeCellsAllocated));

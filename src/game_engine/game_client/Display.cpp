@@ -215,7 +215,7 @@ void Display::playLogoMovie( AsciiString movieName, Int minMovieLength, Int minC
 	m_currentlyPlayingMovie = movieName;
 	m_movieHoldTime = minMovieLength;
 	m_copyrightHoldTime = minCopyrightLength;
-	m_elapsedMovieTime = timeGetTime();  // we're using time get time becuase legal want's actual "Seconds"
+	m_elapsedMovieTime = time_utils::milliseconds();  // we're using time get time becuase legal want's actual "Seconds"
 	
 	m_videoBuffer = createVideoBuffer();
 	if (	m_videoBuffer == NULL || 
@@ -321,10 +321,10 @@ void Display::update( void )
 					else
 						m_copyrightDisplayString->setFont(TheFontLibrary->getFont("Courier", 
 						TheGlobalLanguageData->adjustFontSize(12), TRUE));	
-					m_elapsedCopywriteTime = timeGetTime();
+					m_elapsedCopywriteTime = time_utils::milliseconds();
 				}
-				if(m_movieHoldTime + m_elapsedMovieTime < timeGetTime() && 
-						m_copyrightHoldTime + m_elapsedCopywriteTime < timeGetTime())
+				if(m_movieHoldTime + m_elapsedMovieTime < time_utils::milliseconds() && 
+						m_copyrightHoldTime + m_elapsedCopywriteTime < time_utils::milliseconds())
 				{
 					m_movieHoldTime = -1;
 					m_elapsedMovieTime = 0;

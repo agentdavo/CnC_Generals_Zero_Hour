@@ -1319,7 +1319,7 @@ void WOLGameSetupMenuInit( WindowLayout *layout, void *userData )
 	WOLPositionStartSpots();
 
 	lastSlotlistTime = 0;
-	enterTime = timeGetTime();
+	enterTime = time_utils::milliseconds();
 
 	// Set Keyboard to chat entry
 	TheWindowManager->winSetFocus( textEntryChat );
@@ -1484,7 +1484,7 @@ void WOLGameSetupMenuUpdate( WindowLayout * layout, void *userData)
 
 		Bool isHosting = TheGameSpyInfo->amIHost(); // only while in game setup screen
 		isHosting = isHosting || (TheGameSpyGame && TheGameSpyGame->isInGame() && TheGameSpyGame->amIHost()); // while in game
-		if (!isHosting && !lastSlotlistTime && timeGetTime() > enterTime + 10000)
+		if (!isHosting && !lastSlotlistTime && time_utils::milliseconds() > enterTime + 10000)
 		{
 			// don't do this if we're disconnected
 			if (TheGameSpyPeerMessageQueue->isConnected())
@@ -1898,7 +1898,7 @@ void WOLGameSetupMenuUpdate( WindowLayout * layout, void *userData)
 							newMapCRC = game->getMapCRC();
 							if (isInGame)
 							{
-								lastSlotlistTime = timeGetTime();
+								lastSlotlistTime = time_utils::milliseconds();
 								if ( (oldMapCRC ^ newMapCRC) || (!wasInGame && isInGame) )
 								{
 									// it changed.  send it

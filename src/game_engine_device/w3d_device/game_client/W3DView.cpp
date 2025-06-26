@@ -827,11 +827,11 @@ void W3DView::update(void)
 	Bool recalcCamera = false;
 	Bool didScriptedMovement = false;
 #ifdef LOG_FRAME_TIMES
-	__int64 curTime64, freq64;
-	static __int64 prevTime64 = 0;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
-	QueryPerformanceCounter((LARGE_INTEGER *)&curTime64);
-	freq64 /= 1000;
+    __int64 curTime64, freq64;
+    static __int64 prevTime64 = 0;
+    freq64 = time_utils::frequency_ns();
+    curTime64 = time_utils::ticks_ns();
+    freq64 /= 1000;
 
 	Int elapsedTimeMs = (curTime64 - prevTime64) / freq64;
 	prevTime64 = curTime64;

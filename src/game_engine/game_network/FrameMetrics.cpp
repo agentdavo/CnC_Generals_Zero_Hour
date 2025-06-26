@@ -88,7 +88,7 @@ void FrameMetrics::reset() {
 
 void FrameMetrics::doPerFrameMetrics(UnsignedInt frame) {
 	// Do the measurement of the fps.
-	time_t curTime = timeGetTime();
+	time_t curTime = time_utils::milliseconds();
 	if ((curTime - m_lastFpsTimeThing) >= 1000) {
 //		if ((m_fpsListIndex % 16) == 0) {
 //			DEBUG_LOG(("FrameMetrics::doPerFrameMetrics - adding %f to fps history. average before: %f ", m_fpsList[m_fpsListIndex], m_averageFps));
@@ -109,7 +109,7 @@ void FrameMetrics::doPerFrameMetrics(UnsignedInt frame) {
 }
 
 void FrameMetrics::processLatencyResponse(UnsignedInt frame) {
-	time_t curTime = timeGetTime();
+	time_t curTime = time_utils::milliseconds();
 	Int pendingIndex = frame % MAX_FRAMES_AHEAD;
 	time_t timeDiff = curTime - m_pendingLatencies[pendingIndex];
 

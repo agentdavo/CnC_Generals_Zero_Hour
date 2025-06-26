@@ -344,7 +344,7 @@ HRESULT CDownload::PumpMessages()
 		if( m_TimeStarted == 0 )
 		{
 			// This is the first time through here - record the starting time.
-			m_TimeStarted = timeGetTime();
+			m_TimeStarted = time_utils::milliseconds();
 		}
 
 		if( iResult == FTP_SUCCEEDED )
@@ -364,7 +364,7 @@ HRESULT CDownload::PumpMessages()
 		// Calculate time taken so far, and predict how long there is left.
 		// The prediction returned is the average of the last 8 predictions.
 
-		timetaken = ( timeGetTime() - m_TimeStarted ) / 1000;
+		timetaken = ( time_utils::milliseconds() - m_TimeStarted ) / 1000;
 
 		//////////if( m_BytesRead > 0 ) // NAK - RP said this is wrong
       if( ( m_BytesRead - m_StartPosition ) > 0 )

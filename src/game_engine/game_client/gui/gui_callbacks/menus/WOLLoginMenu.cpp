@@ -870,7 +870,7 @@ void WOLLoginMenuUpdate( WindowLayout * layout, void *userData)
 		checkLogin();
 	}
 
-	if (TheGameSpyInfo && !buttonPushed && loginAttemptTime && (loginAttemptTime + loginTimeoutInMS < timeGetTime()))
+	if (TheGameSpyInfo && !buttonPushed && loginAttemptTime && (loginAttemptTime + loginTimeoutInMS < time_utils::milliseconds()))
 	{
 		// timed out a login attempt, so say so
 		loginAttemptTime = 0;
@@ -1252,7 +1252,7 @@ WindowMsgHandledType WOLLoginMenuSystem( GameWindow *window, UnsignedInt msg,
 
 						if ( !email.isEmpty() && !login.isEmpty() && !password.isEmpty() )
 						{
-							loginAttemptTime = timeGetTime();
+							loginAttemptTime = time_utils::milliseconds();
 							BuddyRequest req;
 							req.buddyRequestType = BuddyRequest::BUDDYREQUEST_LOGINNEW;
 							strcpy(req.arg.login.nick, login.str());
@@ -1341,7 +1341,7 @@ WindowMsgHandledType WOLLoginMenuSystem( GameWindow *window, UnsignedInt msg,
 
 						if ( !email.isEmpty() && !login.isEmpty() && !password.isEmpty() )
 						{
-							loginAttemptTime = timeGetTime();
+							loginAttemptTime = time_utils::milliseconds();
 							BuddyRequest req;
 							req.buddyRequestType = BuddyRequest::BUDDYREQUEST_LOGIN;
 							strcpy(req.arg.login.nick, login.str());
@@ -1405,7 +1405,7 @@ WindowMsgHandledType WOLLoginMenuSystem( GameWindow *window, UnsignedInt msg,
 
 						if ( !login.isEmpty() )
 						{
-							loginAttemptTime = timeGetTime();
+							loginAttemptTime = time_utils::milliseconds();
 							PeerRequest req;
 							req.peerRequestType = PeerRequest::PEERREQUEST_LOGIN;
 							req.nick = login.str();

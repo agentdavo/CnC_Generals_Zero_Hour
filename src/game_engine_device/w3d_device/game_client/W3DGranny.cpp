@@ -1056,7 +1056,7 @@ void GrannyRenderObjClassSystem::shutdown( void )
 void GrannyRenderObjClassSystem::update()
 {
 
-	Int		iTime=timeGetTime();
+	Int		iTime=time_utils::milliseconds();
 }
 
 

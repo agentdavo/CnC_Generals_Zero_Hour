@@ -530,8 +530,8 @@ void GameClient::update( void )
 				{				
 					legal->hide(FALSE);
 					legal->bringForward();
-					Int beginTime = timeGetTime();
-					while(beginTime + 4000 > timeGetTime() )
+					Int beginTime = time_utils::milliseconds();
+					while(beginTime + 4000 > time_utils::milliseconds() )
 					{
 						TheWindowManager->update();
 						// redraw all views, update the GUI

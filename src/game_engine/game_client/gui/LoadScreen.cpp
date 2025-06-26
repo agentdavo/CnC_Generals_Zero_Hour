@@ -563,7 +563,7 @@ void SinglePlayerLoadScreen::init( GameInfo *game )
 		}
 		
 		Int delay = mission->m_voiceLength * 1000;
-		Int begin = timeGetTime();
+		Int begin = time_utils::milliseconds();
 		Int currTime = begin;
 		Int fudgeFactor = 0;
 		while(begin + delay > currTime )
@@ -574,7 +574,7 @@ void SinglePlayerLoadScreen::init( GameInfo *game )
 			TheWindowManager->update();
 			TheDisplay->draw();
 			Sleep(100);
-			currTime = timeGetTime();
+			currTime = time_utils::milliseconds();
 		}
 		
 
@@ -708,8 +708,8 @@ void ShellGameLoadScreen::init( GameInfo *game )
 			win->winHide(FALSE);
 		firstLoad = FALSE;
 
-		UnsignedInt showTime = timeGetTime();
-		while(showTime + 3000 > timeGetTime())
+		UnsignedInt showTime = time_utils::milliseconds();
+		while(showTime + 3000 > time_utils::milliseconds())
 		{	
 			LoadScreen::update(0);
 			Sleep(100);

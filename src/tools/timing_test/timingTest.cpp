@@ -59,11 +59,11 @@ void InitPrecisionTimer()
 		INT64 StartTicks;
 		INT64 EndTicks;
 
-		TimeStart = timeGetTime();
+		TimeStart = time_utils::milliseconds();
 		GetPrecisionTimer(&StartTicks);
 		for (;;)
 		{
-			TimeStop = timeGetTime();
+			TimeStop = time_utils::milliseconds();
 			if ((TimeStop - TimeStart) > 1000)
 			{
 				GetPrecisionTimer(&EndTicks);

@@ -1527,7 +1527,7 @@ void PeerThreadClass::Thread_Function()
 
 #ifdef DEBUG_LOGGING
 					static UnsignedInt prev = 0;
-					UnsignedInt now = timeGetTime();
+					UnsignedInt now = time_utils::milliseconds();
 					UnsignedInt diff = now - prev;
 					prev = now;
 #endif
@@ -1630,7 +1630,7 @@ void PeerThreadClass::Thread_Function()
 							peerLeaveRoom( peer, GroupRoom, NULL );
 						}
 						isThreadHosting = 1; // debugging
-						s_lastStateChangedHeartbeat = timeGetTime(); // wait the full interval before updating state
+						s_lastStateChangedHeartbeat = time_utils::milliseconds(); // wait the full interval before updating state
 						s_wantStateChangedHeartbeat = FALSE;
 						m_isHosting = TRUE;
 						m_allowObservers = incomingRequest.stagingRoomCreation.allowObservers;
@@ -1720,7 +1720,7 @@ void PeerThreadClass::Thread_Function()
 
 		if (isThreadHosting && s_wantStateChangedHeartbeat)
 		{
-			UnsignedInt now = timeGetTime();
+			UnsignedInt now = time_utils::milliseconds();
 			if (now > s_lastStateChangedHeartbeat + s_heartbeatInterval)
 			{
 				s_lastStateChangedHeartbeat = now;
@@ -1729,7 +1729,7 @@ void PeerThreadClass::Thread_Function()
 
 #ifdef DEBUG_LOGGING
 				static UnsignedInt prev = 0;
-				UnsignedInt now = timeGetTime();
+				UnsignedInt now = time_utils::milliseconds();
 				UnsignedInt diff = now - prev;
 				prev = now;
 #endif

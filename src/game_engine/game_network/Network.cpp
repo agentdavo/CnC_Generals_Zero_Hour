@@ -342,7 +342,7 @@ void Network::init()
 
 	m_localStatus = NETLOCALSTATUS_PREGAME;
 
-	QueryPerformanceFrequency((LARGE_INTEGER *)&m_perfCountFreq);
+    m_perfCountFreq = time_utils::frequency_ns();
 	m_nextFrameTime = 0;
 	m_sawCRCMismatch = FALSE;
 	m_checkCRCsThisFrame = FALSE;
@@ -758,8 +758,7 @@ void Network::endOfGameCheck() {
 }
 
 Bool Network::timeForNewFrame() {
-	__int64 curTime;
-	QueryPerformanceCounter((LARGE_INTEGER *)&curTime);
+    __int64 curTime = time_utils::ticks_ns();
 	__int64 frameDelay = m_perfCountFreq / m_frameRate;
 
 	/*

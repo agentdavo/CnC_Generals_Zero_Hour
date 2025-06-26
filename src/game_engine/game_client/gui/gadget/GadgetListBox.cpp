@@ -825,7 +825,7 @@ WindowMsgHandledType GadgetListBoxInput( GameWindow *window, UnsignedInt msg,
 			}
 			
 			//Bool dblClicked = FALSE;
-			if( list->doubleClickTime + doubleClickTime > timeGetTime() && 
+			if( list->doubleClickTime + doubleClickTime > time_utils::milliseconds() && 
 					(i == oldPos || (oldPos == -1 && ( i>=0 && i<list->endPos ) )) )
 			{
 				int temp;
@@ -854,7 +854,7 @@ WindowMsgHandledType GadgetListBoxInput( GameWindow *window, UnsignedInt msg,
 			{
 				list->selectPos = oldPos;
 			}
-			list->doubleClickTime = timeGetTime();
+			list->doubleClickTime = time_utils::milliseconds();
 			TheWindowManager->winSendSystemMsg( window->winGetOwner(), 
 																					GLM_SELECTED,
 																					(WindowMsgData)window, 

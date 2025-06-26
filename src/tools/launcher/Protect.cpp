@@ -281,7 +281,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 	DebugPrint("Waiting for game (timeout in %.02f seconds)...\n", ((float)((5 * 60) * 1000) * 0.001));
 
 #ifdef _DEBUG
-	unsigned long start = timeGetTime();
+	unsigned long start = time_utils::milliseconds();
 #endif
 
 	HANDLE handles[2];
@@ -290,7 +290,7 @@ void SendProtectMessage(HANDLE process, DWORD threadID)
 	DWORD waitResult = WaitForMultipleObjects(2, &handles[0], FALSE, ((5 * 60) * 1000));
 
 #ifdef _DEBUG
-	unsigned long stop = timeGetTime();
+	unsigned long stop = time_utils::milliseconds();
 #endif
 
 	DebugPrint("WaitResult = %ld (WAIT_OBJECT_0 = %ld)\n", waitResult, WAIT_OBJECT_0);

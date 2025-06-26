@@ -320,7 +320,7 @@ void LANAPI::update( void )
 	if(LANbuttonPushed)
 		return;
 	static const UnsignedInt LANAPIUpdateDelay = 200;
-	UnsignedInt now = timeGetTime();
+	UnsignedInt now = time_utils::milliseconds();
 	
 	if( now > m_lastUpdate + LANAPIUpdateDelay)
 	{
@@ -644,7 +644,7 @@ void LANAPI::RequestGameJoin( LANGameInfo *game, UnsignedInt ip /* = 0 */ )
 	sendMessage(&msg, ip);
 
 	m_pendingAction = ACT_JOIN;
-	m_expiration = timeGetTime() + m_actionTimeout;
+	m_expiration = time_utils::milliseconds() + m_actionTimeout;
 }
 
 void LANAPI::RequestGameJoinDirectConnect(UnsignedInt ipaddress)
@@ -673,7 +673,7 @@ void LANAPI::RequestGameJoinDirectConnect(UnsignedInt ipaddress)
 	sendMessage(&msg, ipaddress);
 
 	m_pendingAction = ACT_JOINDIRECTCONNECT;
-	m_expiration = timeGetTime() + m_actionTimeout;
+	m_expiration = time_utils::milliseconds() + m_actionTimeout;
 }
 
 void LANAPI::RequestGameLeave( void )
@@ -697,7 +697,7 @@ void LANAPI::RequestGameLeave( void )
 	else
 	{
 		m_pendingAction = ACT_LEAVE;
-		m_expiration = timeGetTime() + m_actionTimeout;
+		m_expiration = time_utils::milliseconds() + m_actionTimeout;
 	}
 }
 
@@ -821,7 +821,7 @@ void LANAPI::RequestGameStartTimer( Int seconds )
 	if (m_inLobby || !m_currentGame || m_currentGame->getIP(0) != m_localIP)
 		return;
 
-	UnsignedInt now = timeGetTime();
+	UnsignedInt now = time_utils::milliseconds();
 	m_gameStartTime = now + 1000;
 	m_gameStartSeconds = (seconds) ? seconds - 1 : 0;
 
@@ -923,7 +923,7 @@ void LANAPI::RequestGameCreate( UnicodeString gameName, Bool isDirectConnect )
 	myGame->setMap(mapName);
 	myGame->setIsDirectConnect(isDirectConnect);
 	
-	myGame->setLastHeard(timeGetTime());
+	myGame->setLastHeard(time_utils::milliseconds());
 	m_currentGame = myGame;
 
 /// @todo: Need to initialize the players elsewere.
@@ -1043,7 +1043,7 @@ void LANAPI::RequestSetName( UnicodeString newName )
 	}
 
 	// Set up timer
-	m_lastResendTime = timeGetTime();
+	m_lastResendTime = time_utils::milliseconds();
 
 	if (m_inLobby && m_pendingAction == ACT_NONE)
 	{
@@ -1067,7 +1067,7 @@ void LANAPI::RequestSetName( UnicodeString newName )
 		player->setName(m_name);
 		player->setHost(m_hostName);
 		player->setLogin(m_userName);
-		player->setLastHeard(timeGetTime());
+		player->setLastHeard(time_utils::milliseconds());
 
 		addPlayer(player);
 

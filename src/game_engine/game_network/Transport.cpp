@@ -117,8 +117,8 @@ Bool Transport::init( UnsignedInt ip, UnsignedShort port )
 		return false;
 	
 	int retval = -1;
-	time_t now = timeGetTime();
-	while ((retval != 0) && ((timeGetTime() - now) < 1000)) {
+	time_t now = time_utils::milliseconds();
+	while ((retval != 0) && ((time_utils::milliseconds() - now) < 1000)) {
 		retval = m_udpsock->Bind(ip, port);
 	}
 
@@ -149,7 +149,7 @@ Bool Transport::init( UnsignedInt ip, UnsignedShort port )
 		m_unknownPackets[i] = 0;
 	}
 	m_statisticsSlot = 0;
-	m_lastSecond = timeGetTime();
+	m_lastSecond = time_utils::milliseconds();
 
 	m_port = port;
 
@@ -205,7 +205,7 @@ Bool Transport::doSend() {
 	Bool retval = TRUE;
 
 	// Statistics gathering
-	UnsignedInt now = timeGetTime();
+	UnsignedInt now = time_utils::milliseconds();
 	if (m_lastSecond + 1000 < now)
 	{
 		m_lastSecond = now;
@@ -286,7 +286,7 @@ Bool Transport::doRecv()
 	// Read in anything on our socket
 	sockaddr_in from;
 #if defined(_DEBUG) || defined(_INTERNAL)
-	UnsignedInt now = timeGetTime();
+	UnsignedInt now = time_utils::milliseconds();
 #endif
 
 	TransportMessage incomingMessage;

@@ -49,7 +49,7 @@ void LANAPI::handleRequestLocations( LANMessage *msg, UnsignedInt senderIP )
 		reply.LANMessageType = LANMessage::MSG_LOBBY_ANNOUNCE;
 
 		sendMessage(&reply);
-		m_lastResendTime = timeGetTime();
+		m_lastResendTime = time_utils::milliseconds();
 	}
 	else
 	{
@@ -89,7 +89,7 @@ void LANAPI::handleRequestLocations( LANMessage *msg, UnsignedInt senderIP )
 	player->setName(UnicodeString(msg->name));
 	player->setHost(msg->hostName);
 	player->setLogin(msg->userName);
-	player->setLastHeard(timeGetTime());
+	player->setLastHeard(time_utils::milliseconds());
 
 	addPlayer(player);
 
@@ -121,7 +121,7 @@ void LANAPI::handleGameAnnounce( LANMessage *msg, UnsignedInt senderIP )
 			Bool success = ParseGameOptionsString(game,AsciiString(msg->GameInfo.options));
 			game->setGameInProgress(msg->GameInfo.inProgress);
 			game->setIsDirectConnect(msg->GameInfo.isDirectConnect);
-			game->setLastHeard(timeGetTime());
+			game->setLastHeard(time_utils::milliseconds());
 			if (!success)
 			{
 				// remove from list
@@ -145,7 +145,7 @@ void LANAPI::handleGameAnnounce( LANMessage *msg, UnsignedInt senderIP )
 		Bool success = ParseGameOptionsString(game,AsciiString(msg->GameInfo.options));
 		game->setGameInProgress(msg->GameInfo.inProgress);
 		game->setIsDirectConnect(msg->GameInfo.isDirectConnect);
-		game->setLastHeard(timeGetTime());
+		game->setLastHeard(time_utils::milliseconds());
 		if (!success)
 		{
 			// remove from list
@@ -175,7 +175,7 @@ void LANAPI::handleLobbyAnnounce( LANMessage *msg, UnsignedInt senderIP )
 	player->setName(UnicodeString(msg->name));
 	player->setHost(msg->hostName);
 	player->setLogin(msg->userName);
-	player->setLastHeard(timeGetTime());
+	player->setLastHeard(time_utils::milliseconds());
 
 	addPlayer(player);
 
@@ -342,7 +342,7 @@ void LANAPI::handleRequestJoin( LANMessage *msg, UnsignedInt senderIP )
 						newSlot.setState(SLOT_PLAYER, UnicodeString(msg->name));
 						newSlot.setIP(senderIP);
 						newSlot.setPort(NETWORK_BASE_PORT_NUMBER);
-						newSlot.setLastHeard(timeGetTime());
+						newSlot.setLastHeard(time_utils::milliseconds());
 						newSlot.setSerial(msg->GameToJoin.serial);
 						m_currentGame->setSlot(player,newSlot);
 						DEBUG_LOG(("LANAPI::handleRequestJoin - added player %ls at ip 0x%08x to the game\n", msg->name, senderIP));
@@ -470,7 +470,7 @@ void LANAPI::handleRequestGameLeave( LANMessage *msg, UnsignedInt senderIP )
 					lanPlayer->setName(UnicodeString(m_name));
 					lanPlayer->setHost(m_hostName);
 					lanPlayer->setLogin(m_userName);
-					lanPlayer->setLastHeard(timeGetTime());
+					lanPlayer->setLastHeard(time_utils::milliseconds());
 					addPlayer(lanPlayer);
 
 				}
@@ -579,7 +579,7 @@ void LANAPI::handleChat( LANMessage *msg, UnsignedInt senderIP )
 		if((player=LookupPlayer(senderIP)) != 0)
 		{
 			OnChat(UnicodeString(player->getName()), player->getIP(), UnicodeString(msg->Chat.message), msg->Chat.chatType);
-			player->setLastHeard(timeGetTime());
+			player->setLastHeard(time_utils::milliseconds());
 		}
 	}
 	else

@@ -108,11 +108,11 @@ Bool CopyProtect::notifyLauncher(void)
 	PeekMessage(&msg, NULL, WM_USER, WM_USER, PM_NOREMOVE);
 
 	// Signal launcher to send the beef
-	unsigned long eventTime = (timeGetTime() + 60000);
+	unsigned long eventTime = (time_utils::milliseconds() + 60000);
 
 	HANDLE event = NULL;
 
-	while (timeGetTime() < eventTime)
+	while (time_utils::milliseconds() < eventTime)
 	{
 		event = OpenEvent(EVENT_MODIFY_STATE, TRUE, protectGUID);
 
@@ -131,9 +131,9 @@ Bool CopyProtect::notifyLauncher(void)
 		DEBUG_LOG(("Launcher notified.\n"));
 		DEBUG_LOG(("Waiting for message from launcher.\n"));
 		
-		unsigned long endTime = (timeGetTime() + 10000);
+		unsigned long endTime = (time_utils::milliseconds() + 10000);
 
-		while (timeGetTime() <= endTime)
+		while (time_utils::milliseconds() <= endTime)
 		{
 			if (PeekMessage(&msg, NULL, 0xBEEF, 0xBEEF, PM_REMOVE))
 			{
@@ -141,7 +141,7 @@ Bool CopyProtect::notifyLauncher(void)
 				if (msg.message == 0xBEEF)
 				{
 					DEBUG_LOG(("COPYPROTECTION - Received message from launcher (Elapsed time %ld).\n",
-						(10000 - (endTime - timeGetTime()))));
+						(10000 - (endTime - time_utils::milliseconds()))));
 
 					HANDLE mappedFile = (HANDLE)msg.lParam;
 					s_protectedData = MapViewOfFileEx(mappedFile, FILE_MAP_ALL_ACCESS, 0, 0, 0, NULL);

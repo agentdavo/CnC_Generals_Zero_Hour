@@ -63,7 +63,7 @@ void GetPrecisionTimerTicksPerSec(Int64* t)
 void InitPrecisionTimer()
 {
 #ifdef USE_QPF
-	QueryPerformanceFrequency((LARGE_INTEGER*)&s_ticksPerSec);
+    s_ticksPerSec = time_utils::frequency_ns();
 #else
 	// Init the precision timers
 	Int64 totalTime = 0;
@@ -77,11 +77,11 @@ void InitPrecisionTimer()
 		Int64		   StartTicks;
 		Int64		   EndTicks;
 
-		TimeStart = timeGetTime();
+		TimeStart = time_utils::milliseconds();
 		GetPrecisionTimer(&StartTicks);
 		for(;;)
 		{
-			TimeStop = timeGetTime();
+			TimeStop = time_utils::milliseconds();
 			if ((TimeStop - TimeStart) > 1000)
 			{
 				GetPrecisionTimer(&EndTicks);

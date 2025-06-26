@@ -1121,8 +1121,8 @@ void WOLQuickMatchMenuUpdate( WindowLayout * layout, void *userData)
 		}
 
 #ifdef PERF_TEST
-		UnsignedInt start = timeGetTime();
-		UnsignedInt end = timeGetTime();
+		UnsignedInt start = time_utils::milliseconds();
+		UnsignedInt end = time_utils::milliseconds();
 		std::list<Int> responses;
 		Int numMessages = 0;
 #endif // PERF_TEST
@@ -1382,7 +1382,7 @@ void WOLQuickMatchMenuUpdate( WindowLayout * layout, void *userData)
 		}
 #ifdef PERF_TEST
 		// check performance
-		end = timeGetTime();
+		end = time_utils::milliseconds();
 		UnsignedInt frameTime = end-start;
 		if (frameTime > 100 || responses.size() > 20)
 		{

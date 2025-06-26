@@ -1718,7 +1718,7 @@ void W3DVolumetricShadow::Update()
 	// changes or when the object rotation sufficiently changes
 	//
 
-//	currentTime = timeGetTime();
+//	currentTime = time_utils::milliseconds();
 //	if( currentTime - lastTime >= delay )
 	{
 		pos=m_robj->Get_Position();

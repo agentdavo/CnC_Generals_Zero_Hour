@@ -654,9 +654,9 @@ extern HWND ApplicationHWnd;
 void GameEngine::execute( void )
 {
 	
-	DWORD prevTime = timeGetTime();
+	DWORD prevTime = time_utils::milliseconds();
 #if defined(_DEBUG) || defined(_INTERNAL)
-	DWORD startTime = timeGetTime() / 1000;
+	DWORD startTime = time_utils::milliseconds() / 1000;
 #endif
 
 	// pretty basic for now
@@ -677,7 +677,7 @@ void GameEngine::execute( void )
 				// enter only if in benchmark mode
 				if (TheGlobalData->m_benchmarkTimer > 0)
 				{
-					DWORD currentTime = timeGetTime() / 1000;
+					DWORD currentTime = time_utils::milliseconds() / 1000;
 					if (TheGlobalData->m_benchmarkTimer < currentTime - startTime)
 					{
 						if (TheGameLogic->isInGame())
@@ -735,12 +735,12 @@ void GameEngine::execute( void )
 		#endif
 
 					// limit the framerate
-					DWORD now = timeGetTime();
+					DWORD now = time_utils::milliseconds();
 					DWORD limit = (1000.0f/m_maxFPS)-1;
 					while (TheGlobalData->m_useFpsLimit && (now - prevTime) < limit) 
 					{
 						::Sleep(0);
-						now = timeGetTime();
+						now = time_utils::milliseconds();
 					}
 					//Int slept = now - prevTime;
 					//DEBUG_LOG(("delayed %d\n",slept));
