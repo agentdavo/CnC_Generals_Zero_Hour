@@ -33,7 +33,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include "LogicalListener.H"
-#include "WWAudio.h"
+#include "ww_audio.h"
 #include "SoundScene.H"
 #include "SoundChunkIDs.h"
 #include "persistfactory.h"

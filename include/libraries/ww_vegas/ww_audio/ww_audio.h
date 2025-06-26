@@ -43,12 +43,12 @@
 
 #include "always.h"
 #pragma warning (push, 3)
-#include "Mss.H"
+#include "mss.h"
 #pragma warning (pop)
 
 #include "vector.h"
-#include "SoundBuffer.H"
-#include "AudioEvents.H"
+#include "sound_buffer.h"
+#include "audio_events.h"
 #include "wwstring.h"
 
 /////////////////////////////////////////////////////////////////////////////////

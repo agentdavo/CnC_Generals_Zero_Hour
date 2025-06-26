@@ -36,11 +36,11 @@
 
 #include "always.h"
 #include "common/windows.h"
-#include "WWAudio.h"
+#include "ww_audio.h"
 #include "WWDebug.H"
 #include "Utils.H"
 #include "RealCRC.H"
-#include "SoundBuffer.H"
+#include "sound_buffer.h"
 #include "AudibleSound.H"
 #include "Sound3D.H"
 #include "RawFile.H"

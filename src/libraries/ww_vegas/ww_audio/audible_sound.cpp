@@ -35,8 +35,8 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-#include "AudibleSound.h"
-#include "wwaudio.h"
+#include "audible_sound.h"
+#include "ww_audio.h"
 #include "ww3d.h"
 #include "wwdebug.h"
 #include "soundbuffer.h"

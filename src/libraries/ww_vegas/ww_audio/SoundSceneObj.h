@@ -40,7 +40,7 @@
 #define __SOUND_SCENE_OBJ_H
 
 #include "refcount.h"
-#include "WWAudio.h"
+#include "ww_audio.h"
 #include "BitType.H"
 #include "persist.h"
 #include "multilist.h"
