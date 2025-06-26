@@ -36,9 +36,9 @@
 
 
 #include "soundrobj.h"
-#include "AudibleSound.h"
+#include "audible_sound.h"
 #include "sound3d.h"
-#include "wwaudio.h"
+#include "ww_audio.h"
 #include "ffactory.h"
 #include "wwfile.h"
 #include "chunkio.h"

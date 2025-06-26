@@ -22,7 +22,7 @@
  *                                                                                             *
  *                 Project Name : WWAudio                                                      *
  *                                                                                             *
- *                     $Archive:: /Commando/Code/WWAudio/AudibleSound.h                       $*
+ *                     $Archive:: /Commando/Code/WWAudio/audible_sound.h                       $*
  *                                                                                             *
  *                       Author:: Patrick Smith                                                *
  *                                                                                             *

@@ -844,5 +844,6 @@ WWINLINE void	Matrix4x4::Transform_Vector(const Matrix4x4 & A,const Vector4 & in
 	out->W = (A[3][0] * v->X + A[3][1] * v->Y + A[3][2] * v->Z + A[3][3] * v->W);
 }
 
+typedef Matrix4x4 Matrix4;
 
 #endif /*MATRIX4_H*/
