@@ -47,7 +47,7 @@
 #include "texture.h"
 #include "ww3dformat.h"
 #include <vp.h>
-#include <common/ini.h>
+#include "libraries/ww_vegas/ww_lib/ini.h"
 #include <point.h>
 #include <stdio.h>
 #include <hashtemplate.h>

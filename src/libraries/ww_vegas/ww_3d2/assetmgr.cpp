@@ -106,10 +106,9 @@
 #include "dx8renderer.h"
 #include "metalmap.h"
 #include "w3dexclusionlist.h"
-#include <common/ini.h>
+#include "libraries/ww_vegas/ww_lib/ini.h"
 #include "common/windows.h"
 #include <stdio.h>
-#include <D3dx8core.h>
 
 #include "texture.h"
 #include "wwprofile.h"
