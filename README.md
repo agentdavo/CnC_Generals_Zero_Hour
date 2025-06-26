@@ -40,10 +40,11 @@ The quickest way to build all configurations in the project is to open `rts.dsw`
 If you wish to compile the code under a modern version of Microsoft Visual Studio, you can convert the legacy project file to a modern MSVC solution by opening `rts.dsw` in Microsoft Visual Studio .NET 2003, and then opening the newly created project and solution file in MSVC 2015 or newer.
 
 ## CMake Build (Experimental)
-You can try building a minimal stub using CMake:
-```
-cmake -S . -B build
-cmake --build build
+You can try building a minimal stub using CMake. Install the build prerequisites
+first (for example `sudo apt install build-essential cmake libsdl2-dev
+libgl1-mesa-dev` on Debian-based systems). Run:
+```bash
+cmake -S . -B build && cmake --build build
 ```
 This will compile a placeholder executable while migration is in progress.
 You can redirect the output to a log file if desired, but it is not required.
