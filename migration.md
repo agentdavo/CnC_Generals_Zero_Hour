@@ -293,6 +293,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - lvgl_hello now selects the SDL backend by default, improving rendering on macOS.
 - Added d3d8_triangle example showing the DirectX 8 shim. It opens an SDL window via LvglPlatform and renders a rotating coloured triangle using D3D8 calls.
 - Updated CPU detection code for non-Windows builds and replaced Windows headers with portable stubs.
+- CPU detection now uses <cpuid.h> on Unix-like systems and guards all
+  Windows-only assembly with `_WIN32` checks.
 - Standardised Vegas WW list headers to snake case.
 - LVGL's X11 backend is now optional. The cmake option `LVGL_USE_X11` defaults to OFF
   and `lv_conf.h` honours compile definitions so backends can be toggled without
@@ -349,3 +351,5 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - Added portable `strupr` and `strlwr` implementations in `windows.h` and renamed
   `INI.H` to `ini.h` to continue the snake_case cleanup.
 - Updated wwdebug headers to include 'game_engine/common/debug.h' and added a compatibility stub under 'include/gameengine/include/common'.
+- CMake subprojects no longer override the standard. All targets now
+  compile as C++11 so compile commands use `-std=gnu++11` consistently.
