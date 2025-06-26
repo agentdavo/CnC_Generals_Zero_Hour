@@ -27,12 +27,18 @@ if(LVGL_USE_SDL)
     find_package(SDL2 CONFIG QUIET)
     if(NOT SDL2_FOUND)
         find_package(PkgConfig REQUIRED)
-        pkg_check_modules(SDL2 REQUIRED sdl2)
+        pkg_check_modules(SDL2 QUIET sdl2)
+        if(NOT SDL2_FOUND)
+            message(FATAL_ERROR "SDL2 development files not found. Install libsdl2-dev or disable LVGL_USE_SDL")
+        endif()
         add_library(SDL2::SDL2 INTERFACE IMPORTED)
         set_target_properties(SDL2::SDL2 PROPERTIES
             INTERFACE_INCLUDE_DIRECTORIES "${SDL2_INCLUDE_DIRS}"
             INTERFACE_LINK_LIBRARIES "${SDL2_LIBRARIES}")
     endif()
+    # Export SDL2 variables so other targets can use them
+    set(SDL2_INCLUDE_DIRS ${SDL2_INCLUDE_DIRS} CACHE STRING "SDL2 include directories")
+    set(SDL2_LIBRARIES ${SDL2_LIBRARIES} CACHE STRING "SDL2 libraries")
 endif()
 
 if(LVGL_USE_X11)
