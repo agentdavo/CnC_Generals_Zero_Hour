@@ -92,10 +92,7 @@ void ProfCacheInit(ProfileData *prof, int pages, int pageSize)
 {
 
 	memset(prof, 0, sizeof(ProfileData));
-	if (!QueryPerformanceFrequency((LARGE_INTEGER *)&prof->freq))
-	{
-		prof->freq = 0;
-	}
+    prof->freq = time_utils::frequency_ns();
 	prof->update = prof->freq;
 	prof->cacheSize = pages * pageSize;
 	prof->numPages = pages;
@@ -204,7 +201,7 @@ void ProfCacheNewFrame(ProfileData *prof)
 
 void ProfCacheLoadStart(ProfileData *prof, int bytes)
 {
-	QueryPerformanceCounter((LARGE_INTEGER *)&prof->start);
+    prof->start = time_utils::ticks_ns();
 	prof->dbytes = bytes;
 	prof->start_decomp = 0;
 	prof->pageCount++;
@@ -227,7 +224,7 @@ void ProfCacheAddLoadBytes(ProfileData *prof, int bytes)
 
 void ProfCacheDecompress(ProfileData *prof, int bytes)
 {
-	QueryPerformanceCounter((LARGE_INTEGER *)&prof->start_decomp);
+    prof->start_decomp = time_utils::ticks_ns();
 	prof->lbytes = bytes;
 }
 
@@ -238,7 +235,7 @@ void ProfCacheDecompress(ProfileData *prof, int bytes)
 
 void ProfCacheLoadEnd(ProfileData *prof)
 {
-	QueryPerformanceCounter((LARGE_INTEGER *)&prof->end);
+    prof->end = time_utils::ticks_ns();
 	prof->totalTime += prof->end - prof->start;
 	prof->totalDataBytes += prof->dbytes;
 	prof->totalFrameBytes += prof->dbytes;
@@ -430,10 +427,7 @@ void ProfileCPUInit(ProfileCPU &prof)
 
 	memset(&prof, 0, sizeof(ProfileCPU));
 
-	if (!QueryPerformanceFrequency((LARGE_INTEGER *)&prof.freq))
-	{
-		prof.freq = 0;
-	}
+    prof.freq = time_utils::frequency_ns();
 	prof.updateInterval = SECONDS(1);
 
 	if (prof.freq)
@@ -467,7 +461,7 @@ void ProfileCPUStart(ProfileCPU &prof)
 
 	if (prof.state == PROF_STATE_IDLE)
 	{
-		QueryPerformanceCounter((LARGE_INTEGER *)&prof.start);
+            prof.start = time_utils::ticks_ns();
 
 		if (prof.lastStart)
 		{
@@ -491,7 +485,7 @@ void ProfileCPUPause(ProfileCPU &prof)
 	{
 		ProfStamp end;
 
-		QueryPerformanceCounter((LARGE_INTEGER *)&end);
+            end = time_utils::ticks_ns();
 
 		prof.totalTicks += calc_ticks(prof.start, end);
 		prof.state = PROF_STATE_PAUSED;
@@ -507,7 +501,7 @@ void ProfileCPUResume(ProfileCPU &prof)
 {
 	if (prof.state == PROF_STATE_PAUSED)
 	{
-		QueryPerformanceCounter((LARGE_INTEGER *)&prof.start);
+            prof.start = time_utils::ticks_ns();
 		prof.state = PROF_STATE_PROFILING;
 	}
 }
@@ -521,7 +515,7 @@ void ProfileCPUEnd(ProfileCPU &prof)
 {
 	ProfStamp end;
 
-	QueryPerformanceCounter((LARGE_INTEGER *)&end);
+    end = time_utils::ticks_ns();
 
 	if (prof.state != PROF_STATE_IDLE)
 	{

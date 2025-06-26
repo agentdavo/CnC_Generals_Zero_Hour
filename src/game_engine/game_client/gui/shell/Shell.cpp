@@ -177,9 +177,9 @@ void Shell::reset( void )
 //-------------------------------------------------------------------------------------------------
 void Shell::update( void )
 {
-	static Int lastUpdate = timeGetTime();
+	static Int lastUpdate = time_utils::milliseconds();
 	static const Int shellUpdateDelay = 30;  // try to update 30 frames a second
-	Int now = timeGetTime();
+	Int now = time_utils::milliseconds();
 	
 	//
 	// we keep the shell updates fixed in time so that we can write consitent animation

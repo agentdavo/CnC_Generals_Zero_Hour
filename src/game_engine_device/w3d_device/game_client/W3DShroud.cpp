@@ -713,9 +713,9 @@ void W3DShroud::render(CameraClass *cam)
 //-----------------------------------------------------------------------------
 void W3DShroud::interpolateFogLevels(RECT *rect)
 {
-	static UnsignedInt prevTime = timeGetTime();
+	static UnsignedInt prevTime = time_utils::milliseconds();
 
-	UnsignedInt timeDiff=timeGetTime()-prevTime;
+	UnsignedInt timeDiff=time_utils::milliseconds()-prevTime;
 
 	if (!timeDiff)
 		return;	//no time has elapsed

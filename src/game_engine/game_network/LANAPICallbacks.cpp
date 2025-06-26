@@ -281,7 +281,7 @@ void LANAPI::OnGameOptions( UnsignedInt playerIP, Int playerSlot, AsciiString op
 
 	if (playerSlot == 0 && !m_currentGame->amIHost())
 	{
-		m_currentGame->setLastHeard(timeGetTime());
+		m_currentGame->setLastHeard(time_utils::milliseconds());
 		AsciiString oldOptions = GameInfoToAsciiString(m_currentGame); // save these off for if we get booted
 		if(ParseGameOptionsString(m_currentGame,options))
 		{
@@ -335,11 +335,11 @@ void LANAPI::OnGameOptions( UnsignedInt playerIP, Int playerSlot, AsciiString op
 		{
 			if (options.compare("HELLO") == 0)
 			{
-				m_currentGame->setPlayerLastHeard(playerSlot, timeGetTime());
+				m_currentGame->setPlayerLastHeard(playerSlot, time_utils::milliseconds());
 			}
 			else
 			{
-				m_currentGame->setPlayerLastHeard(playerSlot, timeGetTime());
+				m_currentGame->setPlayerLastHeard(playerSlot, time_utils::milliseconds());
 				Bool change = false;
 				Bool shouldUnaccept = false;
 				AsciiString key;

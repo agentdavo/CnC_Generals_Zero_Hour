@@ -322,16 +322,16 @@ W3DAssetManager *W3DDisplay::m_assetManager = NULL;
 // only valid when "-vtune" is used... (srj)
 inline Int64 getPerformanceCounter()
 {
-	Int64 tmp;
-	QueryPerformanceCounter((LARGE_INTEGER *)&tmp);
-	return tmp;
+    Int64 tmp;
+    tmp = time_utils::ticks_ns();
+    return tmp;
 }
 
 inline Int64 getPerformanceCounterFrequency()
 {
-	Int64 tmp;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&tmp);
-	return tmp;
+    Int64 tmp;
+    tmp = time_utils::frequency_ns();
+    return tmp;
 }
 
 // W3DDisplay::W3DDisplay =====================================================
@@ -1761,9 +1761,9 @@ AGAIN:
 
 	// Fast & Frozen time limits the time to 33 fps.
 	Int minTime = 30;
-	static Int prevTime = timeGetTime(), now;
+	static Int prevTime = time_utils::milliseconds(), now;
 
-	now = timeGetTime();
+	now = time_utils::milliseconds();
 	if (TheTacticalView->getTimeMultiplier() > 1)
 	{
 		static Int timeMultiplierCounter = 1;
@@ -1775,7 +1775,7 @@ AGAIN:
 	}
 	else
 	{
-		now = timeGetTime();
+		now = time_utils::milliseconds();
 		prevTime = now - minTime; // do the first frame immediately.
 	}
 
@@ -1789,7 +1789,7 @@ AGAIN:
 				// limit the framerate
 				while (TheGlobalData->m_useFpsLimit && (now - prevTime) < minTime - 1)
 				{
-					now = timeGetTime();
+					now = time_utils::milliseconds();
 				}
 				prevTime = now;
 			}
@@ -2039,7 +2039,7 @@ void W3DDisplay::createLightPulse(const Coord3D *pos, const RGBColor *color,
 void W3DDisplay::toggleLetterBox(void)
 {
 	m_letterBoxEnabled = !m_letterBoxEnabled;
-	m_letterBoxFadeStartTime = timeGetTime();
+	m_letterBoxFadeStartTime = time_utils::milliseconds();
 }
 
 void W3DDisplay::enableLetterBox(Bool enable)
@@ -2049,7 +2049,7 @@ void W3DDisplay::enableLetterBox(Bool enable)
 		if (!m_letterBoxEnabled)
 		{ // letterbox mode not previously enabled
 			m_letterBoxEnabled = TRUE;
-			m_letterBoxFadeStartTime = timeGetTime();
+			m_letterBoxFadeStartTime = time_utils::milliseconds();
 		}
 	}
 	else
@@ -2057,7 +2057,7 @@ void W3DDisplay::enableLetterBox(Bool enable)
 		if (m_letterBoxEnabled)
 		{ // letterbox mode no previously disabled
 			m_letterBoxEnabled = FALSE;
-			m_letterBoxFadeStartTime = timeGetTime();
+			m_letterBoxFadeStartTime = time_utils::milliseconds();
 		}
 	}
 }
@@ -3235,8 +3235,8 @@ void W3DDisplay::dumpAssetUsage(const char *mapname)
 //-------------------------------------------------------------------------------------------------
 static void drawFramerateBar(void)
 {
-	static DWORD prevTime = timeGetTime();
-	DWORD now = timeGetTime();
+	static DWORD prevTime = time_utils::milliseconds();
+	DWORD now = time_utils::milliseconds();
 	Real percTime = (1000.0f / (now - prevTime)) / (1000.0f / TheGlobalData->m_framesPerSecondLimit);
 
 	if (percTime > 1.0f)

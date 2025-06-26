@@ -101,14 +101,14 @@ void DisconnectManager::init() {
 
 void DisconnectManager::update(ConnectionManager *conMgr) {
 	if (m_lastFrameTime == -1) {
-		m_lastFrameTime = timeGetTime();
+		m_lastFrameTime = time_utils::milliseconds();
 	}
 
 	// The game logic stalls on the frame we are currently waiting for commands on,
 	// so we have to check for the current logic frame being one higher than
 	// the last one we had the commands ready for.
 	if (TheGameLogic->getFrame() == m_lastFrame) {
-		time_t curTime = timeGetTime();
+		time_t curTime = time_utils::milliseconds();
 		if ((curTime - m_lastFrameTime) > TheGlobalData->m_networkDisconnectTime) {
 			if (m_disconnectState == DISCONNECTSTATETYPE_SCREENOFF) {
 				turnOnScreen(conMgr);
@@ -125,7 +125,7 @@ void DisconnectManager::update(ConnectionManager *conMgr) {
 		// check to see if we need to send pings
 		if (m_pingFrame < TheGameLogic->getFrame())
 		{
-			time_t curTime = timeGetTime();
+			time_t curTime = time_utils::milliseconds();
 			if ((curTime - m_lastFrameTime) > 10000) /// @todo: plug in some better measure here
 			{
 				m_pingFrame = TheGameLogic->getFrame();
@@ -205,7 +205,7 @@ void DisconnectManager::updateDisconnectStatus(ConnectionManager *conMgr) {
 		if (conMgr->isPlayerConnected(i)) {
 			Int slot = translatedSlotPosition(i, conMgr->getLocalPlayerID());
 			if (slot != -1) {
-				time_t curTime = timeGetTime();
+				time_t curTime = time_utils::milliseconds();
 				time_t newTime = TheGlobalData->m_networkPlayerTimeoutTime - (curTime - m_playerTimeouts[slot]);
 
 // if someone is more than 2/3 timed out, lets get our frame numbers sync'd up.  Also if someone is voted out
@@ -253,7 +253,7 @@ void DisconnectManager::updateDisconnectStatus(ConnectionManager *conMgr) {
 
 void DisconnectManager::updateWaitForPacketRouter(ConnectionManager *conMgr) {
 /*
-	time_t curTime = timeGetTime();
+	time_t curTime = time_utils::milliseconds();
 	time_t newTime = TheGlobalData->m_networkPlayerTimeoutTime - (curTime - m_packetRouterTimeout);
 	if (newTime < 0) {
 		newTime = 0;
@@ -428,7 +428,7 @@ void DisconnectManager::applyDisconnectVote(Int slot, UnsignedInt frame, Int fro
 
 void DisconnectManager::nextFrame(UnsignedInt frame, ConnectionManager *conMgr) {
 	m_lastFrame = frame;
-	m_lastFrameTime = timeGetTime();
+	m_lastFrameTime = time_utils::milliseconds();
 	resetPlayerTimeouts(conMgr);
 }
 
@@ -458,7 +458,7 @@ Bool DisconnectManager::allowedToContinue() {
 }
 
 void DisconnectManager::sendKeepAlive(ConnectionManager *conMgr) {
-	time_t curTime = timeGetTime();
+	time_t curTime = time_utils::milliseconds();
 
 	if (((curTime - m_lastKeepAliveSendTime) > 500) || (m_lastKeepAliveSendTime == -1)) {
 		NetDisconnectKeepAliveCommandMsg *msg = newInstance(NetDisconnectKeepAliveCommandMsg);
@@ -521,11 +521,11 @@ void DisconnectManager::resetPlayerTimeouts(ConnectionManager *conMgr) {
 }
 
 void DisconnectManager::resetPlayerTimeout(Int slot) {
-	m_playerTimeouts[slot] = timeGetTime();
+	m_playerTimeouts[slot] = time_utils::milliseconds();
 }
 
 void DisconnectManager::resetPacketRouterTimeout() {
-	m_packetRouterTimeout = timeGetTime();
+	m_packetRouterTimeout = time_utils::milliseconds();
 }
 
 void DisconnectManager::turnOnScreen(ConnectionManager *conMgr) {
@@ -539,7 +539,7 @@ void DisconnectManager::turnOnScreen(ConnectionManager *conMgr) {
 
 	m_haveNotifiedOtherPlayersOfCurrentFrame = FALSE;
 
-	m_timeOfDisconnectScreenOn = timeGetTime();
+	m_timeOfDisconnectScreenOn = time_utils::milliseconds();
 	DEBUG_LOG(("DisconnectManager::turnOnScreen - turned on screen at time %d\n", m_timeOfDisconnectScreenOn));
 }
 
@@ -693,7 +693,7 @@ Bool DisconnectManager::hasPlayerTimedOut(Int slot) {
 		return FALSE;
 	}
 
-	time_t newTime = TheGlobalData->m_networkPlayerTimeoutTime - (timeGetTime() - m_playerTimeouts[slot]);
+	time_t newTime = TheGlobalData->m_networkPlayerTimeoutTime - (time_utils::milliseconds() - m_playerTimeouts[slot]);
 	if (newTime <= 0) {
 		return TRUE;
 	}

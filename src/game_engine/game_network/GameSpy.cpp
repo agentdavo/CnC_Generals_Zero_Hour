@@ -300,7 +300,7 @@ void GameSpyChat::update( void )
 			}
 		}
 
-		UnsignedInt now = timeGetTime();
+		UnsignedInt now = time_utils::milliseconds();
 		if (m_loginTimeout && now > m_loginTimeout)
 		{
 			// login timed out
@@ -1403,7 +1403,7 @@ void GameSpyChat::login(AsciiString loginName, AsciiString password, AsciiString
 	}
 
 	//EnableLoginControls( FALSE );
-	m_loginTimeout = timeGetTime() + m_loginTimeoutPeriod;
+	m_loginTimeout = time_utils::milliseconds() + m_loginTimeoutPeriod;
 	if (!loginName.isEmpty() && !email.isEmpty() && !password.isEmpty())
 	{
 		m_usingProfiles = true;

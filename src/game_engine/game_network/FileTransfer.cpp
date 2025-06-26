@@ -47,7 +47,7 @@ static Bool doFileTransfer( AsciiString filename, MapTransferLoadScreen *ls, Int
 	if (mask)
 	{
 		ls->setCurrentFilename(filename);
-		UnsignedInt startTime = timeGetTime();
+		UnsignedInt startTime = time_utils::milliseconds();
 		const Int timeoutPeriod = 2*60*1000;
 		ls->processTimeout(timeoutPeriod/1000);
 
@@ -109,7 +109,7 @@ static Bool doFileTransfer( AsciiString filename, MapTransferLoadScreen *ls, Int
 				ls->processProgress(0, fileTransferPercent, "MapTransfer:Done");
 			}
 
-			Int now = timeGetTime();
+			Int now = time_utils::milliseconds();
 			if (now > startTime + timeoutPeriod) // bail if we don't finish in a reasonable amount of time
 			{
 				DEBUG_LOG(("Timing out file transfer\n"));

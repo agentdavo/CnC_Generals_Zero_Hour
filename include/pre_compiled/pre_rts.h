@@ -60,6 +60,7 @@ class STLSpecialAlloc;
 #else
 #include "common/win32_compat.h"
 #endif
+#include "common/time_utils.h"
 
 //------------------------------------------------------------------------------------ STL Includes
 // srj sez: no, include STLTypesdefs below, instead, thanks

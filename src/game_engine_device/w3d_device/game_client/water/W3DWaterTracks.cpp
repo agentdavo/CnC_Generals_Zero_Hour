@@ -826,10 +826,10 @@ void WaterTracksRenderSystem::shutdown( void )
 void WaterTracksRenderSystem::update()
 {
 
-	static  Int iLastTime=timeGetTime();
+	static  Int iLastTime=time_utils::milliseconds();
 	WaterTracksObj *mod=m_usedModules,*nextMod;
 
-	Int timeDiff = timeGetTime()-iLastTime;
+	Int timeDiff = time_utils::milliseconds()-iLastTime;
 	iLastTime += timeDiff;
 
 	//Lock framerate to 30 fps

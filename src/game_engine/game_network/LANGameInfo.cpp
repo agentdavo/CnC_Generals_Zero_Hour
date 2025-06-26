@@ -294,7 +294,7 @@ Bool ParseGameOptionsString(LANGameInfo *game, AsciiString options)
 			}
 		}
 		// clean up LAN users, etc.
-		UnsignedInt now = timeGetTime();
+		UnsignedInt now = time_utils::milliseconds();
 		for (i=0; i<MAX_SLOTS; ++i)
 		{
 			LANGameSlot *slot = game->getLANSlot(i);

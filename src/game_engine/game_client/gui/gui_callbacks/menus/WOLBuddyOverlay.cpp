@@ -644,7 +644,7 @@ void HandleBuddyResponses( void )
 	{
 		DEBUG_CRASH(("No buddy message queue!\n"));
 	}
-	if(noticeLayout && timeGetTime() > noticeExpires)
+	if(noticeLayout && time_utils::milliseconds() > noticeExpires)
 	{
 		deleteNotificationBox();
 	}
@@ -677,7 +677,7 @@ void showNotificationBox( AsciiString nick, UnicodeString message)
 		message.format(message, nick.str());
 	GadgetButtonSetText(win, message);
 	//GadgetStaticTextSetText(win, message);
-	noticeExpires = timeGetTime() + NOTIFICATION_EXPIRES;
+	noticeExpires = time_utils::milliseconds() + NOTIFICATION_EXPIRES;
 	noticeLayout->bringForward();
 
 	AudioEventRTS buttonClick("GUICommunicatorIncoming");

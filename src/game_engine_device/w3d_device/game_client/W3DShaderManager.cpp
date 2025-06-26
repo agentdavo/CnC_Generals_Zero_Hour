@@ -2881,9 +2881,9 @@ Real W3DShaderManager::GetCPUBenchTime(void)
 	float ztot, yran, ymult, ymod, x, y, z, pi, prod;
     long int low, ixran, itot, j, iprod;
 
-  	__int64 endTime64,freq64,startTime64;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
-	QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);
+    __int64 endTime64,freq64,startTime64;
+    freq64 = time_utils::frequency_ns();
+    startTime64 = time_utils::ticks_ns();
 
     ztot = 0.0;
     low = 1;
@@ -2910,6 +2910,6 @@ Real W3DShaderManager::GetCPUBenchTime(void)
 	}
 	pi = 4.0 * (float)low/(float)itot;
 
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-	return ((double)(endTime64-startTime64)/(double)(freq64));
+    endTime64 = time_utils::ticks_ns();
+    return ((double)(endTime64-startTime64)/(double)(freq64));
 }

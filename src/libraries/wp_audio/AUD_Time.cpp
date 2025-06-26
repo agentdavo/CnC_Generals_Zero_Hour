@@ -104,7 +104,7 @@ static TimeStamp highResGetTime(void)
 	} myTime;
 
 	// read the high res counter
-	QueryPerformanceCounter(&count);
+    count.QuadPart = time_utils::ticks_ns();
 
 	// convert high res ticks to number of milliseconds
 	myTime.largeInt.QuadPart = count.QuadPart / timerMilliSecScale;
@@ -142,7 +142,7 @@ retry:
 
 reread:
 
-	now = timeGetTime();
+    now = time_utils::milliseconds();
 
 	if (now < lw)
 	{
@@ -181,18 +181,18 @@ reread:
 
 void InitAudioTimer(void)
 {
-	LARGE_INTEGER freq;
+    LARGE_INTEGER freq;
 
-	// does hardware exist for high res counter?
-	if (QueryPerformanceFrequency(&freq))
-	{
-		// calculate timer ticks per second
-		timerMilliSecScale = freq.QuadPart / (LONGLONG)SECONDS(1);
+    freq.QuadPart = time_utils::frequency_ns();
+    if (freq.QuadPart)
+    {
+        // calculate timer ticks per second
+        timerMilliSecScale = freq.QuadPart / (LONGLONG)SECONDS(1);
 
-		timerFunc = highResGetTime;
-	}
-	else
-	{
+        timerFunc = highResGetTime;
+    }
+    else
+    {
 		// no high res timer, use old code instead
 		timerFunc = failsafeGetTime;
 	}

@@ -111,8 +111,8 @@ static void advancePosition(GameWindow *window, const Image *image, UnsignedInt 
 	static Int x = -800;
 	static Int y = pos.y - (image->getImageHeight() / 2);
 
-	static UnsignedInt m_startTime = timeGetTime();
-	Int time = timeGetTime() - m_startTime;
+	static UnsignedInt m_startTime = time_utils::milliseconds();
+	Int time = time_utils::milliseconds() - m_startTime;
 	Real percentDone = INT_TO_REAL(time) / 10000;
 
 	if (goingForward)
@@ -120,7 +120,7 @@ static void advancePosition(GameWindow *window, const Image *image, UnsignedInt 
 		if (percentDone >= 1)
 		{
 			y = pos.y + size.y - (image->getImageHeight() / 2);
-			m_startTime = timeGetTime();
+			m_startTime = time_utils::milliseconds();
 			goingForward = FALSE;
 		}
 		else
@@ -134,7 +134,7 @@ static void advancePosition(GameWindow *window, const Image *image, UnsignedInt 
 		if (percentDone >= 1)
 		{
 			y = pos.y - (image->getImageHeight() / 2);
-			m_startTime = timeGetTime();
+			m_startTime = time_utils::milliseconds();
 			goingForward = TRUE;
 		}
 		else
@@ -295,14 +295,14 @@ void W3DMetalBarMenuDraw(GameWindow *window, WinInstanceData *instData)
 //	static Int x = pos.x - image->getImageWidth();
 //	static Int y = pos.y - (image->getImageHeight()/2);
 //
-//	static UnsignedInt m_startTime = timeGetTime();
-//	Int time = timeGetTime() - m_startTime;
+//	static UnsignedInt m_startTime = time_utils::milliseconds();
+//	Int time = time_utils::milliseconds() - m_startTime;
 //	Real percentDone = INT_TO_REAL(time) / 15624;
 //
 //	if(percentDone >= 1)
 //	{
 ////			y = pos.y + size.y - (image->getImageHeight()/2) - 2;
-//			m_startTime = timeGetTime();
+//			m_startTime = time_utils::milliseconds();
 //	}
 //		else
 //		{

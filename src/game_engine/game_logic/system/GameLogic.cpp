@@ -1603,7 +1603,7 @@ void GameLogic::startNewGame( Bool saveGame )
 	#endif
 
 	progressCount = LOAD_PROGRESS_LOOP_ALL_THE_FREAKN_OBJECTS;
-	Int timer = timeGetTime();
+	Int timer = time_utils::milliseconds();
 	if( saveGame == FALSE )
 	{
 
@@ -1690,12 +1690,12 @@ void GameLogic::startNewGame( Bool saveGame )
 
 			}  // end if
 		
-			if(timeGetTime() > timer + 500)
+			if(time_utils::milliseconds() > timer + 500)
 			{
 				if(progressCount < LOAD_PROGRESS_MAX_ALL_THE_FREAKN_OBJECTS)
 					progressCount ++;
 				updateLoadProgress(progressCount);
-				timer = timeGetTime();
+				timer = time_utils::milliseconds();
 			}
 
 		}	// for, loading map objects
@@ -2764,8 +2764,8 @@ static void unitTimings(void)
 		settleFrames--;
 		if (settleFrames>0) return;
 
-		QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);
-		QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
+                startTime64 = time_utils::ticks_ns();
+                freq64 = time_utils::frequency_ns();
 		timeFrames = TIME_FRAMES/FACTOR;
 
 		// reset the draw counter
@@ -2777,8 +2777,8 @@ static void unitTimings(void)
 		timeFrames--;
 		if (timeFrames>0) return;
 		
-		QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-		double timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
+                endTime64 = time_utils::ticks_ns();
+                double timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
 		timeToUpdate *= FACTOR;
 	
 		
@@ -3753,7 +3753,7 @@ void GameLogic::lastHeardFrom( Int playerId )
 {
 	if( playerId < 0 || playerId >= MAX_SLOTS)
 		return;
-	m_progressCompleteTimeout[playerId] = timeGetTime();
+	m_progressCompleteTimeout[playerId] = time_utils::milliseconds();
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -3764,7 +3764,7 @@ void GameLogic::testTimeOut( void )
 	if(isProgressComplete())
 		return;
 
-	Int curTime = timeGetTime();
+	Int curTime = time_utils::milliseconds();
 	// Loop and test everyone in our game.
 	for(Int i =0; i < MAX_SLOTS; ++i)
 	{
@@ -3794,7 +3794,7 @@ void GameLogic::initTimeOutValues( void )
 		return;
 	for(Int i = 0; i < TheNetwork->getNumPlayers(); ++i)
 	{
-		m_progressCompleteTimeout[i] = timeGetTime();
+		m_progressCompleteTimeout[i] = time_utils::milliseconds();
 	}
 }
 

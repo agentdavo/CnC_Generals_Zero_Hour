@@ -379,8 +379,8 @@ static Bool gameSpyInitPersistentStorageConnection( void )
 		return isProfileAuthorized;
 	}
 
-	UnsignedInt timeoutTime = timeGetTime() + 5000;
-	while (!isProfileAuthorized && timeGetTime() < timeoutTime && IsStatsConnected())
+	UnsignedInt timeoutTime = time_utils::milliseconds() + 5000;
+	while (!isProfileAuthorized && time_utils::milliseconds() < timeoutTime && IsStatsConnected())
 	{
 		PersistThink();
 		msleep(10);

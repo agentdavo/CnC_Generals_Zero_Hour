@@ -557,7 +557,7 @@ void DebugSetFlags(int flags)
 // ----------------------------------------------------------------------------
 SimpleProfiler::SimpleProfiler()
 {
-	QueryPerformanceFrequency((LARGE_INTEGER*)&m_freq);
+    m_freq = time_utils::frequency_ns();
 	m_startThisSession = 0;
 	m_totalThisSession = 0;
 	m_totalAllSessions = 0;
@@ -568,7 +568,7 @@ SimpleProfiler::SimpleProfiler()
 void SimpleProfiler::start()
 {
 	DEBUG_ASSERTCRASH(m_startThisSession == 0, ("already started"));
-	QueryPerformanceCounter((LARGE_INTEGER*)&m_startThisSession);
+    m_startThisSession = time_utils::ticks_ns();
 }
 
 // ----------------------------------------------------------------------------
@@ -576,10 +576,9 @@ void SimpleProfiler::stop()
 {
 	if (m_startThisSession != 0) 
 	{
-		__int64 stop;
-		QueryPerformanceCounter((LARGE_INTEGER*)&stop);
-		m_totalThisSession = stop - m_startThisSession;
-		m_totalAllSessions += stop - m_startThisSession;
+            __int64 stop = time_utils::ticks_ns();
+            m_totalThisSession = stop - m_startThisSession;
+            m_totalAllSessions += stop - m_startThisSession;
 		m_startThisSession = 0;
 		++m_numSessions;
 	}

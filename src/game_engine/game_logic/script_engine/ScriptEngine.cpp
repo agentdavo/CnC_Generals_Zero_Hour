@@ -4769,11 +4769,11 @@ void ScriptEngine::update( void )
 	USE_PERF_TIMER(ScriptEngine)
 #ifdef SPECIAL_SCRIPT_PROFILING
 #ifdef DEBUG_LOGGING
-	__int64 startTime64;
-	double timeToUpdate=0.0f;
-	__int64 endTime64,freq64;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);//LORENZEN'S NOTE_TO_SELF: USE THIS
-	QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);//LORENZEN'S NOTE_TO_SELF: USE THIS
+        __int64 startTime64;
+        double timeToUpdate=0.0f;
+        __int64 endTime64,freq64;
+        freq64 = time_utils::frequency_ns();
+        startTime64 = time_utils::ticks_ns();
 /* dump out the named objects table.  For extremely intense debug only.  jba. :P
 	for (VecNamedRequestsIt it = m_namedObjects.begin(); it != m_namedObjects.end(); ++it) {
 		AsciiString name = it->first;
@@ -4889,8 +4889,8 @@ void ScriptEngine::update( void )
 
 #ifdef SPECIAL_SCRIPT_PROFILING
 #ifdef DEBUG_LOGGING
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);//LORENZEN'S NOTE_TO_SELF: USE THIS
-	timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));//LORENZEN'S NOTE_TO_SELF: USE THIS
+        endTime64 = time_utils::ticks_ns();
+        timeToUpdate = ((double)(endTime64-startTime64) / (double)(freq64));
 	m_numFrames++;
 	m_totalUpdateTime+=timeToUpdate;
 	if (timeToUpdate > m_maxUpdateTime) m_maxUpdateTime = timeToUpdate;
@@ -6257,8 +6257,8 @@ void ScriptEngine::executeScript( Script *pScript )
 	__int64 startTime64;
 	Real timeToEvaluate=0.0f;
 	__int64 endTime64,freq64;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
-	QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);
+        freq64 = time_utils::frequency_ns();
+        startTime64 = time_utils::ticks_ns();
 #endif
 #endif
 
@@ -6322,8 +6322,8 @@ void ScriptEngine::executeScript( Script *pScript )
 	}
 #ifdef DEBUG_LOGGING
 #ifdef SPECIAL_SCRIPT_PROFILING
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-	timeToEvaluate = ((Real)(endTime64-startTime64) / (Real)(freq64));
+        endTime64 = time_utils::ticks_ns();
+        timeToEvaluate = ((Real)(endTime64-startTime64) / (Real)(freq64));
 	pScript->setCurTime(timeToEvaluate);
 #endif
 #endif
@@ -6870,11 +6870,11 @@ Bool ScriptEngine::evaluateConditions( Script *pScript, Team *thisTeam, Player *
 #define COLLECT_CONDITION_EVAL_TIMES
 #endif
 #ifdef COLLECT_CONDITION_EVAL_TIMES
-	__int64 startTime64;
-	Real timeToEvaluate=0.0f;
-	__int64 endTime64,freq64;
-	QueryPerformanceFrequency((LARGE_INTEGER *)&freq64);
-	QueryPerformanceCounter((LARGE_INTEGER *)&startTime64);
+        __int64 startTime64;
+        Real timeToEvaluate=0.0f;
+        __int64 endTime64,freq64;
+        freq64 = time_utils::frequency_ns();
+        startTime64 = time_utils::ticks_ns();
 #endif
 	OrCondition *pCurCondition;
 	for (pCurCondition = pConditionHead; pCurCondition; pCurCondition = pCurCondition->getNextOrCondition()) {
@@ -6894,8 +6894,8 @@ Bool ScriptEngine::evaluateConditions( Script *pScript, Team *thisTeam, Player *
 		}
 	}
 #ifdef COLLECT_CONDITION_EVAL_TIMES
-	QueryPerformanceCounter((LARGE_INTEGER *)&endTime64);
-	timeToEvaluate = ((Real)(endTime64-startTime64) / (Real)(freq64));
+        endTime64 = time_utils::ticks_ns();
+        timeToEvaluate = ((Real)(endTime64-startTime64) / (Real)(freq64));
 	pScript->incrementConditionCount();
 	pScript->addToConditionTime(timeToEvaluate);
 #endif

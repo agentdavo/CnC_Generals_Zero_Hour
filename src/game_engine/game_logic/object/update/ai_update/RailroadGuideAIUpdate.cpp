@@ -132,9 +132,9 @@ RailroadBehavior::RailroadBehavior( Thing *thing, const ModuleData *moduleData )
 
 
 #ifdef RAILROAD_DESYNC_TEST
-	_LARGE_INTEGER pc;
-	QueryPerformanceCounter( &pc ); // absolutely, positively random every call!
-	Real random = 100000.0f / (Real)pc.LowPart;
+        _LARGE_INTEGER pc;
+        pc.QuadPart = time_utils::ticks_ns(); // absolutely, positively random every call!
+        Real random = 100000.0f / (Real)pc.LowPart;
 	conductorPullInfo.m_direction = random;
 	m_pullInfo.m_direction = random;
 #endif

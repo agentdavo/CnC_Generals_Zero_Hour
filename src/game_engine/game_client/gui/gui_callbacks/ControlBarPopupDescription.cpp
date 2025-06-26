@@ -143,9 +143,9 @@ void ControlBar::showBuildTooltipLayout( GameWindow *cmdButton )
 	if(prevWindow == cmdButton)	
 	{
 		m_showBuildToolTipLayout = TRUE;
-		if(!isInitialized &&  beginWaitTime + cmdButton->getTooltipDelay() < timeGetTime())
+		if(!isInitialized &&  beginWaitTime + cmdButton->getTooltipDelay() < time_utils::milliseconds())
 		{
-			//DEBUG_LOG(("%d beginwaittime, %d tooltipdelay, %dtimegettime\n", beginWaitTime, cmdButton->getTooltipDelay(), timeGetTime()));
+			//DEBUG_LOG(("%d beginwaittime, %d tooltipdelay, %dtimegettime\n", beginWaitTime, cmdButton->getTooltipDelay(), time_utils::milliseconds()));
 			passedWaitTime = TRUE;
 		}
 		
@@ -176,7 +176,7 @@ void ControlBar::showBuildTooltipLayout( GameWindow *cmdButton )
 	if(!passedWaitTime)
 	{
 		prevWindow = cmdButton;
-		beginWaitTime = timeGetTime();
+		beginWaitTime = time_utils::milliseconds();
 		isInitialized = FALSE;
 		return;
 	}

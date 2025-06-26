@@ -177,7 +177,7 @@ void PopupReplayUpdate( WindowLayout *layout, void *userData )
 	{
 		// the replay save confirmation popup is up
 		// check to see if its time to take it down.
-		if ((timeGetTime() - s_fileSavePopupStartTime) >= s_fileSavePopupDuration) 
+		if ((time_utils::milliseconds() - s_fileSavePopupStartTime) >= s_fileSavePopupDuration) 
 		{
 			ShowReplaySavedPopup(FALSE);
 
@@ -334,7 +334,7 @@ void reallySaveReplay(void)
 	PopulateReplayFileListbox(listboxGames);
 
 	ShowReplaySavedPopup(TRUE);
-	s_fileSavePopupStartTime = timeGetTime();
+	s_fileSavePopupStartTime = time_utils::milliseconds();
 }
 
 //-------------------------------------------------------------------------------------------------
