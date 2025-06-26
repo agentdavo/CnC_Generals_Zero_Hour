@@ -37,8 +37,8 @@
 #pragma once
 #endif // _MSC_VER >= 1000
 
-#ifndef ALWAYS_H
-#define ALWAYS_H
+#ifndef PLUGLIB_ALWAYS_H
+#define PLUGLIB_ALWAYS_H
 
 // Disable warning about exception handling not being enabled. It's used as part of STL - in a part of STL we don't use.
 #pragma warning(disable : 4530)
@@ -113,23 +113,26 @@ void* __cdecl operator new(unsigned int s);
 #undef max
 #endif
 
+#ifndef WW_ALWAYS_MINMAX
+#define WW_ALWAYS_MINMAX
 template <class T> T min(T a,T b)
 {
-	if (a<b) {
-		return a;
-	} else {
-		return b;
-	}
+       if (a<b) {
+               return a;
+       } else {
+               return b;
+       }
 }
 
 template <class T> T max(T a,T b)
 {
-	if (a>b) {
-		return a;
-	} else {
-		return b;
-	}
+       if (a>b) {
+               return a;
+       } else {
+               return b;
+       }
 }
+#endif // PLUGLIB_ALWAYS_H
 
 
 /*
