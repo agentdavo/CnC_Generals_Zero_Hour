@@ -78,8 +78,8 @@ class STLSpecialAlloc;
 // Icky. These have to be in this order.
 #include "lib/base_type.h"
 #include "game_engine/common/STLTypedefs.h"
-#include "game_engine/common/Errors.h"
-#include "game_engine/common/Debug.h"
+#include "game_engine/common/errors.h"
+#include "game_engine/common/debug.h"
 #include "game_engine/common/ascii_string.h"
 #include "game_engine/common/subsystem_interface.h"
 

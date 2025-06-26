@@ -65,6 +65,7 @@ static inline DWORD timeGetTime()
 #ifndef _WIN32
 #include <mutex>
 #include <strings.h>
+#include <ctype.h>
 #include <atomic>
 #include <thread>
 #include <cstdint>
@@ -76,6 +77,26 @@ static inline DWORD timeGetTime()
 #define _stricmp strcasecmp
 #define strnicmp strncasecmp
 #define _strnicmp strncasecmp
+static inline char *strupr(char *s)
+{
+    for (char *p = s; *p; ++p)
+        *p = static_cast<char>(toupper(static_cast<unsigned char>(*p)));
+    return s;
+}
+
+static inline char *_strupr(char *s) { return strupr(s); }
+
+static inline char *strlwr(char *s)
+{
+    for (char *p = s; *p; ++p)
+        *p = static_cast<char>(tolower(static_cast<unsigned char>(*p)));
+    return s;
+}
+
+static inline char *_strlwr(char *s) { return strlwr(s); }
+
+#define HAVE_STRUPR_DECL 1
+#define HAVE_STRLWR_DECL 1
 
 #define SEVERITY_ERROR 1
 #define FACILITY_ITF 4

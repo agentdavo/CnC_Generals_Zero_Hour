@@ -37,7 +37,7 @@
 #include "camera.h"
 #include "rendobj.h"
 #include "persistfactory.h"
-#include "SoundChunkIDs.h"
+#include "soundchunkids.h"
 #include "utils.h"
 
 

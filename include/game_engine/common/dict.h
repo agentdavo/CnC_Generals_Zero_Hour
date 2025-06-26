@@ -48,7 +48,7 @@
 #ifndef Dict_H
 #define Dict_H
 
-#include "common/Errors.h"
+#include "common/errors.h"
 #include "common/NameKeyGenerator.h"
 
 // -----------------------------------------------------

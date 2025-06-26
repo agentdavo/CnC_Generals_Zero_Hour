@@ -47,7 +47,7 @@
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
 
-#include "common/Debug.h"
+#include "common/debug.h"
 #include "common/Energy.h"
 #include "game_engine/common/gametype.h"
 #include "common/Handicap.h"
