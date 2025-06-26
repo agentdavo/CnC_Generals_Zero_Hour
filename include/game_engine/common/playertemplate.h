@@ -49,7 +49,7 @@
 
 #include "game_engine/common/subsystem_interface.h"
 #include "common/gamememory.h"
-#include "common/Debug.h"
+#include "common/debug.h"
 #include "common/Handicap.h"
 #include "common/Money.h"
 #include "common/Science.h"

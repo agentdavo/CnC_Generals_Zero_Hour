@@ -22,85 +22,126 @@
  *                                                                                             *
  *                 Project Name : WWAudio                                                      *
  *                                                                                             *
- *                     $Archive:: /Commando/Code/WWAudio/FilteredSound.h          $*
+ *                     $Archive:: /Commando/Code/WWAudio/Listener.h         $*
  *                                                                                             *
  *                       Author:: Patrick Smith                                                *
  *                                                                                             *
- *                     $Modtime:: 10/11/00 12:01p                                             $*
+ *                     $Modtime:: 2/07/01 6:10p                                               $*
  *                                                                                             *
- *                    $Revision:: 4                                                           $*
+ *                    $Revision:: 7                                                           $*
  *                                                                                             *
  *---------------------------------------------------------------------------------------------*
  * Functions:                                                                                  *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+
 #if defined(_MSC_VER)
 #pragma once
 #endif
 
-#ifndef __FILTERED_SOUND_H
-#define __FILTERED_SOUND_H
+#ifndef __LISTENER_H
+#define __LISTENER_H
 
 
-#include "SoundPseudo3D.H"
+#include "sound3d.h"
 
 
 /////////////////////////////////////////////////////////////////////////////////
 //
-//	FilteredSoundClass
+//	Listener3DClass
 //
-//	Sound object that applies the specified 'reverb' filter so as to sound 'tinny'.
+//	Class defining the 'listeners' 3D position/velocity in the world.  This should
+// only be used by the SoundSceneClass.
 //
-/////////////////////////////////////////////////////////////////////////////////
-class FilteredSoundClass : public SoundPseudo3DClass
+class Listener3DClass : public Sound3DClass
 {
 	public:
 
 		//////////////////////////////////////////////////////////////////////
-		//	Public constructors/destructors
+		//	Friend classes
 		//////////////////////////////////////////////////////////////////////
-		FilteredSoundClass (const FilteredSoundClass &src);
-		FilteredSoundClass (void);
-		virtual ~FilteredSoundClass (void);
+		friend class SoundSceneClass;
 
 		//////////////////////////////////////////////////////////////////////
-		//	Public operators
+		//	Public constructors/destructors
 		//////////////////////////////////////////////////////////////////////
-		const FilteredSoundClass &operator= (const FilteredSoundClass &src);
+		Listener3DClass (void);
+		virtual ~Listener3DClass (void);
 
 		//////////////////////////////////////////////////////////////////////
 		//	Identification methods
 		//////////////////////////////////////////////////////////////////////
-		virtual SOUND_CLASSID	Get_Class_ID (void) { return CLASSID_FILTERED; }
+		virtual SOUND_CLASSID	Get_Class_ID (void) const	{ return CLASSID_LISTENER; }
 
 		//////////////////////////////////////////////////////////////////////
 		//	Conversion methods
 		//////////////////////////////////////////////////////////////////////		
-		virtual FilteredSoundClass *	As_FilteredSoundClass (void) { return this; }
+		virtual Listener3DClass *	As_Listener3DClass (void) 	{ return this; }
 
 		//////////////////////////////////////////////////////////////////////
-		//	Volume control
-		//////////////////////////////////////////////////////////////////////
-		virtual void				Update_Volume (void);
+		//	Initialization methods
+		//////////////////////////////////////////////////////////////////////				
+		virtual void			On_Added_To_Scene (void);
+		virtual void			On_Removed_From_Scene (void);
 
-		// From PersistClass
-		const PersistFactoryClass &	Get_Factory (void) const;
+		//////////////////////////////////////////////////////////////////////
+		//	State control methods
+		//////////////////////////////////////////////////////////////////////
+		//virtual bool			Play (void)		{ return false; }
+		virtual bool			Pause (void)	{ return false; }
+		virtual bool			Resume (void)	{ return false; }
+		virtual bool			Stop (bool /*remove*/)		{ return false; }
+		virtual void			Seek (unsigned long milliseconds) { }
+		virtual SOUND_STATE	Get_State (void) const	{ return STATE_STOPPED; }
+
+
+		//////////////////////////////////////////////////////////////////////
+		//	Attenuation settings
+		//////////////////////////////////////////////////////////////////////
+		virtual void			Set_Max_Vol_Radius (float radius = 0)			{ }
+		virtual float			Get_Max_Vol_Radius (void) const					{ return 0; }
+		virtual void			Set_DropOff_Radius (float radius = 1)			{ }
+		virtual float			Get_DropOff_Radius (void) const					{ return 0; }
+
+		//////////////////////////////////////////////////////////////////////
+		//	Velocity methods
+		//////////////////////////////////////////////////////////////////////				
+		virtual void			Set_Velocity (const Vector3 &velocity) { }
+
 
 	protected:
 
 		//////////////////////////////////////////////////////////////////////
+		//	Internal representations
+		//////////////////////////////////////////////////////////////////////
+		virtual void			Start_Sample (void)							{ }
+		virtual void			Stop_Sample (void)							{ }
+		virtual void			Resume_Sample (void)							{ }
+		virtual void			End_Sample (void)								{ }
+		virtual void			Set_Sample_Volume (S32 volume)			{ }
+		virtual S32				Get_Sample_Volume (void)					{ return 0; }
+		virtual void			Set_Sample_Pan (S32 pan)					{ }
+		virtual S32				Get_Sample_Pan (void)						{ return 64; }
+		virtual void			Set_Sample_Loop_Count (U32 count)		{ }
+		virtual U32				Get_Sample_Loop_Count (void)				{ return 0; }
+		virtual void			Set_Sample_MS_Position (U32 ms)			{ }
+		virtual void			Get_Sample_MS_Position (S32 *len, S32 *pos) { }
+		virtual S32				Get_Sample_Playback_Rate (void)			{ return 0; }
+		virtual void			Set_Sample_Playback_Rate (S32 rate)		{ }
+
+		//////////////////////////////////////////////////////////////////////
 		//	Handle information
 		//////////////////////////////////////////////////////////////////////				
-		virtual void				Initialize_Miles_Handle (void);
+		virtual void			Initialize_Miles_Handle (void);
+		virtual void			Allocate_Miles_Handle (void);
+		virtual void			Free_Miles_Handle (void);
 
 	private:
 
 		//////////////////////////////////////////////////////////////////////
 		//	Private member data
 		//////////////////////////////////////////////////////////////////////
-		HPROVIDER    m_hFilter;
 };
 
 
-#endif //__FILTERED_SOUND_H
-
+#endif //__LISTENER_H

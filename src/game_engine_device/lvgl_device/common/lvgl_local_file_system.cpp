@@ -1,18 +1,24 @@
 #include "game_engine_device/lvgl_device/common/lvgllocalfilesystem.h"
 #include "game_engine/common/ascii_string.h"
-#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/gamememory.h"
 #include "game_engine/common/perftimer.h"
 #include "common/local_file.h"
+#if __cpp_lib_filesystem >= 201703L
 #include <filesystem>
+namespace fs = std::filesystem;
+#else
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
+#endif
 
 File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 {
     LocalFile *file = new LocalFile();
-    std::filesystem::path p(filename);
+    fs::path p(filename);
 
     if(access & File::WRITE) {
         std::error_code ec;
-        std::filesystem::create_directories(p.parent_path(), ec);
+        fs::create_directories(p.parent_path(), ec);
     }
 
     if(file->open(p.u8string().c_str(), access) == FALSE) {
@@ -27,7 +33,7 @@ File *LvglLocalFileSystem::openFile(const Char *filename, Int access)
 
 Bool LvglLocalFileSystem::doesFileExist(const Char *filename) const
 {
-    return std::filesystem::exists(std::filesystem::u8path(filename));
+    return fs::exists(fs::u8path(filename));
 }
 
 void LvglLocalFileSystem::getFileListInDirectory(const AsciiString &currentDirectory,
@@ -36,7 +42,6 @@ void LvglLocalFileSystem::getFileListInDirectory(const AsciiString &currentDirec
                                                  FilenameList &filenameList,
                                                  Bool searchSubdirectories) const
 {
-    namespace fs = std::filesystem;
     fs::path base = fs::u8path(originalDirectory.str()) / fs::u8path(currentDirectory.str());
     fs::path pattern = fs::u8path(searchName.str());
     if(!fs::exists(base))
@@ -77,7 +82,6 @@ void LvglLocalFileSystem::getFileListInDirectory(const AsciiString &currentDirec
 
 Bool LvglLocalFileSystem::getFileInfo(const AsciiString &filename, FileInfo *fileInfo) const
 {
-    namespace fs = std::filesystem;
     fs::path p = fs::u8path(filename.str());
     if(!fs::exists(p))
         return FALSE;
@@ -95,6 +99,6 @@ Bool LvglLocalFileSystem::getFileInfo(const AsciiString &filename, FileInfo *fil
 Bool LvglLocalFileSystem::createDirectory(AsciiString directory)
 {
     std::error_code ec;
-    std::filesystem::create_directories(std::filesystem::u8path(directory.str()), ec);
+    fs::create_directories(fs::u8path(directory.str()), ec);
     return ec ? FALSE : TRUE;
 }

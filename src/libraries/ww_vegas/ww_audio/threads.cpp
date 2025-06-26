@@ -33,7 +33,7 @@
 
 #include "Threads.h"
 #include "refcount.h"
-#include "Utils.h"
+#include "utils.h"
 #include <Process.h>
 #include "wwdebug.h"
 

@@ -19,7 +19,8 @@
 #include "assetstatus.h"
 #include "hashtemplate.h"
 #include "wwstring.h"
-#include "rawfile.h"
+#include "raw_file.h"
+#include "common/windows.h"
 
 AssetStatusClass AssetStatusClass::Instance;
 

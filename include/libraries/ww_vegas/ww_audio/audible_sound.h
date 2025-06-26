@@ -49,7 +49,7 @@
 #include "vector3.h"
 #include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "refcount.h"
-#include "rawfile.h"
+#include "raw_file.h"
 #include "SoundSceneObj.h"
 #include "vector.h"
 #include "wwstring.h"
