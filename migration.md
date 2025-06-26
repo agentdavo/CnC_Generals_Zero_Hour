@@ -345,3 +345,4 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
   When enabled the d3d8_gles layer drops its EGL dependency and all rendering
   occurs through microGLES via the LVGL display API.
 - Remaining directories converted to snake_case (e.g. src/tools/nvasm and src/game_engine_device/w3d_device/game_client/gui/gadget) to eliminate case sensitivity issues.
+- SDL2 detection now falls back to pkg-config when the CMake configuration is missing, improving compatibility with minimal distributions.
