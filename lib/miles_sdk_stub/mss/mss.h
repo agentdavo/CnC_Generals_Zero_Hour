@@ -57,15 +57,13 @@ typedef struct PCMWAVEFORMAT
 typedef HWAVEOUT *LPHWAVEOUT;
 #endif
 
-#if !defined _MSC_VER
 #if !defined(__stdcall)
-#if defined __has_attribute && __has_attribute(stdcall)
+#if defined(_WIN32) && !defined(__x86_64__)
 #define __stdcall __attribute__((stdcall))
 #else
 #define __stdcall
 #endif
 #endif /* !defined __stdcall */
-#endif /* !defined COMPILER_MSVC */
 
 #ifdef __cplusplus
 extern "C" {
