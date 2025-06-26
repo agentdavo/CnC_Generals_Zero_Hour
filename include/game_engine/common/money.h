@@ -48,7 +48,7 @@
 #define _MONEY_H_
 
 #include "lib/base_type.h"
-#include "common/debug.h"
+#include "game_engine/common/debug.h"
 #include "common/Snapshot.h"
 
 // ----------------------------------------------------------------------------------------------

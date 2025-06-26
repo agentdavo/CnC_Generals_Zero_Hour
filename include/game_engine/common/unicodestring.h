@@ -53,7 +53,7 @@
 #include <string.h>
 #include <wchar.h>
 #include "lib/base_type.h"
-#include "common/debug.h"
+#include "game_engine/common/debug.h"
 #include "common/errors.h"
 
 #ifndef _WIN32

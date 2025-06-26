@@ -20,6 +20,9 @@ using LPSTR = char *;
 using LPCSTR = const char *;
 using LPWSTR = wchar_t *;
 using LPCWSTR = const wchar_t *;
+#ifndef LPCTSTR
+#define LPCTSTR const char *
+#endif
 
 struct POINT
 {

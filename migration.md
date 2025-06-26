@@ -299,6 +299,8 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - LVGL's X11 backend is now optional. The cmake option `LVGL_USE_X11` defaults to OFF
   and `lv_conf.h` honours compile definitions so backends can be toggled without
   warnings.
+- The build no longer passes `-DLV_USE_X11=1`. `lv_conf.h` sets this flag so the
+  backend can be enabled without compiler warnings.
 - WW3D2 links against the `d3d8_gles` shim and `gameenginedevice` now links this
   library so DirectX 8 calls route through the OpenGL ES translation layer.
 - The microGLES renderer under `lib/u_gles` is built by default. Its `renderer_lib`
@@ -350,6 +352,6 @@ Stub headers for `common/File.h` and `lib/basetype.h` were added to fix case-sen
 - SDL2 detection now falls back to pkg-config when the CMake configuration is missing, improving compatibility with minimal distributions.
 - Added portable `strupr` and `strlwr` implementations in `windows.h` and renamed
   `INI.H` to `ini.h` to continue the snake_case cleanup.
-- Updated wwdebug headers to include 'game_engine/common/debug.h' and added a compatibility stub under 'include/gameengine/include/common'.
+- Updated wwdebug headers to include 'game_engine/common/debug.h'.
 - CMake subprojects no longer override the standard. All targets now
   compile as C++11 so compile commands use `-std=gnu++11` consistently.

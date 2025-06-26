@@ -89,7 +89,6 @@ endif()
 if(LVGL_USE_X11)
     target_include_directories(lvgl PUBLIC ${X11_INCLUDE_DIR})
     target_link_libraries(lvgl PUBLIC ${X11_LIBRARIES})
-    target_compile_definitions(lvgl PUBLIC LV_USE_X11=1)
 endif()
 
 if(LVGL_USE_WAYLAND)
