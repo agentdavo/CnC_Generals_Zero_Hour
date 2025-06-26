@@ -21,7 +21,18 @@ if(LVGL_USE_SDL)
         ${CMAKE_CURRENT_SOURCE_DIR}/lvgl/src/drivers/sdl/lv_sdl_mouse.c
         ${CMAKE_CURRENT_SOURCE_DIR}/lvgl/src/drivers/sdl/lv_sdl_mousewheel.c
         ${CMAKE_CURRENT_SOURCE_DIR}/lvgl/src/drivers/sdl/lv_sdl_window.c)
-    find_package(SDL2 REQUIRED)
+
+    # Try the SDL2 CMake configuration first. If not found fall back to
+    # pkg-config so distributions without SDL2Config.cmake still work.
+    find_package(SDL2 CONFIG QUIET)
+    if(NOT SDL2_FOUND)
+        find_package(PkgConfig REQUIRED)
+        pkg_check_modules(SDL2 REQUIRED sdl2)
+        add_library(SDL2::SDL2 INTERFACE IMPORTED)
+        set_target_properties(SDL2::SDL2 PROPERTIES
+            INTERFACE_INCLUDE_DIRECTORIES "${SDL2_INCLUDE_DIRS}"
+            INTERFACE_LINK_LIBRARIES "${SDL2_LIBRARIES}")
+    endif()
 endif()
 
 if(LVGL_USE_X11)

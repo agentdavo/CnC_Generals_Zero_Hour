@@ -13,7 +13,10 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential cmake libx11-dev libgl1-mesa-dev libglu1-mesa-dev xorg-dev libsdl2-dev
+          sudo apt-get install -y \
+            build-essential cmake pkg-config \
+            libx11-dev libgl1-mesa-dev libglu1-mesa-dev \
+            xorg-dev libsdl2-dev
       - name: Configure and Build
         run: |
           cmake -S . -B build
