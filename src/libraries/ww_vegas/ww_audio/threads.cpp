@@ -151,7 +151,7 @@ WWAudioThreadsClass::Add_Delayed_Release_Object
 			//
 			DELAYED_RELEASE_INFO *info = W3DNEW DELAYED_RELEASE_INFO;
 			info->object	= object;
-			info->time		= ::GetTickCount () + delay;
+			info->time		= WW3D::Get_Sync_Time() + delay;
 			info->next		= m_ReleaseListHead;
 
 			m_ReleaseListHead = info;
@@ -216,7 +216,7 @@ WWAudioThreadsClass::Delayed_Release_Thread_Proc (LPVOID /*param*/)
 			//	Loop through all the objects in our delay list, and
 			// free any that have expired.
 			//
-			DWORD current_time			= ::GetTickCount ();
+			DWORD current_time			= WW3D::Get_Sync_Time();
 			DELAYED_RELEASE_INFO *curr = NULL;
 			DELAYED_RELEASE_INFO *prev	= NULL;
 			DELAYED_RELEASE_INFO *next	= NULL;
