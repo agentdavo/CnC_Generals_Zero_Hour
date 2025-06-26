@@ -52,7 +52,7 @@
 #define VECTOR4_H
 
 #include "always.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include <math.h>
 
 /*

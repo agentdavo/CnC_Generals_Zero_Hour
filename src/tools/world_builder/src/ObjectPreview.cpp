@@ -26,7 +26,7 @@
 #include "stdafx.h"
 #include "resource.h"
 
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 
 #include "ObjectPreview.h"
 #include "WorldBuilderDoc.h"
@@ -35,7 +35,7 @@
 #include "AddPlayerDialog.h"
 #include "CUndoable.h"
 #include "WbView3d.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 #include "common/WellKnownKeys.h"
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"
@@ -45,7 +45,7 @@
 #include "GameLogic/SidesList.h"
 #include "game_client/Color.h"
 
-#include "W3DDevice/GameClient/W3DAssetManager.h"
+#include "game_engine_device/w3d_device/game_client/w3dassetmanager.h"
 #include "WW3D2/DX8Wrapper.h"
 #include "ww_lib/targa.h"
 

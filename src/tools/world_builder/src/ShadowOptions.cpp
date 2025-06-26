@@ -21,11 +21,11 @@
 
 #include "stdafx.h"
 #include "worldbuilder.h"
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "rendobj.h"
 #include "common/globaldata.h"
 #include "ShadowOptions.h"
-#include "W3DDevice/GameClient/W3DShadow.h"
+#include "game_engine_device/w3d_device/game_client/w3dshadow.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // ShadowOptions dialog

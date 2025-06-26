@@ -40,7 +40,7 @@
 #ifndef V3_RND_H
 #define V3_RND_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "vector3.h"
 #include "random.h"
 #include <limits.h>

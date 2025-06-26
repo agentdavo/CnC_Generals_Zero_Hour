@@ -55,7 +55,7 @@
 #define INTERSEC_H
 
 #include "always.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "layer.h"
 #include "sphere.h"
 #include "coltype.h"

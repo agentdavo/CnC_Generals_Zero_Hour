@@ -47,7 +47,7 @@
 
 //#include <malloc.h>
 #include "vector3.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "refcount.h"
 #include "rawfile.h"
 #include "SoundSceneObj.h"

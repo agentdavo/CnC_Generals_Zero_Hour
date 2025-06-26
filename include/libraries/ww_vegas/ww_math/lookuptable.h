@@ -40,12 +40,12 @@
 #ifndef LOOKUPTABLE_H
 #define LOOKUPTABLE_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "simplevec.h"
 #include "wwstring.h"
 #include "refcount.h"
 #include "multilist.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 
 
 class Vector2;

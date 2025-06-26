@@ -59,8 +59,8 @@
 #ifndef AABOX_H
 #define AABOX_H
 
-#include "always.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "lineseg.h"
 #include "colmath.h"
 

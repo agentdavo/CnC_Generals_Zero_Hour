@@ -65,9 +65,9 @@
 #ifndef MATRIX4_H
 #define MATRIX4_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "vector4.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "matrix3.h"
 
 

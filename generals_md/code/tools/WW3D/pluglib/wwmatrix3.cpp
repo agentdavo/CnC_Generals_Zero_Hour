@@ -36,7 +36,7 @@
 
 
 #include "wwmatrix3.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "matrix4.h"
 #include "w3dquat.h"
 

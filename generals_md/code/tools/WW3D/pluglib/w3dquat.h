@@ -43,7 +43,7 @@
 #define QUAT_H
 
 #include "always.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "wwmatrix3.h"
 #include "vector3.h"
 

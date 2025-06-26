@@ -23,13 +23,13 @@
 
 #include "stdafx.h"
 #include "resource.h"
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "BlendMaterial.h"
 #include "WHeightMapEdit.h"
 #include "WorldBuilderDoc.h"
 #include "TileTool.h"
 #include "common/TerrainTypes.h"
-#include "W3DDevice/GameClient/TerrainTex.h"	  
+#include "game_engine_device/w3d_device/game_client/terraintex.h"	  
 
 BlendMaterial *BlendMaterial::m_staticThis = NULL;
 

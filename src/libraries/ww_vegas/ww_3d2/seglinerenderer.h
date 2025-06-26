@@ -42,7 +42,7 @@
 #include "always.h"
 #include "shader.h"
 #include "texture.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "vector2.h"
 
 class RenderInfoClass;

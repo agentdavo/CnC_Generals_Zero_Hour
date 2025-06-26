@@ -28,7 +28,7 @@
 #include "MainFrm.h"
 #include "common/Debug.h"
 #include "common/ThingTemplate.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 #include "GlobalLightOptions.h"
 #include "PlayerListDlg.h"
 #include "TeamsDialog.h"

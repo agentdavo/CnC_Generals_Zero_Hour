@@ -24,7 +24,7 @@
 #include "SelectMacrotexture.h"
 #include "common/FileSystem.h"
 #include "common/globaldata.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 
 /////////////////////////////////////////////////////////////////////////////
 // SelectMacrotexture dialog

@@ -22,7 +22,7 @@
 
 #include "StdAfx.h" 
 
-#include "Lib\BaseType.h"
+#include "lib/base_type.h"
 #include "MyToolBar.h"
 #include "resource.h"
 #include "WorldBuilderView.h"

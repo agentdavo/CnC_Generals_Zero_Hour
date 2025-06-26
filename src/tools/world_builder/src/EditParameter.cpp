@@ -77,8 +77,8 @@
 #include "GameLogic/SidesList.h"
 #include "GameLogic/ScriptEngine.h"
 
-#include "W3DDevice/GameClient/W3DGameFont.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/w3dgamefont.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

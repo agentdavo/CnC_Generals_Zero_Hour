@@ -43,8 +43,8 @@
 #ifndef EULER_H
 #define EULER_H
 
-#include "always.h"
-#include "matrix3d.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
+#include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "quat.h"
 
 

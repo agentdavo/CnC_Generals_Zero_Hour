@@ -42,7 +42,7 @@
 #ifndef CULLTYPE_H
 #define CULLTYPE_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 
 /*
 ** CullType is an enumeration of the possible results of a culling 

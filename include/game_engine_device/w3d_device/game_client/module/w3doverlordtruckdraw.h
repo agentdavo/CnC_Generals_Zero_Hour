@@ -34,7 +34,7 @@
 #define _W3D_OVERLORD_TRUCK_DRAW_H_
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
-#include "W3DDevice/game_client/Module/W3DTruckDraw.h"
+#include "game_engine_device/w3d_device/game_client/module/w3dtruckdraw.h"
 
 //-------------------------------------------------------------------------------------------------
 class W3DOverlordTruckDrawModuleData : public W3DTruckDrawModuleData

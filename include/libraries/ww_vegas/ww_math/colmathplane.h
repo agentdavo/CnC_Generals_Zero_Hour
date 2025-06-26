@@ -43,7 +43,7 @@
 #ifndef COLMATHPLANE_H
 #define COLMATHPLANE_H
 
-#include "always.h"
+#include "libraries/ww_vegas/ww_lib/always.h"
 #include "plane.h"
 #include "aabox.h"
 

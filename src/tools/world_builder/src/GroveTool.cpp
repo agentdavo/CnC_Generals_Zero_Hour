@@ -31,7 +31,7 @@
 #include "WorldBuilderView.h"
 #include "common/globaldata.h"
 #include "GameLogic/LogicRandomValue.h"
-#include "W3DDevice/GameClient/HeightMap.h"
+#include "game_engine_device/w3d_device/game_client/heightmap.h"
 #include "common/Debug.h"
 #include "DrawObject.h"
 #include "GroveOptions.h"

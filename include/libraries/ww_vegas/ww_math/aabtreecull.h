@@ -44,7 +44,7 @@
 
 #include "cullsys.h"
 #include "aaplane.h"
-#include "wwmath.h"
+#include "libraries/ww_vegas/ww_math/wwmath.h"
 #include "mempool.h"
 #include "simplevec.h"
 #include <math.h>
