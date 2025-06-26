@@ -44,7 +44,7 @@
 
 #include "slist.h"
 #include "game_engine/common/crc.h"
-#include "rawfile.h"
+#include "raw_file.h"
 
 #include <string.h>
 

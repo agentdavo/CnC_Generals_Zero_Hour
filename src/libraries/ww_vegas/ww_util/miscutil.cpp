@@ -28,7 +28,7 @@
 
 #include <time.h>
 
-#include "rawfile.h"
+#include "raw_file.h"
 #include "wwdebug.h"
 #include "win.h"
 #include "mmsys.h"

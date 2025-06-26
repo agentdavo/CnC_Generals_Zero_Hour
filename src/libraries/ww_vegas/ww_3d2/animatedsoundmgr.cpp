@@ -40,7 +40,7 @@
 #include <string.h>     // stricmp()
 #include "common/windows.h"
 #include "animatedsoundmgr.h"
-#include "game_engine/common/ini.h"
+#include "libraries/ww_vegas/ww_lib/ini.h"
 #include "inisup.h"
 #include "ffactory.h"
 #include "wwfile.h"
@@ -141,10 +141,11 @@ Build_List_From_String
 			//
 			// Parse the string and pull out its entries.
 			//
-			count = 0;
-			for (entry = buffer;
-				  (entry != NULL) && (entry[1] != 0);
-				  entry = ::strstr (entry, delimiter))
+                        count = 0;
+                        const char *entry = buffer;
+                        for (; 
+                                  (entry != NULL) && (entry[1] != 0);
+                                  entry = ::strstr (entry, delimiter))
 			{
 				
 				//
@@ -157,11 +158,12 @@ Build_List_From_String
 				//
 				// Copy this entry into its own string
 				//
-				StringClass entry_string = entry;
-				char *delim_start = ::strstr (entry_string, delimiter);				
-				if (delim_start != NULL) {
-					delim_start[0] = 0;
-				}
+                                StringClass entry_string = entry;
+                                char *entry_buffer = entry_string.Peek_Buffer();
+                                char *delim_start = ::strstr(entry_buffer, delimiter);
+                                if (delim_start != NULL) {
+                                        delim_start[0] = 0;
+                                }
 
 				//
 				// Add this entry to our list
@@ -341,7 +343,7 @@ AnimatedSoundMgrClass::Initialize (const char *ini_filename)
 					{
 						action_frame		= ::atoi (param_list[0]);
 						definition_name	= param_list[1];
-						definition_name.Trim ();
+						
 
 						//
 						//	Tie the relevant information together and store it

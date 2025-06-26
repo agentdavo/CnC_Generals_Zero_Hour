@@ -52,7 +52,7 @@
 /*
 **
 */
-#include	"rawfile.h"
+#include	"raw_file.h"
 class	FileClass;
 
 /*
