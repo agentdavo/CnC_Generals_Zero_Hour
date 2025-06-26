@@ -19,6 +19,15 @@ set(CMAKE_COLOR_MAKEFILE ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+option(STRICT_BUILD "Treat warnings as errors" OFF)
+if(STRICT_BUILD)
+    if(MSVC)
+        add_compile_options(/WX)
+    else()
+        add_compile_options(-Werror)
+    endif()
+endif()
+
 if(APPLE)
     # Apple's ranlib treats empty object files as fatal by default. Some
     # optional LVGL sources compile to no symbols depending on build flags
