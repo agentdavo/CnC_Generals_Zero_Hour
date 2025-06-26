@@ -14,7 +14,7 @@ if(WIN32)
 endif()
 
 project(lvgl_tests LANGUAGES C CXX)
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_STANDARD 99)
 
 set(FLAG_CHECK_WHITELIST --coverage -fsanitize=address -Werror)
