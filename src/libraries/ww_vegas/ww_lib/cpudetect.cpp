@@ -27,8 +27,14 @@
 #include "common/windows.h"
 #include "systimer.h"
 
-#ifdef _UNIX
-# include <time.h>  // for time(), localtime() and timezone variable.
+#ifndef _WIN32
+#include <time.h>   // for time(), localtime() and timezone variable.
+#if __has_include(<cpuid.h>)
+#  include <cpuid.h>
+#  define HAVE_CPUID_H 1
+#else
+#  define HAVE_CPUID_H 0
+#endif
 #endif
 
 #ifndef _WIN32
@@ -94,20 +100,113 @@ char CPUDetectClass::ProcessorString[48] = "";
 
 const char* CPUDetectClass::Get_Processor_Manufacturer_Name()
 {
-    return "<Unknown>";
+    static const char* names[] = {
+        "<Unknown>",
+        "Intel",
+        "UMC",
+        "AMD",
+        "Cyrix",
+        "NextGen",
+        "VIA",
+        "Rise",
+        "Transmeta"
+    };
+    return names[ProcessorManufacturer];
 }
 
-bool CPUDetectClass::CPUID(unsigned&, unsigned&, unsigned&, unsigned&, unsigned)
+bool CPUDetectClass::CPUID(unsigned& eax_, unsigned& ebx_, unsigned& ecx_, unsigned& edx_, unsigned type)
 {
+#if HAVE_CPUID_H
+    unsigned a, b, c, d;
+    __cpuid_count(type, 0, a, b, c, d);
+    eax_ = a; ebx_ = b; ecx_ = c; edx_ = d;
+    return true;
+#else
+    (void)eax_; (void)ebx_; (void)ecx_; (void)edx_; (void)type;
     return false;
+#endif
 }
 
-void CPUDetectClass::Init_CPUID_Instruction() {}
+void CPUDetectClass::Init_CPUID_Instruction()
+{
+#if HAVE_CPUID_H
+    HasCPUIDInstruction = __get_cpuid_max(0, 0) != 0;
+#else
+    HasCPUIDInstruction = false;
+#endif
+}
+
 void CPUDetectClass::Init_Processor_Speed() {}
-void CPUDetectClass::Init_Processor_String() { ProcessorString[0] = '\0'; }
-void CPUDetectClass::Init_Processor_Manufacturer() {}
+
+void CPUDetectClass::Init_Processor_String()
+{
+#if HAVE_CPUID_H
+    if (__get_cpuid_max(0x80000000, 0) >= 0x80000004) {
+        unsigned regs[4];
+        char* p = ProcessorString;
+        for (unsigned i = 0; i < 3; ++i) {
+            __cpuid(0x80000002 + i, regs[0], regs[1], regs[2], regs[3]);
+            memcpy(p, regs, sizeof(regs));
+            p += sizeof(regs);
+        }
+        ProcessorString[47] = '\0';
+    } else {
+        strncpy(ProcessorString, VendorID, sizeof(ProcessorString));
+        ProcessorString[sizeof(ProcessorString) - 1] = '\0';
+    }
+#else
+    strncpy(ProcessorString, "Generic CPU", sizeof(ProcessorString));
+    ProcessorString[sizeof(ProcessorString) - 1] = '\0';
+#endif
+}
+
+void CPUDetectClass::Init_Processor_Manufacturer()
+{
+#if HAVE_CPUID_H
+    unsigned eax, ebx, ecx, edx;
+    if (__get_cpuid(0, &eax, &ebx, &ecx, &edx)) {
+        memcpy(VendorID, &ebx, 4);
+        memcpy(VendorID + 4, &edx, 4);
+        memcpy(VendorID + 8, &ecx, 4);
+        VendorID[12] = '\0';
+        if (strcmp(VendorID, "GenuineIntel") == 0)
+            ProcessorManufacturer = MANUFACTURER_INTEL;
+        else if (strcmp(VendorID, "AuthenticAMD") == 0)
+            ProcessorManufacturer = MANUFACTURER_AMD;
+        else
+            ProcessorManufacturer = MANUFACTURER_UNKNOWN;
+    }
+#else
+    strcpy(VendorID, "GenericCPU");
+    ProcessorManufacturer = MANUFACTURER_UNKNOWN;
+#endif
+}
+
 void CPUDetectClass::Init_Processor_Family() {}
-void CPUDetectClass::Init_Processor_Features() {}
+
+void CPUDetectClass::Init_Processor_Features()
+{
+#if HAVE_CPUID_H
+    unsigned eax, ebx, ecx, edx;
+    if (__get_cpuid(1, &eax, &ebx, &ecx, &edx)) {
+        FeatureBits = edx;
+        HasRDTSCInstruction = edx & (1u << 4);
+        HasCMOVSupport = edx & (1u << 15);
+        HasMMXSupport = edx & (1u << 23);
+        HasSSESupport = edx & (1u << 25);
+        HasSSE2Support = edx & (1u << 26);
+    }
+    if (__get_cpuid_max(0x80000000, 0) >= 0x80000001) {
+        __get_cpuid(0x80000001, &eax, &ebx, &ecx, &edx);
+        ExtendedFeatureBits = edx;
+        Has3DNowSupport = edx & (1u << 31);
+        HasExtended3DNowSupport = edx & (1u << 30);
+    }
+#else
+    FeatureBits = ExtendedFeatureBits = 0;
+#endif
+}
+
 void CPUDetectClass::Init_Memory() {}
 void CPUDetectClass::Init_OS() {}
 void CPUDetectClass::Init_Intel_Processor_Type() {}
@@ -229,31 +328,26 @@ static unsigned Calculate_Processor_Speed(__int64& ticks_per_second)
 		unsigned timer1_l;
 	} Time;
 
-#ifdef WIN32
+#ifdef _WIN32
    __asm {
       ASM_RDTSC;
       mov Time.timer0_h, eax
       mov Time.timer0_l, edx
    }
-#elif defined(_UNIX)
-      __asm__("rdtsc");
-      __asm__("mov %eax, __Time.timer1_h");
-      __asm__("mov %edx, __Time.timer1_l");
+#else
+   ticks_per_second = 0;
+   return 0;
 #endif
 
 	unsigned start=TIMEGETTIME();
 	unsigned elapsed;
 	while ((elapsed=TIMEGETTIME()-start)<200) {
-#ifdef WIN32
+#ifdef _WIN32
       __asm {
          ASM_RDTSC;
          mov Time.timer1_h, eax
          mov Time.timer1_l, edx
       }
-#elif defined(_UNIX)
-      __asm__ ("rdtsc");
-      __asm__("mov %eax, __Time.timer1_h");
-      __asm__("mov %edx, __Time.timer1_l");
 #endif
 	}
 
@@ -921,7 +1015,7 @@ void CPUDetectClass::Init_CPUID_Instruction()
    // because CodeWarrior seems to have problems with
    // the command (huh?)
 
-#ifdef WIN32
+#ifdef _WIN32
    __asm
    {
       mov cpuid_available, 0	// clear flag
@@ -942,7 +1036,7 @@ void CPUDetectClass::Init_CPUID_Instruction()
       popfd
       pop ebx
    }
-#elif defined(_UNIX)
+
      __asm__(" mov $0, __cpuid_available");  // clear flag
      __asm__(" push %ebx");
      __asm__(" pushfd");
@@ -994,7 +1088,7 @@ void CPUDetectClass::Init_Processor_Features()
 
 void CPUDetectClass::Init_Memory()
 {
-#ifdef WIN32
+#ifdef _WIN32
 
 	MEMORYSTATUS mem;
    GlobalMemoryStatus(&mem);
@@ -1005,7 +1099,7 @@ void CPUDetectClass::Init_Memory()
    AvailablePageMemory     = mem.dwAvailPageFile;
    TotalVirtualMemory      = mem.dwTotalVirtual;
    AvailableVirtualMemory  = mem.dwAvailVirtual;
-#elif defined(_UNIX)
+
 #warning FIX Init_Memory()
 #endif
 }
@@ -1013,7 +1107,7 @@ void CPUDetectClass::Init_Memory()
 void CPUDetectClass::Init_OS()
 {
 	OSVERSIONINFO os;
-#ifdef WIN32
+#ifdef _WIN32
    os.dwOSVersionInfoSize = sizeof(os);
 	GetVersionEx(&os);
 
@@ -1022,7 +1116,7 @@ void CPUDetectClass::Init_OS()
    OSVersionBuildNumber = os.dwBuildNumber;
    OSVersionPlatformId  = os.dwPlatformId;
    OSVersionExtraInfo   = os.szCSDVersion;
-#elif defined(_UNIX)
+
 #warning FIX Init_OS()
 #endif
 }
@@ -1041,7 +1135,7 @@ bool CPUDetectClass::CPUID(
 	unsigned u_ecx;
 	unsigned u_edx;
 
-#ifdef WIN32
+#ifdef _WIN32
    __asm
    {
       pushad
@@ -1056,7 +1150,7 @@ bool CPUDetectClass::CPUID(
       mov	[u_edx], edx
       popad
    }
-#elif defined(_UNIX)
+
    __asm__("pusha");
    __asm__("mov	__cpuid_type, %eax");
    __asm__("xor	%ebx, %ebx");
@@ -1097,9 +1191,9 @@ void CPUDetectClass::Init_Processor_Log()
 		(OSVersionBuildNumber&0xff000000)>>24,
 		(OSVersionBuildNumber&0xff0000)>>16,
 		(OSVersionBuildNumber&0xffff)));
-#ifdef WIN32
+#ifdef _WIN32
    SYSLOG(("OS-Info: %s\r\n", OSVersionExtraInfo));
-#elif defined(_UNIX)
+
    SYSLOG(("OS-Info: %s\r\n", OSVersionExtraInfo.Peek_Buffer()));
 #endif
 
@@ -1112,9 +1206,9 @@ void CPUDetectClass::Init_Processor_Log()
 	case 2: cpu_type="Dual"; break;
 	case 3: cpu_type="*Intel Reserved*"; break;
 	}
-#ifdef WIN32
+#ifdef _WIN32
    SYSLOG(("Processor type: %s\r\n", cpu_type));
-#elif defined(_UNIX)
+
    SYSLOG(("Processor type: %s\r\n", cpu_type.Peek_Buffer()));
 #endif
 
@@ -1193,11 +1287,11 @@ void CPUDetectClass::Init_Compact_Log()
 {
 	StringClass work(0,true);
 
-#ifdef WIN32
+#ifdef _WIN32
    TIME_ZONE_INFORMATION time_zone;
    GetTimeZoneInformation(&time_zone);
    COMPACTLOG(("%d\t", time_zone.Bias));  // get diff between local time and UTC
-#elif defined(_UNIX)
+
    time_t t = time(NULL);
    localtime(&t);
    COMPACTLOG(("%d\t", timezone));
