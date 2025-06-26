@@ -33,7 +33,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-#include "SoundSceneObj.h"
+#include "sound_scene_obj.h"
 #include "camera.h"
 #include "rendobj.h"
 #include "persistfactory.h"

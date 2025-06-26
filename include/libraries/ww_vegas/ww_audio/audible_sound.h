@@ -50,7 +50,7 @@
 #include "libraries/ww_vegas/ww_math/matrix3d.h"
 #include "refcount.h"
 #include "rawfile.h"
-#include "SoundSceneObj.h"
+#include "sound_scene_obj.h"
 #include "vector.h"
 #include "wwstring.h"
 #include "definition.h"

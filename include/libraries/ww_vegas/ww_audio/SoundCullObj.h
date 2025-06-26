@@ -42,7 +42,7 @@
 #ifndef __SOUNDCULLOBJ_H
 #define __SOUNDCULLOBJ_H
 
-#include "SoundSceneObj.h"
+#include "sound_scene_obj.h"
 #include "cullsys.h"
 #include "refcount.h"
 #include "mempool.h"

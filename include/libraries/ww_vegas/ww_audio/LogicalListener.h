@@ -37,8 +37,8 @@
 #ifndef __LOGICAL_LISTENER_H
 #define __LOGICAL_LISTENER_H
 
-#include "SoundSceneObj.H"
-#include "BitType.H"
+#include "sound_scene_obj.h"
+#include "bittype.h"
 #include "Vector3.H"
 #include "Matrix3D.H"
 

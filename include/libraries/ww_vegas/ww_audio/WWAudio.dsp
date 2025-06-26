@@ -312,7 +312,7 @@ SOURCE=.\SoundScene.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\SoundSceneObj.h
+SOURCE=.\sound_scene_obj.h
 # End Source File
 # Begin Source File
 
