@@ -140,7 +140,7 @@ SoundSceneClass::Collect_Logical_Sounds (int listener_count)
 {
 	WWPROFILE ("Collect_Logical_Sounds");
 
-	uint32 timestamp = ::GetTickCount ();
+	uint32 timestamp = WW3D::Get_Sync_Time();
 
 	//
 	//	Determine how many listeners to process
