@@ -60,7 +60,7 @@
 #include "scene.h"
 #include "plane.h"
 #include "camera.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "rinfo.h"
 #include "chunkio.h"
 #include "dx8renderer.h"

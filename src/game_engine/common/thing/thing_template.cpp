@@ -45,7 +45,7 @@
 #include "common/ini.h"
 #include "common/MessageStream.h"
 #include "common/Module.h"
-#include "common/ModuleFactory.h"
+#include "common/module_factory.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"
 #include "common/ProductionPrerequisite.h"
@@ -59,7 +59,7 @@
 
 #include "game_client/drawable.h"
 #include "game_client/fxlist.h"
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 #include "game_client/Image.h"
 #include "game_client/Shadow.h"
 

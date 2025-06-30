@@ -24,18 +24,25 @@ using LPCWSTR = const wchar_t *;
 #define LPCTSTR const char *
 #endif
 
-struct POINT
+#ifndef POINT_DEFINED
+#define POINT_DEFINED
+typedef struct tagPOINT
 {
     LONG x;
     LONG y;
-};
-struct RECT
+} POINT;
+#endif
+
+#ifndef RECT_DEFINED
+#define RECT_DEFINED
+typedef struct tagRECT
 {
     LONG left;
     LONG top;
     LONG right;
     LONG bottom;
-};
+} RECT;
+#endif
 
 #ifndef INFINITE
 #define INFINITE 0xFFFFFFFFu

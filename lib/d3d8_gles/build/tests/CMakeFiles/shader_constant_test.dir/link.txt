@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/shader_constant_test.dir/shader_constant_test.c.o -o shader_constant_test  ../libd3d8_to_gles.a /usr/lib/x86_64-linux-gnu/libGLESv1_CM.so /usr/lib/x86_64-linux-gnu/libEGL.so -lm -llodepng 

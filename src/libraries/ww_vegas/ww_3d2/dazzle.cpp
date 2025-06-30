@@ -41,13 +41,13 @@
 #include "simplevec.h"
 #include "vector2.h"
 #include "camera.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "wwstring.h"
 #include "wwdebug.h"
 #include "assetmgr.h"
 #include "vector3i.h"
 #include "quat.h"
-#include "common/ini.h"
+#include "libraries/ww_vegas/ww_lib/ini.h"
 #include "point.h"
 #include "rinfo.h"
 #include "vertmaterial.h"
@@ -55,7 +55,7 @@
 #include "wwfile.h"
 #include "inisup.h"
 #include "persistfactory.h"
-#include "ww3dids.h"
+#include "ww_3dids.h"
 #include "dx8wrapper.h"
 #include "dx8vertexbuffer.h"
 #include "dx8indexbuffer.h"
@@ -303,7 +303,7 @@ const Vector2 DazzleINIClass::Get_Vector2(char const *section, char const *entry
 		INIEntry * entryptr = Find_Entry(section, entry);
 		if (entryptr && entryptr->Value != NULL) {
 			Vector2	ret;
-			if ( sscanf( entryptr->Value, "%f,%f", &ret[0], &ret[1], &ret[2] ) == 2 ) {
+			if ( sscanf( entryptr->Value, "%f,%f", &ret[0], &ret[1] ) == 2 ) {
 				return ret;
 			}
 		}
@@ -667,7 +667,8 @@ void DazzleRenderObjClass::Init_Type(const DazzleInitClass& i)
 	if (i.type>=type_count) {
 		unsigned new_count=i.type+1;
 		DazzleTypeClass** new_types=W3DNEWARRAY DazzleTypeClass*[new_count];
-		for (unsigned a=0;a<type_count;++a) {
+		unsigned a;
+		for (a=0;a<type_count;++a) {
 			new_types[a]=types[a];
 		}
 		for (;a<new_count;++a) {
@@ -690,7 +691,8 @@ void DazzleRenderObjClass::Init_Lensflare(const LensflareInitClass& i)
 	if (i.type>=lensflare_count) {
 		unsigned new_count=i.type+1;
 		LensflareTypeClass** new_lensflares=W3DNEWARRAY LensflareTypeClass*[new_count];
-		for (unsigned a=0;a<lensflare_count;++a) {
+		unsigned a;
+		for (a=0;a<lensflare_count;++a) {
 			new_lensflares[a]=lensflares[a];
 		}
 		for (;a<new_count;++a) {

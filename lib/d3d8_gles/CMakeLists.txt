@@ -23,8 +23,30 @@ endif()
 # Include directories
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-# Source files
-set(SOURCES src/d3d8_to_gles.c src/x_mesh_parser.c)
+# Source files - organized by functional areas
+set(SOURCES 
+    # Core D3D8 interfaces
+    src/d3d8_core.c
+    src/d3d8_device.c
+    src/d3d8_resources.c
+    src/d3d8_state.c
+    
+    # D3DX utilities
+    src/d3dx_buffer.c
+    src/d3dx_math.c
+    src/d3dx_mesh.c
+    src/d3dx_mesh_shapes.c
+    src/d3dx_mesh_loader.c
+    src/d3dx_texture.c
+    src/d3dx_stubs.c
+    
+    # OpenGL ES backend
+    src/gles_backend.c
+    src/gles_helpers.c
+    
+    # Parsers and utilities
+    src/x_mesh_parser.c
+)
 
 if(HEADER_ONLY)
     add_library(d3d8_to_gles INTERFACE)

@@ -50,7 +50,7 @@
 #include "common/ThingTemplate.h"
 #include "GameLogic/Object.h"
 #include "game_client/drawable.h"
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

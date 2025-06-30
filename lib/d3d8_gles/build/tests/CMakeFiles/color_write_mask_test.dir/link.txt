@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/color_write_mask_test.dir/color_write_mask_test.c.o -o color_write_mask_test  ../libd3d8_to_gles.a /usr/lib/x86_64-linux-gnu/libGLESv1_CM.so /usr/lib/x86_64-linux-gnu/libEGL.so -lm -llodepng 

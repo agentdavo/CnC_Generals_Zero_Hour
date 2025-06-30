@@ -36,7 +36,7 @@
 
 #include "part_emt.h"
 #include "wwdebug.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "assetmgr.h"
 #include "part_ldr.h"
 #include "w3derr.h"

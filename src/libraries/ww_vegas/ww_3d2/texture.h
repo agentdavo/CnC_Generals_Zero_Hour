@@ -46,7 +46,7 @@
 #include "refcount.h"
 #include "chunkio.h"
 #include "surfaceclass.h"
-#include "ww3dformat.h"
+#include "ww_3dformat.h"
 #include "wwstring.h"
 
 class DX8Wrapper;

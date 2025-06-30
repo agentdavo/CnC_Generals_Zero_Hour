@@ -31,7 +31,7 @@
 #ifndef __SELECTIONINFO_H__
 #define __SELECTIONINFO_H__
 
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 
 // This structure gives you a rough idea about the counts of the kinds of guys in the
 // current selection, and in the selection that would be made.

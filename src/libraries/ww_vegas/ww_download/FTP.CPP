@@ -37,7 +37,7 @@
 #include <errno.h>
 //#include "wlib/wstring.h"
 
-#include "DownloadDebug.h"
+#include "download_debug.h"
 
 // umm... what?? BGC 3/27/03
 //#ifndef _DEBUG

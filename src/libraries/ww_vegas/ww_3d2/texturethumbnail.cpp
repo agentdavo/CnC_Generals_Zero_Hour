@@ -20,7 +20,7 @@
 #include "hashtemplate.h"
 #include "missingtexture.h"
 #include "targa.h"
-#include "ww3dformat.h"
+#include "ww_3dformat.h"
 #include "ddsfile.h"
 #include "textureloader.h"
 #include "bitmaphandler.h"

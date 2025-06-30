@@ -164,6 +164,11 @@ public:
 	{
 		return HashTable.Get_Table()[Handle].Value;
 	}
+
+	KeyType& Peek_Key()
+	{
+		return HashTable.Get_Table()[Handle].Key;
+	}
 };
 
 //------------------------------------------------------------------------
@@ -263,7 +268,7 @@ template <class KeyType, class ValueType> inline ValueType HashTemplateClass<Key
 
 template <class KeyType, class ValueType> inline bool HashTemplateClass<KeyType,ValueType>::Get(const KeyType& s, ValueType& d) const
 {
-	int  h = Hash[Het_Hash_Val(s,Size)];
+	int  h = Hash[Get_Hash_Val(s,Size)];
 	while (h!=NIL)
 	{
 		if (Table[h].Key == s)

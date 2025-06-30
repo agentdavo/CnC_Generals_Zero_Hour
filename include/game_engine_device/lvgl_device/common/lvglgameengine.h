@@ -1,17 +1,43 @@
 #pragma once
 
-#include "common/GameEngine.h"
-#include "game_network/NetworkInterface.h"
-#include "GameLogic/GameLogic.h"
+#include "game_engine/common/gameengine.h"
+
+// Forward declarations for factory methods
+class LocalFileSystem;
+class ArchiveFileSystem;
+class GameLogic;
+class GameClient;
+class ModuleFactory;
+class ThingFactory;
+class FunctionLexicon;
+class Radar;
+class WebBrowser;
+class ParticleSystemManager;
+class AudioManager;
 
 class LvglGameEngine : public GameEngine
 {
 public:
-    LvglGameEngine() = default;
-    virtual ~LvglGameEngine() = default;
+    LvglGameEngine();
+    virtual ~LvglGameEngine();
 
-    virtual void init();
-    virtual void reset();
-    virtual void update();
-    virtual void serviceWindowsOS();
+    // GameEngine interface implementation
+    virtual void init() override;
+    virtual void reset() override;
+    virtual void update() override;
+    virtual void serviceWindowsOS() override;
+
+protected:
+    // Factory methods - create LVGL-specific implementations
+    virtual LocalFileSystem* createLocalFileSystem() override;
+    virtual ArchiveFileSystem* createArchiveFileSystem() override;
+    virtual GameLogic* createGameLogic() override;
+    virtual GameClient* createGameClient() override;
+    virtual ModuleFactory* createModuleFactory() override;
+    virtual ThingFactory* createThingFactory() override;
+    virtual FunctionLexicon* createFunctionLexicon() override;
+    virtual Radar* createRadar() override;
+    virtual WebBrowser* createWebBrowser() override;
+    virtual ParticleSystemManager* createParticleSystemManager() override;
+    virtual AudioManager* createAudioManager() override;
 };

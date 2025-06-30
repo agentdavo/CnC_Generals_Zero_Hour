@@ -75,7 +75,7 @@
 #include "game_client/drawable.h"
 #include "game_client/Eva.h"
 #include "game_client/gameclient.h"
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 
 #include "GameLogic/AI.h"
 #include "GameLogic/AIPathfind.h"

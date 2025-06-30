@@ -39,7 +39,7 @@
 #include "common/ThingTemplate.h"
 #include "common/ThingFactory.h"
 #include "common/globaldata.h"
-#include "common/NameKeyGenerator.h"
+#include "common/name_key_generator.h"
 #include "common/Player.h"
 #include "common/PlayerList.h"
 #include "common/Team.h"

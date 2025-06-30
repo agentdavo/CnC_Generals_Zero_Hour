@@ -37,7 +37,7 @@
 #include "txt2d.h"
 #include "font.h"
 #include "assetmgr.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "pot.h"
 #include "bsurface.h"
 #include "texture.h"

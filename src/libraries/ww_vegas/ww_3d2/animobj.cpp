@@ -63,7 +63,7 @@
 #include "assetmgr.h"
 #include "hanim.h"
 #include "hcanim.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "wwmemlog.h"
 
 

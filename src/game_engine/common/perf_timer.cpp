@@ -33,7 +33,7 @@
 #include "common/globaldata.h"
 #include "game_client/DebugDisplay.h"
 #include "game_client/Display.h"
-#include "game_client/GraphDraw.h"
+#include "game_client/graph_draw.h"
 
 
 #ifdef _INTERNAL

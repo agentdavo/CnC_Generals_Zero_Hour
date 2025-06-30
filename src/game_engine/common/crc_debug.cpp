@@ -28,7 +28,7 @@
 #include "common/CRCDebug.h"
 #include "common/Debug.h"
 #include "common/PerfTimer.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_network/IPEnumeration.h"
 #include <cstdarg>
 

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/perspective_fovrh_test.dir/perspective_fovrh_test.c.o -o perspective_fovrh_test  ../libd3d8_to_gles.a /usr/lib/x86_64-linux-gnu/libGLESv1_CM.so /usr/lib/x86_64-linux-gnu/libEGL.so -lm -llodepng 

@@ -34,7 +34,7 @@
 #include "common/ini.h"
 #include "game_client/MapUtil.h"
 #include "game_network/NetworkDefs.h"
-#include "common/NameKeyGenerator.h"
+#include "common/name_key_generator.h"
 #include "common/WellKnownKeys.h"
 #include "common/QuotedPrintable.h"
 

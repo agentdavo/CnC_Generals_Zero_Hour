@@ -32,7 +32,7 @@
 #include "common/PlayerList.h"
 #include "game_client/GameWindow.h"
 #include "W3DDevice/GameClient/W3DGameWindow.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/Display.h"
 #include "game_client/ControlBar.h"
 #include "game_client/GameWindowManager.h"

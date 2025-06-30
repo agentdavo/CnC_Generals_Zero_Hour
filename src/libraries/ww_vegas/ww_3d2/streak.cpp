@@ -35,7 +35,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include "streak.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "rinfo.h"
 #include "predlod.h"
 #include "v3_rnd.h"

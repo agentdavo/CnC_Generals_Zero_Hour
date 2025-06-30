@@ -30,7 +30,7 @@
 #ifndef _H_PlaceEventTranslator
 #define _H_PlaceEventTranslator
 
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 
 //-----------------------------------------------------------------------------
 class PlaceEventTranslator : public GameMessageTranslator

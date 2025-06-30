@@ -73,7 +73,7 @@
 #include "w3d_util.h"
 #include "wwdebug.h"
 #include "vertmaterial.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "chunkio.h"
 #include "rinfo.h"
 #include "coltest.h"

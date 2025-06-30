@@ -53,7 +53,7 @@
 #include "common/StackDump.h"
 #include "common/MessageStream.h"
 #include "common/Team.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/gameclient.h"
 #include "GameLogic/GameLogic.h" ///< @todo for demo, remove
 #include "game_client/Mouse.h"
@@ -63,7 +63,7 @@
 #include "common/version.h"
 #include "BuildVersion.h"
 #include "GeneratedVersion.h"
-#include "Resource.h"
+#include "resource.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

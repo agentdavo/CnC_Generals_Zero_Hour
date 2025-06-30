@@ -28,7 +28,7 @@
 
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 #include "common/version.h"
 
 Version *TheVersion = NULL;	///< The Version singleton

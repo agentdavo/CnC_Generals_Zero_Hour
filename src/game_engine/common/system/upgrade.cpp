@@ -35,7 +35,7 @@
 #include "common/Upgrade.h"
 #include "common/Player.h"
 #include "common/Xfer.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/Image.h"
 
 // PUBLIC /////////////////////////////////////////////////////////////////////////////////////////

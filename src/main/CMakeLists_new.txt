@@ -1,0 +1,34 @@
+# Cross-platform main executable (full game engine)
+add_executable(generals
+    main.cpp
+)
+
+target_link_libraries(generals PRIVATE
+    # Core libraries
+    lvgl
+    miniaudio
+    d3d8_to_gles
+    logger
+    lvgl_platform
+    
+    # Game engine components
+    gameengine
+    gameenginedevice
+    
+    # System libraries
+    pthread
+    m
+    dl
+)
+
+target_include_directories(generals PRIVATE
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/src
+    ${PROJECT_SOURCE_DIR}/lib/lvgl
+    ${PROJECT_SOURCE_DIR}/lib/d3d8_gles/include
+)
+
+target_compile_definitions(generals PRIVATE
+    D3D8_GLES_LOGGING
+    LV_CONF_INCLUDE_SIMPLE
+)

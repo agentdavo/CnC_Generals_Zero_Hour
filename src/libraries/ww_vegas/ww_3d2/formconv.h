@@ -43,7 +43,7 @@
 #ifndef FORMCONV_H
 #define FORMCONV_H
 
-#include "ww3dformat.h"
+#include "ww_3dformat.h"
 #include <d3d8.h>
 
 /*

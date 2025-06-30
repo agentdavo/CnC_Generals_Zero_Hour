@@ -50,7 +50,7 @@
 #include "game_client/Anim2D.h"
 #include "game_client/Color.h"
 #include "game_client/fxlist.h"
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 #include "game_client/Image.h"
 #include "game_client/ParticleSys.h"
 #include "GameLogic/Armor.h"

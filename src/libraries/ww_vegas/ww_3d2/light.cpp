@@ -57,8 +57,8 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include "light.h"
-#include "ww3d.h"
-#include "ww3dids.h"
+#include "ww_3d.h"
+#include "ww_3dids.h"
 #include "w3d_file.h"
 #include "w3d_util.h"
 #include "w3derr.h"

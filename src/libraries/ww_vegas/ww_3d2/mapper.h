@@ -47,7 +47,7 @@
 #include "wwdebug.h"
 #include "vector2.h"
 #include "vector3.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 
 class INIClass;
 

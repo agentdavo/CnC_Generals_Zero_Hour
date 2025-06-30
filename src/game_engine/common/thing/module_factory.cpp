@@ -38,8 +38,8 @@
 #include "PreRTS.h"	// This must go first in EVERY cpp file int the GameEngine
 
 #include "common/Module.h"
-#include "common/ModuleFactory.h"
-#include "common/NameKeyGenerator.h"
+#include "common/module_factory.h"
+#include "common/name_key_generator.h"
 
 // behavior includes
 #include "GameLogic/Module/AutoHealBehavior.h"

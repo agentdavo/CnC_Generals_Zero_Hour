@@ -1,10 +1,14 @@
 #pragma once
 
+// Guard to prevent D3D8 GLES from redefining our types
+#define MAIN_COMPAT_TYPES_DEFINED
+
 #ifndef _WIN32
 #include <cstdint>
 #include <cstring>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <wchar.h>
 #ifndef __cdecl
 #define __cdecl
 #endif
@@ -18,12 +22,45 @@
 #define _stdcall
 #endif
 
+// Prevent D3D8 GLES headers from redefining these types
+#ifndef DWORD
 using DWORD = std::uint32_t;
+#endif
+#ifndef WORD
 using WORD  = std::uint16_t;
+#endif
+#ifndef BYTE
 using BYTE  = std::uint8_t;
+#endif
+#ifndef HRESULT
 using HRESULT = std::int32_t;
+#endif
+#ifndef BOOL
 using BOOL  = int;
+#endif
+#ifndef LONG
 using LONG  = std::int32_t;
+#endif
+
+// Wide character support
+#ifndef WCHAR
+using WCHAR = wchar_t;
+#endif
+using TCHAR = char;  // For compatibility
+
+// Additional types needed for D3D compatibility
+#ifndef UINT
+using UINT = unsigned int;
+#endif
+#ifndef ULONG
+using ULONG = unsigned long;
+#endif
+#ifndef FLOAT
+using FLOAT = float;
+#endif
+#ifndef INT
+using INT = int;
+#endif
 
 #ifndef MAX_PATH
 #define MAX_PATH 260
@@ -37,7 +74,36 @@ using LONG  = std::int32_t;
 #endif
 
 using HANDLE = void*;
+#ifndef HWND
 using HWND   = HANDLE;
+#endif
+
+// Additional handle types
+#ifndef HDC
+using HDC = void*;
+#endif
+#ifndef HFONT
+using HFONT = void*;
+#endif
+#ifndef HBITMAP
+using HBITMAP = void*;
+#endif
+
+// Missing types for font/graphics support
+#ifndef LOGFONT_DEFINED
+struct LOGFONT { int dummy; };
+#define LOGFONT_DEFINED
+#endif
+
+#ifndef PALETTEENTRY_DEFINED
+#define PALETTEENTRY_DEFINED
+struct PALETTEENTRY { BYTE r, g, b, flags; };
+#endif
+
+// Wide string character functions compatibility
+#ifndef _wcsicmp
+static inline int _wcsicmp(const wchar_t *a, const wchar_t *b) { return wcscasecmp(a, b); }
+#endif
 
 #ifndef SUCCEEDED
 #define SUCCEEDED(hr) ((hr) >= 0)

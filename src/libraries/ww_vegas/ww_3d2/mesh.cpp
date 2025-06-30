@@ -105,7 +105,7 @@
 #include "w3d_util.h"
 #include "meshmdl.h"
 #include "meshgeometry.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "camera.h"
 #include "texture.h"
 #include "rinfo.h"
@@ -163,6 +163,9 @@ MeshClass::MeshClass(void) :
 	m_alphaOverride(1.0f),
 	m_materialPassAlphaOverride(1.0f),
 	m_materialPassEmissiveOverride(1.0f)
+#ifdef WWDEBUG
+	,m_debuggerDisabled(false)
+#endif
 {
 }
 
@@ -190,6 +193,9 @@ MeshClass::MeshClass(const MeshClass & that) :
 	m_alphaOverride(1.0f),
 	m_materialPassAlphaOverride(1.0f),
 	m_materialPassEmissiveOverride(1.0f)
+#ifdef WWDEBUG
+	,m_debuggerDisabled(that.m_debuggerDisabled)
+#endif
 {
 	REF_PTR_SET(Model,that.Model);					// mesh instances share models by default
 }

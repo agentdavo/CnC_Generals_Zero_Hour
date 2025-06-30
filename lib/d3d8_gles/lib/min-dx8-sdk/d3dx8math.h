@@ -1208,7 +1208,7 @@ HRESULT WINAPI
 }
 #endif
 
-#include "d3dx8math.inl"
+// #include "d3dx8math.inl"  // Disabled to prevent multiple definition errors
 
 #pragma warning(default:4201)
 

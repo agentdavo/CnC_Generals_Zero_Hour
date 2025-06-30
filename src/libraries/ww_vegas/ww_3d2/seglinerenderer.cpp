@@ -39,7 +39,7 @@
 #if 1
 
 #include "seglinerenderer.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "rinfo.h"
 #include "dx8wrapper.h"
 #include "sortingrenderer.h"

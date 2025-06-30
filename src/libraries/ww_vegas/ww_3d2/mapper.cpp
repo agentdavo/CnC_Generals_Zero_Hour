@@ -33,7 +33,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include "mapper.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "common/ini.h"
 #include "chunkio.h"
 #include "w3derr.h"

@@ -69,7 +69,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #include "pointgr.h"
 #include "vertmaterial.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "aabox.h"
 #include "statistics.h"
 #include "simplevec.h"

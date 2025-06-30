@@ -47,7 +47,7 @@
 #include "rendobj.h"
 #include "bittype.h"
 #include "w3derr.h"
-#include "LightEnvironment.h"	//added for 'Generals'
+#include "lightenvironment.h"	//added for 'Generals'
 
 class MeshBuilderClass;
 class HModelClass;
@@ -147,6 +147,15 @@ public:
 	void								Get_Deformed_Vertices(Vector3 *dst_vert, Vector3 *dst_norm);
 	void								Get_Deformed_Vertices(Vector3 *dst_vert);
 
+	// Debug functionality
+#ifdef WWDEBUG
+	bool Is_Disabled_By_Debugger() const { return m_debuggerDisabled; }
+	void Set_Debugger_Disable(bool disable) { m_debuggerDisabled = disable; }
+#else
+	bool Is_Disabled_By_Debugger() const { return false; }
+	void Set_Debugger_Disable(bool disable) { /* stub */ }
+#endif
+
 	void								Set_Lighting_Environment(LightEnvironmentClass * light_env) { if (light_env) {m_localLightEnv=*light_env;LightEnvironment = &m_localLightEnv;} else {LightEnvironment = NULL;} }
 	LightEnvironmentClass *		Get_Lighting_Environment(void) { return LightEnvironment; }
 	inline float	Get_Alpha_Override(void) { return m_alphaOverride;}
@@ -186,6 +195,10 @@ protected:
 	float					m_materialPassAlphaOverride;	//added for 'Generals' to allow variable alpha on additional render passes.
 	int								BaseVertexOffset;		// offset to our first vertex in whatever vb this mesh is in.
 	MeshClass *						NextVisibleSkin;		// linked list of visible skins
+
+#ifdef WWDEBUG
+	bool							m_debuggerDisabled;
+#endif
 
 	friend class MeshBuilderClass;
 };

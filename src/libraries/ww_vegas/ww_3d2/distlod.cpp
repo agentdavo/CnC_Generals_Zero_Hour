@@ -79,7 +79,7 @@
 
 #include "distlod.h"
 #include "nstrdup.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "assetmgr.h"
 #include "camera.h"
 #include "w3derr.h"
@@ -108,7 +108,8 @@ RenderObjClass * DistLODPrototypeClass::Create(void)
 
 	int count = dist->Get_Num_Sub_Objects();
 	RenderObjClass ** robj = W3DNEWARRAY RenderObjClass * [count];
-	for (int i=0; i<count; i++) {
+	int i;
+	for (i=0; i<count; i++) {
 		
 		robj[count - 1 - i] = dist->Get_Sub_Object(i);
 		WWASSERT(robj[count - 1 - i] != NULL);

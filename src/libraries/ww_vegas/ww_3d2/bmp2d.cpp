@@ -36,7 +36,7 @@
 
 #include "bmp2d.h"
 #include "pot.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "texture.h"
 #include "surfaceclass.h"
 

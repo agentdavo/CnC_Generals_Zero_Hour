@@ -35,7 +35,7 @@
 
 #include "lib/base_type.h"
 #include "game_engine/common/subsystem_interface.h"
-#include "game_engine/common/GameMemory.h"
+#include "game_engine/common/gamememory.h"
 #include "common/AsciiString.h"
 
 //------------------------------------------------------------------------------------------------- 

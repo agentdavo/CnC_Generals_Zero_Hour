@@ -62,6 +62,7 @@
 #ifdef _WIN32
 #include <windows.h>
 #else
+#include "common/windows.h"
 typedef void* HINSTANCE;
 typedef void* HWND;
 #endif

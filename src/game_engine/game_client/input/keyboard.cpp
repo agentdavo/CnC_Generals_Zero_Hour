@@ -33,7 +33,7 @@
 #include "common/GameEngine.h"
 #include "common/MessageStream.h"
 #include "game_client/Keyboard.h"
-#include "game_client/KeyDefs.h"
+#include "game_client/key_defs.h"
 
 
 // PUBLIC DATA ////////////////////////////////////////////////////////////////////////////////////

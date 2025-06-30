@@ -35,7 +35,7 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #include "part_buf.h"
 #include "part_emt.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "rinfo.h"
 #include "scene.h"
 #include "camera.h"

@@ -41,9 +41,12 @@ typedef enum _D3DPOOL {
 } D3DPOOL;
 
 typedef unsigned int D3DCOLOR;
+#ifndef PALETTEENTRY_DEFINED
+#define PALETTEENTRY_DEFINED
 typedef struct _PALETTEENTRY {
   unsigned char peRed, peGreen, peBlue, peFlags;
 } PALETTEENTRY;
+#endif
 
 typedef enum _D3DPRIMITIVETYPE {
   D3DPT_POINTLIST = 1,

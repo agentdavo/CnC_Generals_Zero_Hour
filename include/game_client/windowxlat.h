@@ -30,7 +30,7 @@
 #ifndef _H_WindowXlat
 #define _H_WindowXlat
 
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 
 //-----------------------------------------------------------------------------
 class WindowTranslator : public GameMessageTranslator

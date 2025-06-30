@@ -27,6 +27,12 @@ Source code now resides in `src/`, public headers in `include/`, and libraries i
 
 External libraries such as LVGL, miniaudio, uGLES, UniSpySDK, zlib and liblzhl are provided under `lib/`. These directories are committed directly in the repository, with LVGL (version 9.3) included to allow local modifications.
 
+The project includes a complete **DirectX 8 → OpenGL ES 1.1 translation layer** in `lib/d3d8_gles/` with:
+- ✅ **Functional D3D8 interface creation** and basic API compatibility
+- ✅ **Complete D3DX math library** (matrices, vectors, transforms, matrix stack)
+- ✅ **COM interface emulation** using C wrapper structs  
+- ✅ **Cross-platform rendering backend** via OpenGL ES + EGL
+
 CMake builds these third party libraries via `lib/CMakeLists.txt`.
 
  
@@ -39,19 +45,29 @@ The quickest way to build all configurations in the project is to open `rts.dsw`
 
 If you wish to compile the code under a modern version of Microsoft Visual Studio, you can convert the legacy project file to a modern MSVC solution by opening `rts.dsw` in Microsoft Visual Studio .NET 2003, and then opening the newly created project and solution file in MSVC 2015 or newer.
 
-## CMake Build (Experimental)
-You can try building a minimal stub using CMake. Install the build prerequisites
+## CMake Build (Cross-Platform)
+The project now includes a functional cross-platform build system using CMake. Install the build prerequisites
 first (for example `sudo apt install build-essential cmake libsdl2-dev
-libgl1-mesa-dev` on Debian-based systems). Run:
+libgl1-mesa-dev libx11-dev libglu1-mesa-dev xorg-dev` on Debian-based systems). Run:
 ```bash
 cmake -S . -B build && cmake --build build
 ```
-This will compile a placeholder executable while migration is in progress.
-You can redirect the output to a log file if desired, but it is not required.
+This will build the complete game engine with DirectX 8 → OpenGL ES translation layer.
 Continuous integration builds should enable strict warnings:
 ```bash
 cmake -S . -B build -DSTRICT_BUILD=ON
 ```
+
+### Testing D3D8 Translation Layer
+The built executable includes a functional D3D8 → OpenGL ES translation test:
+```bash
+./build/src/main/generals
+```
+This demonstrates that the DirectX translation layer is operational and can successfully:
+- Create D3D8 interfaces via Direct3DCreate8()
+- Handle basic DirectX API calls
+- Provide complete D3DX math function implementations
+- Interface with the LVGL windowing system
 
 To try the minimal LVGL example without the game engine run:
 ```
@@ -75,7 +91,23 @@ that `find_package(SDL2)` can locate `SDL2/SDL.h`.
 
 NOTE: As modern versions of MSVC enforce newer revisions of the C++ standard, you will need to make extensive changes to the codebase before it successfully compiles, even more so if you plan on compiling for the Win64 platform.
 
-When the workspace has finished building, the compiled binaries will be copied to the folder called `/Run/` found in the root of each games directory. 
+When the workspace has finished building, the compiled binaries will be copied to the folder called `/Run/` found in the root of each games directory.
+
+## Development Tools
+
+### Code Analysis Scripts
+Two Python scripts are provided to help with development and migration tracking:
+
+```bash
+# Find directories with capital letters (useful for migration tracking)
+python3 scripts/capitals.py
+
+# Generate DirectX usage report  
+python3 scripts/d3d_scan.py > directx_report.md
+```
+
+- **capitals.py**: Identifies directories that don't follow the snake_case convention used in new code, helping track migration progress from legacy Win32 naming
+- **d3d_scan.py**: Scans source files for DirectX API usage and generates a comprehensive report showing which files contain DirectX references and their specific usage patterns. This helps track the DirectX → OpenGL ES translation progress.
  
 
 

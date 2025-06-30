@@ -77,7 +77,7 @@
 #include "wwdebug.h"
 #include "snappts.h"
 #include "assetmgr.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "w3derr.h"
 //#include "sr.hpp"
 

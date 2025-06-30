@@ -31,10 +31,10 @@
 //******************************************************************************************
 
 #include "dx8webbrowser.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "dx8wrapper.h"
 
-#if ENABLE_EMBEDDED_BROWSER
+#if ENABLE_EMBEDDED_BROWSER && defined(_WIN32)
 
 // Import the Browser Type Library
 // BGC, the path for the dll file is pretty odd, no?
@@ -238,5 +238,19 @@ void	DX8WebBrowser::Navigate(const char* browsername, const char* url)
 	if(pBrowser == 0) return;
 	pBrowser->Navigate(_bstr_t(browsername),_bstr_t(url));
 }
+
+#else
+
+// Stub implementations for non-Windows platforms
+HWND DX8WebBrowser::hWnd = 0;
+
+bool DX8WebBrowser::Initialize(const char* badpageurl, const char* loadingpageurl, const char* mousefilename, const char* mousebusyfilename) { return false; }
+void DX8WebBrowser::Shutdown() {}
+void DX8WebBrowser::Update(void) {}
+void DX8WebBrowser::Render(int backbufferindex) {}
+void DX8WebBrowser::CreateBrowser(const char* browsername, const char* url, int x, int y, int w, int h, int updateticks, LONG options, LPDISPATCH gamedispatch) {}
+void DX8WebBrowser::DestroyBrowser(const char* browsername) {}
+bool DX8WebBrowser::Is_Browser_Open(const char* browsername) { return false; }
+void DX8WebBrowser::Navigate(const char* browsername, const char* url) {}
 
 #endif

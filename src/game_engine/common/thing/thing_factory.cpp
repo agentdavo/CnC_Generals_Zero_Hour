@@ -35,7 +35,7 @@
 #include "common/FileSystem.h"
 #include "common/gameaudio.h"
 #include "common/MapObject.h"
-#include "common/ModuleFactory.h"
+#include "common/module_factory.h"
 #include "common/RandomValue.h"
 #include "GameLogic/GameLogic.h"
 #include "GameLogic/Object.h"

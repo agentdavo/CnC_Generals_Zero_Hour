@@ -43,7 +43,7 @@
 #ifndef SURFACECLASS_H
 #define SURFACECLASS_H
 
-#include "ww3dformat.h"
+#include "ww_3dformat.h"
 #include "refcount.h"
 
 struct IDirect3DSurface8;

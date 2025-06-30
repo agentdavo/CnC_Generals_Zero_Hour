@@ -32,7 +32,7 @@
 
 #include "common/ini.h"
 #include "common/registry.h"
-#include "game_network/WOLBrowser/WebBrowser.h"
+#include "game_network/WOLBrowser/web_browser.h"
 
 #ifdef _INTERNAL
 // for occasional debugging...

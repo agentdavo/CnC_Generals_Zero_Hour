@@ -39,8 +39,8 @@
 
 #include "sound_scene_obj.h"
 #include "bittype.h"
-#include "Vector3.H"
-#include "Matrix3D.H"
+#include "Vector3.h"
+#include "Matrix3D.h"
 
 /////////////////////////////////////////////////////////////////////////////////
 //

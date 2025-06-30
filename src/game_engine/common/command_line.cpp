@@ -31,7 +31,7 @@
 #include "common/localfilesystem.h"
 #include "common/version.h"
 #include "game_client/TerrainVisual.h" // for TERRAIN_LOD_MIN definition
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 
 Bool TheDebugIgnoreSyncErrors = FALSE;
 extern Int DX8Wrapper_PreserveFPU;

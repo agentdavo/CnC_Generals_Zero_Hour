@@ -203,4 +203,3 @@ void FrameGrabClass::Grab(void *) {}
 void FrameGrabClass::ConvertFrame(void *) {}
 
 #endif
-}

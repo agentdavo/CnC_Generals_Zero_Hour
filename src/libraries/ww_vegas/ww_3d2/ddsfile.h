@@ -24,7 +24,7 @@
 #endif
 
 #include "always.h"
-#include "ww3dformat.h"
+#include "ww_3dformat.h"
 #include "wwstring.h"
 
 struct IDirect3DSurface8;

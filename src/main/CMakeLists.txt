@@ -10,3 +10,6 @@ target_include_directories(gen_main PUBLIC
 )
 # Legacy Win32 entry point not built by default
 endif()
+
+# Include the new cross-platform executable
+include(CMakeLists_new.txt)

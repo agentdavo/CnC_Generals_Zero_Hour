@@ -18,7 +18,7 @@
 
 #include "texturefile.h"
 #include "textureloader.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "wwstring.h"
 #include	"raw_file.h"
 #include	"ffactory.h"

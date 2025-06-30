@@ -21,6 +21,7 @@
 #include "wwstring.h"
 #include "raw_file.h"
 #include "common/windows.h"
+#include <cctype>
 
 AssetStatusClass AssetStatusClass::Instance;
 
@@ -77,11 +78,15 @@ AssetStatusClass::~AssetStatusClass()
 void AssetStatusClass::Add_To_Report(int index, const char* name)
 {
 	StringClass lower_case_name(name,true);
-	_strlwr(lower_case_name.Peek_Buffer());
+	// Convert to lowercase
+	char* buffer = lower_case_name.Peek_Buffer();
+	for (char* p = buffer; *p; ++p) {
+		*p = tolower(*p);
+	}
 	// This is a bit slow - two accesses to the same member, but currently there's no better way to do it.
 	int count=ReportHashTables[index].Get(lower_case_name);
 	count++;
-	ReportHashTables[index].Set_Value(lower_case_name,count);
+	ReportHashTables[index].Insert(lower_case_name,count);
 }
 
 void AssetStatusClass::Report_Load_On_Demand_RObj(const char* name)

@@ -25,7 +25,7 @@
 #define WIN32_LEAN_AND_MEAN
 #include "common/windows.h"
 
-#include "Registry.h"
+#include "registry.h"
 
 bool getStringFromRegistry(HKEY root, std::string path, std::string key, std::string &val)
 {

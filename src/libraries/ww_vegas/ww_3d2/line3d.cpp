@@ -51,7 +51,7 @@
 #include "vertmaterial.h"
 #include "shader.h"
 #include "wwdebug.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "rinfo.h"
 #include "dx8wrapper.h"
 #include "dx8vertexbuffer.h"

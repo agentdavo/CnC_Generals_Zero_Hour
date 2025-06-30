@@ -43,7 +43,7 @@
 #include "game_client/drawable.h"
 #include "game_client/Eva.h"
 #include "game_client/GameWindowManager.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/ControlBar.h"
 
 #include "GameLogic/GameLogic.h"

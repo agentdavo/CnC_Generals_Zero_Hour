@@ -52,6 +52,7 @@ add_subdirectory(src)
 # Migrated modules from Generals/Code
 message(STATUS "Configuring migrated engine modules")
 add_subdirectory(src/main)
+
 # add_subdirectory(src/game_engine)
 add_subdirectory(src/game_engine_device)
 

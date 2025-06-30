@@ -26,9 +26,10 @@
 // The main entry point for the game
 // Author: Michael S. Booth, April 2001
 
-#include "PreRTS.h"	// This must go first in EVERY cpp file in the GameEngine
+#include "prerts.h"	// This must go first in EVERY cpp file in the GameEngine
 
 #include "common/GameEngine.h"
+#include "common/logger.h"
 
 
 /**
@@ -36,16 +37,40 @@
  */
 void GameMain( int argc, char *argv[] )
 {
+	LOG_INFO("===============================================================================");
+	LOG_INFO("GameMain: Entering game system main entry point");
+	LOG_INFO("GameMain: argc=%d", argc);
+	for(int i = 0; i < argc; ++i) {
+		LOG_INFO("GameMain: argv[%d] = '%s'", i, argv[i]);
+	}
+	LOG_INFO("===============================================================================");
+
+	LOG_INFO("GameMain: Creating game engine via factory function...");
 	// initialize the game engine using factory function
 	TheGameEngine = CreateGameEngine();
-	TheGameEngine->init(argc, argv);
+	if(!TheGameEngine) {
+		LOG_ERROR("GameMain: CRITICAL - CreateGameEngine() returned NULL!");
+		return;
+	}
+	LOG_INFO("GameMain: Game engine created successfully at %p", (void*)TheGameEngine);
 
+	LOG_INFO("GameMain: Initializing game engine with command line arguments...");
+	TheGameEngine->init(argc, argv);
+	LOG_INFO("GameMain: Game engine initialization completed");
+
+	LOG_INFO("GameMain: Starting main game execution loop...");
+	LOG_INFO("GameMain: From this point, UI and game systems will start loading");
 	// run it
 	TheGameEngine->execute();
+	LOG_INFO("GameMain: Main game execution loop has ended");
 
+	LOG_INFO("GameMain: Cleaning up game engine...");
 	// since execute() returned, we are exiting the game
 	delete TheGameEngine;
 	TheGameEngine = NULL;
-
+	LOG_INFO("GameMain: Game engine cleanup completed");
+	LOG_INFO("===============================================================================");
+	LOG_INFO("GameMain: Exiting game system main entry point");
+	LOG_INFO("===============================================================================");
 }
 

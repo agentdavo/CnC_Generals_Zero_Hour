@@ -33,7 +33,7 @@
 #include "common/PlayerList.h"
 #include "common/Recorder.h"
 
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "GameLogic/GameLogic.h"
 
 /// The singleton message stream for messages going to TheGameLogic

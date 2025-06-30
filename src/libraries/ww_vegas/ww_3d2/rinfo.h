@@ -45,7 +45,7 @@
 
 #include "always.h"
 #include "bittype.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "wwdebug.h"
 #include "shader.h"
 #include "vector.h"

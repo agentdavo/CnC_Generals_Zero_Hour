@@ -45,7 +45,7 @@
 
 #include "metalmap.h"
 #include "texture.h"
-#include "ww3dformat.h"
+#include "ww_3dformat.h"
 #include <vp.h>
 #include "libraries/ww_vegas/ww_lib/ini.h"
 #include <point.h>

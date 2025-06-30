@@ -44,7 +44,7 @@
 #include "dx8vertexbuffer.h"
 #include "dx8indexbuffer.h"
 #include "dx8renderer.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "camera.h"
 #include "wwstring.h"
 #include "libraries/ww_vegas/ww_math/matrix4.h"
@@ -64,7 +64,7 @@
 #include "missingtexture.h"
 #include "thread.h"
 #include <stdio.h>
-#include <D3dx8core.h>
+#include <d3dx8core.h>
 #include <d3d8_to_gles.h>
 #include "pot.h"
 #include "wwprofile.h"
@@ -584,7 +584,7 @@ bool DX8Wrapper::Set_Any_Render_Device(void)
 	}
 
 	// Then fullscreen
-	for (dev_number = 0; dev_number < _RenderDeviceNameTable.Count(); dev_number++) {
+	for (int dev_number = 0; dev_number < _RenderDeviceNameTable.Count(); dev_number++) {
 		if (Set_Render_Device(dev_number,-1,-1,-1,0,false)) {
 			return true;
 		}
@@ -979,7 +979,7 @@ bool DX8Wrapper::Set_Device_Resolution(int width,int height,int bits,int windowe
 
 		if (resize_window)
 		{
-
+#ifdef _WIN32
 			// Get the current dimensions of the 'render area' of the window
 			RECT rect = { 0 };
 			::GetClientRect (_Hwnd, &rect);
@@ -1010,6 +1010,7 @@ bool DX8Wrapper::Set_Device_Resolution(int width,int height,int bits,int windowe
 									 rect.bottom-rect.top,
 									 SWP_NOZORDER | SWP_NOMOVE);
 			}
+#endif
 		}
 
 #pragma message("TODO: support changing windowed status and changing the bit depth")
@@ -1172,8 +1173,9 @@ bool DX8Wrapper::Find_Color_And_Z_Mode(int resx,int resy,int bitdepth,D3DFORMAT 
 	*/
 	bool found = false;
 	unsigned int mode = 0;
+	int format_index;
 
-	for (int format_index=0; format_index < format_count; format_index++) {
+	for (format_index=0; format_index < format_count; format_index++) {
 		found |= Find_Color_Mode(format_table[format_index],resx,resy,&mode);
 		if (found) break;
 	}
@@ -1203,7 +1205,7 @@ bool DX8Wrapper::Find_Color_Mode(D3DFORMAT colorbuffer, int resx, int resy, UINT
 	UINT i,j,modemax;
 	UINT rx,ry;
 	D3DDISPLAYMODE dmode;
-	::ZeroMemory(&dmode, sizeof(D3DDISPLAYMODE));
+	ZeroMemory(&dmode, sizeof(D3DDISPLAYMODE));
 
 	rx=(unsigned int) resx;
 	ry=(unsigned int) resy;
@@ -2048,7 +2050,7 @@ IDirect3DTexture8 * DX8Wrapper::_Create_DX8_Texture(
 	IDirect3DTexture8 *texture = NULL;
 
 	D3DSURFACE_DESC surface_desc;
-	::ZeroMemory(&surface_desc, sizeof(D3DSURFACE_DESC));
+	ZeroMemory(&surface_desc, sizeof(D3DSURFACE_DESC));
 	surface->GetDesc(&surface_desc);
 
 	// This function will create a texture with a different (but similar) format if the surface is
@@ -2245,7 +2247,7 @@ void DX8Wrapper::Set_Light_Environment(LightEnvironmentClass* light_env)
 
 		D3DLIGHT8 light;		
 		for (int l=0;l<light_count;++l) {
-			::ZeroMemory(&light, sizeof(D3DLIGHT8));
+			ZeroMemory(&light, sizeof(D3DLIGHT8));
 			light.Type=D3DLIGHT_DIRECTIONAL;
 			(Vector3&)light.Diffuse=light_env->Get_Light_Diffuse(l);
 			Vector3 dir=-light_env->Get_Light_Direction(l);
@@ -2272,8 +2274,8 @@ void DX8Wrapper::Set_Light_Environment(LightEnvironmentClass* light_env)
 			Set_Light(l,&light);
 		}
 
-		for (;l<4;++l) {
-			Set_Light(l,NULL);
+		for (int l2=light_count;l2<4;++l2) {
+			Set_Light(l2,NULL);
 		}
 	}
 /*	else {
@@ -2598,6 +2600,7 @@ void DX8Wrapper::Set_Gamma(float gamma,float bright,float contrast,bool calibrat
 	if (DX8Caps::Support_Gamma())	{
 		DX8Wrapper::_Get_D3D_Device8()->SetGammaRamp(flag,&ramp);
 	} else {
+#ifdef _WIN32
 		HWND hwnd = GetDesktopWindow();
 		HDC hdc = GetDC(hwnd);
 		if (hdc)
@@ -2605,6 +2608,7 @@ void DX8Wrapper::Set_Gamma(float gamma,float bright,float contrast,bool calibrat
 			SetDeviceGammaRamp (hdc, &ramp);
 			ReleaseDC (hwnd, hdc);
 		}
+#endif
 	}
 }
 

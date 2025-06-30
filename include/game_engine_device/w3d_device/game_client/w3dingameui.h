@@ -39,7 +39,7 @@
 // SYSTEM INCLUDES ////////////////////////////////////////////////////////////
 
 // USER INCLUDES //////////////////////////////////////////////////////////////
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/View.h"
 #include "W3DDevice/game_client/W3DView.h"
 #include "WW3D2/Render2D.h"

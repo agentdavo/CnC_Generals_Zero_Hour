@@ -1,0 +1,34 @@
+[INFO] ================================================================================
+[INFO] Command & Conquer Generals - Simple D3D8 Translation Test
+[INFO] ================================================================================
+[INFO] Testing: Game → d3d8_gles → u_gles → OpenGL ES → LVGL
+[INFO] (Avoiding math functions to bypass linking issues)
+[INFO] >>> PHASE 1: LVGL Window Initialization
+[INFO] initialize_app_window: Starting LVGL window initialization
+[INFO] initialize_app_window: Creating LVGL window 800x600 using backend 'sdl'
+[INFO] LvglPlatform::create_window: Creating 800x600 window, backend='sdl'
+[INFO] LvglPlatform::create_window: LVGL not initialized, calling lv_init()
+[INFO] LvglPlatform::create_window: LVGL core initialization completed
+[INFO] LvglPlatform::create_window: Testing backend options...
+[INFO] LvglPlatform::create_window: Attempting SDL backend initialization
+[INFO] LvglPlatform::create_window: SDL backend successfully created window
+[WARN] LvglPlatform::create_window: No fallback backend available
+[INFO] LvglPlatform::create_window: SUCCESS - Window created with display pointer 0x609352474f30
+[INFO] initialize_app_window: LVGL window created successfully
+[INFO] LVGL window ready - OpenGL ES context should be available
+[INFO] >>> PHASE 2: Simple D3D8 Translation Test
+[INFO] ================================================================================
+[INFO] TESTING SIMPLE D3D8 → OpenGL ES TRANSLATION CHAIN
+[INFO] ================================================================================
+[INFO] >>> STEP 1: Creating D3D8 interface via Direct3DCreate8()
+[INFO] This should trigger d3d8_gles logs showing interface creation...
+[INFO] SUCCESS: D3D8 interface created at 0x609386adda70
+[INFO] >>> STEP 2: Getting adapter count
+[INFO] This should trigger d3d8_gles adapter enumeration logs...
+[INFO] D3D8 reports 1 adapters available
+[INFO] >>> STEP 3: Getting display mode count
+[INFO] Adapter 0 has 1 display modes
+[INFO] >>> STEP 4: Creating D3D8 device
+[INFO] This should trigger major d3d8_gles → u_gles → OpenGL initialization...
+[ERROR] FAILED: D3D8 device creation failed with HRESULT 0x8876086c
+[ERROR] CRITICAL: Simple D3D8 translation test failed

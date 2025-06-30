@@ -30,7 +30,7 @@
 #endif
 
 
-#define D3DX_DEFAULT ULONG_MAX
+#define D3DX_DEFAULT ((UINT)0xFFFFFFFF)
 #define D3DX_DEFAULT_FLOAT FLT_MAX
 
 #include "d3dx8math.h"

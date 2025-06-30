@@ -42,7 +42,7 @@
 #include "common/MapObject.h"
 #include "game_client/ControlBar.h"
 #include "game_client/drawable.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/TerrainVisual.h"
 #include "GameLogic/AI.h"
 #include "GameLogic/PartitionManager.h"

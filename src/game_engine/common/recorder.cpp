@@ -32,9 +32,9 @@
 #include "common/GameEngine.h"
 #include "game_client/GameWindow.h"
 #include "game_client/GameWindowManager.h"
-#include "game_client/InGameUI.h"
+#include "game_client/in_game_ui.h"
 #include "game_client/Shell.h"
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 
 #include "game_network/LANAPICallbacks.h"
 #include "game_network/GameMessageParser.h"

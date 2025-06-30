@@ -7,6 +7,20 @@
 
 #include <stdint.h>
 
+// Ensure basic Windows types are defined even when COM_NO_WINDOWS_H is set
+// Only define if the game engine hasn't already defined them
+#ifndef MAIN_COMPAT_TYPES_DEFINED
+#ifndef HRESULT
+typedef long HRESULT;
+#endif
+#ifndef ULONG
+typedef unsigned long ULONG;
+#endif
+#ifndef DWORD
+typedef unsigned long DWORD;
+#endif
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -15,12 +29,15 @@ extern "C" {
 #define interface struct
 #endif
 
+#ifndef GUID_DEFINED
+#define GUID_DEFINED
 typedef struct _GUID {
     uint32_t Data1;
     uint16_t Data2;
     uint16_t Data3;
     uint8_t Data4[8];
 } GUID;
+#endif
 
 typedef GUID IID;
 typedef GUID CLSID;
@@ -44,8 +61,24 @@ typedef const GUID *REFGUID;
 #endif
 #endif
 
-#define STDMETHOD(method) HRESULT (WINAPI *method)
-#define STDMETHOD_(type,method) type (WINAPI *method)
+#ifdef __cplusplus
+#define STDMETHOD(method) virtual HRESULT method
+#define STDMETHOD_(type,method) virtual type method
+#define STDMETHODIMP HRESULT
+#define STDMETHODIMP_(type) type
+#define PURE = 0
+#define THIS
+#define THIS_ 
+
+#define DECLARE_INTERFACE_(iface, baseiface) \
+    interface iface : public baseiface
+
+#define DECLARE_INTERFACE(iface) DECLARE_INTERFACE_(iface, IUnknown)
+
+#else /* C interface */
+
+#define STDMETHOD(method) HRESULT (*method)
+#define STDMETHOD_(type,method) type (*method)
 #define STDMETHODIMP HRESULT WINAPI
 #define STDMETHODIMP_(type) type WINAPI
 #define PURE
@@ -58,6 +91,18 @@ typedef const GUID *REFGUID;
     struct iface##Vtbl
 #define DECLARE_INTERFACE(iface) DECLARE_INTERFACE_(iface, IUnknown)
 
+#endif
+
+#ifdef __cplusplus
+
+interface IUnknown {
+    STDMETHOD(QueryInterface)(THIS_ REFIID riid, void **ppvObject) PURE;
+    STDMETHOD_(ULONG, AddRef)(THIS) PURE;
+    STDMETHOD_(ULONG, Release)(THIS) PURE;
+};
+
+#else /* C interface */
+
 typedef interface IUnknown IUnknown;
 struct IUnknownVtbl {
     STDMETHOD(QueryInterface)(THIS_ REFIID riid, void **ppvObject) PURE;
@@ -67,6 +112,8 @@ struct IUnknownVtbl {
 interface IUnknown {
     const struct IUnknownVtbl *lpVtbl;
 };
+
+#endif
 
 // Minimal IStream forward declaration for d3dx8 headers
 typedef interface IStream IStream;

@@ -43,7 +43,7 @@
 #define LAYER_H
 
 #include "always.h"
-#include "LISTNODE.H"
+#include "listnode.h"
 #include "vector3.h"
 
 class SceneClass;

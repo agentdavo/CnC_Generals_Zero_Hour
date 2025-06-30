@@ -42,6 +42,7 @@
 #include "surfaceclass.h"
 #include "texture.h"
 #include "vector2i.h"
+#include "common/windows.h"
 
 static	SurfaceClass	*_surface;
 

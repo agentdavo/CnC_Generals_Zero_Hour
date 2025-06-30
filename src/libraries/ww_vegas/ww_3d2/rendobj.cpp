@@ -83,11 +83,11 @@
 #include "htree.h"
 #include "predlod.h"
 #include "camera.h"
-#include "ww3d.h"
+#include "ww_3d.h"
 #include "chunkio.h"
 #include "persistfactory.h"
 #include "saveload.h"
-#include "ww3dids.h"
+#include "ww_3dids.h"
 #include "intersec.h"
 
 

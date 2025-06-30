@@ -1,0 +1,25 @@
+[INFO] ================================================================================
+[INFO] Command & Conquer Generals - Minimal Test Version Starting
+[INFO] ================================================================================
+[INFO] Initializing LVGL window...
+[INFO] initialize_app_window: Starting LVGL window initialization
+[INFO] initialize_app_window: No backend specified, defaulting to SDL
+[INFO] initialize_app_window: Creating LVGL window 800x600 using backend 'sdl'
+[INFO] LvglPlatform::create_window: Creating 800x600 window, backend='sdl'
+[INFO] LvglPlatform::create_window: LVGL not initialized, calling lv_init()
+[INFO] LvglPlatform::create_window: LVGL core initialization completed
+[INFO] LvglPlatform::create_window: Testing backend options...
+[INFO] LvglPlatform::create_window: Attempting SDL backend initialization
+[INFO] LvglPlatform::create_window: SDL backend successfully created window
+[WARN] LvglPlatform::create_window: No fallback backend available
+[INFO] LvglPlatform::create_window: SUCCESS - Window created with display pointer 0x5b4924c8ef30
+[INFO] initialize_app_window: LVGL window created successfully
+[INFO] LVGL window initialization completed successfully
+[INFO] Creating initial test screen...
+[INFO] >>> Now calling GameMain() - this should show game engine startup logs...
+[INFO] >>> Expected log chain: GameMain -> CreateGameEngine -> D3D initialization -> d3d8_gles
+[INFO] Testing basic LVGL → OpenGL rendering chain...
+[INFO] D3D8 testing would show: Game → d3d8_gles → u_gles → OpenGL ES → LVGL
+[INFO] Current test shows: LVGL → OpenGL ES (basic graphics pipeline working)
+[INFO] Application shutdown complete
+[INFO] ================================================================================

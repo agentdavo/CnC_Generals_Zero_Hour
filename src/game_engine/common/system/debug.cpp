@@ -62,7 +62,7 @@
 #include "common/SystemInfo.h"
 #include "common/UnicodeString.h"
 >>>>>>> Stashed changes:src/game_engine/common/System/Debug.cpp
-#include "game_client/GameText.h"
+#include "game_client/game_text.h"
 #include "game_client/Keyboard.h"
 #include "game_client/Mouse.h"
 #include "common/StackDump.h"

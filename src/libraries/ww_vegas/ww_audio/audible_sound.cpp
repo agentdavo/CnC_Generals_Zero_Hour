@@ -37,7 +37,7 @@
 
 #include "audible_sound.h"
 #include "ww_audio.h"
-#include "ww3d.h"
+#include "libraries/ww_vegas/ww_3d2/ww3d.h"
 #include "wwdebug.h"
 #include "soundbuffer.h"
 #include "utils.h"
